@@ -9,14 +9,14 @@
     "howItWorks": "Comment ça marche",
     "pricing": "Tarifs",
     "faq": "FAQ",
-    "cta": "Essai 7 jours"
+    "cta": "Perdre mon 1er kilo"
   },
   "hero": {
     "badge": "Créé pour le Maroc 🇲🇦",
     "title": "Objectif : perdre",
     "titleHighlight": "1 kg/semaine minimum*",
     "subtitle": "Apprenez à manger intelligemment avec vos recettes marocaines préférées. Sans restrictions stressantes, juste en variant l'ordre et la combinaison des aliments.",
-    "cta": "Démarrer l'essai gratuit 7 jours",
+    "cta": "Perdre mon 1er kilo dans 7 jours",
     "ctaSecondary": "Voir la démo",
     "noCard": "Sans carte bancaire",
     "pricingInfo": "Puis 149 DH/mois • Annulation en 1 clic",
@@ -283,7 +283,7 @@
         "description": "L'IA réagit instantanément. Nos experts affinent chaque semaine. Votre plan évolue avec vous."
       }
     ],
-    "cta": "Démarrer l'essai gratuit",
+    "cta": "Commencer à perdre maintenant",
     "badge": "PWA : fonctionne sans App Store, mode hors ligne disponible"
   },
   "stats": {
@@ -333,7 +333,7 @@
         "Mode hors ligne complet",
         "Annulation en 1 clic"
       ],
-      "cta": "Démarrer l'essai gratuit",
+      "cta": "Commencer à perdre maintenant",
       "popular": true,
       "guarantee": "Satisfait ou remboursé"
     }
@@ -376,9 +376,9 @@
     ]
   },
   "finalCta": {
-    "title": "Prêt à transformer votre relation avec la nourriture?",
-    "subtitle": "Rejoignez des milliers de Marocains qui ont repris le contrôle de leur santé.",
-    "cta": "Démarrer l'essai gratuit 7 jours",
+    "title": "Prêt à perdre votre premier kilo?",
+    "subtitle": "Dans 7 jours, vous verrez la différence.",
+    "cta": "Commencer à perdre maintenant",
     "noCard": "Sans carte bancaire • Puis 149 DH/mois"
   },
   "footer": {

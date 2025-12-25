@@ -9,14 +9,14 @@
     "howItWorks": "How it Works",
     "pricing": "Pricing",
     "faq": "FAQ",
-    "cta": "7-day trial"
+    "cta": "Lose my 1st kilo"
   },
   "hero": {
     "badge": "Made for Morocco 🇲🇦",
     "title": "Goal: lose",
     "titleHighlight": "1 kg/week minimum*",
     "subtitle": "Learn to eat smart with your favorite Moroccan recipes. No stressful restrictions, just varying the order and combination of foods.",
-    "cta": "Start 7-day free trial",
+    "cta": "Lose my 1st kilo in 7 days",
     "ctaSecondary": "See demo",
     "noCard": "No credit card required",
     "pricingInfo": "Then 149 DH/month • Cancel anytime",
@@ -283,7 +283,7 @@
         "description": "AI reacts instantly. Our experts refine weekly. Your plan evolves with you."
       }
     ],
-    "cta": "Start free trial",
+    "cta": "Start losing now",
     "badge": "PWA: works without App Store, offline mode available"
   },
   "stats": {
@@ -333,7 +333,7 @@
         "Full offline mode",
         "Cancel in 1 click"
       ],
-      "cta": "Start free trial",
+      "cta": "Start losing now",
       "popular": true,
       "guarantee": "Satisfaction guaranteed"
     }
@@ -376,9 +376,9 @@
     ]
   },
   "finalCta": {
-    "title": "Ready to transform your relationship with food?",
-    "subtitle": "Join thousands of Moroccans who have taken back control of their health.",
-    "cta": "Start 7-day free trial",
+    "title": "Ready to lose your first kilo?",
+    "subtitle": "In 7 days, you'll see the difference.",
+    "cta": "Start losing now",
     "noCard": "No credit card • Then 149 DH/month"
   },
   "footer": {
