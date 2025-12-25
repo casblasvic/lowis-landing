@@ -26,11 +26,15 @@ export function useTranslations(lang: Language) {
   return translations[lang];
 }
 
+// Base path for GitHub Pages deployment
+const BASE_PATH = import.meta.env.BASE_URL || '';
+
 export function getPathWithLang(path: string, lang: Language): string {
+  const basePath = BASE_PATH.endsWith('/') ? BASE_PATH.slice(0, -1) : BASE_PATH;
   if (lang === defaultLang) {
-    return path;
+    return `${basePath}${path}`;
   }
-  return `/${lang}${path}`;
+  return `${basePath}/${lang}${path}`;
 }
 
 // Helper to get alternate language URLs for SEO
