@@ -1,6 +1,4 @@
 ---
-import Logo from './ui/Logo.astro';
-
 interface Props {
   t: {
     demo: {
@@ -50,7 +48,7 @@ const recipes = [
       <!-- App header -->
       <div class="app-header">
         <div class="header-left">
-          <Logo class="header-logo" />
+          <img src="/lowis-landing/icons/logo-192.png" alt="LOWIS" class="header-logo" />
           <span class="header-brand gradient-text">LOWIS</span>
         </div>
         <div class="phase-badge">
@@ -264,6 +262,8 @@ const recipes = [
   .header-logo {
     height: 1.5rem;
     width: 1.5rem;
+    border-radius: 0.25rem;
+    object-fit: contain;
   }
 
   .header-brand {
