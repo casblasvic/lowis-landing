@@ -11,7 +11,6 @@ interface Props {
 
 const { title, description, lang = defaultLang, canonicalUrl } = Astro.props;
 const baseUrl = 'https://lowis.app';
-const base = import.meta.env.BASE_URL;
 const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
 ---
 
@@ -23,9 +22,9 @@ const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
     <meta name="description" content={description} />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href={`${base}icons/favicon-32.png`} />
-    <link rel="icon" type="image/png" sizes="192x192" href={`${base}icons/logo-192.png`} />
-    <link rel="apple-touch-icon" sizes="180x180" href={`${base}icons/apple-touch-icon.png`} />
+    <link rel="icon" type="image/png" sizes="32x32" href="/lowis-landing/icons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/lowis-landing/icons/logo-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/lowis-landing/icons/apple-touch-icon.png" />
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
