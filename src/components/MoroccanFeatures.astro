@@ -9,18 +9,82 @@ interface Props {
         title: string;
         description: string;
       }>;
+      recipesTitle?: string;
     };
   };
 }
 
 const { t } = Astro.props;
+
+// Real Moroccan recipes from our database with actual images
+const moroccanRecipes = [
+  {
+    name: 'Tajine Poulet Citron',
+    nameFr: 'Tajine au poulet et citron',
+    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/15056.jpeg',
+    calories: 686
+  },
+  {
+    name: 'Harira',
+    nameFr: 'Soupe marocaine Harira',
+    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/28644.webp',
+    calories: 180
+  },
+  {
+    name: 'Tajine Viande Légumes',
+    nameFr: 'Tajine de viande et légumes',
+    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/15140.jpeg',
+    calories: 689
+  },
+  {
+    name: 'Batbout Farci',
+    nameFr: 'Batbout farci à la viande',
+    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/29167.jpeg',
+    calories: 420
+  },
+  {
+    name: 'Tajine Albondigas',
+    nameFr: 'Tajine aux boulettes',
+    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/19778.jpeg',
+    calories: 561
+  },
+  {
+    name: 'Bakoula',
+    nameFr: 'Épinards à la marocaine',
+    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/18407.jpeg',
+    calories: 145
+  },
+  {
+    name: 'Lentejas Marroquí',
+    nameFr: 'Lentilles à la marocaine',
+    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/28537.jpeg',
+    calories: 280
+  },
+  {
+    name: 'Ensalada Marroquí',
+    nameFr: 'Salade marocaine',
+    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14378.jpeg',
+    calories: 95
+  },
+  {
+    name: 'Tajine Cardos',
+    nameFr: 'Tajine aux cardons',
+    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/19074.jpeg',
+    calories: 221
+  },
+  {
+    name: 'Couscous Garbanzos',
+    nameFr: 'Couscous aux pois chiches',
+    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/spoonacular_images/recipes/bf480f94-4219-4f21-948e-4b845099b8a9.jpg',
+    calories: 714
+  }
+];
 ---
 
 <section id="moroccan" class="py-20 relative overflow-hidden">
   <!-- Background with Moroccan-inspired pattern -->
   <div class="absolute inset-0">
     <div class="absolute inset-0 bg-gradient-to-br from-primary-orange/5 via-dark-bg to-primary-red/5"></div>
-    <!-- Geometric pattern overlay -->
     <div class="absolute inset-0 opacity-5" style="background-image: url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30L30 60L0 30z' fill='none' stroke='%23F97316' stroke-width='1'/%3E%3C/svg%3E\"); background-size: 60px 60px;"></div>
   </div>
 
@@ -39,13 +103,53 @@ const { t } = Astro.props;
       </p>
     </div>
 
+    <!-- Recipe Carousel -->
+    <div class="mb-16">
+      <p class="text-center text-text-muted text-sm mb-6">{t.moroccanFeatures.recipesTitle || 'Découvrez nos recettes marocaines'}</p>
+
+      <div class="recipe-carousel-container">
+        <div class="recipe-carousel">
+          {moroccanRecipes.map((recipe) => (
+            <div class="recipe-slide">
+              <div class="recipe-card-img">
+                <img
+                  src={recipe.image}
+                  alt={recipe.nameFr}
+                  loading="lazy"
+                />
+                <div class="recipe-overlay">
+                  <span class="recipe-name">{recipe.nameFr}</span>
+                  <span class="recipe-cal">{recipe.calories} kcal</span>
+                </div>
+              </div>
+            </div>
+          ))}
+          <!-- Duplicate for infinite scroll effect -->
+          {moroccanRecipes.map((recipe) => (
+            <div class="recipe-slide">
+              <div class="recipe-card-img">
+                <img
+                  src={recipe.image}
+                  alt={recipe.nameFr}
+                  loading="lazy"
+                />
+                <div class="recipe-overlay">
+                  <span class="recipe-name">{recipe.nameFr}</span>
+                  <span class="recipe-cal">{recipe.calories} kcal</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
     <!-- Features grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-      {t.moroccanFeatures.items.map((item, index) => (
+      {t.moroccanFeatures.items.map((item) => (
         <div
           class="relative group p-8 bg-dark-surface border border-dark-border rounded-2xl overflow-hidden hover:border-green-500/50 transition-all duration-300"
         >
-          <!-- Accent line -->
           <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 via-primary-orange to-primary-red opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
           <div class="flex items-start gap-4">
@@ -64,17 +168,104 @@ const { t } = Astro.props;
         </div>
       ))}
     </div>
-
-    <!-- Moroccan dishes showcase -->
-    <div class="mt-16 text-center">
-      <p class="text-text-muted text-sm mb-4">Plats reconnus par notre IA</p>
-      <div class="flex flex-wrap justify-center gap-3">
-        {['Tajine', 'Couscous', 'Pastilla', 'Harira', 'Rfissa', 'Msemen', 'Baghrir', 'Tanjia'].map((dish) => (
-          <span class="px-4 py-2 bg-dark-surface border border-dark-border rounded-full text-sm text-text-secondary hover:border-primary-orange/50 hover:text-white transition-colors cursor-default">
-            {dish}
-          </span>
-        ))}
-      </div>
-    </div>
   </div>
 </section>
+
+<style>
+  .recipe-carousel-container {
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+
+  .recipe-carousel {
+    display: flex;
+    gap: 1rem;
+    animation: scroll 30s linear infinite;
+  }
+
+  .recipe-carousel:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .recipe-slide {
+    flex-shrink: 0;
+  }
+
+  .recipe-card-img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+
+  .recipe-card-img:hover {
+    border-color: #F97316;
+    transform: scale(1.05);
+  }
+
+  .recipe-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .recipe-card-img:hover img {
+    transform: scale(1.1);
+  }
+
+  .recipe-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .recipe-name {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1.2;
+  }
+
+  .recipe-cal {
+    font-size: 0.75rem;
+    color: #F97316;
+    font-weight: 500;
+  }
+
+  @media (max-width: 640px) {
+    .recipe-card-img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .recipe-name {
+      font-size: 0.75rem;
+    }
+
+    .recipe-cal {
+      font-size: 0.65rem;
+    }
+  }
+</style>

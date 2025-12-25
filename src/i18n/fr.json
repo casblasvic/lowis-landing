@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "LOWIS - Nutrition Intelligente Adaptée au Maroc | Votre Parcours Personnalisé",
-    "description": "Transformez votre alimentation avec LOWIS. Système en 13 phases adapté à la cuisine marocaine, suivi de 12 indicateurs de santé, fonctionne hors ligne. Commencez gratuitement.",
+    "title": "LOWIS - Nutrition Intelligente Créée pour le Maroc | Votre Parcours Personnalisé",
+    "description": "Transformez votre alimentation avec LOWIS. Système en 13 phases créé spécialement pour la cuisine marocaine, suivi de 12 indicateurs de santé, fonctionne hors ligne. Commencez gratuitement.",
     "keywords": "application nutrition maroc, régime personnalisé, perte de poids, cuisine marocaine, suivi santé, application minceur, tajine calories"
   },
   "nav": {
@@ -12,10 +12,10 @@
     "cta": "Commencer"
   },
   "hero": {
-    "badge": "Adapté au Maroc 🇲🇦",
+    "badge": "Créé pour le Maroc 🇲🇦",
     "title": "Arrêtez de compter les calories.",
     "titleHighlight": "Commencez à transformer votre vie.",
-    "subtitle": "Le premier système nutritionnel en 13 phases qui comprend votre cuisine, vos produits locaux et s'adapte à votre corps.",
+    "subtitle": "Le premier système nutritionnel en 13 phases créé spécialement pour votre cuisine, vos traditions et votre corps.",
     "cta": "Commencer gratuitement",
     "ctaSecondary": "Voir la démo",
     "noCard": "Aucune carte de crédit requise",
@@ -31,7 +31,7 @@
       },
       {
         "icon": "close",
-        "text": "Bases de données sans produits marocains"
+        "text": "Bases de données sans plats marocains"
       },
       {
         "icon": "close",
@@ -46,11 +46,11 @@
   },
   "features": {
     "title": "Pourquoi LOWIS change tout",
-    "subtitle": "Un système complet qui comprend votre corps et votre culture",
+    "subtitle": "Un système complet créé pour comprendre votre corps et votre culture",
     "items": [
       {
         "icon": "restaurant",
-        "title": "Adapté à la cuisine marocaine",
+        "title": "Créé pour la cuisine marocaine",
         "description": "Tajines, couscous, pastilla, harira... Notre base de données inclut plus de 500 plats et ingrédients marocains avec leurs valeurs nutritionnelles exactes."
       },
       {
@@ -107,30 +107,31 @@
     ]
   },
   "moroccanFeatures": {
-    "title": "Conçu pour le Maroc",
-    "subtitle": "Votre cuisine, vos produits, votre culture",
+    "title": "Créé spécialement pour le Maroc",
+    "subtitle": "Votre cuisine, vos traditions, votre culture",
     "items": [
       {
-        "icon": "egg_alt",
-        "title": "Recettes traditionnelles",
-        "description": "Tajine au poulet et citron, couscous aux 7 légumes, pastilla, harira, rfissa... Toutes calculées avec précision."
-      },
-      {
-        "icon": "storefront",
-        "title": "Produits du souk",
-        "description": "Huile d'argan, ras el hanout, khliaa, amlou, dattes Medjool... Vos ingrédients locaux sont dans notre base."
+        "icon": "restaurant_menu",
+        "title": "Vos recettes préférées",
+        "description": "Tajine au poulet citron confit, couscous royal, pastilla, harira, rfissa, tanjia... Chaque plat calculé avec précision."
       },
       {
         "icon": "calendar_month",
-        "title": "Adapté au Ramadan",
-        "description": "Plans spéciaux pour le jeûne avec répartition optimale du ftour et du shour."
+        "title": "Optimisé pour le Ramadan",
+        "description": "Plans spéciaux pour le jeûne avec répartition optimale du ftour et du shour. L'app s'adapte à votre rythme."
       },
       {
         "icon": "groups",
         "title": "Repas en famille",
         "description": "On sait que vous partagez les plats. Calculez votre portion même dans un tajine familial."
+      },
+      {
+        "icon": "phone_iphone",
+        "title": "Fonctionne partout",
+        "description": "Mode hors ligne complet. Que vous soyez à Casa, Fès, Marrakech ou dans un douar, ça marche."
       }
-    ]
+    ],
+    "recipesTitle": "Découvrez nos recettes marocaines"
   },
   "howItWorks": {
     "title": "Comment ça marche?",
@@ -232,7 +233,7 @@
     "noCard": "Aucune carte bancaire requise"
   },
   "footer": {
-    "tagline": "Le système nutritionnel intelligent adapté au Maroc",
+    "tagline": "Le système nutritionnel intelligent créé pour le Maroc",
     "product": {
       "title": "Produit",
       "features": "Fonctionnalités",
