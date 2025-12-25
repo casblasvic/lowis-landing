@@ -32,13 +32,15 @@ const { t } = Astro.props;
       </p>
 
       <!-- Pain points -->
-      <div class="grid sm:grid-cols-2 gap-4 mb-12 stagger-children">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 mb-12 stagger-children max-w-4xl mx-auto">
         {t.problem.points.map((point) => (
-          <div class="flex items-center gap-4 p-4 bg-dark-bg/50 border border-dark-border rounded-xl text-left">
-            <span class="material-symbols-outlined text-red-500 text-2xl">
-              {point.icon}
-            </span>
-            <span class="text-text-secondary">{point.text}</span>
+          <div class="group flex items-start gap-4 p-5 sm:p-6 bg-dark-bg/80 border border-red-500/20 rounded-2xl text-left hover:border-red-500/40 transition-all duration-300">
+            <div class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-red-500/10 rounded-xl">
+              <span class="material-symbols-outlined text-red-500 text-2xl">
+                {point.icon}
+              </span>
+            </div>
+            <p class="text-text-secondary text-base sm:text-lg leading-relaxed pt-2">{point.text}</p>
           </div>
         ))}
       </div>
