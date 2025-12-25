@@ -1,0 +1,173 @@
+---
+interface Props {
+  t: {
+    hero: {
+      badge: string;
+      title: string;
+      titleHighlight: string;
+      subtitle: string;
+      cta: string;
+      ctaSecondary: string;
+      noCard: string;
+      users: string;
+    };
+  };
+}
+
+const { t } = Astro.props;
+---
+
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+  <!-- Background effects -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <!-- Gradient orbs -->
+    <div class="absolute top-1/4 -left-32 w-96 h-96 bg-primary-orange/20 rounded-full blur-[120px]"></div>
+    <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-primary-red/20 rounded-full blur-[120px]"></div>
+
+    <!-- Grid pattern -->
+    <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
+  </div>
+
+  <div class="section-container relative z-10">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Left: Text Content -->
+      <div class="text-center lg:text-left">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 bg-dark-surface border border-dark-border rounded-full px-4 py-2 mb-6 animate-fade-in-up">
+          <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+          <span class="text-sm text-text-secondary">{t.hero.badge}</span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in-up" style="animation-delay: 0.1s">
+          {t.hero.title}
+          <br />
+          <span class="gradient-text">{t.hero.titleHighlight}</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-lg sm:text-xl text-text-secondary max-w-xl mx-auto lg:mx-0 mb-8 animate-fade-in-up" style="animation-delay: 0.2s">
+          {t.hero.subtitle}
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6 animate-fade-in-up" style="animation-delay: 0.3s">
+          <a href="#pricing" class="btn-primary text-lg px-8 py-4 animate-pulse-glow">
+            {t.hero.cta}
+            <span class="material-symbols-outlined ml-2">arrow_forward</span>
+          </a>
+          <a href="#features" class="btn-secondary text-lg px-8 py-4">
+            <span class="material-symbols-outlined mr-2">play_circle</span>
+            {t.hero.ctaSecondary}
+          </a>
+        </div>
+
+        <!-- Trust indicators -->
+        <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start text-text-muted animate-fade-in-up" style="animation-delay: 0.4s">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-green-500">check_circle</span>
+            <span class="text-sm">{t.hero.noCard}</span>
+          </div>
+          <div class="hidden sm:block w-1 h-1 bg-text-muted rounded-full"></div>
+          <div class="flex items-center gap-2">
+            <!-- User avatars -->
+            <div class="flex -space-x-2">
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-primary-orange to-primary-red flex items-center justify-center text-xs font-bold">A</div>
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-xs font-bold">M</div>
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center text-xs font-bold">S</div>
+            </div>
+            <span class="text-sm">
+              <span class="text-white font-semibold">1,250+</span> {t.hero.users}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: App Mockup -->
+      <div class="relative flex justify-center lg:justify-end animate-fade-in-up" style="animation-delay: 0.3s">
+        <!-- Phone mockup -->
+        <div class="relative w-[280px] sm:w-[320px] animate-float">
+          <!-- Phone frame -->
+          <div class="relative bg-dark-surface rounded-[3rem] p-3 shadow-2xl border border-dark-border">
+            <!-- Notch -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-dark-bg rounded-b-2xl"></div>
+
+            <!-- Screen -->
+            <div class="relative bg-dark-bg rounded-[2.5rem] overflow-hidden aspect-[9/19.5]">
+              <!-- App screenshot placeholder -->
+              <div class="absolute inset-0 flex flex-col">
+                <!-- Status bar -->
+                <div class="flex justify-between items-center px-6 pt-12 pb-2 text-xs text-text-secondary">
+                  <span>9:41</span>
+                  <div class="flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm">signal_cellular_alt</span>
+                    <span class="material-symbols-outlined text-sm">wifi</span>
+                    <span class="material-symbols-outlined text-sm">battery_full</span>
+                  </div>
+                </div>
+
+                <!-- App header -->
+                <div class="px-4 py-3">
+                  <div class="text-lg font-bold gradient-text">LOWIS</div>
+                  <p class="text-xs text-text-secondary">Phase 3 - Jour 5</p>
+                </div>
+
+                <!-- Progress card -->
+                <div class="mx-4 p-4 bg-dark-surface rounded-2xl border border-dark-border mb-4">
+                  <div class="flex justify-between items-center mb-3">
+                    <span class="text-sm font-medium">Aujourd'hui</span>
+                    <span class="text-xs text-primary-orange">850 / 1200 kcal</span>
+                  </div>
+                  <div class="h-2 bg-dark-bg rounded-full overflow-hidden">
+                    <div class="h-full w-[70%] gradient-bg rounded-full"></div>
+                  </div>
+                </div>
+
+                <!-- Quick actions -->
+                <div class="px-4 grid grid-cols-3 gap-3 mb-4">
+                  <div class="flex flex-col items-center p-3 bg-dark-surface rounded-xl border border-dark-border">
+                    <span class="material-symbols-outlined text-primary-orange mb-1">photo_camera</span>
+                    <span class="text-[10px] text-text-secondary">Scanner</span>
+                  </div>
+                  <div class="flex flex-col items-center p-3 bg-dark-surface rounded-xl border border-dark-border">
+                    <span class="material-symbols-outlined text-accent-gold mb-1">restaurant</span>
+                    <span class="text-[10px] text-text-secondary">Recettes</span>
+                  </div>
+                  <div class="flex flex-col items-center p-3 bg-dark-surface rounded-xl border border-dark-border">
+                    <span class="material-symbols-outlined text-green-500 mb-1">monitoring</span>
+                    <span class="text-[10px] text-text-secondary">Progrès</span>
+                  </div>
+                </div>
+
+                <!-- Recent meal -->
+                <div class="px-4">
+                  <p class="text-xs text-text-muted mb-2">Dernier repas</p>
+                  <div class="flex items-center gap-3 p-3 bg-dark-surface rounded-xl border border-dark-border">
+                    <div class="w-12 h-12 rounded-lg gradient-bg flex items-center justify-center">
+                      <span class="material-symbols-outlined text-white">lunch_dining</span>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm font-medium">Salade César</p>
+                      <p class="text-xs text-text-secondary">320 kcal • 12h30</p>
+                    </div>
+                    <span class="material-symbols-outlined text-green-500 text-lg">check_circle</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Decorative elements -->
+          <div class="absolute -top-4 -right-4 w-20 h-20 bg-primary-orange/30 rounded-full blur-2xl"></div>
+          <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-primary-red/30 rounded-full blur-2xl"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+    <span class="text-text-muted text-xs">Scroll</span>
+    <span class="material-symbols-outlined text-text-muted">keyboard_arrow_down</span>
+  </div>
+</section>

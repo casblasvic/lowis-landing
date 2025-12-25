@@ -1,0 +1,64 @@
+---
+interface Props {
+  t: {
+    faq: {
+      title: string;
+      items: Array<{
+        question: string;
+        answer: string;
+      }>;
+    };
+  };
+}
+
+const { t } = Astro.props;
+---
+
+<section id="faq" class="py-20">
+  <div class="section-container">
+    <!-- Section header -->
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+        {t.faq.title}
+      </h2>
+    </div>
+
+    <!-- FAQ accordion -->
+    <div class="max-w-3xl mx-auto space-y-4">
+      {t.faq.items.map((item, index) => (
+        <details
+          class="group bg-dark-surface border border-dark-border rounded-xl overflow-hidden"
+          data-faq-item
+        >
+          <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+            <span class="font-semibold text-lg pr-4">{item.question}</span>
+            <span class="material-symbols-outlined text-text-secondary group-open:rotate-180 transition-transform duration-300">
+              expand_more
+            </span>
+          </summary>
+          <div class="px-6 pb-6">
+            <p class="text-text-secondary leading-relaxed">{item.answer}</p>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  // Optional: Close other accordions when one opens (exclusive accordion)
+  const faqItems = document.querySelectorAll('[data-faq-item]');
+
+  faqItems.forEach((item) => {
+    item.addEventListener('toggle', (e) => {
+      const target = e.target as HTMLDetailsElement;
+      if (target.open) {
+        faqItems.forEach((otherItem) => {
+          if (otherItem !== item && (otherItem as HTMLDetailsElement).open) {
+            (otherItem as HTMLDetailsElement).open = false;
+          }
+        });
+      }
+    });
+  });
+</script>

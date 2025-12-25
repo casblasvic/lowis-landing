@@ -1,0 +1,53 @@
+---
+interface Props {
+  t: {
+    problem: {
+      title: string;
+      subtitle: string;
+      points: Array<{
+        icon: string;
+        text: string;
+      }>;
+      solution: string;
+    };
+  };
+}
+
+const { t } = Astro.props;
+---
+
+<section class="py-20 relative overflow-hidden">
+  <!-- Background -->
+  <div class="absolute inset-0 bg-dark-surface/50"></div>
+
+  <div class="section-container relative z-10">
+    <div class="max-w-3xl mx-auto text-center">
+      <!-- Title -->
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+        {t.problem.title}
+      </h2>
+
+      <p class="text-text-secondary text-lg mb-12">
+        {t.problem.subtitle}
+      </p>
+
+      <!-- Pain points -->
+      <div class="grid sm:grid-cols-2 gap-4 mb-12 stagger-children">
+        {t.problem.points.map((point) => (
+          <div class="flex items-center gap-4 p-4 bg-dark-bg/50 border border-dark-border rounded-xl text-left">
+            <span class="material-symbols-outlined text-red-500 text-2xl">
+              {point.icon}
+            </span>
+            <span class="text-text-secondary">{point.text}</span>
+          </div>
+        ))}
+      </div>
+
+      <!-- Solution teaser -->
+      <div class="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-primary-orange/10 to-primary-red/10 border border-primary-orange/30 rounded-full">
+        <span class="material-symbols-outlined text-primary-orange">lightbulb</span>
+        <span class="text-lg font-semibold gradient-text">{t.problem.solution}</span>
+      </div>
+    </div>
+  </div>
+</section>

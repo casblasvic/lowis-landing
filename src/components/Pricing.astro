@@ -1,0 +1,111 @@
+---
+interface Props {
+  t: {
+    pricing: {
+      title: string;
+      subtitle: string;
+      free: {
+        name: string;
+        price: string;
+        period: string;
+        features: string[];
+        cta: string;
+        popular: boolean;
+      };
+      premium: {
+        name: string;
+        price: string;
+        period: string;
+        features: string[];
+        cta: string;
+        popular: boolean;
+        trial: string;
+      };
+    };
+  };
+}
+
+const { t } = Astro.props;
+---
+
+<section id="pricing" class="py-20 relative">
+  <!-- Background -->
+  <div class="absolute inset-0 bg-dark-surface/30"></div>
+
+  <div class="section-container relative z-10">
+    <!-- Section header -->
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+        {t.pricing.title}
+      </h2>
+      <p class="text-text-secondary text-lg">
+        {t.pricing.subtitle}
+      </p>
+    </div>
+
+    <!-- Pricing cards -->
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <!-- Free Plan -->
+      <div class="relative p-8 bg-dark-surface border border-dark-border rounded-2xl">
+        <div class="mb-6">
+          <h3 class="text-2xl font-bold mb-2">{t.pricing.free.name}</h3>
+          <div class="flex items-baseline gap-1">
+            <span class="text-5xl font-bold">{t.pricing.free.price}€</span>
+            <span class="text-text-secondary">{t.pricing.free.period}</span>
+          </div>
+        </div>
+
+        <!-- Features -->
+        <ul class="space-y-4 mb-8">
+          {t.pricing.free.features.map((feature) => (
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-green-500">check_circle</span>
+              <span class="text-text-secondary">{feature}</span>
+            </li>
+          ))}
+        </ul>
+
+        <a href="#" class="btn-secondary w-full justify-center">
+          {t.pricing.free.cta}
+        </a>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="relative p-8 bg-dark-surface border-2 border-primary-orange rounded-2xl overflow-hidden">
+        <!-- Popular badge -->
+        <div class="absolute top-0 right-0 bg-gradient-to-r from-primary-orange to-primary-red text-white text-sm font-semibold px-4 py-1 rounded-bl-xl">
+          Popular
+        </div>
+
+        <!-- Glow effect -->
+        <div class="absolute -top-20 -right-20 w-40 h-40 bg-primary-orange/20 rounded-full blur-3xl"></div>
+
+        <div class="relative z-10">
+          <div class="mb-6">
+            <h3 class="text-2xl font-bold mb-2 gradient-text">{t.pricing.premium.name}</h3>
+            <div class="flex items-baseline gap-1">
+              <span class="text-5xl font-bold">{t.pricing.premium.price}€</span>
+              <span class="text-text-secondary">{t.pricing.premium.period}</span>
+            </div>
+            <p class="text-sm text-primary-orange mt-2">{t.pricing.premium.trial}</p>
+          </div>
+
+          <!-- Features -->
+          <ul class="space-y-4 mb-8">
+            {t.pricing.premium.features.map((feature) => (
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary-orange">check_circle</span>
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
+
+          <a href="#" class="btn-primary w-full justify-center">
+            {t.pricing.premium.cta}
+            <span class="material-symbols-outlined ml-2">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

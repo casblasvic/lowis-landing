@@ -1,0 +1,73 @@
+---
+interface Props {
+  t: {
+    features: {
+      title: string;
+      subtitle: string;
+      items: Array<{
+        icon: string;
+        title: string;
+        description: string;
+      }>;
+    };
+  };
+}
+
+const { t } = Astro.props;
+
+// Feature card accent colors
+const accentColors = [
+  'from-primary-orange to-primary-red',
+  'from-green-500 to-emerald-500',
+  'from-blue-500 to-cyan-500',
+  'from-purple-500 to-pink-500',
+];
+---
+
+<section id="features" class="py-20 relative">
+  <div class="section-container">
+    <!-- Section header -->
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+        {t.features.title}
+      </h2>
+      <p class="text-text-secondary text-lg">
+        {t.features.subtitle}
+      </p>
+    </div>
+
+    <!-- Features grid -->
+    <div class="grid md:grid-cols-2 gap-6 stagger-children">
+      {t.features.items.map((feature, index) => (
+        <div class="group relative p-6 bg-dark-surface border border-dark-border rounded-2xl card-hover overflow-hidden">
+          <!-- Gradient accent on hover -->
+          <div
+            class={`absolute inset-0 bg-gradient-to-br ${accentColors[index]} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
+          ></div>
+
+          <div class="relative z-10">
+            <!-- Icon -->
+            <div
+              class={`w-14 h-14 rounded-xl bg-gradient-to-br ${accentColors[index]} flex items-center justify-center mb-5`}
+            >
+              <span class="material-symbols-outlined text-white text-2xl">
+                {feature.icon}
+              </span>
+            </div>
+
+            <!-- Content -->
+            <h3 class="text-xl font-bold mb-3 group-hover:gradient-text transition-all duration-300">
+              {feature.title}
+            </h3>
+            <p class="text-text-secondary leading-relaxed">
+              {feature.description}
+            </p>
+          </div>
+
+          <!-- Corner decoration -->
+          <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-gradient-to-br from-white/[0.02] to-transparent rounded-full"></div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

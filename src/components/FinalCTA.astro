@@ -1,0 +1,52 @@
+---
+interface Props {
+  t: {
+    finalCta: {
+      title: string;
+      subtitle: string;
+      cta: string;
+      noCard: string;
+    };
+  };
+}
+
+const { t } = Astro.props;
+---
+
+<section class="py-20 relative overflow-hidden">
+  <!-- Background -->
+  <div class="absolute inset-0">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-orange/10 via-dark-bg to-primary-red/10"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
+  </div>
+
+  <!-- Floating orbs -->
+  <div class="absolute top-10 left-10 w-72 h-72 bg-primary-orange/20 rounded-full blur-[100px]"></div>
+  <div class="absolute bottom-10 right-10 w-72 h-72 bg-primary-red/20 rounded-full blur-[100px]"></div>
+
+  <div class="section-container relative z-10">
+    <div class="max-w-3xl mx-auto text-center">
+      <!-- Title -->
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+        {t.finalCta.title}
+      </h2>
+
+      <!-- Subtitle -->
+      <p class="text-text-secondary text-lg mb-8">
+        {t.finalCta.subtitle}
+      </p>
+
+      <!-- CTA Button -->
+      <a href="#pricing" class="btn-primary text-xl px-10 py-5 animate-pulse-glow">
+        {t.finalCta.cta}
+        <span class="material-symbols-outlined ml-2 text-2xl">arrow_forward</span>
+      </a>
+
+      <!-- Trust indicator -->
+      <p class="mt-6 text-text-muted text-sm flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-green-500">verified</span>
+        {t.finalCta.noCard}
+      </p>
+    </div>
+  </div>
+</section>

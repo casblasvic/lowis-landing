@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "title": "LOWIS - Smart Nutrition App | Your Personalized Journey",
+    "description": "Transform your nutrition with LOWIS. 13 scientific phases, intelligent tracking, works offline. Start free today.",
+    "keywords": "nutrition app, personalized diet, weight loss, calorie counter, food tracking, weight loss app"
+  },
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How it works",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "cta": "Get Started"
+  },
+  "hero": {
+    "badge": "New",
+    "title": "Stop counting calories.",
+    "titleHighlight": "Start transforming your life.",
+    "subtitle": "LOWIS is the first 13-phase nutrition system that adapts to your body, not the other way around.",
+    "cta": "Start for free",
+    "ctaSecondary": "Watch demo",
+    "noCard": "No credit card required",
+    "users": "active users"
+  },
+  "problem": {
+    "title": "Have nutrition apps let you down?",
+    "subtitle": "You're not alone. This is what thousands of users experience:",
+    "points": [
+      {
+        "icon": "close",
+        "text": "AI that's wrong 7 out of 10 times"
+      },
+      {
+        "icon": "close",
+        "text": "Can't correct mistakes"
+      },
+      {
+        "icon": "close",
+        "text": "Counting calories without a real plan"
+      },
+      {
+        "icon": "close",
+        "text": "Gave up after 2 weeks"
+      }
+    ],
+    "solution": "LOWIS is different."
+  },
+  "features": {
+    "title": "Why LOWIS changes everything",
+    "subtitle": "Features designed for your success",
+    "items": [
+      {
+        "icon": "science",
+        "title": "A real system, not a calculator",
+        "description": "13 scientific phases that evolve with you. Automatic weekly evaluation of your symptoms and progress."
+      },
+      {
+        "icon": "verified",
+        "title": "Accuracy you can trust",
+        "description": "3 combined nutrition databases (USDA, Spoonacular, FatSecret). Fix it in two clicks if needed."
+      },
+      {
+        "icon": "wifi_off",
+        "title": "Works even offline",
+        "description": "Log your meals anywhere. Everything syncs automatically when you reconnect."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Your pocket nutritionist",
+        "description": "AI assistant available 24/7. Personalized advice, symptom analysis, and daily recommendations."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How does it work?",
+    "subtitle": "In 3 simple steps",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Install the app",
+        "description": "2 minutes, no App Store download. Install directly to your home screen."
+      },
+      {
+        "number": "2",
+        "title": "Create your profile",
+        "description": "Answer a few questions about your goals, habits, and food preferences."
+      },
+      {
+        "number": "3",
+        "title": "Get your plan",
+        "description": "Your 13-phase nutrition plan, tailored to your body and goals."
+      }
+    ],
+    "cta": "Get started now"
+  },
+  "stats": {
+    "users": "Active users",
+    "kgLost": "Kg lost",
+    "satisfaction": "Satisfaction",
+    "offline": "Works offline"
+  },
+  "pricing": {
+    "title": "Start for free",
+    "subtitle": "No surprises, no commitment",
+    "free": {
+      "name": "Free",
+      "price": "0",
+      "period": "forever",
+      "features": [
+        "AI meal scanning",
+        "Weight tracking",
+        "Offline mode",
+        "7-day history"
+      ],
+      "cta": "Try for free",
+      "popular": false
+    },
+    "premium": {
+      "name": "Premium",
+      "price": "9.99",
+      "period": "/month",
+      "features": [
+        "Everything in Free",
+        "Full 13 LOWIS phases",
+        "Motivation audios",
+        "24/7 AI assistant",
+        "Weekly evaluation",
+        "Unlimited history"
+      ],
+      "cta": "Start free trial",
+      "popular": true,
+      "trial": "7-day free trial"
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "Is it really free to start?",
+        "answer": "Yes! The free plan gives you access to AI scanning, weight tracking, and offline mode. No credit card required to get started."
+      },
+      {
+        "question": "Does the app work offline?",
+        "answer": "Absolutely. LOWIS is a Progressive Web App (PWA) designed to work without connection. Your data syncs automatically when you're online."
+      },
+      {
+        "question": "How is LOWIS different from other apps?",
+        "answer": "LOWIS isn't just a calorie calculator. It's a complete 13-phase system based on nutritional science, with weekly symptom evaluation and automatic plan adjustment."
+      },
+      {
+        "question": "Can I cancel anytime?",
+        "answer": "Yes, you can cancel your Premium subscription anytime. You'll keep access until the end of your billing period."
+      },
+      {
+        "question": "Is my data secure?",
+        "answer": "Your data is encrypted and stored securely. We're GDPR compliant and never sell your personal information."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Ready to transform your relationship with food?",
+    "subtitle": "Join thousands of people who have taken back control.",
+    "cta": "Start for free",
+    "noCard": "No credit card required"
+  },
+  "footer": {
+    "tagline": "The smart nutrition system",
+    "product": {
+      "title": "Product",
+      "features": "Features",
+      "pricing": "Pricing",
+      "faq": "FAQ"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "cookies": "Cookies"
+    },
+    "contact": {
+      "title": "Contact",
+      "support": "Support",
+      "email": "contact@lowis.app"
+    },
+    "copyright": "All rights reserved."
+  }
+}

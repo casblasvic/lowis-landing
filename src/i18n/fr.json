@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "title": "LOWIS - Application Nutrition Intelligente | Votre Parcours Personnalisé",
+    "description": "Transformez votre alimentation avec LOWIS. 13 phases scientifiques, suivi intelligent, fonctionne hors ligne. Commencez gratuitement.",
+    "keywords": "application nutrition, régime personnalisé, perte de poids, compteur calories, suivi alimentaire, application minceur"
+  },
+  "nav": {
+    "features": "Fonctionnalités",
+    "howItWorks": "Comment ça marche",
+    "pricing": "Tarifs",
+    "faq": "FAQ",
+    "cta": "Commencer"
+  },
+  "hero": {
+    "badge": "Nouveau",
+    "title": "Arrêtez de compter les calories.",
+    "titleHighlight": "Commencez à transformer votre vie.",
+    "subtitle": "LOWIS est le premier système nutritionnel en 13 phases qui s'adapte à votre corps, pas l'inverse.",
+    "cta": "Commencer gratuitement",
+    "ctaSecondary": "Voir la démo",
+    "noCard": "Aucune carte de crédit requise",
+    "users": "utilisateurs actifs"
+  },
+  "problem": {
+    "title": "Les applications de nutrition vous ont déçu?",
+    "subtitle": "Vous n'êtes pas seul. Voici ce que vivent des milliers d'utilisateurs:",
+    "points": [
+      {
+        "icon": "close",
+        "text": "IA qui se trompe 7 fois sur 10"
+      },
+      {
+        "icon": "close",
+        "text": "Impossible de corriger les erreurs"
+      },
+      {
+        "icon": "close",
+        "text": "Compter des calories sans vrai plan"
+      },
+      {
+        "icon": "close",
+        "text": "Abandonné après 2 semaines"
+      }
+    ],
+    "solution": "LOWIS est différent."
+  },
+  "features": {
+    "title": "Pourquoi LOWIS change tout",
+    "subtitle": "Des fonctionnalités pensées pour votre réussite",
+    "items": [
+      {
+        "icon": "science",
+        "title": "Un vrai système, pas une calculatrice",
+        "description": "13 phases scientifiques qui évoluent avec vous. Évaluation hebdomadaire automatique de vos symptômes et progrès."
+      },
+      {
+        "icon": "verified",
+        "title": "Précision que vous pouvez confier",
+        "description": "3 bases de données nutritionnelles combinées (USDA, Spoonacular, FatSecret). Corrigez en deux clics si nécessaire."
+      },
+      {
+        "icon": "wifi_off",
+        "title": "Fonctionne même sans internet",
+        "description": "Enregistrez vos repas n'importe où. Tout se synchronise automatiquement quand vous vous reconnectez."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Votre nutritionniste de poche",
+        "description": "Assistant IA disponible 24/7. Conseils personnalisés, analyse de symptômes, et recommandations quotidiennes."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "Comment ça marche?",
+    "subtitle": "En 3 étapes simples",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Installez l'app",
+        "description": "2 minutes, sans téléchargement depuis l'App Store. Installez directement sur votre écran."
+      },
+      {
+        "number": "2",
+        "title": "Créez votre profil",
+        "description": "Répondez à quelques questions sur vos objectifs, habitudes et préférences alimentaires."
+      },
+      {
+        "number": "3",
+        "title": "Recevez votre plan",
+        "description": "Votre plan nutritionnel en 13 phases, adapté à votre corps et vos objectifs."
+      }
+    ],
+    "cta": "Commencer maintenant"
+  },
+  "stats": {
+    "users": "Utilisateurs actifs",
+    "kgLost": "Kg perdus",
+    "satisfaction": "Satisfaction",
+    "offline": "Fonctionne hors ligne"
+  },
+  "pricing": {
+    "title": "Commencez gratuitement",
+    "subtitle": "Pas de surprises, pas d'engagement",
+    "free": {
+      "name": "Gratuit",
+      "price": "0",
+      "period": "pour toujours",
+      "features": [
+        "Scan IA des repas",
+        "Suivi de poids",
+        "Mode hors ligne",
+        "Historique 7 jours"
+      ],
+      "cta": "Essayer gratuitement",
+      "popular": false
+    },
+    "premium": {
+      "name": "Premium",
+      "price": "9.99",
+      "period": "/mois",
+      "features": [
+        "Tout du plan Gratuit",
+        "13 phases LOWIS complètes",
+        "Audios de motivation",
+        "Assistant IA 24/7",
+        "Évaluation hebdomadaire",
+        "Historique illimité"
+      ],
+      "cta": "Démarrer l'essai gratuit",
+      "popular": true,
+      "trial": "7 jours d'essai gratuit"
+    }
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "question": "C'est vraiment gratuit pour commencer?",
+        "answer": "Oui! Le plan gratuit vous donne accès au scan IA, au suivi de poids et au mode hors ligne. Aucune carte de crédit n'est requise pour commencer."
+      },
+      {
+        "question": "L'app fonctionne-t-elle hors ligne?",
+        "answer": "Absolument. LOWIS est une Progressive Web App (PWA) conçue pour fonctionner sans connexion. Vos données se synchronisent automatiquement quand vous êtes en ligne."
+      },
+      {
+        "question": "Comment LOWIS est différent des autres apps?",
+        "answer": "LOWIS n'est pas une simple calculatrice de calories. C'est un système complet en 13 phases basé sur la science nutritionnelle, avec une évaluation hebdomadaire de vos symptômes et un ajustement automatique de votre plan."
+      },
+      {
+        "question": "Puis-je annuler à tout moment?",
+        "answer": "Oui, vous pouvez annuler votre abonnement Premium à tout moment. Vous conserverez l'accès jusqu'à la fin de votre période de facturation."
+      },
+      {
+        "question": "Mes données sont-elles sécurisées?",
+        "answer": "Vos données sont chiffrées et stockées de manière sécurisée. Nous sommes conformes au RGPD et ne vendons jamais vos informations personnelles."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Prêt à transformer votre relation avec la nourriture?",
+    "subtitle": "Rejoignez des milliers de personnes qui ont repris le contrôle.",
+    "cta": "Commencer gratuitement",
+    "noCard": "Aucune carte de crédit requise"
+  },
+  "footer": {
+    "tagline": "Le système nutritionnel intelligent",
+    "product": {
+      "title": "Produit",
+      "features": "Fonctionnalités",
+      "pricing": "Tarifs",
+      "faq": "FAQ"
+    },
+    "legal": {
+      "title": "Légal",
+      "privacy": "Confidentialité",
+      "terms": "CGU",
+      "cookies": "Cookies"
+    },
+    "contact": {
+      "title": "Contact",
+      "support": "Support",
+      "email": "contact@lowis.app"
+    },
+    "copyright": "Tous droits réservés."
+  }
+}
