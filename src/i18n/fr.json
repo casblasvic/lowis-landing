@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "LOWIS - Nutrition Intelligente Créée pour le Maroc | Objectif 1 kg/semaine",
-    "description": "Transformez votre alimentation avec LOWIS. Système en 13 phases avec IA + suivi par experts, 17+ indicateurs de santé, adapté à la cuisine marocaine. Essai gratuit 7 jours.",
-    "keywords": "application nutrition maroc, régime personnalisé, perte de poids, cuisine marocaine, suivi santé, application minceur, tajine calories, 1 kg par semaine"
+    "title": "LOWIS - Manger Intelligemment | Objectif 1 kg/semaine minimum",
+    "description": "Apprenez à manger intelligemment avec vos recettes marocaines. Sans restrictions, juste en variant l'ordre et combinaison des aliments. IA + experts 24/7. Essai gratuit 7 jours.",
+    "keywords": "application nutrition maroc, manger intelligemment, perte de poids durable, cuisine marocaine, sans effet rebond, 1 kg par semaine"
   },
   "nav": {
     "features": "Fonctionnalités",
@@ -13,26 +13,26 @@
   },
   "hero": {
     "badge": "Créé pour le Maroc 🇲🇦",
-    "title": "Objectif : perdre jusqu'à",
-    "titleHighlight": "1 kg/semaine*",
-    "subtitle": "Le premier système nutritionnel en 13 phases avec IA + suivi par nos experts. Créé spécialement pour la cuisine marocaine.",
+    "title": "Objectif : perdre",
+    "titleHighlight": "1 kg/semaine minimum*",
+    "subtitle": "Apprenez à manger intelligemment avec vos recettes marocaines préférées. Sans restrictions stressantes, juste en variant l'ordre et la combinaison des aliments.",
     "cta": "Démarrer l'essai gratuit 7 jours",
     "ctaSecondary": "Voir la démo",
     "noCard": "Sans carte bancaire",
     "pricingInfo": "Puis 149 DH/mois • Annulation en 1 clic",
-    "disclaimer": "*Selon votre profil et adhérence au protocole"
+    "disclaimer": "*De façon naturelle et durable, selon votre profil"
   },
   "problem": {
-    "title": "Les applications de nutrition vous ont déçu?",
-    "subtitle": "Vous n'êtes pas seul. Voici ce que vivent des milliers d'utilisateurs:",
+    "title": "Pourquoi les régimes classiques échouent?",
+    "subtitle": "Ce n'est pas votre faute. Le problème, c'est l'approche:",
     "points": [
       {
         "icon": "close",
-        "text": "IA qui ne reconnaît pas le tajine ou le couscous"
+        "text": "Régimes restrictifs impossibles à tenir plus de 2 semaines"
       },
       {
         "icon": "close",
-        "text": "Bases de données sans plats marocains"
+        "text": "Efforts extrêmes qui provoquent l'effet rebond"
       },
       {
         "icon": "close",
@@ -40,24 +40,24 @@
       },
       {
         "icon": "close",
-        "text": "Abandonné après 2 semaines par manque de suivi"
+        "text": "Abandonné seul sans suivi ni accompagnement"
       }
     ],
-    "solution": "LOWIS est différent."
+    "solution": "LOWIS est différent : manger intelligemment, pas moins."
   },
   "features": {
-    "title": "Pourquoi LOWIS change tout",
-    "subtitle": "Un système complet créé pour comprendre votre corps et votre culture",
+    "title": "Manger intelligemment, pas moins",
+    "subtitle": "Optimisez vos calories sans stress. Vos plats préférés, juste mieux combinés.",
     "items": [
       {
         "icon": "restaurant",
-        "title": "Créé pour la cuisine marocaine",
-        "description": "Tajines, couscous, pastilla, harira... Notre base de données inclut plus de 500 plats et ingrédients marocains avec leurs valeurs nutritionnelles exactes."
+        "title": "Vos recettes, mieux combinées",
+        "description": "Tajines, couscous, harira... Gardez vos plats préférés. On vous apprend simplement à varier l'ordre et les combinaisons pour optimiser chaque calorie."
       },
       {
-        "icon": "science",
-        "title": "13 phases scientifiques",
-        "description": "Pas juste des calories. Un système complet qui évolue avec vous, avec évaluation hebdomadaire et ajustement automatique de votre plan."
+        "icon": "psychology",
+        "title": "Apprendre à manger intelligemment",
+        "description": "Pas de restrictions stressantes. Comprenez comment votre corps fonctionne et faites naturellement les bons choix. Un savoir qui reste pour la vie."
       },
       {
         "icon": "monitoring",
@@ -66,8 +66,8 @@
       },
       {
         "icon": "smart_toy",
-        "title": "IA + suivi par experts",
-        "description": "L'IA réagit instantanément. Nos experts ajustent votre parcours chaque semaine. Comme un nutritionniste de poche disponible 24/7."
+        "title": "IA + suivi par experts 24/7",
+        "description": "L'IA s'adapte à votre quotidien. Nos experts ajustent votre parcours chaque semaine. Vous n'êtes jamais seul."
       }
     ]
   },
@@ -237,13 +237,18 @@
     ]
   },
   "moroccanFeatures": {
-    "title": "Créé spécialement pour le Maroc",
-    "subtitle": "Votre cuisine, vos traditions, votre culture",
+    "title": "Vos recettes marocaines, optimisées",
+    "subtitle": "Pas de nouveaux plats à apprendre. Juste une nouvelle façon de les combiner.",
     "items": [
       {
         "icon": "restaurant_menu",
-        "title": "Vos recettes préférées",
-        "description": "Tajine au poulet citron confit, couscous royal, pastilla, harira, rfissa, tanjia... Chaque plat calculé avec précision."
+        "title": "Gardez vos plats préférés",
+        "description": "Tajine, couscous, pastilla, harira, rfissa... On ne vous demande pas de changer ce que vous mangez, mais comment et quand vous le mangez."
+      },
+      {
+        "icon": "swap_horiz",
+        "title": "Variez l'ordre et les combinaisons",
+        "description": "Le secret n'est pas de manger moins. C'est de combiner intelligemment vos aliments et de varier l'ordre pour optimiser chaque repas."
       },
       {
         "icon": "calendar_month",
@@ -251,42 +256,39 @@
         "description": "Plans spéciaux pour le jeûne avec répartition optimale du ftour et du shour. L'app s'adapte à votre rythme."
       },
       {
-        "icon": "groups",
-        "title": "Repas en famille",
-        "description": "On sait que vous partagez les plats. Calculez votre portion même dans un tajine familial."
-      },
-      {
-        "icon": "favorite",
-        "title": "Sans effet rebond",
-        "description": "Pas de régime restrictif impossible à tenir. Un plan réaliste et durable que vous pouvez suivre toute votre vie."
+        "icon": "all_inclusive",
+        "title": "Durable à vie, sans effet rebond",
+        "description": "Les efforts extrêmes ne durent pas. Notre approche réaliste vous permet de maintenir vos résultats pour toujours."
       }
     ],
     "recipesTitle": "Découvrez nos recettes marocaines"
   },
   "howItWorks": {
-    "title": "Comment ça marche?",
-    "subtitle": "En 3 étapes simples",
+    "title": "Comment ça marche au quotidien?",
+    "subtitle": "Simple comme 1-2-3",
     "steps": [
       {
         "number": "1",
-        "title": "Installez l'app",
-        "description": "2 minutes, directement sur votre écran. Pas besoin de l'App Store."
+        "title": "Vous mangez normalement",
+        "description": "Cuisine marocaine incluse. Tajines, couscous, harira... On ne vous demande pas de changer vos plats."
       },
       {
         "number": "2",
-        "title": "Créez votre profil",
-        "description": "Objectifs, habitudes alimentaires, préférences. On apprend à vous connaître."
+        "title": "LOWIS analyse tout",
+        "description": "Vos repas, vos portions, votre sommeil, votre énergie, votre humeur... 17+ indicateurs en temps réel."
       },
       {
         "number": "3",
-        "title": "Suivez votre plan personnalisé",
-        "description": "13 phases qui s'adaptent à vos résultats et vos symptômes. Chaque semaine, on ajuste."
+        "title": "On ajuste ensemble",
+        "description": "L'IA réagit instantanément. Nos experts affinent chaque semaine. Votre plan évolue avec vous."
       }
     ],
-    "cta": "Démarrer l'essai gratuit"
+    "cta": "Démarrer l'essai gratuit",
+    "badge": "PWA : fonctionne sans App Store, mode hors ligne disponible"
   },
   "stats": {
-    "title": "Un programme complet et révolutionnaire",
+    "title": "Un suivi 360° complet",
+    "subtitle": "Nutrition + mental + ajustements = résultats durables",
     "items": [
       {
         "value": "13",
@@ -340,36 +342,36 @@
     "title": "Questions fréquentes",
     "items": [
       {
+        "question": "Dois-je suivre un régime strict?",
+        "answer": "Non. LOWIS vise des habitudes durables: cuisine marocaine, portions intelligentes, ajustements réalistes. Vous mangez vos plats préférés, juste mieux combinés."
+      },
+      {
+        "question": "Et si je craque un jour?",
+        "answer": "C'est prévu. LOWIS corrige immédiatement pour revenir sur la trajectoire — sans culpabiliser. Un écart ne détruit pas vos progrès, on ajuste ensemble."
+      },
+      {
+        "question": "1 kg/semaine minimum, c'est vraiment possible?",
+        "answer": "Oui, c'est notre objectif de base. En mangeant intelligemment (pas moins, juste mieux), la plupart des utilisateurs perdent au moins 1 kg par semaine de façon naturelle et durable."
+      },
+      {
         "question": "L'app reconnaît-elle vraiment les plats marocains?",
-        "answer": "Oui! Notre base de données inclut plus de 500 plats et ingrédients marocains: tajines, couscous, pastilla, harira, msemen, baghrir, et bien plus. Chaque recette a été analysée pour ses valeurs nutritionnelles exactes."
+        "answer": "Oui! Plus de 500 plats marocains: tajines, couscous, pastilla, harira, msemen, baghrir... Chaque recette analysée avec précision. Vous n'avez pas à changer ce que vous mangez."
       },
       {
         "question": "Comment fonctionne l'essai gratuit de 7 jours?",
-        "answer": "Vous avez accès à toutes les fonctionnalités Premium pendant 7 jours, sans donner votre carte bancaire. À la fin de l'essai, vous pouvez continuer à 149 DH/mois ou simplement ne rien faire."
-      },
-      {
-        "question": "Comment suivez-vous 17+ indicateurs de santé?",
-        "answer": "Chaque jour, vous répondez à quelques questions rapides sur votre sommeil, énergie, digestion, humeur, etc. En 30 secondes, on comprend comment vous vous sentez et on adapte vos recommandations."
-      },
-      {
-        "question": "L'app fonctionne-t-elle hors ligne?",
-        "answer": "Absolument. LOWIS est une PWA conçue pour le Maroc où la connexion peut être instable. Tout fonctionne hors ligne et se synchronise automatiquement."
+        "answer": "Accès complet pendant 7 jours, sans carte bancaire. À la fin, continuez à 149 DH/mois ou ne faites rien — votre choix."
       },
       {
         "question": "C'est quoi la différence avec les autres apps?",
-        "answer": "LOWIS combine IA + suivi par de vrais experts. Ce n'est pas juste une calculatrice de calories. C'est un système de 13 phases scientifiques avec évaluation hebdomadaire, adapté à la cuisine marocaine et au Ramadan."
+        "answer": "LOWIS = suivi 360° (nutrition + mental + ajustements). IA instantanée + experts humains chaque semaine. Pas une calculatrice de calories, un vrai accompagnement adapté au Maroc."
       },
       {
         "question": "Comment ça marche pendant le Ramadan?",
-        "answer": "Nous avons des plans spéciaux pour le jeûne avec répartition optimale entre ftour et shour. L'app s'adapte automatiquement à votre rythme pendant le mois sacré."
+        "answer": "Plans spéciaux pour le jeûne avec répartition optimale ftour/shour. L'app s'adapte à votre rythme pendant le mois sacré."
       },
       {
         "question": "Puis-je annuler à tout moment?",
-        "answer": "Oui, annulation en un clic depuis l'app. Vous gardez l'accès jusqu'à la fin de votre période payée."
-      },
-      {
-        "question": "Est-ce que je peux vraiment perdre 1 kg/semaine?",
-        "answer": "C'est l'objectif de notre protocole. Les résultats varient selon votre profil et votre adhérence au programme. Nos experts ajustent votre plan chaque semaine pour optimiser vos résultats."
+        "answer": "Oui, en 1 clic depuis l'app. Vous gardez l'accès jusqu'à la fin de votre période payée."
       }
     ]
   },

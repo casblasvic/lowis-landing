@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "LOWIS - Smart Nutrition Made for Morocco | Goal: 1 kg/week",
-    "description": "Transform your nutrition with LOWIS. 13-phase system with AI + expert monitoring, 17+ health indicators, adapted to Moroccan cuisine. 7-day free trial.",
-    "keywords": "nutrition app morocco, personalized diet, weight loss, moroccan cuisine, health tracking, diet app, 1 kg per week"
+    "title": "LOWIS - Eat Smart | Goal: 1 kg/week minimum",
+    "description": "Learn to eat smart with your Moroccan recipes. No restrictions, just varying the order and combination of foods. AI + experts 24/7. 7-day free trial.",
+    "keywords": "nutrition app morocco, eat smart, sustainable weight loss, moroccan cuisine, no yo-yo effect, 1 kg per week"
   },
   "nav": {
     "features": "Features",
@@ -13,26 +13,26 @@
   },
   "hero": {
     "badge": "Made for Morocco 🇲🇦",
-    "title": "Goal: lose up to",
-    "titleHighlight": "1 kg/week*",
-    "subtitle": "The first 13-phase nutrition system with AI + expert monitoring. Made specifically for Moroccan cuisine.",
+    "title": "Goal: lose",
+    "titleHighlight": "1 kg/week minimum*",
+    "subtitle": "Learn to eat smart with your favorite Moroccan recipes. No stressful restrictions, just varying the order and combination of foods.",
     "cta": "Start 7-day free trial",
     "ctaSecondary": "See demo",
     "noCard": "No credit card required",
     "pricingInfo": "Then 149 DH/month • Cancel anytime",
-    "disclaimer": "*Based on your profile and protocol adherence"
+    "disclaimer": "*Naturally and sustainably, based on your profile"
   },
   "problem": {
-    "title": "Have nutrition apps disappointed you?",
-    "subtitle": "You're not alone. Here's what thousands of users experience:",
+    "title": "Why do classic diets fail?",
+    "subtitle": "It's not your fault. The problem is the approach:",
     "points": [
       {
         "icon": "close",
-        "text": "AI that doesn't recognize tajine or couscous"
+        "text": "Restrictive diets impossible to maintain for more than 2 weeks"
       },
       {
         "icon": "close",
-        "text": "Databases without Moroccan products"
+        "text": "Extreme efforts that cause the yo-yo effect"
       },
       {
         "icon": "close",
@@ -40,24 +40,24 @@
       },
       {
         "icon": "close",
-        "text": "Abandoned after 2 weeks due to lack of follow-up"
+        "text": "Left alone without follow-up or support"
       }
     ],
-    "solution": "LOWIS is different."
+    "solution": "LOWIS is different: eat smart, not less."
   },
   "features": {
-    "title": "Why LOWIS changes everything",
-    "subtitle": "A complete system made to understand your body and your culture",
+    "title": "Eat smart, not less",
+    "subtitle": "Optimize your calories without stress. Your favorite dishes, just better combined.",
     "items": [
       {
         "icon": "restaurant",
-        "title": "Made for Moroccan cuisine",
-        "description": "Tajines, couscous, pastilla, harira... Our database includes over 500 Moroccan dishes and ingredients with exact nutritional values."
+        "title": "Your recipes, better combined",
+        "description": "Tajines, couscous, harira... Keep your favorite dishes. We simply teach you to vary the order and combinations to optimize every calorie."
       },
       {
-        "icon": "science",
-        "title": "13 scientific phases",
-        "description": "Not just calories. A complete system that evolves with you, with weekly evaluation and automatic plan adjustment."
+        "icon": "psychology",
+        "title": "Learn to eat smart",
+        "description": "No stressful restrictions. Understand how your body works and naturally make the right choices. Knowledge that stays for life."
       },
       {
         "icon": "monitoring",
@@ -66,8 +66,8 @@
       },
       {
         "icon": "smart_toy",
-        "title": "AI + expert monitoring",
-        "description": "AI reacts instantly. Our experts adjust your journey every week. Like a pocket nutritionist available 24/7."
+        "title": "AI + experts 24/7",
+        "description": "AI adapts to your daily life. Our experts adjust your journey every week. You're never alone."
       }
     ]
   },
@@ -237,13 +237,18 @@
     ]
   },
   "moroccanFeatures": {
-    "title": "Made specifically for Morocco",
-    "subtitle": "Your cuisine, your traditions, your culture",
+    "title": "Your Moroccan recipes, optimized",
+    "subtitle": "No new dishes to learn. Just a new way to combine them.",
     "items": [
       {
         "icon": "restaurant_menu",
-        "title": "Your favorite recipes",
-        "description": "Chicken tajine with preserved lemon, royal couscous, pastilla, harira, rfissa, tanjia... Each dish calculated with precision."
+        "title": "Keep your favorite dishes",
+        "description": "Tajine, couscous, pastilla, harira, rfissa... We don't ask you to change what you eat, but how and when you eat it."
+      },
+      {
+        "icon": "swap_horiz",
+        "title": "Vary the order and combinations",
+        "description": "The secret isn't eating less. It's intelligently combining your foods and varying the order to optimize every meal."
       },
       {
         "icon": "calendar_month",
@@ -251,42 +256,39 @@
         "description": "Special plans for fasting with optimal distribution of ftour and shour. The app adapts to your rhythm."
       },
       {
-        "icon": "groups",
-        "title": "Family meals",
-        "description": "We know you share dishes. Calculate your portion even from a family tajine."
-      },
-      {
-        "icon": "favorite",
-        "title": "No yo-yo effect",
-        "description": "No impossible restrictive diets. A realistic and sustainable plan you can follow for life."
+        "icon": "all_inclusive",
+        "title": "Sustainable for life, no yo-yo effect",
+        "description": "Extreme efforts don't last. Our realistic approach lets you maintain your results forever."
       }
     ],
     "recipesTitle": "Discover our Moroccan recipes"
   },
   "howItWorks": {
-    "title": "How does it work?",
-    "subtitle": "In 3 simple steps",
+    "title": "How does it work daily?",
+    "subtitle": "Simple as 1-2-3",
     "steps": [
       {
         "number": "1",
-        "title": "Install the app",
-        "description": "2 minutes, directly on your screen. No App Store needed."
+        "title": "You eat normally",
+        "description": "Moroccan cuisine included. Tajines, couscous, harira... We don't ask you to change your dishes."
       },
       {
         "number": "2",
-        "title": "Create your profile",
-        "description": "Goals, eating habits, preferences. We get to know you."
+        "title": "LOWIS analyzes everything",
+        "description": "Your meals, your portions, your sleep, your energy, your mood... 17+ indicators in real time."
       },
       {
         "number": "3",
-        "title": "Follow your personalized plan",
-        "description": "13 phases that adapt to your results and symptoms. Every week, we adjust."
+        "title": "We adjust together",
+        "description": "AI reacts instantly. Our experts refine weekly. Your plan evolves with you."
       }
     ],
-    "cta": "Start free trial"
+    "cta": "Start free trial",
+    "badge": "PWA: works without App Store, offline mode available"
   },
   "stats": {
-    "title": "A complete and revolutionary program",
+    "title": "Complete 360° tracking",
+    "subtitle": "Nutrition + mental + adjustments = lasting results",
     "items": [
       {
         "value": "13",
@@ -340,36 +342,36 @@
     "title": "Frequently Asked Questions",
     "items": [
       {
+        "question": "Do I have to follow a strict diet?",
+        "answer": "No. LOWIS aims for lasting habits: Moroccan cuisine, smart portions, realistic adjustments. You eat your favorite dishes, just better combined."
+      },
+      {
+        "question": "What if I slip up one day?",
+        "answer": "It's expected. LOWIS corrects immediately to get back on track — without guilt. A slip doesn't destroy your progress, we adjust together."
+      },
+      {
+        "question": "Is 1 kg/week minimum really possible?",
+        "answer": "Yes, that's our baseline goal. By eating smart (not less, just better), most users lose at least 1 kg per week naturally and sustainably."
+      },
+      {
         "question": "Does the app really recognize Moroccan dishes?",
-        "answer": "Yes! Our database includes over 500 Moroccan dishes and ingredients: tajines, couscous, pastilla, harira, msemen, baghrir, and much more. Each recipe has been analyzed for its exact nutritional values."
+        "answer": "Yes! Over 500 Moroccan dishes: tajines, couscous, pastilla, harira, msemen, baghrir... Each recipe analyzed precisely. You don't have to change what you eat."
       },
       {
         "question": "How does the 7-day free trial work?",
-        "answer": "You have access to all Premium features for 7 days, without providing your credit card. At the end of the trial, you can continue at 149 DH/month or simply do nothing."
-      },
-      {
-        "question": "How do you track 17+ health indicators?",
-        "answer": "Every day, you answer a few quick questions about your sleep, energy, digestion, mood, etc. In 30 seconds, we understand how you feel and adapt recommendations."
-      },
-      {
-        "question": "Does the app work offline?",
-        "answer": "Absolutely. LOWIS is a PWA designed for Morocco where connection can be unstable. Everything works offline and syncs automatically."
+        "answer": "Full access for 7 days, no credit card. At the end, continue at 149 DH/month or do nothing — your choice."
       },
       {
         "question": "What's the difference with other apps?",
-        "answer": "LOWIS combines AI + real expert monitoring. It's not just a calorie calculator. It's a 13-phase scientific system with weekly evaluation, adapted to Moroccan cuisine and Ramadan."
+        "answer": "LOWIS = 360° tracking (nutrition + mental + adjustments). Instant AI + human experts weekly. Not a calorie calculator, real support adapted to Morocco."
       },
       {
         "question": "How does it work during Ramadan?",
-        "answer": "We have special plans for fasting with optimal distribution between ftour and shour. The app automatically adapts to your rhythm during the holy month."
+        "answer": "Special fasting plans with optimal ftour/shour distribution. The app adapts to your rhythm during the holy month."
       },
       {
         "question": "Can I cancel anytime?",
-        "answer": "Yes, one-click cancellation from the app. You keep access until the end of your paid period."
-      },
-      {
-        "question": "Can I really lose 1 kg/week?",
-        "answer": "That's the goal of our protocol. Results vary based on your profile and program adherence. Our experts adjust your plan every week to optimize your results."
+        "answer": "Yes, 1-click from the app. You keep access until the end of your paid period."
       }
     ]
   },

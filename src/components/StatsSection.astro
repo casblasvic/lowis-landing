@@ -3,6 +3,7 @@ interface Props {
   t: {
     stats: {
       title: string;
+      subtitle?: string;
       items: Array<{
         value: string;
         label: string;
@@ -40,6 +41,11 @@ const bgColors = [
       <h2 class="text-2xl sm:text-3xl font-bold">
         {t.stats.title}
       </h2>
+      {t.stats.subtitle && (
+        <p class="mt-3 text-text-secondary text-lg">
+          {t.stats.subtitle}
+        </p>
+      )}
     </div>
 
     <!-- Stats grid -->
