@@ -20,8 +20,7 @@
     "ctaSecondary": "Voir la démo",
     "noCard": "Sans carte bancaire",
     "pricingInfo": "Puis 149 DH/mois • Annulation en 1 clic",
-    "disclaimer": "*Selon votre profil et adhérence au protocole",
-    "users": "utilisateurs actifs"
+    "disclaimer": "*Selon votre profil et adhérence au protocole"
   },
   "problem": {
     "title": "Les applications de nutrition vous ont déçu?",
@@ -73,35 +72,35 @@
     ]
   },
   "aiExperts": {
-    "badge": "Accompagnement unique",
-    "title": "IA + experts : le duo qui fait la différence",
-    "subtitle": "Pas juste une app. Un vrai accompagnement personnalisé.",
+    "badge": "Vous n'êtes jamais seul",
+    "title": "On s'adapte à VOTRE vie, pas l'inverse",
+    "subtitle": "Les régimes classiques vous donnent un plan et vous laissent seul. Nous, on vous accompagne 24h/24.",
     "items": [
       {
         "icon": "smart_toy",
-        "title": "L'IA réagit instantanément",
+        "title": "L'IA comprend votre quotidien",
         "points": [
-          "Ajuste votre plan au jour le jour",
-          "Analyse vos symptômes en temps réel",
-          "Disponible 24/7"
+          "Mal dormi? On ajuste pour le cortisol élevé",
+          "Période de règles? On adapte pour la rétention",
+          "Stress au travail? On modifie vos recommandations"
         ]
       },
       {
         "icon": "groups",
-        "title": "Nos experts ajustent votre parcours",
+        "title": "Nos experts vous suivent vraiment",
         "points": [
           "Évaluation hebdomadaire personnalisée",
-          "Recommandations adaptées à VOUS",
-          "Suivi de votre progression"
+          "Pas un robot : de vrais nutritionnistes",
+          "On comprend VOS circonstances"
         ]
       },
       {
-        "icon": "trending_up",
-        "title": "Votre plan évolue avec vous",
+        "icon": "all_inclusive",
+        "title": "Zéro effet rebond",
         "points": [
-          "13 phases qui s'adaptent",
-          "Transitions automatiques intelligentes",
-          "Objectif : perdre ET maintenir"
+          "Pas de régime restrictif insoutenable",
+          "Un plan réaliste que vous pouvez tenir",
+          "Objectif : perdre ET maintenir à vie"
         ]
       }
     ]
@@ -257,9 +256,9 @@
         "description": "On sait que vous partagez les plats. Calculez votre portion même dans un tajine familial."
       },
       {
-        "icon": "phone_iphone",
-        "title": "Fonctionne partout",
-        "description": "Mode hors ligne complet. Que vous soyez à Casa, Fès, Marrakech ou dans un douar, ça marche."
+        "icon": "favorite",
+        "title": "Sans effet rebond",
+        "description": "Pas de régime restrictif impossible à tenir. Un plan réaliste et durable que vous pouvez suivre toute votre vie."
       }
     ],
     "recipesTitle": "Découvrez nos recettes marocaines"
@@ -287,27 +286,27 @@
     "cta": "Démarrer l'essai gratuit"
   },
   "stats": {
-    "title": "LOWIS en chiffres",
+    "title": "Un programme complet et révolutionnaire",
     "items": [
       {
-        "value": "1,250+",
-        "label": "Utilisateurs actifs",
-        "icon": "group"
+        "value": "13",
+        "label": "Phases scientifiques",
+        "icon": "science"
       },
       {
-        "value": "3,500+",
-        "label": "Kg perdus",
-        "icon": "trending_down"
+        "value": "17+",
+        "label": "Indicateurs de santé",
+        "icon": "monitoring"
       },
       {
-        "value": "92%",
-        "label": "Satisfaction",
-        "icon": "thumb_up"
+        "value": "500+",
+        "label": "Recettes marocaines",
+        "icon": "restaurant"
       },
       {
-        "value": "100%",
-        "label": "Fonctionne hors ligne",
-        "icon": "wifi_off"
+        "value": "24/7",
+        "label": "Suivi personnalisé",
+        "icon": "support_agent"
       }
     ]
   },

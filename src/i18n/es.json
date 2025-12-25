@@ -20,8 +20,7 @@
     "ctaSecondary": "Ver demo",
     "noCard": "Sin tarjeta bancaria",
     "pricingInfo": "Después 149 DH/mes • Cancela cuando quieras",
-    "disclaimer": "*Según tu perfil y adherencia al protocolo",
-    "users": "usuarios activos"
+    "disclaimer": "*Según tu perfil y adherencia al protocolo"
   },
   "problem": {
     "title": "¿Las apps de nutrición te han decepcionado?",
@@ -73,35 +72,35 @@
     ]
   },
   "aiExperts": {
-    "badge": "Acompañamiento único",
-    "title": "IA + expertos: el dúo que marca la diferencia",
-    "subtitle": "No es solo una app. Es un acompañamiento personalizado real.",
+    "badge": "Nunca estás solo",
+    "title": "Nos adaptamos a TU vida, no al revés",
+    "subtitle": "Las dietas clásicas te dan un plan y te dejan solo. Nosotros te acompañamos 24h al día.",
     "items": [
       {
         "icon": "smart_toy",
-        "title": "La IA reacciona al instante",
+        "title": "La IA entiende tu día a día",
         "points": [
-          "Ajusta tu plan día a día",
-          "Analiza tus síntomas en tiempo real",
-          "Disponible 24/7"
+          "¿Dormiste mal? Ajustamos por el cortisol alto",
+          "¿Período menstrual? Nos adaptamos a la retención",
+          "¿Estrés en el trabajo? Modificamos tus recomendaciones"
         ]
       },
       {
         "icon": "groups",
-        "title": "Nuestros expertos ajustan tu recorrido",
+        "title": "Nuestros expertos te siguen de verdad",
         "points": [
           "Evaluación semanal personalizada",
-          "Recomendaciones adaptadas a TI",
-          "Seguimiento de tu progreso"
+          "No es un robot: nutricionistas reales",
+          "Entendemos TUS circunstancias"
         ]
       },
       {
-        "icon": "trending_up",
-        "title": "Tu plan evoluciona contigo",
+        "icon": "all_inclusive",
+        "title": "Cero efecto rebote",
         "points": [
-          "13 fases que se adaptan",
-          "Transiciones automáticas inteligentes",
-          "Objetivo: perder Y mantener"
+          "Nada de dietas restrictivas insostenibles",
+          "Un plan realista que puedes mantener",
+          "Objetivo: perder Y mantener de por vida"
         ]
       }
     ]
@@ -257,9 +256,9 @@
         "description": "Sabemos que compartes platos. Calcula tu porción incluso en un tajine familiar."
       },
       {
-        "icon": "phone_iphone",
-        "title": "Funciona en todas partes",
-        "description": "Modo sin conexión completo. Ya sea en Casa, Fez, Marrakech o en un douar, funciona."
+        "icon": "favorite",
+        "title": "Sin efecto rebote",
+        "description": "Nada de dietas restrictivas imposibles de mantener. Un plan realista y duradero que puedes seguir toda tu vida."
       }
     ],
     "recipesTitle": "Descubre nuestras recetas marroquíes"
@@ -287,27 +286,27 @@
     "cta": "Iniciar prueba gratuita"
   },
   "stats": {
-    "title": "LOWIS en números",
+    "title": "Un programa completo y revolucionario",
     "items": [
       {
-        "value": "1,250+",
-        "label": "Usuarios activos",
-        "icon": "group"
+        "value": "13",
+        "label": "Fases científicas",
+        "icon": "science"
       },
       {
-        "value": "3,500+",
-        "label": "Kg perdidos",
-        "icon": "trending_down"
+        "value": "17+",
+        "label": "Indicadores de salud",
+        "icon": "monitoring"
       },
       {
-        "value": "92%",
-        "label": "Satisfacción",
-        "icon": "thumb_up"
+        "value": "500+",
+        "label": "Recetas marroquíes",
+        "icon": "restaurant"
       },
       {
-        "value": "100%",
-        "label": "Funciona offline",
-        "icon": "wifi_off"
+        "value": "24/7",
+        "label": "Seguimiento personalizado",
+        "icon": "support_agent"
       }
     ]
   },

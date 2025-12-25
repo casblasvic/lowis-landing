@@ -20,8 +20,7 @@
     "ctaSecondary": "See demo",
     "noCard": "No credit card required",
     "pricingInfo": "Then 149 DH/month • Cancel anytime",
-    "disclaimer": "*Based on your profile and protocol adherence",
-    "users": "active users"
+    "disclaimer": "*Based on your profile and protocol adherence"
   },
   "problem": {
     "title": "Have nutrition apps disappointed you?",
@@ -73,35 +72,35 @@
     ]
   },
   "aiExperts": {
-    "badge": "Unique support",
-    "title": "AI + experts: the duo that makes the difference",
-    "subtitle": "Not just an app. Real personalized support.",
+    "badge": "You're never alone",
+    "title": "We adapt to YOUR life, not the other way around",
+    "subtitle": "Classic diets give you a plan and leave you alone. We support you 24/7.",
     "items": [
       {
         "icon": "smart_toy",
-        "title": "AI reacts instantly",
+        "title": "AI understands your daily life",
         "points": [
-          "Adjusts your plan day by day",
-          "Analyzes your symptoms in real time",
-          "Available 24/7"
+          "Slept badly? We adjust for high cortisol",
+          "On your period? We adapt for retention",
+          "Work stress? We modify your recommendations"
         ]
       },
       {
         "icon": "groups",
-        "title": "Our experts adjust your journey",
+        "title": "Our experts truly follow you",
         "points": [
           "Personalized weekly evaluation",
-          "Recommendations adapted to YOU",
-          "Progress tracking"
+          "Not a bot: real nutritionists",
+          "We understand YOUR circumstances"
         ]
       },
       {
-        "icon": "trending_up",
-        "title": "Your plan evolves with you",
+        "icon": "all_inclusive",
+        "title": "Zero yo-yo effect",
         "points": [
-          "13 phases that adapt",
-          "Smart automatic transitions",
-          "Goal: lose AND maintain"
+          "No unsustainable restrictive diets",
+          "A realistic plan you can maintain",
+          "Goal: lose AND keep it off for life"
         ]
       }
     ]
@@ -257,9 +256,9 @@
         "description": "We know you share dishes. Calculate your portion even from a family tajine."
       },
       {
-        "icon": "phone_iphone",
-        "title": "Works everywhere",
-        "description": "Full offline mode. Whether in Casa, Fes, Marrakech or in a douar, it works."
+        "icon": "favorite",
+        "title": "No yo-yo effect",
+        "description": "No impossible restrictive diets. A realistic and sustainable plan you can follow for life."
       }
     ],
     "recipesTitle": "Discover our Moroccan recipes"
@@ -287,27 +286,27 @@
     "cta": "Start free trial"
   },
   "stats": {
-    "title": "LOWIS in numbers",
+    "title": "A complete and revolutionary program",
     "items": [
       {
-        "value": "1,250+",
-        "label": "Active users",
-        "icon": "group"
+        "value": "13",
+        "label": "Scientific phases",
+        "icon": "science"
       },
       {
-        "value": "3,500+",
-        "label": "Kg lost",
-        "icon": "trending_down"
+        "value": "17+",
+        "label": "Health indicators",
+        "icon": "monitoring"
       },
       {
-        "value": "92%",
-        "label": "Satisfaction",
-        "icon": "thumb_up"
+        "value": "500+",
+        "label": "Moroccan recipes",
+        "icon": "restaurant"
       },
       {
-        "value": "100%",
-        "label": "Works offline",
-        "icon": "wifi_off"
+        "value": "24/7",
+        "label": "Personalized support",
+        "icon": "support_agent"
       }
     ]
   },
