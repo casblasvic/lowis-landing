@@ -186,18 +186,21 @@ const recipes = [
   }
 
   .phone-frame {
-    @apply relative bg-gray-900 rounded-[3rem] p-2 shadow-2xl;
+    @apply relative rounded-[3rem] p-2 shadow-2xl;
+    background-color: #111827;
     width: 280px;
     height: 580px;
   }
 
   .phone-frame::before {
     content: '';
-    @apply absolute inset-0 rounded-[3rem] border-4 border-gray-700;
+    @apply absolute inset-0 rounded-[3rem];
+    border: 4px solid #374151;
   }
 
   .phone-notch {
-    @apply absolute top-2 left-1/2 -translate-x-1/2 w-24 h-6 bg-black rounded-full z-20;
+    @apply absolute top-2 left-1/2 -translate-x-1/2 w-24 h-6 rounded-full z-20;
+    background-color: #000000;
   }
 
   .phone-screen {
