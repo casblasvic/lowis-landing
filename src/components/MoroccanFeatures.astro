@@ -177,16 +177,28 @@ const moroccanRecipes = [
     overflow: hidden;
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    touch-action: pan-x;
+    cursor: grab;
+  }
+
+  .recipe-carousel-container:active {
+    cursor: grabbing;
   }
 
   .recipe-carousel {
     display: flex;
     gap: 1rem;
     animation: scroll 30s linear infinite;
+    will-change: transform;
   }
 
   .recipe-carousel:hover {
     animation-play-state: paused;
+  }
+
+  .recipe-carousel.dragging {
+    animation: none;
+    transition: none;
   }
 
   @keyframes scroll {
@@ -269,3 +281,129 @@ const moroccanRecipes = [
     }
   }
 </style>
+
+<script>
+  // Touch/swipe support for recipe carousel
+  const container = document.querySelector('.recipe-carousel-container');
+  const carousel = document.querySelector('.recipe-carousel');
+
+  if (container && carousel) {
+    let isDragging = false;
+    let startX = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+    let animationID = 0;
+
+    // Get the current transform value from animation
+    function getCurrentTransform() {
+      const style = window.getComputedStyle(carousel);
+      const matrix = new DOMMatrix(style.transform);
+      return matrix.m41; // translateX value
+    }
+
+    // Touch events
+    container.addEventListener('touchstart', (e) => {
+      isDragging = true;
+      startX = e.touches[0].clientX;
+      prevTranslate = getCurrentTransform();
+      carousel.classList.add('dragging');
+      carousel.style.transform = `translateX(${prevTranslate}px)`;
+    }, { passive: true });
+
+    container.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      const currentX = e.touches[0].clientX;
+      const diff = currentX - startX;
+      currentTranslate = prevTranslate + diff;
+
+      // Get carousel width for boundaries
+      const carouselWidth = carousel.scrollWidth / 2;
+
+      // Wrap around for infinite feel
+      if (currentTranslate > 0) {
+        currentTranslate = -carouselWidth + currentTranslate;
+        prevTranslate = currentTranslate - diff;
+      } else if (currentTranslate < -carouselWidth) {
+        currentTranslate = currentTranslate + carouselWidth;
+        prevTranslate = currentTranslate - diff;
+      }
+
+      carousel.style.transform = `translateX(${currentTranslate}px)`;
+    }, { passive: true });
+
+    container.addEventListener('touchend', () => {
+      isDragging = false;
+      carousel.classList.remove('dragging');
+
+      // Resume animation from current position
+      const carouselWidth = carousel.scrollWidth / 2;
+      const progress = Math.abs(currentTranslate) / carouselWidth;
+      const remainingDuration = 30 * (1 - progress);
+
+      carousel.style.animation = 'none';
+      carousel.offsetHeight; // Force reflow
+      carousel.style.transform = `translateX(${currentTranslate}px)`;
+      carousel.style.animation = `scroll ${remainingDuration}s linear infinite`;
+    });
+
+    // Mouse events for desktop drag
+    container.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      startX = e.clientX;
+      prevTranslate = getCurrentTransform();
+      carousel.classList.add('dragging');
+      carousel.style.transform = `translateX(${prevTranslate}px)`;
+      e.preventDefault();
+    });
+
+    container.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      const currentX = e.clientX;
+      const diff = currentX - startX;
+      currentTranslate = prevTranslate + diff;
+
+      const carouselWidth = carousel.scrollWidth / 2;
+
+      if (currentTranslate > 0) {
+        currentTranslate = -carouselWidth + currentTranslate;
+        prevTranslate = currentTranslate - diff;
+      } else if (currentTranslate < -carouselWidth) {
+        currentTranslate = currentTranslate + carouselWidth;
+        prevTranslate = currentTranslate - diff;
+      }
+
+      carousel.style.transform = `translateX(${currentTranslate}px)`;
+    });
+
+    container.addEventListener('mouseup', () => {
+      if (!isDragging) return;
+      isDragging = false;
+      carousel.classList.remove('dragging');
+
+      const carouselWidth = carousel.scrollWidth / 2;
+      const progress = Math.abs(currentTranslate) / carouselWidth;
+      const remainingDuration = 30 * (1 - progress);
+
+      carousel.style.animation = 'none';
+      carousel.offsetHeight;
+      carousel.style.transform = `translateX(${currentTranslate}px)`;
+      carousel.style.animation = `scroll ${remainingDuration}s linear infinite`;
+    });
+
+    container.addEventListener('mouseleave', () => {
+      if (isDragging) {
+        isDragging = false;
+        carousel.classList.remove('dragging');
+
+        const carouselWidth = carousel.scrollWidth / 2;
+        const progress = Math.abs(currentTranslate) / carouselWidth;
+        const remainingDuration = 30 * (1 - progress);
+
+        carousel.style.animation = 'none';
+        carousel.offsetHeight;
+        carousel.style.transform = `translateX(${currentTranslate}px)`;
+        carousel.style.animation = `scroll ${remainingDuration}s linear infinite`;
+      }
+    });
+  }
+</script>
