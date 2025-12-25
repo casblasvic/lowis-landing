@@ -70,6 +70,44 @@
       }
     ]
   },
+  "audioProgram": {
+    "badge": "Mind & Body Approach",
+    "title": "Nutrition is also in your head",
+    "subtitle": "LOWIS combines nutritional tracking with an audio program designed to transform your relationship with food",
+    "description": "80% of diet failures are mental. That's why we created a complete audio program that works on psychological aspects alongside your nutritional tracking.",
+    "features": [
+      {
+        "icon": "psychology",
+        "title": "Mental reprogramming",
+        "description": "Audios designed to change your unconscious habits around food, compulsions and emotional eating."
+      },
+      {
+        "icon": "self_improvement",
+        "title": "Guided meditations",
+        "description": "Reduce stress and anxiety that trigger cravings. Find your inner calm."
+      },
+      {
+        "icon": "school",
+        "title": "Nutritional education",
+        "description": "Understand how your body works. The more you know, the better choices you naturally make."
+      },
+      {
+        "icon": "emoji_events",
+        "title": "Daily motivation",
+        "description": "One audio per day integrated into your routine. Progress badges and consistency tracking."
+      }
+    ],
+    "howItWorks": {
+      "title": "How it works",
+      "steps": [
+        "Each day a new audio unlocks in your program",
+        "Listen for 10-15 minutes (while cooking, walking...)",
+        "Content adapts to your current LOWIS phase",
+        "Your progress is saved even offline"
+      ]
+    },
+    "cta": "Discover the audio program"
+  },
   "healthTracking": {
     "title": "We track what really matters",
     "subtitle": "12 health indicators for complete personalization",

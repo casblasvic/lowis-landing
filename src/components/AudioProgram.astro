@@ -1,0 +1,178 @@
+---
+interface Props {
+  t: {
+    audioProgram: {
+      badge: string;
+      title: string;
+      subtitle: string;
+      description: string;
+      features: Array<{
+        icon: string;
+        title: string;
+        description: string;
+      }>;
+      howItWorks: {
+        title: string;
+        steps: string[];
+      };
+      cta: string;
+    };
+  };
+}
+
+const { t } = Astro.props;
+---
+
+<section id="audio-program" class="py-20 relative overflow-hidden">
+  <!-- Background -->
+  <div class="absolute inset-0">
+    <div class="absolute inset-0 bg-gradient-to-b from-dark-bg via-purple-900/10 to-dark-bg"></div>
+    <!-- Decorative circles -->
+    <div class="absolute top-20 left-10 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 right-10 w-80 h-80 bg-primary-orange/10 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="section-container relative z-10">
+    <!-- Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full mb-6">
+        <span class="material-symbols-outlined text-purple-400">headphones</span>
+        <span class="text-purple-400 font-medium">{t.audioProgram.badge}</span>
+      </div>
+
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+        {t.audioProgram.title}
+      </h2>
+
+      <p class="text-text-secondary text-lg mb-6">
+        {t.audioProgram.subtitle}
+      </p>
+
+      <p class="text-text-muted">
+        {t.audioProgram.description}
+      </p>
+    </div>
+
+    <!-- Main content grid -->
+    <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+      <!-- Features -->
+      <div class="space-y-6">
+        {t.audioProgram.features.map((feature, index) => (
+          <div
+            class="group flex gap-4 p-4 rounded-2xl bg-dark-surface/50 border border-dark-border hover:border-purple-500/50 transition-all duration-300"
+          >
+            <div class="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-purple-500/20 to-primary-orange/20 rounded-xl shrink-0">
+              <span class="material-symbols-outlined text-2xl text-purple-400">{feature.icon}</span>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-1 group-hover:text-purple-400 transition-colors">
+                {feature.title}
+              </h3>
+              <p class="text-text-secondary text-sm leading-relaxed">
+                {feature.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Audio player mockup -->
+      <div class="relative">
+        <div class="audio-player-mockup">
+          <!-- Glowing background -->
+          <div class="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-primary-orange/20 rounded-3xl blur-xl"></div>
+
+          <!-- Player card -->
+          <div class="relative bg-dark-surface border border-dark-border rounded-3xl p-6 sm:p-8">
+            <!-- Album art placeholder -->
+            <div class="aspect-square max-w-[280px] mx-auto mb-6 rounded-2xl bg-gradient-to-br from-purple-600 to-primary-orange flex items-center justify-center overflow-hidden">
+              <div class="text-center text-white p-4">
+                <span class="material-symbols-outlined text-6xl mb-2">self_improvement</span>
+                <p class="font-semibold">Session 12</p>
+                <p class="text-sm opacity-80">Reprogrammation</p>
+              </div>
+            </div>
+
+            <!-- Track info -->
+            <div class="text-center mb-6">
+              <h4 class="font-bold text-lg">Libérez-vous des compulsions</h4>
+              <p class="text-text-muted text-sm">Programme LOWIS - Phase D2</p>
+            </div>
+
+            <!-- Progress bar -->
+            <div class="mb-4">
+              <div class="h-1 bg-dark-border rounded-full overflow-hidden">
+                <div class="h-full w-3/5 bg-gradient-to-r from-purple-500 to-primary-orange rounded-full"></div>
+              </div>
+              <div class="flex justify-between text-xs text-text-muted mt-1">
+                <span>8:24</span>
+                <span>14:00</span>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="flex items-center justify-center gap-6">
+              <button class="text-text-muted hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-2xl">replay_10</span>
+              </button>
+              <button class="w-14 h-14 bg-gradient-to-r from-purple-500 to-primary-orange rounded-full flex items-center justify-center hover:scale-105 transition-transform">
+                <span class="material-symbols-outlined text-3xl text-white">pause</span>
+              </button>
+              <button class="text-text-muted hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-2xl">forward_10</span>
+              </button>
+            </div>
+
+            <!-- Playback speed badge -->
+            <div class="absolute top-4 right-4 px-2 py-1 bg-purple-500/20 rounded-full">
+              <span class="text-xs text-purple-400 font-medium">1.25x</span>
+            </div>
+
+            <!-- Completion badge -->
+            <div class="absolute top-4 left-4 flex items-center gap-1 px-2 py-1 bg-green-500/20 rounded-full">
+              <span class="material-symbols-outlined text-sm text-green-400">local_fire_department</span>
+              <span class="text-xs text-green-400 font-medium">11 jours</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="max-w-3xl mx-auto">
+      <h3 class="text-xl font-bold text-center mb-8">{t.audioProgram.howItWorks.title}</h3>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {t.audioProgram.howItWorks.steps.map((step, index) => (
+          <div class="relative">
+            <div class="flex items-start gap-3 p-4 bg-dark-surface/30 rounded-xl border border-dark-border">
+              <div class="w-8 h-8 bg-purple-500/20 rounded-full flex items-center justify-center shrink-0">
+                <span class="text-purple-400 font-bold text-sm">{index + 1}</span>
+              </div>
+              <p class="text-sm text-text-secondary">{step}</p>
+            </div>
+            {index < t.audioProgram.howItWorks.steps.length - 1 && (
+              <div class="hidden lg:block absolute top-1/2 -right-2 transform -translate-y-1/2">
+                <span class="material-symbols-outlined text-dark-border">chevron_right</span>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .audio-player-mockup {
+    position: relative;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .audio-player-mockup {
+      max-width: 320px;
+    }
+  }
+</style>
