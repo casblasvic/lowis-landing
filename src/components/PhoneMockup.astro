@@ -41,31 +41,31 @@ const recipes = [
       <div class="status-bar">
         <span class="time">14:32</span>
         <div class="status-icons">
-          <span class="material-symbols-outlined text-xs">signal_cellular_4_bar</span>
-          <span class="material-symbols-outlined text-xs">wifi</span>
-          <span class="material-symbols-outlined text-xs">battery_full</span>
+          <span class="material-symbols-outlined status-icon">signal_cellular_4_bar</span>
+          <span class="material-symbols-outlined status-icon">wifi</span>
+          <span class="material-symbols-outlined status-icon">battery_full</span>
         </div>
       </div>
 
       <!-- App header -->
       <div class="app-header">
-        <div class="flex items-center gap-2">
-          <Logo class="h-6 w-6" />
-          <span class="font-bold text-sm gradient-text">LOWIS</span>
+        <div class="header-left">
+          <Logo class="header-logo" />
+          <span class="header-brand gradient-text">LOWIS</span>
         </div>
         <div class="phase-badge">
-          <span class="text-[10px] font-medium text-primary-orange">{t.demo.phase}</span>
+          <span class="phase-text">{t.demo.phase}</span>
         </div>
       </div>
 
       <!-- AI Message -->
       <div class="ai-message">
         <div class="ai-avatar">
-          <span class="material-symbols-outlined text-white text-sm">smart_toy</span>
+          <span class="material-symbols-outlined ai-icon">smart_toy</span>
         </div>
         <div class="ai-bubble">
           <p class="ai-greeting">
-            {t.demo.aiMessage}, <span class="user-name font-semibold text-primary-orange">Rania</span>! 🎉
+            {t.demo.aiMessage}, <span class="user-name">{t.demo.names[0]}</span>! 🎉
           </p>
           <p class="ai-subtext">Vous avez atteint 85% de vos objectifs</p>
         </div>
@@ -75,7 +75,7 @@ const recipes = [
       <div class="progress-section">
         <div class="progress-ring-container">
           <!-- Calories ring -->
-          <div class="progress-ring" data-progress="85">
+          <div class="progress-ring main">
             <svg viewBox="0 0 36 36" class="ring-svg">
               <path
                 class="ring-bg"
@@ -94,7 +94,7 @@ const recipes = [
           </div>
 
           <!-- Protein ring -->
-          <div class="progress-ring small" data-progress="72">
+          <div class="progress-ring small">
             <svg viewBox="0 0 36 36" class="ring-svg">
               <path
                 class="ring-bg"
@@ -112,7 +112,7 @@ const recipes = [
           </div>
 
           <!-- Water ring -->
-          <div class="progress-ring small" data-progress="60">
+          <div class="progress-ring small">
             <svg viewBox="0 0 36 36" class="ring-svg">
               <path
                 class="ring-bg"
@@ -141,7 +141,7 @@ const recipes = [
       <div class="recipes-section">
         <div class="recipes-header">
           <span class="recipes-title">{t.demo.recipes}</span>
-          <span class="material-symbols-outlined text-text-muted text-sm">arrow_forward</span>
+          <span class="material-symbols-outlined recipes-arrow">arrow_forward</span>
         </div>
 
         <div class="recipes-list">
@@ -152,7 +152,7 @@ const recipes = [
                 <span class="recipe-name">{recipe.name}</span>
                 <span class="recipe-calories">{recipe.calories} kcal</span>
               </div>
-              <span class="material-symbols-outlined text-primary-orange text-lg">add_circle</span>
+              <span class="material-symbols-outlined recipe-add">add_circle</span>
             </div>
           ))}
         </div>
@@ -182,85 +182,187 @@ const recipes = [
 
 <style>
   .phone-mockup-container {
-    @apply relative flex justify-center items-center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .phone-frame {
-    @apply relative rounded-[3rem] p-2 shadow-2xl;
+    position: relative;
     background-color: #111827;
+    border-radius: 3rem;
+    padding: 0.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     width: 280px;
     height: 580px;
   }
 
   .phone-frame::before {
     content: '';
-    @apply absolute inset-0 rounded-[3rem];
+    position: absolute;
+    inset: 0;
+    border-radius: 3rem;
     border: 4px solid #374151;
   }
 
   .phone-notch {
-    @apply absolute top-2 left-1/2 -translate-x-1/2 w-24 h-6 rounded-full z-20;
+    position: absolute;
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6rem;
+    height: 1.5rem;
     background-color: #000000;
+    border-radius: 9999px;
+    z-index: 20;
   }
 
   .phone-screen {
-    @apply relative w-full h-full bg-dark-bg rounded-[2.5rem] overflow-hidden flex flex-col;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #0F0F0F;
+    border-radius: 2.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
   .status-bar {
-    @apply flex justify-between items-center px-6 pt-2 pb-1 text-[10px] text-white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem 0.25rem;
+    font-size: 10px;
+    color: white;
   }
 
   .status-icons {
-    @apply flex items-center gap-1;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .status-icon {
+    font-size: 12px;
   }
 
   .app-header {
-    @apply flex justify-between items-center px-4 py-2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .header-logo {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .header-brand {
+    font-weight: 700;
+    font-size: 14px;
+    background: linear-gradient(135deg, #F97316, #DC2626);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .phase-badge {
-    @apply px-2 py-0.5 bg-primary-orange/20 rounded-full;
+    padding: 0.125rem 0.5rem;
+    background-color: rgba(249, 115, 22, 0.2);
+    border-radius: 9999px;
+  }
+
+  .phase-text {
+    font-size: 10px;
+    font-weight: 500;
+    color: #F97316;
   }
 
   .ai-message {
-    @apply flex items-start gap-2 px-4 py-2;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
   }
 
   .ai-avatar {
-    @apply w-8 h-8 flex items-center justify-center bg-gradient-to-br from-primary-orange to-primary-red rounded-full flex-shrink-0;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #F97316, #DC2626);
+    border-radius: 9999px;
+    flex-shrink: 0;
+  }
+
+  .ai-icon {
+    color: white;
+    font-size: 14px;
   }
 
   .ai-bubble {
-    @apply flex-1 bg-dark-surface rounded-2xl rounded-tl-sm p-3;
+    flex: 1;
+    background-color: #1A1A1A;
+    border-radius: 1rem;
+    border-top-left-radius: 0.125rem;
+    padding: 0.75rem;
   }
 
   .ai-greeting {
-    @apply text-xs text-white mb-0.5;
+    font-size: 12px;
+    color: white;
+    margin-bottom: 0.125rem;
+  }
+
+  .user-name {
+    font-weight: 600;
+    color: #F97316;
   }
 
   .ai-subtext {
-    @apply text-[10px] text-text-muted;
+    font-size: 10px;
+    color: #737373;
   }
 
   .progress-section {
-    @apply px-4 py-3;
+    padding: 0.75rem 1rem;
   }
 
   .progress-ring-container {
-    @apply flex justify-center items-end gap-3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.75rem;
   }
 
   .progress-ring {
-    @apply relative w-20 h-20;
+    position: relative;
+  }
+
+  .progress-ring.main {
+    width: 5rem;
+    height: 5rem;
   }
 
   .progress-ring.small {
-    @apply w-14 h-14;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .ring-svg {
-    @apply w-full h-full -rotate-90;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
   }
 
   .ring-bg {
@@ -289,83 +391,143 @@ const recipes = [
   }
 
   .ring-label {
-    @apply absolute inset-0 flex flex-col items-center justify-center;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .ring-label.small {
-    @apply text-xs;
+    font-size: 12px;
   }
 
   .ring-value {
-    @apply text-sm font-bold text-white;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
   }
 
   .ring-label.small .ring-value {
-    @apply text-xs;
+    font-size: 12px;
   }
 
   .ring-unit {
-    @apply text-[8px] text-text-muted;
+    font-size: 8px;
+    color: #737373;
   }
 
   .progress-labels {
-    @apply flex justify-center gap-6 mt-2 text-[10px] text-text-muted;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    font-size: 10px;
+    color: #737373;
   }
 
   .recipes-section {
-    @apply flex-1 px-4 py-2 overflow-hidden;
+    flex: 1;
+    padding: 0.5rem 1rem;
+    overflow: hidden;
   }
 
   .recipes-header {
-    @apply flex justify-between items-center mb-2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
   }
 
   .recipes-title {
-    @apply text-xs font-semibold text-white;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .recipes-arrow {
+    font-size: 14px;
+    color: #737373;
   }
 
   .recipes-list {
-    @apply space-y-2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .recipe-card {
-    @apply flex items-center gap-2 p-2 bg-dark-surface rounded-xl;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: #1A1A1A;
+    border-radius: 0.75rem;
   }
 
   .recipe-image {
-    @apply w-10 h-10 rounded-lg object-cover;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
   }
 
   .recipe-info {
-    @apply flex-1 flex flex-col;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 
   .recipe-name {
-    @apply text-[11px] font-medium text-white;
+    font-size: 11px;
+    font-weight: 500;
+    color: white;
   }
 
   .recipe-calories {
-    @apply text-[9px] text-text-muted;
+    font-size: 9px;
+    color: #737373;
+  }
+
+  .recipe-add {
+    font-size: 18px;
+    color: #F97316;
   }
 
   .bottom-nav {
-    @apply flex justify-around items-center px-4 py-3 bg-dark-surface/80 backdrop-blur border-t border-dark-border;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: rgba(26, 26, 26, 0.8);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid #2A2A2A;
   }
 
   .nav-item {
-    @apply w-10 h-10 flex items-center justify-center rounded-full text-text-muted;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    color: #737373;
   }
 
   .nav-item.active {
-    @apply text-primary-orange;
+    color: #F97316;
   }
 
   .nav-item.scan {
-    @apply bg-gradient-to-br from-primary-orange to-primary-red text-white -mt-4 shadow-lg shadow-primary-orange/30;
+    background: linear-gradient(135deg, #F97316, #DC2626);
+    color: white;
+    margin-top: -1rem;
+    box-shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.3);
   }
 
   .nav-item .material-symbols-outlined {
-    @apply text-xl;
+    font-size: 20px;
   }
 </style>
 
