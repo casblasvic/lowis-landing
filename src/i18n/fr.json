@@ -1,24 +1,26 @@
 {
   "meta": {
-    "title": "LOWIS - Nutrition Intelligente Créée pour le Maroc | Votre Parcours Personnalisé",
-    "description": "Transformez votre alimentation avec LOWIS. Système en 13 phases créé spécialement pour la cuisine marocaine, suivi de 12 indicateurs de santé, fonctionne hors ligne. Commencez gratuitement.",
-    "keywords": "application nutrition maroc, régime personnalisé, perte de poids, cuisine marocaine, suivi santé, application minceur, tajine calories"
+    "title": "LOWIS - Nutrition Intelligente Créée pour le Maroc | Objectif 1 kg/semaine",
+    "description": "Transformez votre alimentation avec LOWIS. Système en 13 phases avec IA + suivi par experts, 17+ indicateurs de santé, adapté à la cuisine marocaine. Essai gratuit 7 jours.",
+    "keywords": "application nutrition maroc, régime personnalisé, perte de poids, cuisine marocaine, suivi santé, application minceur, tajine calories, 1 kg par semaine"
   },
   "nav": {
     "features": "Fonctionnalités",
     "howItWorks": "Comment ça marche",
     "pricing": "Tarifs",
     "faq": "FAQ",
-    "cta": "Commencer"
+    "cta": "Essai 7 jours"
   },
   "hero": {
     "badge": "Créé pour le Maroc 🇲🇦",
-    "title": "Arrêtez de compter les calories.",
-    "titleHighlight": "Commencez à transformer votre vie.",
-    "subtitle": "Le premier système nutritionnel en 13 phases créé spécialement pour votre cuisine, vos traditions et votre corps.",
-    "cta": "Commencer gratuitement",
+    "title": "Objectif : perdre jusqu'à",
+    "titleHighlight": "1 kg/semaine*",
+    "subtitle": "Le premier système nutritionnel en 13 phases avec IA + suivi par nos experts. Créé spécialement pour la cuisine marocaine.",
+    "cta": "Démarrer l'essai gratuit 7 jours",
     "ctaSecondary": "Voir la démo",
-    "noCard": "Aucune carte de crédit requise",
+    "noCard": "Sans carte bancaire",
+    "pricingInfo": "Puis 149 DH/mois • Annulation en 1 clic",
+    "disclaimer": "*Selon votre profil et adhérence au protocole",
     "users": "utilisateurs actifs"
   },
   "problem": {
@@ -60,13 +62,47 @@
       },
       {
         "icon": "monitoring",
-        "title": "12 indicateurs de santé",
-        "description": "Sommeil, énergie, hydratation, ballonnements, qualité de digestion, humeur, stress... Nous suivons tout ce qui affecte votre métabolisme."
+        "title": "17+ indicateurs de santé",
+        "description": "Sommeil, énergie, hydratation, digestion, humeur, stress, cycle féminin... Nous suivons tout ce qui affecte votre métabolisme."
       },
       {
         "icon": "smart_toy",
-        "title": "Assistant IA personnalisé",
-        "description": "Conseils adaptés à VOS symptômes, VOS habitudes et VOTRE progression. Comme un nutritionniste de poche disponible 24/7."
+        "title": "IA + suivi par experts",
+        "description": "L'IA réagit instantanément. Nos experts ajustent votre parcours chaque semaine. Comme un nutritionniste de poche disponible 24/7."
+      }
+    ]
+  },
+  "aiExperts": {
+    "badge": "Accompagnement unique",
+    "title": "IA + experts : le duo qui fait la différence",
+    "subtitle": "Pas juste une app. Un vrai accompagnement personnalisé.",
+    "items": [
+      {
+        "icon": "smart_toy",
+        "title": "L'IA réagit instantanément",
+        "points": [
+          "Ajuste votre plan au jour le jour",
+          "Analyse vos symptômes en temps réel",
+          "Disponible 24/7"
+        ]
+      },
+      {
+        "icon": "groups",
+        "title": "Nos experts ajustent votre parcours",
+        "points": [
+          "Évaluation hebdomadaire personnalisée",
+          "Recommandations adaptées à VOUS",
+          "Suivi de votre progression"
+        ]
+      },
+      {
+        "icon": "trending_up",
+        "title": "Votre plan évolue avec vous",
+        "points": [
+          "13 phases qui s'adaptent",
+          "Transitions automatiques intelligentes",
+          "Objectif : perdre ET maintenir"
+        ]
       }
     ]
   },
@@ -109,8 +145,65 @@
     "cta": "Découvrir le programme audio"
   },
   "healthTracking": {
-    "title": "Nous suivons ce qui compte vraiment",
-    "subtitle": "12 indicateurs de santé pour une personnalisation complète",
+    "badge": "Suivi holistique complet",
+    "title": "17+ indicateurs pour une personnalisation totale",
+    "subtitle": "Nous analysons tout ce qui affecte votre métabolisme et votre bien-être",
+    "categories": [
+      {
+        "icon": "bedtime",
+        "title": "Sommeil & Énergie",
+        "description": "Durée, qualité du sommeil et niveau d'énergie quotidien",
+        "count": 2
+      },
+      {
+        "icon": "local_drink",
+        "title": "Hydratation",
+        "description": "Objectifs personnalisés et suivi de votre consommation d'eau",
+        "count": 1
+      },
+      {
+        "icon": "psychology",
+        "title": "Humeur & Stress",
+        "description": "État émotionnel qui impacte directement votre métabolisme",
+        "count": 2
+      },
+      {
+        "icon": "gastroenterology",
+        "title": "Digestion",
+        "description": "Constipation, diarrhée, ballonnements, nausées, acidité",
+        "count": 5
+      },
+      {
+        "icon": "monitor_weight",
+        "title": "Poids & Mesures",
+        "description": "Poids, IMC, mensurations (abdomen, hanches, bras, cuisses)",
+        "count": 3
+      },
+      {
+        "icon": "directions_run",
+        "title": "Activité physique",
+        "description": "Type d'exercice, durée, calories brûlées, fréquence cardiaque",
+        "count": 1
+      },
+      {
+        "icon": "healing",
+        "title": "Douleurs",
+        "description": "Maux de tête, douleurs musculaires et articulaires",
+        "count": 2
+      },
+      {
+        "icon": "female",
+        "title": "Cycle féminin",
+        "description": "Suivi complet du cycle menstruel et son impact sur votre plan",
+        "count": 2
+      },
+      {
+        "icon": "photo_camera",
+        "title": "Photos de progrès",
+        "description": "Visualisez votre transformation (face, profil, dos)",
+        "count": 1
+      }
+    ],
     "items": [
       {
         "icon": "bedtime",
@@ -138,9 +231,9 @@
         "description": "Identifier les aliments qui vous causent des problèmes pour les éviter intelligemment."
       },
       {
-        "icon": "nutrition",
-        "title": "Macros & Micronutriments",
-        "description": "Protéines, glucides, lipides + vitamines et minéraux essentiels. Tout est équilibré."
+        "icon": "female",
+        "title": "Cycle féminin",
+        "description": "Votre cycle affecte votre métabolisme. Nous adaptons votre plan en fonction de votre phase."
       }
     ]
   },
@@ -191,48 +284,57 @@
         "description": "13 phases qui s'adaptent à vos résultats et vos symptômes. Chaque semaine, on ajuste."
       }
     ],
-    "cta": "Commencer maintenant"
+    "cta": "Démarrer l'essai gratuit"
   },
   "stats": {
-    "users": "Utilisateurs actifs",
-    "kgLost": "Kg perdus",
-    "satisfaction": "Satisfaction",
-    "offline": "Fonctionne hors ligne"
+    "title": "LOWIS en chiffres",
+    "items": [
+      {
+        "value": "1,250+",
+        "label": "Utilisateurs actifs",
+        "icon": "group"
+      },
+      {
+        "value": "3,500+",
+        "label": "Kg perdus",
+        "icon": "trending_down"
+      },
+      {
+        "value": "92%",
+        "label": "Satisfaction",
+        "icon": "thumb_up"
+      },
+      {
+        "value": "100%",
+        "label": "Fonctionne hors ligne",
+        "icon": "wifi_off"
+      }
+    ]
   },
   "pricing": {
-    "title": "Commencez gratuitement",
-    "subtitle": "Pas de surprises, pas d'engagement",
-    "free": {
-      "name": "Gratuit",
-      "price": "0",
-      "period": "pour toujours",
-      "features": [
-        "Scan IA des repas",
-        "Base de données marocaine",
-        "Suivi de poids et mesures",
-        "Mode hors ligne complet",
-        "Historique 7 jours"
-      ],
-      "cta": "Essayer gratuitement",
-      "popular": false
-    },
+    "title": "Essayez LOWIS pendant 7 jours",
+    "subtitle": "Sans engagement, sans carte bancaire",
     "premium": {
       "name": "Premium",
-      "price": "99",
+      "badge": "Essai gratuit 7 jours",
+      "price": "0",
+      "priceAfter": "149",
       "period": "DH/mois",
+      "trialText": "0 DH pendant 7 jours",
+      "afterTrialText": "Puis 149 DH/mois",
       "features": [
-        "Tout du plan Gratuit",
         "13 phases LOWIS complètes",
-        "12 indicateurs de santé",
-        "Plans repas personnalisés",
-        "Assistant IA 24/7",
+        "17+ indicateurs de santé",
+        "Plans repas personnalisés marocains",
+        "IA + suivi par nos experts",
+        "Programme audio corps & esprit",
         "Évaluation hebdomadaire",
-        "Audios de motivation",
-        "Historique illimité"
+        "Mode hors ligne complet",
+        "Annulation en 1 clic"
       ],
       "cta": "Démarrer l'essai gratuit",
       "popular": true,
-      "trial": "7 jours d'essai gratuit"
+      "guarantee": "Satisfait ou remboursé"
     }
   },
   "faq": {
@@ -243,7 +345,11 @@
         "answer": "Oui! Notre base de données inclut plus de 500 plats et ingrédients marocains: tajines, couscous, pastilla, harira, msemen, baghrir, et bien plus. Chaque recette a été analysée pour ses valeurs nutritionnelles exactes."
       },
       {
-        "question": "Comment suivez-vous 12 indicateurs de santé?",
+        "question": "Comment fonctionne l'essai gratuit de 7 jours?",
+        "answer": "Vous avez accès à toutes les fonctionnalités Premium pendant 7 jours, sans donner votre carte bancaire. À la fin de l'essai, vous pouvez continuer à 149 DH/mois ou simplement ne rien faire."
+      },
+      {
+        "question": "Comment suivez-vous 17+ indicateurs de santé?",
         "answer": "Chaque jour, vous répondez à quelques questions rapides sur votre sommeil, énergie, digestion, humeur, etc. En 30 secondes, on comprend comment vous vous sentez et on adapte vos recommandations."
       },
       {
@@ -251,8 +357,8 @@
         "answer": "Absolument. LOWIS est une PWA conçue pour le Maroc où la connexion peut être instable. Tout fonctionne hors ligne et se synchronise automatiquement."
       },
       {
-        "question": "C'est vraiment gratuit pour commencer?",
-        "answer": "Oui! Le plan gratuit vous donne accès au scan IA, à la base de données marocaine et au mode hors ligne. Aucune carte bancaire requise."
+        "question": "C'est quoi la différence avec les autres apps?",
+        "answer": "LOWIS combine IA + suivi par de vrais experts. Ce n'est pas juste une calculatrice de calories. C'est un système de 13 phases scientifiques avec évaluation hebdomadaire, adapté à la cuisine marocaine et au Ramadan."
       },
       {
         "question": "Comment ça marche pendant le Ramadan?",
@@ -260,15 +366,19 @@
       },
       {
         "question": "Puis-je annuler à tout moment?",
-        "answer": "Oui, annulation en un clic. Vous gardez l'accès Premium jusqu'à la fin de votre période payée."
+        "answer": "Oui, annulation en un clic depuis l'app. Vous gardez l'accès jusqu'à la fin de votre période payée."
+      },
+      {
+        "question": "Est-ce que je peux vraiment perdre 1 kg/semaine?",
+        "answer": "C'est l'objectif de notre protocole. Les résultats varient selon votre profil et votre adhérence au programme. Nos experts ajustent votre plan chaque semaine pour optimiser vos résultats."
       }
     ]
   },
   "finalCta": {
     "title": "Prêt à transformer votre relation avec la nourriture?",
     "subtitle": "Rejoignez des milliers de Marocains qui ont repris le contrôle de leur santé.",
-    "cta": "Commencer gratuitement",
-    "noCard": "Aucune carte bancaire requise"
+    "cta": "Démarrer l'essai gratuit 7 jours",
+    "noCard": "Sans carte bancaire • Puis 149 DH/mois"
   },
   "footer": {
     "tagline": "Le système nutritionnel intelligent créé pour le Maroc",

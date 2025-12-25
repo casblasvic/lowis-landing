@@ -72,8 +72,9 @@ const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
       "operatingSystem": "Web",
       "offers": {
         "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "EUR"
+        "price": "149",
+        "priceCurrency": "MAD",
+        "description": "7-day free trial, then 149 DH/month"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -82,8 +83,57 @@ const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
       }
     })} />
   </head>
-  <body class="bg-dark-bg text-white font-sans antialiased">
+  <body class="bg-dark-bg text-white font-sans antialiased pb-20 md:pb-0">
     <slot />
+
+    <!-- Sticky CTA for mobile -->
+    <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 z-50 p-3 bg-dark-bg/95 backdrop-blur-lg border-t border-dark-border md:hidden transform translate-y-full transition-transform duration-300">
+      <a href="#pricing" class="btn-primary w-full justify-center text-base py-3">
+        Essai gratuit 7 jours
+        <span class="material-symbols-outlined ml-2 text-lg">arrow_forward</span>
+      </a>
+    </div>
+
+    <!-- Sticky CTA visibility script -->
+    <script>
+      const stickyCta = document.getElementById('sticky-cta');
+      const heroSection = document.querySelector('section');
+      const pricingSection = document.getElementById('pricing');
+
+      if (stickyCta && heroSection) {
+        let lastScrollY = 0;
+        let ticking = false;
+
+        function updateStickyCta() {
+          const scrollY = window.scrollY;
+          const heroBottom = heroSection.offsetHeight;
+          const pricingTop = pricingSection?.offsetTop || Infinity;
+          const windowHeight = window.innerHeight;
+
+          // Show after scrolling past hero, hide when pricing is visible
+          const shouldShow = scrollY > heroBottom * 0.5 && scrollY < pricingTop - windowHeight * 0.5;
+
+          if (shouldShow) {
+            stickyCta.classList.remove('translate-y-full');
+          } else {
+            stickyCta.classList.add('translate-y-full');
+          }
+
+          ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+          lastScrollY = window.scrollY;
+          if (!ticking) {
+            requestAnimationFrame(updateStickyCta);
+            ticking = true;
+          }
+        });
+
+        // Initial check
+        updateStickyCta();
+      }
+    </script>
 
     <!-- Smooth scroll polyfill for Safari -->
     <script>

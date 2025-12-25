@@ -3,11 +3,13 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import ProblemSection from '../components/ProblemSection.astro';
-import Features from '../components/Features.astro';
-import AudioProgram from '../components/AudioProgram.astro';
-import HealthTracking from '../components/HealthTracking.astro';
-import MoroccanFeatures from '../components/MoroccanFeatures.astro';
 import HowItWorks from '../components/HowItWorks.astro';
+import Features from '../components/Features.astro';
+import AIExpertsSection from '../components/AIExpertsSection.astro';
+import MoroccanFeatures from '../components/MoroccanFeatures.astro';
+import HealthTracking from '../components/HealthTracking.astro';
+import AudioProgram from '../components/AudioProgram.astro';
+import StatsSection from '../components/StatsSection.astro';
 import Pricing from '../components/Pricing.astro';
 import FAQ from '../components/FAQ.astro';
 import FinalCTA from '../components/FinalCTA.astro';
@@ -26,15 +28,40 @@ const t = useTranslations(lang);
   <Header t={t} lang={lang} />
 
   <main>
+    <!-- 1. Hero: Strong hook with "1 kg/semaine" -->
     <Hero t={t} />
+
+    <!-- 2. Problem: Validate pain points -->
     <ProblemSection t={t} />
-    <Features t={t} />
-    <AudioProgram t={t} />
-    <HealthTracking t={t} />
-    <MoroccanFeatures t={t} />
+
+    <!-- 3. How It Works: Reduce friction -->
     <HowItWorks t={t} />
+
+    <!-- 4. Features: What makes us different -->
+    <Features t={t} />
+
+    <!-- 5. AI + Experts: Unique support system -->
+    <AIExpertsSection t={t} />
+
+    <!-- 6. Moroccan Features: Unique differentiator -->
+    <MoroccanFeatures t={t} />
+
+    <!-- 7. Health Tracking: 17+ indicators depth -->
+    <HealthTracking t={t} />
+
+    <!-- 8. Audio Program: Mind & body bonus -->
+    <AudioProgram t={t} />
+
+    <!-- 9. Stats: Social proof -->
+    <StatsSection t={t} />
+
+    <!-- 10. Pricing: Single premium plan with trial -->
     <Pricing t={t} />
+
+    <!-- 11. FAQ -->
     <FAQ t={t} />
+
+    <!-- 12. Final CTA -->
     <FinalCTA t={t} />
   </main>
 

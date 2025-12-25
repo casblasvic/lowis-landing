@@ -1,0 +1,103 @@
+---
+interface Props {
+  t: {
+    aiExperts: {
+      badge: string;
+      title: string;
+      subtitle: string;
+      items: Array<{
+        icon: string;
+        title: string;
+        points: string[];
+      }>;
+    };
+  };
+}
+
+const { t } = Astro.props;
+
+// Card accent colors - consistent with brand palette
+const accentColors = [
+  'from-blue-500 to-cyan-500',
+  'from-primary-orange to-primary-red',
+  'from-green-500 to-emerald-500',
+];
+---
+
+<section id="ai-experts" class="py-20 relative overflow-hidden">
+  <!-- Background decoration -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[100px]"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary-orange/5 rounded-full blur-[80px]"></div>
+  </div>
+
+  <div class="section-container relative z-10">
+    <!-- Section header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-6">
+        <span class="material-symbols-outlined text-lg">verified</span>
+        {t.aiExperts.badge}
+      </span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+        {t.aiExperts.title}
+      </h2>
+      <p class="text-text-secondary text-lg">
+        {t.aiExperts.subtitle}
+      </p>
+    </div>
+
+    <!-- Three columns -->
+    <div class="grid md:grid-cols-3 gap-6 lg:gap-8 stagger-children">
+      {t.aiExperts.items.map((item, index) => (
+        <div class="group relative p-6 lg:p-8 bg-dark-surface border border-dark-border rounded-2xl card-hover overflow-hidden">
+          <!-- Gradient accent on hover -->
+          <div
+            class={`absolute inset-0 bg-gradient-to-br ${accentColors[index]} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
+          ></div>
+
+          <div class="relative z-10">
+            <!-- Icon -->
+            <div
+              class={`w-16 h-16 rounded-2xl bg-gradient-to-br ${accentColors[index]} flex items-center justify-center mb-6 shadow-lg`}
+            >
+              <span class="material-symbols-outlined text-white text-3xl">
+                {item.icon}
+              </span>
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-xl font-bold mb-4 group-hover:gradient-text transition-all duration-300">
+              {item.title}
+            </h3>
+
+            <!-- Points list -->
+            <ul class="space-y-3">
+              {item.points.map((point) => (
+                <li class="flex items-start gap-3 text-text-secondary">
+                  <span class={`material-symbols-outlined text-lg mt-0.5 bg-gradient-to-br ${accentColors[index]} bg-clip-text text-transparent`}>
+                    check_circle
+                  </span>
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <!-- Corner decoration -->
+          <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-gradient-to-br from-white/[0.02] to-transparent rounded-full"></div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Bottom connector visual -->
+    <div class="mt-12 flex justify-center">
+      <div class="flex items-center gap-4 px-6 py-3 rounded-full bg-dark-surface border border-dark-border">
+        <span class="material-symbols-outlined text-blue-400">smart_toy</span>
+        <span class="text-text-secondary">+</span>
+        <span class="material-symbols-outlined text-primary-orange">groups</span>
+        <span class="text-text-secondary">=</span>
+        <span class="material-symbols-outlined text-green-400">trending_up</span>
+      </div>
+    </div>
+  </div>
+</section>

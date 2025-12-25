@@ -1,24 +1,26 @@
 {
   "meta": {
-    "title": "LOWIS - Nutrición Inteligente Adaptada a Marruecos | Tu Recorrido Personalizado",
-    "description": "Transforma tu alimentación con LOWIS. Sistema de 13 fases adaptado a la cocina marroquí, seguimiento de 12 indicadores de salud, funciona sin conexión. Empieza gratis.",
-    "keywords": "aplicación nutrición marruecos, dieta personalizada, pérdida de peso, cocina marroquí, seguimiento salud, app adelgazar"
+    "title": "LOWIS - Nutrición Inteligente Creada para Marruecos | Objetivo 1 kg/semana",
+    "description": "Transforma tu alimentación con LOWIS. Sistema de 13 fases con IA + seguimiento por expertos, 17+ indicadores de salud, adaptado a la cocina marroquí. Prueba gratis 7 días.",
+    "keywords": "aplicación nutrición marruecos, dieta personalizada, pérdida de peso, cocina marroquí, seguimiento salud, app adelgazar, 1 kg por semana"
   },
   "nav": {
     "features": "Funcionalidades",
     "howItWorks": "Cómo funciona",
     "pricing": "Precios",
     "faq": "FAQ",
-    "cta": "Empezar"
+    "cta": "Prueba 7 días"
   },
   "hero": {
-    "badge": "Adaptado a Marruecos 🇲🇦",
-    "title": "Deja de contar calorías.",
-    "titleHighlight": "Empieza a transformar tu vida.",
-    "subtitle": "El primer sistema nutricional en 13 fases que entiende tu cocina, tus productos locales y se adapta a tu cuerpo.",
-    "cta": "Empezar gratis",
+    "badge": "Creado para Marruecos 🇲🇦",
+    "title": "Objetivo: perder hasta",
+    "titleHighlight": "1 kg/semana*",
+    "subtitle": "El primer sistema nutricional en 13 fases con IA + seguimiento por nuestros expertos. Creado especialmente para la cocina marroquí.",
+    "cta": "Prueba gratis 7 días",
     "ctaSecondary": "Ver demo",
-    "noCard": "Sin tarjeta de crédito",
+    "noCard": "Sin tarjeta bancaria",
+    "pricingInfo": "Después 149 DH/mes • Cancela cuando quieras",
+    "disclaimer": "*Según tu perfil y adherencia al protocolo",
     "users": "usuarios activos"
   },
   "problem": {
@@ -46,11 +48,11 @@
   },
   "features": {
     "title": "Por qué LOWIS lo cambia todo",
-    "subtitle": "Un sistema completo que entiende tu cuerpo y tu cultura",
+    "subtitle": "Un sistema completo creado para entender tu cuerpo y tu cultura",
     "items": [
       {
         "icon": "restaurant",
-        "title": "Adaptado a la cocina marroquí",
+        "title": "Creado para la cocina marroquí",
         "description": "Tajines, cuscús, pastela, harira... Nuestra base de datos incluye más de 500 platos e ingredientes marroquíes con sus valores nutricionales exactos."
       },
       {
@@ -60,13 +62,47 @@
       },
       {
         "icon": "monitoring",
-        "title": "12 indicadores de salud",
-        "description": "Sueño, energía, hidratación, hinchazón, calidad de digestión, humor, estrés... Seguimos todo lo que afecta a tu metabolismo."
+        "title": "17+ indicadores de salud",
+        "description": "Sueño, energía, hidratación, digestión, humor, estrés, ciclo femenino... Seguimos todo lo que afecta a tu metabolismo."
       },
       {
         "icon": "smart_toy",
-        "title": "Asistente IA personalizado",
-        "description": "Consejos adaptados a TUS síntomas, TUS hábitos y TU progreso. Como un nutricionista de bolsillo disponible 24/7."
+        "title": "IA + seguimiento por expertos",
+        "description": "La IA reacciona al instante. Nuestros expertos ajustan tu recorrido cada semana. Como un nutricionista de bolsillo disponible 24/7."
+      }
+    ]
+  },
+  "aiExperts": {
+    "badge": "Acompañamiento único",
+    "title": "IA + expertos: el dúo que marca la diferencia",
+    "subtitle": "No es solo una app. Es un acompañamiento personalizado real.",
+    "items": [
+      {
+        "icon": "smart_toy",
+        "title": "La IA reacciona al instante",
+        "points": [
+          "Ajusta tu plan día a día",
+          "Analiza tus síntomas en tiempo real",
+          "Disponible 24/7"
+        ]
+      },
+      {
+        "icon": "groups",
+        "title": "Nuestros expertos ajustan tu recorrido",
+        "points": [
+          "Evaluación semanal personalizada",
+          "Recomendaciones adaptadas a TI",
+          "Seguimiento de tu progreso"
+        ]
+      },
+      {
+        "icon": "trending_up",
+        "title": "Tu plan evoluciona contigo",
+        "points": [
+          "13 fases que se adaptan",
+          "Transiciones automáticas inteligentes",
+          "Objetivo: perder Y mantener"
+        ]
       }
     ]
   },
@@ -109,8 +145,65 @@
     "cta": "Descubrir el programa de audio"
   },
   "healthTracking": {
-    "title": "Seguimos lo que realmente importa",
-    "subtitle": "12 indicadores de salud para una personalización completa",
+    "badge": "Seguimiento holístico completo",
+    "title": "17+ indicadores para una personalización total",
+    "subtitle": "Analizamos todo lo que afecta a tu metabolismo y bienestar",
+    "categories": [
+      {
+        "icon": "bedtime",
+        "title": "Sueño y Energía",
+        "description": "Duración, calidad del sueño y nivel de energía diario",
+        "count": 2
+      },
+      {
+        "icon": "local_drink",
+        "title": "Hidratación",
+        "description": "Objetivos personalizados y seguimiento de tu consumo de agua",
+        "count": 1
+      },
+      {
+        "icon": "psychology",
+        "title": "Humor y Estrés",
+        "description": "Estado emocional que impacta directamente tu metabolismo",
+        "count": 2
+      },
+      {
+        "icon": "gastroenterology",
+        "title": "Digestión",
+        "description": "Estreñimiento, diarrea, hinchazón, náuseas, acidez",
+        "count": 5
+      },
+      {
+        "icon": "monitor_weight",
+        "title": "Peso y Medidas",
+        "description": "Peso, IMC, medidas (abdomen, caderas, brazos, muslos)",
+        "count": 3
+      },
+      {
+        "icon": "directions_run",
+        "title": "Actividad física",
+        "description": "Tipo de ejercicio, duración, calorías quemadas, frecuencia cardíaca",
+        "count": 1
+      },
+      {
+        "icon": "healing",
+        "title": "Dolores",
+        "description": "Dolor de cabeza, dolores musculares y articulares",
+        "count": 2
+      },
+      {
+        "icon": "female",
+        "title": "Ciclo femenino",
+        "description": "Seguimiento completo del ciclo menstrual y su impacto en tu plan",
+        "count": 2
+      },
+      {
+        "icon": "photo_camera",
+        "title": "Fotos de progreso",
+        "description": "Visualiza tu transformación (frente, perfil, espalda)",
+        "count": 1
+      }
+    ],
     "items": [
       {
         "icon": "bedtime",
@@ -138,37 +231,38 @@
         "description": "Identificar los alimentos que te causan problemas para evitarlos inteligentemente."
       },
       {
-        "icon": "nutrition",
-        "title": "Macros y Micronutrientes",
-        "description": "Proteínas, carbohidratos, grasas + vitaminas y minerales esenciales. Todo equilibrado."
+        "icon": "female",
+        "title": "Ciclo femenino",
+        "description": "Tu ciclo afecta tu metabolismo. Adaptamos tu plan según tu fase."
       }
     ]
   },
   "moroccanFeatures": {
-    "title": "Diseñado para Marruecos",
-    "subtitle": "Tu cocina, tus productos, tu cultura",
+    "title": "Creado especialmente para Marruecos",
+    "subtitle": "Tu cocina, tus tradiciones, tu cultura",
     "items": [
       {
-        "icon": "egg_alt",
-        "title": "Recetas tradicionales",
-        "description": "Tajine de pollo con limón, cuscús de 7 verduras, pastela, harira, rfissa... Todas calculadas con precisión."
-      },
-      {
-        "icon": "storefront",
-        "title": "Productos del zoco",
-        "description": "Aceite de argán, ras el hanout, khliaa, amlou, dátiles Medjool... Tus ingredientes locales están en nuestra base."
+        "icon": "restaurant_menu",
+        "title": "Tus recetas favoritas",
+        "description": "Tajine de pollo con limón, cuscús real, pastela, harira, rfissa, tanjia... Cada plato calculado con precisión."
       },
       {
         "icon": "calendar_month",
-        "title": "Adaptado al Ramadán",
-        "description": "Planes especiales para el ayuno con distribución óptima del ftour y el shour."
+        "title": "Optimizado para el Ramadán",
+        "description": "Planes especiales para el ayuno con distribución óptima del ftour y el shour. La app se adapta a tu ritmo."
       },
       {
         "icon": "groups",
         "title": "Comidas en familia",
         "description": "Sabemos que compartes platos. Calcula tu porción incluso en un tajine familiar."
+      },
+      {
+        "icon": "phone_iphone",
+        "title": "Funciona en todas partes",
+        "description": "Modo sin conexión completo. Ya sea en Casa, Fez, Marrakech o en un douar, funciona."
       }
-    ]
+    ],
+    "recipesTitle": "Descubre nuestras recetas marroquíes"
   },
   "howItWorks": {
     "title": "¿Cómo funciona?",
@@ -190,48 +284,57 @@
         "description": "13 fases que se adaptan a tus resultados y síntomas. Cada semana, ajustamos."
       }
     ],
-    "cta": "Empezar ahora"
+    "cta": "Iniciar prueba gratuita"
   },
   "stats": {
-    "users": "Usuarios activos",
-    "kgLost": "Kg perdidos",
-    "satisfaction": "Satisfacción",
-    "offline": "Funciona offline"
+    "title": "LOWIS en números",
+    "items": [
+      {
+        "value": "1,250+",
+        "label": "Usuarios activos",
+        "icon": "group"
+      },
+      {
+        "value": "3,500+",
+        "label": "Kg perdidos",
+        "icon": "trending_down"
+      },
+      {
+        "value": "92%",
+        "label": "Satisfacción",
+        "icon": "thumb_up"
+      },
+      {
+        "value": "100%",
+        "label": "Funciona offline",
+        "icon": "wifi_off"
+      }
+    ]
   },
   "pricing": {
-    "title": "Empieza gratis",
-    "subtitle": "Sin sorpresas, sin compromiso",
-    "free": {
-      "name": "Gratis",
-      "price": "0",
-      "period": "para siempre",
-      "features": [
-        "Escaneo IA de comidas",
-        "Base de datos marroquí",
-        "Seguimiento de peso y medidas",
-        "Modo sin conexión completo",
-        "Historial 7 días"
-      ],
-      "cta": "Probar gratis",
-      "popular": false
-    },
+    "title": "Prueba LOWIS durante 7 días",
+    "subtitle": "Sin compromiso, sin tarjeta bancaria",
     "premium": {
       "name": "Premium",
-      "price": "99",
+      "badge": "Prueba gratis 7 días",
+      "price": "0",
+      "priceAfter": "149",
       "period": "DH/mes",
+      "trialText": "0 DH durante 7 días",
+      "afterTrialText": "Después 149 DH/mes",
       "features": [
-        "Todo del plan Gratis",
         "13 fases LOWIS completas",
-        "12 indicadores de salud",
-        "Planes de comida personalizados",
-        "Asistente IA 24/7",
+        "17+ indicadores de salud",
+        "Planes de comida personalizados marroquíes",
+        "IA + seguimiento por expertos",
+        "Programa audio cuerpo y mente",
         "Evaluación semanal",
-        "Audios de motivación",
-        "Historial ilimitado"
+        "Modo sin conexión completo",
+        "Cancela en 1 clic"
       ],
       "cta": "Iniciar prueba gratuita",
       "popular": true,
-      "trial": "7 días de prueba gratis"
+      "guarantee": "Satisfecho o reembolsado"
     }
   },
   "faq": {
@@ -239,10 +342,14 @@
     "items": [
       {
         "question": "¿La app reconoce realmente los platos marroquíes?",
-        "answer": "¡Sí! Nuestra base de datos incluye más de 500 platos e ingredientes marroquíes: tajines, cuscús, pastela, harira, msemen, baghrir y mucho más."
+        "answer": "¡Sí! Nuestra base de datos incluye más de 500 platos e ingredientes marroquíes: tajines, cuscús, pastela, harira, msemen, baghrir y mucho más. Cada receta ha sido analizada para sus valores nutricionales exactos."
       },
       {
-        "question": "¿Cómo seguís 12 indicadores de salud?",
+        "question": "¿Cómo funciona la prueba gratuita de 7 días?",
+        "answer": "Tienes acceso a todas las funcionalidades Premium durante 7 días, sin dar tu tarjeta bancaria. Al final de la prueba, puedes continuar a 149 DH/mes o simplemente no hacer nada."
+      },
+      {
+        "question": "¿Cómo seguís 17+ indicadores de salud?",
         "answer": "Cada día, respondes a unas preguntas rápidas sobre tu sueño, energía, digestión, humor, etc. En 30 segundos, entendemos cómo te sientes y adaptamos recomendaciones."
       },
       {
@@ -250,8 +357,8 @@
         "answer": "Absolutamente. LOWIS es una PWA diseñada para Marruecos donde la conexión puede ser inestable. Todo funciona offline y se sincroniza automáticamente."
       },
       {
-        "question": "¿Es realmente gratis para empezar?",
-        "answer": "¡Sí! El plan gratuito te da acceso al escaneo IA, la base de datos marroquí y el modo offline. Sin tarjeta bancaria."
+        "question": "¿Cuál es la diferencia con otras apps?",
+        "answer": "LOWIS combina IA + seguimiento por expertos reales. No es solo una calculadora de calorías. Es un sistema de 13 fases científicas con evaluación semanal, adaptado a la cocina marroquí y al Ramadán."
       },
       {
         "question": "¿Cómo funciona durante el Ramadán?",
@@ -259,18 +366,22 @@
       },
       {
         "question": "¿Puedo cancelar en cualquier momento?",
-        "answer": "Sí, cancelación en un clic. Mantienes el acceso Premium hasta el final de tu período pagado."
+        "answer": "Sí, cancelación en un clic desde la app. Mantienes el acceso hasta el final de tu período pagado."
+      },
+      {
+        "question": "¿Puedo realmente perder 1 kg/semana?",
+        "answer": "Es el objetivo de nuestro protocolo. Los resultados varían según tu perfil y adherencia al programa. Nuestros expertos ajustan tu plan cada semana para optimizar tus resultados."
       }
     ]
   },
   "finalCta": {
     "title": "¿Listo para transformar tu relación con la comida?",
     "subtitle": "Únete a miles de marroquíes que han retomado el control de su salud.",
-    "cta": "Empezar gratis",
-    "noCard": "Sin tarjeta bancaria"
+    "cta": "Prueba gratis 7 días",
+    "noCard": "Sin tarjeta bancaria • Después 149 DH/mes"
   },
   "footer": {
-    "tagline": "El sistema nutricional inteligente adaptado a Marruecos",
+    "tagline": "El sistema nutricional inteligente creado para Marruecos",
     "product": {
       "title": "Producto",
       "features": "Funcionalidades",
