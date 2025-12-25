@@ -13,8 +13,9 @@ interface Props {
       ctaSecondary: string;
       noCard: string;
       pricingInfo: string;
+      guarantee?: string;
       disclaimer: string;
-      users: string;
+      users?: string;
     };
     demo: {
       aiMessage: string;
@@ -88,6 +89,14 @@ const { t } = Astro.props;
 
         <!-- Trust indicators -->
         <div class="flex flex-col items-center lg:items-start gap-3 animate-fade-in-up" style="animation-delay: 0.4s">
+          <!-- Guarantee -->
+          {t.hero.guarantee && (
+            <div class="flex items-center gap-2 bg-green-500/10 border border-green-500/30 rounded-full px-4 py-2">
+              <span class="material-symbols-outlined text-green-500">verified</span>
+              <span class="text-sm text-green-400 font-medium">{t.hero.guarantee}</span>
+            </div>
+          )}
+
           <!-- No card + pricing info -->
           <div class="flex flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-2 text-text-muted">
             <div class="flex items-center gap-2">

@@ -20,7 +20,9 @@
     "ctaSecondary": "Ver demo",
     "noCard": "Sin tarjeta bancaria",
     "pricingInfo": "Después 149 DH/mes • Cancela cuando quieras",
-    "disclaimer": "*De forma natural y sostenible, según tu perfil"
+    "guarantee": "Garantía: 1 kg/semana mínimo* — si no, prolongamos gratis",
+    "disclaimer": "*Siguiendo el protocolo. Ver condiciones.",
+    "users": "usuarios activos"
   },
   "problem": {
     "title": "¿Por qué fallan las dietas clásicas?",
@@ -203,6 +205,10 @@
         "count": 1
       }
     ],
+    "summary": {
+      "label": "indicadores",
+      "description": "Análisis en tiempo real para optimizar tu recorrido"
+    },
     "items": [
       {
         "icon": "bedtime",
@@ -261,7 +267,8 @@
         "description": "Los esfuerzos extremos no duran. Nuestro enfoque realista te permite mantener tus resultados para siempre."
       }
     ],
-    "recipesTitle": "Descubre nuestras recetas marroquíes"
+    "recipesTitle": "Descubre nuestras recetas marroquíes",
+    "recipesButton": "Ver +500 recetas marroquíes"
   },
   "howItWorks": {
     "title": "¿Cómo funciona en el día a día?",
@@ -335,7 +342,7 @@
       ],
       "cta": "Empezar a perder ahora",
       "popular": true,
-      "guarantee": "Satisfecho o reembolsado"
+      "guarantee": "Garantía: 1 kg/semana mínimo* — o acompañamiento prolongado gratis"
     }
   },
   "faq": {
@@ -372,6 +379,10 @@
       {
         "question": "¿Puedo cancelar en cualquier momento?",
         "answer": "Sí, en 1 clic desde la app. Mantienes el acceso hasta el final de tu período pagado."
+      },
+      {
+        "question": "¿Es gratis?",
+        "answer": "La prueba de 7 días es 100% gratis, sin tarjeta bancaria. Después, LOWIS cuesta 149 DH/mes — menos que una sola consulta con un nutricionista. Y puedes cancelar cuando quieras."
       }
     ]
   },

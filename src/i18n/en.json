@@ -20,7 +20,9 @@
     "ctaSecondary": "See demo",
     "noCard": "No credit card required",
     "pricingInfo": "Then 149 DH/month • Cancel anytime",
-    "disclaimer": "*Naturally and sustainably, based on your profile"
+    "guarantee": "Guarantee: 1 kg/week minimum* — otherwise we extend for free",
+    "disclaimer": "*By following the protocol. See conditions.",
+    "users": "active users"
   },
   "problem": {
     "title": "Why do classic diets fail?",
@@ -203,6 +205,10 @@
         "count": 1
       }
     ],
+    "summary": {
+      "label": "indicators",
+      "description": "Real-time analysis to optimize your journey"
+    },
     "items": [
       {
         "icon": "bedtime",
@@ -261,7 +267,8 @@
         "description": "Extreme efforts don't last. Our realistic approach lets you maintain your results forever."
       }
     ],
-    "recipesTitle": "Discover our Moroccan recipes"
+    "recipesTitle": "Discover our Moroccan recipes",
+    "recipesButton": "See +500 Moroccan recipes"
   },
   "howItWorks": {
     "title": "How does it work daily?",
@@ -335,7 +342,7 @@
       ],
       "cta": "Start losing now",
       "popular": true,
-      "guarantee": "Satisfaction guaranteed"
+      "guarantee": "Guarantee: 1 kg/week minimum* — or extended support for free"
     }
   },
   "faq": {
@@ -372,6 +379,10 @@
       {
         "question": "Can I cancel anytime?",
         "answer": "Yes, 1-click from the app. You keep access until the end of your paid period."
+      },
+      {
+        "question": "Is it free?",
+        "answer": "The 7-day trial is 100% free, no credit card required. After that, LOWIS costs 149 DH/month — less than a single appointment with a nutritionist. And you can cancel anytime."
       }
     ]
   },

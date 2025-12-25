@@ -10,13 +10,14 @@ interface Props {
         description: string;
       }>;
       recipesTitle?: string;
+      recipesButton?: string;
     };
   };
 }
 
 const { t } = Astro.props;
 
-// Real Moroccan recipes from our database with actual images
+// Real Moroccan recipes from our database - limited to 6 for cleaner UX
 const moroccanRecipes = [
   {
     name: 'Tajine Poulet Citron',
@@ -37,10 +38,10 @@ const moroccanRecipes = [
     calories: 689
   },
   {
-    name: 'Batbout Farci',
-    nameFr: 'Batbout farci à la viande',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/29167.jpeg',
-    calories: 420
+    name: 'Couscous Garbanzos',
+    nameFr: 'Couscous aux légumes',
+    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/spoonacular_images/recipes/bf480f94-4219-4f21-948e-4b845099b8a9.jpg',
+    calories: 714
   },
   {
     name: 'Tajine Albondigas',
@@ -53,30 +54,6 @@ const moroccanRecipes = [
     nameFr: 'Épinards à la marocaine',
     image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/18407.jpeg',
     calories: 145
-  },
-  {
-    name: 'Lentejas Marroquí',
-    nameFr: 'Lentilles à la marocaine',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/28537.jpeg',
-    calories: 280
-  },
-  {
-    name: 'Ensalada Marroquí',
-    nameFr: 'Salade marocaine',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14378.jpeg',
-    calories: 95
-  },
-  {
-    name: 'Tajine Cardos',
-    nameFr: 'Tajine aux cardons',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/19074.jpeg',
-    calories: 221
-  },
-  {
-    name: 'Couscous Garbanzos',
-    nameFr: 'Couscous aux pois chiches',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/spoonacular_images/recipes/bf480f94-4219-4f21-948e-4b845099b8a9.jpg',
-    calories: 714
   }
 ];
 ---
@@ -141,6 +118,17 @@ const moroccanRecipes = [
             </div>
           ))}
         </div>
+      </div>
+
+      <!-- Button to see more recipes -->
+      <div class="flex justify-center mt-6">
+        <a
+          href="#pricing"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-orange to-primary-red text-white font-semibold rounded-full hover:shadow-lg hover:shadow-primary-orange/30 transition-all duration-300 hover:scale-105"
+        >
+          <span class="material-symbols-outlined">restaurant</span>
+          {t.moroccanFeatures.recipesButton || 'Voir +500 recettes marocaines'}
+        </a>
       </div>
     </div>
 

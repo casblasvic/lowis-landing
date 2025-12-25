@@ -20,7 +20,9 @@
     "ctaSecondary": "Voir la démo",
     "noCard": "Sans carte bancaire",
     "pricingInfo": "Puis 149 DH/mois • Annulation en 1 clic",
-    "disclaimer": "*De façon naturelle et durable, selon votre profil"
+    "guarantee": "Garantie: 1 kg/semaine minimum* — sinon on prolonge gratuitement",
+    "disclaimer": "*En suivant le protocole. Voir conditions.",
+    "users": "utilisateurs actifs"
   },
   "problem": {
     "title": "Pourquoi les régimes classiques échouent?",
@@ -203,6 +205,10 @@
         "count": 1
       }
     ],
+    "summary": {
+      "label": "indicateurs",
+      "description": "Analyse en temps réel pour optimiser votre parcours"
+    },
     "items": [
       {
         "icon": "bedtime",
@@ -261,7 +267,8 @@
         "description": "Les efforts extrêmes ne durent pas. Notre approche réaliste vous permet de maintenir vos résultats pour toujours."
       }
     ],
-    "recipesTitle": "Découvrez nos recettes marocaines"
+    "recipesTitle": "Découvrez nos recettes marocaines",
+    "recipesButton": "Voir +500 recettes marocaines"
   },
   "howItWorks": {
     "title": "Comment ça marche au quotidien?",
@@ -335,7 +342,7 @@
       ],
       "cta": "Commencer à perdre maintenant",
       "popular": true,
-      "guarantee": "Satisfait ou remboursé"
+      "guarantee": "Garantie: 1 kg/semaine minimum* — ou accompagnement prolongé gratuitement"
     }
   },
   "faq": {
@@ -372,6 +379,10 @@
       {
         "question": "Puis-je annuler à tout moment?",
         "answer": "Oui, en 1 clic depuis l'app. Vous gardez l'accès jusqu'à la fin de votre période payée."
+      },
+      {
+        "question": "C'est gratuit?",
+        "answer": "L'essai de 7 jours est 100% gratuit, sans carte bancaire. Après, LOWIS coûte 149 DH/mois — moins qu'un seul rendez-vous chez un nutritionniste. Et vous pouvez annuler à tout moment."
       }
     ]
   },
