@@ -1,4 +1,7 @@
 ---
+import Logo from './ui/Logo.astro';
+import PhoneMockup from './PhoneMockup.astro';
+
 interface Props {
   t: {
     hero: {
@@ -10,6 +13,19 @@ interface Props {
       ctaSecondary: string;
       noCard: string;
       users: string;
+    };
+    demo: {
+      aiMessage: string;
+      names: string[];
+      objectives: {
+        calories: string;
+        protein: string;
+        water: string;
+        steps: string;
+      };
+      phase: string;
+      phaseLabel: string;
+      recipes: string;
     };
   };
 }
@@ -38,8 +54,14 @@ const { t } = Astro.props;
           <span class="text-sm text-text-secondary">{t.hero.badge}</span>
         </div>
 
+        <!-- Logo + Title -->
+        <div class="flex items-center gap-4 justify-center lg:justify-start mb-4 animate-fade-in-up">
+          <Logo class="h-16 w-16 sm:h-20 sm:w-20" />
+          <span class="text-4xl sm:text-5xl font-bold gradient-text">LOWIS</span>
+        </div>
+
         <!-- Title -->
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in-up" style="animation-delay: 0.1s">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 animate-fade-in-up" style="animation-delay: 0.1s">
           {t.hero.title}
           <br />
           <span class="gradient-text">{t.hero.titleHighlight}</span>
@@ -72,9 +94,9 @@ const { t } = Astro.props;
           <div class="flex items-center gap-2">
             <!-- User avatars -->
             <div class="flex -space-x-2">
-              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-primary-orange to-primary-red flex items-center justify-center text-xs font-bold">A</div>
-              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-xs font-bold">M</div>
-              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center text-xs font-bold">S</div>
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-primary-orange to-primary-red flex items-center justify-center text-xs font-bold">R</div>
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-xs font-bold">F</div>
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center text-xs font-bold">A</div>
             </div>
             <span class="text-sm">
               <span class="text-white font-semibold">1,250+</span> {t.hero.users}
@@ -83,84 +105,15 @@ const { t } = Astro.props;
         </div>
       </div>
 
-      <!-- Right: App Mockup -->
+      <!-- Right: Phone Mockup -->
       <div class="relative flex justify-center lg:justify-end animate-fade-in-up" style="animation-delay: 0.3s">
-        <!-- Phone mockup -->
-        <div class="relative w-[280px] sm:w-[320px] animate-float">
-          <!-- Phone frame -->
-          <div class="relative bg-dark-surface rounded-[3rem] p-3 shadow-2xl border border-dark-border">
-            <!-- Notch -->
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-dark-bg rounded-b-2xl"></div>
-
-            <!-- Screen -->
-            <div class="relative bg-dark-bg rounded-[2.5rem] overflow-hidden aspect-[9/19.5]">
-              <!-- App screenshot placeholder -->
-              <div class="absolute inset-0 flex flex-col">
-                <!-- Status bar -->
-                <div class="flex justify-between items-center px-6 pt-12 pb-2 text-xs text-text-secondary">
-                  <span>9:41</span>
-                  <div class="flex items-center gap-1">
-                    <span class="material-symbols-outlined text-sm">signal_cellular_alt</span>
-                    <span class="material-symbols-outlined text-sm">wifi</span>
-                    <span class="material-symbols-outlined text-sm">battery_full</span>
-                  </div>
-                </div>
-
-                <!-- App header -->
-                <div class="px-4 py-3">
-                  <div class="text-lg font-bold gradient-text">LOWIS</div>
-                  <p class="text-xs text-text-secondary">Phase 3 - Jour 5</p>
-                </div>
-
-                <!-- Progress card -->
-                <div class="mx-4 p-4 bg-dark-surface rounded-2xl border border-dark-border mb-4">
-                  <div class="flex justify-between items-center mb-3">
-                    <span class="text-sm font-medium">Aujourd'hui</span>
-                    <span class="text-xs text-primary-orange">850 / 1200 kcal</span>
-                  </div>
-                  <div class="h-2 bg-dark-bg rounded-full overflow-hidden">
-                    <div class="h-full w-[70%] gradient-bg rounded-full"></div>
-                  </div>
-                </div>
-
-                <!-- Quick actions -->
-                <div class="px-4 grid grid-cols-3 gap-3 mb-4">
-                  <div class="flex flex-col items-center p-3 bg-dark-surface rounded-xl border border-dark-border">
-                    <span class="material-symbols-outlined text-primary-orange mb-1">photo_camera</span>
-                    <span class="text-[10px] text-text-secondary">Scanner</span>
-                  </div>
-                  <div class="flex flex-col items-center p-3 bg-dark-surface rounded-xl border border-dark-border">
-                    <span class="material-symbols-outlined text-accent-gold mb-1">restaurant</span>
-                    <span class="text-[10px] text-text-secondary">Recettes</span>
-                  </div>
-                  <div class="flex flex-col items-center p-3 bg-dark-surface rounded-xl border border-dark-border">
-                    <span class="material-symbols-outlined text-green-500 mb-1">monitoring</span>
-                    <span class="text-[10px] text-text-secondary">Progrès</span>
-                  </div>
-                </div>
-
-                <!-- Recent meal -->
-                <div class="px-4">
-                  <p class="text-xs text-text-muted mb-2">Dernier repas</p>
-                  <div class="flex items-center gap-3 p-3 bg-dark-surface rounded-xl border border-dark-border">
-                    <div class="w-12 h-12 rounded-lg gradient-bg flex items-center justify-center">
-                      <span class="material-symbols-outlined text-white">lunch_dining</span>
-                    </div>
-                    <div class="flex-1">
-                      <p class="text-sm font-medium">Salade César</p>
-                      <p class="text-xs text-text-secondary">320 kcal • 12h30</p>
-                    </div>
-                    <span class="material-symbols-outlined text-green-500 text-lg">check_circle</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Decorative elements -->
-          <div class="absolute -top-4 -right-4 w-20 h-20 bg-primary-orange/30 rounded-full blur-2xl"></div>
-          <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-primary-red/30 rounded-full blur-2xl"></div>
+        <div class="animate-float">
+          <PhoneMockup t={t} />
         </div>
+
+        <!-- Decorative elements -->
+        <div class="absolute -top-8 -right-8 w-32 h-32 bg-primary-orange/20 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-8 -left-8 w-24 h-24 bg-primary-red/20 rounded-full blur-3xl"></div>
       </div>
     </div>
   </div>

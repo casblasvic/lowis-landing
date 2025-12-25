@@ -1,72 +1,134 @@
 {
   "meta": {
-    "title": "LOWIS - Smart Nutrition App | Your Personalized Journey",
-    "description": "Transform your nutrition with LOWIS. 13 scientific phases, intelligent tracking, works offline. Start free today.",
-    "keywords": "nutrition app, personalized diet, weight loss, calorie counter, food tracking, weight loss app"
+    "title": "LOWIS - Smart Nutrition Adapted for Morocco | Your Personalized Journey",
+    "description": "Transform your nutrition with LOWIS. 13-phase system adapted to Moroccan cuisine, tracking 12 health indicators, works offline. Start for free.",
+    "keywords": "nutrition app morocco, personalized diet, weight loss, moroccan cuisine, health tracking, diet app"
   },
   "nav": {
     "features": "Features",
-    "howItWorks": "How it works",
+    "howItWorks": "How it Works",
     "pricing": "Pricing",
     "faq": "FAQ",
     "cta": "Get Started"
   },
   "hero": {
-    "badge": "New",
+    "badge": "Made for Morocco 🇲🇦",
     "title": "Stop counting calories.",
     "titleHighlight": "Start transforming your life.",
-    "subtitle": "LOWIS is the first 13-phase nutrition system that adapts to your body, not the other way around.",
+    "subtitle": "The first 13-phase nutritional system that understands your cuisine, your local products, and adapts to your body.",
     "cta": "Start for free",
-    "ctaSecondary": "Watch demo",
+    "ctaSecondary": "See demo",
     "noCard": "No credit card required",
     "users": "active users"
   },
   "problem": {
-    "title": "Have nutrition apps let you down?",
-    "subtitle": "You're not alone. This is what thousands of users experience:",
+    "title": "Have nutrition apps disappointed you?",
+    "subtitle": "You're not alone. Here's what thousands of users experience:",
     "points": [
       {
         "icon": "close",
-        "text": "AI that's wrong 7 out of 10 times"
+        "text": "AI that doesn't recognize tajine or couscous"
       },
       {
         "icon": "close",
-        "text": "Can't correct mistakes"
+        "text": "Databases without Moroccan products"
       },
       {
         "icon": "close",
-        "text": "Counting calories without a real plan"
+        "text": "Counting calories without understanding your body"
       },
       {
         "icon": "close",
-        "text": "Gave up after 2 weeks"
+        "text": "Abandoned after 2 weeks due to lack of follow-up"
       }
     ],
     "solution": "LOWIS is different."
   },
   "features": {
     "title": "Why LOWIS changes everything",
-    "subtitle": "Features designed for your success",
+    "subtitle": "A complete system that understands your body and your culture",
     "items": [
       {
+        "icon": "restaurant",
+        "title": "Adapted to Moroccan cuisine",
+        "description": "Tajines, couscous, pastilla, harira... Our database includes over 500 Moroccan dishes and ingredients with exact nutritional values."
+      },
+      {
         "icon": "science",
-        "title": "A real system, not a calculator",
-        "description": "13 scientific phases that evolve with you. Automatic weekly evaluation of your symptoms and progress."
+        "title": "13 scientific phases",
+        "description": "Not just calories. A complete system that evolves with you, with weekly evaluation and automatic plan adjustment."
       },
       {
-        "icon": "verified",
-        "title": "Accuracy you can trust",
-        "description": "3 combined nutrition databases (USDA, Spoonacular, FatSecret). Fix it in two clicks if needed."
-      },
-      {
-        "icon": "wifi_off",
-        "title": "Works even offline",
-        "description": "Log your meals anywhere. Everything syncs automatically when you reconnect."
+        "icon": "monitoring",
+        "title": "12 health indicators",
+        "description": "Sleep, energy, hydration, bloating, digestion quality, mood, stress... We track everything that affects your metabolism."
       },
       {
         "icon": "smart_toy",
-        "title": "Your pocket nutritionist",
-        "description": "AI assistant available 24/7. Personalized advice, symptom analysis, and daily recommendations."
+        "title": "Personalized AI assistant",
+        "description": "Advice adapted to YOUR symptoms, YOUR habits and YOUR progress. Like a pocket nutritionist available 24/7."
+      }
+    ]
+  },
+  "healthTracking": {
+    "title": "We track what really matters",
+    "subtitle": "12 health indicators for complete personalization",
+    "items": [
+      {
+        "icon": "bedtime",
+        "title": "Sleep",
+        "description": "Lack of sleep increases cortisol and hunger. We adapt your plan accordingly."
+      },
+      {
+        "icon": "local_drink",
+        "title": "Hydration",
+        "description": "Water affects your metabolism, energy and digestion. Personalized goals every day."
+      },
+      {
+        "icon": "psychology",
+        "title": "Stress & Mood",
+        "description": "Hormonal stress impacts weight gain. We adjust recommendations based on your state."
+      },
+      {
+        "icon": "bolt",
+        "title": "Energy & Fatigue",
+        "description": "Your energy level reveals if your diet is right. We optimize in real time."
+      },
+      {
+        "icon": "gastroenterology",
+        "title": "Digestion & Bloating",
+        "description": "Identify foods that cause you problems to avoid them intelligently."
+      },
+      {
+        "icon": "nutrition",
+        "title": "Macros & Micronutrients",
+        "description": "Proteins, carbs, fats + essential vitamins and minerals. Everything balanced."
+      }
+    ]
+  },
+  "moroccanFeatures": {
+    "title": "Designed for Morocco",
+    "subtitle": "Your cuisine, your products, your culture",
+    "items": [
+      {
+        "icon": "egg_alt",
+        "title": "Traditional recipes",
+        "description": "Chicken tajine with lemon, couscous with 7 vegetables, pastilla, harira, rfissa... All calculated with precision."
+      },
+      {
+        "icon": "storefront",
+        "title": "Souk products",
+        "description": "Argan oil, ras el hanout, khliaa, amlou, Medjool dates... Your local ingredients are in our database."
+      },
+      {
+        "icon": "calendar_month",
+        "title": "Ramadan-ready",
+        "description": "Special plans for fasting with optimal distribution of ftour and shour."
+      },
+      {
+        "icon": "groups",
+        "title": "Family meals",
+        "description": "We know you share dishes. Calculate your portion even from a family tajine."
       }
     ]
   },
@@ -77,20 +139,20 @@
       {
         "number": "1",
         "title": "Install the app",
-        "description": "2 minutes, no App Store download. Install directly to your home screen."
+        "description": "2 minutes, directly on your screen. No App Store needed."
       },
       {
         "number": "2",
         "title": "Create your profile",
-        "description": "Answer a few questions about your goals, habits, and food preferences."
+        "description": "Goals, eating habits, preferences. We get to know you."
       },
       {
         "number": "3",
-        "title": "Get your plan",
-        "description": "Your 13-phase nutrition plan, tailored to your body and goals."
+        "title": "Follow your personalized plan",
+        "description": "13 phases that adapt to your results and symptoms. Every week, we adjust."
       }
     ],
-    "cta": "Get started now"
+    "cta": "Start now"
   },
   "stats": {
     "users": "Active users",
@@ -107,8 +169,9 @@
       "period": "forever",
       "features": [
         "AI meal scanning",
-        "Weight tracking",
-        "Offline mode",
+        "Moroccan database",
+        "Weight and measurements tracking",
+        "Full offline mode",
         "7-day history"
       ],
       "cta": "Try for free",
@@ -116,14 +179,16 @@
     },
     "premium": {
       "name": "Premium",
-      "price": "9.99",
-      "period": "/month",
+      "price": "99",
+      "period": "DH/month",
       "features": [
         "Everything in Free",
-        "Full 13 LOWIS phases",
-        "Motivation audios",
+        "Complete 13 LOWIS phases",
+        "12 health indicators",
+        "Personalized meal plans",
         "24/7 AI assistant",
         "Weekly evaluation",
+        "Motivation audios",
         "Unlimited history"
       ],
       "cta": "Start free trial",
@@ -132,38 +197,42 @@
     }
   },
   "faq": {
-    "title": "Frequently asked questions",
+    "title": "Frequently Asked Questions",
     "items": [
       {
-        "question": "Is it really free to start?",
-        "answer": "Yes! The free plan gives you access to AI scanning, weight tracking, and offline mode. No credit card required to get started."
+        "question": "Does the app really recognize Moroccan dishes?",
+        "answer": "Yes! Our database includes over 500 Moroccan dishes and ingredients: tajines, couscous, pastilla, harira, msemen, baghrir, and much more."
+      },
+      {
+        "question": "How do you track 12 health indicators?",
+        "answer": "Every day, you answer a few quick questions about your sleep, energy, digestion, mood, etc. In 30 seconds, we understand how you feel and adapt recommendations."
       },
       {
         "question": "Does the app work offline?",
-        "answer": "Absolutely. LOWIS is a Progressive Web App (PWA) designed to work without connection. Your data syncs automatically when you're online."
+        "answer": "Absolutely. LOWIS is a PWA designed for Morocco where connection can be unstable. Everything works offline and syncs automatically."
       },
       {
-        "question": "How is LOWIS different from other apps?",
-        "answer": "LOWIS isn't just a calorie calculator. It's a complete 13-phase system based on nutritional science, with weekly symptom evaluation and automatic plan adjustment."
+        "question": "Is it really free to start?",
+        "answer": "Yes! The free plan gives you access to AI scanning, Moroccan database and offline mode. No credit card required."
+      },
+      {
+        "question": "How does it work during Ramadan?",
+        "answer": "We have special plans for fasting with optimal distribution between ftour and shour. The app automatically adapts to your rhythm during the holy month."
       },
       {
         "question": "Can I cancel anytime?",
-        "answer": "Yes, you can cancel your Premium subscription anytime. You'll keep access until the end of your billing period."
-      },
-      {
-        "question": "Is my data secure?",
-        "answer": "Your data is encrypted and stored securely. We're GDPR compliant and never sell your personal information."
+        "answer": "Yes, one-click cancellation. You keep Premium access until the end of your paid period."
       }
     ]
   },
   "finalCta": {
     "title": "Ready to transform your relationship with food?",
-    "subtitle": "Join thousands of people who have taken back control.",
+    "subtitle": "Join thousands of Moroccans who have taken back control of their health.",
     "cta": "Start for free",
     "noCard": "No credit card required"
   },
   "footer": {
-    "tagline": "The smart nutrition system",
+    "tagline": "The smart nutritional system adapted for Morocco",
     "product": {
       "title": "Product",
       "features": "Features",
@@ -182,5 +251,18 @@
       "email": "contact@lowis.app"
     },
     "copyright": "All rights reserved."
+  },
+  "demo": {
+    "aiMessage": "Excellent work today",
+    "names": ["Rania", "Fatima", "Nour", "Salma", "Amina", "Houda", "Adnan", "Youssef", "Karim", "Omar"],
+    "objectives": {
+      "calories": "Calories",
+      "protein": "Protein",
+      "water": "Water",
+      "steps": "Steps"
+    },
+    "phase": "Phase D2",
+    "phaseLabel": "Fat Burning",
+    "recipes": "Today's recipes"
   }
 }

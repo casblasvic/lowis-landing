@@ -1,0 +1,80 @@
+---
+interface Props {
+  t: {
+    moroccanFeatures: {
+      title: string;
+      subtitle: string;
+      items: Array<{
+        icon: string;
+        title: string;
+        description: string;
+      }>;
+    };
+  };
+}
+
+const { t } = Astro.props;
+---
+
+<section id="moroccan" class="py-20 relative overflow-hidden">
+  <!-- Background with Moroccan-inspired pattern -->
+  <div class="absolute inset-0">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-orange/5 via-dark-bg to-primary-red/5"></div>
+    <!-- Geometric pattern overlay -->
+    <div class="absolute inset-0 opacity-5" style="background-image: url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30L30 60L0 30z' fill='none' stroke='%23F97316' stroke-width='1'/%3E%3C/svg%3E\"); background-size: 60px 60px;"></div>
+  </div>
+
+  <div class="section-container relative z-10">
+    <!-- Section header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full mb-6">
+        <span class="text-2xl">🇲🇦</span>
+        <span class="text-green-400 font-medium">Made for Morocco</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+        {t.moroccanFeatures.title}
+      </h2>
+      <p class="text-text-secondary text-lg">
+        {t.moroccanFeatures.subtitle}
+      </p>
+    </div>
+
+    <!-- Features grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      {t.moroccanFeatures.items.map((item, index) => (
+        <div
+          class="relative group p-8 bg-dark-surface border border-dark-border rounded-2xl overflow-hidden hover:border-green-500/50 transition-all duration-300"
+        >
+          <!-- Accent line -->
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 via-primary-orange to-primary-red opacity-0 group-hover:opacity-100 transition-opacity"></div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-14 h-14 flex items-center justify-center bg-gradient-to-br from-green-500/20 to-primary-orange/20 rounded-2xl">
+              <span class="material-symbols-outlined text-3xl text-green-400">{item.icon}</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-bold text-xl mb-3">
+                {item.title}
+              </h3>
+              <p class="text-text-secondary leading-relaxed">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Moroccan dishes showcase -->
+    <div class="mt-16 text-center">
+      <p class="text-text-muted text-sm mb-4">Plats reconnus par notre IA</p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {['Tajine', 'Couscous', 'Pastilla', 'Harira', 'Rfissa', 'Msemen', 'Baghrir', 'Tanjia'].map((dish) => (
+          <span class="px-4 py-2 bg-dark-surface border border-dark-border rounded-full text-sm text-text-secondary hover:border-primary-orange/50 hover:text-white transition-colors cursor-default">
+            {dish}
+          </span>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

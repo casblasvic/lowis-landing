@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "LOWIS - App de Nutrición Inteligente | Tu Camino Personalizado",
-    "description": "Transforma tu alimentación con LOWIS. 13 fases científicas, seguimiento inteligente, funciona sin conexión. Empieza gratis.",
-    "keywords": "app nutrición, dieta personalizada, pérdida de peso, contador calorías, seguimiento alimentario, app adelgazar"
+    "title": "LOWIS - Nutrición Inteligente Adaptada a Marruecos | Tu Recorrido Personalizado",
+    "description": "Transforma tu alimentación con LOWIS. Sistema de 13 fases adaptado a la cocina marroquí, seguimiento de 12 indicadores de salud, funciona sin conexión. Empieza gratis.",
+    "keywords": "aplicación nutrición marruecos, dieta personalizada, pérdida de peso, cocina marroquí, seguimiento salud, app adelgazar"
   },
   "nav": {
     "features": "Funcionalidades",
@@ -12,10 +12,10 @@
     "cta": "Empezar"
   },
   "hero": {
-    "badge": "Nuevo",
+    "badge": "Adaptado a Marruecos 🇲🇦",
     "title": "Deja de contar calorías.",
     "titleHighlight": "Empieza a transformar tu vida.",
-    "subtitle": "LOWIS es el primer sistema nutricional en 13 fases que se adapta a tu cuerpo, no al revés.",
+    "subtitle": "El primer sistema nutricional en 13 fases que entiende tu cocina, tus productos locales y se adapta a tu cuerpo.",
     "cta": "Empezar gratis",
     "ctaSecondary": "Ver demo",
     "noCard": "Sin tarjeta de crédito",
@@ -27,67 +27,129 @@
     "points": [
       {
         "icon": "close",
-        "text": "IA que falla 7 de cada 10 veces"
+        "text": "IA que no reconoce el tajine ni el cuscús"
       },
       {
         "icon": "close",
-        "text": "Imposible corregir errores"
+        "text": "Bases de datos sin productos marroquíes"
       },
       {
         "icon": "close",
-        "text": "Contar calorías sin plan real"
+        "text": "Contar calorías sin entender tu cuerpo"
       },
       {
         "icon": "close",
-        "text": "Lo dejas después de 2 semanas"
+        "text": "Abandonada a las 2 semanas por falta de seguimiento"
       }
     ],
     "solution": "LOWIS es diferente."
   },
   "features": {
     "title": "Por qué LOWIS lo cambia todo",
-    "subtitle": "Funcionalidades pensadas para tu éxito",
+    "subtitle": "Un sistema completo que entiende tu cuerpo y tu cultura",
     "items": [
       {
+        "icon": "restaurant",
+        "title": "Adaptado a la cocina marroquí",
+        "description": "Tajines, cuscús, pastela, harira... Nuestra base de datos incluye más de 500 platos e ingredientes marroquíes con sus valores nutricionales exactos."
+      },
+      {
         "icon": "science",
-        "title": "Un sistema real, no una calculadora",
-        "description": "13 fases científicas que evolucionan contigo. Evaluación semanal automática de tus síntomas y progreso."
+        "title": "13 fases científicas",
+        "description": "No solo calorías. Un sistema completo que evoluciona contigo, con evaluación semanal y ajuste automático de tu plan."
       },
       {
-        "icon": "verified",
-        "title": "Precisión en la que puedes confiar",
-        "description": "3 bases de datos nutricionales combinadas (USDA, Spoonacular, FatSecret). Corrige en dos clicks si es necesario."
-      },
-      {
-        "icon": "wifi_off",
-        "title": "Funciona sin internet",
-        "description": "Registra tus comidas donde sea. Todo se sincroniza automáticamente cuando vuelves a conectarte."
+        "icon": "monitoring",
+        "title": "12 indicadores de salud",
+        "description": "Sueño, energía, hidratación, hinchazón, calidad de digestión, humor, estrés... Seguimos todo lo que afecta a tu metabolismo."
       },
       {
         "icon": "smart_toy",
-        "title": "Tu nutricionista de bolsillo",
-        "description": "Asistente IA disponible 24/7. Consejos personalizados, análisis de síntomas y recomendaciones diarias."
+        "title": "Asistente IA personalizado",
+        "description": "Consejos adaptados a TUS síntomas, TUS hábitos y TU progreso. Como un nutricionista de bolsillo disponible 24/7."
+      }
+    ]
+  },
+  "healthTracking": {
+    "title": "Seguimos lo que realmente importa",
+    "subtitle": "12 indicadores de salud para una personalización completa",
+    "items": [
+      {
+        "icon": "bedtime",
+        "title": "Sueño",
+        "description": "La falta de sueño aumenta el cortisol y el hambre. Adaptamos tu plan en consecuencia."
+      },
+      {
+        "icon": "local_drink",
+        "title": "Hidratación",
+        "description": "El agua afecta a tu metabolismo, energía y digestión. Objetivos personalizados cada día."
+      },
+      {
+        "icon": "psychology",
+        "title": "Estrés y Humor",
+        "description": "El estrés hormonal impacta en el aumento de peso. Ajustamos recomendaciones según tu estado."
+      },
+      {
+        "icon": "bolt",
+        "title": "Energía y Fatiga",
+        "description": "Tu nivel de energía revela si tu alimentación es adecuada. Optimizamos en tiempo real."
+      },
+      {
+        "icon": "gastroenterology",
+        "title": "Digestión e Hinchazón",
+        "description": "Identificar los alimentos que te causan problemas para evitarlos inteligentemente."
+      },
+      {
+        "icon": "nutrition",
+        "title": "Macros y Micronutrientes",
+        "description": "Proteínas, carbohidratos, grasas + vitaminas y minerales esenciales. Todo equilibrado."
+      }
+    ]
+  },
+  "moroccanFeatures": {
+    "title": "Diseñado para Marruecos",
+    "subtitle": "Tu cocina, tus productos, tu cultura",
+    "items": [
+      {
+        "icon": "egg_alt",
+        "title": "Recetas tradicionales",
+        "description": "Tajine de pollo con limón, cuscús de 7 verduras, pastela, harira, rfissa... Todas calculadas con precisión."
+      },
+      {
+        "icon": "storefront",
+        "title": "Productos del zoco",
+        "description": "Aceite de argán, ras el hanout, khliaa, amlou, dátiles Medjool... Tus ingredientes locales están en nuestra base."
+      },
+      {
+        "icon": "calendar_month",
+        "title": "Adaptado al Ramadán",
+        "description": "Planes especiales para el ayuno con distribución óptima del ftour y el shour."
+      },
+      {
+        "icon": "groups",
+        "title": "Comidas en familia",
+        "description": "Sabemos que compartes platos. Calcula tu porción incluso en un tajine familiar."
       }
     ]
   },
   "howItWorks": {
     "title": "¿Cómo funciona?",
-    "subtitle": "En 3 pasos simples",
+    "subtitle": "En 3 simples pasos",
     "steps": [
       {
         "number": "1",
         "title": "Instala la app",
-        "description": "2 minutos, sin descargar de la App Store. Instala directamente en tu pantalla."
+        "description": "2 minutos, directamente en tu pantalla. Sin App Store."
       },
       {
         "number": "2",
         "title": "Crea tu perfil",
-        "description": "Responde algunas preguntas sobre tus objetivos, hábitos y preferencias alimentarias."
+        "description": "Objetivos, hábitos alimenticios, preferencias. Te conocemos."
       },
       {
         "number": "3",
-        "title": "Recibe tu plan",
-        "description": "Tu plan nutricional en 13 fases, adaptado a tu cuerpo y tus objetivos."
+        "title": "Sigue tu plan personalizado",
+        "description": "13 fases que se adaptan a tus resultados y síntomas. Cada semana, ajustamos."
       }
     ],
     "cta": "Empezar ahora"
@@ -107,8 +169,9 @@
       "period": "para siempre",
       "features": [
         "Escaneo IA de comidas",
-        "Seguimiento de peso",
-        "Modo sin conexión",
+        "Base de datos marroquí",
+        "Seguimiento de peso y medidas",
+        "Modo sin conexión completo",
         "Historial 7 días"
       ],
       "cta": "Probar gratis",
@@ -116,17 +179,19 @@
     },
     "premium": {
       "name": "Premium",
-      "price": "9.99",
-      "period": "/mes",
+      "price": "99",
+      "period": "DH/mes",
       "features": [
         "Todo del plan Gratis",
         "13 fases LOWIS completas",
-        "Audios de motivación",
+        "12 indicadores de salud",
+        "Planes de comida personalizados",
         "Asistente IA 24/7",
         "Evaluación semanal",
+        "Audios de motivación",
         "Historial ilimitado"
       ],
-      "cta": "Iniciar prueba gratis",
+      "cta": "Iniciar prueba gratuita",
       "popular": true,
       "trial": "7 días de prueba gratis"
     }
@@ -135,35 +200,39 @@
     "title": "Preguntas frecuentes",
     "items": [
       {
-        "question": "¿Es realmente gratis para empezar?",
-        "answer": "¡Sí! El plan gratis te da acceso al escaneo IA, seguimiento de peso y modo sin conexión. No se requiere tarjeta de crédito para empezar."
+        "question": "¿La app reconoce realmente los platos marroquíes?",
+        "answer": "¡Sí! Nuestra base de datos incluye más de 500 platos e ingredientes marroquíes: tajines, cuscús, pastela, harira, msemen, baghrir y mucho más."
+      },
+      {
+        "question": "¿Cómo seguís 12 indicadores de salud?",
+        "answer": "Cada día, respondes a unas preguntas rápidas sobre tu sueño, energía, digestión, humor, etc. En 30 segundos, entendemos cómo te sientes y adaptamos recomendaciones."
       },
       {
         "question": "¿La app funciona sin conexión?",
-        "answer": "Por supuesto. LOWIS es una Progressive Web App (PWA) diseñada para funcionar sin conexión. Tus datos se sincronizan automáticamente cuando estás en línea."
+        "answer": "Absolutamente. LOWIS es una PWA diseñada para Marruecos donde la conexión puede ser inestable. Todo funciona offline y se sincroniza automáticamente."
       },
       {
-        "question": "¿Cómo es LOWIS diferente de otras apps?",
-        "answer": "LOWIS no es una simple calculadora de calorías. Es un sistema completo de 13 fases basado en ciencia nutricional, con evaluación semanal de tus síntomas y ajuste automático de tu plan."
+        "question": "¿Es realmente gratis para empezar?",
+        "answer": "¡Sí! El plan gratuito te da acceso al escaneo IA, la base de datos marroquí y el modo offline. Sin tarjeta bancaria."
+      },
+      {
+        "question": "¿Cómo funciona durante el Ramadán?",
+        "answer": "Tenemos planes especiales para el ayuno con distribución óptima entre ftour y shour. La app se adapta automáticamente a tu ritmo durante el mes sagrado."
       },
       {
         "question": "¿Puedo cancelar en cualquier momento?",
-        "answer": "Sí, puedes cancelar tu suscripción Premium cuando quieras. Mantendrás el acceso hasta el final de tu período de facturación."
-      },
-      {
-        "question": "¿Mis datos están seguros?",
-        "answer": "Tus datos están encriptados y almacenados de forma segura. Cumplimos con RGPD y nunca vendemos tu información personal."
+        "answer": "Sí, cancelación en un clic. Mantienes el acceso Premium hasta el final de tu período pagado."
       }
     ]
   },
   "finalCta": {
     "title": "¿Listo para transformar tu relación con la comida?",
-    "subtitle": "Únete a miles de personas que han recuperado el control.",
+    "subtitle": "Únete a miles de marroquíes que han retomado el control de su salud.",
     "cta": "Empezar gratis",
-    "noCard": "Sin tarjeta de crédito"
+    "noCard": "Sin tarjeta bancaria"
   },
   "footer": {
-    "tagline": "El sistema nutricional inteligente",
+    "tagline": "El sistema nutricional inteligente adaptado a Marruecos",
     "product": {
       "title": "Producto",
       "features": "Funcionalidades",
@@ -182,5 +251,18 @@
       "email": "contact@lowis.app"
     },
     "copyright": "Todos los derechos reservados."
+  },
+  "demo": {
+    "aiMessage": "Excelente trabajo hoy",
+    "names": ["Rania", "Fatima", "Nour", "Salma", "Amina", "Houda", "Adnan", "Youssef", "Karim", "Omar"],
+    "objectives": {
+      "calories": "Calorías",
+      "protein": "Proteínas",
+      "water": "Agua",
+      "steps": "Pasos"
+    },
+    "phase": "Fase D2",
+    "phaseLabel": "Desestocaje",
+    "recipes": "Recetas del día"
   }
 }
