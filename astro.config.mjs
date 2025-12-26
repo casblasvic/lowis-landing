@@ -5,8 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://casblasvic.github.io',
-  base: '/lowis-landing',
+  site: 'https://lowis.app',
   vite: {
     plugins: [tailwindcss()]
   }
