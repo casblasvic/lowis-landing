@@ -15,7 +15,6 @@ interface Props {
         features: string[];
         cta: string;
         popular: boolean;
-        guarantee: string;
       };
     };
   };
@@ -41,11 +40,11 @@ const { t } = Astro.props;
     </div>
 
     <!-- Single Premium Card -->
-    <div class="max-w-md mx-auto">
-      <div class="relative p-8 lg:p-10 bg-dark-surface border-2 border-primary-orange rounded-3xl overflow-hidden">
-        <!-- Trial badge -->
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <div class="px-6 py-2 bg-gradient-to-r from-primary-orange to-primary-red text-white text-sm font-bold rounded-full shadow-lg">
+    <div class="max-w-md mx-auto pt-6">
+      <div class="relative p-8 lg:p-10 bg-dark-surface border-2 border-primary-orange rounded-3xl">
+        <!-- Trial badge - positioned above the card -->
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
+          <div class="px-6 py-2.5 bg-gradient-to-r from-primary-orange to-primary-red text-white text-sm font-bold rounded-full shadow-lg whitespace-nowrap">
             {t.pricing.premium.badge}
           </div>
         </div>
@@ -90,16 +89,10 @@ const { t } = Astro.props;
           </ul>
 
           <!-- CTA Button -->
-          <a href="https://app.lowis.app/signup/welcome" class="btn-primary w-full justify-center text-lg py-4 mb-4">
+          <a href="https://app.lowis.app/signup/welcome" class="btn-primary w-full justify-center text-lg py-4">
             {t.pricing.premium.cta}
             <span class="material-symbols-outlined ml-2">arrow_forward</span>
           </a>
-
-          <!-- Guarantee -->
-          <div class="flex items-center justify-center gap-2 text-text-muted text-sm">
-            <span class="material-symbols-outlined text-lg">verified_user</span>
-            <span>{t.pricing.premium.guarantee}</span>
-          </div>
         </div>
       </div>
     </div>

@@ -19,8 +19,7 @@
     "cta": "Perder mi 1er kilo en 7 días",
     "ctaSecondary": "Ver demo",
     "noCard": "Sin tarjeta bancaria",
-    "pricingInfo": "Después 149 DH/mes • Cancela cuando quieras",
-    "guarantee": "Garantía: 1 kg/semana mínimo* — si no, prolongamos gratis",
+    "pricingInfo": "Después 199 DH/semana • Cancela cuando quieras",
     "disclaimer": "*Siguiendo el protocolo. Ver condiciones.",
     "users": "usuarios activos"
   },
@@ -326,10 +325,10 @@
       "name": "Premium",
       "badge": "Prueba gratis 7 días",
       "price": "0",
-      "priceAfter": "149",
-      "period": "DH/mes",
+      "priceAfter": "199",
+      "period": "DH/semana",
       "trialText": "0 DH durante 7 días",
-      "afterTrialText": "Después 149 DH/mes",
+      "afterTrialText": "Después 199 DH/semana",
       "features": [
         "13 fases LOWIS completas",
         "17+ indicadores de salud",
@@ -341,8 +340,7 @@
         "Cancela en 1 clic"
       ],
       "cta": "Empezar a perder ahora",
-      "popular": true,
-      "guarantee": "Garantía: 1 kg/semana mínimo* — o acompañamiento prolongado gratis"
+      "popular": true
     }
   },
   "faq": {
