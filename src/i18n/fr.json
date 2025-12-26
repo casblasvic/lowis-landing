@@ -78,12 +78,30 @@
     "subtitle": "Les régimes classiques vous donnent un plan et vous laissent seul. Nous, on vous accompagne 24h/24.",
     "items": [
       {
+        "icon": "restaurant",
+        "title": "Vos recettes, mieux combinées",
+        "points": [
+          "Gardez vos plats préférés",
+          "On optimise l'ordre et les combinaisons",
+          "Chaque calorie compte intelligemment"
+        ]
+      },
+      {
+        "icon": "psychology",
+        "title": "Apprenez à manger intelligent",
+        "points": [
+          "Pas de restrictions stressantes",
+          "Comprenez comment votre corps fonctionne",
+          "Un savoir qui reste pour la vie"
+        ]
+      },
+      {
         "icon": "smart_toy",
         "title": "L'IA comprend votre quotidien",
         "points": [
-          "Mal dormi? On ajuste pour le cortisol élevé",
-          "Période de règles? On adapte pour la rétention",
-          "Stress au travail? On modifie vos recommandations"
+          "Mal dormi? On ajuste pour le cortisol",
+          "Règles? On adapte pour la rétention",
+          "Stress? On modifie vos recommandations"
         ]
       },
       {
@@ -91,7 +109,7 @@
         "title": "Nos experts vous suivent vraiment",
         "points": [
           "Évaluation hebdomadaire personnalisée",
-          "Pas un robot : de vrais nutritionnistes",
+          "De vrais nutritionnistes, pas un robot",
           "On comprend VOS circonstances"
         ]
       },
@@ -102,6 +120,15 @@
           "Pas de régime restrictif insoutenable",
           "Un plan réaliste que vous pouvez tenir",
           "Objectif : perdre ET maintenir à vie"
+        ]
+      },
+      {
+        "icon": "verified",
+        "title": "IA + experts 24/7",
+        "points": [
+          "L'IA réagit instantanément",
+          "Nos experts affinent chaque semaine",
+          "Vous n'êtes jamais seul"
         ]
       }
     ]

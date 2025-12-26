@@ -78,12 +78,30 @@
     "subtitle": "Classic diets give you a plan and leave you alone. We support you 24/7.",
     "items": [
       {
+        "icon": "restaurant",
+        "title": "Your recipes, better combined",
+        "points": [
+          "Keep your favorite dishes",
+          "We optimize order and combinations",
+          "Every calorie counts intelligently"
+        ]
+      },
+      {
+        "icon": "psychology",
+        "title": "Learn to eat smart",
+        "points": [
+          "No stressful restrictions",
+          "Understand how your body works",
+          "Knowledge that stays for life"
+        ]
+      },
+      {
         "icon": "smart_toy",
         "title": "AI understands your daily life",
         "points": [
-          "Slept badly? We adjust for high cortisol",
+          "Slept badly? We adjust for cortisol",
           "On your period? We adapt for retention",
-          "Work stress? We modify your recommendations"
+          "Stressed? We modify your recommendations"
         ]
       },
       {
@@ -91,7 +109,7 @@
         "title": "Our experts truly follow you",
         "points": [
           "Personalized weekly evaluation",
-          "Not a bot: real nutritionists",
+          "Real nutritionists, not a bot",
           "We understand YOUR circumstances"
         ]
       },
@@ -102,6 +120,15 @@
           "No unsustainable restrictive diets",
           "A realistic plan you can maintain",
           "Goal: lose AND keep it off for life"
+        ]
+      },
+      {
+        "icon": "verified",
+        "title": "AI + experts 24/7",
+        "points": [
+          "AI reacts instantly",
+          "Our experts refine weekly",
+          "You're never alone"
         ]
       }
     ]

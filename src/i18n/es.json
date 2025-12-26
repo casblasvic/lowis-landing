@@ -73,17 +73,35 @@
     ]
   },
   "aiExperts": {
-    "badge": "Nunca estás solo",
+    "badge": "Nunca estás sola",
     "title": "Nos adaptamos a TU vida, no al revés",
-    "subtitle": "Las dietas clásicas te dan un plan y te dejan solo. Nosotros te acompañamos 24h al día.",
+    "subtitle": "Las dietas clásicas te dan un plan y te dejan sola. Nosotros te acompañamos 24h al día.",
     "items": [
+      {
+        "icon": "restaurant",
+        "title": "Tus recetas, mejor combinadas",
+        "points": [
+          "Conserva tus platos favoritos",
+          "Optimizamos el orden y las combinaciones",
+          "Cada caloría cuenta inteligentemente"
+        ]
+      },
+      {
+        "icon": "psychology",
+        "title": "Aprende a comer inteligente",
+        "points": [
+          "Sin restricciones estresantes",
+          "Entiende cómo funciona tu cuerpo",
+          "Un saber que queda para siempre"
+        ]
+      },
       {
         "icon": "smart_toy",
         "title": "La IA entiende tu día a día",
         "points": [
-          "¿Dormiste mal? Ajustamos por el cortisol alto",
-          "¿Período menstrual? Nos adaptamos a la retención",
-          "¿Estrés en el trabajo? Modificamos tus recomendaciones"
+          "¿Dormiste mal? Ajustamos por el cortisol",
+          "¿Período? Nos adaptamos a la retención",
+          "¿Estrés? Modificamos tus recomendaciones"
         ]
       },
       {
@@ -91,7 +109,7 @@
         "title": "Nuestros expertos te siguen de verdad",
         "points": [
           "Evaluación semanal personalizada",
-          "No es un robot: nutricionistas reales",
+          "Nutricionistas reales, no un robot",
           "Entendemos TUS circunstancias"
         ]
       },
@@ -102,6 +120,15 @@
           "Nada de dietas restrictivas insostenibles",
           "Un plan realista que puedes mantener",
           "Objetivo: perder Y mantener de por vida"
+        ]
+      },
+      {
+        "icon": "verified",
+        "title": "IA + expertos 24/7",
+        "points": [
+          "La IA reacciona instantáneamente",
+          "Nuestros expertos afinan cada semana",
+          "Nunca estás sola"
         ]
       }
     ]
