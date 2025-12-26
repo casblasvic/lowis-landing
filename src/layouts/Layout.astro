@@ -6,11 +6,12 @@ import { SITE_CONFIG } from '../config';
 interface Props {
   title: string;
   description: string;
+  keywords?: string;
   lang?: Language;
   canonicalUrl?: string;
 }
 
-const { title, description, lang = defaultLang, canonicalUrl } = Astro.props;
+const { title, description, keywords, lang = defaultLang, canonicalUrl } = Astro.props;
 const baseUrl = SITE_CONFIG.domain;
 const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
 ---
@@ -21,6 +22,10 @@ const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    {keywords && <meta name="keywords" content={keywords} />}
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="LOWIS" />
+    <meta name="theme-color" content="#F97316" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
@@ -63,6 +68,15 @@ const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
     />
 
     <title>{title}</title>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-52G0810T4P"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-52G0810T4P');
+    </script>
 
     <!-- Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify({
