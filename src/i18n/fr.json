@@ -302,13 +302,13 @@
     "steps": [
       {
         "number": "1",
-        "title": "Vous mangez normalement",
-        "description": "Cuisine marocaine incluse. Tajines, couscous, harira... On ne vous demande pas de changer vos plats."
+        "title": "Remplissez votre profil",
+        "description": "Nous générons un plan adapté à vos goûts et conditions de santé, avec un ordre spécifique et des aliments optimisés selon vos indicateurs."
       },
       {
         "number": "2",
-        "title": "LOWIS analyse tout",
-        "description": "Vos repas, vos portions, votre sommeil, votre énergie, votre humeur... 17+ indicateurs en temps réel."
+        "title": "LOWIS apprend et s'adapte",
+        "description": "Le programme apprend vos habitudes et s'adapte dynamiquement à toutes vos circonstances. C'est pourquoi nous surveillons 17+ indicateurs — un suivi vraiment personnalisé."
       },
       {
         "number": "3",
