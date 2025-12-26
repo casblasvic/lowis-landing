@@ -16,7 +16,7 @@
     "title": "Garantizado: Pierde entre",
     "titleHighlight": "1 a 2,5 kg por semana",
     "subtitle": "Aprende a comer inteligentemente con tus recetas marroquíes favoritas. Sin restricciones estresantes, solo variando el orden y la combinación de los alimentos.",
-    "cta": "Estoy motivado para empezar",
+    "cta": "Obtener mi plan personalizado gratis",
     "ctaSecondary": "Ver demo",
     "noCard": "Sin tarjeta bancaria",
     "pricingInfo": "Después 199 DH/semana • Cancela cuando quieras",
@@ -289,7 +289,7 @@
         "description": "La IA reacciona al instante. Nuestros expertos afinan cada semana. Tu plan evoluciona contigo."
       }
     ],
-    "cta": "Empezar a perder ahora",
+    "cta": "Obtener mi plan gratis",
     "badge": ""
   },
   "stats": {
@@ -319,8 +319,8 @@
     ]
   },
   "pricing": {
-    "title": "7 días GRATIS para empezar a perder",
-    "subtitle": "Empieza hoy, sin tarjeta bancaria",
+    "title": "Obtén tu plan personalizado",
+    "subtitle": "Gratis y sin tarjeta bancaria",
     "trustBadges": {
       "noCard": "Sin tarjeta bancaria",
       "cancel": "Cancela en 1 clic",
@@ -342,7 +342,7 @@
         "Programa audio cuerpo y mente",
         "Evaluación semanal"
       ],
-      "cta": "Empezar a perder ahora",
+      "cta": "Obtener mi plan personalizado",
       "popular": true
     }
   },
@@ -388,10 +388,10 @@
     ]
   },
   "finalCta": {
-    "title": "¿Lista para perder tu primer kilo?",
-    "subtitle": "En 7 días verás la diferencia.",
-    "cta": "Empezar a perder ahora",
-    "noCard": "Sin tarjeta bancaria • Después 149 DH/mes"
+    "title": "¿Lista para transformar tu alimentación?",
+    "subtitle": "Tu plan personalizado te espera.",
+    "cta": "Obtener mi plan gratis",
+    "noCard": "Gratis • Sin tarjeta bancaria"
   },
   "footer": {
     "tagline": "El sistema nutricional inteligente creado para Marruecos",

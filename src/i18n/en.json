@@ -16,7 +16,7 @@
     "title": "Guaranteed: Lose between",
     "titleHighlight": "1 to 2.5 kg per week",
     "subtitle": "Learn to eat smart with your favorite Moroccan recipes. No stressful restrictions, just varying the order and combination of foods.",
-    "cta": "I'm motivated to start",
+    "cta": "Get my free personalized plan",
     "ctaSecondary": "See demo",
     "noCard": "No credit card required",
     "pricingInfo": "Then 199 DH/week • Cancel anytime",
@@ -289,7 +289,7 @@
         "description": "AI reacts instantly. Our experts refine weekly. Your plan evolves with you."
       }
     ],
-    "cta": "Start losing now",
+    "cta": "Get my free plan",
     "badge": ""
   },
   "stats": {
@@ -319,8 +319,8 @@
     ]
   },
   "pricing": {
-    "title": "7 days FREE to start losing",
-    "subtitle": "Start today, no credit card required",
+    "title": "Get your personalized plan",
+    "subtitle": "Free and no credit card required",
     "trustBadges": {
       "noCard": "No credit card",
       "cancel": "Cancel in 1 click",
@@ -342,7 +342,7 @@
         "Mind & body audio program",
         "Weekly evaluation"
       ],
-      "cta": "Start losing now",
+      "cta": "Get my personalized plan",
       "popular": true
     }
   },
@@ -388,10 +388,10 @@
     ]
   },
   "finalCta": {
-    "title": "Ready to lose your first kilo?",
-    "subtitle": "In 7 days, you'll see the difference.",
-    "cta": "Start losing now",
-    "noCard": "No credit card • Then 149 DH/month"
+    "title": "Ready to transform your eating?",
+    "subtitle": "Your personalized plan awaits.",
+    "cta": "Get my free plan",
+    "noCard": "Free • No credit card"
   },
   "footer": {
     "tagline": "The smart nutritional system made for Morocco",

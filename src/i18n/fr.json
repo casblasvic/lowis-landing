@@ -16,7 +16,7 @@
     "title": "Garanti : Perdez entre",
     "titleHighlight": "1 à 2,5 kg par semaine",
     "subtitle": "Apprenez à manger intelligemment avec vos recettes marocaines préférées. Sans restrictions stressantes, juste en variant l'ordre et la combinaison des aliments.",
-    "cta": "Je suis motivé pour commencer",
+    "cta": "Obtenir mon plan personnalisé gratuit",
     "ctaSecondary": "Voir la démo",
     "noCard": "Sans carte bancaire",
     "pricingInfo": "Puis 199 DH/semaine • Annulation en 1 clic",
@@ -289,7 +289,7 @@
         "description": "L'IA réagit instantanément. Nos experts affinent chaque semaine. Votre plan évolue avec vous."
       }
     ],
-    "cta": "Commencer à perdre maintenant",
+    "cta": "Obtenir mon plan gratuit",
     "badge": ""
   },
   "stats": {
@@ -319,8 +319,8 @@
     ]
   },
   "pricing": {
-    "title": "7 jours GRATUITS pour commencer à perdre",
-    "subtitle": "Commencez aujourd'hui, sans carte bancaire",
+    "title": "Obtenez votre plan personnalisé",
+    "subtitle": "Gratuit et sans carte bancaire",
     "trustBadges": {
       "noCard": "Sans carte bancaire",
       "cancel": "Annulation en 1 clic",
@@ -342,7 +342,7 @@
         "Programme audio corps & esprit",
         "Évaluation hebdomadaire"
       ],
-      "cta": "Commencer à perdre maintenant",
+      "cta": "Obtenir mon plan personnalisé",
       "popular": true
     }
   },
@@ -388,10 +388,10 @@
     ]
   },
   "finalCta": {
-    "title": "Prêt à perdre votre premier kilo?",
-    "subtitle": "Dans 7 jours, vous verrez la différence.",
-    "cta": "Commencer à perdre maintenant",
-    "noCard": "Sans carte bancaire • Puis 149 DH/mois"
+    "title": "Prêt à transformer votre alimentation?",
+    "subtitle": "Votre plan personnalisé vous attend.",
+    "cta": "Obtenir mon plan gratuit",
+    "noCard": "Gratuit • Sans carte bancaire"
   },
   "footer": {
     "tagline": "Le système nutritionnel intelligent créé pour le Maroc",
