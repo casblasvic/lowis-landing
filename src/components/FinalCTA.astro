@@ -1,4 +1,6 @@
 ---
+import { SITE_CONFIG } from '../config';
+
 interface Props {
   t: {
     finalCta: {
@@ -37,7 +39,7 @@ const { t } = Astro.props;
       </p>
 
       <!-- CTA Button -->
-      <a href="https://app.lowis.app/signup/welcome" class="btn-primary text-xl px-10 py-5 animate-pulse-glow">
+      <a href={SITE_CONFIG.signupUrl} class="btn-primary text-xl px-10 py-5 animate-pulse-glow">
         {t.finalCta.cta}
         <span class="material-symbols-outlined ml-2 text-2xl">arrow_forward</span>
       </a>

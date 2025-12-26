@@ -1,6 +1,7 @@
 ---
 import { type Language, languages, getPathWithLang, defaultLang } from '../i18n';
 import Logo from './ui/Logo.astro';
+import { SITE_CONFIG } from '../config';
 
 interface Props {
   t: {
@@ -85,7 +86,7 @@ const langOptions = Object.entries(languages).map(([code, name]) => ({
         </div>
 
         <!-- CTA Button -->
-        <a href="https://app.lowis.app/signup/welcome" class="btn-primary hidden sm:inline-flex text-sm px-4 py-2">
+        <a href={SITE_CONFIG.signupUrl} class="btn-primary hidden sm:inline-flex text-sm px-4 py-2">
           {t.nav.cta}
         </a>
 
@@ -111,7 +112,7 @@ const langOptions = Object.entries(languages).map(([code, name]) => ({
             {link.label}
           </a>
         ))}
-        <a href="https://app.lowis.app/signup/welcome" class="btn-primary text-center mt-2">
+        <a href={SITE_CONFIG.signupUrl} class="btn-primary text-center mt-2">
           {t.nav.cta}
         </a>
       </div>

@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { type Language, defaultLang, getAlternateUrls } from '../i18n';
+import { SITE_CONFIG } from '../config';
 
 interface Props {
   title: string;
@@ -10,7 +11,7 @@ interface Props {
 }
 
 const { title, description, lang = defaultLang, canonicalUrl } = Astro.props;
-const baseUrl = 'https://lowis.app';
+const baseUrl = SITE_CONFIG.domain;
 const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
 ---
 
@@ -88,7 +89,7 @@ const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
 
     <!-- Sticky CTA for mobile -->
     <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 z-50 p-3 bg-dark-bg/95 backdrop-blur-lg border-t border-dark-border md:hidden transform translate-y-full transition-transform duration-300">
-      <a href="https://app.lowis.app/signup/welcome" class="btn-primary w-full justify-center text-base py-3">
+      <a href={SITE_CONFIG.signupUrl} class="btn-primary w-full justify-center text-base py-3">
         Essai gratuit 7 jours
         <span class="material-symbols-outlined ml-2 text-lg">arrow_forward</span>
       </a>

@@ -1,4 +1,6 @@
 ---
+import { SITE_CONFIG } from '../config';
+
 interface Props {
   t: {
     pricing: {
@@ -89,7 +91,7 @@ const { t } = Astro.props;
           </ul>
 
           <!-- CTA Button -->
-          <a href="https://app.lowis.app/signup/welcome" class="btn-primary w-full justify-center text-lg py-4">
+          <a href={SITE_CONFIG.signupUrl} class="btn-primary w-full justify-center text-lg py-4">
             {t.pricing.premium.cta}
             <span class="material-symbols-outlined ml-2">arrow_forward</span>
           </a>

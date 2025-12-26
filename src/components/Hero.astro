@@ -1,6 +1,7 @@
 ---
 import Logo from './ui/Logo.astro';
 import PhoneMockup from './PhoneMockup.astro';
+import { SITE_CONFIG } from '../config';
 
 interface Props {
   t: {
@@ -77,7 +78,7 @@ const { t } = Astro.props;
 
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6 animate-fade-in-up" style="animation-delay: 0.3s">
-          <a href="https://app.lowis.app/signup/welcome" class="btn-primary text-lg px-8 py-4 animate-pulse-glow">
+          <a href={SITE_CONFIG.signupUrl} class="btn-primary text-lg px-8 py-4 animate-pulse-glow">
             {t.hero.cta}
             <span class="material-symbols-outlined ml-2">arrow_forward</span>
           </a>
