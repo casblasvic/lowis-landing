@@ -22,9 +22,9 @@ const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
     <meta name="description" content={description} />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/lowis-landing/icons/favicon-32.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/lowis-landing/icons/logo-192.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/lowis-landing/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/logo-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
@@ -72,9 +72,9 @@ const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
       "operatingSystem": "Web",
       "offers": {
         "@type": "Offer",
-        "price": "149",
+        "price": "199",
         "priceCurrency": "MAD",
-        "description": "7-day free trial, then 149 DH/month"
+        "description": "7-day free trial, then 199 DH/week"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -88,7 +88,7 @@ const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
 
     <!-- Sticky CTA for mobile -->
     <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 z-50 p-3 bg-dark-bg/95 backdrop-blur-lg border-t border-dark-border md:hidden transform translate-y-full transition-transform duration-300">
-      <a href="#pricing" class="btn-primary w-full justify-center text-base py-3">
+      <a href="https://app.lowis.app/signup/welcome" class="btn-primary w-full justify-center text-base py-3">
         Essai gratuit 7 jours
         <span class="material-symbols-outlined ml-2 text-lg">arrow_forward</span>
       </a>
