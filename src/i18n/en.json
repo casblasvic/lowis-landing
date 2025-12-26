@@ -9,19 +9,18 @@
     "howItWorks": "How it Works",
     "pricing": "Pricing",
     "faq": "FAQ",
-    "cta": "Lose my 1st kilo"
+    "cta": "Start Now!"
   },
   "hero": {
     "badge": "Made for Morocco 🇲🇦",
-    "title": "Goal: lose",
-    "titleHighlight": "1 kg/week minimum*",
+    "title": "Guaranteed: Lose at least",
+    "titleHighlight": "1 kg/week without restrictions",
     "subtitle": "Learn to eat smart with your favorite Moroccan recipes. No stressful restrictions, just varying the order and combination of foods.",
-    "cta": "Lose my 1st kilo in 7 days",
+    "cta": "I'm motivated to start",
     "ctaSecondary": "See demo",
     "noCard": "No credit card required",
     "pricingInfo": "Then 199 DH/week • Cancel anytime",
-    "guarantee": "Guaranteed: Lose at least 1 kg/week without restrictions",
-    "disclaimer": "*By following the protocol. See conditions.",
+    "disclaimer": "By following the LOWIS protocol.",
     "users": "active users"
   },
   "problem": {

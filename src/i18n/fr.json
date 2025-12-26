@@ -9,19 +9,18 @@
     "howItWorks": "Comment ça marche",
     "pricing": "Tarifs",
     "faq": "FAQ",
-    "cta": "Perdre mon 1er kilo"
+    "cta": "Commencez maintenant !"
   },
   "hero": {
     "badge": "Créé pour le Maroc 🇲🇦",
-    "title": "Objectif : perdre",
-    "titleHighlight": "1 kg/semaine minimum*",
+    "title": "Garanti : Perdez au moins",
+    "titleHighlight": "1 kg/semaine sans restrictions",
     "subtitle": "Apprenez à manger intelligemment avec vos recettes marocaines préférées. Sans restrictions stressantes, juste en variant l'ordre et la combinaison des aliments.",
-    "cta": "Perdre mon 1er kilo dans 7 jours",
+    "cta": "Je suis motivé pour commencer",
     "ctaSecondary": "Voir la démo",
     "noCard": "Sans carte bancaire",
     "pricingInfo": "Puis 199 DH/semaine • Annulation en 1 clic",
-    "guarantee": "Garanti : Perdez au moins 1 kg/semaine sans restrictions",
-    "disclaimer": "*En suivant le protocole. Voir conditions.",
+    "disclaimer": "En suivant le protocole LOWIS.",
     "users": "utilisateurs actifs"
   },
   "problem": {
