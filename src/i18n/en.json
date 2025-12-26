@@ -346,16 +346,16 @@
     ]
   },
   "pricing": {
-    "title": "See for yourself with your first week on us",
-    "subtitle": "No commitment • No payment • No credit card",
+    "title": "See for yourself the weight loss during your first week",
+    "subtitle": "🔒 No credit card required • ✓ Zero commitment • ✓ Cancel anytime",
     "trustBadges": {
       "noCard": "No credit card",
       "cancel": "Cancel in 1 click",
-      "secure": "Secure payment"
+      "secure": "100% free for 7 days"
     },
     "premium": {
       "name": "Premium",
-      "badge": "7-day free trial",
+      "badge": "First week free",
       "price": "0",
       "priceAfter": "199",
       "period": "DH/week",

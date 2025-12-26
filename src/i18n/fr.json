@@ -346,16 +346,16 @@
     ]
   },
   "pricing": {
-    "title": "Vérifiez par vous-même avec la première semaine offerte",
-    "subtitle": "Sans engagement • Sans paiement • Sans carte bancaire",
+    "title": "Vérifiez par vous-même la perte de kilos durant la première semaine",
+    "subtitle": "🔒 Aucune carte bancaire demandée • ✓ Zéro engagement • ✓ Annulez quand vous voulez",
     "trustBadges": {
-      "noCard": "Sans carte bancaire",
+      "noCard": "Aucune carte bancaire",
       "cancel": "Annulation en 1 clic",
-      "secure": "Paiement sécurisé"
+      "secure": "100% gratuit 7 jours"
     },
     "premium": {
       "name": "Premium",
-      "badge": "Essai gratuit 7 jours",
+      "badge": "Première semaine gratuite",
       "price": "0",
       "priceAfter": "199",
       "period": "DH/semaine",

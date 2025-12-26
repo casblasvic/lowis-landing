@@ -346,16 +346,16 @@
     ]
   },
   "pricing": {
-    "title": "Compruébalo tú misma con la primera semana de regalo",
-    "subtitle": "Sin compromiso • Sin pagar nada • Sin tarjeta",
+    "title": "Verifica tú misma la pérdida de kilos durante la primera semana",
+    "subtitle": "🔒 No pedimos tarjeta bancaria • ✓ Cero compromiso • ✓ Cancela cuando quieras",
     "trustBadges": {
       "noCard": "Sin tarjeta bancaria",
       "cancel": "Cancela en 1 clic",
-      "secure": "Pago seguro"
+      "secure": "100% gratis 7 días"
     },
     "premium": {
       "name": "Premium",
-      "badge": "Prueba gratis 7 días",
+      "badge": "Primera semana gratis",
       "price": "0",
       "priceAfter": "199",
       "period": "DH/semana",
