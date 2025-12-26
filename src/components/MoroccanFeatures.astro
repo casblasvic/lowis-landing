@@ -19,43 +19,43 @@ interface Props {
 
 const { t } = Astro.props;
 
-// Real Moroccan recipes from our database - limited to 6 for cleaner UX
+// Protein-rich Moroccan recipes - no carbs/grains
 const moroccanRecipes = [
   {
     name: 'Tajine Poulet Citron',
     nameFr: 'Tajine au poulet et citron',
     image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/15056.jpeg',
-    calories: 686
+    calories: 420
   },
   {
-    name: 'Harira',
-    nameFr: 'Soupe marocaine Harira',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/28644.webp',
-    calories: 180
+    name: 'Brochettes Agneau',
+    nameFr: 'Brochettes d\'agneau grillées',
+    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800',
+    calories: 380
   },
   {
     name: 'Tajine Viande Légumes',
     nameFr: 'Tajine de viande et légumes',
     image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/15140.jpeg',
-    calories: 689
+    calories: 450
   },
   {
-    name: 'Couscous Garbanzos',
-    nameFr: 'Couscous aux légumes',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/spoonacular_images/recipes/bf480f94-4219-4f21-948e-4b845099b8a9.jpg',
-    calories: 714
+    name: 'Poisson Chermoula',
+    nameFr: 'Poisson grillé chermoula',
+    image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=800',
+    calories: 320
   },
   {
-    name: 'Tajine Albondigas',
-    nameFr: 'Tajine aux boulettes',
+    name: 'Tajine Kefta',
+    nameFr: 'Tajine aux boulettes kefta',
     image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/19778.jpeg',
-    calories: 561
+    calories: 390
   },
   {
-    name: 'Bakoula',
-    nameFr: 'Épinards à la marocaine',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/18407.jpeg',
-    calories: 145
+    name: 'Mechoui',
+    nameFr: 'Épaule d\'agneau rôtie',
+    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800',
+    calories: 480
   }
 ];
 ---

@@ -14,7 +14,7 @@
   "hero": {
     "badge": "Creado para Marruecos 🇲🇦",
     "title": "Garantizado: Pierde al menos",
-    "titleHighlight": "1 kg/semana sin restricciones",
+    "titleHighlight": "1 kg/semana sin frustración",
     "subtitle": "Aprende a comer inteligentemente con tus recetas marroquíes favoritas. Sin restricciones estresantes, solo variando el orden y la combinación de los alimentos.",
     "cta": "Estoy motivado para empezar",
     "ctaSecondary": "Ver demo",
@@ -319,8 +319,13 @@
     ]
   },
   "pricing": {
-    "title": "Prueba LOWIS durante 7 días",
-    "subtitle": "Sin compromiso, sin tarjeta bancaria",
+    "title": "7 días GRATIS para empezar a perder",
+    "subtitle": "Empieza hoy, sin tarjeta bancaria",
+    "trustBadges": {
+      "noCard": "Sin tarjeta bancaria",
+      "cancel": "Cancela en 1 clic",
+      "secure": "Pago seguro"
+    },
     "premium": {
       "name": "Premium",
       "badge": "Prueba gratis 7 días",

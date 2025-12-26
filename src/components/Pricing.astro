@@ -6,6 +6,11 @@ interface Props {
     pricing: {
       title: string;
       subtitle: string;
+      trustBadges: {
+        noCard: string;
+        cancel: string;
+        secure: string;
+      };
       premium: {
         name: string;
         badge: string;
@@ -103,15 +108,15 @@ const { t } = Astro.props;
     <div class="mt-12 flex flex-wrap justify-center items-center gap-6 text-text-muted text-sm">
       <div class="flex items-center gap-2">
         <span class="material-symbols-outlined text-lg text-green-400">credit_card_off</span>
-        <span>Sans carte bancaire</span>
+        <span>{t.pricing.trustBadges.noCard}</span>
       </div>
       <div class="flex items-center gap-2">
         <span class="material-symbols-outlined text-lg text-green-400">cancel</span>
-        <span>Annulation en 1 clic</span>
+        <span>{t.pricing.trustBadges.cancel}</span>
       </div>
       <div class="flex items-center gap-2">
         <span class="material-symbols-outlined text-lg text-green-400">lock</span>
-        <span>Paiement sécurisé</span>
+        <span>{t.pricing.trustBadges.secure}</span>
       </div>
     </div>
   </div>

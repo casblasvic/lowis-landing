@@ -14,7 +14,7 @@
   "hero": {
     "badge": "Made for Morocco 🇲🇦",
     "title": "Guaranteed: Lose at least",
-    "titleHighlight": "1 kg/week without restrictions",
+    "titleHighlight": "1 kg/week without frustration",
     "subtitle": "Learn to eat smart with your favorite Moroccan recipes. No stressful restrictions, just varying the order and combination of foods.",
     "cta": "I'm motivated to start",
     "ctaSecondary": "See demo",
@@ -319,8 +319,13 @@
     ]
   },
   "pricing": {
-    "title": "Try LOWIS for 7 days",
-    "subtitle": "No commitment, no credit card",
+    "title": "7 days FREE to start losing",
+    "subtitle": "Start today, no credit card required",
+    "trustBadges": {
+      "noCard": "No credit card",
+      "cancel": "Cancel in 1 click",
+      "secure": "Secure payment"
+    },
     "premium": {
       "name": "Premium",
       "badge": "7-day free trial",
