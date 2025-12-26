@@ -290,7 +290,7 @@
       }
     ],
     "cta": "Commencer à perdre maintenant",
-    "badge": "PWA : fonctionne sans App Store, mode hors ligne disponible"
+    "badge": ""
   },
   "stats": {
     "title": "Un suivi 360° complet",
@@ -340,9 +340,7 @@
         "Plans repas personnalisés marocains",
         "IA + suivi par nos experts",
         "Programme audio corps & esprit",
-        "Évaluation hebdomadaire",
-        "Mode hors ligne complet",
-        "Annulation en 1 clic"
+        "Évaluation hebdomadaire"
       ],
       "cta": "Commencer à perdre maintenant",
       "popular": true

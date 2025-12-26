@@ -290,7 +290,7 @@
       }
     ],
     "cta": "Start losing now",
-    "badge": "PWA: works without App Store, offline mode available"
+    "badge": ""
   },
   "stats": {
     "title": "Complete 360° tracking",
@@ -340,9 +340,7 @@
         "Personalized Moroccan meal plans",
         "AI + expert monitoring",
         "Mind & body audio program",
-        "Weekly evaluation",
-        "Full offline mode",
-        "Cancel in 1 click"
+        "Weekly evaluation"
       ],
       "cta": "Start losing now",
       "popular": true

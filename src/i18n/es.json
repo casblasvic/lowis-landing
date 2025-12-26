@@ -290,7 +290,7 @@
       }
     ],
     "cta": "Empezar a perder ahora",
-    "badge": "PWA: funciona sin App Store, modo offline disponible"
+    "badge": ""
   },
   "stats": {
     "title": "Un seguimiento 360° completo",
@@ -340,9 +340,7 @@
         "Planes de comida personalizados marroquíes",
         "IA + seguimiento por expertos",
         "Programa audio cuerpo y mente",
-        "Evaluación semanal",
-        "Modo sin conexión completo",
-        "Cancela en 1 clic"
+        "Evaluación semanal"
       ],
       "cta": "Empezar a perder ahora",
       "popular": true
