@@ -138,24 +138,27 @@ const { t } = Astro.props;
       </div>
     </div>
 
-    <!-- How it works -->
-    <div class="max-w-3xl mx-auto">
-      <h3 class="text-xl font-bold text-center mb-8">{t.audioProgram.howItWorks.title}</h3>
+    <!-- How it works - styled like main HowItWorks but with teal colors -->
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-bold text-center mb-12">{t.audioProgram.howItWorks.title}</h3>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {t.audioProgram.howItWorks.steps.map((step, index) => (
-          <div class="relative">
-            <div class="flex items-start gap-3 p-4 bg-dark-surface/30 rounded-xl border border-dark-border">
-              <div class="w-8 h-8 bg-teal-500/20 rounded-full flex items-center justify-center shrink-0">
-                <span class="text-teal-400 font-bold text-sm">{index + 1}</span>
-              </div>
-              <p class="text-sm text-text-secondary">{step}</p>
-            </div>
+          <div class="relative text-center">
+            <!-- Connector line (hidden on last item) -->
             {index < t.audioProgram.howItWorks.steps.length - 1 && (
-              <div class="hidden lg:block absolute top-1/2 -right-2 transform -translate-y-1/2">
-                <span class="material-symbols-outlined text-dark-border">chevron_right</span>
-              </div>
+              <div class="hidden lg:block absolute top-10 left-1/2 w-full h-[2px] bg-gradient-to-r from-teal-500/50 to-transparent"></div>
             )}
+
+            <!-- Step number with teal gradient -->
+            <div class="relative inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 mb-5 shadow-lg">
+              <span class="text-3xl font-bold text-white">{index + 1}</span>
+              <!-- Glow effect -->
+              <div class="absolute inset-0 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 blur-xl opacity-30"></div>
+            </div>
+
+            <!-- Content -->
+            <p class="text-text-secondary text-sm leading-relaxed">{step}</p>
           </div>
         ))}
       </div>
