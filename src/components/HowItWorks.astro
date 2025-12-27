@@ -27,13 +27,46 @@ const { t } = Astro.props;
 
   <div class="section-container relative z-10">
     <!-- Section header -->
-    <div class="text-center max-w-2xl mx-auto mb-16">
+    <div class="text-center max-w-2xl mx-auto mb-12">
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
         {t.howItWorks.title}
       </h2>
       <p class="text-text-secondary text-lg">
         {t.howItWorks.subtitle}
       </p>
+    </div>
+
+    <!-- Hero Image - Food scanning demo -->
+    <div class="relative flex justify-center mb-12">
+      <!-- Glowing background effects -->
+      <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div class="w-72 h-72 bg-gradient-to-br from-primary-orange/20 to-primary-red/20 rounded-full blur-3xl"></div>
+      </div>
+
+      <!-- Main image container -->
+      <div class="relative">
+        <img
+          src="/Tajin_poulet_scannes.webp"
+          alt="Escaneo inteligente de alimentos - Tajine de pollo con macros y micronutrientes"
+          class="scan-hero-image relative z-10 w-full max-w-md lg:max-w-lg rounded-2xl"
+          loading="lazy"
+        />
+
+        <!-- Floating badges -->
+        <div class="absolute top-4 -left-2 lg:-left-6 z-20 animate-float-slow">
+          <div class="flex items-center gap-2 px-3 py-2 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-gray-100">
+            <span class="material-symbols-outlined text-primary-orange">photo_camera</span>
+            <span class="text-sm font-medium text-gray-800">Scan IA</span>
+          </div>
+        </div>
+
+        <div class="absolute bottom-8 -right-2 lg:-right-6 z-20 animate-float">
+          <div class="flex items-center gap-2 px-3 py-2 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-gray-100">
+            <span class="material-symbols-outlined text-green-500">nutrition</span>
+            <span class="text-sm font-medium text-gray-800">22 micronutriments</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Steps -->
@@ -68,3 +101,42 @@ const { t } = Astro.props;
     </div>
   </div>
 </section>
+
+<style>
+  .scan-hero-image {
+    filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.3));
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes float-slow {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-float-slow {
+    animation: float-slow 4s ease-in-out infinite;
+    animation-delay: 0.5s;
+  }
+
+  @media (max-width: 640px) {
+    .scan-hero-image {
+      max-width: 280px;
+    }
+  }
+</style>
