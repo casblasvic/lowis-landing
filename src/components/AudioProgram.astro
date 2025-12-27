@@ -54,9 +54,70 @@ const { t } = Astro.props;
     </div>
 
     <!-- Main content grid -->
-    <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
-      <!-- Features -->
-      <div class="space-y-6">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
+      <!-- Audio player mockup - Shows first on mobile -->
+      <div class="relative order-1 lg:order-2">
+        <div class="audio-player-mockup">
+          <!-- Glowing background -->
+          <div class="absolute inset-0 bg-gradient-to-br from-teal-500/30 to-primary-orange/30 rounded-2xl blur-xl"></div>
+
+          <!-- Player card - Light theme for contrast -->
+          <div class="relative bg-white border border-gray-200 rounded-2xl p-4 sm:p-5 shadow-xl">
+            <!-- Album art placeholder -->
+            <div class="aspect-square max-w-[140px] mx-auto mb-3 rounded-xl bg-gradient-to-br from-teal-500 to-primary-orange flex items-center justify-center overflow-hidden shadow-lg">
+              <div class="text-center text-white p-3">
+                <span class="material-symbols-outlined text-3xl mb-1">self_improvement</span>
+                <p class="font-semibold text-xs">Session 12</p>
+                <p class="text-[10px] opacity-80">Reprogrammation</p>
+              </div>
+            </div>
+
+            <!-- Track info -->
+            <div class="text-center mb-3">
+              <h4 class="font-bold text-sm text-gray-900">Libérez-vous des compulsions</h4>
+              <p class="text-gray-500 text-xs">Programme LOWIS - Phase D2</p>
+            </div>
+
+            <!-- Progress bar -->
+            <div class="mb-3">
+              <div class="h-1 bg-gray-200 rounded-full overflow-hidden">
+                <div class="h-full w-3/5 bg-gradient-to-r from-teal-500 to-primary-orange rounded-full"></div>
+              </div>
+              <div class="flex justify-between text-[10px] text-gray-400 mt-1">
+                <span>8:24</span>
+                <span>14:00</span>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="flex items-center justify-center gap-4">
+              <button class="text-gray-400 hover:text-gray-600 transition-colors">
+                <span class="material-symbols-outlined text-lg">replay_10</span>
+              </button>
+              <button class="w-10 h-10 bg-gradient-to-r from-teal-500 to-primary-orange rounded-full flex items-center justify-center hover:scale-105 transition-transform shadow-lg">
+                <span class="material-symbols-outlined text-xl text-white">pause</span>
+              </button>
+              <button class="text-gray-400 hover:text-gray-600 transition-colors">
+                <span class="material-symbols-outlined text-lg">forward_10</span>
+              </button>
+            </div>
+
+            <!-- Playback speed badge -->
+            <div class="absolute top-2 right-2 px-1.5 py-0.5 bg-teal-100 rounded-full">
+              <span class="text-[9px] text-teal-600 font-medium">1.25x</span>
+            </div>
+
+            <!-- Completion badge -->
+            <div class="absolute top-2 left-2 flex items-center gap-1 px-1.5 py-0.5 bg-green-100 rounded-full">
+              <span class="material-symbols-outlined text-[10px] text-green-600">local_fire_department</span>
+              <span class="text-[9px] text-green-600 font-medium">11 jours</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features - Shows second on mobile -->
+      <div class="space-y-4 order-2 lg:order-1">
         {t.audioProgram.features.map((feature, index) => (
           <div
             class="group flex gap-4 p-4 rounded-2xl bg-dark-surface/50 border border-dark-border hover:border-teal-500/50 transition-all duration-300"
@@ -74,67 +135,6 @@ const { t } = Astro.props;
             </div>
           </div>
         ))}
-      </div>
-
-      <!-- Audio player mockup -->
-      <div class="relative">
-        <div class="audio-player-mockup">
-          <!-- Glowing background -->
-          <div class="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-primary-orange/20 rounded-2xl blur-xl"></div>
-
-          <!-- Player card -->
-          <div class="relative bg-dark-surface border border-dark-border rounded-2xl p-4 sm:p-5">
-            <!-- Album art placeholder -->
-            <div class="aspect-square max-w-[160px] mx-auto mb-4 rounded-xl bg-gradient-to-br from-teal-600 to-primary-orange flex items-center justify-center overflow-hidden">
-              <div class="text-center text-white p-3">
-                <span class="material-symbols-outlined text-4xl mb-1">self_improvement</span>
-                <p class="font-semibold text-sm">Session 12</p>
-                <p class="text-xs opacity-80">Reprogrammation</p>
-              </div>
-            </div>
-
-            <!-- Track info -->
-            <div class="text-center mb-4">
-              <h4 class="font-bold text-base">Libérez-vous des compulsions</h4>
-              <p class="text-text-muted text-xs">Programme LOWIS - Phase D2</p>
-            </div>
-
-            <!-- Progress bar -->
-            <div class="mb-3">
-              <div class="h-1 bg-dark-border rounded-full overflow-hidden">
-                <div class="h-full w-3/5 bg-gradient-to-r from-teal-500 to-primary-orange rounded-full"></div>
-              </div>
-              <div class="flex justify-between text-xs text-text-muted mt-1">
-                <span>8:24</span>
-                <span>14:00</span>
-              </div>
-            </div>
-
-            <!-- Controls -->
-            <div class="flex items-center justify-center gap-5">
-              <button class="text-text-muted hover:text-white transition-colors">
-                <span class="material-symbols-outlined text-xl">replay_10</span>
-              </button>
-              <button class="w-11 h-11 bg-gradient-to-r from-teal-500 to-primary-orange rounded-full flex items-center justify-center hover:scale-105 transition-transform">
-                <span class="material-symbols-outlined text-2xl text-white">pause</span>
-              </button>
-              <button class="text-text-muted hover:text-white transition-colors">
-                <span class="material-symbols-outlined text-xl">forward_10</span>
-              </button>
-            </div>
-
-            <!-- Playback speed badge -->
-            <div class="absolute top-3 right-3 px-2 py-0.5 bg-teal-500/20 rounded-full">
-              <span class="text-[10px] text-teal-400 font-medium">1.25x</span>
-            </div>
-
-            <!-- Completion badge -->
-            <div class="absolute top-3 left-3 flex items-center gap-1 px-2 py-0.5 bg-green-500/20 rounded-full">
-              <span class="material-symbols-outlined text-xs text-green-400">local_fire_department</span>
-              <span class="text-[10px] text-green-400 font-medium">11 jours</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 

@@ -104,7 +104,7 @@ const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
     <!-- Sticky CTA for mobile -->
     <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 z-50 p-3 bg-dark-bg/95 backdrop-blur-lg border-t border-dark-border md:hidden transform translate-y-full transition-transform duration-300">
       <a href={SITE_CONFIG.signupUrl} class="btn-primary w-full justify-center text-base py-3">
-        Essai gratuit 7 jours
+        {lang === 'fr' ? 'Mon plan personnalisé gratuit' : lang === 'es' ? 'Mi plan personalizado gratis' : 'My free personalized plan'}
         <span class="material-symbols-outlined ml-2 text-lg">arrow_forward</span>
       </a>
     </div>
