@@ -54,62 +54,35 @@ const { t } = Astro.props;
     </div>
 
     <!-- Main content grid -->
-    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
-      <!-- Audio player mockup - Shows first on mobile -->
-      <div class="relative order-1 lg:order-2">
-        <div class="audio-player-mockup">
-          <!-- Glowing background -->
-          <div class="absolute inset-0 bg-gradient-to-br from-teal-500/30 to-primary-orange/30 rounded-2xl blur-xl"></div>
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16">
+      <!-- Hero Image - Shows first on mobile -->
+      <div class="relative order-1 lg:order-2 flex justify-center">
+        <!-- Glowing background effects -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div class="w-80 h-80 bg-gradient-to-br from-teal-500/20 to-primary-orange/20 rounded-full blur-3xl"></div>
+        </div>
 
-          <!-- Player card - Light theme for contrast -->
-          <div class="relative bg-white border border-gray-200 rounded-2xl p-4 sm:p-5 shadow-xl">
-            <!-- Album art placeholder -->
-            <div class="aspect-square max-w-[140px] mx-auto mb-3 rounded-xl bg-gradient-to-br from-teal-500 to-primary-orange flex items-center justify-center overflow-hidden shadow-lg">
-              <div class="text-center text-white p-2">
-                <span class="material-symbols-outlined text-6xl mb-1 opacity-90">psychology</span>
-                <p class="font-semibold text-[10px]">Reprogrammation</p>
-              </div>
+        <!-- Main image container -->
+        <div class="relative">
+          <img
+            src="/Lowis_audio_conseils_programme.png"
+            alt="Programme audio LOWIS - Méditation et bien-être"
+            class="audio-hero-image relative z-10 w-full max-w-md lg:max-w-lg drop-shadow-2xl"
+            loading="lazy"
+          />
+
+          <!-- Floating badges -->
+          <div class="absolute top-8 -left-4 lg:-left-8 z-20 animate-float-slow">
+            <div class="flex items-center gap-2 px-3 py-2 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-gray-100">
+              <span class="material-symbols-outlined text-teal-500">headphones</span>
+              <span class="text-sm font-medium text-gray-800">10-15 min/jour</span>
             </div>
+          </div>
 
-            <!-- Track info -->
-            <div class="text-center mb-3">
-              <h4 class="font-bold text-sm text-gray-900">Libérez-vous des compulsions</h4>
-              <p class="text-gray-500 text-xs">Programme LOWIS - Phase D2</p>
-            </div>
-
-            <!-- Progress bar -->
-            <div class="mb-3">
-              <div class="h-1 bg-gray-200 rounded-full overflow-hidden">
-                <div class="h-full w-3/5 bg-gradient-to-r from-teal-500 to-primary-orange rounded-full"></div>
-              </div>
-              <div class="flex justify-between text-[10px] text-gray-400 mt-1">
-                <span>8:24</span>
-                <span>14:00</span>
-              </div>
-            </div>
-
-            <!-- Controls -->
-            <div class="flex items-center justify-center gap-4">
-              <button class="text-gray-400 hover:text-gray-600 transition-colors">
-                <span class="material-symbols-outlined text-lg">replay_10</span>
-              </button>
-              <button class="w-10 h-10 bg-gradient-to-r from-teal-500 to-primary-orange rounded-full flex items-center justify-center hover:scale-105 transition-transform shadow-lg">
-                <span class="material-symbols-outlined text-xl text-white">pause</span>
-              </button>
-              <button class="text-gray-400 hover:text-gray-600 transition-colors">
-                <span class="material-symbols-outlined text-lg">forward_10</span>
-              </button>
-            </div>
-
-            <!-- Playback speed badge -->
-            <div class="absolute top-2 right-2 px-1.5 py-0.5 bg-teal-100 rounded-full">
-              <span class="text-[9px] text-teal-600 font-medium">1.25x</span>
-            </div>
-
-            <!-- Completion badge -->
-            <div class="absolute top-2 left-2 flex items-center gap-1 px-1.5 py-0.5 bg-green-100 rounded-full">
-              <span class="material-symbols-outlined text-[10px] text-green-600">local_fire_department</span>
-              <span class="text-[9px] text-green-600 font-medium">11 jours</span>
+          <div class="absolute bottom-24 -right-4 lg:-right-8 z-20 animate-float">
+            <div class="flex items-center gap-2 px-3 py-2 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-gray-100">
+              <span class="material-symbols-outlined text-green-500">local_fire_department</span>
+              <span class="text-sm font-medium text-gray-800">Streak: 11 jours</span>
             </div>
           </div>
         </div>
@@ -119,9 +92,9 @@ const { t } = Astro.props;
       <div class="space-y-4 order-2 lg:order-1">
         {t.audioProgram.features.map((feature, index) => (
           <div
-            class="group flex gap-4 p-4 rounded-2xl bg-dark-surface/50 border border-dark-border hover:border-teal-500/50 transition-all duration-300"
+            class="group flex gap-4 p-5 rounded-2xl bg-dark-surface/50 border border-dark-border hover:border-teal-500/50 hover:bg-dark-surface/80 transition-all duration-300"
           >
-            <div class="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-teal-500/20 to-primary-orange/20 rounded-xl shrink-0">
+            <div class="w-14 h-14 flex items-center justify-center bg-gradient-to-br from-teal-500/20 to-primary-orange/20 rounded-xl shrink-0 group-hover:from-teal-500/30 group-hover:to-primary-orange/30 transition-all">
               <span class="material-symbols-outlined text-2xl text-teal-400">{feature.icon}</span>
             </div>
             <div>
@@ -166,15 +139,40 @@ const { t } = Astro.props;
 </section>
 
 <style>
-  .audio-player-mockup {
-    position: relative;
-    max-width: 280px;
-    margin: 0 auto;
+  .audio-hero-image {
+    filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.3));
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes float-slow {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-float-slow {
+    animation: float-slow 4s ease-in-out infinite;
+    animation-delay: 0.5s;
   }
 
   @media (max-width: 640px) {
-    .audio-player-mockup {
-      max-width: 260px;
+    .audio-hero-image {
+      max-width: 320px;
     }
   }
 </style>
