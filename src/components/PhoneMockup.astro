@@ -534,16 +534,31 @@ const recipes = [
 </style>
 
 <script>
-  // Rotate user names
-  const names = ['Rania', 'Fatima', 'Nour', 'Salma', 'Amina', 'Houda', 'Adnan', 'Youssef', 'Karim', 'Omar'];
-  let currentIndex = 0;
+  // Name lists by region
+  const moroccanNames = ['Rania', 'Fatima', 'Nour', 'Salma', 'Amina', 'Houda', 'Adnan', 'Youssef', 'Karim', 'Omar'];
+  const internationalNames = ['Sophie', 'Marie', 'Emma', 'Léa', 'Julie', 'Thomas', 'Lucas', 'Antoine', 'Hugo', 'Louis'];
 
+  // Get names based on detected country
+  function getNames(): string[] {
+    const country = localStorage.getItem('lowis_country');
+    const moroccoGroup = ['MA', 'DZ', 'TN'];
+    if (!country || moroccoGroup.includes(country)) {
+      return moroccanNames;
+    }
+    return internationalNames;
+  }
+
+  let currentIndex = 0;
   const userNameEl = document.querySelector('.user-name');
 
   if (userNameEl) {
-    setInterval(() => {
-      currentIndex = (currentIndex + 1) % names.length;
-      userNameEl.textContent = names[currentIndex];
-    }, 3000);
+    // Wait a bit for geo-detection to complete
+    setTimeout(() => {
+      const names = getNames();
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % names.length;
+        userNameEl.textContent = names[currentIndex];
+      }, 3000);
+    }, 2000);
   }
 </script>

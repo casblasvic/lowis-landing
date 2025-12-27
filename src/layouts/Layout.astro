@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { type Language, defaultLang, getAlternateUrls } from '../i18n';
 import { SITE_CONFIG } from '../config';
+import GeoBanner from '../components/GeoBanner.astro';
 
 interface Props {
   title: string;
@@ -99,6 +100,9 @@ const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
     })} />
   </head>
   <body class="bg-dark-bg text-white font-sans antialiased pb-20 md:pb-0">
+    <!-- Geo-detection banner -->
+    <GeoBanner />
+
     <slot />
 
     <!-- Sticky CTA for mobile -->

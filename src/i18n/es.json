@@ -13,6 +13,7 @@
   },
   "hero": {
     "badge": "Creado para Marruecos 🇲🇦",
+    "badgeGeneric": "Disponible en todo el mundo",
     "title": "Garantizado: Pierde entre",
     "titleHighlight": "1 a 2,5 kg por semana",
     "subtitle": "Aprende a comer inteligentemente con tus recetas marroquíes favoritas. Sin restricciones estresantes, solo variando el orden y la combinación de los alimentos.",
@@ -270,7 +271,9 @@
   },
   "moroccanFeatures": {
     "title": "Con tus recetas marroquíes preferidas",
+    "titleGeneric": "Más de 2000 recetas analizadas",
     "subtitle": "No hay platos nuevos que aprender. Solo una nueva forma de combinarlos.",
+    "subtitleGeneric": "Cada plato analizado con precisión nutricional para optimizar tus resultados.",
     "items": [
       {
         "icon": "restaurant_menu",
@@ -294,7 +297,9 @@
       }
     ],
     "recipesTitle": "Descubre nuestras recetas marroquíes",
-    "recipesButton": "Ver +500 recetas marroquíes"
+    "recipesTitleGeneric": "Descubre nuestras recetas analizadas",
+    "recipesButton": "Ver +500 recetas marroquíes",
+    "recipesButtonGeneric": "Ver +2000 recetas analizadas"
   },
   "howItWorks": {
     "title": "¿Cómo funciona en el día a día?",

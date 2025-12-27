@@ -13,6 +13,7 @@
   },
   "hero": {
     "badge": "Créé pour le Maroc 🇲🇦",
+    "badgeGeneric": "Disponible partout",
     "title": "Garanti : Perdez entre",
     "titleHighlight": "1 à 2,5 kg par semaine",
     "subtitle": "Apprenez à manger intelligemment avec vos recettes marocaines préférées. Sans restrictions stressantes, juste en variant l'ordre et la combinaison des aliments.",
@@ -270,7 +271,9 @@
   },
   "moroccanFeatures": {
     "title": "Avec vos recettes marocaines préférées",
+    "titleGeneric": "Plus de 2000 recettes analysées",
     "subtitle": "Pas de nouveaux plats à apprendre. Juste une nouvelle façon de les combiner.",
+    "subtitleGeneric": "Chaque plat analysé avec précision nutritionnelle pour optimiser vos résultats.",
     "items": [
       {
         "icon": "restaurant_menu",
@@ -294,7 +297,9 @@
       }
     ],
     "recipesTitle": "Découvrez nos recettes marocaines",
-    "recipesButton": "Voir +500 recettes marocaines"
+    "recipesTitleGeneric": "Découvrez nos recettes analysées",
+    "recipesButton": "Voir +500 recettes marocaines",
+    "recipesButtonGeneric": "Voir +2000 recettes analysées"
   },
   "howItWorks": {
     "title": "Comment ça marche au quotidien?",

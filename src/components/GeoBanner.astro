@@ -1,0 +1,203 @@
+---
+// GeoBanner.astro - Banner de geo-detección con bandera del país
+---
+
+<div id="geo-banner" class="fixed top-0 left-0 right-0 z-[100] transform -translate-y-full transition-transform duration-500 ease-out">
+  <div class="bg-gradient-to-r from-primary-orange to-primary-red text-white py-3 px-4 shadow-lg">
+    <div class="max-w-4xl mx-auto flex items-center justify-between gap-4">
+      <!-- Left: Flag + Message -->
+      <div class="flex items-center gap-3 flex-1 min-w-0">
+        <span id="country-flag" class="text-2xl flex-shrink-0"></span>
+        <span id="banner-message" class="text-sm font-medium truncate"></span>
+      </div>
+
+      <!-- Right: CTA + Close -->
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <button id="banner-cta" class="bg-white text-primary-orange px-4 py-1.5 rounded-full text-sm font-bold hover:bg-gray-100 transition-colors whitespace-nowrap">
+          OK
+        </button>
+        <button id="banner-dismiss" class="p-1 text-white/80 hover:text-white transition-colors" aria-label="Close">
+          <span class="material-symbols-outlined text-xl">close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Convertir código país ISO a emoji bandera
+  function countryToFlag(countryCode: string): string {
+    if (!countryCode || countryCode.length !== 2) return '🌍';
+    const codePoints = countryCode
+      .toUpperCase()
+      .split('')
+      .map(char => 127397 + char.charCodeAt(0));
+    return String.fromCodePoint(...codePoints);
+  }
+
+  // Detectar país del usuario
+  async function detectCountry(): Promise<string> {
+    const cached = localStorage.getItem('lowis_country');
+    if (cached) return cached;
+
+    try {
+      // Usar ipapi.co (gratis hasta 1000 req/día)
+      const res = await fetch('https://ipapi.co/json/', {
+        signal: AbortSignal.timeout(5000) // Timeout 5 segundos
+      });
+      const data = await res.json();
+      if (data.country_code) {
+        localStorage.setItem('lowis_country', data.country_code);
+        return data.country_code;
+      }
+    } catch (error) {
+      console.warn('Geo-detection failed, defaulting to MA');
+    }
+    return 'MA'; // Default a Marruecos si falla
+  }
+
+  // Configuración de mensajes por país
+  interface CountryConfig {
+    lang: string;
+    message: string;
+    cta: string;
+  }
+
+  const countryConfig: Record<string, CountryConfig> = {
+    // Marruecos - no mostrar banner
+    'MA': { lang: 'fr', message: '', cta: '' },
+
+    // Francófonos
+    'FR': { lang: 'fr', message: 'Vous êtes en France ? Bienvenue !', cta: 'Continuer' },
+    'BE': { lang: 'fr', message: 'Vous êtes en Belgique ? Bienvenue !', cta: 'Continuer' },
+    'CH': { lang: 'fr', message: 'Vous êtes en Suisse ? Bienvenue !', cta: 'Continuer' },
+    'CA': { lang: 'fr', message: 'Vous êtes au Canada ? Bienvenue !', cta: 'Continuer' },
+
+    // Hispanohablantes
+    'ES': { lang: 'es', message: '¿Estás en España? ¡Bienvenido!', cta: 'Continuar' },
+    'MX': { lang: 'es', message: '¿Estás en México? ¡Bienvenido!', cta: 'Continuar' },
+    'AR': { lang: 'es', message: '¿Estás en Argentina? ¡Bienvenido!', cta: 'Continuar' },
+    'CO': { lang: 'es', message: '¿Estás en Colombia? ¡Bienvenido!', cta: 'Continuar' },
+    'CL': { lang: 'es', message: '¿Estás en Chile? ¡Bienvenido!', cta: 'Continuar' },
+
+    // Anglófonos
+    'US': { lang: 'en', message: 'Are you in the US? Welcome!', cta: 'Continue' },
+    'GB': { lang: 'en', message: 'Are you in the UK? Welcome!', cta: 'Continue' },
+    'AU': { lang: 'en', message: 'Are you in Australia? Welcome!', cta: 'Continue' },
+    'IE': { lang: 'en', message: 'Are you in Ireland? Welcome!', cta: 'Continue' },
+
+    // Países árabes/magrebíes (mostrar como Marruecos)
+    'DZ': { lang: 'fr', message: '', cta: '' }, // Argelia - tratar como MA
+    'TN': { lang: 'fr', message: '', cta: '' }, // Túnez - tratar como MA
+  };
+
+  // Mensaje por defecto para países no listados
+  const defaultConfig: Record<string, CountryConfig> = {
+    'fr': { lang: 'fr', message: 'Bienvenue ! LOWIS est disponible dans votre pays.', cta: 'Continuer' },
+    'es': { lang: 'es', message: '¡Bienvenido! LOWIS está disponible en tu país.', cta: 'Continuar' },
+    'en': { lang: 'en', message: 'Welcome! LOWIS is available in your country.', cta: 'Continue' },
+  };
+
+  // Obtener idioma actual de la URL
+  function getCurrentLang(): string {
+    const path = window.location.pathname;
+    if (path.startsWith('/es')) return 'es';
+    if (path.startsWith('/en')) return 'en';
+    return 'fr'; // Default
+  }
+
+  // Inicializar geo-banner
+  async function initGeoBanner() {
+    const country = await detectCountry();
+    const dismissed = localStorage.getItem('lowis_banner_dismissed');
+
+    // Si es Marruecos, Argelia, Túnez o ya cerró el banner → no hacer nada
+    const moroccoGroup = ['MA', 'DZ', 'TN'];
+    if (moroccoGroup.includes(country) || dismissed) {
+      return;
+    }
+
+    // Ocultar elementos solo-Marruecos
+    document.querySelectorAll('[data-morocco-only]').forEach(el => {
+      (el as HTMLElement).style.display = 'none';
+    });
+
+    // Mostrar elementos genéricos
+    document.querySelectorAll('[data-generic-only]').forEach(el => {
+      (el as HTMLElement).style.display = '';
+    });
+
+    // Actualizar textos dinámicos (opcional)
+    document.querySelectorAll('[data-morocco-text]').forEach(el => {
+      const genericText = el.getAttribute('data-generic-text');
+      if (genericText) {
+        el.textContent = genericText;
+      }
+    });
+
+    // Obtener configuración del país o usar default
+    const currentLang = getCurrentLang();
+    let config = countryConfig[country];
+
+    if (!config || !config.message) {
+      config = defaultConfig[currentLang];
+    }
+
+    // Actualizar banner
+    const flagEl = document.getElementById('country-flag');
+    const messageEl = document.getElementById('banner-message');
+    const ctaEl = document.getElementById('banner-cta');
+    const bannerEl = document.getElementById('geo-banner');
+
+    if (flagEl) flagEl.textContent = countryToFlag(country);
+    if (messageEl) messageEl.textContent = config.message;
+    if (ctaEl) ctaEl.textContent = config.cta;
+
+    // Animar entrada del banner después de un pequeño delay
+    setTimeout(() => {
+      if (bannerEl) {
+        bannerEl.classList.remove('-translate-y-full');
+      }
+    }, 1500);
+  }
+
+  // Event listeners para cerrar el banner
+  function setupBannerEvents() {
+    const dismissBtn = document.getElementById('banner-dismiss');
+    const ctaBtn = document.getElementById('banner-cta');
+    const bannerEl = document.getElementById('geo-banner');
+
+    const closeBanner = () => {
+      localStorage.setItem('lowis_banner_dismissed', 'true');
+      if (bannerEl) {
+        bannerEl.classList.add('-translate-y-full');
+      }
+    };
+
+    dismissBtn?.addEventListener('click', closeBanner);
+    ctaBtn?.addEventListener('click', closeBanner);
+  }
+
+  // Ejecutar cuando el DOM esté listo
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      setupBannerEvents();
+      initGeoBanner();
+    });
+  } else {
+    setupBannerEvents();
+    initGeoBanner();
+  }
+</script>
+
+<style>
+  #geo-banner {
+    /* Asegurar que esté por encima del header */
+    z-index: 100;
+  }
+
+  /* Animación suave para el banner */
+  #geo-banner.show {
+    transform: translateY(0);
+  }
+</style>

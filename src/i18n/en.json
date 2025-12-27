@@ -13,6 +13,7 @@
   },
   "hero": {
     "badge": "Made for Morocco 🇲🇦",
+    "badgeGeneric": "Available worldwide",
     "title": "Guaranteed: Lose between",
     "titleHighlight": "1 to 2.5 kg per week",
     "subtitle": "Learn to eat smart with your favorite Moroccan recipes. No stressful restrictions, just varying the order and combination of foods.",
@@ -270,7 +271,9 @@
   },
   "moroccanFeatures": {
     "title": "With your favorite Moroccan recipes",
+    "titleGeneric": "Over 2000 recipes analyzed",
     "subtitle": "No new dishes to learn. Just a new way to combine them.",
+    "subtitleGeneric": "Every dish analyzed with nutritional precision to optimize your results.",
     "items": [
       {
         "icon": "restaurant_menu",
@@ -294,7 +297,9 @@
       }
     ],
     "recipesTitle": "Discover our Moroccan recipes",
-    "recipesButton": "See +500 Moroccan recipes"
+    "recipesTitleGeneric": "Discover our analyzed recipes",
+    "recipesButton": "See +500 Moroccan recipes",
+    "recipesButtonGeneric": "See +2000 analyzed recipes"
   },
   "howItWorks": {
     "title": "How does it work daily?",

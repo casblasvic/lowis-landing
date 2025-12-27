@@ -70,21 +70,42 @@ const moroccanRecipes = [
   <div class="section-container relative z-10">
     <!-- Section header -->
     <div class="text-center max-w-3xl mx-auto mb-16">
-      <div class="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full mb-6">
+      <!-- Morocco badge - visible only for Morocco -->
+      <div data-morocco-only class="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full mb-6">
         <span class="text-2xl">🇲🇦</span>
         <span class="text-green-400 font-medium">Made for Morocco</span>
       </div>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+      <!-- Generic badge - hidden by default -->
+      <div data-generic-only style="display: none" class="inline-flex items-center gap-2 px-4 py-2 bg-primary-orange/10 border border-primary-orange/20 rounded-full mb-6">
+        <span class="material-symbols-outlined text-primary-orange">restaurant</span>
+        <span class="text-primary-orange font-medium">2000+ recipes</span>
+      </div>
+
+      <!-- Title: Morocco version -->
+      <h2 data-morocco-only class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
         {t.moroccanFeatures.title}
       </h2>
-      <p class="text-text-secondary text-lg">
+      <!-- Title: Generic version -->
+      <h2 data-generic-only style="display: none" class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+        {t.moroccanFeatures.titleGeneric || 'Plus de 2000 recettes analysées'}
+      </h2>
+
+      <!-- Subtitle: Morocco version -->
+      <p data-morocco-only class="text-text-secondary text-lg">
         {t.moroccanFeatures.subtitle}
+      </p>
+      <!-- Subtitle: Generic version -->
+      <p data-generic-only style="display: none" class="text-text-secondary text-lg">
+        {t.moroccanFeatures.subtitleGeneric || 'Chaque plat analysé avec précision nutritionnelle'}
       </p>
     </div>
 
     <!-- Recipe Carousel -->
     <div class="mb-16">
-      <p class="text-center text-text-muted text-sm mb-6">{t.moroccanFeatures.recipesTitle || 'Découvrez nos recettes marocaines'}</p>
+      <!-- Recipe title: Morocco version -->
+      <p data-morocco-only class="text-center text-text-muted text-sm mb-6">{t.moroccanFeatures.recipesTitle || 'Découvrez nos recettes marocaines'}</p>
+      <!-- Recipe title: Generic version -->
+      <p data-generic-only style="display: none" class="text-center text-text-muted text-sm mb-6">{t.moroccanFeatures.recipesTitleGeneric || 'Découvrez nos recettes analysées'}</p>
 
       <div class="recipe-carousel-container">
         <div class="recipe-carousel">
@@ -124,12 +145,24 @@ const moroccanRecipes = [
 
       <!-- Button to see more recipes -->
       <div class="flex justify-center mt-6">
+        <!-- Morocco button -->
         <a
+          data-morocco-only
           href={SITE_CONFIG.signupUrl}
           class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-orange to-primary-red text-white font-semibold rounded-full hover:shadow-lg hover:shadow-primary-orange/30 transition-all duration-300 hover:scale-105"
         >
           <span class="material-symbols-outlined">restaurant</span>
           {t.moroccanFeatures.recipesButton || 'Voir +500 recettes marocaines'}
+        </a>
+        <!-- Generic button -->
+        <a
+          data-generic-only
+          style="display: none"
+          href={SITE_CONFIG.signupUrl}
+          class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-orange to-primary-red text-white font-semibold rounded-full hover:shadow-lg hover:shadow-primary-orange/30 transition-all duration-300 hover:scale-105"
+        >
+          <span class="material-symbols-outlined">restaurant</span>
+          {t.moroccanFeatures.recipesButtonGeneric || 'Voir +2000 recettes analysées'}
         </a>
       </div>
     </div>
