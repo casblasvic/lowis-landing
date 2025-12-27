@@ -105,54 +105,13 @@ const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
 
     <slot />
 
-    <!-- Sticky CTA for mobile -->
-    <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 z-50 p-3 bg-dark-bg/95 backdrop-blur-lg border-t border-dark-border md:hidden transform translate-y-full transition-transform duration-300">
+    <!-- Sticky CTA for mobile - Always visible -->
+    <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 z-50 p-3 bg-dark-bg/95 backdrop-blur-lg border-t border-dark-border md:hidden">
       <a href={SITE_CONFIG.signupUrl} class="btn-primary w-full justify-center text-base py-3">
-        {lang === 'fr' ? 'Mon plan personnalisé gratuit' : lang === 'es' ? 'Mi plan personalizado gratis' : 'My free personalized plan'}
+        {lang === 'fr' ? 'Obtiens ton plan gratuit' : lang === 'es' ? 'Obtén tu plan gratis' : 'Get your free plan'}
         <span class="material-symbols-outlined ml-2 text-lg">arrow_forward</span>
       </a>
     </div>
-
-    <!-- Sticky CTA visibility script -->
-    <script>
-      const stickyCta = document.getElementById('sticky-cta');
-      const heroSection = document.querySelector('section');
-      const pricingSection = document.getElementById('pricing');
-
-      if (stickyCta && heroSection) {
-        let lastScrollY = 0;
-        let ticking = false;
-
-        function updateStickyCta() {
-          const scrollY = window.scrollY;
-          const heroBottom = heroSection.offsetHeight;
-          const pricingTop = pricingSection?.offsetTop || Infinity;
-          const windowHeight = window.innerHeight;
-
-          // Show after scrolling past hero, hide when pricing is visible
-          const shouldShow = scrollY > heroBottom * 0.5 && scrollY < pricingTop - windowHeight * 0.5;
-
-          if (shouldShow) {
-            stickyCta.classList.remove('translate-y-full');
-          } else {
-            stickyCta.classList.add('translate-y-full');
-          }
-
-          ticking = false;
-        }
-
-        window.addEventListener('scroll', () => {
-          lastScrollY = window.scrollY;
-          if (!ticking) {
-            requestAnimationFrame(updateStickyCta);
-            ticking = true;
-          }
-        });
-
-        // Initial check
-        updateStickyCta();
-      }
-    </script>
 
     <!-- Smooth scroll polyfill for Safari -->
     <script>
