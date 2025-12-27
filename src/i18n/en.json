@@ -180,55 +180,55 @@
       {
         "icon": "bedtime",
         "title": "Sleep & Energy",
-        "description": "Duration, sleep quality and daily energy level",
+        "description": "Your sleep directly affects your metabolism. We monitor sleep quality to optimize energy and results",
         "count": 2
       },
       {
         "icon": "local_drink",
         "title": "Hydration",
-        "description": "Personalized goals and water intake tracking",
+        "description": "Water is your secret ally. Personalized hydration based on your weight, activity and climate",
         "count": 1
       },
       {
         "icon": "psychology",
         "title": "Mood & Stress",
-        "description": "Emotional state that directly impacts your metabolism",
+        "description": "Your stress impacts your weight. We monitor your emotional state to prevent food compulsions",
         "count": 2
       },
       {
         "icon": "gastroenterology",
         "title": "Digestion",
-        "description": "Constipation, diarrhea, bloating, nausea, heartburn",
+        "description": "A healthy digestive system is fundamental. We adjust your plan for bloating, acidity or irregularity",
         "count": 5
       },
       {
         "icon": "monitor_weight",
         "title": "Weight & Measurements",
-        "description": "Weight, BMI, body measurements (abdomen, hips, arms, thighs)",
+        "description": "Beyond weight. See your progress in BMI, waist, hips and arms — where others only see numbers",
         "count": 3
       },
       {
         "icon": "directions_run",
         "title": "Physical activity",
-        "description": "Exercise type, duration, calories burned, heart rate",
+        "description": "Your exercise, integrated into your plan. We monitor intensity, duration and impact on your results",
         "count": 1
       },
       {
         "icon": "healing",
         "title": "Pain",
-        "description": "Headaches, muscle and joint pain",
+        "description": "Your body speaks. We adjust your nutrition for migraines, joint or muscle pain",
         "count": 2
       },
       {
         "icon": "female",
         "title": "Menstrual cycle",
-        "description": "Complete cycle tracking and its impact on your plan",
+        "description": "Your cycle is a biological compass. We adapt calories, cravings and energy based on your menstrual phase",
         "count": 2
       },
       {
         "icon": "photo_camera",
         "title": "Progress photos",
-        "description": "Visualize your transformation (front, side, back)",
+        "description": "See your transformation where the scale can't. We document your change: face, profile and back",
         "count": 1
       }
     ],

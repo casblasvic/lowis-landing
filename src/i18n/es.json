@@ -180,55 +180,55 @@
       {
         "icon": "bedtime",
         "title": "Sueño y Energía",
-        "description": "Duración, calidad del sueño y nivel de energía diario",
+        "description": "Tu sueño afecta directamente tu metabolismo. Monitoreamos tu calidad de sueño para optimizar energía y resultados",
         "count": 2
       },
       {
         "icon": "local_drink",
         "title": "Hidratación",
-        "description": "Objetivos personalizados y seguimiento de tu consumo de agua",
+        "description": "El agua es tu aliado secreto. Hidratación personalizada según tu peso, actividad y clima",
         "count": 1
       },
       {
         "icon": "psychology",
         "title": "Humor y Estrés",
-        "description": "Estado emocional que impacta directamente tu metabolismo",
+        "description": "Tu estrés impacta tu peso. Controlamos tu estado emocional para evitar la compulsión alimentaria",
         "count": 2
       },
       {
         "icon": "gastroenterology",
         "title": "Digestión",
-        "description": "Estreñimiento, diarrea, hinchazón, náuseas, acidez",
+        "description": "Un sistema digestivo saludable es fundamental. Ajustamos tu plan si tienes hinchazón, acidez o irregularidad",
         "count": 5
       },
       {
         "icon": "monitor_weight",
         "title": "Peso y Medidas",
-        "description": "Peso, IMC, medidas (abdomen, caderas, brazos, muslos)",
+        "description": "Más allá del peso. Ves tu progreso en IMC, cintura, caderas y brazos — donde otros solo ven números",
         "count": 3
       },
       {
         "icon": "directions_run",
         "title": "Actividad física",
-        "description": "Tipo de ejercicio, duración, calorías quemadas, frecuencia cardíaca",
+        "description": "Tu ejercicio, integrado en tu plan. Monitoreamos intensidad, duración e impacto en tus resultados",
         "count": 1
       },
       {
         "icon": "healing",
         "title": "Dolores",
-        "description": "Dolor de cabeza, dolores musculares y articulares",
+        "description": "Tu cuerpo habla. Ajustamos tu nutrición si tienes migrañas, dolor articular o muscular",
         "count": 2
       },
       {
         "icon": "female",
         "title": "Ciclo femenino",
-        "description": "Seguimiento completo del ciclo menstrual y su impacto en tu plan",
+        "description": "Tu ciclo es una brújula biológica. Adaptamos calorías, antojos y energía según tu fase menstrual",
         "count": 2
       },
       {
         "icon": "photo_camera",
         "title": "Fotos de progreso",
-        "description": "Visualiza tu transformación (frente, perfil, espalda)",
+        "description": "Ve tu transformación donde la balanza no lo ve. Documentamos tu cambio: cara, perfil y espalda",
         "count": 1
       }
     ],

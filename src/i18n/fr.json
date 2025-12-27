@@ -180,55 +180,55 @@
       {
         "icon": "bedtime",
         "title": "Sommeil & Énergie",
-        "description": "Durée, qualité du sommeil et niveau d'énergie quotidien",
+        "description": "Votre sommeil affecte directement votre métabolisme. Nous surveillons sa qualité pour optimiser énergie et résultats",
         "count": 2
       },
       {
         "icon": "local_drink",
         "title": "Hydratation",
-        "description": "Objectifs personnalisés et suivi de votre consommation d'eau",
+        "description": "L'eau est votre allié secret. Hydratation personnalisée selon votre poids, activité et climat",
         "count": 1
       },
       {
         "icon": "psychology",
         "title": "Humeur & Stress",
-        "description": "État émotionnel qui impacte directement votre métabolisme",
+        "description": "Votre stress impacte votre poids. Nous surveillons votre état émotionnel pour éviter les compulsions alimentaires",
         "count": 2
       },
       {
         "icon": "gastroenterology",
         "title": "Digestion",
-        "description": "Constipation, diarrhée, ballonnements, nausées, acidité",
+        "description": "Un système digestif sain est fondamental. Nous ajustons votre plan en cas de ballonnements, acidité ou irrégularité",
         "count": 5
       },
       {
         "icon": "monitor_weight",
         "title": "Poids & Mesures",
-        "description": "Poids, IMC, mensurations (abdomen, hanches, bras, cuisses)",
+        "description": "Au-delà du poids. Voyez votre progrès en IMC, tour de taille, hanches et bras — là où d'autres ne voient que des chiffres",
         "count": 3
       },
       {
         "icon": "directions_run",
         "title": "Activité physique",
-        "description": "Type d'exercice, durée, calories brûlées, fréquence cardiaque",
+        "description": "Votre exercice, intégré à votre plan. Nous surveillons l'intensité, la durée et l'impact sur vos résultats",
         "count": 1
       },
       {
         "icon": "healing",
         "title": "Douleurs",
-        "description": "Maux de tête, douleurs musculaires et articulaires",
+        "description": "Votre corps parle. Nous ajustons votre nutrition en cas de migraines, douleurs articulaires ou musculaires",
         "count": 2
       },
       {
         "icon": "female",
         "title": "Cycle féminin",
-        "description": "Suivi complet du cycle menstruel et son impact sur votre plan",
+        "description": "Votre cycle est une boussole biologique. Nous adaptons calories, envies et énergie selon votre phase menstruelle",
         "count": 2
       },
       {
         "icon": "photo_camera",
         "title": "Photos de progrès",
-        "description": "Visualisez votre transformation (face, profil, dos)",
+        "description": "Voyez votre transformation là où la balance ne voit rien. Nous documentons votre changement : visage, profil et dos",
         "count": 1
       }
     ],
