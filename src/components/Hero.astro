@@ -83,9 +83,9 @@ const { t } = Astro.props;
           {t.hero.subtitle}
         </p>
 
-        <!-- CTA Button -->
-        <div class="flex justify-center lg:justify-start mb-6 animate-fade-in-up" style="animation-delay: 0.3s">
-          <a href={SITE_CONFIG.signupUrl} class="btn-primary text-lg px-8 py-4 animate-pulse-glow">
+        <!-- CTA Button - Hidden on mobile (sticky CTA visible instead) -->
+        <div class="hidden md:flex justify-center lg:justify-start mb-6 animate-fade-in-up" style="animation-delay: 0.3s">
+          <a href={SITE_CONFIG.signupUrl} class="btn-primary text-lg px-8 py-4">
             {t.hero.cta}
             <span class="material-symbols-outlined ml-2">arrow_forward</span>
           </a>

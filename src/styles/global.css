@@ -87,7 +87,6 @@
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(249, 115, 22, 0.3);
   }
 
   .btn-secondary {
@@ -154,19 +153,6 @@
   .stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
   .stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
 
-  /* Pulse glow */
-  @keyframes pulse-glow {
-    0%, 100% {
-      box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
-    }
-    50% {
-      box-shadow: 0 0 40px rgba(249, 115, 22, 0.5);
-    }
-  }
-
-  .animate-pulse-glow {
-    animation: pulse-glow 2s ease-in-out infinite;
-  }
 
   /* Float animation */
   @keyframes float {
