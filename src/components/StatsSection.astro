@@ -18,6 +18,7 @@ const { t } = Astro.props;
 // Icon colors for each stat
 const iconColors = [
   'text-blue-400',
+  'text-purple-400',
   'text-green-400',
   'text-primary-orange',
   'text-cyan-400',
@@ -25,6 +26,7 @@ const iconColors = [
 
 const bgColors = [
   'bg-blue-500/10',
+  'bg-purple-500/10',
   'bg-green-500/10',
   'bg-primary-orange/10',
   'bg-cyan-500/10',
@@ -49,7 +51,7 @@ const bgColors = [
     </div>
 
     <!-- Stats grid -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
       {t.stats.items.map((stat, index) => (
         <div class="group relative p-6 bg-dark-surface border border-dark-border rounded-2xl text-center card-hover overflow-hidden">
           <!-- Icon -->

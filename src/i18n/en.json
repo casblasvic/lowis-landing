@@ -68,8 +68,8 @@
       },
       {
         "icon": "smart_toy",
-        "title": "AI + experts 24/7",
-        "description": "AI adapts to your daily life. Our experts adjust your journey every week. You're never alone."
+        "title": "LOWIS, your AI coach + experts 24/7",
+        "description": "LOWIS adapts to your daily life like a personal coach. Our experts adjust your journey every week. You're never alone."
       }
     ]
   },
@@ -98,7 +98,7 @@
       },
       {
         "icon": "smart_toy",
-        "title": "AI understands your daily life",
+        "title": "LOWIS understands your daily life",
         "points": [
           "Slept badly? We adjust for cortisol",
           "On your period? We adapt for retention",
@@ -125,9 +125,9 @@
       },
       {
         "icon": "verified",
-        "title": "AI + experts 24/7",
+        "title": "LOWIS + experts 24/7",
         "points": [
-          "AI reacts instantly",
+          "LOWIS reacts instantly",
           "Our experts refine weekly",
           "You're never alone"
         ]
@@ -320,7 +320,7 @@
       {
         "number": "3",
         "title": "We adjust together",
-        "description": "AI reacts instantly. Our experts refine weekly. Your plan evolves with you."
+        "description": "LOWIS reacts instantly. Our experts refine weekly. Your plan evolves with you."
       }
     ],
     "cta": "Get my free plan",
@@ -334,6 +334,11 @@
         "value": "13",
         "label": "Scientific phases",
         "icon": "science"
+      },
+      {
+        "value": "22",
+        "label": "Micronutrients analyzed",
+        "icon": "biotech"
       },
       {
         "value": "19+",
@@ -371,7 +376,7 @@
       "features": [
         "Continuous monitoring of 19+ indicators",
         "Personalized Moroccan meal plans",
-        "AI + expert monitoring",
+        "LOWIS, your AI coach + experts",
         "Audios to strengthen your mindset",
         "Weekly progress report"
       ],
@@ -384,7 +389,7 @@
     "items": [
       {
         "question": "Why do other diets fail but LOWIS doesn't?",
-        "answer": "Classic diets give you a rigid plan and leave you alone. 95% of people regain lost weight. LOWIS is different: we monitor 19+ indicators, AI adapts to your daily life, and our experts adjust weekly. It's 360° support, not just a meal list."
+        "answer": "Classic diets give you a rigid plan and leave you alone. 95% of people regain lost weight. LOWIS is different: we monitor 19+ indicators, LOWIS adapts to your daily life like a personal coach, and our experts adjust weekly. It's 360° support, not just a meal list."
       },
       {
         "question": "How does the free first week work?",
@@ -404,7 +409,7 @@
       },
       {
         "question": "What's the difference with calorie counters?",
-        "answer": "Calorie counters leave you alone with numbers. LOWIS monitors 19+ indicators (sleep, stress, cycle, digestion...), AI reacts instantly, and our nutritionists adjust your plan weekly. Real support, not a calculator."
+        "answer": "Calorie counters leave you alone with numbers. LOWIS monitors 19+ indicators (sleep, stress, cycle, digestion...), LOWIS reacts instantly like a personal coach, and our nutritionists adjust your plan weekly. Real support, not a calculator."
       },
       {
         "question": "How does LOWIS adapt during Ramadan?",

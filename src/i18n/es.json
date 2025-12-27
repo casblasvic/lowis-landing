@@ -68,8 +68,8 @@
       },
       {
         "icon": "smart_toy",
-        "title": "IA + expertos 24/7",
-        "description": "La IA se adapta a tu día a día. Nuestros expertos ajustan tu recorrido cada semana. Nunca estás sola."
+        "title": "LOWIS, tu coach IA + expertos 24/7",
+        "description": "LOWIS se adapta a tu día a día como un coach personal. Nuestros expertos ajustan tu recorrido cada semana. Nunca estás sola."
       }
     ]
   },
@@ -98,7 +98,7 @@
       },
       {
         "icon": "smart_toy",
-        "title": "La IA entiende tu día a día",
+        "title": "LOWIS entiende tu día a día",
         "points": [
           "¿Dormiste mal? Ajustamos por el cortisol",
           "¿Período? Nos adaptamos a la retención",
@@ -125,9 +125,9 @@
       },
       {
         "icon": "verified",
-        "title": "IA + expertos 24/7",
+        "title": "LOWIS + expertos 24/7",
         "points": [
-          "La IA reacciona instantáneamente",
+          "LOWIS reacciona instantáneamente",
           "Nuestros expertos afinan cada semana",
           "Nunca estás sola"
         ]
@@ -320,7 +320,7 @@
       {
         "number": "3",
         "title": "Ajustamos juntos",
-        "description": "La IA reacciona al instante. Nuestros expertos afinan cada semana. Tu plan evoluciona contigo."
+        "description": "LOWIS reacciona al instante. Nuestros expertos afinan cada semana. Tu plan evoluciona contigo."
       }
     ],
     "cta": "Obtener mi plan gratis",
@@ -334,6 +334,11 @@
         "value": "13",
         "label": "Fases científicas",
         "icon": "science"
+      },
+      {
+        "value": "22",
+        "label": "Micronutrientes analizados",
+        "icon": "biotech"
       },
       {
         "value": "19+",
@@ -371,7 +376,7 @@
       "features": [
         "Monitorización de +19 indicadores en continuo",
         "Planes de comida personalizados marroquíes",
-        "IA + seguimiento por expertos",
+        "LOWIS, tu coach IA + expertos",
         "Audios para reforzar la psicología",
         "Informe semanal personalizado"
       ],
@@ -384,7 +389,7 @@
     "items": [
       {
         "question": "¿Por qué otras dietas fracasan y LOWIS no?",
-        "answer": "Las dietas clásicas te dan un plan rígido y te dejan sola. El 95% de las personas recuperan el peso perdido. LOWIS es diferente: monitorizamos +19 indicadores, la IA se adapta a tu día a día, y nuestros expertos ajustan cada semana. Es un acompañamiento 360°, no solo una lista de comidas."
+        "answer": "Las dietas clásicas te dan un plan rígido y te dejan sola. El 95% de las personas recuperan el peso perdido. LOWIS es diferente: monitorizamos +19 indicadores, LOWIS se adapta a tu día a día como un coach personal, y nuestros expertos ajustan cada semana. Es un acompañamiento 360°, no solo una lista de comidas."
       },
       {
         "question": "¿Cómo funciona la primera semana gratis?",
@@ -404,7 +409,7 @@
       },
       {
         "question": "¿Cuál es la diferencia con los contadores de calorías?",
-        "answer": "Los contadores de calorías te dejan sola con números. LOWIS monitoriza +19 indicadores (sueño, estrés, ciclo, digestión...), la IA reacciona al instante, y nuestros nutricionistas ajustan tu plan cada semana. Un acompañamiento real, no una calculadora."
+        "answer": "Los contadores de calorías te dejan sola con números. LOWIS monitoriza +19 indicadores (sueño, estrés, ciclo, digestión...), LOWIS reacciona al instante como un coach personal, y nuestros nutricionistas ajustan tu plan cada semana. Un acompañamiento real, no una calculadora."
       },
       {
         "question": "¿Cómo se adapta LOWIS durante el Ramadán?",
