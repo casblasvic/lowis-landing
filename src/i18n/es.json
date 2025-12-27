@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "LOWIS - Comer Inteligente | Objetivo 1 kg/semana mínimo",
-    "description": "Aprende a comer inteligentemente con tus recetas marroquíes. Sin restricciones, solo variando el orden y combinación de alimentos. IA + expertos 24/7. Prueba gratis 7 días.",
-    "keywords": "app dieta marruecos, contador calorías, adelgazar, perder peso, cocina marroquí, recetas tajine cuscús, ramadán nutrición, sin efecto rebote, 1 kg por semana"
+    "description": "Aprende a comer inteligentemente con tus recetas marroquíes. Sin restricciones, solo variando el orden y combinación de alimentos. IA + expertos 24/7. Primera semana gratis.",
+    "keywords": "app dieta marruecos, contador calorías, adelgazar, perder peso, cocina marroquí, recetas tajine brochetas, ramadán nutrición, sin efecto rebote, 1 kg por semana"
   },
   "nav": {
     "features": "Funcionalidades",
@@ -53,7 +53,7 @@
       {
         "icon": "restaurant",
         "title": "Tus recetas, mejor combinadas",
-        "description": "Tajines, cuscús, harira... Conserva tus platos favoritos. Te enseñamos simplemente a variar el orden y las combinaciones para optimizar cada caloría."
+        "description": "Tajines, brochetas, pescado a la parrilla... Conserva tus platos favoritos. Te enseñamos simplemente a variar el orden y las combinaciones para optimizar cada caloría."
       },
       {
         "icon": "psychology",
@@ -62,7 +62,7 @@
       },
       {
         "icon": "monitoring",
-        "title": "17+ indicadores de salud",
+        "title": "19+ indicadores de salud",
         "description": "Sueño, energía, hidratación, digestión, humor, estrés, ciclo femenino... Seguimos todo lo que afecta a tu metabolismo."
       },
       {
@@ -275,7 +275,7 @@
       {
         "icon": "restaurant_menu",
         "title": "Conserva tus platos favoritos",
-        "description": "Tajine, cuscús, pastela, harira, rfissa... No te pedimos que cambies lo que comes, sino cómo y cuándo lo comes."
+        "description": "Tajine de pollo, brochetas, pastela, pescado a la parrilla... No te pedimos que cambies lo que comes, sino cómo y cuándo lo comes."
       },
       {
         "icon": "swap_horiz",
@@ -329,7 +329,7 @@
         "icon": "science"
       },
       {
-        "value": "17+",
+        "value": "19+",
         "label": "Indicadores de salud",
         "icon": "monitoring"
       },
@@ -351,7 +351,7 @@
     "trustBadges": {
       "noCard": "Sin tarjeta bancaria",
       "cancel": "Cancela en 1 clic",
-      "secure": "100% gratis 7 días"
+      "secure": "100% gratis una semana"
     },
     "premium": {
       "name": "Premium",
@@ -359,7 +359,7 @@
       "price": "0",
       "priceAfter": "199",
       "period": "DH/semana",
-      "trialText": "0 DH durante 7 días",
+      "trialText": "0 DH la primera semana",
       "afterTrialText": "Después 199 DH/semana",
       "features": [
         "Monitorización de +19 indicadores en continuo",
@@ -376,40 +376,40 @@
     "title": "Preguntas frecuentes",
     "items": [
       {
-        "question": "¿Tengo que seguir una dieta estricta?",
-        "answer": "No. LOWIS busca hábitos duraderos: cocina marroquí, porciones inteligentes, ajustes realistas. Comes tus platos favoritos, solo mejor combinados."
+        "question": "¿Por qué otras dietas fracasan y LOWIS no?",
+        "answer": "Las dietas clásicas te dan un plan rígido y te dejan sola. El 95% de las personas recuperan el peso perdido. LOWIS es diferente: monitorizamos +19 indicadores, la IA se adapta a tu día a día, y nuestros expertos ajustan cada semana. Es un acompañamiento 360°, no solo una lista de comidas."
+      },
+      {
+        "question": "¿Cómo funciona la primera semana gratis?",
+        "answer": "Solo rellena tu perfil para personalizar tu plan según tus +19 indicadores. Acceso completo una semana, sin tarjeta bancaria. Ves los resultados antes de decidir. Después, continúa a 199 DH/semana o no hagas nada — tu elección."
+      },
+      {
+        "question": "¿Perder entre 1 y 2,5 kg por semana es realmente posible?",
+        "answer": "Sí, es nuestro objetivo garantizado. Comiendo inteligentemente (no menos, solo mejor combinado), la mayoría de nuestros usuarios alcanzan estos resultados. El protocolo LOWIS optimiza cada comida según tu metabolismo."
+      },
+      {
+        "question": "¿Tengo que seguir una dieta estricta para adelgazar?",
+        "answer": "No. LOWIS no es una dieta restrictiva. Conservas tus platos favoritos — tajines, brochetas, pastela — te enseñamos a combinarlos inteligentemente. Hábitos duraderos, no esfuerzos insostenibles."
+      },
+      {
+        "question": "¿La aplicación reconoce los platos marroquíes?",
+        "answer": "¡Por supuesto! Más de 500 recetas marroquíes: tajines de pollo, brochetas de kefta, pescado a la parrilla, pastela, msemen... Cada plato analizado con precisión nutricional. Diseñado para la cocina marroquí, no adaptado después."
+      },
+      {
+        "question": "¿Cuál es la diferencia con los contadores de calorías?",
+        "answer": "Los contadores de calorías te dejan sola con números. LOWIS monitoriza +19 indicadores (sueño, estrés, ciclo, digestión...), la IA reacciona al instante, y nuestros nutricionistas ajustan tu plan cada semana. Un acompañamiento real, no una calculadora."
+      },
+      {
+        "question": "¿Cómo se adapta LOWIS durante el Ramadán?",
+        "answer": "Planes especiales optimizados para el ayuno: distribución ideal ftour/shour, hidratación adaptada, y recomendaciones para mantener tu energía. La app se adapta automáticamente a tu ritmo durante el mes sagrado."
       },
       {
         "question": "¿Y si un día me paso?",
-        "answer": "Está previsto. LOWIS corrige inmediatamente para volver a la trayectoria — sin culpabilizar. Un desliz no destruye tu progreso, ajustamos juntos."
+        "answer": "Está previsto y es normal. LOWIS corrige inmediatamente la trayectoria sin culpabilizar. Un desliz no destruye tu progreso — ajustamos juntos y seguimos adelante. Cero juicio, solo soluciones."
       },
       {
-        "question": "¿1 kg/semana mínimo es realmente posible?",
-        "answer": "Sí, es nuestro objetivo base. Comiendo inteligentemente (no menos, solo mejor), la mayoría de usuarios pierden al menos 1 kg por semana de forma natural y duradera."
-      },
-      {
-        "question": "¿La app reconoce realmente los platos marroquíes?",
-        "answer": "¡Sí! Más de 500 platos marroquíes: tajines, cuscús, pastela, harira, msemen, baghrir... Cada receta analizada con precisión. No tienes que cambiar lo que comes."
-      },
-      {
-        "question": "¿Cómo funciona la prueba gratuita de 7 días?",
-        "answer": "Acceso completo durante 7 días, sin tarjeta bancaria. Al final, continúa a 149 DH/mes o no hagas nada — tu elección."
-      },
-      {
-        "question": "¿Cuál es la diferencia con otras apps?",
-        "answer": "LOWIS = seguimiento 360° (nutrición + mental + ajustes). IA instantánea + expertos humanos cada semana. No una calculadora de calorías, un acompañamiento real adaptado a Marruecos."
-      },
-      {
-        "question": "¿Cómo funciona durante el Ramadán?",
-        "answer": "Planes especiales para el ayuno con distribución óptima ftour/shour. La app se adapta a tu ritmo durante el mes sagrado."
-      },
-      {
-        "question": "¿Puedo cancelar en cualquier momento?",
-        "answer": "Sí, en 1 clic desde la app. Mantienes el acceso hasta el final de tu período pagado."
-      },
-      {
-        "question": "¿Es gratis?",
-        "answer": "La prueba de 7 días es 100% gratis, sin tarjeta bancaria. Después, LOWIS cuesta 149 DH/mes — menos que una sola consulta con un nutricionista. Y puedes cancelar cuando quieras."
+        "question": "¿Puedo cancelar cuando quiera?",
+        "answer": "Sí, en 1 clic desde la app. Sin compromiso, sin penalización. Mantienes el acceso hasta el final de tu período. La primera semana es gratis sin tarjeta bancaria — decides después de ver los resultados."
       }
     ]
   },

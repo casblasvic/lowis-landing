@@ -49,15 +49,17 @@ const { t } = Astro.props;
   </div>
 
   <div class="section-container relative z-10">
+    <!-- Centered Morocco Badge -->
+    <div class="text-center mb-8 animate-fade-in-up">
+      <div class="inline-flex items-center gap-2 bg-dark-surface border border-dark-border rounded-full px-5 py-2.5">
+        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+        <span class="text-sm text-text-secondary">{t.hero.badge}</span>
+      </div>
+    </div>
+
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <!-- Left: Text Content -->
       <div class="text-center lg:text-left">
-        <!-- Badge -->
-        <div class="inline-flex items-center gap-2 bg-dark-surface border border-dark-border rounded-full px-4 py-2 mb-6 animate-fade-in-up">
-          <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-          <span class="text-sm text-text-secondary">{t.hero.badge}</span>
-        </div>
-
         <!-- Logo + Title -->
         <div class="flex items-center gap-4 justify-center lg:justify-start mb-4 animate-fade-in-up">
           <Logo class="h-16 w-16 sm:h-20 sm:w-20" />

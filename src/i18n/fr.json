@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "LOWIS - Manger Intelligemment | Objectif 1 kg/semaine minimum",
-    "description": "Apprenez à manger intelligemment avec vos recettes marocaines. Sans restrictions, juste en variant l'ordre et combinaison des aliments. IA + experts 24/7. Essai gratuit 7 jours.",
-    "keywords": "application régime maroc, compteur calories, maigrir, perte de poids, cuisine marocaine, recettes tajine couscous, ramadan nutrition, sans effet rebond, 1 kg par semaine"
+    "description": "Apprenez à manger intelligemment avec vos recettes marocaines. Sans restrictions, juste en variant l'ordre et combinaison des aliments. IA + experts 24/7. Première semaine offerte.",
+    "keywords": "application régime maroc, compteur calories, maigrir, perte de poids, cuisine marocaine, recettes tajine brochettes, ramadan nutrition, sans effet rebond, 1 kg par semaine"
   },
   "nav": {
     "features": "Fonctionnalités",
@@ -53,7 +53,7 @@
       {
         "icon": "restaurant",
         "title": "Vos recettes, mieux combinées",
-        "description": "Tajines, couscous, harira... Gardez vos plats préférés. On vous apprend simplement à varier l'ordre et les combinaisons pour optimiser chaque calorie."
+        "description": "Tajines, brochettes, poisson grillé... Gardez vos plats préférés. On vous apprend simplement à varier l'ordre et les combinaisons pour optimiser chaque calorie."
       },
       {
         "icon": "psychology",
@@ -62,7 +62,7 @@
       },
       {
         "icon": "monitoring",
-        "title": "17+ indicateurs de santé",
+        "title": "19+ indicateurs de santé",
         "description": "Sommeil, énergie, hydratation, digestion, humeur, stress, cycle féminin... Nous suivons tout ce qui affecte votre métabolisme."
       },
       {
@@ -275,7 +275,7 @@
       {
         "icon": "restaurant_menu",
         "title": "Gardez vos plats préférés",
-        "description": "Tajine, couscous, pastilla, harira, rfissa... On ne vous demande pas de changer ce que vous mangez, mais comment et quand vous le mangez."
+        "description": "Tajine de poulet, brochettes, pastilla, poisson grillé... On ne vous demande pas de changer ce que vous mangez, mais comment et quand vous le mangez."
       },
       {
         "icon": "swap_horiz",
@@ -329,7 +329,7 @@
         "icon": "science"
       },
       {
-        "value": "17+",
+        "value": "19+",
         "label": "Indicateurs de santé",
         "icon": "monitoring"
       },
@@ -351,15 +351,15 @@
     "trustBadges": {
       "noCard": "Aucune carte bancaire",
       "cancel": "Annulation en 1 clic",
-      "secure": "100% gratuit 7 jours"
+      "secure": "100% gratuit une semaine"
     },
     "premium": {
       "name": "Premium",
-      "badge": "Première semaine gratuite",
+      "badge": "Première semaine offerte",
       "price": "0",
       "priceAfter": "199",
       "period": "DH/semaine",
-      "trialText": "0 DH pendant 7 jours",
+      "trialText": "0 DH la première semaine",
       "afterTrialText": "Puis 199 DH/semaine",
       "features": [
         "Monitorisation de +19 indicateurs en continu",
@@ -376,40 +376,40 @@
     "title": "Questions fréquentes",
     "items": [
       {
-        "question": "Dois-je suivre un régime strict?",
-        "answer": "Non. LOWIS vise des habitudes durables: cuisine marocaine, portions intelligentes, ajustements réalistes. Vous mangez vos plats préférés, juste mieux combinés."
+        "question": "Pourquoi les autres régimes échouent et pas LOWIS?",
+        "answer": "Les régimes classiques vous donnent un plan rigide et vous laissent seul. 95% des personnes reprennent le poids perdu. LOWIS est différent: on surveille +19 indicateurs, l'IA s'adapte à votre quotidien, et nos experts ajustent chaque semaine. C'est un accompagnement 360°, pas une simple liste de repas."
+      },
+      {
+        "question": "Comment fonctionne la première semaine offerte?",
+        "answer": "Remplissez simplement votre profil pour personnaliser votre plan selon vos +19 indicateurs. Accès complet une semaine, sans carte bancaire requise. Vous voyez les résultats avant de décider. Après, continuez à 199 DH/semaine ou ne faites rien — votre choix."
+      },
+      {
+        "question": "Perdre entre 1 et 2,5 kg par semaine, c'est vraiment possible?",
+        "answer": "Oui, c'est notre objectif garanti. En mangeant intelligemment (pas moins, juste mieux combiné), la majorité de nos utilisateurs atteignent ces résultats. Le protocole LOWIS optimise chaque repas selon votre métabolisme."
+      },
+      {
+        "question": "Dois-je suivre un régime strict pour maigrir?",
+        "answer": "Non. LOWIS n'est pas un régime restrictif. Vous gardez vos plats préférés — tajines, brochettes, pastilla — on vous apprend à les combiner intelligemment. Des habitudes durables, pas des efforts insoutenables."
+      },
+      {
+        "question": "L'application reconnaît les plats marocains?",
+        "answer": "Absolument! Plus de 500 recettes marocaines: tajines de poulet, brochettes de kefta, poisson grillé, pastilla, msemen... Chaque plat analysé avec précision nutritionnelle. Conçu pour la cuisine marocaine, pas adapté après coup."
+      },
+      {
+        "question": "Quelle est la différence avec les compteurs de calories?",
+        "answer": "Les compteurs de calories vous laissent seul avec des chiffres. LOWIS surveille +19 indicateurs (sommeil, stress, cycle, digestion...), l'IA réagit instantanément, et nos nutritionnistes ajustent votre plan chaque semaine. Un vrai accompagnement, pas une calculatrice."
+      },
+      {
+        "question": "Comment LOWIS s'adapte pendant le Ramadan?",
+        "answer": "Plans spéciaux optimisés pour le jeûne: répartition idéale ftour/shour, hydratation adaptée, et recommandations pour maintenir votre énergie. L'app s'adapte automatiquement à votre rythme pendant le mois sacré."
       },
       {
         "question": "Et si je craque un jour?",
-        "answer": "C'est prévu. LOWIS corrige immédiatement pour revenir sur la trajectoire — sans culpabiliser. Un écart ne détruit pas vos progrès, on ajuste ensemble."
+        "answer": "C'est prévu et normal. LOWIS corrige immédiatement la trajectoire sans culpabiliser. Un écart ne détruit pas vos progrès — on ajuste ensemble et on continue. Zéro jugement, que des solutions."
       },
       {
-        "question": "1 kg/semaine minimum, c'est vraiment possible?",
-        "answer": "Oui, c'est notre objectif de base. En mangeant intelligemment (pas moins, juste mieux), la plupart des utilisateurs perdent au moins 1 kg par semaine de façon naturelle et durable."
-      },
-      {
-        "question": "L'app reconnaît-elle vraiment les plats marocains?",
-        "answer": "Oui! Plus de 500 plats marocains: tajines, couscous, pastilla, harira, msemen, baghrir... Chaque recette analysée avec précision. Vous n'avez pas à changer ce que vous mangez."
-      },
-      {
-        "question": "Comment fonctionne l'essai gratuit de 7 jours?",
-        "answer": "Accès complet pendant 7 jours, sans carte bancaire. À la fin, continuez à 149 DH/mois ou ne faites rien — votre choix."
-      },
-      {
-        "question": "C'est quoi la différence avec les autres apps?",
-        "answer": "LOWIS = suivi 360° (nutrition + mental + ajustements). IA instantanée + experts humains chaque semaine. Pas une calculatrice de calories, un vrai accompagnement adapté au Maroc."
-      },
-      {
-        "question": "Comment ça marche pendant le Ramadan?",
-        "answer": "Plans spéciaux pour le jeûne avec répartition optimale ftour/shour. L'app s'adapte à votre rythme pendant le mois sacré."
-      },
-      {
-        "question": "Puis-je annuler à tout moment?",
-        "answer": "Oui, en 1 clic depuis l'app. Vous gardez l'accès jusqu'à la fin de votre période payée."
-      },
-      {
-        "question": "C'est gratuit?",
-        "answer": "L'essai de 7 jours est 100% gratuit, sans carte bancaire. Après, LOWIS coûte 149 DH/mois — moins qu'un seul rendez-vous chez un nutritionniste. Et vous pouvez annuler à tout moment."
+        "question": "Puis-je annuler quand je veux?",
+        "answer": "Oui, en 1 clic depuis l'app. Aucun engagement, aucune pénalité. Vous gardez l'accès jusqu'à la fin de votre période. La première semaine est offerte sans carte bancaire — vous décidez après avoir vu les résultats."
       }
     ]
   },
