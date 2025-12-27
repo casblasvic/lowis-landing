@@ -230,6 +230,12 @@
         "title": "Progress photos",
         "description": "See your transformation where the scale can't. We document your change: face, profile and back",
         "count": 1
+      },
+      {
+        "icon": "nutrition",
+        "title": "22 Micronutrients",
+        "description": "Vitamins A, B, C, D, E, K, iron, calcium, zinc, magnesium... We estimate your intake of 22 essential micronutrients to detect invisible deficiencies sabotaging your energy and metabolism",
+        "count": 22
       }
     ],
     "summary": {

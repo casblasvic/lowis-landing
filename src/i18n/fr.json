@@ -230,6 +230,12 @@
         "title": "Photos de progrès",
         "description": "Voyez votre transformation là où la balance ne voit rien. Nous documentons votre changement : visage, profil et dos",
         "count": 1
+      },
+      {
+        "icon": "nutrition",
+        "title": "22 Micronutriments",
+        "description": "Vitamines A, B, C, D, E, K, fer, calcium, zinc, magnésium... Nous estimons votre apport en 22 micronutriments essentiels pour détecter les carences invisibles qui sabotent votre énergie et votre métabolisme",
+        "count": 22
       }
     ],
     "summary": {
