@@ -642,5 +642,97 @@
         "emailLabel": "Email"
       }
     }
+  },
+  "terms": {
+    "title": "Terms and Conditions of Use",
+    "lastUpdated": "Last updated",
+    "backToHome": "Back to home",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "content": "Welcome to LOWIS. These Terms and Conditions of Use govern your access to and use of the LOWIS application and its associated services. By using LOWIS, you accept these terms in their entirety."
+      },
+      "definitions": {
+        "title": "Definitions",
+        "items": [
+          { "term": "LOWIS", "definition": "The mobile and web application for nutritional tracking and its associated services." },
+          { "term": "User", "definition": "Any natural person using the LOWIS application." },
+          { "term": "Services", "definition": "All the features offered by LOWIS: nutritional tracking, personalized meal plans, AI meal analysis, coaching." },
+          { "term": "Content", "definition": "All information, texts, images, data that you submit through the application." }
+        ]
+      },
+      "eligibility": {
+        "title": "Access Conditions",
+        "content": "To use LOWIS, you must:",
+        "items": [
+          "Be at least 16 years old (or have parental consent)",
+          "Provide accurate information during registration",
+          "Not use the service for illegal purposes",
+          "Maintain the confidentiality of your login credentials"
+        ]
+      },
+      "services": {
+        "title": "Description of Services",
+        "intro": "LOWIS offers the following services:",
+        "items": [
+          { "service": "Nutritional tracking", "description": "Recording and analysis of your daily meals with macronutrient calculation." },
+          { "service": "Personalized plans", "description": "Meal programs adapted to your goals (weight loss, maintenance, mass gain)." },
+          { "service": "AI Analysis", "description": "Automatic food recognition by photo and nutritional estimation." },
+          { "service": "Coaching", "description": "Personalized advice based on your progress and eating habits." }
+        ]
+      },
+      "subscription": {
+        "title": "Subscription and Payment",
+        "intro": "LOWIS offers different subscription plans:",
+        "items": [
+          "Free trial: 7 days of full access with no commitment",
+          "Weekly subscription: automatic billing each week",
+          "Prices are shown including taxes and may vary by country"
+        ],
+        "cancellation": "You can cancel your subscription at any time from the app settings. Cancellation takes effect at the end of the current period.",
+        "refund": "In accordance with regulations, you have a 14-day withdrawal right for any new subscription, unless you have started using the service."
+      },
+      "health": {
+        "title": "Health Disclaimer",
+        "content": "LOWIS is a nutritional tracking aid tool and does not constitute medical advice. The information provided does not replace a consultation with a healthcare professional. Before starting any diet or meal program, consult your doctor, especially if you have pre-existing medical conditions.",
+        "disclaimer": "LOWIS cannot be held responsible for consequences resulting from the use of information or recommendations provided by the application."
+      },
+      "userContent": {
+        "title": "User Content",
+        "intro": "By using LOWIS, you agree to:",
+        "items": [
+          "Not post illegal, offensive, or inappropriate content",
+          "Not impersonate another person",
+          "Not attempt to compromise the application's security",
+          "Respect intellectual property rights"
+        ],
+        "license": "You retain ownership of your content. By submitting it, you grant LOWIS a non-exclusive license to use it within the framework of our services."
+      },
+      "intellectualProperty": {
+        "title": "Intellectual Property",
+        "content": "The LOWIS application, its design, features, and all its content (texts, images, logos, algorithms) are protected by intellectual property rights and belong to Organicare SARLAU or its licensors. Any unauthorized reproduction is prohibited."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "content": "LOWIS strives to provide a quality service but does not guarantee the absolute accuracy of nutritional information. Our liability is limited to the amount of your subscription for the last 12 months. We are not responsible for indirect damages or data loss."
+      },
+      "termination": {
+        "title": "Termination",
+        "content": "We may suspend or terminate your account in case of violation of these terms, especially in case of fraudulent or abusive use of the service. You can delete your account at any time from the settings."
+      },
+      "modifications": {
+        "title": "Changes to Terms",
+        "content": "We may modify these terms. Substantial changes will be notified to you by email or through the application at least 30 days before they take effect. Your continued use after that date constitutes acceptance."
+      },
+      "law": {
+        "title": "Applicable Law",
+        "content": "These terms are governed by Moroccan law. In case of dispute, the courts of Casablanca will have sole jurisdiction, after an attempt at amicable resolution."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "For any questions about these terms:",
+        "emailLabel": "Email"
+      }
+    }
   }
 }

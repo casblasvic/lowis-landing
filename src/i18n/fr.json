@@ -642,5 +642,97 @@
         "emailLabel": "Email"
       }
     }
+  },
+  "terms": {
+    "title": "Conditions Générales d'Utilisation",
+    "lastUpdated": "Dernière mise à jour",
+    "backToHome": "Retour à l'accueil",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "content": "Bienvenue sur LOWIS. Les présentes Conditions Générales d'Utilisation régissent votre accès et utilisation de l'application LOWIS et de ses services associés. En utilisant LOWIS, vous acceptez ces conditions dans leur intégralité."
+      },
+      "definitions": {
+        "title": "Définitions",
+        "items": [
+          { "term": "LOWIS", "definition": "L'application mobile et web de suivi nutritionnel et ses services associés." },
+          { "term": "Utilisateur", "definition": "Toute personne physique utilisant l'application LOWIS." },
+          { "term": "Services", "definition": "L'ensemble des fonctionnalités proposées par LOWIS : suivi nutritionnel, plans alimentaires personnalisés, analyse IA des repas, coaching." },
+          { "term": "Contenu", "definition": "Toutes les informations, textes, images, données que vous soumettez via l'application." }
+        ]
+      },
+      "eligibility": {
+        "title": "Conditions d'accès",
+        "content": "Pour utiliser LOWIS, vous devez :",
+        "items": [
+          "Être âgé d'au moins 16 ans (ou avoir le consentement parental)",
+          "Fournir des informations exactes lors de l'inscription",
+          "Ne pas utiliser le service à des fins illégales",
+          "Maintenir la confidentialité de vos identifiants de connexion"
+        ]
+      },
+      "services": {
+        "title": "Description des Services",
+        "intro": "LOWIS propose les services suivants :",
+        "items": [
+          { "service": "Suivi nutritionnel", "description": "Enregistrement et analyse de vos repas quotidiens avec calcul des macronutriments." },
+          { "service": "Plans personnalisés", "description": "Programmes alimentaires adaptés à vos objectifs (perte de poids, maintien, prise de masse)." },
+          { "service": "Analyse IA", "description": "Reconnaissance automatique des aliments par photo et estimation nutritionnelle." },
+          { "service": "Coaching", "description": "Conseils personnalisés basés sur vos progrès et habitudes alimentaires." }
+        ]
+      },
+      "subscription": {
+        "title": "Abonnement et Paiement",
+        "intro": "LOWIS propose différentes formules d'abonnement :",
+        "items": [
+          "Essai gratuit : 7 jours d'accès complet sans engagement",
+          "Abonnement hebdomadaire : facturation automatique chaque semaine",
+          "Les prix sont affichés TTC et peuvent varier selon votre pays"
+        ],
+        "cancellation": "Vous pouvez annuler votre abonnement à tout moment depuis les paramètres de l'application. L'annulation prend effet à la fin de la période en cours.",
+        "refund": "Conformément à la réglementation, vous disposez d'un droit de rétractation de 14 jours pour tout nouvel abonnement, sauf si vous avez commencé à utiliser le service."
+      },
+      "health": {
+        "title": "Avertissement Santé",
+        "content": "LOWIS est un outil d'aide au suivi nutritionnel et ne constitue pas un avis médical. Les informations fournies ne remplacent pas une consultation avec un professionnel de santé. Avant de commencer tout régime ou programme alimentaire, consultez votre médecin, particulièrement si vous avez des conditions médicales préexistantes.",
+        "disclaimer": "LOWIS ne peut être tenu responsable des conséquences résultant de l'utilisation des informations ou recommandations fournies par l'application."
+      },
+      "userContent": {
+        "title": "Contenu Utilisateur",
+        "intro": "En utilisant LOWIS, vous vous engagez à :",
+        "items": [
+          "Ne pas publier de contenu illégal, offensant ou inapproprié",
+          "Ne pas usurper l'identité d'une autre personne",
+          "Ne pas tenter de compromettre la sécurité de l'application",
+          "Respecter les droits de propriété intellectuelle"
+        ],
+        "license": "Vous conservez la propriété de votre contenu. En le soumettant, vous accordez à LOWIS une licence non exclusive pour l'utiliser dans le cadre de nos services."
+      },
+      "intellectualProperty": {
+        "title": "Propriété Intellectuelle",
+        "content": "L'application LOWIS, son design, ses fonctionnalités, et tout son contenu (textes, images, logos, algorithmes) sont protégés par les droits de propriété intellectuelle et appartiennent à Organicare SARLAU ou ses licenciés. Toute reproduction non autorisée est interdite."
+      },
+      "liability": {
+        "title": "Limitation de Responsabilité",
+        "content": "LOWIS s'efforce de fournir un service de qualité mais ne garantit pas l'exactitude absolue des informations nutritionnelles. Notre responsabilité est limitée au montant de votre abonnement pour les 12 derniers mois. Nous ne sommes pas responsables des dommages indirects ou des pertes de données."
+      },
+      "termination": {
+        "title": "Résiliation",
+        "content": "Nous pouvons suspendre ou résilier votre compte en cas de violation des présentes conditions, notamment en cas d'utilisation frauduleuse ou abusive du service. Vous pouvez supprimer votre compte à tout moment depuis les paramètres."
+      },
+      "modifications": {
+        "title": "Modifications des Conditions",
+        "content": "Nous pouvons modifier ces conditions. Les modifications substantielles vous seront notifiées par email ou via l'application au moins 30 jours avant leur entrée en vigueur. Votre utilisation continue après cette date vaut acceptation."
+      },
+      "law": {
+        "title": "Droit Applicable",
+        "content": "Les présentes conditions sont régies par le droit marocain. En cas de litige, les tribunaux de Casablanca seront seuls compétents, après tentative de résolution amiable."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "Pour toute question concernant ces conditions :",
+        "emailLabel": "Email"
+      }
+    }
   }
 }
