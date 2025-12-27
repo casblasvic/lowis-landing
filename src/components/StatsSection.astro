@@ -4,77 +4,34 @@ interface Props {
     stats: {
       title: string;
       subtitle?: string;
-      items: Array<{
-        value: string;
-        label: string;
-        icon: string;
-      }>;
     };
   };
 }
 
 const { t } = Astro.props;
-
-// Icon colors for each stat
-const iconColors = [
-  'text-blue-400',
-  'text-purple-400',
-  'text-green-400',
-  'text-primary-orange',
-  'text-cyan-400',
-];
-
-const bgColors = [
-  'bg-blue-500/10',
-  'bg-purple-500/10',
-  'bg-green-500/10',
-  'bg-primary-orange/10',
-  'bg-cyan-500/10',
-];
 ---
 
-<section id="stats" class="py-16 relative">
-  <!-- Background gradient -->
-  <div class="absolute inset-0 bg-gradient-to-b from-dark-bg via-dark-surface/50 to-dark-bg"></div>
+<section id="stats" class="py-20 relative overflow-hidden">
+  <!-- Background with gradient -->
+  <div class="absolute inset-0 bg-gradient-to-r from-primary-orange/10 via-primary-red/5 to-primary-orange/10"></div>
+
+  <!-- Decorative elements -->
+  <div class="absolute top-0 left-1/4 w-64 h-64 bg-primary-orange/10 rounded-full blur-[100px]"></div>
+  <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-primary-red/10 rounded-full blur-[100px]"></div>
 
   <div class="section-container relative z-10">
-    <!-- Section header -->
-    <div class="text-center mb-12">
-      <h2 class="text-2xl sm:text-3xl font-bold">
-        {t.stats.title}
+    <div class="text-center max-w-4xl mx-auto">
+      <!-- Main title -->
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+        <span class="gradient-text">{t.stats.title}</span>
       </h2>
+
+      <!-- Subtitle -->
       {t.stats.subtitle && (
-        <p class="mt-3 text-text-secondary text-lg">
+        <p class="text-xl sm:text-2xl text-text-secondary font-medium">
           {t.stats.subtitle}
         </p>
       )}
-    </div>
-
-    <!-- Stats grid -->
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
-      {t.stats.items.map((stat, index) => (
-        <div class="group relative p-6 bg-dark-surface border border-dark-border rounded-2xl text-center card-hover overflow-hidden">
-          <!-- Icon -->
-          <div class={`inline-flex items-center justify-center w-12 h-12 rounded-xl ${bgColors[index]} mb-4`}>
-            <span class={`material-symbols-outlined text-2xl ${iconColors[index]}`}>
-              {stat.icon}
-            </span>
-          </div>
-
-          <!-- Value -->
-          <div class="text-3xl sm:text-4xl font-bold mb-2 gradient-text">
-            {stat.value}
-          </div>
-
-          <!-- Label -->
-          <div class="text-text-secondary text-sm">
-            {stat.label}
-          </div>
-
-          <!-- Hover effect -->
-          <div class="absolute inset-0 bg-gradient-to-br from-primary-orange/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-        </div>
-      ))}
     </div>
   </div>
 </section>

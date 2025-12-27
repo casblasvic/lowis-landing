@@ -334,34 +334,7 @@
   },
   "stats": {
     "title": "Complete 360° tracking",
-    "subtitle": "Nutrition + mental + adjustments = lasting results",
-    "items": [
-      {
-        "value": "13",
-        "label": "Scientific phases",
-        "icon": "science"
-      },
-      {
-        "value": "22",
-        "label": "Micronutrients analyzed",
-        "icon": "biotech"
-      },
-      {
-        "value": "40+",
-        "label": "Health indicators",
-        "icon": "monitoring"
-      },
-      {
-        "value": "500+",
-        "label": "Moroccan recipes",
-        "icon": "restaurant"
-      },
-      {
-        "value": "24/7",
-        "label": "Personalized support",
-        "icon": "support_agent"
-      }
-    ]
+    "subtitle": "Nutrition + mental + adjustments = lasting results"
   },
   "pricing": {
     "title": "See for yourself the weight loss during your first week",

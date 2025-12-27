@@ -334,34 +334,7 @@
   },
   "stats": {
     "title": "Un suivi 360° complet",
-    "subtitle": "Nutrition + mental + ajustements = résultats durables",
-    "items": [
-      {
-        "value": "13",
-        "label": "Phases scientifiques",
-        "icon": "science"
-      },
-      {
-        "value": "22",
-        "label": "Micronutriments analysés",
-        "icon": "biotech"
-      },
-      {
-        "value": "40+",
-        "label": "Indicateurs de santé",
-        "icon": "monitoring"
-      },
-      {
-        "value": "500+",
-        "label": "Recettes marocaines",
-        "icon": "restaurant"
-      },
-      {
-        "value": "24/7",
-        "label": "Suivi personnalisé",
-        "icon": "support_agent"
-      }
-    ]
+    "subtitle": "Nutrition + mental + ajustements = résultats durables"
   },
   "pricing": {
     "title": "Vérifiez par vous-même la perte de kilos durant la première semaine",
