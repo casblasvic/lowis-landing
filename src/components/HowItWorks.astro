@@ -19,7 +19,7 @@ interface Props {
 const { t } = Astro.props;
 ---
 
-<section id="how-it-works" class="py-20 relative overflow-hidden">
+<section id="how-it-works" class="py-12 md:py-16 relative overflow-hidden">
   <!-- Background decoration -->
   <div class="absolute inset-0 overflow-hidden pointer-events-none">
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-orange/5 rounded-full blur-[100px]"></div>
@@ -59,8 +59,8 @@ const { t } = Astro.props;
       ))}
     </div>
 
-    <!-- CTA -->
-    <div class="text-center">
+    <!-- CTA - Hidden on mobile (sticky CTA visible instead) -->
+    <div class="hidden md:flex justify-center">
       <a href={SITE_CONFIG.signupUrl} class="btn-primary text-lg px-8 py-4">
         {t.howItWorks.cta}
         <span class="material-symbols-outlined ml-2">arrow_forward</span>

@@ -15,7 +15,7 @@ interface Props {
 const { t } = Astro.props;
 ---
 
-<section class="py-20 relative overflow-hidden">
+<section class="py-12 md:py-16 relative overflow-hidden">
   <!-- Background -->
   <div class="absolute inset-0">
     <div class="absolute inset-0 bg-gradient-to-br from-primary-orange/10 via-dark-bg to-primary-red/10"></div>
@@ -38,8 +38,8 @@ const { t } = Astro.props;
         {t.finalCta.subtitle}
       </p>
 
-      <!-- CTA Button -->
-      <a href={SITE_CONFIG.signupUrl} class="btn-primary text-xl px-10 py-5 animate-pulse-glow">
+      <!-- CTA Button - Hidden on mobile (sticky CTA visible instead) -->
+      <a href={SITE_CONFIG.signupUrl} class="hidden md:inline-flex btn-primary text-xl px-10 py-5">
         {t.finalCta.cta}
         <span class="material-symbols-outlined ml-2 text-2xl">arrow_forward</span>
       </a>
