@@ -270,6 +270,8 @@
     ]
   },
   "moroccanFeatures": {
+    "badge": "Créé pour le Maroc",
+    "badgeGeneric": "2000+ recettes",
     "title": "Avec vos recettes marocaines préférées",
     "titleGeneric": "Plus de 2000 recettes analysées",
     "subtitle": "Pas de nouveaux plats à apprendre. Juste une nouvelle façon de les combiner.",

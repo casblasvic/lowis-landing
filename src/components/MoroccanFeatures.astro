@@ -4,15 +4,21 @@ import { SITE_CONFIG } from '../config';
 interface Props {
   t: {
     moroccanFeatures: {
+      badge?: string;
+      badgeGeneric?: string;
       title: string;
+      titleGeneric?: string;
       subtitle: string;
+      subtitleGeneric?: string;
       items: Array<{
         icon: string;
         title: string;
         description: string;
       }>;
       recipesTitle?: string;
+      recipesTitleGeneric?: string;
       recipesButton?: string;
+      recipesButtonGeneric?: string;
     };
   };
 }
@@ -73,12 +79,12 @@ const moroccanRecipes = [
       <!-- Morocco badge - visible only for Morocco -->
       <div data-morocco-only class="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full mb-6">
         <span class="text-2xl">🇲🇦</span>
-        <span class="text-green-400 font-medium">Made for Morocco</span>
+        <span class="text-green-400 font-medium">{t.moroccanFeatures.badge || 'Made for Morocco'}</span>
       </div>
       <!-- Generic badge - hidden by default -->
       <div data-generic-only style="display: none" class="inline-flex items-center gap-2 px-4 py-2 bg-primary-orange/10 border border-primary-orange/20 rounded-full mb-6">
         <span class="material-symbols-outlined text-primary-orange">restaurant</span>
-        <span class="text-primary-orange font-medium">2000+ recipes</span>
+        <span class="text-primary-orange font-medium">{t.moroccanFeatures.badgeGeneric || '2000+ recipes'}</span>
       </div>
 
       <!-- Title: Morocco version -->

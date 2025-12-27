@@ -270,6 +270,8 @@
     ]
   },
   "moroccanFeatures": {
+    "badge": "Made for Morocco",
+    "badgeGeneric": "2000+ recipes",
     "title": "With your favorite Moroccan recipes",
     "titleGeneric": "Over 2000 recipes analyzed",
     "subtitle": "No new dishes to learn. Just a new way to combine them.",
