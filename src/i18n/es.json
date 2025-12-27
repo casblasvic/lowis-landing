@@ -508,5 +508,139 @@
     "phase": "Fase D2",
     "phaseLabel": "Desestocaje",
     "recipes": "Recetas del día"
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización",
+    "sections": {
+      "intro": {
+        "title": "Introducción",
+        "content": "En LOWIS, damos una importancia primordial a la protección de tus datos personales. Esta política de privacidad te informa sobre cómo recopilamos, utilizamos y protegemos tu información cuando usas nuestra aplicación y servicios."
+      },
+      "controller": {
+        "title": "Responsable del tratamiento",
+        "content": "El responsable del tratamiento de datos es Organicare SARLAU, sociedad de derecho marroquí.",
+        "address": "Dirección",
+        "email": "Email de contacto"
+      },
+      "dataCollected": {
+        "title": "Datos que recopilamos",
+        "intro": "Para proporcionarte un servicio nutricional personalizado, recopilamos las siguientes categorías de datos:",
+        "categories": {
+          "personal": {
+            "title": "Datos de identificación",
+            "items": ["Nombre y apellidos", "Dirección de email", "Número de teléfono", "Fecha de nacimiento", "Género", "País y zona horaria"]
+          },
+          "health": {
+            "title": "Datos de salud (sensibles)",
+            "items": ["Peso y altura", "Medidas corporales (cintura, caderas, brazos)", "Ciclo menstrual (opcional)", "Condiciones médicas y alergias", "Calidad del sueño", "Nivel de estrés y estado de ánimo", "Fotos de progreso corporal (opcional)"]
+          },
+          "nutrition": {
+            "title": "Datos nutricionales",
+            "items": ["Comidas fotografiadas y registradas", "Preferencias alimentarias y restricciones", "Consumo de agua", "Análisis nutricional (macros y micronutrientes)"]
+          },
+          "activity": {
+            "title": "Datos de actividad",
+            "items": ["Ejercicios realizados", "Duración e intensidad de las actividades", "Calorías quemadas estimadas"]
+          },
+          "technical": {
+            "title": "Datos técnicos",
+            "items": ["Identificadores de sesión y dispositivos", "Tokens de notificación push", "Logs de uso de la aplicación"]
+          },
+          "payment": {
+            "title": "Datos de pago",
+            "items": ["Referencias de pago (tokenizadas, nunca los números completos)", "Historial de transacciones", "Facturas"]
+          },
+          "ai": {
+            "title": "Datos de interacción con IA",
+            "items": ["Conversaciones con el asistente LOWIS", "Insights y recomendaciones generados"]
+          }
+        }
+      },
+      "purposes": {
+        "title": "Finalidades del tratamiento",
+        "intro": "Utilizamos tus datos para:",
+        "items": [
+          "Personalizar tu plan nutricional y recomendaciones",
+          "Analizar tus comidas y calcular los aportes nutricionales",
+          "Seguir tus indicadores de salud y adaptar tu programa",
+          "Enviarte notificaciones y recordatorios personalizados",
+          "Procesar tus pagos y gestionar tu suscripción",
+          "Mejorar nuestros servicios y desarrollar nuevas funcionalidades",
+          "Garantizar la seguridad de tu cuenta y prevenir fraudes"
+        ]
+      },
+      "legalBasis": {
+        "title": "Base legal del tratamiento",
+        "intro": "Tratamos tus datos sobre las siguientes bases legales:",
+        "items": [
+          { "basis": "Consentimiento explícito", "description": "Para los datos de salud sensibles, das tu consentimiento durante el registro" },
+          { "basis": "Ejecución del contrato", "description": "Para proporcionar los servicios a los que te has suscrito" },
+          { "basis": "Interés legítimo", "description": "Para mejorar nuestros servicios y garantizar la seguridad" },
+          { "basis": "Obligación legal", "description": "Para la conservación de datos de facturación" }
+        ]
+      },
+      "recipients": {
+        "title": "Destinatarios de los datos",
+        "intro": "Tus datos pueden compartirse con los siguientes proveedores, en el marco estricto de la prestación de nuestros servicios:",
+        "items": [
+          { "name": "Supabase", "purpose": "Alojamiento y base de datos segura" },
+          { "name": "Google Gemini", "purpose": "Análisis IA de alimentos fotografiados" },
+          { "name": "Firebase", "purpose": "Notificaciones push" },
+          { "name": "Stripe / Lemon Squeezy", "purpose": "Procesamiento seguro de pagos" },
+          { "name": "USDA / Spoonacular / FatSecret", "purpose": "Datos nutricionales de referencia" }
+        ],
+        "noSale": "Nunca vendemos tus datos personales a terceros."
+      },
+      "transfers": {
+        "title": "Transferencias internacionales",
+        "content": "Tus datos se alojan principalmente en la Unión Europea. En caso de transferencia a terceros países, nos aseguramos de que existan las garantías apropiadas (cláusulas contractuales tipo, certificaciones)."
+      },
+      "retention": {
+        "title": "Conservación de datos",
+        "intro": "Conservamos tus datos durante los siguientes períodos:",
+        "items": [
+          { "type": "Datos de cuenta", "duration": "Duración de tu suscripción + 3 años" },
+          { "type": "Datos de salud", "duration": "Duración de tu suscripción, eliminados bajo petición" },
+          { "type": "Datos de facturación", "duration": "10 años (obligación legal)" },
+          { "type": "Logs técnicos", "duration": "12 meses" }
+        ]
+      },
+      "rights": {
+        "title": "Tus derechos",
+        "intro": "De acuerdo con el RGPD y la ley marroquí 09-08, tienes los siguientes derechos:",
+        "items": [
+          { "right": "Derecho de acceso", "description": "Obtener una copia de tus datos personales" },
+          { "right": "Derecho de rectificación", "description": "Corregir tus datos inexactos o incompletos" },
+          { "right": "Derecho de supresión", "description": "Solicitar la eliminación de tus datos" },
+          { "right": "Derecho a la portabilidad", "description": "Recibir tus datos en un formato estructurado" },
+          { "right": "Derecho de oposición", "description": "Oponerte a ciertos tratamientos" },
+          { "right": "Derecho de limitación", "description": "Limitar el tratamiento de tus datos" },
+          { "right": "Retirada del consentimiento", "description": "Retirar tu consentimiento en cualquier momento" }
+        ],
+        "howTo": "Para ejercer estos derechos, contáctanos en la dirección indicada más abajo."
+      },
+      "cookies": {
+        "title": "Cookies y tecnologías similares",
+        "content": "Utilizamos cookies esenciales para el funcionamiento de la aplicación y cookies analíticas para mejorar nuestros servicios. Puedes gestionar tus preferencias de cookies en los ajustes de la aplicación."
+      },
+      "security": {
+        "title": "Seguridad de los datos",
+        "content": "Implementamos medidas técnicas y organizativas apropiadas para proteger tus datos: cifrado de datos en tránsito y en reposo, autenticación segura, acceso restringido a los datos, auditorías de seguridad regulares."
+      },
+      "minors": {
+        "title": "Menores",
+        "content": "LOWIS está destinado a personas de 16 años o más. Si tienes menos de 16 años, debes obtener el consentimiento de tus padres o tutores legales antes de usar nuestros servicios."
+      },
+      "changes": {
+        "title": "Modificaciones",
+        "content": "Podemos actualizar esta política de privacidad. En caso de modificaciones sustanciales, te informaremos por email o a través de la aplicación. La fecha de última actualización se indica en la parte superior de esta página."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "Para cualquier pregunta sobre esta política o tus datos personales, contacta con nuestro Delegado de Protección de Datos:",
+        "emailLabel": "Email"
+      }
+    }
   }
 }

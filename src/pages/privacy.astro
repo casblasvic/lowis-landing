@@ -1,0 +1,241 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { defaultLang, useTranslations, getPathWithLang } from '../i18n';
+
+const lang = defaultLang;
+const t = useTranslations(lang);
+const p = t.privacy;
+
+// Company info - will be customized
+const COMPANY = {
+  name: 'Organicare SARLAU',
+  address: 'Casablanca, Maroc',
+  email: 'privacy@lowis.app',
+  lastUpdated: '2024-12-27'
+};
+---
+
+<Layout
+  title={`${p.title} | LOWIS`}
+  description={p.sections.intro.content}
+  lang={lang}
+>
+  <Header t={t} lang={lang} />
+
+  <main class="min-h-screen pt-24 pb-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <!-- Header -->
+      <div class="mb-12 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">{p.title}</h1>
+        <p class="text-text-secondary">
+          {p.lastUpdated}: {COMPANY.lastUpdated}
+        </p>
+      </div>
+
+      <!-- Content -->
+      <div class="prose prose-invert prose-orange max-w-none space-y-12">
+
+        <!-- Introduction -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{p.sections.intro.title}</h2>
+          <p class="text-text-secondary leading-relaxed">{p.sections.intro.content}</p>
+        </section>
+
+        <!-- Controller -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{p.sections.controller.title}</h2>
+          <p class="text-text-secondary leading-relaxed mb-4">{p.sections.controller.content}</p>
+          <div class="bg-dark-surface rounded-xl p-6 border border-dark-border">
+            <p class="mb-2"><strong class="text-white">{p.sections.controller.address}:</strong> <span class="text-text-secondary">{COMPANY.address}</span></p>
+            <p><strong class="text-white">{p.sections.controller.email}:</strong> <a href={`mailto:${COMPANY.email}`} class="text-primary-orange hover:underline">{COMPANY.email}</a></p>
+          </div>
+        </section>
+
+        <!-- Data Collected -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{p.sections.dataCollected.title}</h2>
+          <p class="text-text-secondary leading-relaxed mb-6">{p.sections.dataCollected.intro}</p>
+
+          <div class="grid gap-6">
+            {Object.entries(p.sections.dataCollected.categories).map(([key, category]) => (
+              <div class="bg-dark-surface rounded-xl p-6 border border-dark-border">
+                <h3 class="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary-orange">
+                    {key === 'personal' ? 'person' :
+                     key === 'health' ? 'favorite' :
+                     key === 'nutrition' ? 'restaurant' :
+                     key === 'activity' ? 'fitness_center' :
+                     key === 'technical' ? 'devices' :
+                     key === 'payment' ? 'payment' : 'smart_toy'}
+                  </span>
+                  {category.title}
+                </h3>
+                <ul class="space-y-2">
+                  {category.items.map((item: string) => (
+                    <li class="text-text-secondary flex items-start gap-2">
+                      <span class="material-symbols-outlined text-sm text-green-500 mt-1">check</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Purposes -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{p.sections.purposes.title}</h2>
+          <p class="text-text-secondary leading-relaxed mb-4">{p.sections.purposes.intro}</p>
+          <ul class="space-y-3">
+            {p.sections.purposes.items.map((item: string) => (
+              <li class="text-text-secondary flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary-orange mt-0.5">arrow_right</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <!-- Legal Basis -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{p.sections.legalBasis.title}</h2>
+          <p class="text-text-secondary leading-relaxed mb-4">{p.sections.legalBasis.intro}</p>
+          <div class="space-y-4">
+            {p.sections.legalBasis.items.map((item: { basis: string; description: string }) => (
+              <div class="bg-dark-surface rounded-lg p-4 border border-dark-border">
+                <h4 class="font-semibold text-white mb-1">{item.basis}</h4>
+                <p class="text-text-secondary text-sm">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Recipients -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{p.sections.recipients.title}</h2>
+          <p class="text-text-secondary leading-relaxed mb-4">{p.sections.recipients.intro}</p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left">
+              <thead>
+                <tr class="border-b border-dark-border">
+                  <th class="py-3 px-4 text-white font-semibold">Service</th>
+                  <th class="py-3 px-4 text-white font-semibold">Finalité</th>
+                </tr>
+              </thead>
+              <tbody>
+                {p.sections.recipients.items.map((item: { name: string; purpose: string }) => (
+                  <tr class="border-b border-dark-border/50">
+                    <td class="py-3 px-4 text-primary-orange font-medium">{item.name}</td>
+                    <td class="py-3 px-4 text-text-secondary">{item.purpose}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-4 text-text-secondary font-medium">{p.sections.recipients.noSale}</p>
+        </section>
+
+        <!-- Transfers -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{p.sections.transfers.title}</h2>
+          <p class="text-text-secondary leading-relaxed">{p.sections.transfers.content}</p>
+        </section>
+
+        <!-- Retention -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{p.sections.retention.title}</h2>
+          <p class="text-text-secondary leading-relaxed mb-4">{p.sections.retention.intro}</p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left">
+              <thead>
+                <tr class="border-b border-dark-border">
+                  <th class="py-3 px-4 text-white font-semibold">Type</th>
+                  <th class="py-3 px-4 text-white font-semibold">Durée</th>
+                </tr>
+              </thead>
+              <tbody>
+                {p.sections.retention.items.map((item: { type: string; duration: string }) => (
+                  <tr class="border-b border-dark-border/50">
+                    <td class="py-3 px-4 text-white">{item.type}</td>
+                    <td class="py-3 px-4 text-text-secondary">{item.duration}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Rights -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{p.sections.rights.title}</h2>
+          <p class="text-text-secondary leading-relaxed mb-4">{p.sections.rights.intro}</p>
+          <div class="grid sm:grid-cols-2 gap-4">
+            {p.sections.rights.items.map((item: { right: string; description: string }) => (
+              <div class="bg-dark-surface rounded-lg p-4 border border-dark-border">
+                <h4 class="font-semibold text-primary-orange mb-1">{item.right}</h4>
+                <p class="text-text-secondary text-sm">{item.description}</p>
+              </div>
+            ))}
+          </div>
+          <p class="mt-6 text-text-secondary">{p.sections.rights.howTo}</p>
+        </section>
+
+        <!-- Cookies -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{p.sections.cookies.title}</h2>
+          <p class="text-text-secondary leading-relaxed">{p.sections.cookies.content}</p>
+        </section>
+
+        <!-- Security -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{p.sections.security.title}</h2>
+          <p class="text-text-secondary leading-relaxed">{p.sections.security.content}</p>
+        </section>
+
+        <!-- Minors -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{p.sections.minors.title}</h2>
+          <p class="text-text-secondary leading-relaxed">{p.sections.minors.content}</p>
+        </section>
+
+        <!-- Changes -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{p.sections.changes.title}</h2>
+          <p class="text-text-secondary leading-relaxed">{p.sections.changes.content}</p>
+        </section>
+
+        <!-- Contact -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{p.sections.contact.title}</h2>
+          <p class="text-text-secondary leading-relaxed mb-4">{p.sections.contact.content}</p>
+          <div class="bg-dark-surface rounded-xl p-6 border border-dark-border inline-block">
+            <p><strong class="text-white">{p.sections.contact.emailLabel}:</strong> <a href={`mailto:${COMPANY.email}`} class="text-primary-orange hover:underline">{COMPANY.email}</a></p>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Back to home -->
+      <div class="mt-16 text-center">
+        <a href={getPathWithLang('/', lang)} class="inline-flex items-center gap-2 text-text-secondary hover:text-white transition-colors">
+          <span class="material-symbols-outlined">arrow_back</span>
+          Retour à l'accueil
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <Footer t={t} lang={lang} />
+</Layout>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(135deg, #F97316, #DC2626);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+</style>

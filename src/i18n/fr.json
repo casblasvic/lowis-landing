@@ -508,5 +508,139 @@
     "phase": "Phase D2",
     "phaseLabel": "Déstockage",
     "recipes": "Recettes du jour"
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "lastUpdated": "Dernière mise à jour",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "content": "Chez LOWIS, nous accordons une importance primordiale à la protection de vos données personnelles. Cette politique de confidentialité vous informe sur la manière dont nous collectons, utilisons et protégeons vos informations lorsque vous utilisez notre application et nos services."
+      },
+      "controller": {
+        "title": "Responsable du traitement",
+        "content": "Le responsable du traitement des données est Organicare SARLAU, société de droit marocain.",
+        "address": "Adresse",
+        "email": "Email de contact"
+      },
+      "dataCollected": {
+        "title": "Données que nous collectons",
+        "intro": "Pour vous fournir un service nutritionnel personnalisé, nous collectons les catégories de données suivantes :",
+        "categories": {
+          "personal": {
+            "title": "Données d'identification",
+            "items": ["Nom et prénom", "Adresse email", "Numéro de téléphone", "Date de naissance", "Genre", "Pays et fuseau horaire"]
+          },
+          "health": {
+            "title": "Données de santé (sensibles)",
+            "items": ["Poids et taille", "Mensurations corporelles (tour de taille, hanches, bras)", "Cycle menstruel (optionnel)", "Conditions médicales et allergies", "Qualité du sommeil", "Niveau de stress et humeur", "Photos de progression corporelle (optionnel)"]
+          },
+          "nutrition": {
+            "title": "Données nutritionnelles",
+            "items": ["Repas photographiés et enregistrés", "Préférences alimentaires et restrictions", "Consommation d'eau", "Analyse nutritionnelle (macros et micronutriments)"]
+          },
+          "activity": {
+            "title": "Données d'activité",
+            "items": ["Exercices réalisés", "Durée et intensité des activités", "Calories brûlées estimées"]
+          },
+          "technical": {
+            "title": "Données techniques",
+            "items": ["Identifiants de session et appareils", "Tokens de notification push", "Logs d'utilisation de l'application"]
+          },
+          "payment": {
+            "title": "Données de paiement",
+            "items": ["Références de paiement (tokenisées, jamais les numéros complets)", "Historique des transactions", "Factures"]
+          },
+          "ai": {
+            "title": "Données d'interaction IA",
+            "items": ["Conversations avec l'assistant LOWIS", "Insights et recommandations générés"]
+          }
+        }
+      },
+      "purposes": {
+        "title": "Finalités du traitement",
+        "intro": "Nous utilisons vos données pour :",
+        "items": [
+          "Personnaliser votre plan nutritionnel et vos recommandations",
+          "Analyser vos repas et calculer les apports nutritionnels",
+          "Suivre vos indicateurs de santé et adapter votre programme",
+          "Vous envoyer des notifications et rappels personnalisés",
+          "Traiter vos paiements et gérer votre abonnement",
+          "Améliorer nos services et développer de nouvelles fonctionnalités",
+          "Assurer la sécurité de votre compte et prévenir les fraudes"
+        ]
+      },
+      "legalBasis": {
+        "title": "Base légale du traitement",
+        "intro": "Nous traitons vos données sur les bases légales suivantes :",
+        "items": [
+          { "basis": "Consentement explicite", "description": "Pour les données de santé sensibles, vous donnez votre consentement lors de l'inscription" },
+          { "basis": "Exécution du contrat", "description": "Pour fournir les services auxquels vous avez souscrit" },
+          { "basis": "Intérêt légitime", "description": "Pour améliorer nos services et assurer la sécurité" },
+          { "basis": "Obligation légale", "description": "Pour la conservation des données de facturation" }
+        ]
+      },
+      "recipients": {
+        "title": "Destinataires des données",
+        "intro": "Vos données peuvent être partagées avec les prestataires suivants, dans le cadre strict de la fourniture de nos services :",
+        "items": [
+          { "name": "Supabase", "purpose": "Hébergement et base de données sécurisée" },
+          { "name": "Google Gemini", "purpose": "Analyse IA des aliments photographiés" },
+          { "name": "Firebase", "purpose": "Notifications push" },
+          { "name": "Stripe / Lemon Squeezy", "purpose": "Traitement sécurisé des paiements" },
+          { "name": "USDA / Spoonacular / FatSecret", "purpose": "Données nutritionnelles de référence" }
+        ],
+        "noSale": "Nous ne vendons jamais vos données personnelles à des tiers."
+      },
+      "transfers": {
+        "title": "Transferts internationaux",
+        "content": "Vos données sont principalement hébergées dans l'Union Européenne. En cas de transfert vers des pays tiers, nous nous assurons que des garanties appropriées sont en place (clauses contractuelles types, certifications)."
+      },
+      "retention": {
+        "title": "Conservation des données",
+        "intro": "Nous conservons vos données pendant les durées suivantes :",
+        "items": [
+          { "type": "Données du compte", "duration": "Durée de votre abonnement + 3 ans" },
+          { "type": "Données de santé", "duration": "Durée de votre abonnement, supprimées sur demande" },
+          { "type": "Données de facturation", "duration": "10 ans (obligation légale)" },
+          { "type": "Logs techniques", "duration": "12 mois" }
+        ]
+      },
+      "rights": {
+        "title": "Vos droits",
+        "intro": "Conformément au RGPD et à la loi marocaine 09-08, vous disposez des droits suivants :",
+        "items": [
+          { "right": "Droit d'accès", "description": "Obtenir une copie de vos données personnelles" },
+          { "right": "Droit de rectification", "description": "Corriger vos données inexactes ou incomplètes" },
+          { "right": "Droit à l'effacement", "description": "Demander la suppression de vos données" },
+          { "right": "Droit à la portabilité", "description": "Recevoir vos données dans un format structuré" },
+          { "right": "Droit d'opposition", "description": "Vous opposer à certains traitements" },
+          { "right": "Droit de limitation", "description": "Limiter le traitement de vos données" },
+          { "right": "Retrait du consentement", "description": "Retirer votre consentement à tout moment" }
+        ],
+        "howTo": "Pour exercer ces droits, contactez-nous à l'adresse indiquée ci-dessous."
+      },
+      "cookies": {
+        "title": "Cookies et technologies similaires",
+        "content": "Nous utilisons des cookies essentiels pour le fonctionnement de l'application et des cookies analytiques pour améliorer nos services. Vous pouvez gérer vos préférences de cookies dans les paramètres de l'application."
+      },
+      "security": {
+        "title": "Sécurité des données",
+        "content": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données : chiffrement des données en transit et au repos, authentification sécurisée, accès restreint aux données, audits de sécurité réguliers."
+      },
+      "minors": {
+        "title": "Mineurs",
+        "content": "LOWIS est destiné aux personnes de 16 ans et plus. Si vous avez moins de 16 ans, vous devez obtenir le consentement de vos parents ou tuteurs légaux avant d'utiliser nos services."
+      },
+      "changes": {
+        "title": "Modifications",
+        "content": "Nous pouvons mettre à jour cette politique de confidentialité. En cas de modifications substantielles, nous vous en informerons par email ou via l'application. La date de dernière mise à jour est indiquée en haut de cette page."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "Pour toute question concernant cette politique ou vos données personnelles, contactez notre Délégué à la Protection des Données :",
+        "emailLabel": "Email"
+      }
+    }
   }
 }
