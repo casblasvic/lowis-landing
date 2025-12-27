@@ -24,12 +24,12 @@ interface Props {
 
 const { t } = Astro.props;
 
-// Phase accent colors
+// Phase colors for the number badges
 const phaseColors = [
-  { bg: 'from-primary-orange/20 to-primary-red/20', icon: 'text-primary-orange', border: 'border-primary-orange/30', number: 'from-primary-orange to-primary-red' },
-  { bg: 'from-blue-500/20 to-cyan-500/20', icon: 'text-blue-400', border: 'border-blue-500/30', number: 'from-blue-500 to-cyan-500' },
-  { bg: 'from-purple-500/20 to-pink-500/20', icon: 'text-purple-400', border: 'border-purple-500/30', number: 'from-purple-500 to-pink-500' },
-  { bg: 'from-green-500/20 to-emerald-500/20', icon: 'text-green-400', border: 'border-green-500/30', number: 'from-green-500 to-emerald-500' },
+  'from-primary-orange to-primary-red',
+  'from-blue-500 to-cyan-500',
+  'from-purple-500 to-pink-500',
+  'from-green-500 to-emerald-500',
 ];
 ---
 
@@ -52,9 +52,9 @@ const phaseColors = [
     </div>
 
     <!-- Main content grid -->
-    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start mb-12">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-12">
       <!-- Hero Image - Shows first on mobile -->
-      <div class="relative order-1 lg:order-2 flex justify-center lg:sticky lg:top-24">
+      <div class="relative order-1 lg:order-2 flex justify-center">
         <!-- Glowing background effects -->
         <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div class="w-72 h-72 bg-gradient-to-br from-primary-orange/20 to-primary-red/20 rounded-full blur-3xl"></div>
@@ -65,7 +65,7 @@ const phaseColors = [
           <img
             src="/Tajin_poulet_scannes.webp"
             alt="Escaneo inteligente de alimentos - Tajine de pollo con macros y micronutrientes"
-            class="scan-hero-image relative z-10 w-full max-w-sm lg:max-w-md rounded-2xl"
+            class="scan-hero-image relative z-10 w-full max-w-xs lg:max-w-sm rounded-2xl"
             loading="lazy"
           />
 
@@ -86,47 +86,47 @@ const phaseColors = [
         </div>
       </div>
 
-      <!-- Phases - Shows second on mobile -->
-      <div class="space-y-4 order-2 lg:order-1">
-        {t.howItWorks.phases.map((phase, index) => (
-          <div
-            class={`group relative p-5 rounded-2xl bg-dark-surface/50 border ${phaseColors[index % phaseColors.length].border} hover:bg-dark-surface/80 transition-all duration-300`}
-          >
-            <!-- Phase number badge -->
-            <div class={`absolute -top-3 -left-3 w-10 h-10 flex items-center justify-center bg-gradient-to-br ${phaseColors[index % phaseColors.length].number} rounded-full shadow-lg`}>
-              <span class="text-lg font-bold text-white">{phase.number}</span>
-            </div>
+      <!-- Timeline Steps - Shows second on mobile -->
+      <div class="relative order-2 lg:order-1">
+        <!-- Vertical connecting line -->
+        <div class="absolute left-6 top-10 bottom-10 w-0.5 bg-gradient-to-b from-primary-orange via-purple-500 to-green-500 hidden sm:block"></div>
 
-            <div class="flex gap-4 pt-2">
-              <!-- Icon -->
-              <div class={`w-12 h-12 flex items-center justify-center bg-gradient-to-br ${phaseColors[index % phaseColors.length].bg} rounded-xl shrink-0`}>
-                <span class={`material-symbols-outlined text-2xl ${phaseColors[index % phaseColors.length].icon}`}>{phase.icon}</span>
+        <div class="space-y-8">
+          {t.howItWorks.phases.map((phase, index) => (
+            <div class="relative flex gap-4 sm:gap-6">
+              <!-- Number circle -->
+              <div class="relative z-10 flex-shrink-0">
+                <div class={`w-12 h-12 flex items-center justify-center bg-gradient-to-br ${phaseColors[index % phaseColors.length]} rounded-full shadow-lg`}>
+                  <span class="text-xl font-bold text-white">{phase.number}</span>
+                </div>
               </div>
 
               <!-- Content -->
-              <div class="flex-1">
-                <h3 class="font-semibold text-lg mb-2 group-hover:text-primary-orange transition-colors">
-                  {phase.title}
-                </h3>
+              <div class="flex-1 pt-1">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="material-symbols-outlined text-xl text-text-muted">{phase.icon}</span>
+                  <h3 class="font-semibold text-lg">{phase.title}</h3>
+                </div>
+
                 <p class="text-text-secondary text-sm leading-relaxed mb-3">
                   {phase.description}
                 </p>
 
                 <!-- Bullet points if present -->
                 {phase.bullets && phase.bullets.length > 0 && (
-                  <ul class="space-y-2">
+                  <div class="flex flex-wrap gap-2">
                     {phase.bullets.map((bullet) => (
-                      <li class="flex items-start gap-2 text-sm text-text-muted">
-                        <span class="material-symbols-outlined text-green-500 text-base mt-0.5">check_circle</span>
-                        <span>{bullet}</span>
-                      </li>
+                      <span class="inline-flex items-center gap-1 px-2 py-1 text-xs bg-dark-surface/50 rounded-full text-text-muted">
+                        <span class="material-symbols-outlined text-green-500 text-sm">check</span>
+                        {bullet}
+                      </span>
                     ))}
-                  </ul>
+                  </div>
                 )}
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
 
@@ -187,7 +187,7 @@ const phaseColors = [
 
   @media (max-width: 640px) {
     .scan-hero-image {
-      max-width: 280px;
+      max-width: 240px;
     }
   }
 </style>
