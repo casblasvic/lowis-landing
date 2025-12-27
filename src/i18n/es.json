@@ -63,7 +63,7 @@
       },
       {
         "icon": "monitoring",
-        "title": "19+ indicadores de salud",
+        "title": "40+ indicadores de salud",
         "description": "Sueño, energía, hidratación, digestión, humor, estrés, ciclo femenino... Seguimos todo lo que afecta a tu metabolismo."
       },
       {
@@ -174,7 +174,7 @@
   },
   "healthTracking": {
     "badge": "Seguimiento holístico completo",
-    "title": "Monitorizamos +19 indicadores para una personalización total",
+    "title": "Monitorizamos +40 indicadores para una personalización total",
     "subtitle": "Analizamos todo lo que afecta a tu metabolismo y bienestar",
     "categories": [
       {
@@ -321,7 +321,7 @@
       {
         "number": "2",
         "title": "LOWIS aprende y se adapta",
-        "description": "El programa aprende tus hábitos y se adapta dinámicamente a todas tus circunstancias. Por eso monitorizamos +19 indicadores — un seguimiento verdaderamente personalizado."
+        "description": "El programa aprende tus hábitos y se adapta dinámicamente a todas tus circunstancias. Por eso monitorizamos +40 indicadores — un seguimiento verdaderamente personalizado."
       },
       {
         "number": "3",
@@ -347,7 +347,7 @@
         "icon": "biotech"
       },
       {
-        "value": "19+",
+        "value": "40+",
         "label": "Indicadores de salud",
         "icon": "monitoring"
       },
@@ -380,7 +380,7 @@
       "trialText": "0 DH la primera semana",
       "afterTrialText": "Después 199 DH/semana",
       "features": [
-        "Monitorización de +19 indicadores en continuo",
+        "Monitorización de +40 indicadores en continuo",
         "Planes de comida personalizados marroquíes",
         "LOWIS, tu coach IA + expertos",
         "Audios para reforzar la psicología",
@@ -395,11 +395,19 @@
     "items": [
       {
         "question": "¿Cómo funciona LOWIS, tu coach IA personal?",
-        "answer": "LOWIS es tu coach IA personal que monitoriza 19+ indicadores en tiempo real. No es un simple chatbot. Cuando LOWIS detecta cambios en tu sueño, estrés o estado emocional, ajusta automáticamente tu plan de comidas. Pero LOWIS no está solo: nuestro equipo de expertos revisa tu progreso cada semana y afina manualmente tu plan. Es la combinación IA + humanos lo que marca la diferencia."
+        "answer": "LOWIS es tu coach IA personal que monitoriza 40+ indicadores en tiempo real. No es un simple chatbot. Cuando LOWIS detecta cambios en tu sueño, estrés o estado emocional, ajusta automáticamente tu plan de comidas. Pero LOWIS no está solo: nuestro equipo de expertos revisa tu progreso cada semana y afina manualmente tu plan. Es la combinación IA + humanos lo que marca la diferencia."
       },
       {
-        "question": "¿Cuáles son exactamente los 19+ indicadores monitorizados?",
+        "question": "¿Cuáles son exactamente los 40+ indicadores monitorizados?",
         "answer": "LOWIS monitoriza: NUTRICIÓN (calorías, proteínas, carbohidratos, grasas, 22 micronutrientes), SALUD (sueño, estrés, digestión, dolores, hidratación), FISIOLOGÍA (peso, medidas, actividad física, ciclo menstrual para mujeres), COMPORTAMIENTO (notas personales, eventos especiales, cómo te sientes). Mientras MyFitnessPal solo cuenta calorías, LOWIS ve el cuadro completo."
+      },
+      {
+        "question": "¿Por qué monitorizar 22 micronutrientes y no solo calorías?",
+        "answer": "Las calorías solo cuentan parte de la historia. Los 22 micronutrientes (vitaminas A, B, C, D, E, K, hierro, calcio, zinc, magnesio...) son esenciales para: ENERGÍA (el hierro combate la fatiga), METABOLISMO (las vitaminas B queman grasas), INMUNIDAD (la vitamina C y el zinc te protegen), PIEL y CABELLO (la biotina y el zinc). Una carencia invisible puede sabotear tu pérdida de peso incluso con un déficit calórico perfecto. LOWIS detecta estas carencias y ajusta tu alimentación."
+      },
+      {
+        "question": "¿Cómo funciona el escaneo inteligente de alimentos?",
+        "answer": "Solo toma una foto de tu plato o del código de barras de un producto. La IA LOWIS identifica automáticamente los alimentos, estima las porciones y calcula los valores nutricionales completos (calorías, macros Y 22 micronutrientes). Para platos marroquíes como el tajine o el cuscús, nuestra base de datos especializada reconoce los ingredientes típicos. Sin buscar manualmente — fotografía y sigue con tu día."
       },
       {
         "question": "¿Cómo analiza LOWIS mis notas personales?",
@@ -407,11 +415,11 @@
       },
       {
         "question": "¿Por qué otras dietas fracasan y LOWIS no?",
-        "answer": "Las dietas clásicas te dan un plan rígido y te dejan sola. El 95% de las personas recuperan el peso perdido. LOWIS es diferente: monitorizamos +19 indicadores, LOWIS se adapta a tu día a día como un coach personal, y nuestros expertos ajustan cada semana. Es un acompañamiento 360°, no solo una lista de comidas."
+        "answer": "Las dietas clásicas te dan un plan rígido y te dejan sola. El 95% de las personas recuperan el peso perdido. LOWIS es diferente: monitorizamos +40 indicadores, LOWIS se adapta a tu día a día como un coach personal, y nuestros expertos ajustan cada semana. Es un acompañamiento 360°, no solo una lista de comidas."
       },
       {
         "question": "¿Cómo funciona la primera semana gratis?",
-        "answer": "Solo rellena tu perfil para personalizar tu plan según tus +19 indicadores. Acceso completo una semana, sin tarjeta bancaria. Ves los resultados antes de decidir. Después, continúa a 199 DH/semana o no hagas nada — tu elección."
+        "answer": "Solo rellena tu perfil para personalizar tu plan según tus +40 indicadores. Acceso completo una semana, sin tarjeta bancaria. Ves los resultados antes de decidir. Después, continúa a 199 DH/semana o no hagas nada — tu elección."
       },
       {
         "question": "¿Perder entre 1 y 2,5 kg por semana es realmente posible?",
@@ -435,7 +443,7 @@
       },
       {
         "question": "¿Cuál es la diferencia con los contadores de calorías?",
-        "answer": "Los contadores de calorías te dejan sola con números. LOWIS monitoriza +19 indicadores (sueño, estrés, ciclo, digestión...), LOWIS reacciona al instante como un coach personal, y nuestros nutricionistas ajustan tu plan cada semana. Un acompañamiento real, no una calculadora."
+        "answer": "Los contadores de calorías te dejan sola con números. LOWIS monitoriza +40 indicadores (sueño, estrés, ciclo, digestión...), LOWIS reacciona al instante como un coach personal, y nuestros nutricionistas ajustan tu plan cada semana. Un acompañamiento real, no una calculadora."
       },
       {
         "question": "¿Cómo se adapta LOWIS durante el Ramadán?",

@@ -63,7 +63,7 @@
       },
       {
         "icon": "monitoring",
-        "title": "19+ health indicators",
+        "title": "40+ health indicators",
         "description": "Sleep, energy, hydration, digestion, mood, stress, menstrual cycle... We track everything that affects your metabolism."
       },
       {
@@ -174,7 +174,7 @@
   },
   "healthTracking": {
     "badge": "Complete holistic tracking",
-    "title": "We monitor 19+ indicators for total personalization",
+    "title": "We monitor 40+ indicators for total personalization",
     "subtitle": "We analyze everything that affects your metabolism and well-being",
     "categories": [
       {
@@ -321,7 +321,7 @@
       {
         "number": "2",
         "title": "LOWIS learns and adapts",
-        "description": "The program learns your habits and dynamically adapts to all your circumstances. That's why we monitor 19+ indicators — truly personalized tracking."
+        "description": "The program learns your habits and dynamically adapts to all your circumstances. That's why we monitor 40+ indicators — truly personalized tracking."
       },
       {
         "number": "3",
@@ -347,7 +347,7 @@
         "icon": "biotech"
       },
       {
-        "value": "19+",
+        "value": "40+",
         "label": "Health indicators",
         "icon": "monitoring"
       },
@@ -380,7 +380,7 @@
       "trialText": "0 DH for first week",
       "afterTrialText": "Then 199 DH/week",
       "features": [
-        "Continuous monitoring of 19+ indicators",
+        "Continuous monitoring of 40+ indicators",
         "Personalized Moroccan meal plans",
         "LOWIS, your AI coach + experts",
         "Audios to strengthen your mindset",
@@ -395,11 +395,19 @@
     "items": [
       {
         "question": "How does LOWIS, your personal AI coach, work?",
-        "answer": "LOWIS is your personal AI coach that monitors 19+ indicators in real-time. It's not a simple chatbot. When LOWIS detects changes in your sleep, stress, or emotional state, it automatically adjusts your meal plan. But LOWIS isn't alone: our team of experts reviews your progress every week and manually refines your plan. It's the combination of AI + humans that makes the difference."
+        "answer": "LOWIS is your personal AI coach that monitors 40+ indicators in real-time. It's not a simple chatbot. When LOWIS detects changes in your sleep, stress, or emotional state, it automatically adjusts your meal plan. But LOWIS isn't alone: our team of experts reviews your progress every week and manually refines your plan. It's the combination of AI + humans that makes the difference."
       },
       {
-        "question": "What exactly are the 19+ monitored indicators?",
+        "question": "What exactly are the 40+ monitored indicators?",
         "answer": "LOWIS monitors: NUTRITION (calories, protein, carbs, fats, 22 micronutrients), HEALTH (sleep, stress, digestion, pain, hydration), PHYSIOLOGY (weight, measurements, physical activity, menstrual cycle for women), BEHAVIOR (personal notes, special events, how you feel). While MyFitnessPal only counts calories, LOWIS sees the complete picture."
+      },
+      {
+        "question": "Why track 22 micronutrients and not just calories?",
+        "answer": "Calories only tell part of the story. The 22 micronutrients (vitamins A, B, C, D, E, K, iron, calcium, zinc, magnesium...) are essential for: ENERGY (iron fights fatigue), METABOLISM (B vitamins burn fat), IMMUNITY (vitamin C and zinc protect you), SKIN and HAIR (biotin and zinc). An invisible deficiency can sabotage your weight loss even with a perfect calorie deficit. LOWIS detects these deficiencies and adjusts your diet."
+      },
+      {
+        "question": "How does the intelligent food scan work?",
+        "answer": "Just take a photo of your plate or a product's barcode. LOWIS AI automatically identifies the foods, estimates portions, and calculates complete nutritional values (calories, macros AND 22 micronutrients). For Moroccan dishes like tajine or couscous, our specialized database recognizes typical ingredients. No manual searching — photograph and continue your day."
       },
       {
         "question": "How does LOWIS analyze my personal notes?",
@@ -407,11 +415,11 @@
       },
       {
         "question": "Why do other diets fail but LOWIS doesn't?",
-        "answer": "Classic diets give you a rigid plan and leave you alone. 95% of people regain lost weight. LOWIS is different: we monitor 19+ indicators, LOWIS adapts to your daily life like a personal coach, and our experts adjust weekly. It's 360° support, not just a meal list."
+        "answer": "Classic diets give you a rigid plan and leave you alone. 95% of people regain lost weight. LOWIS is different: we monitor 40+ indicators, LOWIS adapts to your daily life like a personal coach, and our experts adjust weekly. It's 360° support, not just a meal list."
       },
       {
         "question": "How does the free first week work?",
-        "answer": "Simply fill out your profile to personalize your plan based on your 19+ indicators. Full access for one week, no credit card required. See the results before you decide. After, continue at 199 DH/week or do nothing — your choice."
+        "answer": "Simply fill out your profile to personalize your plan based on your 40+ indicators. Full access for one week, no credit card required. See the results before you decide. After, continue at 199 DH/week or do nothing — your choice."
       },
       {
         "question": "Is losing 1 to 2.5 kg per week really possible?",
@@ -435,7 +443,7 @@
       },
       {
         "question": "What's the difference with calorie counters?",
-        "answer": "Calorie counters leave you alone with numbers. LOWIS monitors 19+ indicators (sleep, stress, cycle, digestion...), LOWIS reacts instantly like a personal coach, and our nutritionists adjust your plan weekly. Real support, not a calculator."
+        "answer": "Calorie counters leave you alone with numbers. LOWIS monitors 40+ indicators (sleep, stress, cycle, digestion...), LOWIS reacts instantly like a personal coach, and our nutritionists adjust your plan weekly. Real support, not a calculator."
       },
       {
         "question": "How does LOWIS adapt during Ramadan?",
