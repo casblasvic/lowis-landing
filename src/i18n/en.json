@@ -275,7 +275,7 @@
       {
         "icon": "restaurant_menu",
         "title": "Keep your favorite dishes",
-        "description": "Chicken tajine, brochettes, pastilla, grilled fish... We don't ask you to change what you eat, but how and when you eat it."
+        "description": "Chicken tajine, kefta brochettes, grilled fish, mechoui... We don't ask you to change what you eat, but how and when you eat it."
       },
       {
         "icon": "swap_horiz",
@@ -389,11 +389,11 @@
       },
       {
         "question": "Do I have to follow a strict diet to lose weight?",
-        "answer": "No. LOWIS is not a restrictive diet. You keep your favorite dishes — tajines, brochettes, pastilla — we teach you to combine them smartly. Lasting habits, not unsustainable efforts."
+        "answer": "No. LOWIS is not a restrictive diet. You keep your favorite dishes — tajines, brochettes, grilled fish — we teach you to combine them smartly. Lasting habits, not unsustainable efforts."
       },
       {
         "question": "Does the app recognize Moroccan dishes?",
-        "answer": "Absolutely! Over 500 Moroccan recipes: chicken tajines, kefta brochettes, grilled fish, pastilla, msemen... Each dish analyzed with nutritional precision. Designed for Moroccan cuisine, not adapted after."
+        "answer": "Absolutely! Over 500 Moroccan recipes: chicken tajines, kefta brochettes, grilled fish, mechoui, grilled sardines... Each dish analyzed with nutritional precision. Designed for Moroccan cuisine, not adapted after."
       },
       {
         "question": "What's the difference with calorie counters?",

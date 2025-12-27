@@ -275,7 +275,7 @@
       {
         "icon": "restaurant_menu",
         "title": "Gardez vos plats préférés",
-        "description": "Tajine de poulet, brochettes, pastilla, poisson grillé... On ne vous demande pas de changer ce que vous mangez, mais comment et quand vous le mangez."
+        "description": "Tajine de poulet, brochettes de kefta, poisson grillé, méchoui... On ne vous demande pas de changer ce que vous mangez, mais comment et quand vous le mangez."
       },
       {
         "icon": "swap_horiz",
@@ -389,11 +389,11 @@
       },
       {
         "question": "Dois-je suivre un régime strict pour maigrir?",
-        "answer": "Non. LOWIS n'est pas un régime restrictif. Vous gardez vos plats préférés — tajines, brochettes, pastilla — on vous apprend à les combiner intelligemment. Des habitudes durables, pas des efforts insoutenables."
+        "answer": "Non. LOWIS n'est pas un régime restrictif. Vous gardez vos plats préférés — tajines, brochettes, poisson grillé — on vous apprend à les combiner intelligemment. Des habitudes durables, pas des efforts insoutenables."
       },
       {
         "question": "L'application reconnaît les plats marocains?",
-        "answer": "Absolument! Plus de 500 recettes marocaines: tajines de poulet, brochettes de kefta, poisson grillé, pastilla, msemen... Chaque plat analysé avec précision nutritionnelle. Conçu pour la cuisine marocaine, pas adapté après coup."
+        "answer": "Absolument! Plus de 500 recettes marocaines: tajines de poulet, brochettes de kefta, poisson grillé, méchoui, sardines grillées... Chaque plat analysé avec précision nutritionnelle. Conçu pour la cuisine marocaine, pas adapté après coup."
       },
       {
         "question": "Quelle est la différence avec les compteurs de calories?",
