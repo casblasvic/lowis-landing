@@ -310,27 +310,60 @@
     "recipesButtonGeneric": "See +2000 analyzed recipes"
   },
   "howItWorks": {
-    "title": "How does it work daily?",
-    "subtitle": "Simple as 1-2-3",
-    "steps": [
+    "title": "How does it work?",
+    "subtitle": "A simple cycle that improves every week",
+    "phases": [
       {
         "number": "1",
-        "title": "Fill out your profile",
-        "description": "We generate a plan adapted to your tastes, Moroccan cuisine and your health conditions, with a specific order and foods optimized according to your indicators."
+        "icon": "target",
+        "title": "Week 1: Your personalized plan",
+        "description": "Answer simple questions about your goals, preferences and health conditions. LOWIS + our experts generate a 100% personalized plan adapted to Moroccan cuisine.",
+        "bullets": [
+          "Plan adapted to your tastes and allergies",
+          "First week completely free",
+          "Ready in minutes"
+        ]
       },
       {
         "number": "2",
-        "title": "LOWIS learns and adapts",
-        "description": "The program learns your habits and dynamically adapts to all your circumstances. That's why we monitor 40+ indicators — truly personalized tracking."
+        "icon": "edit_note",
+        "title": "Every day: log in 30 seconds",
+        "description": "Photograph your meals (LOWIS identifies automatically) and note how you feel.",
+        "bullets": [
+          "Sleep and energy level",
+          "Stress and mood of the day",
+          "Digestion and hydration",
+          "Special notes (event, trip...)"
+        ]
       },
       {
         "number": "3",
-        "title": "We adjust together",
-        "description": "LOWIS reacts instantly. Our experts refine weekly. Your plan evolves with you."
+        "icon": "smart_toy",
+        "title": "LOWIS analyzes and adapts IN REAL-TIME",
+        "description": "With each data point, LOWIS converts your info into 40+ indicators, learns your patterns and adapts your program the same day.",
+        "bullets": [
+          "Slept poorly? → More energy tomorrow",
+          "High stress? → Comfort foods suggested",
+          "Missing micronutrients? → Menu adjusted"
+        ]
+      },
+      {
+        "number": "4",
+        "icon": "groups",
+        "title": "Every week: our experts supervise",
+        "description": "LOWIS reacts fast (daily), but our nutritionists verify and manually refine your case every week.",
+        "bullets": [
+          "Complete review of your 40+ indicators",
+          "Analysis of patterns detected by LOWIS",
+          "Personalized adjustments for the next week"
+        ]
       }
     ],
-    "cta": "Get my free plan",
-    "badge": ""
+    "cycle": {
+      "title": "The cycle that transforms you",
+      "description": "Every week LOWIS becomes more precise. Your program becomes more YOU. Daily adaptation + weekly supervision = lasting results."
+    },
+    "cta": "Get my free plan"
   },
   "stats": {
     "title": "Complete 360° tracking",

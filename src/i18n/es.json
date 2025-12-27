@@ -310,27 +310,60 @@
     "recipesButtonGeneric": "Ver +2000 recetas analizadas"
   },
   "howItWorks": {
-    "title": "¿Cómo funciona en el día a día?",
-    "subtitle": "Simple como 1-2-3",
-    "steps": [
+    "title": "¿Cómo funciona?",
+    "subtitle": "Un ciclo simple que mejora cada semana",
+    "phases": [
       {
         "number": "1",
-        "title": "Rellena tu perfil",
-        "description": "Generamos un plan adaptado a tus gustos, la cocina marroquí y tus condiciones de salud, con un orden específico y alimentos optimizados según tus indicadores."
+        "icon": "target",
+        "title": "Semana 1: Tu plan personalizado",
+        "description": "Responde preguntas simples sobre tus objetivos, preferencias y condiciones de salud. LOWIS + nuestros expertos generan un plan 100% personalizado adaptado a la cocina marroquí.",
+        "bullets": [
+          "Plan adaptado a tus gustos y alergias",
+          "Primera semana completamente gratis",
+          "Listo en pocos minutos"
+        ]
       },
       {
         "number": "2",
-        "title": "LOWIS aprende y se adapta",
-        "description": "El programa aprende tus hábitos y se adapta dinámicamente a todas tus circunstancias. Por eso monitorizamos +40 indicadores — un seguimiento verdaderamente personalizado."
+        "icon": "edit_note",
+        "title": "Cada día: registra en 30 segundos",
+        "description": "Fotografía tus platos (LOWIS identifica automáticamente) y anota cómo te sientes.",
+        "bullets": [
+          "Sueño y nivel de energía",
+          "Estrés y humor del día",
+          "Digestión e hidratación",
+          "Notas especiales (evento, viaje...)"
+        ]
       },
       {
         "number": "3",
-        "title": "Ajustamos juntos",
-        "description": "LOWIS reacciona al instante. Nuestros expertos afinan cada semana. Tu plan evoluciona contigo."
+        "icon": "smart_toy",
+        "title": "LOWIS analiza y adapta EN DIRECTO",
+        "description": "Con cada dato, LOWIS convierte tu info en 40+ indicadores, aprende tus patrones y adapta tu programa el mismo día.",
+        "bullets": [
+          "¿Dormiste mal? → Más energía mañana",
+          "¿Estrés alto? → Comidas reconfortantes sugeridas",
+          "¿Micronutrientes faltantes? → Menú ajustado"
+        ]
+      },
+      {
+        "number": "4",
+        "icon": "groups",
+        "title": "Cada semana: nuestros expertos supervisan",
+        "description": "LOWIS reacciona rápido (diario), pero nuestros nutricionistas verifican y afinan manualmente tu caso cada semana.",
+        "bullets": [
+          "Revisión completa de tus 40+ indicadores",
+          "Análisis de patrones detectados por LOWIS",
+          "Ajustes personalizados para la siguiente semana"
+        ]
       }
     ],
-    "cta": "Obtener mi plan gratis",
-    "badge": ""
+    "cycle": {
+      "title": "El ciclo que te transforma",
+      "description": "Cada semana LOWIS es más preciso. Tu programa es más TÚ. Adaptación diaria + supervisión semanal = resultados duraderos."
+    },
+    "cta": "Obtener mi plan gratis"
   },
   "stats": {
     "title": "Un seguimiento 360° completo",
