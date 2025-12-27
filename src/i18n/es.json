@@ -388,6 +388,18 @@
     "title": "Preguntas frecuentes",
     "items": [
       {
+        "question": "¿Cómo funciona LOWIS, tu coach IA personal?",
+        "answer": "LOWIS es tu coach IA personal que monitoriza 19+ indicadores en tiempo real. No es un simple chatbot. Cuando LOWIS detecta cambios en tu sueño, estrés o estado emocional, ajusta automáticamente tu plan de comidas. Pero LOWIS no está solo: nuestro equipo de expertos revisa tu progreso cada semana y afina manualmente tu plan. Es la combinación IA + humanos lo que marca la diferencia."
+      },
+      {
+        "question": "¿Cuáles son exactamente los 19+ indicadores monitorizados?",
+        "answer": "LOWIS monitoriza: NUTRICIÓN (calorías, proteínas, carbohidratos, grasas, 22 micronutrientes), SALUD (sueño, estrés, digestión, dolores, hidratación), FISIOLOGÍA (peso, medidas, actividad física, ciclo menstrual para mujeres), COMPORTAMIENTO (notas personales, eventos especiales, cómo te sientes). Mientras MyFitnessPal solo cuenta calorías, LOWIS ve el cuadro completo."
+      },
+      {
+        "question": "¿Cómo analiza LOWIS mis notas personales?",
+        "answer": "LOWIS entiende tu vida real. En la app puedes escribir o grabar notas sobre: tu estrés, eventos especiales (cena, viaje, celebración), nuevos síntomas, u obstáculos. TANTO la IA LOWIS COMO nuestro equipo de expertos leen tus notas: LOWIS analiza instantáneamente y ajusta tu plan, luego tu coach experto lo revisa la semana siguiente. No eres un número, eres una persona que LOWIS entiende."
+      },
+      {
         "question": "¿Por qué otras dietas fracasan y LOWIS no?",
         "answer": "Las dietas clásicas te dan un plan rígido y te dejan sola. El 95% de las personas recuperan el peso perdido. LOWIS es diferente: monitorizamos +19 indicadores, LOWIS se adapta a tu día a día como un coach personal, y nuestros expertos ajustan cada semana. Es un acompañamiento 360°, no solo una lista de comidas."
       },
@@ -398,6 +410,14 @@
       {
         "question": "¿Perder entre 1 y 2,5 kg por semana es realmente posible?",
         "answer": "Sí, es nuestro objetivo garantizado. Comiendo inteligentemente (no menos, solo mejor combinado), la mayoría de nuestros usuarios alcanzan estos resultados. El protocolo LOWIS optimiza cada comida según tu metabolismo."
+      },
+      {
+        "question": "¿Y si tengo alergias o restricciones alimentarias?",
+        "answer": "Durante el onboarding inicial, indicas todas tus alergias, intolerancias y preferencias alimentarias. LOWIS las integra en tu plan de comidas. El sistema NUNCA te recomendará alimentos que no puedas comer. Puedes actualizar tus restricciones en cualquier momento."
+      },
+      {
+        "question": "¿Cuándo voy a sentir cambios (además del peso)?",
+        "answer": "Resultados tangibles por semana: Peso: 1-2,5 kg/semana (garantizado). Energía: muchos reportan +25% en 3-5 días. Digestión: mejora notable en 1-2 semanas. Claridad mental: estrés reducido en 5-7 días. Bienestar general: diferencia emocional en 2 semanas. Lo importante: LOWIS adapta tu plan cada día según cómo te sientes, no solo según los números."
       },
       {
         "question": "¿Tengo que seguir una dieta estricta para adelgazar?",
