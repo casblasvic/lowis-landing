@@ -12,6 +12,9 @@ export const SITE_CONFIG = {
   // URL de registro/signup
   signupUrl: 'https://app.lowis.app/signup/welcome',
 
+  // URL de login
+  loginUrl: 'https://app.lowis.app/login',
+
   // Precio actual
   pricing: {
     trial: 0,

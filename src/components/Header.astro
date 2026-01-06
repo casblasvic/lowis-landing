@@ -11,6 +11,7 @@ interface Props {
       pricing: string;
       faq: string;
       cta: string;
+      login: string;
     };
   };
   lang: Language;
@@ -85,6 +86,15 @@ const langOptions = Object.entries(languages).map(([code, name]) => ({
           </div>
         </div>
 
+        <!-- Login Button -->
+        <a
+          href={SITE_CONFIG.loginUrl}
+          class="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-text-secondary hover:text-white transition-colors px-3 py-2"
+        >
+          <span class="material-symbols-outlined text-lg">login</span>
+          {t.nav.login}
+        </a>
+
         <!-- CTA Button -->
         <a href={SITE_CONFIG.signupUrl} class="btn-primary hidden sm:inline-flex text-sm px-4 py-2">
           {t.nav.cta}
@@ -112,6 +122,15 @@ const langOptions = Object.entries(languages).map(([code, name]) => ({
             {link.label}
           </a>
         ))}
+        <!-- Mobile Login Button -->
+        <a
+          href={SITE_CONFIG.loginUrl}
+          class="flex items-center justify-center gap-2 py-3 text-text-secondary hover:text-white transition-colors border border-dark-border rounded-xl"
+        >
+          <span class="material-symbols-outlined">login</span>
+          {t.nav.login}
+        </a>
+
         <a href={SITE_CONFIG.signupUrl} class="btn-primary text-center mt-2">
           {t.nav.cta}
         </a>
