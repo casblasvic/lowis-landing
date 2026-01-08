@@ -73,8 +73,9 @@ const langOptions = Object.entries(languages).map(([code, name]) => ({
             {langOptions.map((option) => (
               <a
                 href={option.href}
+                data-lang-choice={option.code}
                 class:list={[
-                  'block px-4 py-2 text-sm transition-colors',
+                  'lang-choice-link block px-4 py-2 text-sm transition-colors',
                   option.active
                     ? 'text-primary-orange bg-dark-hover'
                     : 'text-text-secondary hover:text-white hover:bg-dark-hover',
@@ -159,4 +160,14 @@ const langOptions = Object.entries(languages).map(([code, name]) => ({
       });
     });
   }
+
+  // Marcar cuando el usuario elige manualmente un idioma
+  document.querySelectorAll('.lang-choice-link').forEach((link) => {
+    link.addEventListener('click', () => {
+      const chosenLang = link.getAttribute('data-lang-choice');
+      if (chosenLang) {
+        localStorage.setItem('lowis_lang_chosen', chosenLang);
+      }
+    });
+  });
 </script>

@@ -35,10 +35,17 @@
     return String.fromCodePoint(...codePoints);
   }
 
-  // Detectar país del usuario
+  // Detectar país del usuario (con refresh cada 24h)
   async function detectCountry(): Promise<string> {
     const cached = localStorage.getItem('lowis_country');
-    if (cached) return cached;
+    const cachedTime = localStorage.getItem('lowis_country_time');
+    const now = Date.now();
+    const ONE_DAY = 24 * 60 * 60 * 1000;
+
+    // Usar caché solo si tiene menos de 24 horas
+    if (cached && cachedTime && (now - parseInt(cachedTime)) < ONE_DAY) {
+      return cached;
+    }
 
     try {
       // Usar ipapi.co (gratis hasta 1000 req/día)
@@ -48,10 +55,13 @@
       const data = await res.json();
       if (data.country_code) {
         localStorage.setItem('lowis_country', data.country_code);
+        localStorage.setItem('lowis_country_time', now.toString());
         return data.country_code;
       }
     } catch (error) {
-      console.warn('Geo-detection failed, defaulting to MA');
+      console.warn('Geo-detection failed, using cached or default');
+      // Si hay caché aunque esté viejo, usarlo
+      if (cached) return cached;
     }
     return 'MA'; // Default a Marruecos si falla
   }
@@ -104,6 +114,52 @@
     if (path.startsWith('/es')) return 'es';
     if (path.startsWith('/en')) return 'en';
     return 'fr'; // Default
+  }
+
+  // Determinar el mejor idioma basado en país y navegador
+  function getBestLanguage(country: string): string {
+    // Países hispanohablantes → español
+    const spanishCountries = ['ES', 'MX', 'AR', 'CO', 'CL', 'PE', 'VE', 'EC', 'BO', 'PY', 'UY', 'CR', 'PA', 'DO', 'GT', 'HN', 'SV', 'NI', 'CU', 'PR'];
+    if (spanishCountries.includes(country)) return 'es';
+
+    // Países francófonos (incluyendo Marruecos) → francés
+    const frenchCountries = ['FR', 'MA', 'DZ', 'TN', 'BE', 'CH', 'LU', 'MC', 'SN', 'CI', 'CA'];
+    if (frenchCountries.includes(country)) return 'fr';
+
+    // Países anglófonos → inglés
+    const englishCountries = ['US', 'GB', 'AU', 'NZ', 'IE', 'ZA', 'IN', 'PH', 'SG'];
+    if (englishCountries.includes(country)) return 'en';
+
+    // Para otros países, usar el idioma del navegador si está soportado
+    const browserLang = navigator.language.slice(0, 2).toLowerCase();
+    if (['es', 'en', 'fr'].includes(browserLang)) {
+      return browserLang;
+    }
+
+    // Default: inglés para países no identificados
+    return 'en';
+  }
+
+  // Redirección automática de idioma (solo en página raíz)
+  async function autoRedirectLanguage() {
+    const path = window.location.pathname;
+
+    // Solo redirigir si estamos en la raíz exacta
+    if (path !== '/' && path !== '') return;
+
+    // No redirigir si el usuario ya eligió un idioma (tiene flag en localStorage)
+    const userChoseLang = localStorage.getItem('lowis_lang_chosen');
+    if (userChoseLang) return;
+
+    const country = await detectCountry();
+    const bestLang = getBestLanguage(country);
+
+    // Si el mejor idioma no es francés (que es la raíz), redirigir
+    if (bestLang !== 'fr') {
+      // Marcar que se hizo redirección automática
+      localStorage.setItem('lowis_auto_redirected', 'true');
+      window.location.href = `/${bestLang}/`;
+    }
   }
 
   // Inicializar geo-banner
@@ -179,14 +235,19 @@
   }
 
   // Ejecutar cuando el DOM esté listo
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-      setupBannerEvents();
-      initGeoBanner();
-    });
-  } else {
+  async function init() {
+    // Primero intentar redirección de idioma (solo afecta a página raíz)
+    await autoRedirectLanguage();
+
+    // Luego configurar banner y geo-detección
     setupBannerEvents();
-    initGeoBanner();
+    await initGeoBanner();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 </script>
 
