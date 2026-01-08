@@ -30,6 +30,16 @@ export function getSignupUrl(): string {
   return SITE_CONFIG.signupUrl;
 }
 
+// Helper para obtener la URL de signup con idioma
+export function getSignupUrlWithLang(lang: string): string {
+  return `${SITE_CONFIG.signupUrl}?lang=${lang}`;
+}
+
+// Helper para obtener la URL de login con idioma
+export function getLoginUrlWithLang(lang: string): string {
+  return `${SITE_CONFIG.loginUrl}?lang=${lang}`;
+}
+
 // Helper para obtener el dominio base
 export function getSiteDomain(): string {
   return SITE_CONFIG.domain;

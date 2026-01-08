@@ -1,5 +1,6 @@
 ---
-import { SITE_CONFIG } from '../config';
+import { getSignupUrlWithLang } from '../config';
+import type { Language } from '../i18n';
 
 interface Props {
   t: {
@@ -21,9 +22,10 @@ interface Props {
       recipesButtonGeneric?: string;
     };
   };
+  lang: Language;
 }
 
-const { t } = Astro.props;
+const { t, lang } = Astro.props;
 
 // Protein-rich Moroccan recipes - no carbs/grains
 const moroccanRecipes = [
@@ -154,7 +156,7 @@ const moroccanRecipes = [
         <!-- Morocco button -->
         <a
           data-morocco-only
-          href={SITE_CONFIG.signupUrl}
+          href={getSignupUrlWithLang(lang)}
           class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-orange to-primary-red text-white font-semibold rounded-full hover:shadow-lg hover:shadow-primary-orange/30 transition-all duration-300 hover:scale-105"
         >
           <span class="material-symbols-outlined">restaurant</span>
@@ -164,7 +166,7 @@ const moroccanRecipes = [
         <a
           data-generic-only
           style="display: none"
-          href={SITE_CONFIG.signupUrl}
+          href={getSignupUrlWithLang(lang)}
           class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-orange to-primary-red text-white font-semibold rounded-full hover:shadow-lg hover:shadow-primary-orange/30 transition-all duration-300 hover:scale-105"
         >
           <span class="material-symbols-outlined">restaurant</span>

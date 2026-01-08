@@ -1,5 +1,6 @@
 ---
-import { SITE_CONFIG } from '../config';
+import { getSignupUrlWithLang } from '../config';
+import type { Language } from '../i18n';
 
 interface Props {
   t: {
@@ -20,9 +21,10 @@ interface Props {
       cta: string;
     };
   };
+  lang: Language;
 }
 
-const { t } = Astro.props;
+const { t, lang } = Astro.props;
 
 // Phase colors for the number badges
 const phaseColors = [
@@ -145,7 +147,7 @@ const phaseColors = [
 
     <!-- CTA - Hidden on mobile (sticky CTA visible instead) -->
     <div class="hidden md:flex justify-center mt-10">
-      <a href={SITE_CONFIG.signupUrl} class="btn-primary text-lg px-8 py-4">
+      <a href={getSignupUrlWithLang(lang)} class="btn-primary text-lg px-8 py-4">
         {t.howItWorks.cta}
         <span class="material-symbols-outlined ml-2">arrow_forward</span>
       </a>

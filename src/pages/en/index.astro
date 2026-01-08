@@ -29,16 +29,16 @@ const t = useTranslations(lang);
 
   <main>
     <!-- 1. Hero: Guaranteed + motivation -->
-    <Hero t={t} />
+    <Hero t={t} lang={lang} />
 
     <!-- 2. Moroccan Features: Your favorite recipes (carousel) -->
-    <MoroccanFeatures t={t} />
+    <MoroccanFeatures t={t} lang={lang} />
 
     <!-- 3. Pricing: Get your personalized plan -->
-    <Pricing t={t} />
+    <Pricing t={t} lang={lang} />
 
     <!-- 4. How It Works: Simple as 1-2-3 -->
-    <HowItWorks t={t} />
+    <HowItWorks t={t} lang={lang} />
 
     <!-- 5. Health Tracking: 17+ indicators -->
     <HealthTracking t={t} />
@@ -56,7 +56,7 @@ const t = useTranslations(lang);
     <FAQ t={t} />
 
     <!-- 12. Final CTA -->
-    <FinalCTA t={t} />
+    <FinalCTA t={t} lang={lang} />
   </main>
 
   <Footer t={t} lang={lang} />

@@ -1,5 +1,6 @@
 ---
-import { SITE_CONFIG } from '../config';
+import { getSignupUrlWithLang } from '../config';
+import type { Language } from '../i18n';
 
 interface Props {
   t: {
@@ -10,9 +11,10 @@ interface Props {
       noCard: string;
     };
   };
+  lang: Language;
 }
 
-const { t } = Astro.props;
+const { t, lang } = Astro.props;
 ---
 
 <section class="py-12 md:py-16 relative overflow-hidden">
@@ -39,7 +41,7 @@ const { t } = Astro.props;
       </p>
 
       <!-- CTA Button - Hidden on mobile (sticky CTA visible instead) -->
-      <a href={SITE_CONFIG.signupUrl} class="hidden md:inline-flex btn-primary text-xl px-10 py-5">
+      <a href={getSignupUrlWithLang(lang)} class="hidden md:inline-flex btn-primary text-xl px-10 py-5">
         {t.finalCta.cta}
         <span class="material-symbols-outlined ml-2 text-2xl">arrow_forward</span>
       </a>

@@ -1,7 +1,8 @@
 ---
 import Logo from './ui/Logo.astro';
 import PhoneMockup from './PhoneMockup.astro';
-import { SITE_CONFIG } from '../config';
+import { getSignupUrlWithLang } from '../config';
+import type { Language } from '../i18n';
 
 interface Props {
   t: {
@@ -32,9 +33,10 @@ interface Props {
       recipes: string;
     };
   };
+  lang: Language;
 }
 
-const { t } = Astro.props;
+const { t, lang } = Astro.props;
 ---
 
 <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
@@ -85,7 +87,7 @@ const { t } = Astro.props;
 
         <!-- CTA Button - Hidden on mobile (sticky CTA visible instead) -->
         <div class="hidden md:flex justify-center lg:justify-start mb-6 animate-fade-in-up" style="animation-delay: 0.3s">
-          <a href={SITE_CONFIG.signupUrl} class="btn-primary text-lg px-8 py-4">
+          <a href={getSignupUrlWithLang(lang)} class="btn-primary text-lg px-8 py-4">
             {t.hero.cta}
             <span class="material-symbols-outlined ml-2">arrow_forward</span>
           </a>

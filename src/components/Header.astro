@@ -1,7 +1,7 @@
 ---
 import { type Language, languages, getPathWithLang, defaultLang } from '../i18n';
 import Logo from './ui/Logo.astro';
-import { SITE_CONFIG } from '../config';
+import { getSignupUrlWithLang, getLoginUrlWithLang } from '../config';
 
 interface Props {
   t: {
@@ -88,7 +88,7 @@ const langOptions = Object.entries(languages).map(([code, name]) => ({
 
         <!-- Login Button -->
         <a
-          href={SITE_CONFIG.loginUrl}
+          href={getLoginUrlWithLang(lang)}
           class="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-text-secondary hover:text-white transition-colors px-3 py-2"
         >
           <span class="material-symbols-outlined text-lg">login</span>
@@ -96,7 +96,7 @@ const langOptions = Object.entries(languages).map(([code, name]) => ({
         </a>
 
         <!-- CTA Button -->
-        <a href={SITE_CONFIG.signupUrl} class="btn-primary hidden sm:inline-flex text-sm px-4 py-2">
+        <a href={getSignupUrlWithLang(lang)} class="btn-primary hidden sm:inline-flex text-sm px-4 py-2">
           {t.nav.cta}
         </a>
 
@@ -124,14 +124,14 @@ const langOptions = Object.entries(languages).map(([code, name]) => ({
         ))}
         <!-- Mobile Login Button -->
         <a
-          href={SITE_CONFIG.loginUrl}
+          href={getLoginUrlWithLang(lang)}
           class="flex items-center justify-center gap-2 py-3 text-text-secondary hover:text-white transition-colors border border-dark-border rounded-xl"
         >
           <span class="material-symbols-outlined">login</span>
           {t.nav.login}
         </a>
 
-        <a href={SITE_CONFIG.signupUrl} class="btn-primary text-center mt-2">
+        <a href={getSignupUrlWithLang(lang)} class="btn-primary text-center mt-2">
           {t.nav.cta}
         </a>
       </div>
