@@ -3,7 +3,9 @@ interface Props {
   t: {
     demo: {
       aiMessage: string;
+      aiSubtext?: string;
       names: string[];
+      namesGeneric?: string[];
       objectives: {
         calories: string;
         protein: string;
@@ -13,18 +15,40 @@ interface Props {
       phase: string;
       phaseLabel: string;
       recipes: string;
+      recipesItems?: Array<{ name: string; calories: number }>;
+      recipesItemsGeneric?: Array<{ name: string; calories: number }>;
     };
   };
 }
 
 const { t } = Astro.props;
 
-// Moroccan recipes with placeholder images (protein-focused)
-const recipes = [
-  { name: 'Tajine Poulet Citron', calories: 320, image: 'https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=100&h=100&fit=crop' },
-  { name: 'Brochettes Kefta', calories: 280, image: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=100&h=100&fit=crop' },
-  { name: 'Poisson Grillé', calories: 240, image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=100&h=100&fit=crop' },
+// Recipe images
+const moroccanImages = [
+  'https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=100&h=100&fit=crop',
+  'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=100&h=100&fit=crop',
+  'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=100&h=100&fit=crop',
 ];
+
+const genericImages = [
+  'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=100&h=100&fit=crop',
+  'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=100&h=100&fit=crop',
+  'https://images.unsplash.com/photo-1546793665-c74683f339c1?w=100&h=100&fit=crop',
+];
+
+// Moroccan recipes (default hidden)
+const moroccanRecipes = (t.demo.recipesItems || [
+  { name: 'Tajine Poulet Citron', calories: 320 },
+  { name: 'Brochettes Kefta', calories: 280 },
+  { name: 'Poisson Grillé', calories: 240 },
+]).map((r, i) => ({ ...r, image: moroccanImages[i] }));
+
+// Generic recipes (default visible)
+const genericRecipes = (t.demo.recipesItemsGeneric || [
+  { name: 'Poulet Méditerranéen', calories: 320 },
+  { name: 'Saumon Grillé', calories: 280 },
+  { name: 'Salade César', calories: 240 },
+]).map((r, i) => ({ ...r, image: genericImages[i] }));
 ---
 
 <div class="phone-mockup-container">
@@ -63,9 +87,9 @@ const recipes = [
         </div>
         <div class="ai-bubble">
           <p class="ai-greeting">
-            {t.demo.aiMessage}, <span class="user-name">{t.demo.names[0]}</span>! 🎉
+            {t.demo.aiMessage}, <span class="user-name" data-generic-name={t.demo.namesGeneric?.[0] || 'Sophie'} data-morocco-name={t.demo.names[0]}>{t.demo.namesGeneric?.[0] || 'Sophie'}</span>! 🎉
           </p>
-          <p class="ai-subtext">Vous avez atteint 85% de vos objectifs</p>
+          <p class="ai-subtext">{t.demo.aiSubtext || 'You\'ve reached 85% of your goals'}</p>
         </div>
       </div>
 
@@ -142,8 +166,23 @@ const recipes = [
           <span class="material-symbols-outlined recipes-arrow">arrow_forward</span>
         </div>
 
-        <div class="recipes-list">
-          {recipes.map((recipe) => (
+        <!-- Generic recipes - visible by default -->
+        <div data-generic-only class="recipes-list">
+          {genericRecipes.map((recipe) => (
+            <div class="recipe-card">
+              <img src={recipe.image} alt={recipe.name} class="recipe-image" />
+              <div class="recipe-info">
+                <span class="recipe-name">{recipe.name}</span>
+                <span class="recipe-calories">{recipe.calories} kcal</span>
+              </div>
+              <span class="material-symbols-outlined recipe-add">add_circle</span>
+            </div>
+          ))}
+        </div>
+
+        <!-- Moroccan recipes - hidden by default -->
+        <div data-morocco-only style="display: none" class="recipes-list">
+          {moroccanRecipes.map((recipe) => (
             <div class="recipe-card">
               <img src={recipe.image} alt={recipe.name} class="recipe-image" />
               <div class="recipe-info">
@@ -534,27 +573,35 @@ const recipes = [
 </style>
 
 <script>
-  // Name lists by region
-  const moroccanNames = ['Rania', 'Fatima', 'Nour', 'Salma', 'Amina', 'Houda', 'Adnan', 'Youssef', 'Karim', 'Omar'];
-  const internationalNames = ['Sophie', 'Marie', 'Emma', 'Léa', 'Julie', 'Thomas', 'Lucas', 'Antoine', 'Hugo', 'Louis'];
-
   // Get names based on detected country
-  function getNames(): string[] {
+  // Uses data attributes set on the element for i18n support
+  function isMoroccoUser(): boolean {
     const country = localStorage.getItem('lowis_country');
     const moroccoGroup = ['MA', 'DZ', 'TN'];
-    if (!country || moroccoGroup.includes(country)) {
-      return moroccanNames;
-    }
-    return internationalNames;
+    return country !== null && moroccoGroup.includes(country);
   }
 
-  let currentIndex = 0;
-  const userNameEl = document.querySelector('.user-name');
+  const userNameEl = document.querySelector('.user-name') as HTMLElement | null;
 
   if (userNameEl) {
     // Wait a bit for geo-detection to complete
     setTimeout(() => {
-      const names = getNames();
+      const isMorocco = isMoroccoUser();
+
+      // Get names from data attributes (set by translations)
+      const genericName = userNameEl.getAttribute('data-generic-name') || 'Sophie';
+      const moroccoName = userNameEl.getAttribute('data-morocco-name') || 'Rania';
+
+      // Set initial name based on geo
+      userNameEl.textContent = isMorocco ? moroccoName : genericName;
+
+      // Get full name lists for rotation
+      const genericNames = ['Sophie', 'Marie', 'Emma', 'Léa', 'Julie', 'Thomas', 'Lucas', 'Antoine', 'Hugo', 'Louis'];
+      const moroccanNames = ['Rania', 'Fatima', 'Nour', 'Salma', 'Amina', 'Houda', 'Adnan', 'Youssef', 'Karim', 'Omar'];
+
+      const names = isMorocco ? moroccanNames : genericNames;
+      let currentIndex = 0;
+
       setInterval(() => {
         currentIndex = (currentIndex + 1) % names.length;
         userNameEl.textContent = names[currentIndex];

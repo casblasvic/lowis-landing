@@ -522,7 +522,9 @@
   },
   "demo": {
     "aiMessage": "Excellent work today",
+    "aiSubtext": "You've reached 85% of your goals",
     "names": ["Rania", "Fatima", "Nour", "Salma", "Amina", "Houda", "Adnan", "Youssef", "Karim", "Omar"],
+    "namesGeneric": ["Sophie", "Emma", "Olivia", "Ava", "Mia", "James", "William", "Oliver", "Henry", "Lucas"],
     "objectives": {
       "calories": "Calories",
       "protein": "Protein",
@@ -531,7 +533,17 @@
     },
     "phase": "Phase D2",
     "phaseLabel": "Fat Burning",
-    "recipes": "Today's recipes"
+    "recipes": "Today's recipes",
+    "recipesItems": [
+      { "name": "Lemon Chicken Tajine", "calories": 320 },
+      { "name": "Kefta Skewers", "calories": 280 },
+      { "name": "Grilled Fish", "calories": 240 }
+    ],
+    "recipesItemsGeneric": [
+      { "name": "Mediterranean Chicken", "calories": 320 },
+      { "name": "Grilled Salmon", "calories": 280 },
+      { "name": "Caesar Salad", "calories": 240 }
+    ]
   },
   "privacy": {
     "title": "Privacy Policy",

@@ -522,7 +522,9 @@
   },
   "demo": {
     "aiMessage": "Excellent travail aujourd'hui",
+    "aiSubtext": "Vous avez atteint 85% de vos objectifs",
     "names": ["Rania", "Fatima", "Nour", "Salma", "Amina", "Houda", "Adnan", "Youssef", "Karim", "Omar"],
+    "namesGeneric": ["Sophie", "Marie", "Emma", "Léa", "Julie", "Thomas", "Lucas", "Antoine", "Hugo", "Louis"],
     "objectives": {
       "calories": "Calories",
       "protein": "Protéines",
@@ -531,7 +533,17 @@
     },
     "phase": "Phase D2",
     "phaseLabel": "Déstockage",
-    "recipes": "Recettes du jour"
+    "recipes": "Recettes du jour",
+    "recipesItems": [
+      { "name": "Tajine Poulet Citron", "calories": 320 },
+      { "name": "Brochettes Kefta", "calories": 280 },
+      { "name": "Poisson Grillé", "calories": 240 }
+    ],
+    "recipesItemsGeneric": [
+      { "name": "Poulet Méditerranéen", "calories": 320 },
+      { "name": "Saumon Grillé", "calories": 280 },
+      { "name": "Salade César", "calories": 240 }
+    ]
   },
   "privacy": {
     "title": "Politique de Confidentialité",

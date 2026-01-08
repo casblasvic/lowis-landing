@@ -66,6 +66,46 @@ const moroccanRecipes = [
     calories: 480
   }
 ];
+
+// International recipes - varied cuisines (keto-friendly, high protein)
+const internationalRecipes = [
+  {
+    name: 'Grilled Salmon',
+    nameFr: 'Saumon grillé aux herbes',
+    image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800',
+    calories: 350
+  },
+  {
+    name: 'Mediterranean Bowl',
+    nameFr: 'Bowl méditerranéen',
+    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800',
+    calories: 420
+  },
+  {
+    name: 'Grilled Chicken',
+    nameFr: 'Poulet grillé aux épices',
+    image: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=800',
+    calories: 380
+  },
+  {
+    name: 'Caesar Salad',
+    nameFr: 'Salade César au poulet',
+    image: 'https://images.unsplash.com/photo-1546793665-c74683f339c1?w=800',
+    calories: 320
+  },
+  {
+    name: 'Beef Steak',
+    nameFr: 'Steak de bœuf grillé',
+    image: 'https://images.unsplash.com/photo-1558030006-450675393462?w=800',
+    calories: 450
+  },
+  {
+    name: 'Shrimp Stir-fry',
+    nameFr: 'Crevettes sautées légumes',
+    image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800',
+    calories: 290
+  }
+];
 ---
 
 <section id="moroccan" class="py-12 md:py-16 relative overflow-hidden">
@@ -115,7 +155,45 @@ const moroccanRecipes = [
       <!-- Recipe title: Morocco version - hidden by default -->
       <p data-morocco-only style="display: none" class="text-center text-text-muted text-sm mb-6">{t.moroccanFeatures.recipesTitle || 'Découvrez nos recettes marocaines'}</p>
 
-      <div class="recipe-carousel-container">
+      <!-- Generic/International carousel - visible by default -->
+      <div data-generic-only class="recipe-carousel-container">
+        <div class="recipe-carousel">
+          {internationalRecipes.map((recipe) => (
+            <div class="recipe-slide">
+              <div class="recipe-card-img">
+                <img
+                  src={recipe.image}
+                  alt={recipe.nameFr}
+                  loading="lazy"
+                />
+                <div class="recipe-overlay">
+                  <span class="recipe-name">{recipe.nameFr}</span>
+                  <span class="recipe-cal">{recipe.calories} kcal</span>
+                </div>
+              </div>
+            </div>
+          ))}
+          <!-- Duplicate for infinite scroll effect -->
+          {internationalRecipes.map((recipe) => (
+            <div class="recipe-slide">
+              <div class="recipe-card-img">
+                <img
+                  src={recipe.image}
+                  alt={recipe.nameFr}
+                  loading="lazy"
+                />
+                <div class="recipe-overlay">
+                  <span class="recipe-name">{recipe.nameFr}</span>
+                  <span class="recipe-cal">{recipe.calories} kcal</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Moroccan carousel - hidden by default -->
+      <div data-morocco-only style="display: none" class="recipe-carousel-container">
         <div class="recipe-carousel">
           {moroccanRecipes.map((recipe) => (
             <div class="recipe-slide">
@@ -290,41 +368,41 @@ const moroccanRecipes = [
 </style>
 
 <script>
-  // Touch/swipe support for recipe carousel
-  const container = document.querySelector('.recipe-carousel-container');
-  const carousel = document.querySelector('.recipe-carousel');
+  // Touch/swipe support for recipe carousels (handles multiple)
+  document.querySelectorAll('.recipe-carousel-container').forEach(container => {
+    const carousel = container.querySelector('.recipe-carousel') as HTMLElement | null;
 
-  if (container && carousel) {
+    if (!carousel) return;
+
     let isDragging = false;
     let startX = 0;
     let currentTranslate = 0;
     let prevTranslate = 0;
-    let animationID = 0;
 
     // Get the current transform value from animation
-    function getCurrentTransform() {
-      const style = window.getComputedStyle(carousel);
+    function getCurrentTransform(): number {
+      const style = window.getComputedStyle(carousel!);
       const matrix = new DOMMatrix(style.transform);
       return matrix.m41; // translateX value
     }
 
     // Touch events
-    container.addEventListener('touchstart', (e) => {
+    container.addEventListener('touchstart', (e: TouchEvent) => {
       isDragging = true;
       startX = e.touches[0].clientX;
       prevTranslate = getCurrentTransform();
-      carousel.classList.add('dragging');
-      carousel.style.transform = `translateX(${prevTranslate}px)`;
+      carousel!.classList.add('dragging');
+      carousel!.style.transform = `translateX(${prevTranslate}px)`;
     }, { passive: true });
 
-    container.addEventListener('touchmove', (e) => {
+    container.addEventListener('touchmove', (e: TouchEvent) => {
       if (!isDragging) return;
       const currentX = e.touches[0].clientX;
       const diff = currentX - startX;
       currentTranslate = prevTranslate + diff;
 
       // Get carousel width for boundaries
-      const carouselWidth = carousel.scrollWidth / 2;
+      const carouselWidth = carousel!.scrollWidth / 2;
 
       // Wrap around for infinite feel
       if (currentTranslate > 0) {
@@ -335,41 +413,41 @@ const moroccanRecipes = [
         prevTranslate = currentTranslate - diff;
       }
 
-      carousel.style.transform = `translateX(${currentTranslate}px)`;
+      carousel!.style.transform = `translateX(${currentTranslate}px)`;
     }, { passive: true });
 
     container.addEventListener('touchend', () => {
       isDragging = false;
-      carousel.classList.remove('dragging');
+      carousel!.classList.remove('dragging');
 
       // Resume animation from current position
-      const carouselWidth = carousel.scrollWidth / 2;
+      const carouselWidth = carousel!.scrollWidth / 2;
       const progress = Math.abs(currentTranslate) / carouselWidth;
       const remainingDuration = 30 * (1 - progress);
 
-      carousel.style.animation = 'none';
-      carousel.offsetHeight; // Force reflow
-      carousel.style.transform = `translateX(${currentTranslate}px)`;
-      carousel.style.animation = `scroll ${remainingDuration}s linear infinite`;
+      carousel!.style.animation = 'none';
+      carousel!.offsetHeight; // Force reflow
+      carousel!.style.transform = `translateX(${currentTranslate}px)`;
+      carousel!.style.animation = `scroll ${remainingDuration}s linear infinite`;
     });
 
     // Mouse events for desktop drag
-    container.addEventListener('mousedown', (e) => {
+    container.addEventListener('mousedown', (e: MouseEvent) => {
       isDragging = true;
       startX = e.clientX;
       prevTranslate = getCurrentTransform();
-      carousel.classList.add('dragging');
-      carousel.style.transform = `translateX(${prevTranslate}px)`;
+      carousel!.classList.add('dragging');
+      carousel!.style.transform = `translateX(${prevTranslate}px)`;
       e.preventDefault();
     });
 
-    container.addEventListener('mousemove', (e) => {
+    container.addEventListener('mousemove', (e: MouseEvent) => {
       if (!isDragging) return;
       const currentX = e.clientX;
       const diff = currentX - startX;
       currentTranslate = prevTranslate + diff;
 
-      const carouselWidth = carousel.scrollWidth / 2;
+      const carouselWidth = carousel!.scrollWidth / 2;
 
       if (currentTranslate > 0) {
         currentTranslate = -carouselWidth + currentTranslate;
@@ -379,38 +457,38 @@ const moroccanRecipes = [
         prevTranslate = currentTranslate - diff;
       }
 
-      carousel.style.transform = `translateX(${currentTranslate}px)`;
+      carousel!.style.transform = `translateX(${currentTranslate}px)`;
     });
 
     container.addEventListener('mouseup', () => {
       if (!isDragging) return;
       isDragging = false;
-      carousel.classList.remove('dragging');
+      carousel!.classList.remove('dragging');
 
-      const carouselWidth = carousel.scrollWidth / 2;
+      const carouselWidth = carousel!.scrollWidth / 2;
       const progress = Math.abs(currentTranslate) / carouselWidth;
       const remainingDuration = 30 * (1 - progress);
 
-      carousel.style.animation = 'none';
-      carousel.offsetHeight;
-      carousel.style.transform = `translateX(${currentTranslate}px)`;
-      carousel.style.animation = `scroll ${remainingDuration}s linear infinite`;
+      carousel!.style.animation = 'none';
+      carousel!.offsetHeight;
+      carousel!.style.transform = `translateX(${currentTranslate}px)`;
+      carousel!.style.animation = `scroll ${remainingDuration}s linear infinite`;
     });
 
     container.addEventListener('mouseleave', () => {
       if (isDragging) {
         isDragging = false;
-        carousel.classList.remove('dragging');
+        carousel!.classList.remove('dragging');
 
-        const carouselWidth = carousel.scrollWidth / 2;
+        const carouselWidth = carousel!.scrollWidth / 2;
         const progress = Math.abs(currentTranslate) / carouselWidth;
         const remainingDuration = 30 * (1 - progress);
 
-        carousel.style.animation = 'none';
-        carousel.offsetHeight;
-        carousel.style.transform = `translateX(${currentTranslate}px)`;
-        carousel.style.animation = `scroll ${remainingDuration}s linear infinite`;
+        carousel!.style.animation = 'none';
+        carousel!.offsetHeight;
+        carousel!.style.transform = `translateX(${currentTranslate}px)`;
+        carousel!.style.animation = `scroll ${remainingDuration}s linear infinite`;
       }
     });
-  }
+  });
 </script>
