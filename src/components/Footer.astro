@@ -43,11 +43,13 @@ const currentYear = new Date().getFullYear();
           <Logo class="h-10 w-10" />
           <span class="font-bold text-xl gradient-text">LOWIS</span>
         </a>
-        <p data-morocco-only class="text-text-secondary text-sm">
-          {t.footer.tagline}
-        </p>
-        <p data-generic-only style="display: none" class="text-text-secondary text-sm">
+        <!-- Generic tagline - visible by default -->
+        <p data-generic-only class="text-text-secondary text-sm">
           {t.footer.taglineGeneric || t.footer.tagline}
+        </p>
+        <!-- Morocco tagline - hidden by default -->
+        <p data-morocco-only style="display: none" class="text-text-secondary text-sm">
+          {t.footer.tagline}
         </p>
 
         <!-- Social links -->
