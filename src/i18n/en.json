@@ -278,11 +278,11 @@
   },
   "moroccanFeatures": {
     "badge": "Made for Morocco",
-    "badgeGeneric": "2000+ recipes",
+    "badgeGeneric": "Global Recipe Database",
     "title": "With your favorite Moroccan recipes",
-    "titleGeneric": "Over 2000 recipes analyzed",
+    "titleGeneric": "Over 2000 recipes nutritionally analyzed",
     "subtitle": "No new dishes to learn. Just a new way to combine them.",
-    "subtitleGeneric": "Every dish analyzed with nutritional precision to optimize your results.",
+    "subtitleGeneric": "Mediterranean, Low-carb, Vegetarian, Intermittent fasting... Each recipe analyzed with precision to fit your lifestyle.",
     "items": [
       {
         "icon": "restaurant_menu",
@@ -305,10 +305,32 @@
         "description": "Extreme efforts don't last. Our realistic approach lets you maintain your results forever."
       }
     ],
+    "itemsGeneric": [
+      {
+        "icon": "restaurant_menu",
+        "title": "Keep your favorite dishes",
+        "description": "Mediterranean, Asian, European, Latin cuisine... We don't ask you to change what you eat, but how and when you eat it."
+      },
+      {
+        "icon": "swap_horiz",
+        "title": "Vary the order and combinations",
+        "description": "The secret isn't eating less. It's intelligently combining your foods and varying the order to optimize every meal."
+      },
+      {
+        "icon": "tune",
+        "title": "All diet types supported",
+        "description": "Mediterranean, Low-carb, Keto, Vegetarian, Intermittent fasting, High protein... The app adapts to your eating style."
+      },
+      {
+        "icon": "all_inclusive",
+        "title": "Sustainable for life, no yo-yo effect",
+        "description": "Extreme efforts don't last. Our realistic approach lets you maintain your results forever."
+      }
+    ],
     "recipesTitle": "Discover our Moroccan recipes",
-    "recipesTitleGeneric": "Discover our analyzed recipes",
+    "recipesTitleGeneric": "A worldwide database",
     "recipesButton": "See +500 Moroccan recipes",
-    "recipesButtonGeneric": "See +2000 analyzed recipes"
+    "recipesButtonGeneric": "Explore +2000 recipes"
   },
   "howItWorks": {
     "title": "How does it work?",
@@ -478,6 +500,7 @@
   },
   "footer": {
     "tagline": "The smart nutritional system made for Morocco",
+    "taglineGeneric": "The smart nutritional system with AI + experts",
     "product": {
       "title": "Product",
       "features": "Features",

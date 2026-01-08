@@ -6,6 +6,7 @@ interface Props {
   t: {
     footer: {
       tagline: string;
+      taglineGeneric?: string;
       product: {
         title: string;
         features: string;
@@ -42,8 +43,11 @@ const currentYear = new Date().getFullYear();
           <Logo class="h-10 w-10" />
           <span class="font-bold text-xl gradient-text">LOWIS</span>
         </a>
-        <p class="text-text-secondary text-sm">
+        <p data-morocco-only class="text-text-secondary text-sm">
           {t.footer.tagline}
+        </p>
+        <p data-generic-only style="display: none" class="text-text-secondary text-sm">
+          {t.footer.taglineGeneric || t.footer.tagline}
         </p>
 
         <!-- Social links -->

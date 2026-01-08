@@ -278,11 +278,11 @@
   },
   "moroccanFeatures": {
     "badge": "Créé pour le Maroc",
-    "badgeGeneric": "2000+ recettes",
+    "badgeGeneric": "Base mondiale de recettes",
     "title": "Avec vos recettes marocaines préférées",
-    "titleGeneric": "Plus de 2000 recettes analysées",
+    "titleGeneric": "Plus de 2000 recettes analysées nutritionnellement",
     "subtitle": "Pas de nouveaux plats à apprendre. Juste une nouvelle façon de les combiner.",
-    "subtitleGeneric": "Chaque plat analysé avec précision nutritionnelle pour optimiser vos résultats.",
+    "subtitleGeneric": "Méditerranéenne, Low-carb, Végétarienne, Jeûne intermittent... Chaque recette analysée avec précision pour s'adapter à votre style de vie.",
     "items": [
       {
         "icon": "restaurant_menu",
@@ -305,10 +305,32 @@
         "description": "Les efforts extrêmes ne durent pas. Notre approche réaliste vous permet de maintenir vos résultats pour toujours."
       }
     ],
+    "itemsGeneric": [
+      {
+        "icon": "restaurant_menu",
+        "title": "Gardez vos plats préférés",
+        "description": "Cuisine méditerranéenne, asiatique, européenne, latino... On ne vous demande pas de changer ce que vous mangez, mais comment et quand vous le mangez."
+      },
+      {
+        "icon": "swap_horiz",
+        "title": "Variez l'ordre et les combinaisons",
+        "description": "Le secret n'est pas de manger moins. C'est de combiner intelligemment vos aliments et de varier l'ordre pour optimiser chaque repas."
+      },
+      {
+        "icon": "tune",
+        "title": "Tous les régimes supportés",
+        "description": "Méditerranéen, Low-carb, Keto, Végétarien, Jeûne intermittent, Haute protéine... L'app s'adapte à votre style alimentaire."
+      },
+      {
+        "icon": "all_inclusive",
+        "title": "Durable à vie, sans effet rebond",
+        "description": "Les efforts extrêmes ne durent pas. Notre approche réaliste vous permet de maintenir vos résultats pour toujours."
+      }
+    ],
     "recipesTitle": "Découvrez nos recettes marocaines",
-    "recipesTitleGeneric": "Découvrez nos recettes analysées",
+    "recipesTitleGeneric": "Une base de données mondiale",
     "recipesButton": "Voir +500 recettes marocaines",
-    "recipesButtonGeneric": "Voir +2000 recettes analysées"
+    "recipesButtonGeneric": "Explorer +2000 recettes"
   },
   "howItWorks": {
     "title": "Comment ça marche ?",
@@ -478,6 +500,7 @@
   },
   "footer": {
     "tagline": "Le système nutritionnel intelligent créé pour le Maroc",
+    "taglineGeneric": "Le système nutritionnel intelligent avec IA + experts",
     "product": {
       "title": "Produit",
       "features": "Fonctionnalités",

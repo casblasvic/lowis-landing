@@ -162,34 +162,51 @@
     }
   }
 
-  // Inicializar geo-banner
+  // Adaptar contenido según país (siempre se ejecuta, independiente del banner)
+  function adaptContentForCountry(country: string) {
+    const moroccoGroup = ['MA', 'DZ', 'TN'];
+    const isMorocco = moroccoGroup.includes(country);
+
+    if (isMorocco) {
+      // Usuario de Marruecos: mostrar contenido específico, ocultar genérico
+      document.querySelectorAll('[data-morocco-only]').forEach(el => {
+        (el as HTMLElement).style.display = '';
+      });
+      document.querySelectorAll('[data-generic-only]').forEach(el => {
+        (el as HTMLElement).style.display = 'none';
+      });
+    } else {
+      // Usuario fuera de Marruecos: ocultar contenido específico, mostrar genérico
+      document.querySelectorAll('[data-morocco-only]').forEach(el => {
+        (el as HTMLElement).style.display = 'none';
+      });
+      document.querySelectorAll('[data-generic-only]').forEach(el => {
+        (el as HTMLElement).style.display = '';
+      });
+
+      // Actualizar textos dinámicos si existen
+      document.querySelectorAll('[data-morocco-text]').forEach(el => {
+        const genericText = el.getAttribute('data-generic-text');
+        if (genericText) {
+          el.textContent = genericText;
+        }
+      });
+    }
+  }
+
+  // Inicializar geo-banner (solo el banner de bienvenida)
   async function initGeoBanner() {
     const country = await detectCountry();
     const dismissed = localStorage.getItem('lowis_banner_dismissed');
 
-    // Si es Marruecos, Argelia, Túnez o ya cerró el banner → no hacer nada
+    // SIEMPRE adaptar contenido según país (independiente del banner)
+    adaptContentForCountry(country);
+
+    // El banner solo se muestra para países no-Marruecos que no lo han cerrado
     const moroccoGroup = ['MA', 'DZ', 'TN'];
     if (moroccoGroup.includes(country) || dismissed) {
-      return;
+      return; // No mostrar banner, pero el contenido ya fue adaptado arriba
     }
-
-    // Ocultar elementos solo-Marruecos
-    document.querySelectorAll('[data-morocco-only]').forEach(el => {
-      (el as HTMLElement).style.display = 'none';
-    });
-
-    // Mostrar elementos genéricos
-    document.querySelectorAll('[data-generic-only]').forEach(el => {
-      (el as HTMLElement).style.display = '';
-    });
-
-    // Actualizar textos dinámicos (opcional)
-    document.querySelectorAll('[data-morocco-text]').forEach(el => {
-      const genericText = el.getAttribute('data-generic-text');
-      if (genericText) {
-        el.textContent = genericText;
-      }
-    });
 
     // Obtener configuración del país o usar default
     const currentLang = getCurrentLang();
