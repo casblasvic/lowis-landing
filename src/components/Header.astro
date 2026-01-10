@@ -1,5 +1,5 @@
 ---
-import { type Language, languages, getPathWithLang, defaultLang } from '../i18n';
+import { type Language, languages, languageMetadata, getPathWithLang, defaultLang } from '../i18n';
 import Logo from './ui/Logo.astro';
 import { getSignupUrlWithLang, getLoginUrlWithLang } from '../config';
 
@@ -26,13 +26,22 @@ const navLinks = [
   { href: '#faq', label: t.nav.faq },
 ];
 
-// Language options for switcher
-const langOptions = Object.entries(languages).map(([code, name]) => ({
+// Language options for switcher with country context
+const langOptions = Object.entries(languageMetadata).map(([code, meta]) => ({
   code,
-  name,
+  name: meta.name,
+  flag: meta.flag,
+  country: meta.country,
+  displayName: meta.country ? `${meta.name} (${meta.country})` : meta.name,
   href: getPathWithLang('/', code as Language),
   active: code === lang,
 }));
+
+// Current language metadata for the button
+const currentLangMeta = languageMetadata[lang];
+const currentDisplayName = currentLangMeta.country
+  ? `${currentLangMeta.name} (${currentLangMeta.country})`
+  : currentLangMeta.name;
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-dark-border">
@@ -61,27 +70,35 @@ const langOptions = Object.entries(languages).map(([code, name]) => ({
         <!-- Language Switcher -->
         <div class="relative group">
           <button
-            class="flex items-center gap-1 text-text-secondary hover:text-white transition-colors px-2 py-1 rounded-lg"
+            class="flex items-center gap-1.5 text-text-secondary hover:text-white transition-colors px-2 py-1.5 rounded-lg hover:bg-dark-hover"
             aria-label="Change language"
           >
-            <span class="text-sm uppercase font-medium">{lang}</span>
+            <!-- Mobile: solo globo -->
+            <span class="sm:hidden text-lg">🌐</span>
+            <!-- Desktop: globo + nombre completo -->
+            <span class="hidden sm:flex items-center gap-1.5">
+              <span class="text-base">🌐</span>
+              <span class="text-sm font-medium">{currentDisplayName}</span>
+            </span>
             <span class="material-symbols-outlined text-lg">expand_more</span>
           </button>
 
           <!-- Dropdown -->
-          <div class="absolute right-0 top-full mt-2 py-2 bg-dark-surface border border-dark-border rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[120px]">
+          <div class="absolute right-0 top-full mt-2 py-2 bg-dark-surface border border-dark-border rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[180px]">
             {langOptions.map((option) => (
               <a
                 href={option.href}
                 data-lang-choice={option.code}
                 class:list={[
-                  'lang-choice-link block px-4 py-2 text-sm transition-colors',
+                  'lang-choice-link flex items-center gap-2 px-4 py-2.5 text-sm transition-colors',
                   option.active
                     ? 'text-primary-orange bg-dark-hover'
                     : 'text-text-secondary hover:text-white hover:bg-dark-hover',
                 ]}
               >
-                {option.name}
+                <span class="text-base">{option.flag}</span>
+                <span>{option.displayName}</span>
+                {option.active && <span class="material-symbols-outlined text-sm ml-auto">check</span>}
               </a>
             ))}
           </div>

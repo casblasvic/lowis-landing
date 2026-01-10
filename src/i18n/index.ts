@@ -11,6 +11,14 @@ export const languages = {
   en: 'English',
 } as const;
 
+// Metadata para el selector de idioma con contexto de país
+export const languageMetadata = {
+  'fr': { name: 'Français', flag: '🇲🇦', country: 'Maroc' },
+  'fr-FR': { name: 'Français', flag: '🇫🇷', country: 'France' },
+  'en': { name: 'English', flag: '🌍' },
+  'es': { name: 'Español', flag: '🌍' },
+} as const;
+
 // Rutas disponibles
 export const routeLanguages = ['fr', 'es', 'en', 'fr-FR'] as const;
 
