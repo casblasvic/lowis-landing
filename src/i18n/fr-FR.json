@@ -1,0 +1,774 @@
+{
+  "meta": {
+    "title": "LOWIS - Manger Intelligemment | Objectif 1 kg/semaine minimum",
+    "description": "Les autres comptent vos calories. Nous comprenons votre corps. 40+ indicateurs, IA + experts humains, pas de bots. Première semaine offerte.",
+    "keywords": "application régime france, compteur calories, maigrir rapidement, perte de poids france, régime sans restriction, coach nutrition france, alimentation intelligente, perdre du ventre, application nutrition paris, régime pour femmes france, perte de poids durable, sans effet rebond, 1 kg par semaine"
+  },
+  "nav": {
+    "features": "Fonctionnalités",
+    "howItWorks": "Comment ça marche",
+    "pricing": "Tarifs",
+    "faq": "FAQ",
+    "cta": "Commencez maintenant !",
+    "login": "Se connecter"
+  },
+  "hero": {
+    "badge": "Disponible en France 🇫🇷",
+    "badgeGeneric": "Disponible en France 🇫🇷",
+    "title": "Les autres comptent vos calories.",
+    "titleHighlight": "Nous comprenons votre corps.",
+    "subtitle": "40+ indicateurs surveillés. IA + experts humains. Pas de restrictions frustrantes, pas de notifications culpabilisantes. Juste des résultats.",
+    "cta": "Essayer gratuitement 7 jours",
+    "ctaSecondary": "Voir la démo",
+    "noCard": "Sans carte bancaire",
+    "pricingInfo": "Offre lancement: 4,99 €/semaine • Annulation en 1 clic",
+    "disclaimer": "En suivant le protocole LOWIS.",
+    "users": "utilisateurs actifs"
+  },
+  "problem": {
+    "title": "Pourquoi les régimes classiques échouent?",
+    "subtitle": "Ce n'est pas votre faute. Le problème, c'est l'approche:",
+    "points": [
+      {
+        "icon": "close",
+        "text": "Régimes restrictifs impossibles à tenir plus de 2 semaines"
+      },
+      {
+        "icon": "close",
+        "text": "Efforts extrêmes qui provoquent l'effet rebond"
+      },
+      {
+        "icon": "close",
+        "text": "Compter des calories sans comprendre votre corps"
+      },
+      {
+        "icon": "close",
+        "text": "Abandonné seul sans suivi ni accompagnement"
+      }
+    ],
+    "solution": "LOWIS est différent : manger intelligemment, pas moins."
+  },
+  "features": {
+    "title": "Manger intelligemment, pas moins",
+    "subtitle": "Optimisez vos calories sans stress. Vos plats préférés, juste mieux combinés.",
+    "items": [
+      {
+        "icon": "restaurant",
+        "title": "Vos recettes, mieux combinées",
+        "description": "Quiche, ratatouille, poisson grillé, tajine... Gardez vos plats préférés. On vous apprend simplement à varier l'ordre et les combinaisons pour optimiser chaque calorie."
+      },
+      {
+        "icon": "psychology",
+        "title": "Apprendre à manger intelligemment",
+        "description": "Pas de restrictions stressantes. Comprenez comment votre corps fonctionne et faites naturellement les bons choix. Un savoir qui reste pour la vie."
+      },
+      {
+        "icon": "monitoring",
+        "title": "40+ indicateurs de santé",
+        "description": "Sommeil, énergie, hydratation, digestion, humeur, stress, cycle féminin... Nous suivons tout ce qui affecte votre métabolisme."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "LOWIS, votre coach IA + experts 24/7",
+        "description": "LOWIS s'adapte à votre quotidien comme un coach personnel. Nos experts ajustent votre parcours chaque semaine. Vous n'êtes jamais seul."
+      }
+    ]
+  },
+  "aiExperts": {
+    "badge": "Vous n'êtes jamais seul",
+    "title": "On s'adapte à VOTRE vie, pas l'inverse",
+    "subtitle": "Les régimes classiques vous donnent un plan et vous laissent seul. Nous, on vous accompagne 24h/24.",
+    "items": [
+      {
+        "icon": "restaurant",
+        "title": "Vos recettes, mieux combinées",
+        "points": [
+          "Gardez vos plats préférés",
+          "On optimise l'ordre et les combinaisons",
+          "Chaque calorie compte intelligemment"
+        ]
+      },
+      {
+        "icon": "psychology",
+        "title": "Apprenez à manger intelligent",
+        "points": [
+          "Pas de restrictions stressantes",
+          "Comprenez comment votre corps fonctionne",
+          "Un savoir qui reste pour la vie"
+        ]
+      },
+      {
+        "icon": "smart_toy",
+        "title": "LOWIS comprend votre quotidien",
+        "points": [
+          "Mal dormi? On ajuste pour le cortisol",
+          "Règles? On adapte pour la rétention",
+          "Stress? On modifie vos recommandations"
+        ]
+      },
+      {
+        "icon": "groups",
+        "title": "Nos experts vous suivent vraiment",
+        "points": [
+          "Évaluation hebdomadaire personnalisée",
+          "De vrais nutritionnistes, pas un robot",
+          "On comprend VOS circonstances"
+        ]
+      },
+      {
+        "icon": "all_inclusive",
+        "title": "Zéro effet rebond",
+        "points": [
+          "Pas de régime restrictif insoutenable",
+          "Un plan réaliste que vous pouvez tenir",
+          "Objectif : perdre ET maintenir à vie"
+        ]
+      },
+      {
+        "icon": "verified",
+        "title": "LOWIS + experts 24/7",
+        "points": [
+          "LOWIS réagit instantanément",
+          "Nos experts affinent chaque semaine",
+          "Vous n'êtes jamais seul"
+        ]
+      }
+    ]
+  },
+  "audioProgram": {
+    "badge": "Programme Audio",
+    "title": "Nous renforçons votre volonté grâce à nos conseils audio",
+    "subtitle": "LOWIS combine le suivi nutritionnel avec un programme audio conçu pour transformer votre relation avec la nourriture",
+    "description": "80% des échecs de régime sont liés au mental. C'est pourquoi nous avons créé un programme audio complet qui travaille sur les aspects psychologiques en parallèle de votre suivi nutritionnel.",
+    "features": [
+      {
+        "icon": "psychology",
+        "title": "Reprogrammation mentale",
+        "description": "Des audios conçus pour changer vos habitudes inconscientes autour de la nourriture, les compulsions et l'alimentation émotionnelle."
+      },
+      {
+        "icon": "self_improvement",
+        "title": "Méditations guidées",
+        "description": "Réduisez le stress et l'anxiété qui déclenchent les envies de manger. Retrouvez le calme intérieur."
+      },
+      {
+        "icon": "school",
+        "title": "Éducation nutritionnelle",
+        "description": "Comprenez comment fonctionne votre corps. Plus vous savez, plus vous faites les bons choix naturellement."
+      },
+      {
+        "icon": "emoji_events",
+        "title": "Motivation quotidienne",
+        "description": "Un audio par jour intégré à votre routine. Badges de progression et suivi de votre assiduité."
+      }
+    ],
+    "howItWorks": {
+      "title": "Comment ça fonctionne",
+      "steps": [
+        "Chaque jour, un nouvel audio se débloque dans votre programme",
+        "Écoutez pendant 10-15 minutes (en cuisinant, en marchant...)",
+        "Le contenu s'adapte à votre phase LOWIS actuelle",
+        "Votre progression est sauvegardée même hors ligne"
+      ]
+    },
+    "cta": "Découvrir le programme audio"
+  },
+  "healthTracking": {
+    "badge": "Suivi holistique complet",
+    "title": "Nous surveillons +40 indicateurs pour une personnalisation totale",
+    "subtitle": "Nous analysons tout ce qui affecte votre métabolisme et votre bien-être",
+    "categories": [
+      {
+        "icon": "bedtime",
+        "title": "Sommeil & Énergie",
+        "description": "Votre sommeil affecte directement votre métabolisme. Nous surveillons sa qualité pour optimiser énergie et résultats",
+        "count": 2
+      },
+      {
+        "icon": "local_drink",
+        "title": "Hydratation",
+        "description": "L'eau est votre allié secret. Hydratation personnalisée selon votre poids, activité et climat",
+        "count": 1
+      },
+      {
+        "icon": "psychology",
+        "title": "Humeur & Stress",
+        "description": "Votre stress impacte votre poids. Nous surveillons votre état émotionnel pour éviter les compulsions alimentaires",
+        "count": 2
+      },
+      {
+        "icon": "gastroenterology",
+        "title": "Digestion",
+        "description": "Un système digestif sain est fondamental. Nous ajustons votre plan en cas de ballonnements, acidité ou irrégularité",
+        "count": 5
+      },
+      {
+        "icon": "monitor_weight",
+        "title": "Poids & Mesures",
+        "description": "Au-delà du poids. Voyez votre progrès en IMC, tour de taille, hanches et bras — là où d'autres ne voient que des chiffres",
+        "count": 3
+      },
+      {
+        "icon": "directions_run",
+        "title": "Activité physique",
+        "description": "Votre exercice, intégré à votre plan. Nous surveillons l'intensité, la durée et l'impact sur vos résultats",
+        "count": 1
+      },
+      {
+        "icon": "healing",
+        "title": "Douleurs",
+        "description": "Votre corps parle. Nous ajustons votre nutrition en cas de migraines, douleurs articulaires ou musculaires",
+        "count": 2
+      },
+      {
+        "icon": "female",
+        "title": "Cycle féminin",
+        "description": "Votre cycle est une boussole biologique. Nous adaptons calories, envies et énergie selon votre phase menstruelle",
+        "count": 2
+      },
+      {
+        "icon": "photo_camera",
+        "title": "Photos de progrès",
+        "description": "Voyez votre transformation là où la balance ne voit rien. Nous documentons votre changement : visage, profil et dos",
+        "count": 1
+      },
+      {
+        "icon": "nutrition",
+        "title": "22 Micronutriments",
+        "description": "Vitamines A, B, C, D, E, K, fer, calcium, zinc, magnésium... Nous estimons votre apport en 22 micronutriments essentiels pour détecter les carences invisibles qui sabotent votre énergie et votre métabolisme",
+        "count": 22
+      }
+    ],
+    "summary": {
+      "label": "indicateurs",
+      "description": "Analyse en temps réel pour optimiser votre parcours"
+    },
+    "items": [
+      {
+        "icon": "bedtime",
+        "title": "Sommeil",
+        "description": "Le manque de sommeil augmente le cortisol et la faim. Nous adaptons votre plan en conséquence."
+      },
+      {
+        "icon": "local_drink",
+        "title": "Hydratation",
+        "description": "L'eau affecte votre métabolisme, énergie et digestion. Objectifs personnalisés chaque jour."
+      },
+      {
+        "icon": "psychology",
+        "title": "Stress & Humeur",
+        "description": "Le stress hormonal impacte la prise de poids. Nous ajustons les recommandations selon votre état."
+      },
+      {
+        "icon": "bolt",
+        "title": "Énergie & Fatigue",
+        "description": "Votre niveau d'énergie révèle si votre alimentation est adaptée. Nous optimisons en temps réel."
+      },
+      {
+        "icon": "gastroenterology",
+        "title": "Digestion & Ballonnements",
+        "description": "Identifier les aliments qui vous causent des problèmes pour les éviter intelligemment."
+      },
+      {
+        "icon": "female",
+        "title": "Cycle féminin",
+        "description": "Votre cycle affecte votre métabolisme. Nous adaptons votre plan en fonction de votre phase."
+      }
+    ]
+  },
+  "moroccanFeatures": {
+    "badge": "Créé pour le Maroc",
+    "badgeGeneric": "Base mondiale de recettes",
+    "title": "Avec vos recettes marocaines préférées",
+    "titleGeneric": "Plus de 2000 recettes analysées nutritionnellement",
+    "subtitle": "Pas de nouveaux plats à apprendre. Juste une nouvelle façon de les combiner.",
+    "subtitleGeneric": "Méditerranéenne, Low-carb, Végétarienne, Jeûne intermittent... Chaque recette analysée avec précision pour s'adapter à votre style de vie.",
+    "items": [
+      {
+        "icon": "restaurant_menu",
+        "title": "Gardez vos plats préférés",
+        "description": "Tajine de poulet, brochettes de kefta, poisson grillé, méchoui... On ne vous demande pas de changer ce que vous mangez, mais comment et quand vous le mangez."
+      },
+      {
+        "icon": "swap_horiz",
+        "title": "Variez l'ordre et les combinaisons",
+        "description": "Le secret n'est pas de manger moins. C'est de combiner intelligemment vos aliments et de varier l'ordre pour optimiser chaque repas."
+      },
+      {
+        "icon": "calendar_month",
+        "title": "Optimisé pour le Ramadan",
+        "description": "Plans spéciaux pour le jeûne avec répartition optimale du ftour et du shour. L'app s'adapte à votre rythme."
+      },
+      {
+        "icon": "all_inclusive",
+        "title": "Durable à vie, sans effet rebond",
+        "description": "Les efforts extrêmes ne durent pas. Notre approche réaliste vous permet de maintenir vos résultats pour toujours."
+      }
+    ],
+    "itemsGeneric": [
+      {
+        "icon": "restaurant_menu",
+        "title": "Gardez vos plats préférés",
+        "description": "Cuisine méditerranéenne, asiatique, européenne, latino... On ne vous demande pas de changer ce que vous mangez, mais comment et quand vous le mangez."
+      },
+      {
+        "icon": "swap_horiz",
+        "title": "Variez l'ordre et les combinaisons",
+        "description": "Le secret n'est pas de manger moins. C'est de combiner intelligemment vos aliments et de varier l'ordre pour optimiser chaque repas."
+      },
+      {
+        "icon": "tune",
+        "title": "Tous les régimes supportés",
+        "description": "Méditerranéen, Low-carb, Keto, Végétarien, Jeûne intermittent, Haute protéine... L'app s'adapte à votre style alimentaire."
+      },
+      {
+        "icon": "all_inclusive",
+        "title": "Durable à vie, sans effet rebond",
+        "description": "Les efforts extrêmes ne durent pas. Notre approche réaliste vous permet de maintenir vos résultats pour toujours."
+      }
+    ],
+    "recipesTitle": "Découvrez nos recettes marocaines",
+    "recipesTitleGeneric": "Une base de données mondiale",
+    "recipesButton": "Voir +500 recettes marocaines",
+    "recipesButtonGeneric": "Explorer +2000 recettes"
+  },
+  "howItWorks": {
+    "title": "Comment ça marche ?",
+    "subtitle": "Un cycle simple qui s'améliore chaque semaine",
+    "phases": [
+      {
+        "number": "1",
+        "icon": "target",
+        "title": "Semaine 1 : Votre plan personnalisé",
+        "description": "Répondez à des questions simples sur vos objectifs, préférences et conditions de santé. LOWIS + nos experts génèrent un plan 100% personnalisé adapté à la cuisine marocaine.",
+        "bullets": [
+          "Plan adapté à vos goûts et allergies",
+          "Première semaine complètement gratuite",
+          "Prêt en quelques minutes"
+        ]
+      },
+      {
+        "number": "2",
+        "icon": "edit_note",
+        "title": "Chaque jour : enregistrez en 30 secondes",
+        "description": "Photographiez vos plats (LOWIS identifie automatiquement) et notez comment vous vous sentez.",
+        "bullets": [
+          "Sommeil et niveau d'énergie",
+          "Stress et humeur du jour",
+          "Digestion et hydratation",
+          "Notes spéciales (événement, voyage...)"
+        ]
+      },
+      {
+        "number": "3",
+        "icon": "smart_toy",
+        "title": "LOWIS analyse et adapte EN DIRECT",
+        "description": "Avec chaque donnée, LOWIS convertit vos infos en 40+ indicateurs, apprend vos patterns et adapte votre programme le même jour.",
+        "bullets": [
+          "Mal dormi ? → Plus d'énergie demain",
+          "Stress élevé ? → Repas réconfortants suggérés",
+          "Micronutriments manquants ? → Menu ajusté"
+        ]
+      },
+      {
+        "number": "4",
+        "icon": "groups",
+        "title": "Chaque semaine : nos experts supervisent",
+        "description": "LOWIS réagit vite (quotidien), mais nos nutritionnistes vérifient et affinent manuellement votre cas chaque semaine.",
+        "bullets": [
+          "Révision complète de vos 40+ indicateurs",
+          "Analyse des patterns détectés par LOWIS",
+          "Ajustements personnalisés pour la semaine suivante"
+        ]
+      }
+    ],
+    "cycle": {
+      "title": "Le cycle qui vous transforme",
+      "description": "Chaque semaine LOWIS devient plus précis. Votre programme devient plus VOUS. Adaptation quotidienne + supervision hebdomadaire = résultats durables."
+    },
+    "cta": "Obtenir mon plan gratuit"
+  },
+  "stats": {
+    "title": "Un suivi 360° complet",
+    "subtitle": "Nutrition + mental + ajustements = résultats durables"
+  },
+  "pricing": {
+    "title": "Vérifiez par vous-même la perte de kilos durant la première semaine",
+    "subtitle": "🔒 Aucune carte bancaire demandée • ✓ Zéro engagement • ✓ Annulez quand vous voulez",
+    "trustBadges": {
+      "noCard": "Aucune carte bancaire",
+      "cancel": "Annulation en 1 clic",
+      "secure": "100% gratuit une semaine"
+    },
+    "premium": {
+      "name": "Premium",
+      "badge": "Offre lancement",
+      "price": "4,99",
+      "priceAfter": "9,99",
+      "period": "€/semaine",
+      "trialText": "4,99 €/semaine (offre lancement)",
+      "afterTrialText": "~0,71 €/jour • Annulation en 1 clic",
+      "features": [
+        "Monitorisation de +40 indicateurs en continu",
+        "Plans repas personnalisés à vos goûts",
+        "LOWIS, votre coach IA + experts humains",
+        "Audios pour renforcer la psychologie",
+        "Compte rendu hebdomadaire par nos experts"
+      ],
+      "cta": "Obtenir mon plan personnalisé",
+      "popular": true
+    }
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "question": "Comment fonctionne LOWIS, votre coach IA personnel?",
+        "answer": "LOWIS est votre coach IA personnel qui surveille 40+ indicateurs en temps réel. Ce n'est pas un simple chatbot. Quand LOWIS détecte des changements dans votre sommeil, stress ou état émotionnel, il ajuste automatiquement votre plan de repas. Mais LOWIS n'est pas seul: notre équipe d'experts révise votre progrès chaque semaine et affine manuellement votre plan. C'est la combinaison IA + humains qui fait la différence."
+      },
+      {
+        "question": "Quels sont exactement les 40+ indicateurs surveillés?",
+        "answer": "LOWIS surveille: NUTRITION (calories, protéines, glucides, lipides, 22 micronutriments), SANTÉ (sommeil, stress, digestion, douleurs, hydratation), PHYSIOLOGIE (poids, mensurations, activité physique, cycle menstruel pour les femmes), COMPORTEMENT (notes personnelles, événements spéciaux, comment vous vous sentez). Là où MyFitnessPal compte juste les calories, LOWIS voit le tableau complet."
+      },
+      {
+        "question": "Pourquoi surveiller 22 micronutriments et pas juste les calories?",
+        "answer": "Les calories ne racontent qu'une partie de l'histoire. Les 22 micronutriments (vitamines A, B, C, D, E, K, fer, calcium, zinc, magnésium...) sont essentiels pour: l'ÉNERGIE (le fer combat la fatigue), le MÉTABOLISME (les vitamines B brûlent les graisses), l'IMMUNITÉ (la vitamine C et le zinc vous protègent), la PEAU et CHEVEUX (la biotine et le zinc). Une carence invisible peut saboter votre perte de poids même avec un déficit calorique parfait. LOWIS détecte ces carences et ajuste votre alimentation."
+      },
+      {
+        "question": "Comment fonctionne le scan intelligent des aliments?",
+        "answer": "Prenez simplement une photo de votre assiette ou du code-barres d'un produit. L'IA LOWIS identifie automatiquement les aliments, estime les portions et calcule les valeurs nutritionnelles complètes (calories, macros ET 22 micronutriments). Pour les plats marocains comme le tajine ou le couscous, notre base de données spécialisée reconnaît les ingrédients typiques. Plus besoin de chercher manuellement — photographiez et continuez votre journée."
+      },
+      {
+        "question": "Comment LOWIS analyse mes notes personnelles?",
+        "answer": "LOWIS comprend votre vie réelle. Dans l'app, vous pouvez écrire ou enregistrer des notes sur: votre stress, des événements spéciaux (dîner, voyage, célébration), de nouveaux symptômes, ou des obstacles. L'IA LOWIS ET notre équipe d'experts lisent vos notes: LOWIS analyse instantanément et ajuste votre plan, puis votre coach expert révise la semaine suivante. Vous n'êtes pas un numéro, vous êtes une personne que LOWIS comprend."
+      },
+      {
+        "question": "Pourquoi les autres régimes échouent et pas LOWIS?",
+        "answer": "Les régimes classiques vous donnent un plan rigide et vous laissent seul. 95% des personnes reprennent le poids perdu. LOWIS est différent: on surveille +40 indicateurs, LOWIS s'adapte à votre quotidien comme un coach personnel, et nos experts ajustent chaque semaine. C'est un accompagnement 360°, pas une simple liste de repas."
+      },
+      {
+        "question": "Comment fonctionne l'offre de lancement?",
+        "answer": "Remplissez simplement votre profil pour personnaliser votre plan selon vos +40 indicateurs. Accès complet à toutes les fonctionnalités dès le départ. Offre lancement: 4,99 €/semaine (~0,71 €/jour). Prix régulier après: 9,99 €/semaine. Annulation en 1 clic, sans engagement."
+      },
+      {
+        "question": "Perdre entre 1 et 2,5 kg par semaine, c'est vraiment possible?",
+        "answer": "Oui, c'est notre objectif garanti. En mangeant intelligemment (pas moins, juste mieux combiné), la majorité de nos utilisateurs atteignent ces résultats. Le protocole LOWIS optimise chaque repas selon votre métabolisme."
+      },
+      {
+        "question": "Et si j'ai des allergies ou restrictions alimentaires?",
+        "answer": "Lors de l'onboarding initial, vous indiquez toutes vos allergies, intolérances et préférences alimentaires. LOWIS les intègre dans votre plan de repas. Le système ne vous recommandera JAMAIS des aliments que vous ne pouvez pas manger. Vous pouvez mettre à jour vos restrictions à tout moment."
+      },
+      {
+        "question": "Quand vais-je sentir des changements (au-delà du poids)?",
+        "answer": "Résultats tangibles par semaine: Poids: 1-2,5 kg/semaine (garanti). Énergie: beaucoup rapportent +25% en 3-5 jours. Digestion: amélioration notable en 1-2 semaines. Clarté mentale: stress réduit en 5-7 jours. Bien-être général: différence émotionnelle en 2 semaines. L'important: LOWIS adapte votre plan chaque jour selon comment vous vous sentez, pas seulement selon les chiffres."
+      },
+      {
+        "question": "Dois-je suivre un régime strict pour maigrir?",
+        "answer": "Non. LOWIS n'est pas un régime restrictif. Vous gardez vos plats préférés — quiche, ratatouille, poulet rôti — on vous apprend à les combiner intelligemment. Des habitudes durables, pas des efforts insoutenables."
+      },
+      {
+        "question": "L'application reconnaît mes plats du quotidien?",
+        "answer": "Absolument! Des milliers de recettes françaises et internationales: quiche lorraine, ratatouille, bœuf bourguignon, tajines, couscous, pizzas... Chaque plat analysé avec précision nutritionnelle. Scannez simplement votre assiette et LOWIS fait le reste."
+      },
+      {
+        "question": "Quelle est la différence avec les compteurs de calories?",
+        "answer": "Les compteurs de calories vous laissent seul avec des chiffres. LOWIS surveille +40 indicateurs (sommeil, stress, cycle, digestion...), LOWIS réagit instantanément comme un coach personnel, et nos nutritionnistes ajustent votre plan chaque semaine. Un vrai accompagnement, pas une calculatrice."
+      },
+      {
+        "question": "Comment LOWIS s'adapte à mon mode de vie?",
+        "answer": "LOWIS s'adapte à VOTRE vie, pas l'inverse. Voyage d'affaires? Dîner en famille? Événement spécial? Jeûne intermittent? L'app ajuste automatiquement votre plan. Notre équipe d'experts révise votre progression chaque semaine."
+      },
+      {
+        "question": "Et si je craque un jour?",
+        "answer": "C'est prévu et normal. LOWIS corrige immédiatement la trajectoire sans culpabiliser. Un écart ne détruit pas vos progrès — on ajuste ensemble et on continue. Zéro jugement, que des solutions."
+      },
+      {
+        "question": "Puis-je annuler quand je veux?",
+        "answer": "Oui, en 1 clic depuis l'app. Aucun engagement, aucune pénalité. Vous gardez l'accès jusqu'à la fin de votre période. La première semaine est offerte sans carte bancaire — vous décidez après avoir vu les résultats."
+      },
+      {
+        "question": "Quelle est la vraie différence entre LOWIS et les autres apps?",
+        "answer": "Les compteurs de calories (MyFitnessPal, Yazio) vous donnent des chiffres et vous laissent seul. LOWIS est différent: 1) MONITORING COMPLET: 40+ indicateurs vs juste calories, 2) ADAPTATION AUTOMATIQUE: LOWIS ajuste votre plan quand vous dormez mal, êtes stressé ou avez un événement, 3) EXPERTS HUMAINS: nos nutritionnistes révisent votre cas chaque semaine, 4) ANNULATION EN 1 CLIC: pas d'engagement, pas de piège. C'est un coach personnel intelligent + équipe d'experts, pas une calculatrice."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Transformez votre vie aujourd'hui",
+    "subtitle": "Votre plan personnalisé vous attend.",
+    "cta": "Obtenir mon plan gratuit",
+    "noCard": "Gratuit • Sans carte bancaire"
+  },
+  "footer": {
+    "tagline": "Le système nutritionnel intelligent créé pour le Maroc",
+    "taglineGeneric": "Le système nutritionnel intelligent avec IA + experts",
+    "product": {
+      "title": "Produit",
+      "features": "Fonctionnalités",
+      "pricing": "Tarifs",
+      "faq": "FAQ"
+    },
+    "legal": {
+      "title": "Légal",
+      "privacy": "Confidentialité",
+      "terms": "CGU",
+      "cookies": "Cookies"
+    },
+    "contact": {
+      "title": "Contact",
+      "support": "Support",
+      "email": "contact@lowis.app"
+    },
+    "copyright": "Tous droits réservés."
+  },
+  "demo": {
+    "aiMessage": "Excellent travail aujourd'hui",
+    "aiSubtext": "Vous avez atteint 85% de vos objectifs",
+    "names": ["Rania", "Fatima", "Nour", "Salma", "Amina", "Houda", "Adnan", "Youssef", "Karim", "Omar"],
+    "namesGeneric": ["Sophie", "Marie", "Emma", "Léa", "Julie", "Thomas", "Lucas", "Antoine", "Hugo", "Louis"],
+    "objectives": {
+      "calories": "Calories",
+      "protein": "Protéines",
+      "water": "Eau",
+      "steps": "Pas"
+    },
+    "phase": "Phase D2",
+    "phaseLabel": "Déstockage",
+    "recipes": "Recettes du jour",
+    "recipesItems": [
+      { "name": "Tajine Poulet Citron", "calories": 320 },
+      { "name": "Brochettes Kefta", "calories": 280 },
+      { "name": "Poisson Grillé", "calories": 240 }
+    ],
+    "recipesItemsGeneric": [
+      { "name": "Poulet Méditerranéen", "calories": 320 },
+      { "name": "Saumon Grillé", "calories": 280 },
+      { "name": "Salade César", "calories": 240 }
+    ]
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "lastUpdated": "Dernière mise à jour",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "content": "Chez LOWIS, nous accordons une importance primordiale à la protection de vos données personnelles. Cette politique de confidentialité vous informe sur la manière dont nous collectons, utilisons et protégeons vos informations lorsque vous utilisez notre application et nos services."
+      },
+      "controller": {
+        "title": "Responsable du traitement",
+        "content": "Le responsable du traitement des données est Organicare SARLAU, société de droit marocain.",
+        "address": "Adresse",
+        "email": "Email de contact"
+      },
+      "dataCollected": {
+        "title": "Données que nous collectons",
+        "intro": "Pour vous fournir un service nutritionnel personnalisé, nous collectons les catégories de données suivantes :",
+        "categories": {
+          "personal": {
+            "title": "Données d'identification",
+            "items": ["Nom et prénom", "Adresse email", "Numéro de téléphone", "Date de naissance", "Genre", "Pays et fuseau horaire"]
+          },
+          "health": {
+            "title": "Données de santé (sensibles)",
+            "items": ["Poids et taille", "Mensurations corporelles (tour de taille, hanches, bras)", "Cycle menstruel (optionnel)", "Conditions médicales et allergies", "Qualité du sommeil", "Niveau de stress et humeur", "Photos de progression corporelle (optionnel)"]
+          },
+          "nutrition": {
+            "title": "Données nutritionnelles",
+            "items": ["Repas photographiés et enregistrés", "Préférences alimentaires et restrictions", "Consommation d'eau", "Analyse nutritionnelle (macros et micronutriments)"]
+          },
+          "activity": {
+            "title": "Données d'activité",
+            "items": ["Exercices réalisés", "Durée et intensité des activités", "Calories brûlées estimées"]
+          },
+          "technical": {
+            "title": "Données techniques",
+            "items": ["Identifiants de session et appareils", "Tokens de notification push", "Logs d'utilisation de l'application"]
+          },
+          "payment": {
+            "title": "Données de paiement",
+            "items": ["Références de paiement (tokenisées, jamais les numéros complets)", "Historique des transactions", "Factures"]
+          },
+          "ai": {
+            "title": "Données d'interaction IA",
+            "items": ["Conversations avec l'assistant LOWIS", "Insights et recommandations générés"]
+          }
+        }
+      },
+      "purposes": {
+        "title": "Finalités du traitement",
+        "intro": "Nous utilisons vos données pour :",
+        "items": [
+          "Personnaliser votre plan nutritionnel et vos recommandations",
+          "Analyser vos repas et calculer les apports nutritionnels",
+          "Suivre vos indicateurs de santé et adapter votre programme",
+          "Vous envoyer des notifications et rappels personnalisés",
+          "Traiter vos paiements et gérer votre abonnement",
+          "Améliorer nos services et développer de nouvelles fonctionnalités",
+          "Assurer la sécurité de votre compte et prévenir les fraudes"
+        ]
+      },
+      "legalBasis": {
+        "title": "Base légale du traitement",
+        "intro": "Nous traitons vos données sur les bases légales suivantes :",
+        "items": [
+          { "basis": "Consentement explicite", "description": "Pour les données de santé sensibles, vous donnez votre consentement lors de l'inscription" },
+          { "basis": "Exécution du contrat", "description": "Pour fournir les services auxquels vous avez souscrit" },
+          { "basis": "Intérêt légitime", "description": "Pour améliorer nos services et assurer la sécurité" },
+          { "basis": "Obligation légale", "description": "Pour la conservation des données de facturation" }
+        ]
+      },
+      "recipients": {
+        "title": "Destinataires des données",
+        "intro": "Vos données peuvent être partagées avec les prestataires suivants, dans le cadre strict de la fourniture de nos services :",
+        "items": [
+          { "name": "Supabase", "purpose": "Hébergement et base de données sécurisée" },
+          { "name": "Google Gemini", "purpose": "Analyse IA des aliments photographiés" },
+          { "name": "Firebase", "purpose": "Notifications push" },
+          { "name": "Stripe / Lemon Squeezy", "purpose": "Traitement sécurisé des paiements" },
+          { "name": "USDA / Spoonacular / FatSecret", "purpose": "Données nutritionnelles de référence" }
+        ],
+        "noSale": "Nous ne vendons jamais vos données personnelles à des tiers."
+      },
+      "transfers": {
+        "title": "Transferts internationaux",
+        "content": "Vos données sont principalement hébergées dans l'Union Européenne. En cas de transfert vers des pays tiers, nous nous assurons que des garanties appropriées sont en place (clauses contractuelles types, certifications)."
+      },
+      "retention": {
+        "title": "Conservation des données",
+        "intro": "Nous conservons vos données pendant les durées suivantes :",
+        "items": [
+          { "type": "Données du compte", "duration": "Durée de votre abonnement + 3 ans" },
+          { "type": "Données de santé", "duration": "Durée de votre abonnement, supprimées sur demande" },
+          { "type": "Données de facturation", "duration": "10 ans (obligation légale)" },
+          { "type": "Logs techniques", "duration": "12 mois" }
+        ]
+      },
+      "rights": {
+        "title": "Vos droits",
+        "intro": "Conformément au RGPD et à la loi marocaine 09-08, vous disposez des droits suivants :",
+        "items": [
+          { "right": "Droit d'accès", "description": "Obtenir une copie de vos données personnelles" },
+          { "right": "Droit de rectification", "description": "Corriger vos données inexactes ou incomplètes" },
+          { "right": "Droit à l'effacement", "description": "Demander la suppression de vos données" },
+          { "right": "Droit à la portabilité", "description": "Recevoir vos données dans un format structuré" },
+          { "right": "Droit d'opposition", "description": "Vous opposer à certains traitements" },
+          { "right": "Droit de limitation", "description": "Limiter le traitement de vos données" },
+          { "right": "Retrait du consentement", "description": "Retirer votre consentement à tout moment" }
+        ],
+        "howTo": "Pour exercer ces droits, contactez-nous à l'adresse indiquée ci-dessous."
+      },
+      "cookies": {
+        "title": "Cookies et technologies similaires",
+        "content": "Nous utilisons des cookies essentiels pour le fonctionnement de l'application et des cookies analytiques pour améliorer nos services. Vous pouvez gérer vos préférences de cookies dans les paramètres de l'application."
+      },
+      "security": {
+        "title": "Sécurité des données",
+        "content": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données : chiffrement des données en transit et au repos, authentification sécurisée, accès restreint aux données, audits de sécurité réguliers."
+      },
+      "minors": {
+        "title": "Mineurs",
+        "content": "LOWIS est destiné aux personnes de 16 ans et plus. Si vous avez moins de 16 ans, vous devez obtenir le consentement de vos parents ou tuteurs légaux avant d'utiliser nos services."
+      },
+      "changes": {
+        "title": "Modifications",
+        "content": "Nous pouvons mettre à jour cette politique de confidentialité. En cas de modifications substantielles, nous vous en informerons par email ou via l'application. La date de dernière mise à jour est indiquée en haut de cette page."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "Pour toute question concernant cette politique ou vos données personnelles, contactez notre Délégué à la Protection des Données :",
+        "emailLabel": "Email"
+      }
+    }
+  },
+  "terms": {
+    "title": "Conditions Générales d'Utilisation",
+    "lastUpdated": "Dernière mise à jour",
+    "backToHome": "Retour à l'accueil",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "content": "Bienvenue sur LOWIS. Les présentes Conditions Générales d'Utilisation régissent votre accès et utilisation de l'application LOWIS et de ses services associés. En utilisant LOWIS, vous acceptez ces conditions dans leur intégralité."
+      },
+      "definitions": {
+        "title": "Définitions",
+        "items": [
+          { "term": "LOWIS", "definition": "L'application mobile et web de suivi nutritionnel et ses services associés." },
+          { "term": "Utilisateur", "definition": "Toute personne physique utilisant l'application LOWIS." },
+          { "term": "Services", "definition": "L'ensemble des fonctionnalités proposées par LOWIS : suivi nutritionnel, plans alimentaires personnalisés, analyse IA des repas, coaching." },
+          { "term": "Contenu", "definition": "Toutes les informations, textes, images, données que vous soumettez via l'application." }
+        ]
+      },
+      "eligibility": {
+        "title": "Conditions d'accès",
+        "content": "Pour utiliser LOWIS, vous devez :",
+        "items": [
+          "Être âgé d'au moins 16 ans (ou avoir le consentement parental)",
+          "Fournir des informations exactes lors de l'inscription",
+          "Ne pas utiliser le service à des fins illégales",
+          "Maintenir la confidentialité de vos identifiants de connexion"
+        ]
+      },
+      "services": {
+        "title": "Description des Services",
+        "intro": "LOWIS propose les services suivants :",
+        "items": [
+          { "service": "Suivi nutritionnel", "description": "Enregistrement et analyse de vos repas quotidiens avec calcul des macronutriments." },
+          { "service": "Plans personnalisés", "description": "Programmes alimentaires adaptés à vos objectifs (perte de poids, maintien, prise de masse)." },
+          { "service": "Analyse IA", "description": "Reconnaissance automatique des aliments par photo et estimation nutritionnelle." },
+          { "service": "Coaching", "description": "Conseils personnalisés basés sur vos progrès et habitudes alimentaires." }
+        ]
+      },
+      "subscription": {
+        "title": "Abonnement et Paiement",
+        "intro": "LOWIS propose différentes formules d'abonnement :",
+        "items": [
+          "Essai gratuit : 7 jours d'accès complet sans engagement",
+          "Abonnement hebdomadaire : facturation automatique chaque semaine",
+          "Les prix sont affichés TTC et peuvent varier selon votre pays"
+        ],
+        "cancellation": "Vous pouvez annuler votre abonnement à tout moment depuis les paramètres de l'application. L'annulation prend effet à la fin de la période en cours.",
+        "refund": "Conformément à la réglementation, vous disposez d'un droit de rétractation de 14 jours pour tout nouvel abonnement, sauf si vous avez commencé à utiliser le service."
+      },
+      "health": {
+        "title": "Avertissement Santé",
+        "content": "LOWIS est un outil d'aide au suivi nutritionnel et ne constitue pas un avis médical. Les informations fournies ne remplacent pas une consultation avec un professionnel de santé. Avant de commencer tout régime ou programme alimentaire, consultez votre médecin, particulièrement si vous avez des conditions médicales préexistantes.",
+        "disclaimer": "LOWIS ne peut être tenu responsable des conséquences résultant de l'utilisation des informations ou recommandations fournies par l'application."
+      },
+      "userContent": {
+        "title": "Contenu Utilisateur",
+        "intro": "En utilisant LOWIS, vous vous engagez à :",
+        "items": [
+          "Ne pas publier de contenu illégal, offensant ou inapproprié",
+          "Ne pas usurper l'identité d'une autre personne",
+          "Ne pas tenter de compromettre la sécurité de l'application",
+          "Respecter les droits de propriété intellectuelle"
+        ],
+        "license": "Vous conservez la propriété de votre contenu. En le soumettant, vous accordez à LOWIS une licence non exclusive pour l'utiliser dans le cadre de nos services."
+      },
+      "intellectualProperty": {
+        "title": "Propriété Intellectuelle",
+        "content": "L'application LOWIS, son design, ses fonctionnalités, et tout son contenu (textes, images, logos, algorithmes) sont protégés par les droits de propriété intellectuelle et appartiennent à Organicare SARLAU ou ses licenciés. Toute reproduction non autorisée est interdite."
+      },
+      "liability": {
+        "title": "Limitation de Responsabilité",
+        "content": "LOWIS s'efforce de fournir un service de qualité mais ne garantit pas l'exactitude absolue des informations nutritionnelles. Notre responsabilité est limitée au montant de votre abonnement pour les 12 derniers mois. Nous ne sommes pas responsables des dommages indirects ou des pertes de données."
+      },
+      "termination": {
+        "title": "Résiliation",
+        "content": "Nous pouvons suspendre ou résilier votre compte en cas de violation des présentes conditions, notamment en cas d'utilisation frauduleuse ou abusive du service. Vous pouvez supprimer votre compte à tout moment depuis les paramètres."
+      },
+      "modifications": {
+        "title": "Modifications des Conditions",
+        "content": "Nous pouvons modifier ces conditions. Les modifications substantielles vous seront notifiées par email ou via l'application au moins 30 jours avant leur entrée en vigueur. Votre utilisation continue après cette date vaut acceptation."
+      },
+      "law": {
+        "title": "Droit Applicable",
+        "content": "Les présentes conditions sont régies par le droit marocain. En cas de litige, les tribunaux de Casablanca seront seuls compétents, après tentative de résolution amiable."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "Pour toute question concernant ces conditions :",
+        "emailLabel": "Email"
+      }
+    }
+  }
+}

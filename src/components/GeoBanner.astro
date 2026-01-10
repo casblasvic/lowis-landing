@@ -77,8 +77,10 @@
     // Marruecos - no mostrar banner
     'MA': { lang: 'fr', message: '', cta: '' },
 
-    // Francófonos
-    'FR': { lang: 'fr', message: 'Vous êtes en France ? Bienvenue !', cta: 'Continuer' },
+    // Francia - redirigir a /fr/ (versión Francia)
+    'FR': { lang: 'fr-FR', message: 'Vous êtes en France ? Découvrez notre offre de lancement !', cta: 'Voir l\'offre' },
+
+    // Otros francófonos - mantener en francés genérico
     'BE': { lang: 'fr', message: 'Vous êtes en Belgique ? Bienvenue !', cta: 'Continuer' },
     'CH': { lang: 'fr', message: 'Vous êtes en Suisse ? Bienvenue !', cta: 'Continuer' },
     'CA': { lang: 'fr', message: 'Vous êtes au Canada ? Bienvenue !', cta: 'Continuer' },
@@ -118,13 +120,20 @@
 
   // Determinar el mejor idioma basado en país y navegador
   function getBestLanguage(country: string): string {
+    // Francia → versión Francia específica
+    if (country === 'FR') return 'fr-FR';
+
     // Países hispanohablantes → español
     const spanishCountries = ['ES', 'MX', 'AR', 'CO', 'CL', 'PE', 'VE', 'EC', 'BO', 'PY', 'UY', 'CR', 'PA', 'DO', 'GT', 'HN', 'SV', 'NI', 'CU', 'PR'];
     if (spanishCountries.includes(country)) return 'es';
 
-    // Países francófonos (incluyendo Marruecos) → francés
-    const frenchCountries = ['FR', 'MA', 'DZ', 'TN', 'BE', 'CH', 'LU', 'MC', 'SN', 'CI', 'CA'];
-    if (frenchCountries.includes(country)) return 'fr';
+    // Países francófonos (Marruecos y norte de África) → francés marroquí (raíz)
+    const moroccoGroup = ['MA', 'DZ', 'TN'];
+    if (moroccoGroup.includes(country)) return 'fr';
+
+    // Otros francófonos → francés genérico (raíz también)
+    const otherFrench = ['BE', 'CH', 'LU', 'MC', 'SN', 'CI', 'CA'];
+    if (otherFrench.includes(country)) return 'fr';
 
     // Países anglófonos → inglés
     const englishCountries = ['US', 'GB', 'AU', 'NZ', 'IE', 'ZA', 'IN', 'PH', 'SG'];
@@ -154,9 +163,13 @@
     const country = await detectCountry();
     const bestLang = getBestLanguage(country);
 
-    // Si el mejor idioma no es francés (que es la raíz), redirigir
-    if (bestLang !== 'fr') {
-      // Marcar que se hizo redirección automática
+    // Si el mejor idioma no es francés (Marruecos), redirigir
+    if (bestLang === 'fr-FR') {
+      // Francia → /fr/
+      localStorage.setItem('lowis_auto_redirected', 'true');
+      window.location.href = '/fr/';
+    } else if (bestLang !== 'fr') {
+      // Otros idiomas → /{lang}/
       localStorage.setItem('lowis_auto_redirected', 'true');
       window.location.href = `/${bestLang}/`;
     }

@@ -24,12 +24,23 @@ const computedCanonicalUrl = canonicalUrl || `${baseUrl}${pathname === '/' ? '' 
 const localeMap: Record<Language, string> = {
   en: 'en_US',
   es: 'es_ES',
-  fr: 'fr_FR'
+  fr: 'fr_MA',
+  'fr-FR': 'fr_FR'
 };
+
+// Mapeo para atributo lang del HTML (BCP 47)
+const htmlLangMap: Record<Language, string> = {
+  en: 'en',
+  es: 'es',
+  fr: 'fr-MA',
+  'fr-FR': 'fr-FR'
+};
+
+const htmlLang = htmlLangMap[lang] || lang;
 ---
 
 <!doctype html>
-<html lang={lang} class="dark scroll-smooth">
+<html lang={htmlLang} class="dark scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

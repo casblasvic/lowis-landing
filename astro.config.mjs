@@ -10,9 +10,10 @@ export default defineConfig({
   integrations: [
     sitemap({
       i18n: {
-        defaultLocale: 'fr',
+        defaultLocale: 'fr-MA',
         locales: {
-          fr: 'fr',
+          'fr-MA': 'fr-MA',  // Marruecos (default, ruta /)
+          'fr-FR': 'fr-FR',  // Francia (ruta /fr/)
           es: 'es',
           en: 'en',
         },
