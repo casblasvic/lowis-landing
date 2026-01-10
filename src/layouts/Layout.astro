@@ -15,6 +15,17 @@ interface Props {
 const { title, description, keywords, lang = defaultLang, canonicalUrl } = Astro.props;
 const baseUrl = SITE_CONFIG.domain;
 const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
+
+// Calcular canonical URL automáticamente (con trailing slash para consistencia con sitemap)
+const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const computedCanonicalUrl = canonicalUrl || `${baseUrl}${pathname === '/' ? '' : pathname}`;
+
+// Mapeo de locales completos para Open Graph
+const localeMap: Record<Language, string> = {
+  en: 'en_US',
+  es: 'es_ES',
+  fr: 'fr_FR'
+};
 ---
 
 <!doctype html>
@@ -39,7 +50,7 @@ const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalUrl || Astro.url.href} />
     <meta property="og:image" content={`${baseUrl}/og-image.png`} />
-    <meta property="og:locale" content={lang} />
+    <meta property="og:locale" content={localeMap[lang]} />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -48,7 +59,7 @@ const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
     <meta name="twitter:image" content={`${baseUrl}/og-image.png`} />
 
     <!-- Canonical & Alternates -->
-    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    <link rel="canonical" href={computedCanonicalUrl} />
     {alternateUrls.map(({ hreflang, href }) => (
       <link rel="alternate" hreflang={hreflang} href={href} />
     ))}
