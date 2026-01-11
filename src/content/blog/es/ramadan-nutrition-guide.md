@@ -15,7 +15,7 @@ translations:
   en: "ramadan-nutrition-guide"
   es: "ramadan-nutrition-guide"
 ctaType: "plan"
-image: "ramadan-nutrition-guide/hero.jpg"
+image: "ramadan-nutrition-guide/hero.png"
 imageAlt: "Guía nutricional completa para el Ramadán - Iftar y Suhur equilibrados"
 faq:
   - question: "¿Se puede perder peso durante el Ramadán?"

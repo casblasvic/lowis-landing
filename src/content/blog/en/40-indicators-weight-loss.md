@@ -15,7 +15,7 @@ translations:
   en: "40-indicators-weight-loss"
   es: "40-indicadores-perdida-peso"
 ctaType: "plan"
-image: "40-indicateurs-perte-poids/hero.jpg"
+image: "40-indicateurs-perte-poids/hero.png"
 imageAlt: "The 40+ health indicators for personalized weight loss"
 faq:
   - question: "Why isn't counting calories enough to lose weight?"

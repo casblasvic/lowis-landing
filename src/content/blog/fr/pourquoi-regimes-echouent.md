@@ -15,7 +15,7 @@ translations:
   en: "why-diets-fail"
   es: "por-que-dietas-fallan"
 ctaType: "plan"
-image: "pourquoi-regimes-echouent/hero.jpg"
+image: "pourquoi-regimes-echouent/hero.png"
 imageAlt: "Pourquoi les régimes traditionnels échouent - La science expliquée"
 ---
 
