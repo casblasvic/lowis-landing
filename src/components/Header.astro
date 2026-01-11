@@ -1,5 +1,5 @@
 ---
-import { type Language, languages, languageMetadata, getPathWithLang, defaultLang } from '../i18n';
+import { type Language, languages, languageMetadata, getPathWithLang, defaultLang, translatedLanguageNames } from '../i18n';
 import Logo from './ui/Logo.astro';
 import { getSignupUrlWithLang, getLoginUrlWithLang } from '../config';
 
@@ -26,22 +26,20 @@ const navLinks = [
   { href: '#faq', label: t.nav.faq },
 ];
 
-// Language options for switcher with country context
+// Language options for switcher - nombres traducidos según idioma actual
 const langOptions = Object.entries(languageMetadata).map(([code, meta]) => ({
   code,
-  name: meta.name,
   flag: meta.flag,
-  country: meta.country,
-  displayName: meta.country ? `${meta.name} (${meta.country})` : meta.name,
+  region: meta.region,
+  // Usar nombre traducido según el idioma actual
+  displayName: translatedLanguageNames[lang][code as Language],
   href: getPathWithLang('/', code as Language),
   active: code === lang,
 }));
 
 // Current language metadata for the button
 const currentLangMeta = languageMetadata[lang];
-const currentDisplayName = currentLangMeta.country
-  ? `${currentLangMeta.name} (${currentLangMeta.country})`
-  : currentLangMeta.name;
+const currentDisplayName = translatedLanguageNames[lang][lang];
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-dark-border">
@@ -73,22 +71,23 @@ const currentDisplayName = currentLangMeta.country
             class="flex items-center gap-1.5 text-text-secondary hover:text-white transition-colors px-2 py-1.5 rounded-lg hover:bg-dark-hover"
             aria-label="Change language"
           >
-            <!-- Mobile: solo globo -->
-            <span class="sm:hidden text-lg">🌐</span>
-            <!-- Desktop: globo + nombre completo -->
+            <!-- Mobile: solo bandera -->
+            <span class="sm:hidden text-lg">{currentLangMeta.flag}</span>
+            <!-- Desktop: bandera + nombre completo -->
             <span class="hidden sm:flex items-center gap-1.5">
-              <span class="text-base">🌐</span>
+              <span class="text-base">{currentLangMeta.flag}</span>
               <span class="text-sm font-medium">{currentDisplayName}</span>
             </span>
             <span class="material-symbols-outlined text-lg">expand_more</span>
           </button>
 
-          <!-- Dropdown -->
-          <div class="absolute right-0 top-full mt-2 py-2 bg-dark-surface border border-dark-border rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[180px]">
+          <!-- Dropdown - opciones se filtran por JS según país detectado -->
+          <div class="absolute right-0 top-full mt-2 py-2 bg-dark-surface border border-dark-border rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[200px]">
             {langOptions.map((option) => (
               <a
                 href={option.href}
                 data-lang-choice={option.code}
+                data-lang-region={option.region}
                 class:list={[
                   'lang-choice-link flex items-center gap-2 px-4 py-2.5 text-sm transition-colors',
                   option.active
@@ -177,6 +176,50 @@ const currentDisplayName = currentLangMeta.country
       });
     });
   }
+
+  // CRÍTICO: Filtrar opciones de idioma según país detectado
+  // Esto previene que usuarios de Marruecos vean precios de Francia y viceversa
+  function filterLanguageOptions() {
+    const detectedCountry = localStorage.getItem('lowis_country');
+    if (!detectedCountry) return; // Si no hay detección, mostrar todo
+
+    // Determinar región del usuario
+    const moroccoGroup = ['MA', 'DZ', 'TN'];
+    const franceGroup = ['FR'];
+
+    let userRegion: 'MA' | 'FR' | 'INT';
+    if (moroccoGroup.includes(detectedCountry)) {
+      userRegion = 'MA';
+    } else if (franceGroup.includes(detectedCountry)) {
+      userRegion = 'FR';
+    } else {
+      userRegion = 'INT';
+    }
+
+    // Filtrar opciones del selector
+    document.querySelectorAll('.lang-choice-link').forEach((link) => {
+      const langRegion = link.getAttribute('data-lang-region');
+      const element = link as HTMLElement;
+
+      // Lógica de visibilidad:
+      // - MA users: ver MA + INT, ocultar FR
+      // - FR users: ver FR + INT, ocultar MA
+      // - INT users: ver INT + el francés de su idioma actual
+      if (userRegion === 'MA' && langRegion === 'FR') {
+        element.style.display = 'none';
+      } else if (userRegion === 'FR' && langRegion === 'MA') {
+        element.style.display = 'none';
+      } else {
+        element.style.display = '';
+      }
+    });
+  }
+
+  // Ejecutar filtrado cuando la página carga
+  filterLanguageOptions();
+
+  // También ejecutar después de que GeoBanner detecte el país
+  window.addEventListener('lowis-country-detected', filterLanguageOptions);
 
   // Marcar cuando el usuario elige manualmente un idioma
   document.querySelectorAll('.lang-choice-link').forEach((link) => {

@@ -1,0 +1,133 @@
+---
+/**
+ * BlogCard.astro
+ *
+ * Card component for blog post previews
+ * Used in blog index and related posts sections
+ */
+import type { Language } from '../../i18n';
+
+interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  image?: string;
+  imageAlt?: string;
+  category?: string;
+  publishDate: Date;
+  readingTime?: number;
+  lang: Language;
+}
+
+const {
+  title,
+  description,
+  slug,
+  image,
+  imageAlt,
+  category,
+  publishDate,
+  readingTime,
+  lang,
+} = Astro.props;
+
+// Category labels and colors
+const categoryConfig: Record<string, { label: Record<Language, string>; emoji: string }> = {
+  guides: {
+    label: { fr: 'Guide', 'fr-FR': 'Guide', es: 'Guía', en: 'Guide' },
+    emoji: '📚',
+  },
+  comparatifs: {
+    label: { fr: 'Comparatif', 'fr-FR': 'Comparatif', es: 'Comparativa', en: 'Comparison' },
+    emoji: '⚖️',
+  },
+  astuces: {
+    label: { fr: 'Astuces', 'fr-FR': 'Astuces', es: 'Consejos', en: 'Tips' },
+    emoji: '💡',
+  },
+  recettes: {
+    label: { fr: 'Recettes', 'fr-FR': 'Recettes', es: 'Recetas', en: 'Recipes' },
+    emoji: '🍽️',
+  },
+  temoignages: {
+    label: { fr: 'Témoignage', 'fr-FR': 'Témoignage', es: 'Testimonio', en: 'Testimonial' },
+    emoji: '💬',
+  },
+};
+
+const categoryInfo = category ? categoryConfig[category] : null;
+const categoryLabel = categoryInfo?.label[lang] || category;
+const categoryEmoji = categoryInfo?.emoji || '📝';
+
+// Format date
+const formattedDate = publishDate.toLocaleDateString(
+  lang === 'en' ? 'en-US' : lang === 'es' ? 'es-ES' : 'fr-FR',
+  { year: 'numeric', month: 'short', day: 'numeric' }
+);
+
+// Build URL
+const getBlogUrl = () => {
+  const basePath = lang === 'fr' ? '/blog/' : `/${lang === 'fr-FR' ? 'fr' : lang}/blog/`;
+  return `${basePath}${slug}/`;
+};
+
+// Reading time text
+const readingTimeText = {
+  fr: 'min de lecture',
+  'fr-FR': 'min de lecture',
+  es: 'min de lectura',
+  en: 'min read',
+};
+---
+
+<article class="blog-card group">
+  <a href={getBlogUrl()} class="block">
+    <!-- Image -->
+    {image ? (
+      <img
+        src={image}
+        alt={imageAlt || title}
+        class="blog-card-image"
+        loading="lazy"
+      />
+    ) : (
+      <div class="blog-card-image flex items-center justify-center" style="background: var(--blog-accent-light);">
+        <span class="text-6xl">{categoryEmoji}</span>
+      </div>
+    )}
+
+    <!-- Content -->
+    <div class="blog-card-content">
+      <!-- Category badge -->
+      {category && (
+        <span class="blog-card-category">
+          {categoryEmoji} {categoryLabel}
+        </span>
+      )}
+
+      <!-- Title -->
+      <h3 class="blog-card-title group-hover:text-[var(--blog-accent)] transition-colors">
+        {title}
+      </h3>
+
+      <!-- Excerpt -->
+      <p class="blog-card-excerpt">
+        {description}
+      </p>
+
+      <!-- Meta -->
+      <div class="blog-card-meta">
+        <span class="blog-meta-badge">
+          <span class="material-symbols-outlined">calendar_today</span>
+          {formattedDate}
+        </span>
+        {readingTime && (
+          <span class="blog-meta-badge">
+            <span class="material-symbols-outlined">schedule</span>
+            {readingTime} {readingTimeText[lang]}
+          </span>
+        )}
+      </div>
+    </div>
+  </a>
+</article>

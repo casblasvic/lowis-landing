@@ -1,0 +1,142 @@
+---
+/**
+ * CTABanner.astro
+ *
+ * Inline CTA banner for blog posts
+ * Persuasive but casual, using PAS psychology
+ *
+ * Types:
+ * - plan: Get personalized plan (default)
+ * - trial: Start free trial
+ * - compare: Compare with competitors
+ * - custom: Custom text
+ */
+import type { Language } from '../../i18n';
+import { getSignupUrlWithLang } from '../../config';
+
+interface Props {
+  lang: Language;
+  type?: 'plan' | 'trial' | 'compare' | 'custom';
+  customTitle?: string;
+  customDescription?: string;
+  customButtonText?: string;
+  customUrl?: string;
+  variant?: 'gradient' | 'subtle';
+}
+
+const {
+  lang,
+  type = 'plan',
+  customTitle,
+  customDescription,
+  customButtonText,
+  customUrl,
+  variant = 'gradient',
+} = Astro.props;
+
+// CTA content by type and language
+const ctaContent = {
+  plan: {
+    title: {
+      fr: 'Prêt à transformer votre alimentation ?',
+      'fr-FR': 'Prêt à transformer votre alimentation ?',
+      es: '¿Listo para transformar tu alimentación?',
+      en: 'Ready to transform your nutrition?',
+    },
+    description: {
+      fr: 'Obtenez votre plan personnalisé en 2 minutes. Notre IA analyse votre mode de vie et crée un programme adapté à vos goûts.',
+      'fr-FR': 'Obtenez votre plan personnalisé en 2 minutes. Notre IA analyse votre mode de vie et crée un programme adapté à vos goûts.',
+      es: 'Obtén tu plan personalizado en 2 minutos. Nuestra IA analiza tu estilo de vida y crea un programa adaptado a tus gustos.',
+      en: 'Get your personalized plan in 2 minutes. Our AI analyzes your lifestyle and creates a program tailored to your tastes.',
+    },
+    button: {
+      fr: 'Créer mon plan gratuit',
+      'fr-FR': 'Créer mon plan gratuit',
+      es: 'Crear mi plan gratis',
+      en: 'Create my free plan',
+    },
+  },
+  trial: {
+    title: {
+      fr: 'Essayez LOWIS gratuitement',
+      'fr-FR': 'Essayez LOWIS gratuitement',
+      es: 'Prueba LOWIS gratis',
+      en: 'Try LOWIS for free',
+    },
+    description: {
+      fr: '7 jours sans engagement, sans carte bancaire. Découvrez comment notre IA peut vous accompagner au quotidien.',
+      'fr-FR': '7 jours sans engagement, sans carte bancaire. Découvrez comment notre IA peut vous accompagner au quotidien.',
+      es: '7 días sin compromiso, sin tarjeta. Descubre cómo nuestra IA puede acompañarte en tu día a día.',
+      en: '7 days free, no card required. Discover how our AI can support you daily.',
+    },
+    button: {
+      fr: 'Commencer l\'essai gratuit',
+      'fr-FR': 'Commencer l\'essai gratuit',
+      es: 'Empezar prueba gratis',
+      en: 'Start free trial',
+    },
+  },
+  compare: {
+    title: {
+      fr: 'Fatigué des apps qui ne marchent pas ?',
+      'fr-FR': 'Fatigué des apps qui ne marchent pas ?',
+      es: '¿Cansado de apps que no funcionan?',
+      en: 'Tired of apps that don\'t work?',
+    },
+    description: {
+      fr: 'LOWIS est différent: notre IA travaille pour vous. Plus de recherche manuelle, plus de calculs. Juste des résultats.',
+      'fr-FR': 'LOWIS est différent: notre IA travaille pour vous. Plus de recherche manuelle, plus de calculs. Juste des résultats.',
+      es: 'LOWIS es diferente: nuestra IA trabaja por ti. Sin búsquedas manuales, sin cálculos. Solo resultados.',
+      en: 'LOWIS is different: our AI works for you. No manual searches, no calculations. Just results.',
+    },
+    button: {
+      fr: 'Voir la différence',
+      'fr-FR': 'Voir la différence',
+      es: 'Ver la diferencia',
+      en: 'See the difference',
+    },
+  },
+  custom: {
+    title: { fr: '', 'fr-FR': '', es: '', en: '' },
+    description: { fr: '', 'fr-FR': '', es: '', en: '' },
+    button: { fr: '', 'fr-FR': '', es: '', en: '' },
+  },
+};
+
+const content = ctaContent[type];
+const title = customTitle || content.title[lang];
+const description = customDescription || content.description[lang];
+const buttonText = customButtonText || content.button[lang];
+const url = customUrl || getSignupUrlWithLang(lang);
+---
+
+{variant === 'gradient' ? (
+  <div class="blog-cta-banner">
+    <h3 class="text-xl md:text-2xl font-bold mb-3">{title}</h3>
+    <p class="text-base md:text-lg opacity-90 mb-6 max-w-2xl mx-auto">{description}</p>
+    <a href={url} class="blog-cta-button">
+      {buttonText}
+      <span class="material-symbols-outlined text-lg">arrow_forward</span>
+    </a>
+  </div>
+) : (
+  <div
+    class="rounded-xl p-6 my-8"
+    style="background: var(--blog-surface); border: 1px solid var(--blog-border);"
+  >
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <div class="flex-1">
+        <h3 class="text-lg font-bold mb-2" style="color: var(--blog-text);">{title}</h3>
+        <p class="text-sm" style="color: var(--blog-text-secondary);">{description}</p>
+      </div>
+      <a
+        href={url}
+        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold text-white whitespace-nowrap"
+        style="background: var(--blog-accent);"
+      >
+        {buttonText}
+        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+)}

@@ -1,0 +1,216 @@
+---
+/**
+ * Blog Post - French (France)
+ *
+ * /fr/blog/[slug]/ - Individual blog post in French (France version)
+ */
+import { getCollection, render } from 'astro:content';
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import CTABanner from '../../../components/blog/CTABanner.astro';
+import AuthorBox from '../../../components/blog/AuthorBox.astro';
+import RelatedPosts from '../../../components/blog/RelatedPosts.astro';
+
+const lang = 'fr-FR';
+
+// Helper to extract slug from post id (e.g., "fr/lowis-vs-cal-ai" -> "lowis-vs-cal-ai")
+function getSlugFromId(id: string): string {
+  return id.replace(/^(fr|fr-FR)\//, '').replace(/\.md$/, '');
+}
+
+// Generate static paths - accept both fr-FR and fr posts
+export async function getStaticPaths() {
+  // Helper must be defined inside getStaticPaths for Astro build
+  const extractSlug = (id: string) => id.replace(/^(fr|fr-FR)\//, '').replace(/\.md$/, '');
+
+  const posts = await getCollection('blog', ({ data }) => {
+    return (data.lang === 'fr-FR' || data.lang === 'fr') && !data.draft;
+  });
+
+  return posts.map((post) => ({
+    params: { slug: extractSlug(post.id) },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const currentSlug = getSlugFromId(post.id);
+
+// Get related posts
+const allPosts = await getCollection('blog', ({ data }) => {
+  return (data.lang === 'fr-FR' || data.lang === 'fr') && !data.draft;
+});
+
+let relatedPosts = [];
+if (post.data.relatedPosts && post.data.relatedPosts.length > 0) {
+  relatedPosts = allPosts.filter(p =>
+    post.data.relatedPosts?.includes(getSlugFromId(p.id)) && p.id !== post.id
+  );
+} else if (post.data.category) {
+  relatedPosts = allPosts
+    .filter(p => p.data.category === post.data.category && p.id !== post.id)
+    .slice(0, 3);
+}
+
+// Get pillar page if cluster
+let pillarPost = null;
+if (post.data.pillarSlug) {
+  pillarPost = allPosts.find(p => getSlugFromId(p.id) === post.data.pillarSlug);
+}
+
+const publishDate = post.data.publishDate.toLocaleDateString('fr-FR', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const updatedDate = post.data.updatedDate?.toLocaleDateString('fr-FR', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const categoryLabels: Record<string, string> = {
+  guides: '📚 Guide',
+  comparatifs: '⚖️ Comparatif',
+  astuces: '💡 Astuces',
+  recettes: '🍽️ Recettes',
+  temoignages: '💬 Témoignage',
+};
+---
+
+<BlogLayout
+  title={post.data.title}
+  description={post.data.description}
+  keywords={post.data.tags?.join(', ')}
+  lang={lang}
+  publishDate={post.data.publishDate}
+  updatedDate={post.data.updatedDate}
+  author={post.data.author}
+  authorRole={post.data.authorRole}
+  image={post.data.image}
+  imageAlt={post.data.imageAlt}
+  category={post.data.category}
+  readingTime={post.data.readingTime}
+  translations={post.data.translations}
+>
+  <article class="py-8 md:py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="mb-8 text-sm" style="color: var(--blog-text-secondary);">
+        <a href="/fr/" class="hover:underline">Accueil</a>
+        <span class="mx-2">/</span>
+        <a href="/fr/blog/" class="hover:underline">Blog</a>
+        <span class="mx-2">/</span>
+        <span style="color: var(--blog-text);">{post.data.title}</span>
+      </nav>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-8">
+          <header class="mb-8">
+            {post.data.category && (
+              <span class="blog-card-category mb-4">
+                {categoryLabels[post.data.category] || post.data.category}
+              </span>
+            )}
+
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6" style="color: var(--blog-text);">
+              {post.data.title}
+            </h1>
+
+            <p class="text-lg md:text-xl mb-6" style="color: var(--blog-text-secondary);">
+              {post.data.description}
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4 text-sm pb-6" style="color: var(--blog-text-muted); border-bottom: 1px solid var(--blog-border);">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-base">person</span>
+                {post.data.author || 'Équipe LOWIS'}
+              </span>
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-base">calendar_today</span>
+                {publishDate}
+              </span>
+              {post.data.readingTime && (
+                <span class="flex items-center gap-1">
+                  <span class="material-symbols-outlined text-base">schedule</span>
+                  {post.data.readingTime} min de lecture
+                </span>
+              )}
+            </div>
+          </header>
+
+          {post.data.image && (
+            <img
+              src={post.data.image}
+              alt={post.data.imageAlt || post.data.title}
+              class="w-full aspect-video object-cover rounded-xl mb-8"
+              style="box-shadow: var(--blog-shadow-lg);"
+            />
+          )}
+
+          {pillarPost && (
+            <div class="mb-8 p-4 rounded-xl" style="background: var(--blog-accent-light); border: 1px solid var(--blog-accent);">
+              <p class="text-sm mb-2" style="color: var(--blog-text-secondary);">
+                📚 Cet article fait partie de notre guide complet:
+              </p>
+              <a
+                href={`/fr/blog/${getSlugFromId(pillarPost.id)}/`}
+                class="font-semibold hover:underline"
+                style="color: var(--blog-accent);"
+              >
+                {pillarPost.data.title} →
+              </a>
+            </div>
+          )}
+
+          <div class="blog-content">
+            <Content />
+          </div>
+
+          <CTABanner lang={lang} type="plan" variant="gradient" />
+          <AuthorBox author={post.data.author || 'Équipe LOWIS'} authorRole={post.data.authorRole} lang={lang} />
+          <RelatedPosts posts={relatedPosts} lang={lang} />
+        </div>
+
+        <aside class="hidden lg:block lg:col-span-4">
+          <div class="sticky top-24">
+            <div class="mb-8 p-6 rounded-xl" style="background: var(--blog-surface); border: 1px solid var(--blog-border);">
+              <h3 class="font-bold mb-4" style="color: var(--blog-text);">Dans cet article</h3>
+              <p class="text-sm" style="color: var(--blog-text-secondary);">
+                Table des matières générée automatiquement.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-xl" style="background: var(--blog-accent-light); border: 1px solid var(--blog-accent);">
+              <h3 class="font-bold mb-2" style="color: var(--blog-text);">Prêt à commencer ?</h3>
+              <p class="text-sm mb-4" style="color: var(--blog-text-secondary);">
+                Créez votre plan personnalisé gratuitement en 2 minutes.
+              </p>
+              <a
+                href="/#pricing"
+                class="inline-flex items-center gap-2 w-full justify-center px-4 py-2.5 rounded-lg font-semibold text-white"
+                style="background: var(--blog-accent);"
+              >
+                Commencer
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              </a>
+            </div>
+
+            {post.data.tags && post.data.tags.length > 0 && (
+              <div class="mt-8">
+                <h3 class="font-bold mb-3 text-sm uppercase tracking-wider" style="color: var(--blog-text-muted);">Tags</h3>
+                <div class="flex flex-wrap gap-2">
+                  {post.data.tags.map((tag) => (
+                    <span class="text-xs px-3 py-1 rounded-full" style="background: var(--blog-surface); border: 1px solid var(--blog-border); color: var(--blog-text-secondary);">
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </aside>
+      </div>
+    </div>
+  </article>
+</BlogLayout>

@@ -1,0 +1,213 @@
+---
+/**
+ * Blog Post - English
+ *
+ * /en/blog/[slug]/ - Individual blog post in English
+ */
+import { getCollection, render } from 'astro:content';
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import CTABanner from '../../../components/blog/CTABanner.astro';
+import AuthorBox from '../../../components/blog/AuthorBox.astro';
+import RelatedPosts from '../../../components/blog/RelatedPosts.astro';
+
+const lang = 'en';
+
+// Helper to extract slug from post id (e.g., "en/lowis-vs-cal-ai" -> "lowis-vs-cal-ai")
+function getSlugFromId(id: string): string {
+  return id.replace(/^en\//, '').replace(/\.md$/, '');
+}
+
+export async function getStaticPaths() {
+  // Helper must be defined inside getStaticPaths for Astro build
+  const extractSlug = (id: string) => id.replace(/^en\//, '').replace(/\.md$/, '');
+
+  const posts = await getCollection('blog', ({ data }) => {
+    return data.lang === 'en' && !data.draft;
+  });
+
+  return posts.map((post) => ({
+    params: { slug: extractSlug(post.id) },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const currentSlug = getSlugFromId(post.id);
+
+const allPosts = await getCollection('blog', ({ data }) => {
+  return data.lang === lang && !data.draft;
+});
+
+let relatedPosts = [];
+if (post.data.relatedPosts && post.data.relatedPosts.length > 0) {
+  relatedPosts = allPosts.filter(p =>
+    post.data.relatedPosts?.includes(getSlugFromId(p.id)) && p.id !== post.id
+  );
+} else if (post.data.category) {
+  relatedPosts = allPosts
+    .filter(p => p.data.category === post.data.category && p.id !== post.id)
+    .slice(0, 3);
+}
+
+let pillarPost = null;
+if (post.data.pillarSlug) {
+  pillarPost = allPosts.find(p => getSlugFromId(p.id) === post.data.pillarSlug);
+}
+
+const publishDate = post.data.publishDate.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const updatedDate = post.data.updatedDate?.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const categoryLabels: Record<string, string> = {
+  guides: '📚 Guide',
+  comparatifs: '⚖️ Comparison',
+  astuces: '💡 Tips',
+  recettes: '🍽️ Recipes',
+  temoignages: '💬 Testimonial',
+};
+---
+
+<BlogLayout
+  title={post.data.title}
+  description={post.data.description}
+  keywords={post.data.tags?.join(', ')}
+  lang={lang}
+  publishDate={post.data.publishDate}
+  updatedDate={post.data.updatedDate}
+  author={post.data.author}
+  authorRole={post.data.authorRole}
+  image={post.data.image}
+  imageAlt={post.data.imageAlt}
+  category={post.data.category}
+  readingTime={post.data.readingTime}
+  translations={post.data.translations}
+>
+  <article class="py-8 md:py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="mb-8 text-sm" style="color: var(--blog-text-secondary);">
+        <a href="/en/" class="hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/en/blog/" class="hover:underline">Blog</a>
+        <span class="mx-2">/</span>
+        <span style="color: var(--blog-text);">{post.data.title}</span>
+      </nav>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-8">
+          <header class="mb-8">
+            {post.data.category && (
+              <span class="blog-card-category mb-4">
+                {categoryLabels[post.data.category] || post.data.category}
+              </span>
+            )}
+
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6" style="color: var(--blog-text);">
+              {post.data.title}
+            </h1>
+
+            <p class="text-lg md:text-xl mb-6" style="color: var(--blog-text-secondary);">
+              {post.data.description}
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4 text-sm pb-6" style="color: var(--blog-text-muted); border-bottom: 1px solid var(--blog-border);">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-base">person</span>
+                {post.data.author || 'LOWIS Team'}
+              </span>
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-base">calendar_today</span>
+                {publishDate}
+              </span>
+              {post.data.readingTime && (
+                <span class="flex items-center gap-1">
+                  <span class="material-symbols-outlined text-base">schedule</span>
+                  {post.data.readingTime} min read
+                </span>
+              )}
+            </div>
+          </header>
+
+          {post.data.image && (
+            <img
+              src={post.data.image}
+              alt={post.data.imageAlt || post.data.title}
+              class="w-full aspect-video object-cover rounded-xl mb-8"
+              style="box-shadow: var(--blog-shadow-lg);"
+            />
+          )}
+
+          {pillarPost && (
+            <div class="mb-8 p-4 rounded-xl" style="background: var(--blog-accent-light); border: 1px solid var(--blog-accent);">
+              <p class="text-sm mb-2" style="color: var(--blog-text-secondary);">
+                📚 This article is part of our complete guide:
+              </p>
+              <a
+                href={`/en/blog/${getSlugFromId(pillarPost.id)}/`}
+                class="font-semibold hover:underline"
+                style="color: var(--blog-accent);"
+              >
+                {pillarPost.data.title} →
+              </a>
+            </div>
+          )}
+
+          <div class="blog-content">
+            <Content />
+          </div>
+
+          <CTABanner lang={lang} type="plan" variant="gradient" />
+          <AuthorBox author={post.data.author || 'LOWIS Team'} authorRole={post.data.authorRole} lang={lang} />
+          <RelatedPosts posts={relatedPosts} lang={lang} />
+        </div>
+
+        <aside class="hidden lg:block lg:col-span-4">
+          <div class="sticky top-24">
+            <div class="mb-8 p-6 rounded-xl" style="background: var(--blog-surface); border: 1px solid var(--blog-border);">
+              <h3 class="font-bold mb-4" style="color: var(--blog-text);">In this article</h3>
+              <p class="text-sm" style="color: var(--blog-text-secondary);">
+                Table of contents auto-generated from headings.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-xl" style="background: var(--blog-accent-light); border: 1px solid var(--blog-accent);">
+              <h3 class="font-bold mb-2" style="color: var(--blog-text);">Ready to start?</h3>
+              <p class="text-sm mb-4" style="color: var(--blog-text-secondary);">
+                Create your personalized plan for free in 2 minutes.
+              </p>
+              <a
+                href="/#pricing"
+                class="inline-flex items-center gap-2 w-full justify-center px-4 py-2.5 rounded-lg font-semibold text-white"
+                style="background: var(--blog-accent);"
+              >
+                Get Started
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              </a>
+            </div>
+
+            {post.data.tags && post.data.tags.length > 0 && (
+              <div class="mt-8">
+                <h3 class="font-bold mb-3 text-sm uppercase tracking-wider" style="color: var(--blog-text-muted);">Tags</h3>
+                <div class="flex flex-wrap gap-2">
+                  {post.data.tags.map((tag) => (
+                    <span class="text-xs px-3 py-1 rounded-full" style="background: var(--blog-surface); border: 1px solid var(--blog-border); color: var(--blog-text-secondary);">
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </aside>
+      </div>
+    </div>
+  </article>
+</BlogLayout>

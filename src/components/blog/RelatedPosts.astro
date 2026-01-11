@@ -1,0 +1,64 @@
+---
+/**
+ * RelatedPosts.astro
+ *
+ * Shows related blog posts at the end of an article
+ * Supports internal linking strategy (cluster → cluster)
+ */
+import type { Language } from '../../i18n';
+import BlogCard from './BlogCard.astro';
+
+interface Post {
+  slug: string;
+  data: {
+    title: string;
+    description: string;
+    image?: string;
+    imageAlt?: string;
+    category?: string;
+    publishDate: Date;
+    readingTime?: number;
+    lang: Language;
+  };
+}
+
+interface Props {
+  posts: Post[];
+  lang: Language;
+  title?: string;
+}
+
+const { posts, lang, title } = Astro.props;
+
+// Section title
+const sectionTitle = title || {
+  fr: 'Articles connexes',
+  'fr-FR': 'Articles connexes',
+  es: 'Artículos relacionados',
+  en: 'Related articles',
+}[lang];
+---
+
+{posts.length > 0 && (
+  <section class="mt-16">
+    <h2 class="text-2xl font-bold mb-8" style="color: var(--blog-text);">
+      {sectionTitle}
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {posts.slice(0, 3).map((post) => (
+        <BlogCard
+          title={post.data.title}
+          description={post.data.description}
+          slug={post.slug}
+          image={post.data.image}
+          imageAlt={post.data.imageAlt}
+          category={post.data.category}
+          publishDate={post.data.publishDate}
+          readingTime={post.data.readingTime}
+          lang={lang}
+        />
+      ))}
+    </div>
+  </section>
+)}

@@ -1,0 +1,182 @@
+---
+/**
+ * Blog Index - French (Morocco) - Default
+ *
+ * /blog/ - Lists all blog posts in French
+ */
+import { getCollection } from 'astro:content';
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import BlogCard from '../../components/blog/BlogCard.astro';
+import CTABanner from '../../components/blog/CTABanner.astro';
+
+const lang = 'fr';
+
+// Helper to extract slug from post id (e.g., "fr/lowis-vs-cal-ai" -> "lowis-vs-cal-ai")
+function getSlugFromId(id: string): string {
+  return id.replace(/^fr\//, '').replace(/\.md$/, '');
+}
+
+// Get all French blog posts, exclude drafts
+const allPosts = await getCollection('blog', ({ data }) => {
+  return data.lang === lang && !data.draft;
+});
+
+// Sort by publish date (newest first)
+const posts = allPosts.sort((a, b) =>
+  b.data.publishDate.getTime() - a.data.publishDate.getTime()
+);
+
+// Group posts by category for filtering
+const categories = [...new Set(posts.map(post => post.data.category))].filter(Boolean);
+
+// SEO metadata
+const title = 'Blog LOWIS - Nutrition, Perte de Poids et Conseils IA';
+const description = 'Découvrez nos guides complets sur la nutrition, la perte de poids et comment notre IA peut vous aider à atteindre vos objectifs. Conseils adaptés au Maroc.';
+const keywords = 'nutrition maroc, perte de poids, compteur calories ia, régime marocain, coach nutrition';
+---
+
+<BlogLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  lang={lang}
+>
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24" style="background: var(--blog-surface);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6" style="color: var(--blog-text);">
+          Blog <span style="color: var(--blog-accent);">LOWIS</span>
+        </h1>
+        <p class="text-lg md:text-xl" style="color: var(--blog-text-secondary);">
+          Guides pratiques, comparatifs et conseils pour perdre du poids intelligemment avec l'aide de l'IA. Adapté à la cuisine marocaine.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Posts Grid -->
+  <section class="py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {posts.length > 0 ? (
+        <>
+          <!-- Featured post (first one) -->
+          {posts[0] && (
+            <div class="mb-12">
+              <h2 class="text-sm font-semibold uppercase tracking-wider mb-4" style="color: var(--blog-accent);">
+                Article à la une
+              </h2>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="blog-card overflow-hidden">
+                  {posts[0].data.image ? (
+                    <img
+                      src={posts[0].data.image}
+                      alt={posts[0].data.imageAlt || posts[0].data.title}
+                      class="w-full aspect-video object-cover"
+                    />
+                  ) : (
+                    <div class="w-full aspect-video flex items-center justify-center" style="background: var(--blog-accent-light);">
+                      <span class="text-8xl">📚</span>
+                    </div>
+                  )}
+                </div>
+                <div>
+                  {posts[0].data.category && (
+                    <span class="blog-card-category">
+                      {posts[0].data.category === 'guides' ? '📚 Guide' :
+                       posts[0].data.category === 'comparatifs' ? '⚖️ Comparatif' :
+                       posts[0].data.category === 'astuces' ? '💡 Astuces' :
+                       posts[0].data.category === 'recettes' ? '🍽️ Recettes' :
+                       posts[0].data.category === 'temoignages' ? '💬 Témoignage' : posts[0].data.category}
+                    </span>
+                  )}
+                  <h3 class="text-2xl md:text-3xl font-bold mb-4" style="color: var(--blog-text);">
+                    <a href={`/blog/${getSlugFromId(posts[0].id)}/`} class="hover:underline">
+                      {posts[0].data.title}
+                    </a>
+                  </h3>
+                  <p class="text-base mb-4" style="color: var(--blog-text-secondary);">
+                    {posts[0].data.description}
+                  </p>
+                  <div class="flex items-center gap-4 text-sm" style="color: var(--blog-text-muted);">
+                    <span class="flex items-center gap-1">
+                      <span class="material-symbols-outlined text-base">calendar_today</span>
+                      {posts[0].data.publishDate.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' })}
+                    </span>
+                    {posts[0].data.readingTime && (
+                      <span class="flex items-center gap-1">
+                        <span class="material-symbols-outlined text-base">schedule</span>
+                        {posts[0].data.readingTime} min de lecture
+                      </span>
+                    )}
+                  </div>
+                  <a
+                    href={`/blog/${getSlugFromId(posts[0].id)}/`}
+                    class="inline-flex items-center gap-2 mt-6 font-semibold"
+                    style="color: var(--blog-accent);"
+                  >
+                    Lire l'article
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          )}
+
+          <!-- CTA Banner -->
+          <CTABanner lang={lang} type="plan" variant="subtle" />
+
+          <!-- All posts grid -->
+          {posts.length > 1 && (
+            <div class="mt-12">
+              <h2 class="text-sm font-semibold uppercase tracking-wider mb-6" style="color: var(--blog-accent);">
+                Tous les articles
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {posts.slice(1).map((post) => (
+                  <BlogCard
+                    title={post.data.title}
+                    description={post.data.description}
+                    slug={getSlugFromId(post.id)}
+                    image={post.data.image}
+                    imageAlt={post.data.imageAlt}
+                    category={post.data.category}
+                    publishDate={post.data.publishDate}
+                    readingTime={post.data.readingTime}
+                    lang={lang}
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+        </>
+      ) : (
+        <!-- Empty state -->
+        <div class="text-center py-16">
+          <span class="text-6xl mb-4 block">📝</span>
+          <h2 class="text-2xl font-bold mb-2" style="color: var(--blog-text);">
+            Bientôt disponible
+          </h2>
+          <p style="color: var(--blog-text-secondary);">
+            Nos premiers articles arrivent très prochainement. En attendant, découvrez LOWIS !
+          </p>
+          <a
+            href="/"
+            class="inline-flex items-center gap-2 mt-6 px-6 py-3 rounded-xl font-semibold text-white"
+            style="background: var(--blog-accent);"
+          >
+            Découvrir LOWIS
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="py-12" style="background: var(--blog-surface);">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <CTABanner lang={lang} type="trial" variant="gradient" />
+    </div>
+  </section>
+</BlogLayout>

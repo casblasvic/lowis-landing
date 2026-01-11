@@ -12,12 +12,56 @@ export const languages = {
 } as const;
 
 // Metadata para el selector de idioma con contexto de país
+// region: 'MA' = Marruecos/Maghreb, 'FR' = Francia, 'INT' = Internacional
 export const languageMetadata = {
-  'fr': { name: 'Français', flag: '🇲🇦', country: 'Maroc' },
-  'fr-FR': { name: 'Français', flag: '🇫🇷', country: 'France' },
-  'en': { name: 'English', flag: '🌍' },
-  'es': { name: 'Español', flag: '🌍' },
+  'fr': { name: 'Français', flag: '🇲🇦', country: 'Maroc', region: 'MA' },
+  'fr-FR': { name: 'Français', flag: '🇫🇷', country: 'France', region: 'FR' },
+  'en': { name: 'English', flag: '🇬🇧', country: undefined, region: 'INT' },
+  'es': { name: 'Español', flag: '🇪🇸', country: undefined, region: 'INT' },
 } as const;
+
+// Nombres de idiomas traducidos para cada locale
+export const translatedLanguageNames: Record<Language, Record<Language, string>> = {
+  'fr': {
+    'fr': 'Français (Maroc)',
+    'fr-FR': 'Français (France)',
+    'en': 'Anglais',
+    'es': 'Espagnol',
+  },
+  'fr-FR': {
+    'fr': 'Français (Maroc)',
+    'fr-FR': 'Français (France)',
+    'en': 'Anglais',
+    'es': 'Espagnol',
+  },
+  'en': {
+    'fr': 'French (Morocco)',
+    'fr-FR': 'French (France)',
+    'en': 'English',
+    'es': 'Spanish',
+  },
+  'es': {
+    'fr': 'Francés (Marruecos)',
+    'fr-FR': 'Francés (Francia)',
+    'en': 'Inglés',
+    'es': 'Español',
+  },
+};
+
+// Obtener idiomas disponibles según región detectada
+// CRÍTICO: Un usuario de Marruecos NO debe ver la opción de Francia (precios diferentes)
+export function getAvailableLanguages(detectedRegion: 'MA' | 'FR' | 'INT' | null): Language[] {
+  if (detectedRegion === 'MA') {
+    // Usuarios de Marruecos/Maghreb: solo francés Marruecos + idiomas internacionales
+    return ['fr', 'en', 'es'];
+  }
+  if (detectedRegion === 'FR') {
+    // Usuarios de Francia: solo francés Francia + idiomas internacionales
+    return ['fr-FR', 'en', 'es'];
+  }
+  // Internacional o no detectado: todos los idiomas internacionales
+  return ['en', 'es', 'fr'];
+}
 
 // Rutas disponibles
 export const routeLanguages = ['fr', 'es', 'en', 'fr-FR'] as const;

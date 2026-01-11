@@ -1,0 +1,59 @@
+---
+/**
+ * AuthorBox.astro
+ *
+ * Author information box for E-E-A-T compliance
+ * Shows author name, role, and brief bio
+ */
+import type { Language } from '../../i18n';
+
+interface Props {
+  author: string;
+  authorRole?: string;
+  lang: Language;
+}
+
+const { author, authorRole, lang } = Astro.props;
+
+// Default role if not specified
+const defaultRoles: Record<Language, string> = {
+  fr: 'Équipe éditoriale LOWIS',
+  'fr-FR': 'Équipe éditoriale LOWIS',
+  es: 'Equipo editorial LOWIS',
+  en: 'LOWIS Editorial Team',
+};
+
+const role = authorRole || defaultRoles[lang];
+
+// Bio text
+const bioText: Record<Language, string> = {
+  fr: 'Notre équipe combine expertise en nutrition et technologie IA pour vous apporter des conseils pratiques et basés sur la science.',
+  'fr-FR': 'Notre équipe combine expertise en nutrition et technologie IA pour vous apporter des conseils pratiques et basés sur la science.',
+  es: 'Nuestro equipo combina experiencia en nutrición y tecnología IA para brindarte consejos prácticos basados en la ciencia.',
+  en: 'Our team combines nutrition expertise and AI technology to bring you practical, science-based advice.',
+};
+
+// Get initials for avatar
+const initials = author
+  .split(' ')
+  .map(word => word[0])
+  .slice(0, 2)
+  .join('')
+  .toUpperCase();
+---
+
+<div class="blog-author-box">
+  <!-- Avatar -->
+  <div class="blog-author-avatar">
+    <span style="color: var(--blog-accent); font-weight: 600;">{initials}</span>
+  </div>
+
+  <!-- Info -->
+  <div class="flex-1">
+    <div class="blog-author-name">{author}</div>
+    <div class="blog-author-role">{role}</div>
+    <p class="text-sm mt-2" style="color: var(--blog-text-secondary);">
+      {bioText[lang]}
+    </p>
+  </div>
+</div>

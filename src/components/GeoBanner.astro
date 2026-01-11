@@ -44,6 +44,8 @@
 
     // Usar caché solo si tiene menos de 24 horas
     if (cached && cachedTime && (now - parseInt(cachedTime)) < ONE_DAY) {
+      // Disparar evento para que otros componentes sepan el país
+      window.dispatchEvent(new CustomEvent('lowis-country-detected', { detail: cached }));
       return cached;
     }
 
@@ -56,14 +58,21 @@
       if (data.country_code) {
         localStorage.setItem('lowis_country', data.country_code);
         localStorage.setItem('lowis_country_time', now.toString());
+        // Disparar evento para que otros componentes (como Header) filtren opciones
+        window.dispatchEvent(new CustomEvent('lowis-country-detected', { detail: data.country_code }));
         return data.country_code;
       }
     } catch (error) {
       console.warn('Geo-detection failed, using cached or default');
       // Si hay caché aunque esté viejo, usarlo
-      if (cached) return cached;
+      if (cached) {
+        window.dispatchEvent(new CustomEvent('lowis-country-detected', { detail: cached }));
+        return cached;
+      }
     }
-    return 'MA'; // Default a Marruecos si falla
+    // Default a Marruecos si falla
+    window.dispatchEvent(new CustomEvent('lowis-country-detected', { detail: 'MA' }));
+    return 'MA';
   }
 
   // Configuración de mensajes por país
