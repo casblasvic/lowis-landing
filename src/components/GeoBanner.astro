@@ -50,12 +50,12 @@
     }
 
     try {
-      // Usar ipapi.co (gratis hasta 1000 req/día)
-      const res = await fetch('https://ipapi.co/json/', {
+      // Usar ipwho.is (gratis, CORS habilitado, sin límite estricto)
+      const res = await fetch('https://ipwho.is/', {
         signal: AbortSignal.timeout(5000) // Timeout 5 segundos
       });
       const data = await res.json();
-      if (data.country_code) {
+      if (data.success && data.country_code) {
         localStorage.setItem('lowis_country', data.country_code);
         localStorage.setItem('lowis_country_time', now.toString());
         // Disparar evento para que otros componentes (como Header) filtren opciones
