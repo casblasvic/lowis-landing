@@ -20,29 +20,29 @@ export const languageMetadata = {
   'es': { name: 'Español', flag: '🇪🇸', country: undefined, region: 'INT' },
 } as const;
 
-// Nombres de idiomas traducidos para cada locale
+// Nombres de idiomas traducidos para cada locale (sin país, más limpio)
 export const translatedLanguageNames: Record<Language, Record<Language, string>> = {
   'fr': {
-    'fr': 'Français (Maroc)',
-    'fr-FR': 'Français (France)',
+    'fr': 'Français',
+    'fr-FR': 'Français',
     'en': 'Anglais',
     'es': 'Espagnol',
   },
   'fr-FR': {
-    'fr': 'Français (Maroc)',
-    'fr-FR': 'Français (France)',
+    'fr': 'Français',
+    'fr-FR': 'Français',
     'en': 'Anglais',
     'es': 'Espagnol',
   },
   'en': {
-    'fr': 'French (Morocco)',
-    'fr-FR': 'French (France)',
+    'fr': 'French',
+    'fr-FR': 'French',
     'en': 'English',
     'es': 'Spanish',
   },
   'es': {
-    'fr': 'Francés (Marruecos)',
-    'fr-FR': 'Francés (Francia)',
+    'fr': 'Francés',
+    'fr-FR': 'Francés',
     'en': 'Inglés',
     'es': 'Español',
   },
