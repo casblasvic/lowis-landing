@@ -54,13 +54,25 @@ const faqSchema = {
             </span>
           </summary>
           <div class="px-6 pb-6">
-            <p class="text-text-secondary leading-relaxed">{item.answer}</p>
+            <p class="text-text-secondary leading-relaxed faq-answer" set:html={item.answer}></p>
           </div>
         </details>
       ))}
     </div>
   </div>
 </section>
+
+<style>
+  .faq-answer :global(a) {
+    color: var(--color-primary-orange, #f97316);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s;
+  }
+  .faq-answer :global(a:hover) {
+    color: var(--color-primary-orange-hover, #ea580c);
+  }
+</style>
 
 <script>
   // Optional: Close other accordions when one opens (exclusive accordion)

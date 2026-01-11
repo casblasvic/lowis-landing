@@ -15,7 +15,7 @@ translations:
   en: "lowis-vs-cal-ai"
   es: "lowis-vs-cal-ai"
 ctaType: "compare"
-image: "/images/blog/lowis-vs-cal-ai-comparatif-compteur-calories-ia.jpg"
+image: "lowis-vs-cal-ai/hero.jpg"
 imageAlt: "Comparatif LOWIS vs Cal AI - Applications de comptage de calories avec IA en 2025"
 ---
 

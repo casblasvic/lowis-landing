@@ -9,6 +9,7 @@
     "howItWorks": "Comment ça marche",
     "pricing": "Tarifs",
     "faq": "FAQ",
+    "blog": "Conseils",
     "cta": "Commencez maintenant !",
     "login": "Se connecter"
   },
@@ -472,7 +473,7 @@
       },
       {
         "question": "Quelle est la différence avec les compteurs de calories?",
-        "answer": "Les compteurs de calories vous laissent seul avec des chiffres. LOWIS surveille +40 indicateurs (sommeil, stress, cycle, digestion...), LOWIS réagit instantanément comme un coach personnel, et nos nutritionnistes ajustent votre plan chaque semaine. Un vrai accompagnement, pas une calculatrice."
+        "answer": "Les compteurs de calories vous laissent seul avec des chiffres. LOWIS surveille +40 indicateurs (sommeil, stress, cycle, digestion...), LOWIS réagit instantanément comme un coach personnel, et nos nutritionnistes ajustent votre plan chaque semaine. Un vrai accompagnement, pas une calculatrice. <a href=\"/blog/lowis-vs-cal-ai/\">Découvrez notre comparatif complet LOWIS vs Cal AI</a>."
       },
       {
         "question": "Comment LOWIS s'adapte pendant le Ramadan?",
@@ -505,7 +506,8 @@
       "title": "Produit",
       "features": "Fonctionnalités",
       "pricing": "Tarifs",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "blog": "Conseils"
     },
     "legal": {
       "title": "Légal",

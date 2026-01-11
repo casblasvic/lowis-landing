@@ -10,6 +10,7 @@ interface Props {
       howItWorks: string;
       pricing: string;
       faq: string;
+      blog: string;
       cta: string;
       login: string;
     };
@@ -24,6 +25,7 @@ const navLinks = [
   { href: '#how-it-works', label: t.nav.howItWorks },
   { href: '#pricing', label: t.nav.pricing },
   { href: '#faq', label: t.nav.faq },
+  { href: getPathWithLang('/blog/', lang), label: t.nav.blog },
 ];
 
 // Language options for switcher - nombres traducidos según idioma actual
@@ -103,13 +105,14 @@ const currentDisplayName = translatedLanguageNames[lang][lang];
           </div>
         </div>
 
-        <!-- Login Button -->
+        <!-- Login Button - Visible on all screen sizes -->
         <a
           href={getLoginUrlWithLang(lang)}
-          class="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-text-secondary hover:text-white transition-colors px-3 py-2"
+          class="inline-flex items-center gap-1.5 text-sm font-medium text-white hover:text-primary-orange transition-colors px-3 py-2 border border-dark-border hover:border-primary-orange rounded-lg bg-dark-surface/50"
+          title={t.nav.login}
         >
           <span class="material-symbols-outlined text-lg">login</span>
-          {t.nav.login}
+          <span class="hidden sm:inline">{t.nav.login}</span>
         </a>
 
         <!-- CTA Button -->
@@ -160,9 +163,20 @@ const currentDisplayName = translatedLanguageNames[lang][lang];
   const menuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   const menuIcon = document.getElementById('menu-icon');
+  const header = document.querySelector('header');
+
+  // Helper function to close the mobile menu
+  function closeMobileMenu() {
+    if (mobileMenu && menuIcon && !mobileMenu.classList.contains('hidden')) {
+      mobileMenu.classList.add('hidden');
+      menuIcon.textContent = 'menu';
+    }
+  }
 
   if (menuBtn && mobileMenu && menuIcon) {
-    menuBtn.addEventListener('click', () => {
+    // Toggle menu on button click
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
       const isHidden = mobileMenu.classList.contains('hidden');
       mobileMenu.classList.toggle('hidden');
       menuIcon.textContent = isHidden ? 'close' : 'menu';
@@ -171,9 +185,33 @@ const currentDisplayName = translatedLanguageNames[lang][lang];
     // Close menu when clicking a link
     mobileMenu.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        menuIcon.textContent = 'menu';
+        closeMobileMenu();
       });
+    });
+
+    // Close menu on scroll
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', () => {
+      // Close if scrolled more than 50px in any direction
+      if (Math.abs(window.scrollY - lastScrollY) > 50) {
+        closeMobileMenu();
+        lastScrollY = window.scrollY;
+      }
+    }, { passive: true });
+
+    // Close menu when clicking outside the header
+    document.addEventListener('click', (e) => {
+      const target = e.target as Node;
+      if (header && !header.contains(target)) {
+        closeMobileMenu();
+      }
+    });
+
+    // Close menu on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeMobileMenu();
+      }
     });
   }
 

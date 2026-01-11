@@ -224,10 +224,8 @@ const articleStructuredData = publishDate ? {
     <script is:inline>
       (function() {
         const stored = localStorage.getItem('lowis_blog_theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        // Default to light, but respect stored preference or system preference
-        if (stored === 'dark' || (!stored && prefersDark)) {
+        // Default to light mode - only go dark if user explicitly chose it
+        if (stored === 'dark') {
           document.documentElement.classList.add('dark');
         }
       })();
@@ -269,8 +267,12 @@ const articleStructuredData = publishDate ? {
               aria-label={t.theme[lang]}
               title={t.theme[lang]}
             >
-              <span class="material-symbols-outlined sun-icon">light_mode</span>
-              <span class="material-symbols-outlined moon-icon hidden">dark_mode</span>
+              <svg class="sun-icon w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              <svg class="moon-icon w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+              </svg>
             </button>
 
             <!-- CTA Button (desktop) -->
@@ -286,6 +288,9 @@ const articleStructuredData = publishDate ? {
         </div>
       </nav>
     </header>
+
+    <!-- Reading Progress Bar -->
+    <div id="reading-progress" class="fixed top-0 left-0 h-1 z-[60] transition-all duration-150" style="background: linear-gradient(90deg, var(--blog-accent), #DC2626); width: 0%;"></div>
 
     <!-- Main Content -->
     <main>
@@ -343,8 +348,9 @@ const articleStructuredData = publishDate ? {
       </a>
     </div>
 
-    <!-- Theme Toggle Script -->
+    <!-- Theme Toggle & Progress Bar Script -->
     <script>
+      // Theme Toggle
       const themeToggle = document.getElementById('theme-toggle');
       const sunIcon = themeToggle?.querySelector('.sun-icon');
       const moonIcon = themeToggle?.querySelector('.moon-icon');
@@ -373,6 +379,21 @@ const articleStructuredData = publishDate ? {
           updateIcons();
         }
       });
+
+      // Reading Progress Bar
+      const progressBar = document.getElementById('reading-progress');
+
+      function updateProgress() {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        if (progressBar) {
+          progressBar.style.width = `${Math.min(progress, 100)}%`;
+        }
+      }
+
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress(); // Initial call
     </script>
   </body>
 </html>

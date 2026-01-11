@@ -9,6 +9,7 @@
     "howItWorks": "How it Works",
     "pricing": "Pricing",
     "faq": "FAQ",
+    "blog": "Tips",
     "cta": "Start Now!",
     "login": "Log in"
   },
@@ -505,7 +506,8 @@
       "title": "Product",
       "features": "Features",
       "pricing": "Pricing",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "blog": "Tips & Guides"
     },
     "legal": {
       "title": "Legal",

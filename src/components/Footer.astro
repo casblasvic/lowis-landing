@@ -12,6 +12,7 @@ interface Props {
         features: string;
         pricing: string;
         faq: string;
+        blog: string;
       };
       legal: {
         title: string;
@@ -101,6 +102,11 @@ const currentYear = new Date().getFullYear();
           <li>
             <a href="#faq" class="text-text-secondary hover:text-white transition-colors text-sm">
               {t.footer.product.faq}
+            </a>
+          </li>
+          <li>
+            <a href={getPathWithLang('/blog/', lang)} class="text-text-secondary hover:text-white transition-colors text-sm">
+              {t.footer.product.blog}
             </a>
           </li>
         </ul>

@@ -9,8 +9,18 @@ import BlogLayout from '../../../layouts/BlogLayout.astro';
 import CTABanner from '../../../components/blog/CTABanner.astro';
 import AuthorBox from '../../../components/blog/AuthorBox.astro';
 import RelatedPosts from '../../../components/blog/RelatedPosts.astro';
+import { getBlogImageUrl } from '../../../lib/storage';
 
 const lang = 'fr-FR';
+
+/**
+ * Resolve image path to full URL
+ */
+function resolveImageUrl(imagePath: string | undefined): string | undefined {
+  if (!imagePath) return undefined;
+  if (imagePath.startsWith('http') || imagePath.startsWith('/')) return imagePath;
+  return getBlogImageUrl(imagePath);
+}
 
 // Helper to extract slug from post id (e.g., "fr/lowis-vs-cal-ai" -> "lowis-vs-cal-ai")
 function getSlugFromId(id: string): string {
@@ -88,7 +98,7 @@ const categoryLabels: Record<string, string> = {
   updatedDate={post.data.updatedDate}
   author={post.data.author}
   authorRole={post.data.authorRole}
-  image={post.data.image}
+  image={resolveImageUrl(post.data.image)}
   imageAlt={post.data.imageAlt}
   category={post.data.category}
   readingTime={post.data.readingTime}
@@ -126,22 +136,12 @@ const categoryLabels: Record<string, string> = {
                 <span class="material-symbols-outlined text-base">person</span>
                 {post.data.author || 'Équipe LOWIS'}
               </span>
-              <span class="flex items-center gap-1">
-                <span class="material-symbols-outlined text-base">calendar_today</span>
-                {publishDate}
-              </span>
-              {post.data.readingTime && (
-                <span class="flex items-center gap-1">
-                  <span class="material-symbols-outlined text-base">schedule</span>
-                  {post.data.readingTime} min de lecture
-                </span>
-              )}
             </div>
           </header>
 
           {post.data.image && (
             <img
-              src={post.data.image}
+              src={resolveImageUrl(post.data.image)}
               alt={post.data.imageAlt || post.data.title}
               class="w-full aspect-video object-cover rounded-xl mb-8"
               style="box-shadow: var(--blog-shadow-lg);"
