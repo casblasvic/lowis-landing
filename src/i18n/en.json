@@ -772,5 +772,53 @@
         "emailLabel": "Email"
       }
     }
+  },
+  "cookieConsent": {
+    "title": "This site uses cookies",
+    "description": "We use cookies to improve your experience and analyze our site traffic.",
+    "learnMore": "Learn more",
+    "acceptAll": "Accept all",
+    "rejectAll": "Reject all",
+    "customize": "Customize"
+  },
+  "cookiesPage": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated",
+    "intro": {
+      "title": "About this policy",
+      "content": "This policy explains how LOWIS uses cookies and similar technologies when you visit our website."
+    },
+    "whatAreCookies": {
+      "title": "What are cookies?",
+      "content": "A cookie is a small text file stored on your device when you visit a website. Cookies allow the site to remember your preferences and improve your browsing experience."
+    },
+    "cookiesWeUse": {
+      "title": "Cookies we use",
+      "essential": {
+        "title": "Essential cookies",
+        "description": "These cookies are necessary for the site to function. They store your language preference and consent choices.",
+        "examples": "Examples: lowis_country, lowis_lang_chosen, lowis_cookie_consent"
+      },
+      "analytics": {
+        "title": "Analytics cookies",
+        "description": "These cookies help us understand how visitors use our site. This information is used to improve our services.",
+        "examples": "Provider: Google Analytics (GA4)",
+        "note": "These cookies are only activated after your explicit consent."
+      }
+    },
+    "manageCookies": {
+      "title": "How to manage your cookies",
+      "content": "You can change your cookie preferences at any time using the button below or by configuring your browser settings.",
+      "browserSettings": "Most browsers allow you to block or delete cookies. Check your browser documentation for more information."
+    },
+    "thirdParty": {
+      "title": "Third-party cookies",
+      "content": "We use Google Analytics to analyze our site traffic. Google may collect information in accordance with its own privacy policy."
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "For any questions about our use of cookies, contact us at"
+    },
+    "updatePreferences": "Update my preferences"
   }
 }

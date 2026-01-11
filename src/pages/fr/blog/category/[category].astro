@@ -1,0 +1,284 @@
+---
+/**
+ * Blog Category Page - French (explicit /fr/ prefix)
+ *
+ * /fr/blog/category/[category]/ - SEO silo pages for each category
+ * Dedicated landing pages for category-based SEO positioning
+ */
+import { getCollection } from 'astro:content';
+import BlogLayout from '../../../../layouts/BlogLayout.astro';
+import CTABanner from '../../../../components/blog/CTABanner.astro';
+import { getBlogImageUrl } from '../../../../lib/storage';
+
+const lang = 'fr';
+
+// Category configuration with SEO data
+const categoryConfig: Record<string, {
+  label: string;
+  icon: string;
+  color: string;
+  title: string;
+  description: string;
+  keywords: string;
+}> = {
+  guides: {
+    label: 'Guides',
+    icon: 'menu_book',
+    color: '#059669',
+    title: 'Guides Nutrition et Perte de Poids | Blog LOWIS',
+    description: 'Guides complets sur la nutrition, la perte de poids et le bien-être. Conseils experts et plans personnalisés avec l\'IA LOWIS.',
+    keywords: 'guide nutrition, guide perte de poids, conseils régime, nutrition maroc, plan alimentaire'
+  },
+  comparatifs: {
+    label: 'Comparatifs',
+    icon: 'compare',
+    color: '#7C3AED',
+    title: 'Comparatifs Apps Nutrition | LOWIS vs Alternatives',
+    description: 'Comparaisons détaillées entre LOWIS et les autres applications de nutrition. Découvrez quelle app correspond le mieux à vos besoins.',
+    keywords: 'comparatif app nutrition, myfitnesspal alternative, yazio avis, lose it comparaison, meilleure app calories'
+  },
+  astuces: {
+    label: 'Astuces',
+    icon: 'lightbulb',
+    color: '#F59E0B',
+    title: 'Astuces Nutrition et Minceur | Conseils Pratiques',
+    description: 'Astuces pratiques pour perdre du poids efficacement. Conseils quotidiens pour une alimentation saine au quotidien.',
+    keywords: 'astuces minceur, conseils perte poids, tips nutrition, habitudes saines, alimentation équilibrée'
+  },
+  recettes: {
+    label: 'Recettes',
+    icon: 'restaurant',
+    color: '#EF4444',
+    title: 'Recettes Healthy et Équilibrées | Cuisine Marocaine',
+    description: 'Recettes saines adaptées à la cuisine marocaine. Tajines, couscous et plats traditionnels en version équilibrée.',
+    keywords: 'recettes healthy, cuisine marocaine saine, tajine régime, couscous calories, recettes diététiques'
+  },
+  temoignages: {
+    label: 'Témoignages',
+    icon: 'chat',
+    color: '#3B82F6',
+    title: 'Témoignages et Résultats | Réussites LOWIS',
+    description: 'Découvrez les témoignages de nos utilisateurs et leurs résultats avec LOWIS. Histoires de transformation réelles.',
+    keywords: 'témoignages perte poids, résultats régime, avant après, success stories, transformation'
+  },
+};
+
+// Generate static paths for all categories
+export async function getStaticPaths() {
+  const categories = ['guides', 'comparatifs', 'astuces', 'recettes', 'temoignages'];
+  return categories.map((category) => ({
+    params: { category },
+  }));
+}
+
+const { category } = Astro.params;
+const config = categoryConfig[category];
+
+if (!config) {
+  return Astro.redirect('/fr/blog/');
+}
+
+/**
+ * Resolve image path to full URL
+ */
+function resolveImageUrl(imagePath: string | undefined): string | undefined {
+  if (!imagePath) return undefined;
+  if (imagePath.startsWith('http') || imagePath.startsWith('/')) return imagePath;
+  return getBlogImageUrl(imagePath);
+}
+
+// Helper to extract slug from post id
+function getSlugFromId(id: string): string {
+  return id.replace(/^fr\//, '').replace(/\.md$/, '');
+}
+
+// Get all French blog posts in this category
+const allPosts = await getCollection('blog', ({ data }) => {
+  return data.lang === lang && !data.draft && data.category === category;
+});
+
+// Sort by publish date (newest first)
+const posts = allPosts.sort((a, b) =>
+  b.data.publishDate.getTime() - a.data.publishDate.getTime()
+);
+
+// Format date
+function formatDate(date: Date): string {
+  return date.toLocaleDateString('fr-FR', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric'
+  });
+}
+---
+
+<BlogLayout
+  title={config.title}
+  description={config.description}
+  keywords={config.keywords}
+  lang={lang}
+>
+  <!-- Category Hero -->
+  <section class="py-12 md:py-16" style="background: var(--blog-bg);">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <!-- Category badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-white font-medium mb-6" style={`background: ${config.color};`}>
+        <span class="material-symbols-outlined">{config.icon}</span>
+        {config.label}
+      </div>
+
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight" style="color: var(--blog-text);">
+        {config.label}
+      </h1>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed" style="color: var(--blog-text-secondary);">
+        {config.description}
+      </p>
+
+      <!-- Breadcrumb -->
+      <nav class="mt-8 text-sm" style="color: var(--blog-text-muted);">
+        <a href="/fr/blog/" class="hover:underline" style="color: var(--blog-accent);">Blog</a>
+        <span class="mx-2">›</span>
+        <span>{config.label}</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Posts Section -->
+  <section class="pb-16 md:pb-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      {posts.length > 0 ? (
+        <>
+          <!-- Posts count -->
+          <div class="flex items-center justify-between mb-8">
+            <p class="text-sm font-medium" style="color: var(--blog-text-muted);">
+              {posts.length} article{posts.length > 1 ? 's' : ''} dans cette catégorie
+            </p>
+            <a href="/fr/blog/" class="inline-flex items-center gap-1 text-sm font-medium transition-colors hover:underline" style="color: var(--blog-accent);">
+              <span class="material-symbols-outlined text-base">arrow_back</span>
+              Tous les articles
+            </a>
+          </div>
+
+          <!-- Posts Grid -->
+          <div class="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {posts.map((post) => (
+              <a
+                href={`/fr/blog/${getSlugFromId(post.id)}/`}
+                class="group block"
+              >
+                <article class="h-full rounded-xl overflow-hidden transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-1" style="background: var(--blog-surface); border: 1px solid var(--blog-border);">
+                  <!-- Image -->
+                  <div class="relative aspect-[16/10] overflow-hidden">
+                    {post.data.image ? (
+                      <img
+                        src={resolveImageUrl(post.data.image)}
+                        alt={post.data.imageAlt || post.data.title}
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div class="w-full h-full flex items-center justify-center" style={`background: linear-gradient(135deg, ${config.color}20, var(--blog-surface));`}>
+                        <span class="material-symbols-outlined" style={`font-size: 3rem; color: ${config.color}; opacity: 0.5;`}>article</span>
+                      </div>
+                    )}
+                    <!-- Category badge -->
+                    <span
+                      class="absolute top-3 left-3 inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium text-white"
+                      style={`background: ${config.color};`}
+                    >
+                      <span class="material-symbols-outlined text-xs">{config.icon}</span>
+                      {config.label}
+                    </span>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="p-5">
+                    <div class="flex items-center gap-2 mb-2">
+                      <span class="text-xs" style="color: var(--blog-text-muted);">
+                        {formatDate(post.data.publishDate)}
+                      </span>
+                      {post.data.readingTime && (
+                        <>
+                          <span style="color: var(--blog-text-muted);">·</span>
+                          <span class="text-xs" style="color: var(--blog-text-muted);">
+                            {post.data.readingTime} min
+                          </span>
+                        </>
+                      )}
+                    </div>
+                    <h2 class="font-bold text-lg mb-2 leading-snug group-hover:text-[var(--blog-accent)] transition-colors line-clamp-2" style="color: var(--blog-text);">
+                      {post.data.title}
+                    </h2>
+                    <p class="text-sm leading-relaxed line-clamp-2" style="color: var(--blog-text-secondary);">
+                      {post.data.description}
+                    </p>
+                  </div>
+                </article>
+              </a>
+            ))}
+          </div>
+        </>
+      ) : (
+        <!-- Empty state -->
+        <div class="text-center py-20">
+          <div class="inline-flex items-center justify-center w-20 h-20 rounded-full mb-6" style={`background: ${config.color}20;`}>
+            <span class="material-symbols-outlined text-4xl" style={`color: ${config.color};`}>{config.icon}</span>
+          </div>
+          <h2 class="text-2xl font-bold mb-3" style="color: var(--blog-text);">
+            Bientôt disponible
+          </h2>
+          <p class="mb-8 max-w-md mx-auto" style="color: var(--blog-text-secondary);">
+            Les articles {config.label.toLowerCase()} arrivent très prochainement. En attendant, découvrez nos autres contenus !
+          </p>
+          <a
+            href="/fr/blog/"
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white transition-transform hover:scale-105"
+            style="background: var(--blog-accent);"
+          >
+            Voir tous les articles
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- Related Categories -->
+  <section class="py-12" style="background: var(--blog-surface);">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-lg font-semibold mb-6 text-center" style="color: var(--blog-text);">
+        Autres catégories
+      </h2>
+      <div class="flex flex-wrap justify-center gap-3">
+        {Object.entries(categoryConfig).map(([key, cat]) => (
+          key !== category && (
+            <a
+              href={`/fr/blog/category/${key}/`}
+              class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105"
+              style={`background: ${cat.color}15; color: ${cat.color}; border: 1px solid ${cat.color}30;`}
+            >
+              <span class="material-symbols-outlined text-base">{cat.icon}</span>
+              {cat.label}
+            </a>
+          )
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="py-16" style="background: var(--blog-bg);">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <CTABanner lang={lang} type="trial" variant="gradient" />
+    </div>
+  </section>
+</BlogLayout>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

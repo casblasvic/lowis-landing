@@ -1,7 +1,7 @@
 ---
-title: "LOWIS vs Cal AI : Comparatif Complet 2025"
-description: "LOWIS vs Cal AI : comparaison complète des prix, fonctionnalités et précision. Découvrez la meilleure alternative en 2025."
-publishDate: 2025-01-11
+title: "LOWIS vs Cal AI : Comparatif Complet 2026"
+description: "LOWIS vs Cal AI : comparaison complète des prix, fonctionnalités et précision. Découvrez la meilleure alternative en 2026."
+publishDate: 2026-01-11
 author: "Équipe LOWIS"
 authorRole: "Experts en nutrition IA"
 category: "comparatifs"
@@ -16,7 +16,24 @@ translations:
   es: "lowis-vs-cal-ai"
 ctaType: "compare"
 image: "lowis-vs-cal-ai/hero.jpg"
-imageAlt: "Comparatif LOWIS vs Cal AI - Applications de comptage de calories avec IA en 2025"
+imageAlt: "Comparatif LOWIS vs Cal AI - Applications de comptage de calories avec IA en 2026"
+comparisonLogos:
+  lowis: "/icons/logo-512.png"
+  competitor: "cal-ai-logo.png"
+  competitorName: "Cal AI"
+faq:
+  - question: "Quelle est la différence principale entre LOWIS et Cal AI ?"
+    answer: "La différence majeure est l'approche : Cal AI est un compteur de calories passif qui vous laisse faire le travail, tandis que LOWIS est un coach IA actif qui analyse +40 indicateurs et vous guide personnellement vers vos objectifs."
+  - question: "Cal AI est-il vraiment moins cher que LOWIS ?"
+    answer: "Cal AI coûte environ 50€/an contre ~40€/mois pour LOWIS. Cependant, Cal AI nécessite 15+ minutes de travail manuel par jour. Si votre temps vaut 10€/heure, vous 'perdez' 75€/mois en temps. LOWIS vous fait économiser ce temps avec une analyse en 2 secondes."
+  - question: "Puis-je obtenir un remboursement avec Cal AI ?"
+    answer: "Selon de nombreux avis utilisateurs, Cal AI a une politique de remboursement très stricte. De nombreux utilisateurs rapportent ne pas avoir pu se faire rembourser. LOWIS offre une période d'essai gratuite de 7 jours sans carte bancaire et une politique de remboursement claire."
+  - question: "Cal AI reconnaît-il les plats marocains et français ?"
+    answer: "Cal AI a une base de données principalement américaine. Les plats comme le tajine, le couscous, la harira ou le msemen sont souvent absents ou mal reconnus. LOWIS inclut +500 recettes marocaines et une base de données complète des plats français."
+  - question: "LOWIS utilise-t-il vraiment l'IA ?"
+    answer: "Oui, LOWIS utilise des modèles d'IA avancés (GPT-4, Claude) pour chaque analyse. Cette IA ne se contente pas de reconnaître les aliments, elle analyse votre situation globale (sommeil, stress, cycle hormonal) et fournit des recommandations personnalisées en temps réel."
+  - question: "Y a-t-il un support client chez Cal AI ?"
+    answer: "Selon de nombreux avis sur TrustPilot et Reddit, Cal AI n'a pas de bouton de support facilement accessible. Les utilisateurs rapportent des difficultés à contacter l'équipe. LOWIS dispose d'un support client réactif et d'une validation hebdomadaire par des nutritionnistes."
 ---
 
 Vous avez probablement déjà entendu parler de Cal AI, l'application de comptage de calories qui promet de scanner vos repas en photo. Mais est-ce vraiment la meilleure option ? Spoiler : pas forcément.

@@ -772,5 +772,53 @@
         "emailLabel": "Email"
       }
     }
+  },
+  "cookieConsent": {
+    "title": "Ce site utilise des cookies",
+    "description": "Nous utilisons des cookies pour améliorer votre expérience et analyser le trafic de notre site.",
+    "learnMore": "En savoir plus",
+    "acceptAll": "Tout accepter",
+    "rejectAll": "Tout refuser",
+    "customize": "Personnaliser"
+  },
+  "cookiesPage": {
+    "title": "Politique de Cookies",
+    "lastUpdated": "Dernière mise à jour",
+    "intro": {
+      "title": "À propos de cette politique",
+      "content": "Cette politique explique comment LOWIS utilise les cookies et technologies similaires lorsque vous visitez notre site web."
+    },
+    "whatAreCookies": {
+      "title": "Qu'est-ce qu'un cookie ?",
+      "content": "Un cookie est un petit fichier texte stocké sur votre appareil lorsque vous visitez un site web. Les cookies permettent au site de se souvenir de vos préférences et d'améliorer votre expérience de navigation."
+    },
+    "cookiesWeUse": {
+      "title": "Cookies que nous utilisons",
+      "essential": {
+        "title": "Cookies essentiels",
+        "description": "Ces cookies sont nécessaires au fonctionnement du site. Ils permettent de mémoriser votre choix de langue et vos préférences de consentement.",
+        "examples": "Exemples : lowis_country, lowis_lang_chosen, lowis_cookie_consent"
+      },
+      "analytics": {
+        "title": "Cookies analytiques",
+        "description": "Ces cookies nous aident à comprendre comment les visiteurs utilisent notre site. Ces informations sont utilisées pour améliorer nos services.",
+        "examples": "Fournisseur : Google Analytics (GA4)",
+        "note": "Ces cookies ne sont activés qu'après votre consentement explicite."
+      }
+    },
+    "manageCookies": {
+      "title": "Comment gérer vos cookies",
+      "content": "Vous pouvez modifier vos préférences de cookies à tout moment en utilisant le bouton ci-dessous ou en configurant les paramètres de votre navigateur.",
+      "browserSettings": "La plupart des navigateurs vous permettent de bloquer ou supprimer les cookies. Consultez la documentation de votre navigateur pour plus d'informations."
+    },
+    "thirdParty": {
+      "title": "Cookies tiers",
+      "content": "Nous utilisons Google Analytics pour analyser le trafic de notre site. Google peut collecter des informations conformément à sa propre politique de confidentialité."
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "Pour toute question concernant notre utilisation des cookies, contactez-nous à"
+    },
+    "updatePreferences": "Modifier mes préférences"
   }
 }

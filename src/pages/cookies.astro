@@ -1,0 +1,132 @@
+---
+/**
+ * Cookie Policy - French (Morocco) - Default
+ */
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { defaultLang, useTranslations } from '../i18n';
+
+const lang = defaultLang;
+const t = useTranslations(lang);
+const c = t.cookiesPage;
+
+const COMPANY = {
+  name: 'Organicare SARLAU',
+  email: 'privacy@lowis.app',
+  lastUpdated: '2025-01-11'
+};
+---
+
+<Layout
+  title={`${c.title} | LOWIS`}
+  description={c.intro.content}
+  lang={lang}
+>
+  <Header t={t} lang={lang} />
+
+  <main class="min-h-screen pt-24 pb-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <!-- Header -->
+      <div class="mb-12 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">{c.title}</h1>
+        <p class="text-text-secondary">
+          {c.lastUpdated}: {COMPANY.lastUpdated}
+        </p>
+      </div>
+
+      <!-- Content -->
+      <div class="prose prose-invert prose-orange max-w-none space-y-12">
+
+        <!-- Introduction -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{c.intro.title}</h2>
+          <p class="text-text-secondary leading-relaxed">{c.intro.content}</p>
+        </section>
+
+        <!-- What are cookies -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{c.whatAreCookies.title}</h2>
+          <p class="text-text-secondary leading-relaxed">{c.whatAreCookies.content}</p>
+        </section>
+
+        <!-- Cookies we use -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{c.cookiesWeUse.title}</h2>
+
+          <div class="grid gap-6 mt-6">
+            <!-- Essential cookies -->
+            <div class="bg-dark-surface rounded-xl p-6 border border-dark-border">
+              <h3 class="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                <span class="material-symbols-outlined text-green-500">lock</span>
+                {c.cookiesWeUse.essential.title}
+              </h3>
+              <p class="text-text-secondary mb-3">{c.cookiesWeUse.essential.description}</p>
+              <p class="text-sm text-text-muted font-mono bg-dark-bg/50 rounded px-3 py-2">
+                {c.cookiesWeUse.essential.examples}
+              </p>
+            </div>
+
+            <!-- Analytics cookies -->
+            <div class="bg-dark-surface rounded-xl p-6 border border-dark-border">
+              <h3 class="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary-orange">analytics</span>
+                {c.cookiesWeUse.analytics.title}
+              </h3>
+              <p class="text-text-secondary mb-3">{c.cookiesWeUse.analytics.description}</p>
+              <p class="text-sm text-text-muted mb-3">{c.cookiesWeUse.analytics.examples}</p>
+              <p class="text-sm text-yellow-500/80 flex items-center gap-2">
+                <span class="material-symbols-outlined text-base">info</span>
+                {c.cookiesWeUse.analytics.note}
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- How to manage cookies -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{c.manageCookies.title}</h2>
+          <p class="text-text-secondary leading-relaxed mb-4">{c.manageCookies.content}</p>
+
+          <!-- Update preferences button -->
+          <button
+            id="update-cookie-prefs"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-primary-orange text-white font-semibold rounded-xl hover:bg-primary-orange/90 transition-colors"
+          >
+            <span class="material-symbols-outlined">settings</span>
+            {c.updatePreferences}
+          </button>
+
+          <p class="text-text-secondary leading-relaxed mt-6">{c.manageCookies.browserSettings}</p>
+        </section>
+
+        <!-- Third party cookies -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{c.thirdParty.title}</h2>
+          <p class="text-text-secondary leading-relaxed">{c.thirdParty.content}</p>
+        </section>
+
+        <!-- Contact -->
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-4">{c.contact.title}</h2>
+          <p class="text-text-secondary leading-relaxed">
+            {c.contact.content} <a href={`mailto:${COMPANY.email}`} class="text-primary-orange hover:underline">{COMPANY.email}</a>
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <Footer t={t} lang={lang} />
+</Layout>
+
+<script>
+  // Handle "Update preferences" button
+  document.getElementById('update-cookie-prefs')?.addEventListener('click', () => {
+    // Clear stored consent to show banner again
+    localStorage.removeItem('lowis_cookie_consent');
+    // Reload page to trigger banner
+    window.location.reload();
+  });
+</script>

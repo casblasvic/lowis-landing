@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { type Language, defaultLang, getAlternateUrls } from '../i18n';
 import { SITE_CONFIG, getSignupUrlWithLang } from '../config';
 import GeoBanner from '../components/GeoBanner.astro';
+import CookieConsent from '../components/CookieConsent.astro';
 
 interface Props {
   title: string;
@@ -92,13 +93,39 @@ const htmlLang = htmlLangMap[lang] || lang;
 
     <title>{title}</title>
 
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-52G0810T4P"></script>
+    <!-- Google Analytics 4 - Loaded conditionally based on consent -->
     <script is:inline>
+      // Initialize dataLayer for GA
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-52G0810T4P');
+
+      // Flag to prevent double loading
+      window.lowisGALoaded = false;
+
+      // Function to load GA script and configure
+      function loadGoogleAnalytics() {
+        if (window.lowisGALoaded) return;
+        window.lowisGALoaded = true;
+
+        // Load the GA script
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-52G0810T4P';
+        document.head.appendChild(script);
+
+        // Configure GA
+        gtag('js', new Date());
+        gtag('config', 'G-52G0810T4P', {
+          'anonymize_ip': true // Extra privacy measure
+        });
+      }
+
+      // Listen for consent event from CookieConsent component
+      window.addEventListener('lowis-consent-changed', function(e) {
+        if (e.detail && e.detail.analytics) {
+          loadGoogleAnalytics();
+        }
+      });
     </script>
 
     <!-- Structured Data -->
@@ -192,6 +219,9 @@ const htmlLang = htmlLangMap[lang] || lang;
   <body class="bg-dark-bg text-white font-sans antialiased pb-20 md:pb-0">
     <!-- Geo-detection banner -->
     <GeoBanner />
+
+    <!-- Cookie consent banner (only shown for EU/EEA countries) -->
+    <CookieConsent lang={lang} />
 
     <slot />
 

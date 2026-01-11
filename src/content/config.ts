@@ -70,6 +70,19 @@ const blogCollection = defineCollection({
 
     // Draft status
     draft: z.boolean().default(false),
+
+    // FAQ Schema for Google Rich Results
+    faq: z.array(z.object({
+      question: z.string(),
+      answer: z.string(),
+    })).optional(),
+
+    // Comparison article specific
+    comparisonLogos: z.object({
+      lowis: z.string().optional(),
+      competitor: z.string().optional(),
+      competitorName: z.string().optional(),
+    }).optional(),
   }),
 });
 

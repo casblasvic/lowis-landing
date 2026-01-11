@@ -1,0 +1,270 @@
+---
+/**
+ * CookieConsent.astro - GDPR-compliant cookie consent banner
+ *
+ * Shows cookie consent banner ONLY for EU/EEA countries.
+ * Morocco and other non-EU countries do not require consent banners.
+ *
+ * Based on:
+ * - Morocco: No specific cookie legislation (CNDP Law 09-08)
+ * - EU: GDPR + ePrivacy Directive require explicit consent
+ */
+import type { Language } from '../i18n';
+
+interface Props {
+  lang?: Language;
+}
+
+const { lang = 'fr' } = Astro.props;
+
+// Translations for the cookie banner
+const translations = {
+  fr: {
+    title: 'Ce site utilise des cookies',
+    description: 'Nous utilisons des cookies pour améliorer votre expérience et analyser le trafic.',
+    learnMore: 'En savoir plus',
+    acceptAll: 'Tout accepter',
+    rejectAll: 'Tout refuser',
+    cookiesLink: '/cookies'
+  },
+  'fr-FR': {
+    title: 'Ce site utilise des cookies',
+    description: 'Nous utilisons des cookies pour améliorer votre expérience et analyser le trafic.',
+    learnMore: 'En savoir plus',
+    acceptAll: 'Tout accepter',
+    rejectAll: 'Tout refuser',
+    cookiesLink: '/fr/cookies'
+  },
+  es: {
+    title: 'Este sitio usa cookies',
+    description: 'Usamos cookies para mejorar tu experiencia y analizar el tráfico.',
+    learnMore: 'Saber más',
+    acceptAll: 'Aceptar todas',
+    rejectAll: 'Rechazar todas',
+    cookiesLink: '/es/cookies'
+  },
+  en: {
+    title: 'This site uses cookies',
+    description: 'We use cookies to improve your experience and analyze traffic.',
+    learnMore: 'Learn more',
+    acceptAll: 'Accept all',
+    rejectAll: 'Reject all',
+    cookiesLink: '/en/cookies'
+  }
+};
+
+const t = translations[lang] || translations.fr;
+---
+
+<div
+  id="cookie-consent-banner"
+  class="fixed bottom-0 left-0 right-0 z-[99] transform translate-y-full transition-transform duration-500 ease-out"
+  role="dialog"
+  aria-labelledby="cookie-title"
+  aria-describedby="cookie-description"
+>
+  <div class="bg-dark-surface/98 backdrop-blur-xl border-t border-dark-border shadow-2xl">
+    <div class="max-w-4xl mx-auto px-4 py-4 sm:py-5">
+      <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+        <!-- Text content -->
+        <div class="flex-1 min-w-0">
+          <h3 id="cookie-title" class="text-white font-semibold text-base flex items-center gap-2">
+            <span class="text-xl">🍪</span>
+            {t.title}
+          </h3>
+          <p id="cookie-description" class="text-gray-400 text-sm mt-1">
+            {t.description}
+            <a
+              href={t.cookiesLink}
+              class="text-primary-orange hover:underline ml-1"
+            >
+              {t.learnMore}
+            </a>
+          </p>
+        </div>
+
+        <!-- Buttons - GDPR requires equal visual weight -->
+        <div class="flex items-center gap-3 flex-shrink-0">
+          <button
+            id="cookie-reject"
+            class="px-5 py-2.5 rounded-lg text-sm font-semibold border border-dark-border text-white hover:bg-dark-border/50 transition-colors"
+          >
+            {t.rejectAll}
+          </button>
+          <button
+            id="cookie-accept"
+            class="px-5 py-2.5 rounded-lg text-sm font-semibold bg-primary-orange text-white hover:bg-primary-orange/90 transition-colors"
+          >
+            {t.acceptAll}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // EU/EEA countries that require GDPR cookie consent
+  const EU_EEA_COUNTRIES = [
+    // EU Member States
+    'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR',
+    'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL',
+    'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE',
+    // EEA (non-EU)
+    'IS', 'LI', 'NO',
+    // Other strict privacy countries
+    'GB', // UK (post-Brexit, still strict)
+    'CH'  // Switzerland (very strict)
+  ];
+
+  // Countries that do NOT require cookie consent
+  const NO_CONSENT_COUNTRIES = [
+    'MA', // Morocco
+    'DZ', // Algeria
+    'TN', // Tunisia
+    'US', // USA (no federal requirement)
+    // Add more as needed
+  ];
+
+  interface ConsentState {
+    analytics: boolean;
+    timestamp: number;
+  }
+
+  // Get current consent state from localStorage
+  function getConsent(): ConsentState | null {
+    const stored = localStorage.getItem('lowis_cookie_consent');
+    if (!stored) return null;
+    try {
+      return JSON.parse(stored);
+    } catch {
+      return null;
+    }
+  }
+
+  // Save consent state
+  function saveConsent(analytics: boolean): void {
+    const state: ConsentState = {
+      analytics,
+      timestamp: Date.now()
+    };
+    localStorage.setItem('lowis_cookie_consent', JSON.stringify(state));
+
+    // Dispatch event for GA loader
+    window.dispatchEvent(new CustomEvent('lowis-consent-changed', {
+      detail: { analytics }
+    }));
+  }
+
+  // Check if country requires consent
+  function requiresConsent(countryCode: string): boolean {
+    // Explicit no-consent countries
+    if (NO_CONSENT_COUNTRIES.includes(countryCode)) {
+      return false;
+    }
+    // EU/EEA require consent
+    if (EU_EEA_COUNTRIES.includes(countryCode)) {
+      return true;
+    }
+    // For unknown countries, default to NOT requiring consent
+    // (better UX, and most countries don't have strict cookie laws)
+    return false;
+  }
+
+  // Show the banner
+  function showBanner(): void {
+    const banner = document.getElementById('cookie-consent-banner');
+    if (banner) {
+      // Small delay for better UX (don't show immediately on page load)
+      setTimeout(() => {
+        banner.classList.remove('translate-y-full');
+      }, 1000);
+    }
+  }
+
+  // Hide the banner
+  function hideBanner(): void {
+    const banner = document.getElementById('cookie-consent-banner');
+    if (banner) {
+      banner.classList.add('translate-y-full');
+    }
+  }
+
+  // Initialize cookie consent system
+  function initCookieConsent(countryCode: string): void {
+    const consent = getConsent();
+    const needsConsent = requiresConsent(countryCode);
+
+    // If country doesn't require consent, enable analytics immediately
+    if (!needsConsent) {
+      // No banner needed, just enable GA
+      window.dispatchEvent(new CustomEvent('lowis-consent-changed', {
+        detail: { analytics: true, reason: 'no-consent-required' }
+      }));
+      return;
+    }
+
+    // Country requires consent - check if user already decided
+    if (consent !== null) {
+      // User already made a choice, apply it
+      window.dispatchEvent(new CustomEvent('lowis-consent-changed', {
+        detail: { analytics: consent.analytics, reason: 'stored-consent' }
+      }));
+      return;
+    }
+
+    // No consent stored, need to show banner
+    showBanner();
+  }
+
+  // Setup event listeners for buttons
+  function setupBannerEvents(): void {
+    const acceptBtn = document.getElementById('cookie-accept');
+    const rejectBtn = document.getElementById('cookie-reject');
+
+    acceptBtn?.addEventListener('click', () => {
+      saveConsent(true);
+      hideBanner();
+    });
+
+    rejectBtn?.addEventListener('click', () => {
+      saveConsent(false);
+      hideBanner();
+    });
+  }
+
+  // Listen for country detection from GeoBanner
+  function init(): void {
+    setupBannerEvents();
+
+    // Check if country already detected (cached)
+    const cachedCountry = localStorage.getItem('lowis_country');
+    if (cachedCountry) {
+      initCookieConsent(cachedCountry);
+    }
+
+    // Also listen for fresh detection
+    window.addEventListener('lowis-country-detected', ((event: CustomEvent<string>) => {
+      initCookieConsent(event.detail);
+    }) as EventListener);
+  }
+
+  // Start when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+</script>
+
+<style>
+  #cookie-consent-banner {
+    /* Ensure it's below the sticky mobile CTA but visible */
+    z-index: 99;
+  }
+
+  /* Animation for showing/hiding */
+  #cookie-consent-banner.show {
+    transform: translateY(0);
+  }
+</style>

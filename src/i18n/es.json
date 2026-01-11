@@ -772,5 +772,53 @@
         "emailLabel": "Email"
       }
     }
+  },
+  "cookieConsent": {
+    "title": "Este sitio usa cookies",
+    "description": "Usamos cookies para mejorar tu experiencia y analizar el tráfico de nuestro sitio.",
+    "learnMore": "Saber más",
+    "acceptAll": "Aceptar todo",
+    "rejectAll": "Rechazar todo",
+    "customize": "Personalizar"
+  },
+  "cookiesPage": {
+    "title": "Política de Cookies",
+    "lastUpdated": "Última actualización",
+    "intro": {
+      "title": "Sobre esta política",
+      "content": "Esta política explica cómo LOWIS utiliza las cookies y tecnologías similares cuando visitas nuestro sitio web."
+    },
+    "whatAreCookies": {
+      "title": "¿Qué son las cookies?",
+      "content": "Una cookie es un pequeño archivo de texto almacenado en tu dispositivo cuando visitas un sitio web. Las cookies permiten al sitio recordar tus preferencias y mejorar tu experiencia de navegación."
+    },
+    "cookiesWeUse": {
+      "title": "Cookies que utilizamos",
+      "essential": {
+        "title": "Cookies esenciales",
+        "description": "Estas cookies son necesarias para el funcionamiento del sitio. Permiten recordar tu elección de idioma y tus preferencias de consentimiento.",
+        "examples": "Ejemplos: lowis_country, lowis_lang_chosen, lowis_cookie_consent"
+      },
+      "analytics": {
+        "title": "Cookies analíticas",
+        "description": "Estas cookies nos ayudan a entender cómo los visitantes usan nuestro sitio. Esta información se usa para mejorar nuestros servicios.",
+        "examples": "Proveedor: Google Analytics (GA4)",
+        "note": "Estas cookies solo se activan después de tu consentimiento explícito."
+      }
+    },
+    "manageCookies": {
+      "title": "Cómo gestionar tus cookies",
+      "content": "Puedes modificar tus preferencias de cookies en cualquier momento usando el botón de abajo o configurando los ajustes de tu navegador.",
+      "browserSettings": "La mayoría de navegadores te permiten bloquear o eliminar cookies. Consulta la documentación de tu navegador para más información."
+    },
+    "thirdParty": {
+      "title": "Cookies de terceros",
+      "content": "Usamos Google Analytics para analizar el tráfico de nuestro sitio. Google puede recopilar información de acuerdo con su propia política de privacidad."
+    },
+    "contact": {
+      "title": "Contacto",
+      "content": "Para cualquier pregunta sobre nuestro uso de cookies, contáctanos en"
+    },
+    "updatePreferences": "Actualizar mis preferencias"
   }
 }
