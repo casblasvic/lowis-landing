@@ -110,7 +110,7 @@ const COMPANY = {
         <section>
           <h2 class="text-2xl font-bold text-white mb-4">{c.contact.title}</h2>
           <p class="text-text-secondary leading-relaxed">
-            {c.contact.content} <a href={`mailto:${COMPANY.email}`} class="text-primary-orange hover:underline">{COMPANY.email}</a>
+            {c.contact.content} <a href={`mailto:${COMPANY.email}`} class="text-primary-orange hover:underline" aria-label={`Send email to ${COMPANY.email}`}>{COMPANY.email}</a>
           </p>
         </section>
 
