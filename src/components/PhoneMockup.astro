@@ -72,7 +72,7 @@ const genericRecipes = (t.demo.recipesItemsGeneric || [
       <!-- App header -->
       <div class="app-header">
         <div class="header-left">
-          <img src="/icons/logo-192.png" alt="" role="presentation" class="header-logo" width="24" height="24" />
+          <img src="/icons/logo-48.webp" alt="" role="presentation" class="header-logo" width="24" height="24" />
           <span class="header-brand gradient-text">LOWIS</span>
         </div>
         <div class="phase-badge">
@@ -170,7 +170,7 @@ const genericRecipes = (t.demo.recipesItemsGeneric || [
         <div data-generic-only class="recipes-list">
           {genericRecipes.map((recipe) => (
             <div class="recipe-card">
-              <img src={recipe.image} alt={recipe.name} class="recipe-image" width="40" height="40" />
+              <img src={recipe.image} alt={recipe.name} class="recipe-image" width="40" height="40" loading="lazy" decoding="async" />
               <div class="recipe-info">
                 <span class="recipe-name">{recipe.name}</span>
                 <span class="recipe-calories">{recipe.calories} kcal</span>
@@ -184,7 +184,7 @@ const genericRecipes = (t.demo.recipesItemsGeneric || [
         <div data-morocco-only style="display: none" class="recipes-list">
           {moroccanRecipes.map((recipe) => (
             <div class="recipe-card">
-              <img src={recipe.image} alt={recipe.name} class="recipe-image" width="40" height="40" />
+              <img src={recipe.image} alt={recipe.name} class="recipe-image" width="40" height="40" loading="lazy" decoding="async" />
               <div class="recipe-info">
                 <span class="recipe-name">{recipe.name}</span>
                 <span class="recipe-calories">{recipe.calories} kcal</span>

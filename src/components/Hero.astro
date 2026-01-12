@@ -40,14 +40,14 @@ const { t, lang } = Astro.props;
 ---
 
 <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-  <!-- Background effects -->
-  <div class="absolute inset-0 overflow-hidden pointer-events-none">
-    <!-- Gradient orbs -->
-    <div class="absolute top-1/4 -left-32 w-96 h-96 bg-primary-orange/20 rounded-full blur-[120px]"></div>
-    <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-primary-red/20 rounded-full blur-[120px]"></div>
+  <!-- Background effects - GPU accelerated to prevent CLS -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none" style="contain: strict;">
+    <!-- Gradient orbs - isolated layer to prevent layout shift -->
+    <div class="absolute top-1/4 -left-32 w-96 h-96 bg-primary-orange/20 rounded-full blur-[120px]" style="will-change: transform; transform: translateZ(0);"></div>
+    <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-primary-red/20 rounded-full blur-[120px]" style="will-change: transform; transform: translateZ(0);"></div>
 
     <!-- Grid pattern -->
-    <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" style="will-change: transform;"></div>
   </div>
 
   <div class="section-container relative z-10">

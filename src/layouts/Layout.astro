@@ -45,6 +45,10 @@ const htmlLang = htmlLangMap[lang] || lang;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Security: Content Security Policy (GitHub Pages doesn't support HTTP headers) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https: https://yjxnyjcaxehosndbyepg.supabase.co https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://yjxnyjcaxehosndbyepg.supabase.co https://ipwho.is https://www.google-analytics.com https://www.googletagmanager.com https://region1.google-analytics.com https://analytics.google.com; frame-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://app.lowis.app; object-src 'none'; upgrade-insecure-requests" />
+
     <meta name="description" content={description} />
     {keywords && <meta name="keywords" content={keywords} />}
     <meta name="robots" content="index, follow" />
@@ -77,9 +81,11 @@ const htmlLang = htmlLangMap[lang] || lang;
     ))}
     <link rel="alternate" hreflang="x-default" href={baseUrl} />
 
-    <!-- Google Fonts - Non-render-blocking with preload -->
+    <!-- Preconnect to third-party origins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://yjxnyjcaxehosndbyepg.supabase.co" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 
     <!-- Material Symbols - Async loading -->
     <link
