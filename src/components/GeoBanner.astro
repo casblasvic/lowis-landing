@@ -70,9 +70,15 @@
         return cached;
       }
     }
-    // Default a Marruecos si falla
-    window.dispatchEvent(new CustomEvent('lowis-country-detected', { detail: 'MA' }));
-    return 'MA';
+    // Default basado en la URL actual para evitar mostrar contenido marroquí incorrectamente
+    const path = window.location.pathname;
+    let defaultCountry = 'MA'; // Root = Morocco by default
+    if (path.startsWith('/en')) defaultCountry = 'US';
+    else if (path.startsWith('/es')) defaultCountry = 'ES';
+    else if (path.startsWith('/fr')) defaultCountry = 'FR';
+
+    window.dispatchEvent(new CustomEvent('lowis-country-detected', { detail: defaultCountry }));
+    return defaultCountry;
   }
 
   // Configuración de mensajes por país
