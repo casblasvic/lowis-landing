@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "LOWIS - Comer Inteligente | Objetivo 1 kg/semana mínimo",
-    "description": "Aprende a comer inteligentemente con tus recetas marroquíes. Sin restricciones, solo variando el orden y combinación de alimentos. IA + expertos 24/7. Primera semana gratis.",
+    "description": "Aprende a comer inteligentemente con tus recetas favoritas. Sin restricciones, solo variando el orden y combinación de alimentos. IA + expertos 24/7. Primera semana gratis.",
     "keywords": "contador de calorias, contador calorias con ia, coach nutricional con ia, coach nutricional online, adelgazar online, app dieta, perder peso rapido, dieta sin restricciones, coach nutricion personalizado, alternativa myfitnesspal, 1 kg por semana, sin efecto rebote, nutricionista online, plan alimenticio personalizado"
   },
   "nav": {
@@ -14,11 +14,11 @@
     "login": "Iniciar sesión"
   },
   "hero": {
-    "badge": "Creado para Marruecos 🇲🇦",
+    "badge": "Disponible en todo el mundo",
     "badgeGeneric": "Disponible en todo el mundo",
     "title": "Garantizado: Pierde entre",
     "titleHighlight": "1 a 2,5 kg por semana",
-    "subtitle": "Aprende a comer inteligentemente con tus recetas marroquíes favoritas. Sin restricciones estresantes, solo variando el orden y la combinación de los alimentos.",
+    "subtitle": "Aprende a comer inteligentemente con tus recetas favoritas. Sin restricciones estresantes, solo variando el orden y la combinación de los alimentos.",
     "cta": "Obtener mi plan personalizado gratis",
     "ctaSecondary": "Ver demo",
     "noCard": "Sin tarjeta bancaria",
@@ -56,7 +56,7 @@
       {
         "icon": "restaurant",
         "title": "Tus recetas, mejor combinadas",
-        "description": "Tajines, brochetas, pescado a la parrilla... Conserva tus platos favoritos. Te enseñamos simplemente a variar el orden y las combinaciones para optimizar cada caloría."
+        "description": "Cocina mediterránea, asiática, europea, latina... Conserva tus platos favoritos. Te enseñamos simplemente a variar el orden y las combinaciones para optimizar cada caloría."
       },
       {
         "icon": "psychology",
@@ -341,7 +341,7 @@
         "number": "1",
         "icon": "target",
         "title": "Semana 1: Tu plan personalizado",
-        "description": "Responde preguntas simples sobre tus objetivos, preferencias y condiciones de salud. LOWIS + nuestros expertos generan un plan 100% personalizado adaptado a la cocina marroquí.",
+        "description": "Responde preguntas simples sobre tus objetivos, preferencias y condiciones de salud. LOWIS + nuestros expertos generan un plan 100% personalizado adaptado a tu cocina.",
         "bullets": [
           "Plan adaptado a tus gustos y alergias",
           "Primera semana completamente gratis",
@@ -411,7 +411,7 @@
       "afterTrialText": "Después 199 DH/semana",
       "features": [
         "Monitorización de +40 indicadores en continuo",
-        "Planes de comida personalizados marroquíes",
+        "Planes de comida personalizados a tus gustos",
         "LOWIS, tu coach IA + expertos",
         "Audios para reforzar la psicología",
         "Informe semanal personalizado"
@@ -437,7 +437,7 @@
       },
       {
         "question": "¿Cómo funciona el escaneo inteligente de alimentos?",
-        "answer": "Solo toma una foto de tu plato o del código de barras de un producto. La IA LOWIS identifica automáticamente los alimentos, estima las porciones y calcula los valores nutricionales completos (calorías, macros Y 22 micronutrientes). Para platos marroquíes como el tajine o el cuscús, nuestra base de datos especializada reconoce los ingredientes típicos. Sin buscar manualmente — fotografía y sigue con tu día."
+        "answer": "Solo toma una foto de tu plato o del código de barras de un producto. La IA LOWIS identifica automáticamente los alimentos, estima las porciones y calcula los valores nutricionales completos (calorías, macros Y 22 micronutrientes). Nuestra base de datos especializada reconoce miles de platos de todo el mundo. Sin buscar manualmente — fotografía y sigue con tu día."
       },
       {
         "question": "¿Cómo analiza LOWIS mis notas personales?",
@@ -465,19 +465,19 @@
       },
       {
         "question": "¿Tengo que seguir una dieta estricta para adelgazar?",
-        "answer": "No. LOWIS no es una dieta restrictiva. Conservas tus platos favoritos — tajines, brochetas, pescado a la parrilla — te enseñamos a combinarlos inteligentemente. Hábitos duraderos, no esfuerzos insostenibles."
+        "answer": "No. LOWIS no es una dieta restrictiva. Conservas tus platos favoritos — cocina mediterránea, asiática, tu cocina local — te enseñamos a combinarlos inteligentemente. Hábitos duraderos, no esfuerzos insostenibles."
       },
       {
-        "question": "¿La aplicación reconoce los platos marroquíes?",
-        "answer": "¡Por supuesto! Más de 500 recetas marroquíes: tajines de pollo, brochetas de kefta, pescado a la parrilla, mechoui, sardinas a la parrilla... Cada plato analizado con precisión nutricional. Diseñado para la cocina marroquí, no adaptado después."
+        "question": "¿La aplicación reconoce mis platos locales?",
+        "answer": "¡Por supuesto! Más de 2000 recetas de todo el mundo: mediterránea, asiática, europea, latinoamericana... Cada plato analizado con precisión nutricional. Diseñado para cocinas globales."
       },
       {
         "question": "¿Cuál es la diferencia con los contadores de calorías?",
         "answer": "Los contadores de calorías te dejan sola con números. LOWIS monitoriza +40 indicadores (sueño, estrés, ciclo, digestión...), LOWIS reacciona al instante como un coach personal, y nuestros nutricionistas ajustan tu plan cada semana. Un acompañamiento real, no una calculadora."
       },
       {
-        "question": "¿Cómo se adapta LOWIS durante el Ramadán?",
-        "answer": "Planes especiales optimizados para el ayuno: distribución ideal ftour/shour, hidratación adaptada, y recomendaciones para mantener tu energía. La app se adapta automáticamente a tu ritmo durante el mes sagrado."
+        "question": "¿Cómo se adapta LOWIS al ayuno intermitente?",
+        "answer": "Planes especiales optimizados para el ayuno: distribución ideal de comidas, hidratación adaptada, y recomendaciones para mantener tu energía. La app se adapta automáticamente a tu ritmo de ayuno."
       },
       {
         "question": "¿Y si un día me paso?",
@@ -489,7 +489,7 @@
       },
       {
         "question": "¿Cuál es la verdadera diferencia entre LOWIS y otras apps?",
-        "answer": "Los contadores de calorías (MyFitnessPal, Yazio) te dan números y te dejan solo. LOWIS es diferente: 1) MONITOREO COMPLETO: 40+ indicadores vs solo calorías, 2) ADAPTACIÓN AUTOMÁTICA: LOWIS ajusta tu plan cuando duermes mal, estás estresado o tienes un evento, 3) EXPERTOS HUMANOS: nuestros nutricionistas revisan tu caso cada semana, 4) COCINA LOCAL: 500+ recetas marroquíes analizadas, no una base de datos americana. Es un coach personal inteligente + equipo de expertos, no una calculadora."
+        "answer": "Los contadores de calorías (MyFitnessPal, Yazio) te dan números y te dejan solo. LOWIS es diferente: 1) MONITOREO COMPLETO: 40+ indicadores vs solo calorías, 2) ADAPTACIÓN AUTOMÁTICA: LOWIS ajusta tu plan cuando duermes mal, estás estresado o tienes un evento, 3) EXPERTOS HUMANOS: nuestros nutricionistas revisan tu caso cada semana, 4) BASE GLOBAL: 2000+ recetas de todo el mundo. Es un coach personal inteligente + equipo de expertos, no una calculadora."
       }
     ]
   },
@@ -500,7 +500,7 @@
     "noCard": "Gratis • Sin tarjeta bancaria"
   },
   "footer": {
-    "tagline": "El sistema nutricional inteligente creado para Marruecos",
+    "tagline": "El sistema nutricional inteligente con IA + expertos",
     "taglineGeneric": "El sistema nutricional inteligente con IA + expertos",
     "product": {
       "title": "Producto",

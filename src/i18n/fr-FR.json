@@ -341,7 +341,7 @@
         "number": "1",
         "icon": "target",
         "title": "Semaine 1 : Votre plan personnalisé",
-        "description": "Répondez à des questions simples sur vos objectifs, préférences et conditions de santé. LOWIS + nos experts génèrent un plan 100% personnalisé adapté à la cuisine marocaine.",
+        "description": "Répondez à des questions simples sur vos objectifs, préférences et conditions de santé. LOWIS + nos experts génèrent un plan 100% personnalisé adapté à votre cuisine.",
         "bullets": [
           "Plan adapté à vos goûts et allergies",
           "Première semaine complètement gratuite",
@@ -437,7 +437,7 @@
       },
       {
         "question": "Comment fonctionne le scan intelligent des aliments?",
-        "answer": "Prenez simplement une photo de votre assiette ou du code-barres d'un produit. L'IA LOWIS identifie automatiquement les aliments, estime les portions et calcule les valeurs nutritionnelles complètes (calories, macros ET 22 micronutriments). Pour les plats marocains comme le tajine ou le couscous, notre base de données spécialisée reconnaît les ingrédients typiques. Plus besoin de chercher manuellement — photographiez et continuez votre journée."
+        "answer": "Prenez simplement une photo de votre assiette ou du code-barres d'un produit. L'IA LOWIS identifie automatiquement les aliments, estime les portions et calcule les valeurs nutritionnelles complètes (calories, macros ET 22 micronutriments). Notre base de données reconnaît des milliers de plats du monde entier. Plus besoin de chercher manuellement — photographiez et continuez votre journée."
       },
       {
         "question": "Comment LOWIS analyse mes notes personnelles?",
@@ -469,7 +469,7 @@
       },
       {
         "question": "L'application reconnaît mes plats du quotidien?",
-        "answer": "Absolument! Des milliers de recettes françaises et internationales: quiche lorraine, ratatouille, bœuf bourguignon, tajines, couscous, pizzas... Chaque plat analysé avec précision nutritionnelle. Scannez simplement votre assiette et LOWIS fait le reste."
+        "answer": "Absolument! Des milliers de recettes françaises et internationales: quiche lorraine, ratatouille, bœuf bourguignon, pizzas, pâtes, plats asiatiques... Chaque plat analysé avec précision nutritionnelle. Scannez simplement votre assiette et LOWIS fait le reste."
       },
       {
         "question": "Quelle est la différence avec les compteurs de calories?",
@@ -500,7 +500,7 @@
     "noCard": "Gratuit • Sans carte bancaire"
   },
   "footer": {
-    "tagline": "Le système nutritionnel intelligent créé pour le Maroc",
+    "tagline": "Le système nutritionnel intelligent avec IA + experts",
     "taglineGeneric": "Le système nutritionnel intelligent avec IA + experts",
     "product": {
       "title": "Produit",

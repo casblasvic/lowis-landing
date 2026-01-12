@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "LOWIS - Eat Smart | Goal: 1 kg/week minimum",
-    "description": "Learn to eat smart with your Moroccan recipes. No restrictions, just varying the order and combination of foods. AI + experts 24/7. First week free.",
+    "description": "Learn to eat smart with your favorite recipes. No restrictions, just varying the order and combination of foods. AI + experts 24/7. First week free.",
     "keywords": "calorie counter, calorie counter with ai, ai nutrition coach, online nutrition coach, lose weight online, diet app, weight loss app, personalized diet plan, myfitnesspal alternative, noom alternative, 1 kg per week, no yo-yo effect, ai diet coach, personalized meal plan"
   },
   "nav": {
@@ -14,11 +14,11 @@
     "login": "Log in"
   },
   "hero": {
-    "badge": "Made for Morocco 🇲🇦",
+    "badge": "Available worldwide",
     "badgeGeneric": "Available worldwide",
     "title": "Guaranteed: Lose between",
     "titleHighlight": "1 to 2.5 kg per week",
-    "subtitle": "Learn to eat smart with your favorite Moroccan recipes. No stressful restrictions, just varying the order and combination of foods.",
+    "subtitle": "Learn to eat smart with your favorite recipes. No stressful restrictions, just varying the order and combination of foods.",
     "cta": "Get my free personalized plan",
     "ctaSecondary": "See demo",
     "noCard": "No credit card required",
@@ -56,7 +56,7 @@
       {
         "icon": "restaurant",
         "title": "Your recipes, better combined",
-        "description": "Tajines, brochettes, grilled fish... Keep your favorite dishes. We simply teach you to vary the order and combinations to optimize every calorie."
+        "description": "Mediterranean, Asian, European cuisine... Keep your favorite dishes. We simply teach you to vary the order and combinations to optimize every calorie."
       },
       {
         "icon": "psychology",
@@ -341,7 +341,7 @@
         "number": "1",
         "icon": "target",
         "title": "Week 1: Your personalized plan",
-        "description": "Answer simple questions about your goals, preferences and health conditions. LOWIS + our experts generate a 100% personalized plan adapted to Moroccan cuisine.",
+        "description": "Answer simple questions about your goals, preferences and health conditions. LOWIS + our experts generate a 100% personalized plan adapted to your cuisine.",
         "bullets": [
           "Plan adapted to your tastes and allergies",
           "First week completely free",
@@ -411,7 +411,7 @@
       "afterTrialText": "Then 199 DH/week",
       "features": [
         "Continuous monitoring of 40+ indicators",
-        "Personalized Moroccan meal plans",
+        "Personalized meal plans to your tastes",
         "LOWIS, your AI coach + experts",
         "Audios to strengthen your mindset",
         "Weekly progress report"
@@ -437,7 +437,7 @@
       },
       {
         "question": "How does the intelligent food scan work?",
-        "answer": "Just take a photo of your plate or a product's barcode. LOWIS AI automatically identifies the foods, estimates portions, and calculates complete nutritional values (calories, macros AND 22 micronutrients). For Moroccan dishes like tajine or couscous, our specialized database recognizes typical ingredients. No manual searching — photograph and continue your day."
+        "answer": "Just take a photo of your plate or a product's barcode. LOWIS AI automatically identifies the foods, estimates portions, and calculates complete nutritional values (calories, macros AND 22 micronutrients). Our specialized database recognizes thousands of dishes from around the world. No manual searching — photograph and continue your day."
       },
       {
         "question": "How does LOWIS analyze my personal notes?",
@@ -465,19 +465,19 @@
       },
       {
         "question": "Do I have to follow a strict diet to lose weight?",
-        "answer": "No. LOWIS is not a restrictive diet. You keep your favorite dishes — tajines, brochettes, grilled fish — we teach you to combine them smartly. Lasting habits, not unsustainable efforts."
+        "answer": "No. LOWIS is not a restrictive diet. You keep your favorite dishes — Mediterranean, Asian, your local cuisine — we teach you to combine them smartly. Lasting habits, not unsustainable efforts."
       },
       {
-        "question": "Does the app recognize Moroccan dishes?",
-        "answer": "Absolutely! Over 500 Moroccan recipes: chicken tajines, kefta brochettes, grilled fish, mechoui, grilled sardines... Each dish analyzed with nutritional precision. Designed for Moroccan cuisine, not adapted after."
+        "question": "Does the app recognize my local dishes?",
+        "answer": "Absolutely! Over 2000 recipes from around the world: Mediterranean, Asian, European, Latin American... Each dish analyzed with nutritional precision. Designed for global cuisines."
       },
       {
         "question": "What's the difference with calorie counters?",
         "answer": "Calorie counters leave you alone with numbers. LOWIS monitors 40+ indicators (sleep, stress, cycle, digestion...), LOWIS reacts instantly like a personal coach, and our nutritionists adjust your plan weekly. Real support, not a calculator."
       },
       {
-        "question": "How does LOWIS adapt during Ramadan?",
-        "answer": "Special plans optimized for fasting: ideal ftour/shour distribution, adapted hydration, and recommendations to maintain your energy. The app automatically adapts to your rhythm during the holy month."
+        "question": "How does LOWIS adapt to intermittent fasting?",
+        "answer": "Special plans optimized for fasting: ideal meal distribution, adapted hydration, and recommendations to maintain your energy. The app automatically adapts to your fasting rhythm."
       },
       {
         "question": "What if I slip up one day?",
@@ -489,7 +489,7 @@
       },
       {
         "question": "What's the real difference between LOWIS and other apps?",
-        "answer": "Calorie counters (MyFitnessPal, Yazio) give you numbers and leave you alone. LOWIS is different: 1) COMPLETE MONITORING: 40+ indicators vs just calories, 2) AUTOMATIC ADAPTATION: LOWIS adjusts your plan when you sleep poorly, are stressed, or have an event, 3) HUMAN EXPERTS: our nutritionists review your case every week, 4) LOCAL CUISINE: 500+ Moroccan recipes analyzed, not an American database. It's an intelligent personal coach + expert team, not a calculator."
+        "answer": "Calorie counters (MyFitnessPal, Yazio) give you numbers and leave you alone. LOWIS is different: 1) COMPLETE MONITORING: 40+ indicators vs just calories, 2) AUTOMATIC ADAPTATION: LOWIS adjusts your plan when you sleep poorly, are stressed, or have an event, 3) HUMAN EXPERTS: our nutritionists review your case every week, 4) GLOBAL DATABASE: 2000+ recipes from around the world. It's an intelligent personal coach + expert team, not a calculator."
       }
     ]
   },
@@ -500,7 +500,7 @@
     "noCard": "Free • No credit card"
   },
   "footer": {
-    "tagline": "The smart nutritional system made for Morocco",
+    "tagline": "The smart nutritional system with AI + experts",
     "taglineGeneric": "The smart nutritional system with AI + experts",
     "product": {
       "title": "Product",
