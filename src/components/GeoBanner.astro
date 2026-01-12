@@ -269,8 +269,37 @@
       }
     };
 
+    // X button just closes the banner
     dismissBtn?.addEventListener('click', closeBanner);
-    ctaBtn?.addEventListener('click', closeBanner);
+
+    // CTA button redirects to the correct language AND closes the banner
+    ctaBtn?.addEventListener('click', async () => {
+      closeBanner();
+
+      // Get detected country and determine best language
+      const country = localStorage.getItem('lowis_country') || 'MA';
+      const bestLang = getBestLanguage(country);
+      const currentLang = getCurrentLang();
+
+      // Mark that user accepted language selection
+      localStorage.setItem('lowis_lang_chosen', bestLang);
+
+      // Only redirect if different from current language
+      if (bestLang === 'fr-FR' && currentLang !== 'fr-FR') {
+        // France → /fr/
+        window.location.href = '/fr' + window.location.pathname.replace(/^\/(es|en)/, '');
+      } else if (bestLang !== currentLang && bestLang !== 'fr-FR') {
+        // Other languages
+        const cleanPath = window.location.pathname.replace(/^\/(fr|es|en)/, '') || '/';
+        if (bestLang === 'fr') {
+          // Moroccan French → root (no prefix)
+          window.location.href = cleanPath;
+        } else {
+          // Spanish or English → /{lang}/
+          window.location.href = '/' + bestLang + cleanPath;
+        }
+      }
+    });
   }
 
   // Ejecutar cuando el DOM esté listo
