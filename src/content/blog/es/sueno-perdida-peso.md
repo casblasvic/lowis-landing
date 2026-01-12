@@ -93,25 +93,13 @@ Cuando estás cansado, tu cerebro te empuja hacia alimentos calóricos. No es fa
 
 El círculo vicioso se establece progresivamente:
 
-1. **Mal sueño** 😴
-2. ⬇️ **Fatiga** → Menos ejercicio
-3. ⬇️ **Hormonas alteradas** → Más hambre
-4. ⬇️ **Malas elecciones alimentarias**
-5. ⬇️ **Aumento de peso**
-6. ⬇️ **Peor calidad de sueño**
-7. 🔄 *(Volver al inicio)*
+![El círculo vicioso sueño-peso: mal sueño, fatiga, hormonas alteradas, malas elecciones alimentarias, aumento de peso](https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/Landing/blog/sommeil-perte-poids/vicious-cycle.png)
 
 ### Cómo romper el ciclo
 
 La buena noticia: mejorar tu sueño puede iniciar un círculo virtuoso:
 
-1. **Mejor sueño** 🌙
-2. ⬆️ **Más energía** → Más actividad
-3. ⬆️ **Hormonas equilibradas** → Hambre normal
-4. ⬆️ **Mejores elecciones alimentarias**
-5. ⬆️ **Pérdida de peso**
-6. ⬆️ **Sueño aún mejor**
-7. ✨ *(Círculo virtuoso)*
+![El círculo virtuoso: mejor sueño, más energía, hormonas equilibradas, mejores elecciones, pérdida de peso](https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/Landing/blog/sommeil-perte-poids/virtuous-cycle.png)
 
 ## Los 7 pilares del sueño adelgazante
 

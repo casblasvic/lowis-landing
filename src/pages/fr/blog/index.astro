@@ -28,9 +28,20 @@ const allPosts = await getCollection('blog', ({ data }) => {
   return (data.lang === 'fr-FR' || data.lang === 'fr') && !data.draft;
 });
 
-const posts = allPosts.sort((a, b) =>
+const sortedPosts = allPosts.sort((a, b) =>
   b.data.publishDate.getTime() - a.data.publishDate.getTime()
 );
+
+// Rotate featured article based on day of year (changes daily, deterministic)
+const now = new Date();
+const startOfYear = new Date(now.getFullYear(), 0, 0);
+const dayOfYear = Math.floor((now.getTime() - startOfYear.getTime()) / (1000 * 60 * 60 * 24));
+const featuredIndex = sortedPosts.length > 0 ? dayOfYear % sortedPosts.length : 0;
+
+// Reorder posts: featured post first, then the rest in original order
+const featuredPost = sortedPosts[featuredIndex];
+const otherPosts = sortedPosts.filter((_, i) => i !== featuredIndex);
+const posts = [featuredPost, ...otherPosts].filter(Boolean);
 
 const categoryConfig: Record<string, { label: string; icon: string }> = {
   guides: { label: 'Guide', icon: 'menu_book' },
@@ -81,7 +92,12 @@ const keywords = 'nutrition france, perte de poids, compteur calories ia, régim
                     )}
                   </div>
                   <div class="p-8 md:p-10 lg:p-12 flex flex-col justify-center">
-                    <span class="text-xs font-semibold uppercase tracking-wider mb-4" style="color: var(--blog-accent);">Article à la une</span>
+                    <div class="flex items-center gap-3 mb-4">
+                      <span class="text-xs font-semibold uppercase tracking-wider px-2 py-1 rounded" style="color: var(--blog-accent); background: var(--blog-accent-light);">Article à la une</span>
+                      {posts[0].data.readingTime && (
+                        <span class="text-sm" style="color: var(--blog-text-muted);">{posts[0].data.readingTime} min de lecture</span>
+                      )}
+                    </div>
                     <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-tight group-hover:text-[var(--blog-accent)] transition-colors" style="color: var(--blog-text);">{posts[0].data.title}</h2>
                     <p class="text-base md:text-lg leading-relaxed mb-6" style="color: var(--blog-text-secondary);">{posts[0].data.description}</p>
                     <div class="flex items-center gap-2 font-medium" style="color: var(--blog-accent);">

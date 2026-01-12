@@ -6,6 +6,7 @@
  * Used in blog index and related posts sections
  */
 import type { Language } from '../../i18n';
+import { getBlogImageUrl } from '../../lib/storage';
 
 interface Props {
   title: string;
@@ -78,14 +79,23 @@ const readingTimeText = {
   es: 'min de lectura',
   en: 'min read',
 };
+
+// Resolve image URL (handle both relative paths and full URLs)
+function resolveImageUrl(imagePath: string | undefined): string | undefined {
+  if (!imagePath) return undefined;
+  if (imagePath.startsWith('http') || imagePath.startsWith('/')) return imagePath;
+  return getBlogImageUrl(imagePath);
+}
+
+const resolvedImage = resolveImageUrl(image);
 ---
 
 <article class="blog-card group">
   <a href={getBlogUrl()} class="block">
     <!-- Image -->
-    {image ? (
+    {resolvedImage ? (
       <img
-        src={image}
+        src={resolvedImage}
         alt={imageAlt || title}
         class="blog-card-image"
         loading="lazy"

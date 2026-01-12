@@ -193,19 +193,13 @@ function formatDate(date: Date): string {
 
                   <!-- Content -->
                   <div class="p-5">
-                    <div class="flex items-center gap-2 mb-2">
-                      <span class="text-xs" style="color: var(--blog-text-muted);">
-                        {formatDate(post.data.publishDate)}
-                      </span>
-                      {post.data.readingTime && (
-                        <>
-                          <span style="color: var(--blog-text-muted);">·</span>
-                          <span class="text-xs" style="color: var(--blog-text-muted);">
-                            {post.data.readingTime} min
-                          </span>
-                        </>
-                      )}
-                    </div>
+                    {post.data.readingTime && (
+                      <div class="flex items-center gap-2 mb-2">
+                        <span class="text-xs" style="color: var(--blog-text-muted);">
+                          {post.data.readingTime} min de lectura
+                        </span>
+                      </div>
+                    )}
                     <h2 class="font-bold text-lg mb-2 leading-snug group-hover:text-[var(--blog-accent)] transition-colors line-clamp-2" style="color: var(--blog-text);">
                       {post.data.title}
                     </h2>
