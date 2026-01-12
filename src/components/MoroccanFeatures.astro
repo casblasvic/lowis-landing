@@ -27,112 +27,106 @@ interface Props {
 
 const { t, lang } = Astro.props;
 
-// Helper to get optimized Supabase image URL (resized + compressed)
-// Note: Supabase doesn't support WebP conversion, only resize/quality
-function getOptimizedImageUrl(baseUrl: string, width: number = 200): string {
-  // Supabase image transformation: render endpoint with width and quality
-  return baseUrl
-    .replace('/storage/v1/object/public/', '/storage/v1/render/image/public/')
-    + `?width=${width}&height=${width}&resize=cover&quality=80`;
-}
-
 // Helper to get recipe name based on current language
 function getRecipeName(recipe: { nameEn: string; nameFr: string; nameEs: string }, currentLang: Language): string {
   if (currentLang === 'es') return recipe.nameEs;
   if (currentLang === 'en') return recipe.nameEn;
-  // fr and fr-FR both use French names
   return recipe.nameFr;
 }
 
-// Protein-rich Moroccan recipes - no carbs/grains (all images from Supabase Storage)
+// ============================================================================
+// RECETAS REALES del proyecto principal - imágenes verificadas de Unsplash
+// ============================================================================
+
+// Moroccan recipes - imágenes verificadas de Unsplash
 const moroccanRecipes = [
   {
-    nameEn: 'Lemon Chicken Tajine',
-    nameFr: 'Tajine au poulet et citron',
+    nameEn: 'Chicken Tajine with Lemon',
+    nameFr: 'Tajine de poulet au citron',
     nameEs: 'Tajine de pollo con limón',
-    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/15056.jpeg'),
+    image: 'https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=400',
     calories: 420
   },
   {
-    nameEn: 'Grilled Lamb Skewers',
-    nameFr: 'Brochettes d\'agneau grillées',
-    nameEs: 'Brochetas de cordero a la parrilla',
-    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14263.jpeg'),
-    calories: 380
-  },
-  {
-    nameEn: 'Meat and Vegetable Tajine',
-    nameFr: 'Tajine de viande et légumes',
-    nameEs: 'Tajine de carne y verduras',
-    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/15140.jpeg'),
-    calories: 450
-  },
-  {
-    nameEn: 'Chermoula Grilled Fish',
-    nameFr: 'Poisson grillé chermoula',
-    nameEs: 'Pescado a la parrilla chermoula',
-    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14302.jpeg'),
-    calories: 320
-  },
-  {
-    nameEn: 'Kefta Meatball Tajine',
-    nameFr: 'Tajine aux boulettes kefta',
-    nameEs: 'Tajine de albóndigas kefta',
-    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/19778.jpeg'),
-    calories: 390
-  },
-  {
-    nameEn: 'Roasted Lamb Shoulder',
-    nameFr: 'Épaule d\'agneau rôtie',
-    nameEs: 'Paletilla de cordero asada',
-    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14318.jpeg'),
+    nameEn: 'Lamb Couscous',
+    nameFr: 'Couscous à l\'agneau',
+    nameEs: 'Cuscús con cordero',
+    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400',
     calories: 480
-  }
-];
-
-// International recipes - varied cuisines (keto-friendly, high protein) - all from Supabase Storage
-const internationalRecipes = [
+  },
   {
-    nameEn: 'Herb Grilled Salmon',
-    nameFr: 'Saumon grillé aux herbes',
-    nameEs: 'Salmón a la parrilla con hierbas',
-    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14339.jpeg'),
+    nameEn: 'Kefta Meatballs',
+    nameFr: 'Boulettes de kefta',
+    nameEs: 'Albóndigas kefta',
+    image: 'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=400',
     calories: 350
   },
   {
-    nameEn: 'Mediterranean Bowl',
-    nameFr: 'Bowl méditerranéen',
-    nameEs: 'Bowl mediterráneo',
-    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14353.jpeg'),
-    calories: 420
+    nameEn: 'Moroccan Harira Soup',
+    nameFr: 'Soupe Harira marocaine',
+    nameEs: 'Sopa Harira marroquí',
+    image: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400',
+    calories: 280
   },
   {
-    nameEn: 'Nicoise Salad',
-    nameFr: 'Salade Niçoise',
-    nameEs: 'Ensalada Nizarda',
-    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14368.jpeg'),
-    calories: 380
-  },
-  {
-    nameEn: 'Fresh Garden Salad',
-    nameFr: 'Salade fraîche du jardin',
-    nameEs: 'Ensalada fresca del huerto',
-    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14378.jpeg'),
+    nameEn: 'Grilled Fish Chermoula',
+    nameFr: 'Poisson grillé chermoula',
+    nameEs: 'Pescado a la parrilla chermoula',
+    image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400',
     calories: 320
   },
   {
-    nameEn: 'Beef Vegetable Stew',
-    nameFr: 'Ragoût de bœuf aux légumes',
-    nameEs: 'Estofado de ternera con verduras',
-    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14388.jpeg'),
-    calories: 450
+    nameEn: 'Vegetable Tajine',
+    nameFr: 'Tajine aux légumes',
+    nameEs: 'Tajine de verduras',
+    image: 'https://images.unsplash.com/photo-1540914124281-342587941389?w=400',
+    calories: 290
+  }
+];
+
+// International recipes - del seed del proyecto principal con imágenes Unsplash verificadas
+const internationalRecipes = [
+  {
+    nameEn: 'Chicken Caesar Salad',
+    nameFr: 'Salade César au poulet',
+    nameEs: 'Ensalada César con pollo',
+    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400',
+    calories: 320
   },
   {
-    nameEn: 'Vegetable Shrimp Stir-fry',
-    nameFr: 'Crevettes sautées aux légumes',
-    nameEs: 'Gambas salteadas con verduras',
-    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14409.jpeg'),
-    calories: 290
+    nameEn: 'Baked Salmon with Lemon',
+    nameFr: 'Saumon au four au citron',
+    nameEs: 'Salmón al horno con limón',
+    image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400',
+    calories: 350
+  },
+  {
+    nameEn: 'Quinoa Vegetable Bowl',
+    nameFr: 'Bowl de quinoa aux légumes',
+    nameEs: 'Bowl de quinoa y vegetales',
+    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400',
+    calories: 420
+  },
+  {
+    nameEn: 'Tofu Teriyaki with Rice',
+    nameFr: 'Tofu teriyaki avec riz',
+    nameEs: 'Tofu teriyaki con arroz',
+    image: 'https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f?w=400',
+    calories: 380
+  },
+  {
+    nameEn: 'Green Detox Smoothie',
+    nameFr: 'Smoothie vert détox',
+    nameEs: 'Smoothie verde detox',
+    image: 'https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=400',
+    calories: 180
+  },
+  {
+    nameEn: 'Açaí Bowl with Granola',
+    nameFr: 'Bol d\'açaí avec granola',
+    nameEs: 'Tazón de açaí con granola',
+    image: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?w=400',
+    calories: 320
   }
 ];
 ---
