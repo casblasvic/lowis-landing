@@ -23,17 +23,17 @@ interface Props {
 
 const { t } = Astro.props;
 
-// Recipe images
+// Recipe images from Supabase Storage (NO Unsplash)
 const moroccanImages = [
-  'https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=100&h=100&fit=crop',
-  'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=100&h=100&fit=crop',
-  'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=100&h=100&fit=crop',
+  'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/15056.jpeg',
+  'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14263.jpeg',
+  'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14302.jpeg',
 ];
 
 const genericImages = [
-  'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=100&h=100&fit=crop',
-  'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=100&h=100&fit=crop',
-  'https://images.unsplash.com/photo-1546793665-c74683f339c1?w=100&h=100&fit=crop',
+  'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14368.jpeg',
+  'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14339.jpeg',
+  'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14378.jpeg',
 ];
 
 // Moroccan recipes (default hidden)
