@@ -57,10 +57,10 @@ const {
 
 const baseUrl = SITE_CONFIG.domain;
 
-// Language selector data
-const currentLangMeta = languageMetadata[lang];
-// Show all 4 languages in HTML, client JS will filter based on detected region
-const allLanguages: Language[] = ['fr', 'fr-FR', 'en', 'es'];
+// Language selector data - Only show fr-FR (France), en, es
+// Morocco flag is for geo/pricing, NOT for language selector
+const selectorLanguages: Language[] = ['fr-FR', 'en', 'es'];
+const currentLangMeta = languageMetadata[lang === 'fr' ? 'fr-FR' : lang];
 const currentPath = Astro.url.pathname;
 
 // Calculate blog-specific alternate URLs
@@ -300,20 +300,16 @@ const articleStructuredData = publishDate ? {
                 class="absolute right-0 mt-2 w-44 rounded-xl shadow-lg border overflow-hidden opacity-0 invisible transition-all duration-200 z-50"
                 style="background: var(--blog-surface); border-color: var(--blog-border);"
               >
-                {allLanguages.map((targetLang) => {
+                {selectorLanguages.map((targetLang) => {
                   const targetMeta = languageMetadata[targetLang];
-                  const isActive = targetLang === lang;
-                  // fr and fr-FR are both French - show appropriate label
-                  const displayName = targetLang === 'fr' || targetLang === 'fr-FR'
-                    ? translatedLanguageNames[lang]['fr'] // Both show as "Français/French/Francés"
-                    : translatedLanguageNames[lang][targetLang];
+                  // fr and fr-FR are both "French" - check if current page is either French variant
+                  const isActive = targetLang === lang || (targetLang === 'fr-FR' && lang === 'fr');
+                  const displayName = translatedLanguageNames[lang === 'fr' ? 'fr-FR' : lang][targetLang];
                   return (
                     <a
                       href={getBlogPathForLang(targetLang)}
                       class={`lang-option flex items-center gap-3 px-4 py-2.5 text-sm transition-colors ${isActive ? 'font-semibold' : ''}`}
                       style={`color: var(--blog-text); ${isActive ? 'background: var(--blog-bg);' : ''}`}
-                      data-lang={targetLang}
-                      data-region={targetMeta.region}
                     >
                       <span class="text-base">{targetMeta.flag}</span>
                       <span class="flex-1">{displayName}</span>
@@ -480,46 +476,6 @@ const articleStructuredData = publishDate ? {
         langDropdown?.classList.remove('opacity-100', 'visible');
         langDropdown?.classList.add('opacity-0', 'invisible');
       });
-
-      // Regional filtering for language options (MA vs FR vs International)
-      function filterLanguageOptions() {
-        const country = localStorage.getItem('lowis_country');
-
-        // Determine user region
-        let userRegion: 'MA' | 'FR' | 'INT';
-        if (country && ['MA', 'DZ', 'TN'].includes(country)) {
-          userRegion = 'MA';
-        } else if (country === 'FR') {
-          userRegion = 'FR';
-        } else {
-          userRegion = 'INT';
-        }
-
-        document.querySelectorAll('.lang-option').forEach((option) => {
-          const langCode = (option as HTMLElement).dataset.lang;
-          const langRegion = (option as HTMLElement).dataset.region;
-
-          // Filtering logic:
-          // - MA users: show 'fr' (Morocco flag), hide 'fr-FR' (France flag)
-          // - FR users: show 'fr-FR' (France flag), hide 'fr' (Morocco flag)
-          // - INT users: show 'fr-FR' (France as representative French), hide 'fr' (Morocco)
-          if (userRegion === 'MA') {
-            // Morocco: hide France French
-            if (langRegion === 'FR') {
-              (option as HTMLElement).style.display = 'none';
-            }
-          } else {
-            // France and International: hide Morocco French, show France French
-            if (langRegion === 'MA' && langCode === 'fr') {
-              (option as HTMLElement).style.display = 'none';
-            }
-          }
-        });
-      }
-
-      // Apply filter on load and when country is detected
-      filterLanguageOptions();
-      window.addEventListener('lowis-country-detected', filterLanguageOptions);
 
       // ============================================
       // Image Protection (disable right-click & drag)
