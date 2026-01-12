@@ -47,7 +47,8 @@ const htmlLang = htmlLangMap[lang] || lang;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Security: Content Security Policy (GitHub Pages doesn't support HTTP headers) -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https: https://yjxnyjcaxehosndbyepg.supabase.co https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://yjxnyjcaxehosndbyepg.supabase.co https://ipwho.is https://www.google-analytics.com https://www.googletagmanager.com https://region1.google-analytics.com https://analytics.google.com; frame-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://app.lowis.app; object-src 'none'; upgrade-insecure-requests" />
+    <!-- Note: frame-ancestors removed - only works via HTTP header, not meta tag -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https: https://yjxnyjcaxehosndbyepg.supabase.co https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://yjxnyjcaxehosndbyepg.supabase.co https://ipwho.is https://www.google-analytics.com https://www.googletagmanager.com https://region1.google-analytics.com https://analytics.google.com; frame-src 'self'; base-uri 'self'; form-action 'self' https://app.lowis.app; object-src 'none'; upgrade-insecure-requests" />
 
     <meta name="description" content={description} />
     {keywords && <meta name="keywords" content={keywords} />}
@@ -85,7 +86,7 @@ const htmlLang = htmlLangMap[lang] || lang;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://yjxnyjcaxehosndbyepg.supabase.co" crossorigin />
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <!-- Note: gtag dns-prefetch removed - GA4 is deferred 2.5s after load for better LCP -->
 
     <!-- Material Symbols - Async loading -->
     <link
@@ -111,7 +112,7 @@ const htmlLang = htmlLangMap[lang] || lang;
 
     <title>{title}</title>
 
-    <!-- Google Analytics 4 - Loaded conditionally based on consent -->
+    <!-- Google Analytics 4 - Loaded conditionally based on consent AND deferred for performance -->
     <script is:inline>
       // Initialize dataLayer for GA
       window.dataLayer = window.dataLayer || [];
@@ -120,22 +121,34 @@ const htmlLang = htmlLangMap[lang] || lang;
       // Flag to prevent double loading
       window.lowisGALoaded = false;
 
-      // Function to load GA script and configure
+      // Function to load GA script and configure (deferred)
       function loadGoogleAnalytics() {
         if (window.lowisGALoaded) return;
         window.lowisGALoaded = true;
 
-        // Load the GA script
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-52G0810T4P';
-        document.head.appendChild(script);
+        // Defer loading to not block LCP
+        function doLoad() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-52G0810T4P';
+          document.head.appendChild(script);
 
-        // Configure GA
-        gtag('js', new Date());
-        gtag('config', 'G-52G0810T4P', {
-          'anonymize_ip': true // Extra privacy measure
-        });
+          script.onload = function() {
+            gtag('js', new Date());
+            gtag('config', 'G-52G0810T4P', {
+              'anonymize_ip': true
+            });
+          };
+        }
+
+        // Wait for page to be fully interactive before loading GA
+        if (document.readyState === 'complete') {
+          setTimeout(doLoad, 2500);
+        } else {
+          window.addEventListener('load', function() {
+            setTimeout(doLoad, 2500);
+          });
+        }
       }
 
       // Listen for consent event from CookieConsent component

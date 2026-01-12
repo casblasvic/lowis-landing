@@ -27,42 +27,51 @@ interface Props {
 
 const { t, lang } = Astro.props;
 
+// Helper to get optimized Supabase image URL (resized + compressed)
+// Note: Supabase doesn't support WebP conversion, only resize/quality
+function getOptimizedImageUrl(baseUrl: string, width: number = 200): string {
+  // Supabase image transformation: render endpoint with width and quality
+  return baseUrl
+    .replace('/storage/v1/object/public/', '/storage/v1/render/image/public/')
+    + `?width=${width}&height=${width}&resize=cover&quality=80`;
+}
+
 // Protein-rich Moroccan recipes - no carbs/grains (all images from Supabase Storage)
 const moroccanRecipes = [
   {
     name: 'Tajine Poulet Citron',
     nameFr: 'Tajine au poulet et citron',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/15056.jpeg',
+    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/15056.jpeg'),
     calories: 420
   },
   {
     name: 'Brochettes Agneau',
     nameFr: 'Brochettes d\'agneau grillées',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14263.jpeg',
+    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14263.jpeg'),
     calories: 380
   },
   {
     name: 'Tajine Viande Légumes',
     nameFr: 'Tajine de viande et légumes',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/15140.jpeg',
+    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/15140.jpeg'),
     calories: 450
   },
   {
     name: 'Poisson Chermoula',
     nameFr: 'Poisson grillé chermoula',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14302.jpeg',
+    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14302.jpeg'),
     calories: 320
   },
   {
     name: 'Tajine Kefta',
     nameFr: 'Tajine aux boulettes kefta',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/19778.jpeg',
+    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/19778.jpeg'),
     calories: 390
   },
   {
     name: 'Mechoui',
     nameFr: 'Épaule d\'agneau rôtie',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14318.jpeg',
+    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14318.jpeg'),
     calories: 480
   }
 ];
@@ -72,37 +81,37 @@ const internationalRecipes = [
   {
     name: 'Grilled Salmon',
     nameFr: 'Saumon grillé aux herbes',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14339.jpeg',
+    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14339.jpeg'),
     calories: 350
   },
   {
     name: 'Mediterranean Bowl',
     nameFr: 'Bowl méditerranéen',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14353.jpeg',
+    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14353.jpeg'),
     calories: 420
   },
   {
     name: 'Grilled Chicken',
     nameFr: 'Poulet grillé aux épices',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14368.jpeg',
+    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14368.jpeg'),
     calories: 380
   },
   {
     name: 'Caesar Salad',
     nameFr: 'Salade César au poulet',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14378.jpeg',
+    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14378.jpeg'),
     calories: 320
   },
   {
     name: 'Beef Steak',
     nameFr: 'Steak de bœuf grillé',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14388.jpeg',
+    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14388.jpeg'),
     calories: 450
   },
   {
     name: 'Shrimp Stir-fry',
     nameFr: 'Crevettes sautées légumes',
-    image: 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14409.jpeg',
+    image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14409.jpeg'),
     calories: 290
   }
 ];
@@ -328,6 +337,7 @@ const internationalRecipes = [
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    aspect-ratio: 1 / 1;
   }
 
   .recipe-card-img:hover img {
@@ -376,7 +386,7 @@ const internationalRecipes = [
 </style>
 
 <script>
-  // Touch/swipe support for recipe carousels (handles multiple)
+  // Touch/swipe support for recipe carousels (optimized to avoid forced reflows)
   document.querySelectorAll('.recipe-carousel-container').forEach(container => {
     const carousel = container.querySelector('.recipe-carousel') as HTMLElement | null;
 
@@ -386,116 +396,103 @@ const internationalRecipes = [
     let startX = 0;
     let currentTranslate = 0;
     let prevTranslate = 0;
+    let cachedWidth = 0; // Cache scrollWidth to avoid repeated layout queries
 
-    // Get the current transform value from animation
-    function getCurrentTransform(): number {
+    // Cache carousel width once on first interaction (avoids repeated reflows)
+    function getCarouselWidth(): number {
+      if (cachedWidth === 0) {
+        cachedWidth = carousel!.scrollWidth / 2;
+      }
+      return cachedWidth;
+    }
+
+    // Get initial transform - only called once at drag start
+    function captureCurrentTransform(): number {
       const style = window.getComputedStyle(carousel!);
       const matrix = new DOMMatrix(style.transform);
-      return matrix.m41; // translateX value
+      return matrix.m41;
+    }
+
+    // Resume animation helper
+    function resumeAnimation() {
+      const width = getCarouselWidth();
+      const progress = Math.abs(currentTranslate) / width;
+      const remainingDuration = 30 * (1 - progress);
+
+      carousel!.style.animation = 'none';
+      carousel!.style.transform = `translateX(${currentTranslate}px)`;
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          carousel!.style.animation = `scroll ${remainingDuration}s linear infinite`;
+        });
+      });
+    }
+
+    // Handle drag movement (shared logic)
+    function handleDragMove(clientX: number) {
+      if (!isDragging) return;
+      const diff = clientX - startX;
+      currentTranslate = prevTranslate + diff;
+
+      const width = getCarouselWidth();
+
+      // Wrap around for infinite feel
+      if (currentTranslate > 0) {
+        currentTranslate = -width + currentTranslate;
+        prevTranslate = currentTranslate - diff;
+      } else if (currentTranslate < -width) {
+        currentTranslate = currentTranslate + width;
+        prevTranslate = currentTranslate - diff;
+      }
+
+      carousel!.style.transform = `translateX(${currentTranslate}px)`;
     }
 
     // Touch events
     container.addEventListener('touchstart', (e: TouchEvent) => {
       isDragging = true;
       startX = e.touches[0].clientX;
-      prevTranslate = getCurrentTransform();
+      prevTranslate = captureCurrentTransform();
       carousel!.classList.add('dragging');
       carousel!.style.transform = `translateX(${prevTranslate}px)`;
     }, { passive: true });
 
     container.addEventListener('touchmove', (e: TouchEvent) => {
-      if (!isDragging) return;
-      const currentX = e.touches[0].clientX;
-      const diff = currentX - startX;
-      currentTranslate = prevTranslate + diff;
-
-      // Get carousel width for boundaries
-      const carouselWidth = carousel!.scrollWidth / 2;
-
-      // Wrap around for infinite feel
-      if (currentTranslate > 0) {
-        currentTranslate = -carouselWidth + currentTranslate;
-        prevTranslate = currentTranslate - diff;
-      } else if (currentTranslate < -carouselWidth) {
-        currentTranslate = currentTranslate + carouselWidth;
-        prevTranslate = currentTranslate - diff;
-      }
-
-      carousel!.style.transform = `translateX(${currentTranslate}px)`;
+      handleDragMove(e.touches[0].clientX);
     }, { passive: true });
 
     container.addEventListener('touchend', () => {
       isDragging = false;
       carousel!.classList.remove('dragging');
-
-      // Resume animation from current position
-      const carouselWidth = carousel!.scrollWidth / 2;
-      const progress = Math.abs(currentTranslate) / carouselWidth;
-      const remainingDuration = 30 * (1 - progress);
-
-      carousel!.style.animation = 'none';
-      carousel!.offsetHeight; // Force reflow
-      carousel!.style.transform = `translateX(${currentTranslate}px)`;
-      carousel!.style.animation = `scroll ${remainingDuration}s linear infinite`;
+      resumeAnimation();
     });
 
     // Mouse events for desktop drag
     container.addEventListener('mousedown', (e: MouseEvent) => {
       isDragging = true;
       startX = e.clientX;
-      prevTranslate = getCurrentTransform();
+      prevTranslate = captureCurrentTransform();
       carousel!.classList.add('dragging');
       carousel!.style.transform = `translateX(${prevTranslate}px)`;
       e.preventDefault();
     });
 
     container.addEventListener('mousemove', (e: MouseEvent) => {
-      if (!isDragging) return;
-      const currentX = e.clientX;
-      const diff = currentX - startX;
-      currentTranslate = prevTranslate + diff;
-
-      const carouselWidth = carousel!.scrollWidth / 2;
-
-      if (currentTranslate > 0) {
-        currentTranslate = -carouselWidth + currentTranslate;
-        prevTranslate = currentTranslate - diff;
-      } else if (currentTranslate < -carouselWidth) {
-        currentTranslate = currentTranslate + carouselWidth;
-        prevTranslate = currentTranslate - diff;
-      }
-
-      carousel!.style.transform = `translateX(${currentTranslate}px)`;
+      handleDragMove(e.clientX);
     });
 
     container.addEventListener('mouseup', () => {
       if (!isDragging) return;
       isDragging = false;
       carousel!.classList.remove('dragging');
-
-      const carouselWidth = carousel!.scrollWidth / 2;
-      const progress = Math.abs(currentTranslate) / carouselWidth;
-      const remainingDuration = 30 * (1 - progress);
-
-      carousel!.style.animation = 'none';
-      carousel!.offsetHeight;
-      carousel!.style.transform = `translateX(${currentTranslate}px)`;
-      carousel!.style.animation = `scroll ${remainingDuration}s linear infinite`;
+      resumeAnimation();
     });
 
     container.addEventListener('mouseleave', () => {
       if (isDragging) {
         isDragging = false;
         carousel!.classList.remove('dragging');
-
-        const carouselWidth = carousel!.scrollWidth / 2;
-        const progress = Math.abs(currentTranslate) / carouselWidth;
-        const remainingDuration = 30 * (1 - progress);
-
-        carousel!.style.animation = 'none';
-        carousel!.offsetHeight;
-        carousel!.style.transform = `translateX(${currentTranslate}px)`;
-        carousel!.style.animation = `scroll ${remainingDuration}s linear infinite`;
+        resumeAnimation();
       }
     });
   });

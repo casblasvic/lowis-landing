@@ -511,9 +511,9 @@
     },
     "legal": {
       "title": "Legal",
-      "privacy": "Privacidad",
-      "terms": "Términos",
-      "cookies": "Cookies"
+      "privacy": "Política de privacidad",
+      "terms": "Términos de servicio",
+      "cookies": "Política de cookies"
     },
     "contact": {
       "title": "Contacto",
