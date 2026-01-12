@@ -1,13 +1,30 @@
 ---
 interface Props {
   class?: string;
+  size?: 'sm' | 'md' | 'lg';
 }
 
-const { class: className = '' } = Astro.props;
+const { class: className = '', size = 'md' } = Astro.props;
+
+// Responsive logo with optimized WebP sizes
+// sm: 24-32px display (48px for 2x retina)
+// md: 32-48px display (96px for 2x retina)
+// lg: 64-80px display (160px for 2x retina)
+const srcset = {
+  sm: '/icons/logo-48.webp 1x, /icons/logo-96.webp 2x',
+  md: '/icons/logo-96.webp 1x, /icons/logo-192.webp 2x',
+  lg: '/icons/logo-160.webp 1x, /icons/logo-192.webp 2x',
+};
 ---
 
-<img
-  src="/icons/logo-512.png"
-  alt="LOWIS"
-  class:list={[className, 'object-contain']}
-/>
+<picture>
+  <source type="image/webp" srcset={srcset[size]} />
+  <img
+    src="/icons/logo-192.png"
+    alt=""
+    role="presentation"
+    class:list={[className, 'object-contain']}
+    loading="eager"
+    decoding="async"
+  />
+</picture>
