@@ -105,13 +105,13 @@ Ce n'est pas vous qui choisissez mal — c'est votre cerveau fatigué qui prend 
 
 Le cercle vicieux se met en place progressivement :
 
-![Le cercle vicieux sommeil-poids : mauvais sommeil, fatigue, hormones perturbées, mauvais choix alimentaires, prise de poids](https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/Landing/blog/sommeil-perte-poids/vicious-cycle.png)
+![Le cercle vicieux sommeil-poids : mauvais sommeil, fatigue, hormones perturbées, mauvais choix alimentaires, prise de poids](https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/Landing/blog/sommeil-perte-poids/vicious-cycle-fr.png)
 
 ### Comment briser le cycle
 
 La bonne nouvelle : améliorer votre sommeil peut enclencher un cercle vertueux :
 
-![Le cercle vertueux : meilleur sommeil, plus d'énergie, hormones équilibrées, meilleurs choix alimentaires, perte de poids](https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/Landing/blog/sommeil-perte-poids/virtuous-cycle.png)
+![Le cercle vertueux : meilleur sommeil, plus d'énergie, hormones équilibrées, meilleurs choix alimentaires, perte de poids](https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/Landing/blog/sommeil-perte-poids/virtuous-cycle-fr.png)
 
 ## Les 7 piliers du sommeil minceur
 

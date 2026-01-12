@@ -93,13 +93,13 @@ When you're tired, your brain pushes you toward caloric foods. It's not lack of 
 
 The vicious cycle develops progressively:
 
-![The vicious sleep-weight cycle: poor sleep, fatigue, disrupted hormones, poor food choices, weight gain](https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/Landing/blog/sommeil-perte-poids/vicious-cycle.png)
+![The vicious sleep-weight cycle: poor sleep, fatigue, disrupted hormones, poor food choices, weight gain](https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/Landing/blog/sommeil-perte-poids/vicious-cycle-en.png)
 
 ### How to Break the Cycle
 
 The good news: improving your sleep can trigger a virtuous cycle:
 
-![The virtuous cycle: better sleep, more energy, balanced hormones, better food choices, weight loss](https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/Landing/blog/sommeil-perte-poids/virtuous-cycle.png)
+![The virtuous cycle: better sleep, more energy, balanced hormones, better food choices, weight loss](https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/Landing/blog/sommeil-perte-poids/virtuous-cycle-en.png)
 
 ## The 7 Pillars of Weight-Loss Sleep
 
