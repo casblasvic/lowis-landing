@@ -80,16 +80,49 @@ const genericRecipes = (t.demo.recipesItemsGeneric || [
         </div>
       </div>
 
-      <!-- AI Message -->
+      <!-- AI Message - Rotating personalized messages -->
       <div class="ai-message">
         <div class="ai-avatar">
           <span class="material-symbols-outlined ai-icon">smart_toy</span>
         </div>
         <div class="ai-bubble">
-          <p class="ai-greeting">
-            {t.demo.aiMessage}, <span class="user-name" data-generic-name={t.demo.namesGeneric?.[0] || 'Sophie'} data-morocco-name={t.demo.names[0]}>{t.demo.namesGeneric?.[0] || 'Sophie'}</span>! 🎉
-          </p>
-          <p class="ai-subtext">{t.demo.aiSubtext || 'You\'ve reached 85% of your goals'}</p>
+          <div class="ai-messages-container">
+            <!-- Message 1: Progress tracking -->
+            <div class="ai-msg active" data-msg="0">
+              <p class="ai-greeting">
+                <span class="user-name" data-generic-name={t.demo.namesGeneric?.[0] || 'Sophie'} data-morocco-name={t.demo.names[0]}>{t.demo.namesGeneric?.[0] || 'Sophie'}</span>, <span data-ai-text="progress"></span> 🎉
+              </p>
+              <p class="ai-subtext" data-ai-subtext="progress"></p>
+            </div>
+            <!-- Message 2: Learning habits -->
+            <div class="ai-msg" data-msg="1">
+              <p class="ai-greeting">
+                <span data-ai-text="habits"></span> 📊
+              </p>
+              <p class="ai-subtext" data-ai-subtext="habits"></p>
+            </div>
+            <!-- Message 3: Personalized recommendation -->
+            <div class="ai-msg" data-msg="2">
+              <p class="ai-greeting">
+                <span data-ai-text="recommendation"></span> 💡
+              </p>
+              <p class="ai-subtext" data-ai-subtext="recommendation"></p>
+            </div>
+            <!-- Message 4: Contextual awareness -->
+            <div class="ai-msg" data-msg="3">
+              <p class="ai-greeting">
+                <span data-ai-text="context"></span> ⚡
+              </p>
+              <p class="ai-subtext" data-ai-subtext="context"></p>
+            </div>
+            <!-- Message 5: Goal celebration -->
+            <div class="ai-msg" data-msg="4">
+              <p class="ai-greeting">
+                <span class="user-name">{t.demo.namesGeneric?.[0] || 'Sophie'}</span>, <span data-ai-text="celebration"></span> 🏆
+              </p>
+              <p class="ai-subtext" data-ai-subtext="celebration"></p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -374,6 +407,30 @@ const genericRecipes = (t.demo.recipesItemsGeneric || [
     color: #6B7280;
   }
 
+  /* Rotating AI messages */
+  .ai-messages-container {
+    position: relative;
+    min-height: 3rem;
+  }
+
+  .ai-msg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+  }
+
+  .ai-msg.active {
+    position: relative;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
   .progress-section {
     padding: 0.75rem 1rem;
   }
@@ -573,39 +630,148 @@ const genericRecipes = (t.demo.recipesItemsGeneric || [
 </style>
 
 <script>
+  // Detect language from URL path
+  function detectLanguage(): 'fr' | 'es' | 'en' {
+    const path = window.location.pathname;
+    if (path.startsWith('/es')) return 'es';
+    if (path.startsWith('/en')) return 'en';
+    return 'fr'; // Default (Morocco + France)
+  }
+
+  // AI messages that show personalization and learning - per language
+  const aiMessages: Record<string, Record<string, { text: string; subtext: string }>> = {
+    fr: {
+      progress: {
+        text: "tu as atteint 85% de tes objectifs",
+        subtext: "Continue comme ça, tu es sur la bonne voie!"
+      },
+      habits: {
+        text: "Je remarque que tu manges plus de protéines le mardi",
+        subtext: "J'ai adapté tes recommandations en conséquence"
+      },
+      recommendation: {
+        text: "Basé sur ton objectif de -0.5kg/sem",
+        subtext: "Voici 3 recettes riches en protéines pour ce soir"
+      },
+      context: {
+        text: "Comme tu as fait du sport aujourd'hui",
+        subtext: "Je te suggère +20g de protéines et plus d'eau"
+      },
+      celebration: {
+        text: "3 semaines consécutives réussies!",
+        subtext: "Tu as perdu 1.8kg - ton métabolisme s'améliore"
+      }
+    },
+    es: {
+      progress: {
+        text: "has alcanzado el 85% de tus objetivos",
+        subtext: "¡Sigue así, vas por buen camino!"
+      },
+      habits: {
+        text: "Noto que comes más proteína los martes",
+        subtext: "He adaptado tus recomendaciones según esto"
+      },
+      recommendation: {
+        text: "Basado en tu meta de -0.5kg/semana",
+        subtext: "Aquí tienes 3 recetas altas en proteína para hoy"
+      },
+      context: {
+        text: "Como hoy entrenaste",
+        subtext: "Te sugiero +20g de proteína y más agua"
+      },
+      celebration: {
+        text: "¡3 semanas consecutivas cumpliendo!",
+        subtext: "Has perdido 1.8kg - tu metabolismo mejora"
+      }
+    },
+    en: {
+      progress: {
+        text: "you've reached 85% of your goals",
+        subtext: "Keep it up, you're on the right track!"
+      },
+      habits: {
+        text: "I notice you eat more protein on Tuesdays",
+        subtext: "I've adapted your recommendations accordingly"
+      },
+      recommendation: {
+        text: "Based on your -0.5kg/week goal",
+        subtext: "Here are 3 high-protein recipes for tonight"
+      },
+      context: {
+        text: "Since you worked out today",
+        subtext: "I suggest +20g protein and more water"
+      },
+      celebration: {
+        text: "3 consecutive weeks achieved!",
+        subtext: "You've lost 1.8kg - your metabolism is improving"
+      }
+    }
+  };
+
   // Get names based on detected country
-  // Uses data attributes set on the element for i18n support
   function isMoroccoUser(): boolean {
     const country = localStorage.getItem('lowis_country');
     const moroccoGroup = ['MA', 'DZ', 'TN'];
     return country !== null && moroccoGroup.includes(country);
   }
 
-  const userNameEl = document.querySelector('.user-name') as HTMLElement | null;
+  // Initialize AI messages with localized content
+  const lang = detectLanguage();
+  const messages = aiMessages[lang];
 
-  if (userNameEl) {
-    // Wait a bit for geo-detection to complete
+  // Set initial text content
+  document.querySelectorAll('[data-ai-text]').forEach(el => {
+    const key = el.getAttribute('data-ai-text') as string;
+    if (messages[key]) {
+      el.textContent = messages[key].text;
+    }
+  });
+
+  document.querySelectorAll('[data-ai-subtext]').forEach(el => {
+    const key = el.getAttribute('data-ai-subtext') as string;
+    if (messages[key]) {
+      el.textContent = messages[key].subtext;
+    }
+  });
+
+  // Rotate AI messages
+  const aiMsgs = document.querySelectorAll('.ai-msg');
+  let currentMsgIndex = 0;
+
+  function rotateMessage() {
+    aiMsgs.forEach(msg => msg.classList.remove('active'));
+    currentMsgIndex = (currentMsgIndex + 1) % aiMsgs.length;
+    aiMsgs[currentMsgIndex].classList.add('active');
+  }
+
+  // Start rotating messages every 4 seconds
+  setInterval(rotateMessage, 4000);
+
+  // Handle user name rotation
+  const userNameEls = document.querySelectorAll('.user-name') as NodeListOf<HTMLElement>;
+
+  if (userNameEls.length > 0) {
     setTimeout(() => {
       const isMorocco = isMoroccoUser();
 
-      // Get names from data attributes (set by translations)
-      const genericName = userNameEl.getAttribute('data-generic-name') || 'Sophie';
-      const moroccoName = userNameEl.getAttribute('data-morocco-name') || 'Rania';
-
-      // Set initial name based on geo
-      userNameEl.textContent = isMorocco ? moroccoName : genericName;
-
-      // Get full name lists for rotation
-      const genericNames = ['Sophie', 'Marie', 'Emma', 'Léa', 'Julie', 'Thomas', 'Lucas', 'Antoine', 'Hugo', 'Louis'];
-      const moroccanNames = ['Rania', 'Fatima', 'Nour', 'Salma', 'Amina', 'Houda', 'Adnan', 'Youssef', 'Karim', 'Omar'];
+      const genericNames = ['Sophie', 'Marie', 'Emma', 'Léa', 'Julie', 'Ana', 'Laura', 'Clara'];
+      const moroccanNames = ['Rania', 'Fatima', 'Nour', 'Salma', 'Amina', 'Houda', 'Layla', 'Yasmine'];
 
       const names = isMorocco ? moroccanNames : genericNames;
-      let currentIndex = 0;
+      let nameIndex = 0;
 
+      // Set initial names
+      userNameEls.forEach(el => {
+        el.textContent = names[nameIndex];
+      });
+
+      // Rotate names in sync with messages
       setInterval(() => {
-        currentIndex = (currentIndex + 1) % names.length;
-        userNameEl.textContent = names[currentIndex];
-      }, 3000);
-    }, 2000);
+        nameIndex = (nameIndex + 1) % names.length;
+        userNameEls.forEach(el => {
+          el.textContent = names[nameIndex];
+        });
+      }, 4000);
+    }, 1000);
   }
 </script>
