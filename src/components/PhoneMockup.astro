@@ -23,31 +23,31 @@ interface Props {
 
 const { t } = Astro.props;
 
-// Recipe images from Supabase Storage (NO Unsplash)
+// Recipe images - verified Unsplash images that match recipe names
 const moroccanImages = [
-  'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/15056.jpeg',
-  'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14263.jpeg',
-  'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14302.jpeg',
+  'https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=100', // Tajine
+  'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=100', // Kefta
+  'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=100', // Grilled fish
 ];
 
 const genericImages = [
-  'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14368.jpeg',
-  'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14339.jpeg',
-  'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14378.jpeg',
+  'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=100', // Caesar salad
+  'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=100', // Salmon
+  'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=100', // Quinoa bowl
 ];
 
 // Moroccan recipes (default hidden)
 const moroccanRecipes = (t.demo.recipesItems || [
-  { name: 'Tajine Poulet Citron', calories: 320 },
-  { name: 'Brochettes Kefta', calories: 280 },
-  { name: 'Poisson Grillé', calories: 240 },
+  { name: 'Tajine de Poulet', calories: 420 },
+  { name: 'Boulettes Kefta', calories: 350 },
+  { name: 'Poisson Grillé', calories: 320 },
 ]).map((r, i) => ({ ...r, image: moroccanImages[i] }));
 
 // Generic recipes (default visible)
 const genericRecipes = (t.demo.recipesItemsGeneric || [
-  { name: 'Poulet Méditerranéen', calories: 320 },
-  { name: 'Saumon Grillé', calories: 280 },
-  { name: 'Salade César', calories: 240 },
+  { name: 'Salade César', calories: 320 },
+  { name: 'Saumon au Citron', calories: 350 },
+  { name: 'Bowl Quinoa', calories: 420 },
 ]).map((r, i) => ({ ...r, image: genericImages[i] }));
 ---
 

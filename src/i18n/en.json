@@ -542,9 +542,9 @@
       { "name": "Grilled Fish", "calories": 240 }
     ],
     "recipesItemsGeneric": [
-      { "name": "Mediterranean Chicken", "calories": 320 },
-      { "name": "Grilled Salmon", "calories": 280 },
-      { "name": "Caesar Salad", "calories": 240 }
+      { "name": "Caesar Salad", "calories": 320 },
+      { "name": "Lemon Salmon", "calories": 350 },
+      { "name": "Quinoa Bowl", "calories": 420 }
     ]
   },
   "privacy": {

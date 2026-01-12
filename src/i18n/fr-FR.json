@@ -542,9 +542,9 @@
       { "name": "Poisson Grillé", "calories": 240 }
     ],
     "recipesItemsGeneric": [
-      { "name": "Poulet Méditerranéen", "calories": 320 },
-      { "name": "Saumon Grillé", "calories": 280 },
-      { "name": "Salade César", "calories": 240 }
+      { "name": "Salade César", "calories": 320 },
+      { "name": "Saumon au Citron", "calories": 350 },
+      { "name": "Bowl Quinoa", "calories": 420 }
     ]
   },
   "privacy": {

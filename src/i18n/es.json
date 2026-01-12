@@ -542,9 +542,9 @@
       { "name": "Pescado a la Parrilla", "calories": 240 }
     ],
     "recipesItemsGeneric": [
-      { "name": "Pollo Mediterráneo", "calories": 320 },
-      { "name": "Salmón a la Plancha", "calories": 280 },
-      { "name": "Ensalada César", "calories": 240 }
+      { "name": "Ensalada César", "calories": 320 },
+      { "name": "Salmón al Limón", "calories": 350 },
+      { "name": "Bowl de Quinoa", "calories": 420 }
     ]
   },
   "privacy": {
