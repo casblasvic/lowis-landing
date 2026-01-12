@@ -91,25 +91,27 @@ Cuando estás cansado, tu cerebro te empuja hacia alimentos calóricos. No es fa
 
 ### Cómo se instala
 
-```
-Mal sueño
-    ↓
-Fatiga → Menos ejercicio
-    ↓
-Hormonas alteradas → Más hambre
-    ↓
-Malas elecciones alimentarias
-    ↓
-Aumento de peso
-    ↓
-Peor calidad de sueño
-    ↓
-(Volver al inicio)
-```
+El círculo vicioso se establece progresivamente:
+
+1. **Mal sueño** 😴
+2. ⬇️ **Fatiga** → Menos ejercicio
+3. ⬇️ **Hormonas alteradas** → Más hambre
+4. ⬇️ **Malas elecciones alimentarias**
+5. ⬇️ **Aumento de peso**
+6. ⬇️ **Peor calidad de sueño**
+7. 🔄 *(Volver al inicio)*
 
 ### Cómo romper el ciclo
 
-La buena noticia: mejorar tu sueño puede iniciar un círculo virtuoso.
+La buena noticia: mejorar tu sueño puede iniciar un círculo virtuoso:
+
+1. **Mejor sueño** 🌙
+2. ⬆️ **Más energía** → Más actividad
+3. ⬆️ **Hormonas equilibradas** → Hambre normal
+4. ⬆️ **Mejores elecciones alimentarias**
+5. ⬆️ **Pérdida de peso**
+6. ⬆️ **Sueño aún mejor**
+7. ✨ *(Círculo virtuoso)*
 
 ## Los 7 pilares del sueño adelgazante
 

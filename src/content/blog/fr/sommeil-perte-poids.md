@@ -103,41 +103,27 @@ Ce n'est pas vous qui choisissez mal — c'est votre cerveau fatigué qui prend 
 
 ### Comment ça s'installe
 
-```
-Mauvais sommeil
-    ↓
-Fatigue → Moins d'exercice
-    ↓
-Hormones perturbées → Plus de faim
-    ↓
-Mauvais choix alimentaires
-    ↓
-Prise de poids
-    ↓
-Moins bonne qualité de sommeil
-    ↓
-(Retour au début)
-```
+Le cercle vicieux se met en place progressivement :
+
+1. **Mauvais sommeil** 😴
+2. ⬇️ **Fatigue** → Moins d'exercice
+3. ⬇️ **Hormones perturbées** → Plus de faim
+4. ⬇️ **Mauvais choix alimentaires**
+5. ⬇️ **Prise de poids**
+6. ⬇️ **Moins bonne qualité de sommeil**
+7. 🔄 *(Retour au début)*
 
 ### Comment briser le cycle
 
 La bonne nouvelle : améliorer votre sommeil peut enclencher un cercle vertueux :
 
-```
-Meilleur sommeil
-    ↓
-Plus d'énergie → Plus d'activité
-    ↓
-Hormones équilibrées → Faim normale
-    ↓
-Meilleurs choix alimentaires
-    ↓
-Perte de poids
-    ↓
-Sommeil encore meilleur
-    ↓
-(Cercle vertueux)
-```
+1. **Meilleur sommeil** 🌙
+2. ⬆️ **Plus d'énergie** → Plus d'activité
+3. ⬆️ **Hormones équilibrées** → Faim normale
+4. ⬆️ **Meilleurs choix alimentaires**
+5. ⬆️ **Perte de poids**
+6. ⬆️ **Sommeil encore meilleur**
+7. ✨ *(Cercle vertueux)*
 
 ## Les 7 piliers du sommeil minceur
 
