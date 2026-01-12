@@ -10,7 +10,7 @@
  */
 import '../styles/global.css';
 import '../styles/blog.css';
-import { type Language, defaultLang, getAlternateUrls, getPathWithLang } from '../i18n';
+import { type Language, defaultLang, getAlternateUrls, getPathWithLang, languageMetadata, translatedLanguageNames, getAvailableLanguages } from '../i18n';
 import { SITE_CONFIG, getSignupUrlWithLang } from '../config';
 import Logo from '../components/ui/Logo.astro';
 
@@ -56,6 +56,11 @@ const {
 } = Astro.props;
 
 const baseUrl = SITE_CONFIG.domain;
+
+// Language selector data
+const currentLangMeta = languageMetadata[lang];
+const availableLanguages = getAvailableLanguages(null); // Will be filtered by JS on client
+const currentPath = Astro.url.pathname;
 
 // Calculate blog-specific alternate URLs
 function getBlogAlternateUrls() {
@@ -124,7 +129,23 @@ const t = {
   backToBlog: { fr: 'Retour au blog', 'fr-FR': 'Retour au blog', es: 'Volver al blog', en: 'Back to blog' },
   readingTime: { fr: 'min de lecture', 'fr-FR': 'min de lecture', es: 'min de lectura', en: 'min read' },
   theme: { fr: 'Thème', 'fr-FR': 'Thème', es: 'Tema', en: 'Theme' },
+  language: { fr: 'Langue', 'fr-FR': 'Langue', es: 'Idioma', en: 'Language' },
 };
+
+// Helper to get path for language change (handles blog paths correctly)
+function getBlogPathForLang(targetLang: Language): string {
+  // Remove current language prefix if any
+  let cleanPath = currentPath
+    .replace(/^\/(fr|es|en)\//, '/')  // Remove /fr/, /es/, /en/ prefix
+    .replace(/^\/fr\//, '/');          // Handle /fr/ for fr-FR
+
+  // Ensure path starts with /
+  if (!cleanPath.startsWith('/')) {
+    cleanPath = '/' + cleanPath;
+  }
+
+  return getPathWithLang(cleanPath, targetLang);
+}
 
 // Structured data for article
 const articleStructuredData = publishDate ? {
@@ -258,8 +279,46 @@ const articleStructuredData = publishDate ? {
             </a>
           </div>
 
-          <!-- Right: Theme toggle + CTA -->
+          <!-- Right: Language selector + Theme toggle + CTA -->
           <div class="flex items-center gap-3">
+            <!-- Language Selector -->
+            <div class="relative" id="lang-switcher">
+              <button
+                id="lang-toggle"
+                class="flex items-center gap-1.5 px-2 py-1.5 rounded-lg transition-colors"
+                style="color: var(--blog-text);"
+                aria-label={t.language[lang]}
+                title={t.language[lang]}
+              >
+                <span class="text-base">{currentLangMeta.flag}</span>
+                <span class="hidden sm:inline text-sm font-medium">{translatedLanguageNames[lang][lang]}</span>
+                <span class="material-symbols-outlined text-sm" style="color: var(--blog-text-secondary);">expand_more</span>
+              </button>
+              <div
+                id="lang-dropdown"
+                class="absolute right-0 mt-2 w-44 rounded-xl shadow-lg border overflow-hidden opacity-0 invisible transition-all duration-200 z-50"
+                style="background: var(--blog-surface); border-color: var(--blog-border);"
+              >
+                {availableLanguages.map((targetLang) => {
+                  const targetMeta = languageMetadata[targetLang];
+                  const isActive = targetLang === lang;
+                  return (
+                    <a
+                      href={getBlogPathForLang(targetLang)}
+                      class={`lang-option flex items-center gap-3 px-4 py-2.5 text-sm transition-colors ${isActive ? 'font-semibold' : ''}`}
+                      style={`color: var(--blog-text); ${isActive ? 'background: var(--blog-bg);' : ''}`}
+                      data-lang={targetLang}
+                      data-region={targetMeta.region}
+                    >
+                      <span class="text-base">{targetMeta.flag}</span>
+                      <span class="flex-1">{translatedLanguageNames[lang][targetLang]}</span>
+                      {isActive && <span class="material-symbols-outlined text-sm" style="color: var(--blog-accent);">check</span>}
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
+
             <!-- Theme Toggle -->
             <button
               id="theme-toggle"
@@ -394,6 +453,91 @@ const articleStructuredData = publishDate ? {
 
       window.addEventListener('scroll', updateProgress, { passive: true });
       updateProgress(); // Initial call
+
+      // Language Selector Dropdown
+      const langToggle = document.getElementById('lang-toggle');
+      const langDropdown = document.getElementById('lang-dropdown');
+
+      langToggle?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isVisible = langDropdown?.classList.contains('opacity-100');
+        if (isVisible) {
+          langDropdown?.classList.remove('opacity-100', 'visible');
+          langDropdown?.classList.add('opacity-0', 'invisible');
+        } else {
+          langDropdown?.classList.remove('opacity-0', 'invisible');
+          langDropdown?.classList.add('opacity-100', 'visible');
+        }
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', () => {
+        langDropdown?.classList.remove('opacity-100', 'visible');
+        langDropdown?.classList.add('opacity-0', 'invisible');
+      });
+
+      // Regional filtering for language options (MA vs FR)
+      function filterLanguageOptions() {
+        const country = localStorage.getItem('lowis_country');
+        if (!country) return;
+
+        const userRegion = ['MA', 'DZ', 'TN'].includes(country) ? 'MA' : country === 'FR' ? 'FR' : 'INT';
+
+        document.querySelectorAll('.lang-option').forEach((option) => {
+          const langRegion = (option as HTMLElement).dataset.region;
+
+          // MA users shouldn't see FR option, FR users shouldn't see MA option
+          if (userRegion === 'MA' && langRegion === 'FR') {
+            (option as HTMLElement).style.display = 'none';
+          } else if (userRegion === 'FR' && langRegion === 'MA') {
+            (option as HTMLElement).style.display = 'none';
+          }
+        });
+      }
+
+      // Apply filter on load and when country is detected
+      filterLanguageOptions();
+      window.addEventListener('lowis-country-detected', filterLanguageOptions);
+
+      // ============================================
+      // Image Protection (disable right-click & drag)
+      // ============================================
+
+      // Disable right-click context menu on images
+      document.addEventListener('contextmenu', (e) => {
+        if ((e.target as HTMLElement).tagName === 'IMG') {
+          e.preventDefault();
+        }
+      });
+
+      // Disable drag on all images
+      document.querySelectorAll('img').forEach((img) => {
+        img.setAttribute('draggable', 'false');
+        img.style.userSelect = 'none';
+        (img.style as any).webkitUserSelect = 'none';
+        (img.style as any).webkitUserDrag = 'none';
+      });
+
+      // Also handle dynamically loaded images (for lazy loading)
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          mutation.addedNodes.forEach((node) => {
+            if (node.nodeType === 1) {
+              const element = node as HTMLElement;
+              if (element.tagName === 'IMG') {
+                element.setAttribute('draggable', 'false');
+                element.style.userSelect = 'none';
+              }
+              element.querySelectorAll?.('img').forEach((img) => {
+                img.setAttribute('draggable', 'false');
+                img.style.userSelect = 'none';
+              });
+            }
+          });
+        });
+      });
+
+      observer.observe(document.body, { childList: true, subtree: true });
     </script>
   </body>
 </html>

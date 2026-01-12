@@ -532,3 +532,34 @@
 .blog-body::-webkit-scrollbar-thumb:hover {
   background: var(--blog-text-muted);
 }
+
+/* ============================================
+   Language Selector
+   ============================================ */
+
+#lang-toggle:hover {
+  background: var(--blog-accent-light);
+}
+
+.lang-option:hover {
+  background: var(--blog-accent-light) !important;
+}
+
+/* ============================================
+   Image Protection
+   ============================================ */
+
+.blog-content img,
+.blog-card-image,
+article img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: auto;
+}
