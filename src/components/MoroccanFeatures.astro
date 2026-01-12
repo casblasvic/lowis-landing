@@ -36,41 +36,55 @@ function getOptimizedImageUrl(baseUrl: string, width: number = 200): string {
     + `?width=${width}&height=${width}&resize=cover&quality=80`;
 }
 
+// Helper to get recipe name based on current language
+function getRecipeName(recipe: { nameEn: string; nameFr: string; nameEs: string }, currentLang: Language): string {
+  if (currentLang === 'es') return recipe.nameEs;
+  if (currentLang === 'en') return recipe.nameEn;
+  // fr and fr-FR both use French names
+  return recipe.nameFr;
+}
+
 // Protein-rich Moroccan recipes - no carbs/grains (all images from Supabase Storage)
 const moroccanRecipes = [
   {
-    name: 'Tajine Poulet Citron',
+    nameEn: 'Lemon Chicken Tajine',
     nameFr: 'Tajine au poulet et citron',
+    nameEs: 'Tajine de pollo con limón',
     image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/15056.jpeg'),
     calories: 420
   },
   {
-    name: 'Brochettes Agneau',
+    nameEn: 'Grilled Lamb Skewers',
     nameFr: 'Brochettes d\'agneau grillées',
+    nameEs: 'Brochetas de cordero a la parrilla',
     image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14263.jpeg'),
     calories: 380
   },
   {
-    name: 'Tajine Viande Légumes',
+    nameEn: 'Meat and Vegetable Tajine',
     nameFr: 'Tajine de viande et légumes',
+    nameEs: 'Tajine de carne y verduras',
     image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/15140.jpeg'),
     calories: 450
   },
   {
-    name: 'Poisson Chermoula',
+    nameEn: 'Chermoula Grilled Fish',
     nameFr: 'Poisson grillé chermoula',
+    nameEs: 'Pescado a la parrilla chermoula',
     image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14302.jpeg'),
     calories: 320
   },
   {
-    name: 'Tajine Kefta',
+    nameEn: 'Kefta Meatball Tajine',
     nameFr: 'Tajine aux boulettes kefta',
+    nameEs: 'Tajine de albóndigas kefta',
     image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/19778.jpeg'),
     calories: 390
   },
   {
-    name: 'Mechoui',
+    nameEn: 'Roasted Lamb Shoulder',
     nameFr: 'Épaule d\'agneau rôtie',
+    nameEs: 'Paletilla de cordero asada',
     image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14318.jpeg'),
     calories: 480
   }
@@ -79,38 +93,44 @@ const moroccanRecipes = [
 // International recipes - varied cuisines (keto-friendly, high protein) - all from Supabase Storage
 const internationalRecipes = [
   {
-    name: 'Grilled Salmon',
+    nameEn: 'Herb Grilled Salmon',
     nameFr: 'Saumon grillé aux herbes',
+    nameEs: 'Salmón a la parrilla con hierbas',
     image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14339.jpeg'),
     calories: 350
   },
   {
-    name: 'Mediterranean Bowl',
+    nameEn: 'Mediterranean Bowl',
     nameFr: 'Bowl méditerranéen',
+    nameEs: 'Bowl mediterráneo',
     image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14353.jpeg'),
     calories: 420
   },
   {
-    name: 'Grilled Chicken',
+    nameEn: 'Spiced Grilled Chicken',
     nameFr: 'Poulet grillé aux épices',
+    nameEs: 'Pollo a la parrilla con especias',
     image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14368.jpeg'),
     calories: 380
   },
   {
-    name: 'Caesar Salad',
+    nameEn: 'Chicken Caesar Salad',
     nameFr: 'Salade César au poulet',
+    nameEs: 'Ensalada César con pollo',
     image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14378.jpeg'),
     calories: 320
   },
   {
-    name: 'Beef Steak',
+    nameEn: 'Grilled Beef Steak',
     nameFr: 'Steak de bœuf grillé',
+    nameEs: 'Filete de ternera a la parrilla',
     image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14388.jpeg'),
     calories: 450
   },
   {
-    name: 'Shrimp Stir-fry',
-    nameFr: 'Crevettes sautées légumes',
+    nameEn: 'Vegetable Shrimp Stir-fry',
+    nameFr: 'Crevettes sautées aux légumes',
+    nameEs: 'Gambas salteadas con verduras',
     image: getOptimizedImageUrl('https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/global/recipe-images/wordpress/2025/11/14409.jpeg'),
     calories: 290
   }
@@ -172,13 +192,13 @@ const internationalRecipes = [
               <div class="recipe-card-img">
                 <img
                   src={recipe.image}
-                  alt={recipe.nameFr}
+                  alt={getRecipeName(recipe, lang)}
                   width="200"
                   height="200"
                   loading="lazy"
                 />
                 <div class="recipe-overlay">
-                  <span class="recipe-name">{recipe.nameFr}</span>
+                  <span class="recipe-name">{getRecipeName(recipe, lang)}</span>
                   <span class="recipe-cal">{recipe.calories} kcal</span>
                 </div>
               </div>
@@ -190,13 +210,13 @@ const internationalRecipes = [
               <div class="recipe-card-img">
                 <img
                   src={recipe.image}
-                  alt={recipe.nameFr}
+                  alt={getRecipeName(recipe, lang)}
                   width="200"
                   height="200"
                   loading="lazy"
                 />
                 <div class="recipe-overlay">
-                  <span class="recipe-name">{recipe.nameFr}</span>
+                  <span class="recipe-name">{getRecipeName(recipe, lang)}</span>
                   <span class="recipe-cal">{recipe.calories} kcal</span>
                 </div>
               </div>
@@ -213,13 +233,13 @@ const internationalRecipes = [
               <div class="recipe-card-img">
                 <img
                   src={recipe.image}
-                  alt={recipe.nameFr}
+                  alt={getRecipeName(recipe, lang)}
                   width="200"
                   height="200"
                   loading="lazy"
                 />
                 <div class="recipe-overlay">
-                  <span class="recipe-name">{recipe.nameFr}</span>
+                  <span class="recipe-name">{getRecipeName(recipe, lang)}</span>
                   <span class="recipe-cal">{recipe.calories} kcal</span>
                 </div>
               </div>
@@ -231,13 +251,13 @@ const internationalRecipes = [
               <div class="recipe-card-img">
                 <img
                   src={recipe.image}
-                  alt={recipe.nameFr}
+                  alt={getRecipeName(recipe, lang)}
                   width="200"
                   height="200"
                   loading="lazy"
                 />
                 <div class="recipe-overlay">
-                  <span class="recipe-name">{recipe.nameFr}</span>
+                  <span class="recipe-name">{getRecipeName(recipe, lang)}</span>
                   <span class="recipe-cal">{recipe.calories} kcal</span>
                 </div>
               </div>
