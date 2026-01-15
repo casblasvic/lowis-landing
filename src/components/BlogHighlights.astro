@@ -1,0 +1,101 @@
+---
+/**
+ * BlogHighlights.astro
+ *
+ * Section showcasing featured blog articles (PILLAR content)
+ * Positioned before FinalCTA to provide educational content
+ * for users who want to learn more before converting
+ */
+import { getCollection } from 'astro:content';
+import type { Language } from '../i18n';
+import BlogCard from './blog/BlogCard.astro';
+
+interface Props {
+  t: {
+    blogHighlights: {
+      badge: string;
+      title: string;
+      subtitle: string;
+      cta: string;
+    };
+  };
+  lang: Language;
+}
+
+const { t, lang } = Astro.props;
+
+// Get PILLAR articles for the current language (most important content)
+const pillarPosts = await getCollection('blog', ({ data }) => {
+  return data.lang === lang && data.isPillar === true && !data.draft;
+});
+
+// Sort by publish date (newest first), take top 3
+const featuredPosts = pillarPosts
+  .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime())
+  .slice(0, 3);
+
+// Helper to extract slug from post id (e.g., "fr/perdre-poids-intelligemment" -> "perdre-poids-intelligemment")
+function getSlugFromId(id: string): string {
+  const parts = id.split('/');
+  return parts[parts.length - 1].replace(/\.md$/, '');
+}
+
+// Build blog URL based on language
+function getBlogBaseUrl(): string {
+  return lang === 'fr' ? '/blog/' : `/${lang === 'fr-FR' ? 'fr' : lang}/blog/`;
+}
+---
+
+{featuredPosts.length > 0 && (
+  <section id="blog-highlights" class="py-12 md:py-16 relative overflow-hidden" style="background: var(--blog-bg, #0A0A0B);">
+    <!-- Background decoration -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-1/2 left-0 w-[400px] h-[400px] bg-purple-500/5 rounded-full blur-[100px] -translate-y-1/2"></div>
+      <div class="absolute top-0 right-0 w-[300px] h-[300px] bg-primary-orange/5 rounded-full blur-[80px]"></div>
+    </div>
+
+    <div class="section-container relative z-10">
+      <!-- Section header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-sm font-medium mb-6">
+          <span class="material-symbols-outlined text-lg">menu_book</span>
+          {t.blogHighlights.badge}
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+          {t.blogHighlights.title}
+        </h2>
+        <p class="text-text-secondary text-lg">
+          {t.blogHighlights.subtitle}
+        </p>
+      </div>
+
+      <!-- Blog cards grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+        {featuredPosts.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            slug={getSlugFromId(post.id)}
+            image={post.data.image}
+            imageAlt={post.data.imageAlt}
+            category={post.data.category}
+            publishDate={post.data.publishDate}
+            readingTime={post.data.readingTime}
+            lang={lang}
+          />
+        ))}
+      </div>
+
+      <!-- CTA to full blog -->
+      <div class="text-center">
+        <a
+          href={getBlogBaseUrl()}
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-dark-border bg-dark-surface hover:bg-dark-border/50 text-text-primary font-medium transition-all duration-300 hover:scale-105"
+        >
+          {t.blogHighlights.cta}
+          <span class="material-symbols-outlined text-xl">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+)}

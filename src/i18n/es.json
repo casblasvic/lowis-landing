@@ -851,5 +851,48 @@
       "content": "Para cualquier pregunta sobre nuestro uso de cookies, contáctanos en"
     },
     "updatePreferences": "Actualizar mis preferencias"
+  },
+  "whatsIncluded": {
+    "badge": "Método completo",
+    "title": "¿Qué incluye el programa LOWIS?",
+    "subtitle": "Todo lo que necesitas para transformar tu cuerpo y tu mente",
+    "items": [
+      {
+        "icon": "assignment_ind",
+        "title": "Evaluación inicial personalizada",
+        "description": "Analizamos tu situación completa: hábitos, horarios, preferencias, objetivos y cualquier condición especial. No hay dos planes iguales."
+      },
+      {
+        "icon": "restaurant_menu",
+        "title": "Plan nutricional a tu medida",
+        "description": "Diseñado para TU realidad. Recetas que te gustan, ingredientes que encuentras, horarios que puedes cumplir."
+      },
+      {
+        "icon": "support_agent",
+        "title": "Coach IA + Equipo humano",
+        "description": "LOWIS, tu coach IA disponible 24/7, respaldado por nutricionistas que revisan tu progreso cada semana."
+      },
+      {
+        "icon": "headphones",
+        "title": "Audio Program diario",
+        "description": "10 minutos al día para reprogramar tu relación con la comida. La mente es el 80% del éxito."
+      },
+      {
+        "icon": "monitoring",
+        "title": "Seguimiento continuo",
+        "description": "No te dejamos solo. Ajustamos tu plan según tu evolución, tu ciclo hormonal, tu estrés, tu sueño."
+      },
+      {
+        "icon": "school",
+        "title": "Educación, no dependencia",
+        "description": "Te enseñamos el porqué de cada recomendación. El objetivo es que aprendas a comer bien para siempre."
+      }
+    ]
+  },
+  "blogHighlights": {
+    "badge": "Recursos gratuitos",
+    "title": "Aprende a perder peso de forma inteligente",
+    "subtitle": "Guías, consejos y comparativas de nuestros expertos",
+    "cta": "Ver todo el blog"
   }
 }

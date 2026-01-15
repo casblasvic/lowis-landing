@@ -850,5 +850,48 @@
       "content": "Pour toute question concernant notre utilisation des cookies, contactez-nous à"
     },
     "updatePreferences": "Modifier mes préférences"
+  },
+  "whatsIncluded": {
+    "badge": "Méthode complète",
+    "title": "Qu'est-ce qui est inclus dans le programme LOWIS ?",
+    "subtitle": "Tout ce dont vous avez besoin pour transformer votre corps et votre esprit",
+    "items": [
+      {
+        "icon": "assignment_ind",
+        "title": "Évaluation initiale personnalisée",
+        "description": "Nous analysons votre situation complète : habitudes, horaires, préférences, objectifs et toute condition particulière. Il n'y a pas deux plans identiques."
+      },
+      {
+        "icon": "restaurant_menu",
+        "title": "Plan nutritionnel sur mesure",
+        "description": "Conçu pour VOTRE réalité. Des recettes que vous aimez, des ingrédients que vous trouvez, des horaires que vous pouvez respecter."
+      },
+      {
+        "icon": "support_agent",
+        "title": "Coach IA + Équipe humaine",
+        "description": "LOWIS, votre coach IA disponible 24h/24, soutenu par des nutritionnistes qui examinent vos progrès chaque semaine."
+      },
+      {
+        "icon": "headphones",
+        "title": "Programme Audio quotidien",
+        "description": "10 minutes par jour pour reprogrammer votre relation avec la nourriture. Le mental représente 80% du succès."
+      },
+      {
+        "icon": "monitoring",
+        "title": "Suivi continu",
+        "description": "Nous ne vous laissons pas seul. Nous ajustons votre plan selon votre évolution, votre cycle hormonal, votre stress, votre sommeil."
+      },
+      {
+        "icon": "school",
+        "title": "Éducation, pas dépendance",
+        "description": "Nous vous expliquons le pourquoi de chaque recommandation. L'objectif est que vous appreniez à bien manger pour toujours."
+      }
+    ]
+  },
+  "blogHighlights": {
+    "badge": "Ressources gratuites",
+    "title": "Apprenez à perdre du poids intelligemment",
+    "subtitle": "Guides, conseils et comparatifs de nos experts",
+    "cta": "Voir tout le blog"
   }
 }

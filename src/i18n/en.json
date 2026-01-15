@@ -850,5 +850,48 @@
       "content": "For any questions about our use of cookies, contact us at"
     },
     "updatePreferences": "Update my preferences"
+  },
+  "whatsIncluded": {
+    "badge": "Complete Method",
+    "title": "What's included in the LOWIS program?",
+    "subtitle": "Everything you need to transform your body and mind",
+    "items": [
+      {
+        "icon": "assignment_ind",
+        "title": "Personalized initial assessment",
+        "description": "We analyze your complete situation: habits, schedules, preferences, goals, and any special conditions. No two plans are alike."
+      },
+      {
+        "icon": "restaurant_menu",
+        "title": "Tailored nutrition plan",
+        "description": "Designed for YOUR reality. Recipes you love, ingredients you can find, schedules you can follow."
+      },
+      {
+        "icon": "support_agent",
+        "title": "AI Coach + Human team",
+        "description": "LOWIS, your AI coach available 24/7, backed by nutritionists who review your progress every week."
+      },
+      {
+        "icon": "headphones",
+        "title": "Daily Audio Program",
+        "description": "10 minutes a day to reprogram your relationship with food. The mind is 80% of success."
+      },
+      {
+        "icon": "monitoring",
+        "title": "Continuous tracking",
+        "description": "We don't leave you alone. We adjust your plan based on your progress, hormonal cycle, stress, and sleep."
+      },
+      {
+        "icon": "school",
+        "title": "Education, not dependency",
+        "description": "We teach you the why behind each recommendation. The goal is for you to learn to eat well forever."
+      }
+    ]
+  },
+  "blogHighlights": {
+    "badge": "Free Resources",
+    "title": "Learn to lose weight the smart way",
+    "subtitle": "Guides, tips, and comparisons from our experts",
+    "cta": "View all articles"
   }
 }
