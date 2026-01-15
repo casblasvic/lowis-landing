@@ -18,11 +18,11 @@
     "badgeGeneric": "Disponible partout",
     "title": "Programme LOWIS de 6 Semaines:",
     "titleHighlight": "Perdez jusqu'à 12 kg",
-    "subtitle": "1-2,5 kg par semaine × 6 semaines = Votre transformation complète. Après, maintenez vos résultats dès 99 DH/mois.",
-    "cta": "Obtenir mon plan personnalisé gratuit",
+    "subtitle": "1-2,5 kg par semaine × 6 semaines = Votre transformation complète. Commencez AUJOURD'HUI avec 7 jours GRATUITS.",
+    "cta": "Commencer GRATUIT maintenant",
     "ctaSecondary": "Voir la démo",
     "noCard": "Sans carte bancaire",
-    "pricingInfo": "Pack 6 semaines : 999 DH (économisez 33%) • Annulation en 1 clic",
+    "pricingInfo": "7 jours GRATUITS • 0 DH pour commencer • Annulez quand vous voulez",
     "guarantee": "Garanti : 1-2,5 kg par semaine",
     "disclaimer": "En suivant le protocole LOWIS.",
     "users": "utilisateurs actifs"
@@ -395,30 +395,38 @@
     "subtitle": "Nutrition + mental + ajustements = résultats durables"
   },
   "pricing": {
-    "title": "Programme de Transformation de 6 Semaines",
-    "subtitle": "Perdez jusqu'à 12 kg garanti. Choisissez votre mode de paiement préféré.",
+    "title": "Commencez votre Transformation GRATUITEMENT",
+    "subtitle": "7 jours gratuits pour voir les résultats. Sans excuse, sans risque.",
+    "trialBanner": {
+      "title": "7 JOURS GRATUITS • 0 DH",
+      "subtitle": "Commencez aujourd'hui sans payer. Voyez les résultats avant de décider."
+    },
     "trustBadges": {
       "noCard": "Aucune carte bancaire",
       "cancel": "Annulation en 1 clic",
-      "secure": "100% gratuit une semaine"
+      "secure": "7 jours 100% gratuits"
     },
     "weeklyPlan": {
-      "name": "Hebdomadaire",
-      "badge": "Flexibilité",
+      "name": "Paiement Hebdo",
+      "badge": "Flexibilité totale",
+      "trialPrice": "0 DH",
       "price": "250",
       "period": "DH/semaine",
-      "totalText": "Total 6 semaines : 1.500 DH",
-      "description": "Payez semaine par semaine en toute flexibilité",
-      "cta": "Commencer en paiement hebdo"
+      "trialText": "7 jours GRATUITS",
+      "afterTrialText": "Puis 250 DH/semaine",
+      "description": "Payez semaine par semaine, annulez quand vous voulez",
+      "cta": "Commencer GRATUIT maintenant"
     },
     "packPlan": {
       "name": "Pack 6 Semaines",
-      "badge": "⭐ RECOMMANDÉ",
+      "badge": "⭐ MEILLEUR PRIX",
+      "trialPrice": "0 DH",
       "price": "999",
       "period": "DH",
-      "savingsText": "Économisez 501 DH (33%) !",
+      "trialText": "7 jours GRATUITS",
+      "savingsText": "Puis 999 DH (Économisez 501 DH !)",
       "description": "Programme complet au meilleur prix",
-      "cta": "Obtenir le pack complet"
+      "cta": "Commencer GRATUIT maintenant"
     },
     "featuresTitle": "Inclus dans les deux plans :",
     "features": [
@@ -427,31 +435,7 @@
       "LOWIS, votre coach IA + experts 24/7",
       "Audio Program quotidien (reprogrammation mentale)",
       "Compte rendu hebdomadaire par nutritionnistes"
-    ],
-    "maintenance": {
-      "title": "Après les 6 semaines : Maintenance",
-      "price": "99",
-      "period": "DH/mois",
-      "description": "Transition automatique pour maintenir vos progrès. Inclut accès complet à l'app + IA + support."
-    },
-    "premium": {
-      "name": "Premium",
-      "badge": "Première semaine offerte",
-      "price": "0",
-      "priceAfter": "250",
-      "period": "DH/semaine",
-      "trialText": "0 DH la première semaine",
-      "afterTrialText": "Puis 250 DH/semaine ou 999 DH le pack complet",
-      "features": [
-        "Monitorisation de +40 indicateurs en continu",
-        "Plans repas personnalisés marocains",
-        "LOWIS, votre coach IA + experts",
-        "Audios pour renforcer la psychologie",
-        "Compte rendu hebdomadaire"
-      ],
-      "cta": "Obtenir mon plan personnalisé",
-      "popular": true
-    }
+    ]
   },
   "faq": {
     "title": "Questions fréquentes",
@@ -527,10 +511,10 @@
     ]
   },
   "finalCta": {
-    "title": "Perdez jusqu'à 12 kg en 6 semaines",
-    "subtitle": "Programme complet à partir de 999 DH. Après, maintenance dès 99 DH/mois.",
-    "cta": "Commencer ma transformation",
-    "noCard": "Première semaine gratuite • Sans carte bancaire"
+    "title": "Commencez GRATUITEMENT aujourd'hui",
+    "subtitle": "7 jours gratuits pour voir que ça marche. Perdez jusqu'à 12 kg en 6 semaines.",
+    "cta": "Commencer ma semaine GRATUITE",
+    "noCard": "0 DH • Sans carte bancaire • Sans engagement"
   },
   "footer": {
     "tagline": "Le système nutritionnel intelligent créé pour le Maroc",

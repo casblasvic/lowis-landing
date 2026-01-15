@@ -7,6 +7,10 @@ interface Props {
     pricing: {
       title: string;
       subtitle: string;
+      trialBanner: {
+        title: string;
+        subtitle: string;
+      };
       trustBadges: {
         noCard: string;
         cancel: string;
@@ -15,40 +19,27 @@ interface Props {
       weeklyPlan: {
         name: string;
         badge: string;
+        trialPrice: string;
         price: string;
         period: string;
-        totalText: string;
+        trialText: string;
+        afterTrialText: string;
         description: string;
         cta: string;
       };
       packPlan: {
         name: string;
         badge: string;
+        trialPrice: string;
         price: string;
         period: string;
+        trialText: string;
         savingsText: string;
         description: string;
         cta: string;
       };
+      featuresTitle: string;
       features: string[];
-      maintenance: {
-        title: string;
-        price: string;
-        period: string;
-        description: string;
-      };
-      premium?: {
-        name: string;
-        badge: string;
-        price: string;
-        priceAfter: string;
-        period: string;
-        trialText: string;
-        afterTrialText: string;
-        features: string[];
-        cta: string;
-        popular: boolean;
-      };
     };
   };
   lang: Language;
@@ -64,7 +55,7 @@ const { t, lang } = Astro.props;
 
   <div class="section-container relative z-10">
     <!-- Section header -->
-    <div class="text-center max-w-2xl mx-auto mb-12">
+    <div class="text-center max-w-2xl mx-auto mb-8">
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
         {t.pricing.title}
       </h2>
@@ -73,8 +64,20 @@ const { t, lang } = Astro.props;
       </p>
     </div>
 
+    <!-- FREE TRIAL Banner -->
+    <div class="max-w-2xl mx-auto mb-10">
+      <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border-2 border-green-500/50 rounded-2xl p-6 text-center">
+        <div class="flex items-center justify-center gap-3 mb-2">
+          <span class="material-symbols-outlined text-green-400 text-3xl">celebration</span>
+          <h3 class="text-2xl sm:text-3xl font-bold text-green-400">{t.pricing.trialBanner.title}</h3>
+          <span class="material-symbols-outlined text-green-400 text-3xl">celebration</span>
+        </div>
+        <p class="text-text-secondary">{t.pricing.trialBanner.subtitle}</p>
+      </div>
+    </div>
+
     <!-- Two Pricing Cards -->
-    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 pt-6">
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
 
       <!-- Weekly Plan Card -->
       <div class="relative p-6 lg:p-8 bg-dark-surface border border-dark-border rounded-3xl hover:border-primary-orange/50 transition-colors">
@@ -90,15 +93,17 @@ const { t, lang } = Astro.props;
           <div class="text-center mb-6">
             <h3 class="text-xl font-bold text-white mb-4">{t.pricing.weeklyPlan.name}</h3>
 
-            <!-- Price -->
-            <div class="mb-2">
-              <span class="text-4xl sm:text-5xl font-bold">{t.pricing.weeklyPlan.price}</span>
-              <span class="text-text-secondary text-lg ml-1">{t.pricing.weeklyPlan.period}</span>
+            <!-- Trial Price - BIG -->
+            <div class="mb-1">
+              <span class="text-5xl sm:text-6xl font-bold text-green-400">{t.pricing.weeklyPlan.trialPrice}</span>
             </div>
+            <p class="text-green-400 font-semibold text-lg mb-3">
+              {t.pricing.weeklyPlan.trialText}
+            </p>
 
-            <!-- Total text -->
+            <!-- After trial -->
             <p class="text-text-muted text-sm mb-1">
-              {t.pricing.weeklyPlan.totalText}
+              {t.pricing.weeklyPlan.afterTrialText}
             </p>
 
             <!-- Description -->
@@ -133,14 +138,16 @@ const { t, lang } = Astro.props;
           <div class="text-center mb-6">
             <h3 class="text-xl font-bold gradient-text mb-4">{t.pricing.packPlan.name}</h3>
 
-            <!-- Price -->
-            <div class="mb-2">
-              <span class="text-4xl sm:text-5xl font-bold">{t.pricing.packPlan.price}</span>
-              <span class="text-text-secondary text-lg ml-1">{t.pricing.packPlan.period}</span>
+            <!-- Trial Price - BIG -->
+            <div class="mb-1">
+              <span class="text-5xl sm:text-6xl font-bold text-green-400">{t.pricing.packPlan.trialPrice}</span>
             </div>
+            <p class="text-green-400 font-semibold text-lg mb-3">
+              {t.pricing.packPlan.trialText}
+            </p>
 
-            <!-- Savings text -->
-            <p class="text-green-400 font-medium text-sm mb-1">
+            <!-- After trial + savings -->
+            <p class="text-text-muted text-sm">
               {t.pricing.packPlan.savingsText}
             </p>
 
@@ -171,18 +178,6 @@ const { t, lang } = Astro.props;
             </li>
           ))}
         </ul>
-      </div>
-    </div>
-
-    <!-- Maintenance Section -->
-    <div class="max-w-2xl mx-auto mt-8">
-      <div class="bg-gradient-to-r from-primary-orange/10 to-primary-red/10 border border-primary-orange/30 rounded-2xl p-6 text-center">
-        <h4 class="text-white font-semibold mb-2">{t.pricing.maintenance.title}</h4>
-        <div class="flex items-center justify-center gap-2 mb-2">
-          <span class="text-3xl font-bold text-white">{t.pricing.maintenance.price}</span>
-          <span class="text-text-secondary">{t.pricing.maintenance.period}</span>
-        </div>
-        <p class="text-text-secondary text-sm">{t.pricing.maintenance.description}</p>
       </div>
     </div>
 

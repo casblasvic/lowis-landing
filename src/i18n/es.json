@@ -18,11 +18,11 @@
     "badgeGeneric": "Disponible en todo el mundo",
     "title": "Programa LOWIS de 6 Semanas:",
     "titleHighlight": "Pierde hasta 12 kg",
-    "subtitle": "1-2,5 kg por semana × 6 semanas = Tu transformación completa. Después, mantén tus resultados desde solo 99 DH/mes.",
-    "cta": "Obtener mi plan personalizado gratis",
+    "subtitle": "1-2,5 kg por semana × 6 semanas = Tu transformación completa. Empieza HOY con 7 días GRATIS.",
+    "cta": "Empezar GRATIS ahora",
     "ctaSecondary": "Ver demo",
     "noCard": "Sin tarjeta bancaria",
-    "pricingInfo": "Pack 6 semanas: 999 DH (ahorra 33%) • Cancela cuando quieras",
+    "pricingInfo": "7 días GRATIS • 0 DH para empezar • Cancela cuando quieras",
     "guarantee": "Garantizado: 1-2,5 kg por semana",
     "disclaimer": "Siguiendo el protocolo LOWIS.",
     "users": "usuarios activos"
@@ -395,30 +395,38 @@
     "subtitle": "Nutrición + mental + ajustes = resultados duraderos"
   },
   "pricing": {
-    "title": "Programa de Transformación de 6 Semanas",
-    "subtitle": "Pierde hasta 12 kg garantizado. Elige tu forma de pago preferida.",
+    "title": "Empieza tu Transformación GRATIS",
+    "subtitle": "7 días gratis para comprobar los resultados. Sin excusas, sin riesgo.",
+    "trialBanner": {
+      "title": "7 DÍAS GRATIS • 0 DH",
+      "subtitle": "Empieza hoy sin pagar nada. Ve los resultados antes de decidir."
+    },
     "trustBadges": {
       "noCard": "Sin tarjeta bancaria",
       "cancel": "Cancela en 1 clic",
-      "secure": "100% gratis una semana"
+      "secure": "7 días 100% gratis"
     },
     "weeklyPlan": {
-      "name": "Semanal",
-      "badge": "Flexibilidad",
+      "name": "Pago Semanal",
+      "badge": "Flexibilidad total",
+      "trialPrice": "0 DH",
       "price": "250",
       "period": "DH/semana",
-      "totalText": "Total 6 semanas: 1.500 DH",
-      "description": "Paga semana a semana con total flexibilidad",
-      "cta": "Empezar con pago semanal"
+      "trialText": "7 días GRATIS",
+      "afterTrialText": "Después 250 DH/semana",
+      "description": "Paga semana a semana, cancela cuando quieras",
+      "cta": "Empezar GRATIS ahora"
     },
     "packPlan": {
       "name": "Pack 6 Semanas",
-      "badge": "⭐ RECOMENDADO",
+      "badge": "⭐ MEJOR PRECIO",
+      "trialPrice": "0 DH",
       "price": "999",
       "period": "DH",
-      "savingsText": "¡Ahorra 501 DH (33%)!",
+      "trialText": "7 días GRATIS",
+      "savingsText": "Después 999 DH (¡Ahorra 501 DH!)",
       "description": "Programa completo al mejor precio",
-      "cta": "Obtener el pack completo"
+      "cta": "Empezar GRATIS ahora"
     },
     "featuresTitle": "Incluido en ambos planes:",
     "features": [
@@ -427,31 +435,7 @@
       "LOWIS, tu coach IA + expertos 24/7",
       "Audio Program diario (reprogramación mental)",
       "Informe semanal personalizado por nutricionistas"
-    ],
-    "maintenance": {
-      "title": "Después de las 6 semanas: Mantenimiento",
-      "price": "99",
-      "period": "DH/mes",
-      "description": "Transición automática para mantener tu progreso. Incluye acceso completo a la app + IA + soporte."
-    },
-    "premium": {
-      "name": "Premium",
-      "badge": "Primera semana gratis",
-      "price": "0",
-      "priceAfter": "250",
-      "period": "DH/semana",
-      "trialText": "0 DH la primera semana",
-      "afterTrialText": "Después 250 DH/semana o 999 DH el pack completo",
-      "features": [
-        "Monitorización de +40 indicadores en continuo",
-        "Planes de comida personalizados a tus gustos",
-        "LOWIS, tu coach IA + expertos",
-        "Audios para reforzar la psicología",
-        "Informe semanal personalizado"
-      ],
-      "cta": "Obtener mi plan personalizado",
-      "popular": true
-    }
+    ]
   },
   "faq": {
     "title": "Preguntas frecuentes",
@@ -527,10 +511,10 @@
     ]
   },
   "finalCta": {
-    "title": "Pierde hasta 12 kg en 6 semanas",
-    "subtitle": "Programa completo desde 999 DH. Después, mantenimiento desde 99 DH/mes.",
-    "cta": "Empezar mi transformación",
-    "noCard": "Primera semana gratis • Sin tarjeta bancaria"
+    "title": "Empieza GRATIS hoy",
+    "subtitle": "7 días gratis para comprobar que funciona. Pierde hasta 12 kg en 6 semanas.",
+    "cta": "Empezar mi semana GRATIS",
+    "noCard": "0 DH • Sin tarjeta bancaria • Sin compromiso"
   },
   "footer": {
     "tagline": "El sistema nutricional inteligente con IA + expertos",

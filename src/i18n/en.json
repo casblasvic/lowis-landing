@@ -18,11 +18,11 @@
     "badgeGeneric": "Available worldwide",
     "title": "6-Week LOWIS Program:",
     "titleHighlight": "Lose up to 12 kg",
-    "subtitle": "1-2.5 kg per week × 6 weeks = Your complete transformation. Then, maintain your results from just €10/month.",
-    "cta": "Get my free personalized plan",
+    "subtitle": "1-2.5 kg per week × 6 weeks = Your complete transformation. Start TODAY with 7 days FREE.",
+    "cta": "Start FREE now",
     "ctaSecondary": "See demo",
     "noCard": "No credit card required",
-    "pricingInfo": "6-week pack: €99 (save 33%) • Cancel anytime",
+    "pricingInfo": "7 days FREE • €0 to start • Cancel anytime",
     "guarantee": "Guaranteed: 1-2.5 kg per week",
     "disclaimer": "By following the LOWIS protocol.",
     "users": "active users"
@@ -336,88 +336,96 @@
   },
   "howItWorks": {
     "title": "Your 6-Week Transformation",
-    "subtitle": "A proven method to lose up to 12 kg",
+    "subtitle": "Start FREE and lose up to 12 kg",
     "phases": [
       {
         "number": "1",
-        "icon": "target",
-        "title": "Weeks 1-2: Metabolic Activation",
-        "description": "Answer simple questions about your goals, preferences and health conditions. LOWIS + our experts generate a 100% personalized plan adapted to your cuisine.",
+        "icon": "celebration",
+        "title": "Week 1: FREE Trial",
+        "description": "Start today without paying. Answer simple questions, get your personalized plan, and see results in 7 days.",
         "bullets": [
-          "Plan adapted to your tastes and allergies",
-          "Daily Audio Program",
-          "Expected result: 2-5 kg"
+          "7 days completely FREE",
+          "No credit card required",
+          "Expected result: 1-2.5 kg"
         ]
       },
       {
         "number": "2",
         "icon": "local_fire_department",
-        "title": "Weeks 3-4: Accelerated Burning",
-        "description": "Your metabolism is now active. We intensify the protocol while maintaining comfort.",
+        "title": "Weeks 2-3: Metabolic Activation",
+        "description": "Your metabolism wakes up. LOWIS + our experts adjust your plan daily.",
         "bullets": [
           "Smart food combinations",
-          "Real-time adjustments",
-          "Expected result: +3-4 kg"
+          "Daily Audio Program",
+          "Expected result: +2-4 kg"
         ]
       },
       {
         "number": "3",
         "icon": "trending_up",
-        "title": "Weeks 5-6: Consolidation",
-        "description": "Consolidate your results and prepare the maintenance phase to avoid the yo-yo effect.",
+        "title": "Weeks 4-5: Accelerated Burning",
+        "description": "Peak results. Your body is now optimized for fat loss.",
         "bullets": [
-          "Stable habits",
-          "Lifestyle integrated",
-          "Expected result: +2-3 kg"
+          "Real-time adjustments",
+          "Expert supervision",
+          "Expected result: +3-4 kg"
         ]
       },
       {
         "number": "4",
         "icon": "verified",
-        "title": "After 6 weeks: Maintenance",
-        "description": "Transition to maintenance at €10/month to keep your results long-term.",
+        "title": "Week 6: Consolidation",
+        "description": "Lock in your results with sustainable habits that last.",
         "bullets": [
-          "Full app access",
-          "24/7 AI Coach",
-          "Ongoing expert support"
+          "Stable habits",
+          "Lifestyle integrated",
+          "Expected result: +1-2 kg"
         ]
       }
     ],
     "cycle": {
       "title": "Total: Up to 12 kg in 6 weeks",
-      "description": "Daily adaptation + weekly expert supervision = lasting results. Then maintain from just €10/month."
+      "description": "Start FREE today. Daily adaptation + weekly expert supervision = lasting results."
     },
-    "cta": "Start my transformation"
+    "cta": "Start my FREE week"
   },
   "stats": {
     "title": "Complete 360° tracking",
     "subtitle": "Nutrition + mental + adjustments = lasting results"
   },
   "pricing": {
-    "title": "6-Week Transformation Program",
-    "subtitle": "Lose up to 12 kg with our proven method",
+    "title": "Start Your Transformation FREE",
+    "subtitle": "7 free days to see the results. No excuses, no risk.",
+    "trialBanner": {
+      "title": "7 DAYS FREE • €0",
+      "subtitle": "Start today without paying. See the results before you decide."
+    },
     "trustBadges": {
       "noCard": "No credit card",
       "cancel": "Cancel in 1 click",
-      "secure": "100% secure"
+      "secure": "7 days 100% free"
     },
     "weeklyPlan": {
-      "name": "Weekly",
-      "badge": "Maximum flexibility",
+      "name": "Weekly Payment",
+      "badge": "Total flexibility",
+      "trialPrice": "€0",
       "price": "€25",
       "period": "/week",
-      "totalText": "Total 6 weeks: €150",
+      "trialText": "7 days FREE",
+      "afterTrialText": "Then €25/week",
       "description": "Pay week by week, cancel anytime",
-      "cta": "Start weekly"
+      "cta": "Start FREE now"
     },
     "packPlan": {
       "name": "6-Week Pack",
-      "badge": "⭐ RECOMMENDED",
+      "badge": "⭐ BEST VALUE",
+      "trialPrice": "€0",
       "price": "€99",
       "period": "total",
-      "savingsText": "Save €51 (34%)!",
+      "trialText": "7 days FREE",
+      "savingsText": "Then €99 (Save €51!)",
       "description": "Complete program, best value",
-      "cta": "Get the full pack"
+      "cta": "Start FREE now"
     },
     "featuresTitle": "Included in both plans:",
     "features": [
@@ -426,13 +434,7 @@
       "24/7 AI Coach + Nutritionists",
       "500+ adapted recipes",
       "Weekly expert follow-up"
-    ],
-    "maintenance": {
-      "title": "After 6 weeks: Maintenance",
-      "price": "€10",
-      "period": "/month",
-      "description": "Keep full access to the app and maintain your results"
-    }
+    ]
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -508,10 +510,10 @@
     ]
   },
   "finalCta": {
-    "title": "6 weeks to transform your body",
-    "subtitle": "Lose up to 12 kg with our proven method. Then maintain from €10/month.",
-    "cta": "Start my 6-week transformation",
-    "noCard": "€99 the complete pack • Cancel anytime"
+    "title": "Start FREE today",
+    "subtitle": "7 free days to see it works. Lose up to 12 kg in 6 weeks.",
+    "cta": "Start my FREE week",
+    "noCard": "€0 • No credit card • No commitment"
   },
   "footer": {
     "tagline": "The smart nutritional system with AI + experts",

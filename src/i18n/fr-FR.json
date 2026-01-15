@@ -18,11 +18,11 @@
     "badgeGeneric": "Disponible en France 🇫🇷",
     "title": "Programme LOWIS de 6 Semaines :",
     "titleHighlight": "Perdez jusqu'à 12 kg",
-    "subtitle": "1-2,5 kg par semaine × 6 semaines = Votre transformation complète. Ensuite, maintenez vos résultats à partir de seulement 10 €/mois.",
-    "cta": "Commencer ma transformation",
+    "subtitle": "1-2,5 kg par semaine × 6 semaines = Votre transformation complète. Commencez AUJOURD'HUI avec 7 jours GRATUITS.",
+    "cta": "Commencer GRATUIT maintenant",
     "ctaSecondary": "Voir la démo",
     "noCard": "Sans carte bancaire",
-    "pricingInfo": "Pack 6 semaines : 99 € (économisez 34%) • Annulez quand vous voulez",
+    "pricingInfo": "7 jours GRATUITS • 0 € pour commencer • Annulez quand vous voulez",
     "guarantee": "Garanti : 1-2,5 kg par semaine",
     "disclaimer": "En suivant le protocole LOWIS.",
     "users": "utilisateurs actifs"
@@ -336,88 +336,96 @@
   },
   "howItWorks": {
     "title": "Votre Transformation en 6 Semaines",
-    "subtitle": "Une méthode prouvée pour perdre jusqu'à 12 kg",
+    "subtitle": "Commencez GRATUIT et perdez jusqu'à 12 kg",
     "phases": [
       {
         "number": "1",
-        "icon": "target",
-        "title": "Semaines 1-2 : Activation métabolique",
-        "description": "Répondez à des questions simples sur vos objectifs, préférences et conditions de santé. LOWIS + nos experts génèrent un plan 100% personnalisé adapté à votre cuisine.",
+        "icon": "celebration",
+        "title": "Semaine 1 : Essai GRATUIT",
+        "description": "Commencez aujourd'hui sans payer. Répondez à quelques questions, obtenez votre plan personnalisé et voyez les résultats en 7 jours.",
         "bullets": [
-          "Plan adapté à vos goûts et allergies",
-          "Programme Audio quotidien",
-          "Résultat attendu : 2-5 kg"
+          "7 jours complètement GRATUITS",
+          "Sans carte bancaire",
+          "Résultat attendu : 1-2,5 kg"
         ]
       },
       {
         "number": "2",
         "icon": "local_fire_department",
-        "title": "Semaines 3-4 : Combustion accélérée",
-        "description": "Votre métabolisme est maintenant actif. Nous intensifions le protocole tout en maintenant le confort.",
+        "title": "Semaines 2-3 : Activation métabolique",
+        "description": "Votre métabolisme se réveille. LOWIS + nos experts ajustent votre plan quotidiennement.",
         "bullets": [
           "Combinaisons alimentaires intelligentes",
-          "Ajustements en temps réel",
-          "Résultat attendu : +3-4 kg"
+          "Programme Audio quotidien",
+          "Résultat attendu : +2-4 kg"
         ]
       },
       {
         "number": "3",
         "icon": "trending_up",
-        "title": "Semaines 5-6 : Consolidation",
-        "description": "Consolidez vos résultats et préparez la phase de maintenance pour éviter l'effet rebond.",
+        "title": "Semaines 4-5 : Combustion accélérée",
+        "description": "Résultats au maximum. Votre corps est maintenant optimisé pour la perte de graisse.",
         "bullets": [
-          "Habitudes stables",
-          "Mode de vie intégré",
-          "Résultat attendu : +2-3 kg"
+          "Ajustements en temps réel",
+          "Supervision des experts",
+          "Résultat attendu : +3-4 kg"
         ]
       },
       {
         "number": "4",
         "icon": "verified",
-        "title": "Après 6 semaines : Maintenance",
-        "description": "Transition vers la maintenance à 10 €/mois pour garder vos résultats sur le long terme.",
+        "title": "Semaine 6 : Consolidation",
+        "description": "Consolidez vos résultats avec des habitudes durables qui restent.",
         "bullets": [
-          "Accès complet à l'app",
-          "Coach IA 24/7",
-          "Support expert continu"
+          "Habitudes stables",
+          "Mode de vie intégré",
+          "Résultat attendu : +1-2 kg"
         ]
       }
     ],
     "cycle": {
       "title": "Total : Jusqu'à 12 kg en 6 semaines",
-      "description": "Adaptation quotidienne + supervision hebdomadaire des experts = résultats durables. Puis maintenez à partir de seulement 10 €/mois."
+      "description": "Commencez GRATUIT aujourd'hui. Adaptation quotidienne + supervision hebdomadaire des experts = résultats durables."
     },
-    "cta": "Commencer ma transformation"
+    "cta": "Commencer ma semaine GRATUITE"
   },
   "stats": {
     "title": "Un suivi 360° complet",
     "subtitle": "Nutrition + mental + ajustements = résultats durables"
   },
   "pricing": {
-    "title": "Programme de Transformation de 6 Semaines",
-    "subtitle": "Perdez jusqu'à 12 kg avec notre méthode prouvée",
+    "title": "Commencez votre Transformation GRATUITEMENT",
+    "subtitle": "7 jours gratuits pour voir les résultats. Sans excuse, sans risque.",
+    "trialBanner": {
+      "title": "7 JOURS GRATUITS • 0 €",
+      "subtitle": "Commencez aujourd'hui sans payer. Voyez les résultats avant de décider."
+    },
     "trustBadges": {
       "noCard": "Aucune carte bancaire",
       "cancel": "Annulation en 1 clic",
-      "secure": "100% sécurisé"
+      "secure": "7 jours 100% gratuits"
     },
     "weeklyPlan": {
-      "name": "Hebdomadaire",
-      "badge": "Flexibilité maximale",
+      "name": "Paiement Hebdo",
+      "badge": "Flexibilité totale",
+      "trialPrice": "0 €",
       "price": "25 €",
       "period": "/semaine",
-      "totalText": "Total 6 semaines : 150 €",
+      "trialText": "7 jours GRATUITS",
+      "afterTrialText": "Puis 25 €/semaine",
       "description": "Payez semaine par semaine, annulez quand vous voulez",
-      "cta": "Commencer hebdomadaire"
+      "cta": "Commencer GRATUIT maintenant"
     },
     "packPlan": {
       "name": "Pack 6 Semaines",
-      "badge": "⭐ RECOMMANDÉ",
+      "badge": "⭐ MEILLEUR PRIX",
+      "trialPrice": "0 €",
       "price": "99 €",
       "period": "total",
-      "savingsText": "Économisez 51 € (34%) !",
+      "trialText": "7 jours GRATUITS",
+      "savingsText": "Puis 99 € (Économisez 51 € !)",
       "description": "Programme complet, meilleur rapport qualité-prix",
-      "cta": "Obtenir le pack complet"
+      "cta": "Commencer GRATUIT maintenant"
     },
     "featuresTitle": "Inclus dans les deux plans :",
     "features": [
@@ -426,13 +434,7 @@
       "Coach IA 24/7 + Nutritionnistes",
       "500+ recettes adaptées",
       "Suivi hebdomadaire par les experts"
-    ],
-    "maintenance": {
-      "title": "Après 6 semaines : Maintenance",
-      "price": "10 €",
-      "period": "/mois",
-      "description": "Gardez l'accès complet à l'app et maintenez vos résultats"
-    }
+    ]
   },
   "faq": {
     "title": "Questions fréquentes",
@@ -508,10 +510,10 @@
     ]
   },
   "finalCta": {
-    "title": "6 semaines pour transformer votre corps",
-    "subtitle": "Perdez jusqu'à 12 kg avec notre méthode prouvée. Puis maintenez à partir de 10 €/mois.",
-    "cta": "Commencer ma transformation de 6 semaines",
-    "noCard": "99 € le pack complet • Annulez quand vous voulez"
+    "title": "Commencez GRATUITEMENT aujourd'hui",
+    "subtitle": "7 jours gratuits pour voir que ça marche. Perdez jusqu'à 12 kg en 6 semaines.",
+    "cta": "Commencer ma semaine GRATUITE",
+    "noCard": "0 € • Sans carte bancaire • Sans engagement"
   },
   "footer": {
     "tagline": "Le système nutritionnel intelligent avec IA + experts",
