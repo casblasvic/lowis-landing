@@ -24,6 +24,7 @@ interface Props {
         period: string;
         trialText: string;
         afterTrialText: string;
+        weightLossClaim: string;
         description: string;
         cta: string;
       };
@@ -35,10 +36,12 @@ interface Props {
         period: string;
         trialText: string;
         savingsText: string;
+        weightLossClaim: string;
         description: string;
         cta: string;
       };
       featuresTitle: string;
+      featuresSubtitle: string;
       features: string[];
     };
   };
@@ -102,12 +105,19 @@ const { t, lang } = Astro.props;
             </p>
 
             <!-- After trial -->
-            <p class="text-text-muted text-sm mb-1">
+            <p class="text-text-muted text-sm mb-2">
               {t.pricing.weeklyPlan.afterTrialText}
             </p>
 
+            <!-- Weight Loss Claim -->
+            <div class="bg-primary-orange/10 border border-primary-orange/30 rounded-lg px-3 py-2 mb-3">
+              <p class="text-primary-orange font-semibold text-sm">
+                {t.pricing.weeklyPlan.weightLossClaim}
+              </p>
+            </div>
+
             <!-- Description -->
-            <p class="text-text-secondary text-sm">
+            <p class="text-text-secondary text-xs leading-relaxed">
               {t.pricing.weeklyPlan.description}
             </p>
           </div>
@@ -147,12 +157,19 @@ const { t, lang } = Astro.props;
             </p>
 
             <!-- After trial + savings -->
-            <p class="text-text-muted text-sm">
+            <p class="text-text-muted text-sm mb-2">
               {t.pricing.packPlan.savingsText}
             </p>
 
+            <!-- Weight Loss Claim -->
+            <div class="bg-primary-orange/10 border border-primary-orange/30 rounded-lg px-3 py-2 mb-3">
+              <p class="text-primary-orange font-semibold text-sm">
+                {t.pricing.packPlan.weightLossClaim}
+              </p>
+            </div>
+
             <!-- Description -->
-            <p class="text-text-secondary text-sm">
+            <p class="text-text-secondary text-xs leading-relaxed">
               {t.pricing.packPlan.description}
             </p>
           </div>
@@ -167,9 +184,10 @@ const { t, lang } = Astro.props;
     </div>
 
     <!-- Features List (shared) -->
-    <div class="max-w-2xl mx-auto mt-10">
+    <div class="max-w-3xl mx-auto mt-10">
       <div class="bg-dark-surface/50 border border-dark-border rounded-2xl p-6">
-        <h4 class="text-center text-white font-semibold mb-4">{t.pricing.featuresTitle}</h4>
+        <h4 class="text-center text-white font-semibold mb-1">{t.pricing.featuresTitle}</h4>
+        <p class="text-center text-text-muted text-sm mb-5">{t.pricing.featuresSubtitle}</p>
         <ul class="grid sm:grid-cols-2 gap-3">
           {t.pricing.features.map((feature) => (
             <li class="flex items-start gap-2">

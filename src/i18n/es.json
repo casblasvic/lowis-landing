@@ -414,7 +414,8 @@
       "period": "DH/semana",
       "trialText": "7 días GRATIS",
       "afterTrialText": "Después 250 DH/semana",
-      "description": "Paga semana a semana, cancela cuando quieras",
+      "weightLossClaim": "Pierde hasta 2,5 kg en una semana",
+      "description": "Por el coste de una consulta: seguimiento 24h con IA para llegar donde humanamente no podemos, combinado con expertos reales que revisan tu caso cada semana. Sin compromiso, tú decides si continuar.",
       "cta": "Empezar GRATIS ahora"
     },
     "packPlan": {
@@ -425,16 +426,29 @@
       "period": "DH",
       "trialText": "7 días GRATIS",
       "savingsText": "Después 999 DH (¡Ahorra 501 DH!)",
-      "description": "Programa completo al mejor precio",
+      "weightLossClaim": "Pierde hasta 12 kg en 6 semanas",
+      "description": "Premiamos tu confianza con un 33% de descuento. Tratamiento completo de transformación al mejor precio.",
       "cta": "Empezar GRATIS ahora"
     },
-    "featuresTitle": "Incluido en ambos planes:",
+    "featuresTitle": "Incluido desde el PRIMER DÍA:",
+    "featuresSubtitle": "Para nosotros todos nuestros pacientes son iguales. Sin paywall, sin funciones bloqueadas. Todo activo desde que empiezas.",
     "features": [
-      "Monitorización de +40 indicadores en continuo",
-      "Planes de comida personalizados a tus gustos",
-      "LOWIS, tu coach IA + expertos 24/7",
-      "Audio Program diario (reprogramación mental)",
-      "Informe semanal personalizado por nutricionistas"
+      "Nutricionistas REALES revisando tu caso cada semana",
+      "Adaptación en tiempo real según tus 40+ indicadores",
+      "Te decimos exactamente qué ajustar para mejorar",
+      "Escáner de código de barras GRATIS (en otras apps es de pago)",
+      "Tracking IA por foto - identifica platos automáticamente",
+      "Registro por voz o texto - en 30 segundos",
+      "+2.000 recetas adaptadas a tu objetivo de peso",
+      "Plan de adelgazamiento que se ajusta a TU ritmo",
+      "Seguimiento de 22 micronutrientes esenciales",
+      "LOWIS se adapta a tu sueño, estrés y energía",
+      "Seguimiento del ciclo femenino integrado",
+      "Audio Program diario (reprogramación mental) - ÚNICO",
+      "Informe semanal con lo que funciona y lo que no",
+      "Modo Ramadán / Ayuno intermitente integrado",
+      "Fotos de progreso con comparativa visual",
+      "Funciona offline - sincroniza cuando hay conexión"
     ]
   },
   "faq": {
