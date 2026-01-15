@@ -15,7 +15,7 @@ translations:
   en: "menstrual-cycle-weight-loss"
   es: "ciclo-menstrual-perdida-peso"
 ctaType: "plan"
-image: "cycle-menstruel/hero.webp"
+image: "cycle-menstruel/hero.png"
 imageAlt: "Menstrual cycle and weight loss - How to adapt nutrition to each phase"
 faq:
   - question: "Why do I gain weight before my period?"

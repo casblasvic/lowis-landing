@@ -15,7 +15,7 @@ translations:
   en: "audio-program-reprogram-brain"
   es: "audio-program-reprogramar-cerebro"
 ctaType: "plan"
-image: "audio-program/hero.webp"
+image: "audio-program/hero.png"
 imageAlt: "Audio Program LOWIS - Reprogramar tu cerebro para perder peso"
 faq:
   - question: "¿Qué es el Audio Program de LOWIS?"
