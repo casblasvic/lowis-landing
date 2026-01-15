@@ -16,13 +16,14 @@
   "hero": {
     "badge": "Available worldwide",
     "badgeGeneric": "Available worldwide",
-    "title": "Guaranteed: Lose between",
-    "titleHighlight": "1 to 2.5 kg per week",
-    "subtitle": "Learn to eat smart with your favorite recipes. No stressful restrictions, just varying the order and combination of foods.",
+    "title": "6-Week LOWIS Program:",
+    "titleHighlight": "Lose up to 12 kg",
+    "subtitle": "1-2.5 kg per week × 6 weeks = Your complete transformation. Then, maintain your results from just €10/month.",
     "cta": "Get my free personalized plan",
     "ctaSecondary": "See demo",
     "noCard": "No credit card required",
-    "pricingInfo": "Then 199 DH/week • Cancel anytime",
+    "pricingInfo": "6-week pack: €99 (save 33%) • Cancel anytime",
+    "guarantee": "Guaranteed: 1-2.5 kg per week",
     "disclaimer": "By following the LOWIS protocol.",
     "users": "active users"
   },
@@ -334,90 +335,103 @@
     "recipesButtonGeneric": "Explore +2000 recipes"
   },
   "howItWorks": {
-    "title": "How does it work?",
-    "subtitle": "A simple cycle that improves every week",
+    "title": "Your 6-Week Transformation",
+    "subtitle": "A proven method to lose up to 12 kg",
     "phases": [
       {
         "number": "1",
         "icon": "target",
-        "title": "Week 1: Your personalized plan",
+        "title": "Weeks 1-2: Metabolic Activation",
         "description": "Answer simple questions about your goals, preferences and health conditions. LOWIS + our experts generate a 100% personalized plan adapted to your cuisine.",
         "bullets": [
           "Plan adapted to your tastes and allergies",
-          "First week completely free",
-          "Ready in minutes"
+          "Daily Audio Program",
+          "Expected result: 2-5 kg"
         ]
       },
       {
         "number": "2",
-        "icon": "edit_note",
-        "title": "Every day: log in 30 seconds",
-        "description": "Photograph your meals (LOWIS identifies automatically) and note how you feel.",
+        "icon": "local_fire_department",
+        "title": "Weeks 3-4: Accelerated Burning",
+        "description": "Your metabolism is now active. We intensify the protocol while maintaining comfort.",
         "bullets": [
-          "Sleep and energy level",
-          "Stress and mood of the day",
-          "Digestion and hydration",
-          "Special notes (event, trip...)"
+          "Smart food combinations",
+          "Real-time adjustments",
+          "Expected result: +3-4 kg"
         ]
       },
       {
         "number": "3",
-        "icon": "smart_toy",
-        "title": "LOWIS analyzes and adapts IN REAL-TIME",
-        "description": "With each data point, LOWIS converts your info into 40+ indicators, learns your patterns and adapts your program the same day.",
+        "icon": "trending_up",
+        "title": "Weeks 5-6: Consolidation",
+        "description": "Consolidate your results and prepare the maintenance phase to avoid the yo-yo effect.",
         "bullets": [
-          "Slept poorly? → More energy tomorrow",
-          "High stress? → Comfort foods suggested",
-          "Missing micronutrients? → Menu adjusted"
+          "Stable habits",
+          "Lifestyle integrated",
+          "Expected result: +2-3 kg"
         ]
       },
       {
         "number": "4",
-        "icon": "groups",
-        "title": "Every week: our experts supervise",
-        "description": "LOWIS reacts fast (daily), but our nutritionists verify and manually refine your case every week.",
+        "icon": "verified",
+        "title": "After 6 weeks: Maintenance",
+        "description": "Transition to maintenance at €10/month to keep your results long-term.",
         "bullets": [
-          "Complete review of your 40+ indicators",
-          "Analysis of patterns detected by LOWIS",
-          "Personalized adjustments for the next week"
+          "Full app access",
+          "24/7 AI Coach",
+          "Ongoing expert support"
         ]
       }
     ],
     "cycle": {
-      "title": "The cycle that transforms you",
-      "description": "Every week LOWIS becomes more precise. Your program becomes more YOU. Daily adaptation + weekly supervision = lasting results."
+      "title": "Total: Up to 12 kg in 6 weeks",
+      "description": "Daily adaptation + weekly expert supervision = lasting results. Then maintain from just €10/month."
     },
-    "cta": "Get my free plan"
+    "cta": "Start my transformation"
   },
   "stats": {
     "title": "Complete 360° tracking",
     "subtitle": "Nutrition + mental + adjustments = lasting results"
   },
   "pricing": {
-    "title": "See for yourself the weight loss during your first week",
-    "subtitle": "🔒 No credit card required • ✓ Zero commitment • ✓ Cancel anytime",
+    "title": "6-Week Transformation Program",
+    "subtitle": "Lose up to 12 kg with our proven method",
     "trustBadges": {
       "noCard": "No credit card",
       "cancel": "Cancel in 1 click",
-      "secure": "100% free for one week"
+      "secure": "100% secure"
     },
-    "premium": {
-      "name": "Premium",
-      "badge": "First week free",
-      "price": "0",
-      "priceAfter": "199",
-      "period": "DH/week",
-      "trialText": "0 DH for first week",
-      "afterTrialText": "Then 199 DH/week",
-      "features": [
-        "Continuous monitoring of 40+ indicators",
-        "Personalized meal plans to your tastes",
-        "LOWIS, your AI coach + experts",
-        "Audios to strengthen your mindset",
-        "Weekly progress report"
-      ],
-      "cta": "Get my personalized plan",
-      "popular": true
+    "weeklyPlan": {
+      "name": "Weekly",
+      "badge": "Maximum flexibility",
+      "price": "€25",
+      "period": "/week",
+      "totalText": "Total 6 weeks: €150",
+      "description": "Pay week by week, cancel anytime",
+      "cta": "Start weekly"
+    },
+    "packPlan": {
+      "name": "6-Week Pack",
+      "badge": "⭐ RECOMMENDED",
+      "price": "€99",
+      "period": "total",
+      "savingsText": "Save €51 (34%)!",
+      "description": "Complete program, best value",
+      "cta": "Get the full pack"
+    },
+    "featuresTitle": "Included in both plans:",
+    "features": [
+      "Personalized nutritional plan",
+      "Daily Audio Program",
+      "24/7 AI Coach + Nutritionists",
+      "500+ adapted recipes",
+      "Weekly expert follow-up"
+    ],
+    "maintenance": {
+      "title": "After 6 weeks: Maintenance",
+      "price": "€10",
+      "period": "/month",
+      "description": "Keep full access to the app and maintain your results"
     }
   },
   "faq": {
@@ -494,10 +508,10 @@
     ]
   },
   "finalCta": {
-    "title": "Transform your life today",
-    "subtitle": "Your personalized plan awaits.",
-    "cta": "Get my free plan",
-    "noCard": "Free • No credit card"
+    "title": "6 weeks to transform your body",
+    "subtitle": "Lose up to 12 kg with our proven method. Then maintain from €10/month.",
+    "cta": "Start my 6-week transformation",
+    "noCard": "€99 the complete pack • Cancel anytime"
   },
   "footer": {
     "tagline": "The smart nutritional system with AI + experts",

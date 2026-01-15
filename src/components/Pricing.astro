@@ -12,7 +12,32 @@ interface Props {
         cancel: string;
         secure: string;
       };
-      premium: {
+      weeklyPlan: {
+        name: string;
+        badge: string;
+        price: string;
+        period: string;
+        totalText: string;
+        description: string;
+        cta: string;
+      };
+      packPlan: {
+        name: string;
+        badge: string;
+        price: string;
+        period: string;
+        savingsText: string;
+        description: string;
+        cta: string;
+      };
+      features: string[];
+      maintenance: {
+        title: string;
+        price: string;
+        period: string;
+        description: string;
+      };
+      premium?: {
         name: string;
         badge: string;
         price: string;
@@ -48,13 +73,54 @@ const { t, lang } = Astro.props;
       </p>
     </div>
 
-    <!-- Single Premium Card -->
-    <div class="max-w-md mx-auto pt-6">
-      <div class="relative p-8 lg:p-10 bg-dark-surface border-2 border-primary-orange rounded-3xl">
-        <!-- Trial badge - positioned above the card -->
+    <!-- Two Pricing Cards -->
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 pt-6">
+
+      <!-- Weekly Plan Card -->
+      <div class="relative p-6 lg:p-8 bg-dark-surface border border-dark-border rounded-3xl hover:border-primary-orange/50 transition-colors">
+        <!-- Badge -->
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-20">
+          <div class="px-4 py-1.5 bg-dark-surface border border-dark-border text-text-secondary text-sm font-medium rounded-full whitespace-nowrap">
+            {t.pricing.weeklyPlan.badge}
+          </div>
+        </div>
+
+        <div class="relative z-10 pt-4">
+          <!-- Plan name -->
+          <div class="text-center mb-6">
+            <h3 class="text-xl font-bold text-white mb-4">{t.pricing.weeklyPlan.name}</h3>
+
+            <!-- Price -->
+            <div class="mb-2">
+              <span class="text-4xl sm:text-5xl font-bold">{t.pricing.weeklyPlan.price}</span>
+              <span class="text-text-secondary text-lg ml-1">{t.pricing.weeklyPlan.period}</span>
+            </div>
+
+            <!-- Total text -->
+            <p class="text-text-muted text-sm mb-1">
+              {t.pricing.weeklyPlan.totalText}
+            </p>
+
+            <!-- Description -->
+            <p class="text-text-secondary text-sm">
+              {t.pricing.weeklyPlan.description}
+            </p>
+          </div>
+
+          <!-- CTA Button -->
+          <a href={getSignupUrlWithLang(lang)} class="block w-full text-center py-3 px-6 border border-primary-orange text-primary-orange rounded-xl font-medium hover:bg-primary-orange/10 transition-colors">
+            {t.pricing.weeklyPlan.cta}
+            <span class="material-symbols-outlined ml-2 text-sm align-middle">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Pack Plan Card (Recommended) -->
+      <div class="relative p-6 lg:p-8 bg-dark-surface border-2 border-primary-orange rounded-3xl">
+        <!-- Recommended badge -->
         <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
           <div class="px-6 py-2.5 bg-gradient-to-r from-primary-orange to-primary-red text-white text-sm font-bold rounded-full shadow-lg whitespace-nowrap">
-            {t.pricing.premium.badge}
+            {t.pricing.packPlan.badge}
           </div>
         </div>
 
@@ -65,49 +131,63 @@ const { t, lang } = Astro.props;
         <div class="relative z-10 pt-4">
           <!-- Plan name -->
           <div class="text-center mb-6">
-            <h3 class="text-2xl font-bold gradient-text mb-4">{t.pricing.premium.name}</h3>
+            <h3 class="text-xl font-bold gradient-text mb-4">{t.pricing.packPlan.name}</h3>
 
-            <!-- Trial price -->
+            <!-- Price -->
             <div class="mb-2">
-              <span class="text-5xl sm:text-6xl font-bold">{t.pricing.premium.price}</span>
-              <span class="text-text-secondary text-lg ml-1">{t.pricing.premium.period}</span>
+              <span class="text-4xl sm:text-5xl font-bold">{t.pricing.packPlan.price}</span>
+              <span class="text-text-secondary text-lg ml-1">{t.pricing.packPlan.period}</span>
             </div>
 
-            <!-- Trial text -->
-            <p class="text-primary-orange font-medium text-lg mb-1">
-              {t.pricing.premium.trialText}
+            <!-- Savings text -->
+            <p class="text-green-400 font-medium text-sm mb-1">
+              {t.pricing.packPlan.savingsText}
             </p>
 
-            <!-- After trial text -->
-            <p class="text-text-muted text-sm">
-              {t.pricing.premium.afterTrialText}
+            <!-- Description -->
+            <p class="text-text-secondary text-sm">
+              {t.pricing.packPlan.description}
             </p>
           </div>
 
-          <!-- Divider -->
-          <div class="w-full h-px bg-gradient-to-r from-transparent via-dark-border to-transparent my-6"></div>
-
-          <!-- Features -->
-          <ul class="space-y-4 mb-8">
-            {t.pricing.premium.features.map((feature) => (
-              <li class="flex items-start gap-3">
-                <span class="material-symbols-outlined text-green-400 text-lg mt-0.5">check_circle</span>
-                <span class="text-text-primary">{feature}</span>
-              </li>
-            ))}
-          </ul>
-
           <!-- CTA Button -->
-          <a href={getSignupUrlWithLang(lang)} class="btn-primary w-full justify-center text-lg py-4">
-            {t.pricing.premium.cta}
+          <a href={getSignupUrlWithLang(lang)} class="btn-primary w-full justify-center text-lg py-3">
+            {t.pricing.packPlan.cta}
             <span class="material-symbols-outlined ml-2">arrow_forward</span>
           </a>
         </div>
       </div>
     </div>
 
+    <!-- Features List (shared) -->
+    <div class="max-w-2xl mx-auto mt-10">
+      <div class="bg-dark-surface/50 border border-dark-border rounded-2xl p-6">
+        <h4 class="text-center text-white font-semibold mb-4">{t.pricing.featuresTitle}</h4>
+        <ul class="grid sm:grid-cols-2 gap-3">
+          {t.pricing.features.map((feature) => (
+            <li class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-green-400 text-lg mt-0.5">check_circle</span>
+              <span class="text-text-secondary text-sm">{feature}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <!-- Maintenance Section -->
+    <div class="max-w-2xl mx-auto mt-8">
+      <div class="bg-gradient-to-r from-primary-orange/10 to-primary-red/10 border border-primary-orange/30 rounded-2xl p-6 text-center">
+        <h4 class="text-white font-semibold mb-2">{t.pricing.maintenance.title}</h4>
+        <div class="flex items-center justify-center gap-2 mb-2">
+          <span class="text-3xl font-bold text-white">{t.pricing.maintenance.price}</span>
+          <span class="text-text-secondary">{t.pricing.maintenance.period}</span>
+        </div>
+        <p class="text-text-secondary text-sm">{t.pricing.maintenance.description}</p>
+      </div>
+    </div>
+
     <!-- Trust badges -->
-    <div class="mt-12 flex flex-wrap justify-center items-center gap-6 text-text-secondary text-sm">
+    <div class="mt-10 flex flex-wrap justify-center items-center gap-6 text-text-secondary text-sm">
       <div class="flex items-center gap-2">
         <span class="material-symbols-outlined text-lg text-green-400">credit_card_off</span>
         <span>{t.pricing.trustBadges.noCard}</span>
