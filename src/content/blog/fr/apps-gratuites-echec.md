@@ -5,11 +5,11 @@ publishDate: 2026-01-09
 author: "Équipe LOWIS"
 authorRole: "Experts en nutrition IA"
 category: "comparatifs"
-tags: ["app calories gratuite", "compteur calories", "perte de poids", "apps nutrition"]
+tags: ["app calories gratuite", "compteur calories", "perte de poids", "apps nutrition", "app gratuite Maroc", "compteur calories Maroc"]
 lang: "fr"
 readingTime: 8
 isPillar: false
-pillarSlug: "perdre-poids-intelligemment"
+pillarSlug: "choisir-application-nutrition"
 translations:
   fr: "apps-gratuites-echec"
   en: "free-calorie-apps-fail"
@@ -185,4 +185,4 @@ En 2 minutes, vous aurez votre plan personnalisé basé sur vos habitudes réell
 
 ---
 
-*Consultez notre [guide complet sur la perte de poids intelligente](/blog/perdre-poids-intelligemment/) pour comprendre l'approche qui fonctionne vraiment.*
+*Consultez notre [guide complet sur la perte de poids intelligente](/blog/perdre-poids-intelligemment/) pour comprendre l'approche qui fonctionne vraiment. Et pour choisir la bonne app, découvrez nos [7 critères essentiels pour choisir une application de nutrition](/blog/choisir-application-nutrition/).*

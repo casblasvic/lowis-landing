@@ -5,7 +5,7 @@ publishDate: 2026-01-10
 author: "Équipe LOWIS"
 authorRole: "Experts en nutrition IA"
 category: "guides"
-tags: ["perte de poids", "régime intelligent", "nutrition", "ia nutrition", "maigrir sans régime"]
+tags: ["perte de poids", "régime intelligent", "nutrition", "ia nutrition", "maigrir sans régime", "perdre du poids Maroc", "maigrir Casablanca"]
 lang: "fr"
 readingTime: 15
 isPillar: true

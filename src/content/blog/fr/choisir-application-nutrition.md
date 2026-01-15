@@ -5,11 +5,11 @@ publishDate: 2026-01-12
 author: "Équipe LOWIS"
 authorRole: "Experts en nutrition IA"
 category: "guides"
-tags: ["meilleure app nutrition", "choisir app calories", "comparatif apps nutrition", "suivi alimentaire"]
+tags: ["meilleure app nutrition", "choisir app calories", "comparatif apps nutrition", "suivi alimentaire", "app nutrition Maroc", "compteur calories Maroc"]
 lang: "fr"
 readingTime: 10
-isPillar: false
-pillarSlug: "perdre-poids-intelligemment"
+isPillar: true
+pillarSlug: "choisir-application-nutrition"
 translations:
   fr: "choisir-application-nutrition"
   en: "how-to-choose-nutrition-app"

@@ -5,7 +5,7 @@ publishDate: 2026-01-16
 author: "Équipe LOWIS"
 authorRole: "Experts en nutrition IA"
 category: "guides"
-tags: ["ramadan nutrition", "ftour équilibré", "shour sain", "jeûne intermittent", "perdre poids ramadan"]
+tags: ["ramadan nutrition", "ftour équilibré", "shour sain", "jeûne intermittent", "perdre poids ramadan", "ramadan Maroc", "harira calories", "nutrition Casablanca"]
 lang: "fr"
 readingTime: 15
 isPillar: false
@@ -341,3 +341,7 @@ Obtenez votre plan personnalisé pour le Ramadan en 2 minutes. LOWIS calcule vos
 ---
 
 *Guide basé sur les recommandations nutritionnelles et l'expérience de milliers d'utilisateurs. Consultez un médecin si vous avez des conditions de santé particulières avant de jeûner.*
+
+---
+
+*Pour continuer votre transformation après le Ramadan, consultez notre [guide complet pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/). Découvrez aussi [comment éviter l'effet rebond](/blog/effet-rebond-eviter/) et comment [scanner vos plats marocains en 2 secondes](/blog/scanner-plat-2-secondes/) avec LOWIS.*

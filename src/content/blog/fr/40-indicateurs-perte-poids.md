@@ -336,3 +336,7 @@ LOWIS surveille ces 40+ indicateurs pour vous offrir une personnalisation totale
 ---
 
 *Cet article est basé sur la recherche en nutrition et les données de milliers d'utilisateurs. Pour des conditions médicales spécifiques, consultez toujours un professionnel de santé.*
+
+---
+
+*Pour aller plus loin, découvrez notre [guide complet pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/), comment [le stress bloque votre perte de poids](/blog/stress-perte-poids/), et pourquoi [le sommeil est crucial pour maigrir](/blog/sommeil-perte-poids/). Pour les femmes, notre article sur [le cycle menstruel et la perte de poids](/blog/cycle-menstruel-perte-poids/) explique comment adapter votre alimentation à chaque phase.*

@@ -5,11 +5,11 @@ publishDate: 2026-01-15
 author: "Équipe LOWIS"
 authorRole: "Experts en nutrition IA"
 category: "comparatifs"
-tags: ["myfitnesspal alternative", "compteur calories ia", "comparatif apps nutrition", "perte de poids", "mfp vs lowis"]
+tags: ["myfitnesspal alternative", "compteur calories ia", "comparatif apps nutrition", "perte de poids", "mfp vs lowis", "myfitnesspal Maroc", "app calories Maroc"]
 lang: "fr"
 readingTime: 13
 isPillar: false
-pillarSlug: "perdre-poids-intelligemment"
+pillarSlug: "choisir-application-nutrition"
 translations:
   fr: "lowis-vs-myfitnesspal"
   en: "lowis-vs-myfitnesspal"
@@ -264,3 +264,7 @@ Pas de publicités. Pas de vente de données. Juste un coach IA qui travaille po
 ---
 
 *Cet article compare les fonctionnalités au moment de sa publication. Les prix et fonctionnalités peuvent évoluer. Sources : sites officiels, avis TrustPilot, Reddit r/loseit, tests internes.*
+
+---
+
+*Pour approfondir votre réflexion, consultez notre [guide complet pour choisir une app de nutrition](/blog/choisir-application-nutrition/) avec les 7 critères essentiels, et découvrez pourquoi [suivre 40+ indicateurs de santé](/blog/40-indicateurs-perte-poids/) fait toute la différence.*

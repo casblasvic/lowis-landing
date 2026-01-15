@@ -5,11 +5,11 @@ publishDate: 2026-01-11
 author: "Équipe LOWIS"
 authorRole: "Experts en nutrition IA"
 category: "comparatifs"
-tags: ["cal ai alternative", "compteur calories ia", "comparatif apps nutrition", "perte de poids"]
+tags: ["cal ai alternative", "compteur calories ia", "comparatif apps nutrition", "perte de poids", "cal ai Maroc", "app calories Maroc"]
 lang: "fr"
 readingTime: 12
 isPillar: false
-pillarSlug: "perdre-poids-intelligemment"
+pillarSlug: "choisir-application-nutrition"
 translations:
   fr: "lowis-vs-cal-ai"
   en: "lowis-vs-cal-ai"
@@ -216,3 +216,7 @@ Pas de piège, pas d'engagement. Juste une chance de voir si LOWIS est fait pour
 ---
 
 *Cet article compare les fonctionnalités au moment de sa publication. Les prix et fonctionnalités peuvent évoluer. Sources : avis TrustPilot, Reddit r/caloriecounting, sites officiels.*
+
+---
+
+*Pour approfondir votre réflexion, consultez notre [guide complet pour choisir une app de nutrition](/blog/choisir-application-nutrition/) et découvrez [comment scanner vos plats marocains en 2 secondes](/blog/scanner-plat-2-secondes/).*

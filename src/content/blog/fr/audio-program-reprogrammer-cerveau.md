@@ -245,3 +245,7 @@ Parce que perdre du poids durablement, ça commence dans la tête.
 ---
 
 *Sources : études sur la neuroplasticité (Dr. Joe Dispenza), recherches sur la pleine conscience et l'alimentation, psychologie comportementale appliquée à la nutrition.*
+
+---
+
+*Pour comprendre comment le stress sabote vos efforts de perte de poids, consultez notre article sur [le stress et la perte de poids](/blog/stress-perte-poids/). Et découvrez [pourquoi 95% des régimes échouent](/blog/pourquoi-regimes-echouent/) — et ce que vous pouvez faire différemment avec notre [guide complet pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/).*

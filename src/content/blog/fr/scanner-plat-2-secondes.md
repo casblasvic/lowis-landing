@@ -5,7 +5,7 @@ publishDate: 2026-01-05
 author: "Équipe LOWIS"
 authorRole: "Experts en nutrition IA"
 category: "astuces"
-tags: ["scanner repas", "compteur calories photo", "ia reconnaissance aliments", "tutorial lowis"]
+tags: ["scanner repas", "compteur calories photo", "ia reconnaissance aliments", "tutorial lowis", "tajine calories", "couscous calories", "plats marocains calories"]
 lang: "fr"
 readingTime: 6
 isPillar: false

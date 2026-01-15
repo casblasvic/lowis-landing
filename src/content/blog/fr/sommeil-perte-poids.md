@@ -276,3 +276,7 @@ LOWIS ne se contente pas de compter vos calories. Il comprend que votre corps es
 ---
 
 *Article basé sur des études publiées dans Sleep, Annals of Internal Medicine, et PLOS Medicine. Pour des troubles du sommeil persistants, consultez un médecin.*
+
+---
+
+*Pour une approche complète de la perte de poids, consultez notre [guide pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/). Découvrez aussi comment [le stress bloque vos résultats](/blog/stress-perte-poids/) et pourquoi [suivre 40+ indicateurs](/blog/40-indicateurs-perte-poids/) est essentiel pour comprendre votre corps.*

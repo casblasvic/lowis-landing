@@ -5,7 +5,7 @@ publishDate: 2026-01-08
 author: "Équipe LOWIS"
 authorRole: "Experts en nutrition IA"
 category: "guides"
-tags: ["coach nutritionnel ia", "intelligence artificielle", "nutrition personnalisée", "perte de poids ia"]
+tags: ["coach nutritionnel ia", "intelligence artificielle", "nutrition personnalisée", "perte de poids ia", "nutritionniste en ligne Maroc", "coach nutrition Casablanca"]
 lang: "fr"
 readingTime: 10
 isPillar: false

@@ -5,11 +5,11 @@ publishDate: 2026-01-13
 author: "Équipe LOWIS"
 authorRole: "Experts en nutrition IA"
 category: "comparatifs"
-tags: ["yazio alternative", "compteur calories ia", "comparatif apps nutrition", "perte de poids"]
+tags: ["yazio alternative", "compteur calories ia", "comparatif apps nutrition", "perte de poids", "yazio Maroc", "app nutrition Maroc"]
 lang: "fr"
 readingTime: 11
 isPillar: false
-pillarSlug: "perdre-poids-intelligemment"
+pillarSlug: "choisir-application-nutrition"
 translations:
   fr: "lowis-vs-yazio"
   en: "lowis-vs-yazio"
@@ -212,3 +212,7 @@ Pas de piège, pas d'engagement. Juste une chance de voir si un vrai coaching IA
 ---
 
 *Cet article compare les fonctionnalités au moment de sa publication. Les prix et fonctionnalités peuvent évoluer. Sources : sites officiels, avis utilisateurs, tests internes.*
+
+---
+
+*Pour approfondir votre choix d'application, consultez notre [guide complet pour choisir une app de nutrition](/blog/choisir-application-nutrition/). Découvrez aussi [comment scanner vos plats en 2 secondes](/blog/scanner-plat-2-secondes/) et pourquoi [suivre 40+ indicateurs de santé](/blog/40-indicateurs-perte-poids/) fait toute la différence.*
