@@ -4,7 +4,7 @@ description: "Découvrez comment le stress chronique bloque votre perte de poids
 publishDate: 2026-01-15
 author: "Équipe LOWIS"
 authorRole: "Experts en nutrition et bien-être"
-category: "bien-etre"
+category: "guides"
 tags: ["stress et poids", "cortisol", "perte de poids bloquee", "stress chronique", "alimentation emotionnelle"]
 lang: "fr"
 readingTime: 12

@@ -4,7 +4,7 @@ description: "Découvrez comment votre cycle menstruel influence votre poids et 
 publishDate: 2026-01-15
 author: "Équipe LOWIS"
 authorRole: "Experts en nutrition féminine"
-category: "sante-femme"
+category: "guides"
 tags: ["cycle menstruel", "perte de poids femme", "hormones et poids", "alimentation cyclique", "regles et kilos"]
 lang: "fr"
 readingTime: 14
