@@ -4,7 +4,7 @@ description: "Descubre cómo el Audio Program de LOWIS utiliza la ciencia de la 
 publishDate: 2026-01-15
 author: "Equipo LOWIS"
 authorRole: "Expertos en psicología nutricional"
-category: "guides"
+category: "mindset"
 tags: ["audio program", "reprogramacion mental", "perdida peso psicologia", "habitos alimentarios", "neuroplasticidad"]
 lang: "es"
 readingTime: 11

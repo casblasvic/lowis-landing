@@ -4,7 +4,7 @@ description: "Discover how chronic stress blocks your weight loss and concrete s
 publishDate: 2026-01-15
 author: "LOWIS Team"
 authorRole: "Nutrition and Wellness Experts"
-category: "guides"
+category: "bien-etre"
 tags: ["stress and weight", "cortisol", "weight loss plateau", "chronic stress", "emotional eating"]
 lang: "en"
 readingTime: 12

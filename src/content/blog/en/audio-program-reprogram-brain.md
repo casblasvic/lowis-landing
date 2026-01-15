@@ -4,7 +4,7 @@ description: "Discover how LOWIS's Audio Program uses the science of neuroplasti
 publishDate: 2026-01-15
 author: "LOWIS Team"
 authorRole: "Nutritional Psychology Experts"
-category: "guides"
+category: "mindset"
 tags: ["audio program", "mental reprogramming", "weight loss psychology", "eating habits", "neuroplasticity"]
 lang: "en"
 readingTime: 11

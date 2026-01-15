@@ -29,6 +29,9 @@ const blogCollection = defineCollection({
       'astuces',      // Quick tips and tricks
       'recettes',     // Recipe-related content
       'temoignages',  // User stories (for E-E-A-T)
+      'sante-femme',  // Women's health: menstrual cycle, hormones
+      'bien-etre',    // Wellness: stress, sleep, mental health
+      'mindset',      // Mindset: audio program, mental reprogramming
     ]),
     tags: z.array(z.string()).default([]),
 

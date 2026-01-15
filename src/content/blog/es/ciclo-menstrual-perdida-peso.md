@@ -4,7 +4,7 @@ description: "Descubre cómo tu ciclo menstrual influye en tu peso y cómo adapt
 publishDate: 2026-01-15
 author: "Equipo LOWIS"
 authorRole: "Expertos en nutrición femenina"
-category: "guides"
+category: "sante-femme"
 tags: ["ciclo menstrual", "perdida peso mujer", "hormonas y peso", "alimentacion ciclica", "regla y kilos"]
 lang: "es"
 readingTime: 14

@@ -4,7 +4,7 @@ description: "Discover the scientific link between sleep and weight loss. How po
 publishDate: 2026-01-17
 author: "LOWIS Team"
 authorRole: "AI Nutrition Experts"
-category: "guides"
+category: "bien-etre"
 tags: ["sleep weight loss", "sleep to lose weight", "hunger hormones", "leptin ghrelin", "sleep metabolism"]
 lang: "en"
 readingTime: 12

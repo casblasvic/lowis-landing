@@ -4,7 +4,7 @@ description: "Descubre la conexión científica entre sueño y pérdida de peso.
 publishDate: 2026-01-17
 author: "Equipo LOWIS"
 authorRole: "Expertos en nutrición IA"
-category: "guides"
+category: "bien-etre"
 tags: ["sueno perdida peso", "dormir para adelgazar", "hormonas hambre", "leptina grelina", "metabolismo sueno"]
 lang: "es"
 readingTime: 12

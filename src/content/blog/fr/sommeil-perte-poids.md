@@ -4,7 +4,7 @@ description: "Découvrez le lien scientifique entre sommeil et perte de poids. C
 publishDate: 2026-01-17
 author: "Équipe LOWIS"
 authorRole: "Experts en nutrition IA"
-category: "guides"
+category: "bien-etre"
 tags: ["sommeil perte de poids", "dormir pour maigrir", "hormones faim", "lepine ghréline", "métabolisme sommeil"]
 lang: "fr"
 readingTime: 12
