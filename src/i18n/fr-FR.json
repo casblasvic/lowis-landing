@@ -536,8 +536,14 @@
       "title": "Produit",
       "features": "Fonctionnalités",
       "pricing": "Tarifs",
-      "faq": "FAQ",
-      "blog": "Conseils"
+      "faq": "FAQ"
+    },
+    "blogCategories": {
+      "title": "Blog",
+      "guides": "Guides complets",
+      "comparatifs": "Comparatifs",
+      "bienetre": "Bien-être",
+      "viewAll": "Voir tout le blog"
     },
     "legal": {
       "title": "Légal",
@@ -893,5 +899,12 @@
     "title": "Apprenez à perdre du poids intelligemment",
     "subtitle": "Guides, conseils et comparatifs de nos experts",
     "cta": "Voir tout le blog"
+  },
+  "error404": {
+    "title": "Oups ! Page introuvable",
+    "subtitle": "Cette recette semble ne pas exister...",
+    "description": "Mais ne vous inquiétez pas, nous en avons plein d'autres délicieuses qui vous attendent.",
+    "homeButton": "Retour à l'accueil",
+    "blogButton": "Voir le blog"
   }
 }

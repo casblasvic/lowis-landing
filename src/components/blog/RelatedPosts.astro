@@ -9,7 +9,8 @@ import type { Language } from '../../i18n';
 import BlogCard from './BlogCard.astro';
 
 interface Post {
-  slug: string;
+  id: string;
+  slug?: string;
   data: {
     title: string;
     description: string;
@@ -20,6 +21,12 @@ interface Post {
     readingTime?: number;
     lang: Language;
   };
+}
+
+// Helper to extract slug from post id (e.g., "fr/lowis-vs-cal-ai" -> "lowis-vs-cal-ai")
+function getSlugFromPost(post: Post): string {
+  if (post.slug) return post.slug;
+  return post.id.replace(/^(fr|fr-FR|es|en)\//, '').replace(/\.md$/, '');
 }
 
 interface Props {
@@ -50,7 +57,7 @@ const sectionTitle = title || {
         <BlogCard
           title={post.data.title}
           description={post.data.description}
-          slug={post.slug}
+          slug={getSlugFromPost(post)}
           image={post.data.image}
           imageAlt={post.data.imageAlt}
           category={post.data.category}

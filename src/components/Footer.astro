@@ -14,6 +14,13 @@ interface Props {
         faq: string;
         blog: string;
       };
+      blogCategories?: {
+        title: string;
+        guides: string;
+        comparatifs: string;
+        bienetre: string;
+        viewAll: string;
+      };
       legal: {
         title: string;
         privacy: string;
@@ -37,7 +44,7 @@ const currentYear = new Date().getFullYear();
 
 <footer class="bg-dark-surface border-t border-dark-border">
   <div class="section-container py-12">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
       <!-- Brand -->
       <div class="col-span-2 md:col-span-1">
         <a href={getPathWithLang('/', lang)} class="flex items-center gap-2 mb-4">
@@ -104,13 +111,37 @@ const currentYear = new Date().getFullYear();
               {t.footer.product.faq}
             </a>
           </li>
-          <li>
-            <a href={getPathWithLang('/blog/', lang)} class="text-text-secondary hover:text-white transition-colors text-sm">
-              {t.footer.product.blog}
-            </a>
-          </li>
         </ul>
       </div>
+
+      <!-- Blog Categories -->
+      {t.footer.blogCategories && (
+        <div>
+          <p class="font-semibold mb-4">{t.footer.blogCategories.title}</p>
+          <ul class="space-y-3">
+            <li>
+              <a href={getPathWithLang('/blog/category/guides/', lang)} class="text-text-secondary hover:text-white transition-colors text-sm">
+                {t.footer.blogCategories.guides}
+              </a>
+            </li>
+            <li>
+              <a href={getPathWithLang('/blog/category/comparatifs/', lang)} class="text-text-secondary hover:text-white transition-colors text-sm">
+                {t.footer.blogCategories.comparatifs}
+              </a>
+            </li>
+            <li>
+              <a href={getPathWithLang('/blog/category/bien-etre/', lang)} class="text-text-secondary hover:text-white transition-colors text-sm">
+                {t.footer.blogCategories.bienetre}
+              </a>
+            </li>
+            <li>
+              <a href={getPathWithLang('/blog/', lang)} class="text-text-secondary hover:text-white transition-colors text-sm">
+                {t.footer.blogCategories.viewAll}
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
 
       <!-- Legal -->
       <div>

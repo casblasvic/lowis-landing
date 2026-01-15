@@ -536,8 +536,14 @@
       "title": "Product",
       "features": "Features",
       "pricing": "Pricing",
-      "faq": "FAQ",
-      "blog": "Tips & Guides"
+      "faq": "FAQ"
+    },
+    "blogCategories": {
+      "title": "Blog",
+      "guides": "Complete guides",
+      "comparatifs": "Comparisons",
+      "bienetre": "Wellness",
+      "viewAll": "View all articles"
     },
     "legal": {
       "title": "Legal",
@@ -893,5 +899,12 @@
     "title": "Learn to lose weight the smart way",
     "subtitle": "Guides, tips, and comparisons from our experts",
     "cta": "View all articles"
+  },
+  "error404": {
+    "title": "Oops! Page not found",
+    "subtitle": "This recipe doesn't seem to exist...",
+    "description": "But don't worry, we have plenty of other delicious ones waiting for you.",
+    "homeButton": "Back to home",
+    "blogButton": "View blog"
   }
 }

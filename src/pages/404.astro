@@ -1,0 +1,106 @@
+---
+/**
+ * 404 Page - Friendly error page
+ *
+ * Detects language from referrer or defaults to French
+ * Shows a friendly message with options to navigate
+ */
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Logo from '../components/ui/Logo.astro';
+import { type Language, defaultLang, useTranslations } from '../i18n';
+
+// Try to detect language from URL - defaults to French for Morocco focus
+const lang = defaultLang;
+const t = useTranslations(lang);
+
+// 404 translations
+const error404 = t.error404 || {
+  title: "Oups ! Page introuvable",
+  subtitle: "Cette recette semble ne pas exister...",
+  description: "Mais ne vous inquiétez pas, nous en avons plein d'autres délicieuses qui vous attendent.",
+  homeButton: "Retour à l'accueil",
+  blogButton: "Voir le blog"
+};
+---
+
+<Layout
+  title={`404 - ${error404.title} | LOWIS`}
+  description={error404.description}
+  lang={lang}
+>
+  <Header t={t} lang={lang} />
+
+  <main class="min-h-[70vh] flex items-center justify-center px-4 py-16">
+    <div class="text-center max-w-lg">
+      <!-- Illustration - Robot mascot generated with Gemini -->
+      <div class="mb-8 relative">
+        <img
+          src="https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket/Landing/404/robot.png"
+          alt="LOWIS robot confused - page not found"
+          class="w-64 h-64 mx-auto object-contain animate-float"
+        />
+        <!-- 404 badge -->
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 bg-dark-surface border-2 border-primary-orange rounded-full px-4 py-1">
+          <span class="text-primary-orange font-bold text-xl">404</span>
+        </div>
+      </div>
+
+      <!-- Text content -->
+      <h1 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">
+        {error404.title}
+      </h1>
+
+      <p class="text-xl text-text-secondary mb-2">
+        {error404.subtitle}
+      </p>
+
+      <p class="text-text-secondary mb-8">
+        {error404.description}
+      </p>
+
+      <!-- Action buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="/"
+          class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-orange to-orange-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-primary-orange/30 transition-all duration-300"
+        >
+          <span class="material-symbols-outlined">home</span>
+          {error404.homeButton}
+        </a>
+
+        <a
+          href="/blog/"
+          class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-dark-surface border border-dark-border text-white font-semibold rounded-xl hover:border-primary-orange transition-all duration-300"
+        >
+          <span class="material-symbols-outlined">menu_book</span>
+          {error404.blogButton}
+        </a>
+      </div>
+
+      <!-- Fun suggestion -->
+      <p class="mt-12 text-sm text-text-secondary">
+        <span class="material-symbols-outlined text-base align-middle mr-1">lightbulb</span>
+        {lang === 'fr' || lang === 'fr-FR'
+          ? "Peut-être essayer une de nos délicieuses recettes ?"
+          : lang === 'es'
+            ? "¿Quizás probar una de nuestras deliciosas recetas?"
+            : "Maybe try one of our delicious recipes?"}
+      </p>
+    </div>
+  </main>
+
+  <Footer t={t} lang={lang} />
+</Layout>
+
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+</style>
