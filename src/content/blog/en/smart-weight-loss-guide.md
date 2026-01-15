@@ -16,6 +16,17 @@ translations:
 ctaType: "plan"
 image: "perdre-poids-intelligemment/hero.webp"
 imageAlt: "Complete guide to losing weight smartly with AI assistance"
+faq:
+  - question: "Why do 95% of diets fail?"
+    answer: "Traditional diets fail for 4 main reasons: restriction creates frustration and cravings, metabolism adapts by slowing down, the rebound effect causes the body to store more fat after restriction, and most programs abandon support after a few weeks."
+  - question: "How much weight can you healthily lose per week?"
+    answer: "A healthy, sustainable weight loss is 0.5 to 1 kg (1-2 lbs) per week maximum. This corresponds to a moderate caloric deficit of 300-500 kcal per day. Rapid losses are always followed by rapid regains."
+  - question: "What differentiates an AI coach from calorie counting apps?"
+    answer: "Classic apps (passive AI) only recognize foods and record calories. An active AI coach analyzes your overall situation (stress, sleep, hormonal cycle), recommends personalized adjustments, adapts in real-time to your results, and actively guides you toward your goals 24/7."
+  - question: "Do I have to eliminate foods I love to lose weight?"
+    answer: "No! Losing weight smartly means learning to integrate your favorite foods in a balanced way. The key is eating better, not less. Total restrictions create frustration and abandonment."
+  - question: "What factors besides calories affect weight loss?"
+    answer: "A complete approach analyzes 40+ indicators: macronutrients, micronutrients, hydration, sleep quality (less than 7h = slowed metabolism), stress level (cortisol = fat storage), menstrual cycle, and even the order in which you eat your foods."
 ---
 
 Losing weight is one of the most common goals, but also one of the hardest to achieve sustainably. If you're reading these lines, you've probably already tried several diets, downloaded apps, and felt the frustration of seeing the pounds come back.

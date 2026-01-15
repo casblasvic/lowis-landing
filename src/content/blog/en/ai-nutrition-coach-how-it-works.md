@@ -17,6 +17,17 @@ translations:
 ctaType: "trial"
 image: "coach-ia-comment-marche/hero.webp"
 imageAlt: "How an AI nutrition coach works for weight loss"
+faq:
+  - question: "What's the difference between a calorie app and an AI coach?"
+    answer: "A classic app passively records your calories and leaves you on your own. An AI coach actively analyzes your overall situation (stress, sleep, hormones), continuously personalizes recommendations, anticipates your needs, and guides you toward your goals 24/7."
+  - question: "Will AI replace nutritionists?"
+    answer: "No. AI is a tool that amplifies experts' work. At LOWIS, our nutritionists use AI to be more efficient. AI analyzes data continuously, but important recommendations are validated by humans."
+  - question: "Is my data safe with an AI coach?"
+    answer: "Yes. Your data is encrypted and never sold to third parties. It's only used to improve YOUR experience and personalize your nutritional recommendations."
+  - question: "Does the AI coach work with special diets?"
+    answer: "Yes. Vegan, gluten-free, halal, diabetic... The AI adapts to your dietary restrictions and offers recommendations tailored to your specific situation."
+  - question: "What happens if the AI makes a mistake?"
+    answer: "You can always correct the AI, and it learns from its mistakes to become more accurate over time. Plus, our nutritionists supervise important recommendations."
 ---
 
 "AI Coach", "Artificial intelligence", "Machine learning"... These terms are everywhere. But concretely, **what is an AI nutrition coach and how can it help you lose weight?**

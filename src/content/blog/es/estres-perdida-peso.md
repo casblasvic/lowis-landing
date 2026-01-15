@@ -9,7 +9,6 @@ tags: ["estres y peso", "cortisol", "perdida peso bloqueada", "estres cronico", 
 lang: "es"
 readingTime: 12
 isPillar: true
-pillarSlug: "estres-perdida-peso"
 translations:
   fr: "stress-perte-poids"
   en: "stress-weight-loss"

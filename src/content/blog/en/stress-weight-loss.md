@@ -9,7 +9,6 @@ tags: ["stress and weight", "cortisol", "weight loss plateau", "chronic stress",
 lang: "en"
 readingTime: 12
 isPillar: true
-pillarSlug: "stress-weight-loss"
 translations:
   fr: "stress-perte-poids"
   en: "stress-weight-loss"

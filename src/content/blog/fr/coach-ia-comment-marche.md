@@ -17,6 +17,17 @@ translations:
 ctaType: "trial"
 image: "coach-ia-comment-marche/hero.webp"
 imageAlt: "Comment fonctionne un coach nutritionnel IA pour la perte de poids"
+faq:
+  - question: "Quelle est la différence entre une app de calories et un coach IA ?"
+    answer: "Une app classique enregistre passivement vos calories et vous laisse seul. Un coach IA analyse activement votre situation globale (stress, sommeil, hormones), personnalise les recommandations en continu, anticipe vos besoins et vous guide vers vos objectifs 24/7."
+  - question: "L'IA va-t-elle remplacer les nutritionnistes ?"
+    answer: "Non. L'IA est un outil qui amplifie le travail des experts. Chez LOWIS, nos nutritionnistes utilisent l'IA pour être plus efficaces. L'IA analyse les données en continu, mais les recommandations importantes sont validées par des humains."
+  - question: "Mes données sont-elles en sécurité avec un coach IA ?"
+    answer: "Oui. Vos données sont cryptées et ne sont jamais vendues à des tiers. Elles servent uniquement à améliorer VOTRE expérience et personnaliser vos recommandations nutritionnelles."
+  - question: "Le coach IA fonctionne-t-il avec les régimes spéciaux ?"
+    answer: "Oui. Végan, sans gluten, halal, diabétique... L'IA s'adapte à vos contraintes alimentaires et propose des recommandations adaptées à votre situation spécifique."
+  - question: "Que se passe-t-il si l'IA se trompe ?"
+    answer: "Vous pouvez toujours corriger l'IA, et elle apprend de ses erreurs pour devenir plus précise avec le temps. De plus, nos nutritionnistes supervisent les recommandations importantes."
 ---
 
 "Coach IA", "Intelligence artificielle", "Machine learning"... Ces termes sont partout. Mais concrètement, **qu'est-ce qu'un coach nutritionnel IA et comment peut-il vous aider à perdre du poids ?**
@@ -239,4 +250,4 @@ En 2 minutes, vous aurez votre premier plan personnalisé et pourrez expériment
 
 ---
 
-*Pour comprendre l'approche globale de la perte de poids intelligente, consultez notre [guide complet](/blog/perdre-poids-intelligemment/).*
+*Pour comprendre l'approche globale de la perte de poids intelligente, consultez notre [guide complet](/blog/perdre-poids-intelligemment/). Découvrez aussi pourquoi [les apps gratuites ne fonctionnent pas](/blog/apps-gratuites-echec/) et les [40+ indicateurs](/blog/40-indicateurs-perte-poids/) qu'un vrai coach nutritionnel devrait analyser.*

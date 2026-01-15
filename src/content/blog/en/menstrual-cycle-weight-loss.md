@@ -9,7 +9,6 @@ tags: ["menstrual cycle", "weight loss women", "hormones and weight", "cycle syn
 lang: "en"
 readingTime: 14
 isPillar: true
-pillarSlug: "menstrual-cycle-weight-loss"
 translations:
   fr: "cycle-menstruel-perte-poids"
   en: "menstrual-cycle-weight-loss"
@@ -290,3 +289,7 @@ No one-size-fits-all diet. Just an approach that respects your body.
 ---
 
 *Sources: studies on cycle syncing nutrition, research on female hormones and metabolism, consultations with nutritionists specialized in women's health.*
+
+---
+
+*To learn more about sustainable weight loss, discover our [complete guide to smart weight loss](/blog/smart-weight-loss-guide/), how [sleep affects weight loss](/blog/sleep-weight-loss/), and why [stress blocks your progress](/blog/stress-weight-loss/). Understand the [40+ indicators that matter for weight loss](/blog/40-indicators-weight-loss/).*

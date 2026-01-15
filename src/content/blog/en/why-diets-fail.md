@@ -17,6 +17,17 @@ translations:
 ctaType: "plan"
 image: "pourquoi-regimes-echouent/hero.webp"
 imageAlt: "Why traditional diets fail - The science explained"
+faq:
+  - question: "Why do 95% of diets fail?"
+    answer: "Diets fail because of biology, not lack of willpower. Your brain triggers a survival alarm (increased hunger, reduced energy), your metabolism slows by up to 22%, and the rebound effect makes you store fat more efficiently after restriction."
+  - question: "What is the rebound effect and how to avoid it?"
+    answer: "The rebound effect is weight regain after a diet, often more than what was lost. To avoid it: lose max 1 kg/week, never go too low on calories (min 1400 kcal women, 1800 kcal men), and follow a stabilization phase after loss."
+  - question: "Why does metabolism slow during a diet?"
+    answer: "When calories drop drastically, your smart body slows metabolism to save energy (up to -22% after 12 weeks). That's why you should prioritize a moderate deficit (300-500 kcal) rather than severe restriction."
+  - question: "Do popular diets like Dukan or intermittent fasting work?"
+    answer: "These diets may show short-term results, but often fail long-term. Very restrictive diets are impossible to maintain. Intermittent fasting works for some, but many compensate during eating windows."
+  - question: "What's the alternative to traditional diets?"
+    answer: "The sustainable approach is based on 5 pillars: moderate caloric deficit (300-500 kcal), flexibility without prohibition, listening to hunger signals, continuous personalized support, and long-term vision. It's not a temporary diet, it's a new way of eating."
 ---
 
 You've tried Weight Watchers. Then the Dukan diet. Maybe intermittent fasting. Each time, the same scenario: initial weight loss, plateau, frustration, giving up, regaining the pounds (and often more).

@@ -17,6 +17,17 @@ translations:
 ctaType: "plan"
 image: "pourquoi-regimes-echouent/hero.webp"
 imageAlt: "Por qué las dietas tradicionales fracasan - La ciencia explicada"
+faq:
+  - question: "¿Por qué fracasan el 95% de las dietas?"
+    answer: "Las dietas fracasan por biología, no por falta de voluntad. Tu cerebro dispara una alarma de supervivencia (más hambre, menos energía), tu metabolismo se ralentiza hasta un 22%, y el efecto rebote te hace almacenar grasa más eficientemente tras la restricción."
+  - question: "¿Qué es el efecto rebote y cómo evitarlo?"
+    answer: "El efecto rebote es la recuperación de peso después de una dieta, a menudo más de lo perdido. Para evitarlo: pierde máx 1 kg/semana, nunca bajes demasiado las calorías (mín 1400 kcal mujeres, 1800 kcal hombres), y sigue una fase de estabilización tras la pérdida."
+  - question: "¿Por qué el metabolismo se ralentiza durante una dieta?"
+    answer: "Cuando las calorías bajan drásticamente, tu cuerpo inteligente ralentiza el metabolismo para ahorrar energía (hasta -22% tras 12 semanas). Por eso hay que priorizar un déficit moderado (300-500 kcal) en lugar de una restricción severa."
+  - question: "¿Funcionan las dietas populares como Dukan o el ayuno intermitente?"
+    answer: "Estas dietas pueden mostrar resultados a corto plazo, pero a menudo fracasan a largo plazo. Las dietas muy restrictivas son imposibles de mantener. El ayuno intermitente funciona para algunos, pero muchos compensan durante las ventanas alimentarias."
+  - question: "¿Cuál es la alternativa a las dietas tradicionales?"
+    answer: "El enfoque duradero se basa en 5 pilares: déficit calórico moderado (300-500 kcal), flexibilidad sin prohibiciones, escucha de señales de hambre, acompañamiento continuo personalizado, y visión a largo plazo. No es una dieta temporal, es una nueva forma de comer."
 ---
 
 Has probado Weight Watchers. Luego la dieta Dukan. Quizás el ayuno intermitente. Cada vez, el mismo escenario: pérdida de peso inicial, estancamiento, frustración, abandono, recuperación de los kilos (y a menudo más).

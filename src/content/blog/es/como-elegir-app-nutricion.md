@@ -9,7 +9,6 @@ tags: ["mejor app nutricion", "elegir app calorias", "comparativa apps nutricion
 lang: "es"
 readingTime: 10
 isPillar: true
-pillarSlug: "como-elegir-app-nutricion"
 translations:
   fr: "choisir-application-nutrition"
   en: "how-to-choose-nutrition-app"

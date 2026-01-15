@@ -9,7 +9,6 @@ tags: ["best nutrition app", "choose calorie app", "nutrition app comparison", "
 lang: "en"
 readingTime: 10
 isPillar: true
-pillarSlug: "how-to-choose-nutrition-app"
 translations:
   fr: "choisir-application-nutrition"
   en: "how-to-choose-nutrition-app"

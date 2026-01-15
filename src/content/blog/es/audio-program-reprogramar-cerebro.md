@@ -245,3 +245,7 @@ Porque perder peso de forma duradera empieza en la cabeza.
 ---
 
 *Fuentes: estudios sobre neuroplasticidad (Dr. Joe Dispenza), investigaciones sobre atención plena y alimentación, psicología comportamental aplicada a la nutrición.*
+
+---
+
+*Para entender cómo el estrés sabotea tus esfuerzos de pérdida de peso, consulta nuestro artículo sobre [el estrés y la pérdida de peso](/blog/estres-perdida-peso/). Y descubre [por qué el 95% de las dietas fracasan](/blog/por-que-dietas-fallan/) — y lo que puedes hacer diferente con nuestra [guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/).*

@@ -245,3 +245,7 @@ Because lasting weight loss starts in your head.
 ---
 
 *Sources: neuroplasticity studies (Dr. Joe Dispenza), research on mindfulness and eating, behavioral psychology applied to nutrition.*
+
+---
+
+*To understand how stress sabotages your weight loss efforts, check out our article on [stress and weight loss](/blog/stress-weight-loss/). And discover [why 95% of diets fail](/blog/why-diets-fail/) — and what you can do differently with our [complete guide to smart weight loss](/blog/smart-weight-loss-guide/).*

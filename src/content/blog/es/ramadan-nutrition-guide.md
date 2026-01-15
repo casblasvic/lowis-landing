@@ -213,3 +213,7 @@ Que este mes bendito sea el de tu transformación — espiritual Y física.
 Obtén tu plan personalizado para el Ramadán en 2 minutos. LOWIS calcula tus necesidades, sugiere recetas adaptadas, y te acompaña todo el mes.
 
 **Prueba gratis durante 7 días** — comienza antes del Ramadán para estar listo.
+
+---
+
+*Para saber más sobre pérdida de peso sostenible, descubre nuestra [guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/), por qué [el sueño es crucial para adelgazar](/blog/sueno-perdida-peso/), y cómo [el estrés afecta la pérdida de peso](/blog/estres-perdida-peso/). Aprende sobre los [40+ indicadores que importan para perder peso](/blog/40-indicadores-perdida-peso/).*

@@ -9,7 +9,6 @@ tags: ["stress et poids", "cortisol", "perte de poids bloquee", "stress chroniqu
 lang: "fr"
 readingTime: 12
 isPillar: true
-pillarSlug: "stress-perte-poids"
 translations:
   fr: "stress-perte-poids"
   en: "stress-weight-loss"

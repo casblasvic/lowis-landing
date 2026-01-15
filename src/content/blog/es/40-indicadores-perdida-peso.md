@@ -291,3 +291,7 @@ LOWIS monitorea estos 40+ indicadores para ofrecerte una personalización total.
 ---
 
 *Este artículo está basado en investigación nutricional y datos de miles de usuarios. Para condiciones médicas específicas, consulta siempre a un profesional de salud.*
+
+---
+
+*Para saber más, descubre nuestra [guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/), cómo [el estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/), y por qué [el sueño es crucial para adelgazar](/blog/sueno-perdida-peso/). Para mujeres, nuestro artículo sobre [el ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) explica cómo adaptar tu alimentación a cada fase.*

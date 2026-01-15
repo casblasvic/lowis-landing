@@ -207,3 +207,7 @@ Sleep is the multiplier for all your efforts:
 LOWIS doesn't just count your calories. It understands that your body is a complex system where sleep plays a crucial role.
 
 **Try free for 7 days** — and finally discover why some weeks are harder than others.
+
+---
+
+*To learn more, discover our [complete guide to smart weight loss](/blog/smart-weight-loss-guide/), how [stress blocks your weight loss](/blog/stress-weight-loss/), and why [40+ indicators matter for weight loss](/blog/40-indicators-weight-loss/). For women, our article on [menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) explains how to adapt your diet to each phase.*

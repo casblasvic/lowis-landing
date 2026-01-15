@@ -213,3 +213,7 @@ May this blessed month be one of transformation — spiritual AND physical.
 Get your personalized Ramadan plan in 2 minutes. LOWIS calculates your needs, suggests adapted recipes, and accompanies you all month.
 
 **Try free for 7 days** — start before Ramadan to be ready.
+
+---
+
+*To learn more about sustainable weight loss, discover our [complete guide to smart weight loss](/blog/smart-weight-loss-guide/), why [sleep is crucial for losing weight](/blog/sleep-weight-loss/), and how [stress affects weight loss](/blog/stress-weight-loss/). Learn about the [40+ indicators that matter for weight loss](/blog/40-indicators-weight-loss/).*

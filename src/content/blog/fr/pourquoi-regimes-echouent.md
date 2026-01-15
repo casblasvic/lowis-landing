@@ -17,6 +17,17 @@ translations:
 ctaType: "plan"
 image: "pourquoi-regimes-echouent/hero.webp"
 imageAlt: "Pourquoi les régimes traditionnels échouent - La science expliquée"
+faq:
+  - question: "Pourquoi 95% des régimes échouent-ils ?"
+    answer: "Les régimes échouent à cause de la biologie, pas du manque de volonté. Votre cerveau déclenche une alarme de survie (faim accrue, énergie réduite), votre métabolisme ralentit jusqu'à 22%, et l'effet rebond vous fait stocker plus efficacement les graisses après la restriction."
+  - question: "Qu'est-ce que l'effet rebond et comment l'éviter ?"
+    answer: "L'effet rebond est la reprise de poids après un régime, souvent plus que ce qu'on a perdu. Pour l'éviter : perdez max 1 kg/semaine, ne descendez jamais trop bas en calories (min 1400 kcal femmes, 1800 kcal hommes), et suivez une phase de stabilisation après la perte."
+  - question: "Pourquoi le métabolisme ralentit-il pendant un régime ?"
+    answer: "Quand les calories diminuent drastiquement, votre corps intelligent ralentit le métabolisme pour économiser l'énergie (jusqu'à -22% après 12 semaines). C'est pourquoi il faut privilégier un déficit modéré (300-500 kcal) plutôt qu'une restriction sévère."
+  - question: "Les régimes populaires comme Dukan ou le jeûne intermittent fonctionnent-ils ?"
+    answer: "Ces régimes peuvent montrer des résultats à court terme, mais échouent souvent à long terme. Les régimes très restrictifs sont impossibles à maintenir. Le jeûne intermittent fonctionne pour certains, mais beaucoup compensent pendant les fenêtres alimentaires."
+  - question: "Quelle est l'alternative aux régimes traditionnels ?"
+    answer: "L'approche durable repose sur 5 piliers : déficit calorique modéré (300-500 kcal), flexibilité sans interdiction, écoute des signaux de faim, accompagnement continu personnalisé, et vision long terme. Ce n'est pas un régime temporaire, c'est une nouvelle façon de manger."
 ---
 
 Vous avez essayé Weight Watchers. Puis le régime Dukan. Peut-être le jeûne intermittent. À chaque fois, le même scénario : perte de poids initiale, plateau, frustration, abandon, reprise des kilos (et souvent plus).

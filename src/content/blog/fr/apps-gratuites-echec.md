@@ -17,6 +17,15 @@ translations:
 ctaType: "compare"
 image: "apps-gratuites-echec/hero.webp"
 imageAlt: "Pourquoi les applications gratuites de calories ne fonctionnent pas"
+faq:
+  - question: "Pourquoi les apps gratuites de calories ne fonctionnent-elles pas ?"
+    answer: "Les apps gratuites gagnent de l'argent avec la publicité et vos données, pas avec vos résultats. Elles offrent des bases de données génériques, aucun coaching personnalisé, et vous laissent seul avec des chiffres sans contexte."
+  - question: "Quel est le vrai coût d'une app gratuite ?"
+    answer: "Une app 'gratuite' vous coûte environ 15 min/jour en recherche manuelle (7.5h/mois). Si votre temps vaut 10€/h, c'est 75€/mois en temps perdu, sans compter les mois sans résultats qui retardent vos objectifs."
+  - question: "Comment une app payante est-elle différente ?"
+    answer: "Avec une app payante, l'entreprise a intérêt à ce que vous réussissiez. Vous bénéficiez d'un scan rapide (2 sec vs 15 min), d'un coach IA actif, de +40 indicateurs analysés, de nutritionnistes humains, et d'une base de données de plats locaux."
+  - question: "Comment savoir si mon app actuelle ne marche pas ?"
+    answer: "Signes révélateurs : vous avez installé 5+ apps différentes, vous abandonnez toujours après quelques semaines, vous comptez des calories mais ne perdez pas de poids, vous passez plus de temps sur l'app qu'à manger."
 ---
 
 Vous avez téléchargé une app gratuite de comptage de calories. Vous avez commencé avec motivation. Deux semaines plus tard, vous avez abandonné.

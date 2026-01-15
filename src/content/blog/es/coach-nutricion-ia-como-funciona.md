@@ -17,6 +17,17 @@ translations:
 ctaType: "trial"
 image: "coach-ia-comment-marche/hero.webp"
 imageAlt: "Cómo funciona un coach nutricional IA para la pérdida de peso"
+faq:
+  - question: "¿Cuál es la diferencia entre una app de calorías y un coach IA?"
+    answer: "Una app clásica registra pasivamente tus calorías y te deja solo. Un coach IA analiza activamente tu situación global (estrés, sueño, hormonas), personaliza las recomendaciones continuamente, anticipa tus necesidades y te guía hacia tus objetivos 24/7."
+  - question: "¿La IA va a reemplazar a los nutricionistas?"
+    answer: "No. La IA es una herramienta que amplifica el trabajo de los expertos. En LOWIS, nuestros nutricionistas utilizan la IA para ser más eficientes. La IA analiza los datos continuamente, pero las recomendaciones importantes son validadas por humanos."
+  - question: "¿Están seguros mis datos con un coach IA?"
+    answer: "Sí. Tus datos están encriptados y nunca se venden a terceros. Solo sirven para mejorar TU experiencia y personalizar tus recomendaciones nutricionales."
+  - question: "¿El coach IA funciona con dietas especiales?"
+    answer: "Sí. Vegano, sin gluten, halal, diabético... La IA se adapta a tus restricciones alimentarias y propone recomendaciones adaptadas a tu situación específica."
+  - question: "¿Qué pasa si la IA se equivoca?"
+    answer: "Siempre puedes corregir a la IA, y aprende de sus errores para ser más precisa con el tiempo. Además, nuestros nutricionistas supervisan las recomendaciones importantes."
 ---
 
 "Coach IA", "Inteligencia artificial", "Machine learning"... Estos términos están en todas partes. Pero en concreto, **¿qué es un coach nutricional IA y cómo puede ayudarte a perder peso?**

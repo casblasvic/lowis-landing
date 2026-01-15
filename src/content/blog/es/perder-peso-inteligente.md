@@ -16,6 +16,17 @@ translations:
 ctaType: "plan"
 image: "perdre-poids-intelligemment/hero.webp"
 imageAlt: "Guía completa para perder peso de forma inteligente con ayuda de la IA"
+faq:
+  - question: "¿Por qué fracasan el 95% de las dietas?"
+    answer: "Las dietas tradicionales fracasan por 4 razones principales: la restricción crea frustración y antojos, el metabolismo se adapta ralentizándose, el efecto rebote hace que el cuerpo almacene más grasa después de la restricción, y la mayoría de programas abandonan el acompañamiento tras pocas semanas."
+  - question: "¿Cuántos kilos se pueden perder de forma saludable por semana?"
+    answer: "Una pérdida de peso saludable y duradera es de 0,5 a 1 kg por semana máximo. Esto corresponde a un déficit calórico moderado de 300-500 kcal diarias. Las pérdidas rápidas siempre van seguidas de recuperaciones rápidas."
+  - question: "¿Qué diferencia a un coach IA de las apps de conteo de calorías?"
+    answer: "Las apps clásicas (IA pasiva) solo reconocen alimentos y registran calorías. Un coach IA activo analiza tu situación global (estrés, sueño, ciclo hormonal), recomienda ajustes personalizados, se adapta en tiempo real a tus resultados, y te guía activamente hacia tus objetivos 24/7."
+  - question: "¿Hay que eliminar los alimentos que me gustan para adelgazar?"
+    answer: "¡No! Perder peso de forma inteligente significa aprender a integrar tus alimentos favoritos de forma equilibrada. La clave es comer mejor, no menos. Las restricciones totales crean frustración y abandono."
+  - question: "¿Qué factores además de las calorías afectan la pérdida de peso?"
+    answer: "Un enfoque completo analiza +40 indicadores: macronutrientes, micronutrientes, hidratación, calidad del sueño (menos de 7h = metabolismo lento), nivel de estrés (cortisol = almacenamiento de grasa), ciclo menstrual, e incluso el orden en que comes tus alimentos."
 ---
 
 Perder peso es uno de los objetivos más comunes, pero también uno de los más difíciles de alcanzar de forma duradera. Si estás leyendo estas líneas, probablemente ya has probado varias dietas, descargado aplicaciones, y sentido la frustración de ver los kilos volver.

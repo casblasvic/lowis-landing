@@ -16,6 +16,17 @@ translations:
 ctaType: "plan"
 image: "perdre-poids-intelligemment/hero.webp"
 imageAlt: "Guide complet pour perdre du poids intelligemment avec l'aide de l'IA"
+faq:
+  - question: "Pourquoi 95% des régimes échouent-ils ?"
+    answer: "Les régimes traditionnels échouent pour 4 raisons principales : la restriction crée la frustration et les envies, le métabolisme s'adapte en ralentissant, l'effet rebond pousse le corps à stocker plus de graisses après la restriction, et la plupart des programmes abandonnent l'accompagnement après quelques semaines."
+  - question: "Combien de kilos peut-on perdre sainement par semaine ?"
+    answer: "Une perte de poids saine et durable est de 0,5 à 1 kg par semaine maximum. Cela correspond à un déficit calorique modéré de 300-500 kcal par jour. Les pertes rapides sont toujours suivies de reprises rapides."
+  - question: "Qu'est-ce qui différencie un coach IA des apps de comptage de calories ?"
+    answer: "Les apps classiques (IA passive) se contentent de reconnaître les aliments et enregistrer les calories. Un coach IA actif analyse votre situation globale (stress, sommeil, cycle hormonal), recommande des ajustements personnalisés, s'adapte en temps réel à vos résultats, et vous guide activement vers vos objectifs 24/7."
+  - question: "Faut-il supprimer les aliments qu'on aime pour maigrir ?"
+    answer: "Non ! Perdre du poids intelligemment signifie apprendre à intégrer vos aliments préférés de façon équilibrée. La clé est de manger mieux, pas moins. Les restrictions totales créent frustration et abandons."
+  - question: "Quels facteurs autres que les calories affectent la perte de poids ?"
+    answer: "Une approche complète analyse +40 indicateurs : macronutriments, micronutriments, hydratation, qualité du sommeil (moins de 7h = métabolisme ralenti), niveau de stress (cortisol = stockage de graisses), cycle menstruel, et même l'ordre dans lequel vous mangez vos aliments."
 ---
 
 Perdre du poids est l'un des objectifs les plus courants, mais aussi l'un des plus difficiles à atteindre durablement. Si vous lisez ces lignes, vous avez probablement déjà essayé plusieurs régimes, téléchargé des applications, et ressenti la frustration de voir les kilos revenir.

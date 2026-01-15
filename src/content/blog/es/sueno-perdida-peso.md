@@ -207,3 +207,7 @@ El sueño es el multiplicador de todos tus esfuerzos:
 LOWIS no se limita a contar tus calorías. Entiende que tu cuerpo es un sistema complejo donde el sueño juega un papel crucial.
 
 **Prueba gratis durante 7 días** — y descubre por fin por qué algunas semanas son más difíciles que otras.
+
+---
+
+*Para saber más, descubre nuestra [guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/), cómo [el estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/), y por qué [más de 40 indicadores importan para perder peso](/blog/40-indicadores-perdida-peso/). Para mujeres, nuestro artículo sobre [el ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) explica cómo adaptar tu alimentación a cada fase.*

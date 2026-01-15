@@ -17,6 +17,15 @@ translations:
 ctaType: "compare"
 image: "apps-gratuites-echec/hero.webp"
 imageAlt: "Why free calorie apps don't work"
+faq:
+  - question: "Why don't free calorie apps work?"
+    answer: "Free apps make money from ads and your data, not from your results. They offer generic databases, no personalized coaching, and leave you alone with numbers without context."
+  - question: "What's the real cost of a free app?"
+    answer: "A 'free' app costs you about 15 min/day in manual searching (7.5h/month). If your time is worth $10/h, that's $75/month in wasted time, not counting the months without results that delay your goals."
+  - question: "How is a paid app different?"
+    answer: "With a paid app, the company has an interest in your success. You benefit from quick scanning (2 sec vs 15 min), an active AI coach, 40+ indicators analyzed, human nutritionists, and a local food database."
+  - question: "How do I know if my current app isn't working?"
+    answer: "Telltale signs: you've installed 5+ different apps, you always give up after a few weeks, you count calories but don't lose weight, you spend more time on the app than eating."
 ---
 
 You downloaded a free calorie counting app. You started with motivation. Two weeks later, you gave up.

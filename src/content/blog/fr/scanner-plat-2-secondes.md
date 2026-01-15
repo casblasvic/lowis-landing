@@ -233,4 +233,4 @@ Pas de carte bancaire. Pas d'engagement. Juste une meilleure façon de suivre vo
 
 ---
 
-*Pour comprendre comment le coach IA utilise ces données pour personnaliser vos recommandations, consultez notre article sur [le coaching IA](/blog/coach-ia-comment-marche/).*
+*Pour comprendre comment le coach IA utilise ces données pour personnaliser vos recommandations, consultez notre article sur [le coaching IA](/blog/coach-ia-comment-marche/). Et découvrez notre [guide complet pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/) ainsi que les [40+ indicateurs](/blog/40-indicateurs-perte-poids/) analysés par LOWIS.*

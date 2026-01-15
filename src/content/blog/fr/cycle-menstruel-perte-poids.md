@@ -9,7 +9,6 @@ tags: ["cycle menstruel", "perte de poids femme", "hormones et poids", "alimenta
 lang: "fr"
 readingTime: 14
 isPillar: true
-pillarSlug: "cycle-menstruel-perte-poids"
 translations:
   fr: "cycle-menstruel-perte-poids"
   en: "menstrual-cycle-weight-loss"
@@ -290,3 +289,7 @@ Pas de régime unique pour tous. Juste une approche qui respecte votre corps.
 ---
 
 *Sources : études sur la nutrition cyclique, recherches sur les hormones féminines et le métabolisme, consultations avec nutritionnistes spécialisés en santé féminine.*
+
+---
+
+*Pour en savoir plus sur la perte de poids durable, découvrez notre [guide complet pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/), comment [le sommeil affecte la perte de poids](/blog/sommeil-perte-poids/), et pourquoi [le stress bloque vos progrès](/blog/stress-perte-poids/). Comprenez les [40+ indicateurs qui comptent pour perdre du poids](/blog/40-indicateurs-perte-poids/).*
