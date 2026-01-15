@@ -5,11 +5,11 @@ publishDate: 2026-01-12
 author: "LOWIS Team"
 authorRole: "AI Nutrition Experts"
 category: "guides"
-tags: ["best nutrition app", "choose calorie app", "nutrition app comparison", "food tracking"]
+tags: ["best nutrition app", "choose calorie app", "nutrition app comparison", "food tracking", "calorie counter app", "diet tracker app"]
 lang: "en"
 readingTime: 10
-isPillar: false
-pillarSlug: "smart-weight-loss-guide"
+isPillar: true
+pillarSlug: "how-to-choose-nutrition-app"
 translations:
   fr: "choisir-application-nutrition"
   en: "how-to-choose-nutrition-app"

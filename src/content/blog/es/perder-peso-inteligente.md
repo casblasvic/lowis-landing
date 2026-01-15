@@ -5,7 +5,7 @@ publishDate: 2026-01-10
 author: "Equipo LOWIS"
 authorRole: "Expertos en nutrición IA"
 category: "guias"
-tags: ["perdida de peso", "dieta inteligente", "nutricion", "ia nutricion", "adelgazar sin dieta"]
+tags: ["perdida de peso", "dieta inteligente", "nutricion", "ia nutricion", "adelgazar sin dieta", "perder peso España", "adelgazar Madrid"]
 lang: "es"
 readingTime: 15
 isPillar: true

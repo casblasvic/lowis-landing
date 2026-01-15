@@ -4,7 +4,7 @@ description: "Découvrez comment le Audio Program de LOWIS utilise la science de
 publishDate: 2026-01-15
 author: "Équipe LOWIS"
 authorRole: "Experts en psychologie nutritionnelle"
-category: "mindset"
+category: "guides"
 tags: ["audio program", "reprogrammation mentale", "perte de poids psychologie", "habitudes alimentaires", "neuroplasticite"]
 lang: "fr"
 readingTime: 11
@@ -14,7 +14,7 @@ translations:
   fr: "audio-program-reprogrammer-cerveau"
   en: "audio-program-reprogram-brain"
   es: "audio-program-reprogramar-cerebro"
-ctaType: "audio"
+ctaType: "plan"
 image: "audio-program/hero.webp"
 imageAlt: "Audio Program LOWIS - Reprogrammer votre cerveau pour perdre du poids"
 faq:

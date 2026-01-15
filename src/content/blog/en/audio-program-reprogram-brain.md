@@ -4,17 +4,17 @@ description: "Discover how LOWIS's Audio Program uses the science of neuroplasti
 publishDate: 2026-01-15
 author: "LOWIS Team"
 authorRole: "Nutritional Psychology Experts"
-category: "mindset"
+category: "guides"
 tags: ["audio program", "mental reprogramming", "weight loss psychology", "eating habits", "neuroplasticity"]
 lang: "en"
 readingTime: 11
 isPillar: false
-pillarSlug: "how-to-choose-nutrition-app"
+pillarSlug: "smart-weight-loss-guide"
 translations:
   fr: "audio-program-reprogrammer-cerveau"
   en: "audio-program-reprogram-brain"
   es: "audio-program-reprogramar-cerebro"
-ctaType: "audio"
+ctaType: "plan"
 image: "audio-program/hero.webp"
 imageAlt: "LOWIS Audio Program - Reprogram your brain to lose weight"
 faq:

@@ -5,11 +5,11 @@ publishDate: 2026-01-14
 author: "LOWIS Team"
 authorRole: "AI Nutrition Experts"
 category: "comparatifs"
-tags: ["lose it alternative", "calorie counter", "nutrition app comparison", "weight loss"]
+tags: ["lose it alternative", "calorie counter", "nutrition app comparison", "weight loss", "best calorie app", "diet tracker"]
 lang: "en"
 readingTime: 10
 isPillar: false
-pillarSlug: "smart-weight-loss-guide"
+pillarSlug: "how-to-choose-nutrition-app"
 translations:
   fr: "lowis-vs-lose-it"
   en: "lowis-vs-lose-it"
@@ -209,3 +209,7 @@ Try LOWIS free for 7 days, no credit card required. In 2 minutes, discover what 
 ---
 
 *Comparison based on features at time of publication. Sources: official websites, user reviews, internal testing.*
+
+---
+
+*To learn more about choosing the right app, check out our [complete guide to choosing a nutrition app](/blog/how-to-choose-nutrition-app/). Also discover [how to scan your meals in 2 seconds](/blog/scan-meal-2-seconds/) and why [tracking 40+ health indicators](/blog/40-indicators-weight-loss/) is essential for lasting results.*

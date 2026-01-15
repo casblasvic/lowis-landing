@@ -216,3 +216,7 @@ No catch, no commitment. Just a chance to see if LOWIS is right for you.
 ---
 
 *This article compares features at the time of publication. Prices and features may change. Sources: TrustPilot reviews, Reddit r/caloriecounting, official websites.*
+
+---
+
+*To learn more, check out our [complete guide to choosing a nutrition app](/blog/how-to-choose-nutrition-app/) and discover [how to scan your meals in 2 seconds](/blog/scan-meal-2-seconds/).*
