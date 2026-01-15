@@ -15,7 +15,7 @@ translations:
   en: "lowis-vs-lose-it"
   es: "lowis-vs-lose-it"
 ctaType: "compare"
-image: "lowis-vs-lose-it/hero.png"
+image: "lowis-vs-lose-it/hero.webp"
 imageAlt: "Comparatif LOWIS vs Lose It - Applications de perte de poids en 2026"
 comparisonLogos:
   lowis: "/icons/logo-512.png"

@@ -14,7 +14,7 @@ translations:
   en: "smart-weight-loss-guide"
   es: "perder-peso-inteligente"
 ctaType: "plan"
-image: "perdre-poids-intelligemment/hero.png"
+image: "perdre-poids-intelligemment/hero.webp"
 imageAlt: "Complete guide to losing weight smartly with AI assistance"
 ---
 

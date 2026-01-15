@@ -15,7 +15,7 @@ translations:
   en: "avoid-weight-rebound"
   es: "evitar-efecto-rebote"
 ctaType: "plan"
-image: "effet-rebond-eviter/hero.png"
+image: "effet-rebond-eviter/hero.webp"
 imageAlt: "How to avoid the rebound effect after a diet"
 faq:
   - question: "What is the rebound effect exactly?"

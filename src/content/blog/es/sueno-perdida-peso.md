@@ -15,7 +15,7 @@ translations:
   en: "sleep-weight-loss"
   es: "sueno-perdida-peso"
 ctaType: "plan"
-image: "sommeil-perte-poids/hero.png"
+image: "sommeil-perte-poids/hero.webp"
 imageAlt: "La conexión entre sueño y pérdida de peso - hormonas y metabolismo"
 faq:
   - question: "¿Cuántas horas de sueño para perder peso?"

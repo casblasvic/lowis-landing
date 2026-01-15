@@ -15,7 +15,7 @@ translations:
   en: "menstrual-cycle-weight-loss"
   es: "ciclo-menstrual-perdida-peso"
 ctaType: "women"
-image: "cycle-menstruel/hero.png"
+image: "cycle-menstruel/hero.webp"
 imageAlt: "Cycle menstruel et perte de poids - Comment adapter son alimentation à chaque phase"
 faq:
   - question: "Pourquoi je prends du poids avant mes règles ?"

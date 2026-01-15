@@ -15,7 +15,7 @@ translations:
   en: "lowis-vs-cal-ai"
   es: "lowis-vs-cal-ai"
 ctaType: "compare"
-image: "lowis-vs-cal-ai/hero.png"
+image: "lowis-vs-cal-ai/hero.webp"
 imageAlt: "LOWIS vs Cal AI Comparison - AI calorie counting apps in 2026"
 comparisonLogos:
   lowis: "/icons/logo-512.png"

@@ -15,7 +15,7 @@ translations:
   en: "ramadan-nutrition-guide"
   es: "ramadan-nutrition-guide"
 ctaType: "plan"
-image: "ramadan-nutrition-guide/hero.png"
+image: "ramadan-nutrition-guide/hero.webp"
 imageAlt: "Complete nutrition guide for Ramadan - Balanced Iftar and Suhur"
 faq:
   - question: "Can you lose weight during Ramadan?"

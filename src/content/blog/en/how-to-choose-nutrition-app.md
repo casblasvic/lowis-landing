@@ -15,7 +15,7 @@ translations:
   en: "how-to-choose-nutrition-app"
   es: "como-elegir-app-nutricion"
 ctaType: "compare"
-image: "choisir-application-nutrition/hero.png"
+image: "choisir-application-nutrition/hero.webp"
 imageAlt: "How to choose the best nutrition tracking app"
 faq:
   - question: "What is the best nutrition app in 2026?"

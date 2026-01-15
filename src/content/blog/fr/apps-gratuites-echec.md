@@ -15,7 +15,7 @@ translations:
   en: "free-calorie-apps-fail"
   es: "apps-calorias-gratis-fallan"
 ctaType: "compare"
-image: "apps-gratuites-echec/hero.png"
+image: "apps-gratuites-echec/hero.webp"
 imageAlt: "Pourquoi les applications gratuites de calories ne fonctionnent pas"
 ---
 

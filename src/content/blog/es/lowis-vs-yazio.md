@@ -15,7 +15,7 @@ translations:
   en: "lowis-vs-yazio"
   es: "lowis-vs-yazio"
 ctaType: "compare"
-image: "lowis-vs-yazio/hero.png"
+image: "lowis-vs-yazio/hero.webp"
 imageAlt: "Comparativa LOWIS vs Yazio - Aplicaciones de conteo de calorías con IA en 2026"
 comparisonLogos:
   lowis: "/icons/logo-512.png"

@@ -15,7 +15,7 @@ translations:
   en: "menstrual-cycle-weight-loss"
   es: "ciclo-menstrual-perdida-peso"
 ctaType: "women"
-image: "cycle-menstruel/hero.png"
+image: "cycle-menstruel/hero.webp"
 imageAlt: "Ciclo menstrual y pérdida de peso - Cómo adaptar la alimentación a cada fase"
 faq:
   - question: "¿Por qué engordo antes de la regla?"

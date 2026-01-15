@@ -15,7 +15,7 @@ translations:
   en: "ai-nutrition-coach-how-it-works"
   es: "coach-nutricion-ia-como-funciona"
 ctaType: "trial"
-image: "coach-ia-comment-marche/hero.png"
+image: "coach-ia-comment-marche/hero.webp"
 imageAlt: "How an AI nutrition coach works for weight loss"
 ---
 

@@ -15,7 +15,7 @@ translations:
   en: "ramadan-nutrition-guide"
   es: "ramadan-nutrition-guide"
 ctaType: "plan"
-image: "ramadan-nutrition-guide/hero.png"
+image: "ramadan-nutrition-guide/hero.webp"
 imageAlt: "Guide nutritionnel complet pour le Ramadan - Ftour et Shour équilibrés"
 faq:
   - question: "Peut-on perdre du poids pendant le Ramadan ?"

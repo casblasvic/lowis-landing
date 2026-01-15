@@ -15,7 +15,7 @@ translations:
   en: "lowis-vs-myfitnesspal"
   es: "lowis-vs-myfitnesspal"
 ctaType: "compare"
-image: "lowis-vs-myfitnesspal/hero.png"
+image: "lowis-vs-myfitnesspal/hero.webp"
 imageAlt: "LOWIS vs MyFitnessPal Comparison - AI Calorie Counting Apps in 2026"
 comparisonLogos:
   lowis: "/icons/logo-512.png"

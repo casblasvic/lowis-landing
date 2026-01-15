@@ -15,7 +15,7 @@ translations:
   en: "scan-meal-2-seconds"
   es: "escanear-plato-2-segundos"
 ctaType: "trial"
-image: "scanner-plat-2-secondes/hero.png"
+image: "scanner-plat-2-secondes/hero.webp"
 imageAlt: "Escanear una comida con la IA LOWIS en 2 segundos"
 faq:
   - question: "¿La IA reconoce los platos marroquíes?"
