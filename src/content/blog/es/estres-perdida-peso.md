@@ -14,7 +14,7 @@ translations:
   fr: "stress-perte-poids"
   en: "stress-weight-loss"
   es: "estres-perdida-peso"
-ctaType: "stress"
+ctaType: "plan"
 image: "stress-perte-poids/hero.webp"
 imageAlt: "Estrés y pérdida de peso - Cómo el cortisol bloquea tus resultados"
 faq:

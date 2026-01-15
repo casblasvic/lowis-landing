@@ -14,7 +14,7 @@ translations:
   fr: "cycle-menstruel-perte-poids"
   en: "menstrual-cycle-weight-loss"
   es: "ciclo-menstrual-perdida-peso"
-ctaType: "women"
+ctaType: "plan"
 image: "cycle-menstruel/hero.webp"
 imageAlt: "Ciclo menstrual y pérdida de peso - Cómo adaptar la alimentación a cada fase"
 faq:
