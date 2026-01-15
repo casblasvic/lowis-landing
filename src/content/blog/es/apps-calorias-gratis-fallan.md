@@ -4,7 +4,7 @@ description: "Por qué las apps gratuitas de conteo de calorías fracasan y cuá
 publishDate: 2026-01-09
 author: "Equipo LOWIS"
 authorRole: "Expertos en nutrición IA"
-category: "comparativos"
+category: "comparatifs"
 tags: ["app calorias gratis", "contador calorias", "perdida de peso", "apps nutricion", "app gratis España", "contador calorias España"]
 lang: "es"
 readingTime: 8

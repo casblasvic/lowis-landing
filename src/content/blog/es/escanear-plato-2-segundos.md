@@ -4,7 +4,7 @@ description: "Tutorial completo para escanear tus comidas con la IA de LOWIS. De
 publishDate: 2026-01-05
 author: "Equipo LOWIS"
 authorRole: "Expertos en nutrición IA"
-category: "trucos"
+category: "astuces"
 tags: ["escanear comidas", "contador calorias foto", "ia reconocimiento alimentos", "tutorial lowis"]
 lang: "es"
 readingTime: 6

@@ -4,7 +4,7 @@ description: "LOWIS vs MyFitnessPal: full comparison of prices, features and res
 publishDate: 2026-01-15
 author: "LOWIS Team"
 authorRole: "AI Nutrition Experts"
-category: "comparisons"
+category: "comparatifs"
 tags: ["myfitnesspal alternative", "ai calorie counter", "nutrition app comparison", "weight loss", "mfp vs lowis"]
 lang: "en"
 readingTime: 13

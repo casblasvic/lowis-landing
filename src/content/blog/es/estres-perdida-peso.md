@@ -4,7 +4,7 @@ description: "Descubre cómo el estrés crónico bloquea tu pérdida de peso y l
 publishDate: 2026-01-15
 author: "Equipo LOWIS"
 authorRole: "Expertos en nutrición y bienestar"
-category: "bienestar"
+category: "guides"
 tags: ["estres y peso", "cortisol", "perdida peso bloqueada", "estres cronico", "alimentacion emocional"]
 lang: "es"
 readingTime: 12

@@ -4,7 +4,7 @@ description: "Why free calorie counting apps fail and what's the effective alter
 publishDate: 2026-01-09
 author: "LOWIS Team"
 authorRole: "AI Nutrition Experts"
-category: "comparisons"
+category: "comparatifs"
 tags: ["free calorie app", "calorie counter", "weight loss", "nutrition apps"]
 lang: "en"
 readingTime: 8

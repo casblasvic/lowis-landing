@@ -4,7 +4,7 @@ description: "Complete tutorial for scanning your meals with LOWIS AI. Discover 
 publishDate: 2026-01-05
 author: "LOWIS Team"
 authorRole: "AI Nutrition Experts"
-category: "tips"
+category: "astuces"
 tags: ["scan meals", "photo calorie counter", "ai food recognition", "lowis tutorial"]
 lang: "en"
 readingTime: 6

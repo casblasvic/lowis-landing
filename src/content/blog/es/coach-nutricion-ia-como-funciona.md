@@ -4,7 +4,7 @@ description: "Descubre cómo funciona un coach nutricional IA y por qué esta te
 publishDate: 2026-01-08
 author: "Equipo LOWIS"
 authorRole: "Expertos en nutrición IA"
-category: "guias"
+category: "guides"
 tags: ["coach nutricional ia", "inteligencia artificial", "nutricion personalizada", "perdida de peso ia"]
 lang: "es"
 readingTime: 10

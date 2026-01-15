@@ -4,7 +4,7 @@ description: "Discover how your menstrual cycle affects your weight and how to a
 publishDate: 2026-01-15
 author: "LOWIS Team"
 authorRole: "Women's Nutrition Experts"
-category: "womens-health"
+category: "guides"
 tags: ["menstrual cycle", "weight loss women", "hormones and weight", "cycle syncing", "period and weight"]
 lang: "en"
 readingTime: 14

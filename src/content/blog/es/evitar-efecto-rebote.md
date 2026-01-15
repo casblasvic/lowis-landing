@@ -4,7 +4,7 @@ description: "Descubre por qué recuperas peso después de una dieta y las estra
 publishDate: 2026-01-06
 author: "Equipo LOWIS"
 authorRole: "Expertos en nutrición IA"
-category: "guias"
+category: "guides"
 tags: ["efecto rebote", "efecto yoyo", "mantener peso", "perdida de peso duradera"]
 lang: "es"
 readingTime: 8

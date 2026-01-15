@@ -4,7 +4,7 @@ description: "Descubre cómo perder peso de forma duradera sin dietas restrictiv
 publishDate: 2026-01-10
 author: "Equipo LOWIS"
 authorRole: "Expertos en nutrición IA"
-category: "guias"
+category: "guides"
 tags: ["perdida de peso", "dieta inteligente", "nutricion", "ia nutricion", "adelgazar sin dieta", "perder peso España", "adelgazar Madrid"]
 lang: "es"
 readingTime: 15

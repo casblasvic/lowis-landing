@@ -4,7 +4,7 @@ description: "Descubre las verdaderas razones científicas por las que el 95% de
 publishDate: 2026-01-07
 author: "Equipo LOWIS"
 authorRole: "Expertos en nutrición IA"
-category: "guias"
+category: "guides"
 tags: ["dietas fracasan", "perdida de peso", "efecto yoyo", "nutricion duradera"]
 lang: "es"
 readingTime: 9

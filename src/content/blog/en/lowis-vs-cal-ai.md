@@ -4,7 +4,7 @@ description: "LOWIS vs Cal AI: complete comparison of prices, features and accur
 publishDate: 2026-01-11
 author: "LOWIS Team"
 authorRole: "AI Nutrition Experts"
-category: "comparisons"
+category: "comparatifs"
 tags: ["cal ai alternative", "ai calorie counter", "nutrition app comparison", "weight loss"]
 lang: "en"
 readingTime: 12
