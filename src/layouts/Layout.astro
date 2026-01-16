@@ -105,16 +105,17 @@ const htmlLang = htmlLangMap[lang] || lang;
       <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
     </noscript>
 
-    <!-- Inter Font - Async loading with high priority (critical for text/LCP) -->
+    <!-- Inter Font - Using display=optional to eliminate CLS from font swap -->
+    <!-- Font only applies if loaded within ~100ms, otherwise uses system font (no layout shift) -->
     <link
       rel="preload"
       as="style"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional"
       onload="this.onload=null;this.rel='stylesheet'"
       fetchpriority="high"
     />
     <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet" />
     </noscript>
 
     <title>{title}</title>
