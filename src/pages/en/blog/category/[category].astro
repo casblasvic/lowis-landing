@@ -61,11 +61,35 @@ const categoryConfig: Record<string, {
     description: 'Discover testimonials from our users and their results with LOWIS. Real transformation stories.',
     keywords: 'weight loss testimonials, diet results, before after, success stories, transformation'
   },
+  'bien-etre': {
+    label: 'Wellness',
+    icon: 'self_improvement',
+    color: '#10B981',
+    title: 'Wellness & Mental Health | LOWIS Blog',
+    description: 'Articles on wellness, stress management, and mental health. Discover how your mind influences your weight.',
+    keywords: 'wellness, mental health, stress weight loss, sleep diet, life balance'
+  },
+  mindset: {
+    label: 'Mindset',
+    icon: 'psychology',
+    color: '#8B5CF6',
+    title: 'Mindset & Mental Reprogramming | LOWIS Blog',
+    description: 'Articles on mindset, mental reprogramming, and weight loss psychology. Change your relationship with food.',
+    keywords: 'mindset weight loss, food psychology, mental reprogramming, eating habits'
+  },
+  'sante-femme': {
+    label: "Women's Health",
+    icon: 'female',
+    color: '#EC4899',
+    title: "Women's Health & Nutrition | LOWIS Blog",
+    description: "Articles on women's health, menstrual cycle, and nutrition adapted to women. Personalized nutrition based on your hormones.",
+    keywords: "women's health, menstrual cycle nutrition, hormones weight, women's nutrition, female diet"
+  },
 };
 
 // Generate static paths for all categories
 export async function getStaticPaths() {
-  const categories = ['guides', 'comparatifs', 'astuces', 'recettes', 'temoignages'];
+  const categories = ['guides', 'comparatifs', 'astuces', 'recettes', 'temoignages', 'bien-etre', 'mindset', 'sante-femme'];
   return categories.map((category) => ({
     params: { category },
   }));

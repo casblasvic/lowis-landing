@@ -43,12 +43,15 @@ const featuredPost = sortedPosts[featuredIndex];
 const otherPosts = sortedPosts.filter((_, i) => i !== featuredIndex);
 const posts = [featuredPost, ...otherPosts].filter(Boolean);
 
-const categoryConfig: Record<string, { label: string; icon: string }> = {
-  guides: { label: 'Guía', icon: 'menu_book' },
-  comparatifs: { label: 'Comparativa', icon: 'compare' },
-  astuces: { label: 'Consejos', icon: 'lightbulb' },
-  recettes: { label: 'Recetas', icon: 'restaurant' },
-  temoignages: { label: 'Testimonio', icon: 'chat' },
+const categoryConfig: Record<string, { label: string; icon: string; color: string }> = {
+  guides: { label: 'Guías', icon: 'menu_book', color: '#059669' },
+  comparatifs: { label: 'Comparativas', icon: 'compare', color: '#7C3AED' },
+  astuces: { label: 'Tips', icon: 'lightbulb', color: '#F59E0B' },
+  recettes: { label: 'Recetas', icon: 'restaurant', color: '#EF4444' },
+  temoignages: { label: 'Testimonios', icon: 'chat', color: '#3B82F6' },
+  'bien-etre': { label: 'Bienestar', icon: 'self_improvement', color: '#10B981' },
+  mindset: { label: 'Mindset', icon: 'psychology', color: '#8B5CF6' },
+  'sante-femme': { label: 'Salud Femenina', icon: 'female', color: '#EC4899' },
 };
 
 const title = 'Blog LOWIS - Nutrición, Pérdida de Peso y Consejos IA';
