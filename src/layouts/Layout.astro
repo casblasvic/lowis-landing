@@ -329,13 +329,22 @@ const htmlLang = htmlLangMap[lang] || lang;
 
     <slot />
 
-    <!-- Sticky CTA for mobile - Always visible, GPU-accelerated to prevent CLS -->
-    <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 z-50 p-3 bg-dark-bg/95 backdrop-blur-lg border-t border-dark-border md:hidden" style="contain: layout style; will-change: transform; transform: translateZ(0);">
+    <!-- Sticky CTA for mobile - Starts hidden to prevent CLS during redirects, fades in after page stable -->
+    <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 z-50 p-3 bg-dark-bg/95 backdrop-blur-lg border-t border-dark-border md:hidden transition-opacity duration-300" style="contain: layout style; will-change: transform; transform: translateZ(0); opacity: 0;">
       <a href={getSignupUrlWithLang(lang)} class="btn-primary w-full justify-center text-base py-3">
         {lang === 'fr' ? 'Obtenir mon plan personnalisé gratuit' : lang === 'es' ? 'Obtener mi plan personalizado gratis' : 'Get my free personalized plan'}
         <span class="material-symbols-outlined ml-2 text-lg">arrow_forward</span>
       </a>
     </div>
+
+    <!-- Fade in sticky CTA after page is stable (prevents CLS during redirects) -->
+    <script is:inline>
+      // Show sticky CTA after a short delay to avoid CLS during page load/redirect
+      setTimeout(function() {
+        var cta = document.getElementById('sticky-cta');
+        if (cta) cta.style.opacity = '1';
+      }, 500);
+    </script>
 
     <!-- Smooth scroll polyfill for Safari -->
     <script>
