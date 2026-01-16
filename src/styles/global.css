@@ -168,4 +168,9 @@
   .animate-float {
     animation: float 3s ease-in-out infinite;
   }
+
+  /* Prevent browser translation of UI elements (Google Translate, etc.) */
+  .notranslate {
+    translate: none;
+  }
 }
