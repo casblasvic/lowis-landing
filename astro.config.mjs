@@ -43,6 +43,45 @@ function generateHreflangLinks(urlString) {
 export default defineConfig({
   site: 'https://lowis.app',
   trailingSlash: 'always',
+  // 301 redirects for old category URLs (removed /category/ from path)
+  redirects: {
+    // French Morocco (default)
+    '/blog/category/guides/': '/blog/guides/',
+    '/blog/category/comparatifs/': '/blog/comparatifs/',
+    '/blog/category/astuces/': '/blog/astuces/',
+    '/blog/category/recettes/': '/blog/recettes/',
+    '/blog/category/temoignages/': '/blog/temoignages/',
+    '/blog/category/bien-etre/': '/blog/bien-etre/',
+    '/blog/category/mindset/': '/blog/mindset/',
+    '/blog/category/sante-femme/': '/blog/sante-femme/',
+    // Spanish
+    '/es/blog/category/guides/': '/es/blog/guides/',
+    '/es/blog/category/comparatifs/': '/es/blog/comparatifs/',
+    '/es/blog/category/astuces/': '/es/blog/astuces/',
+    '/es/blog/category/recettes/': '/es/blog/recettes/',
+    '/es/blog/category/temoignages/': '/es/blog/temoignages/',
+    '/es/blog/category/bien-etre/': '/es/blog/bien-etre/',
+    '/es/blog/category/mindset/': '/es/blog/mindset/',
+    '/es/blog/category/sante-femme/': '/es/blog/sante-femme/',
+    // English
+    '/en/blog/category/guides/': '/en/blog/guides/',
+    '/en/blog/category/comparatifs/': '/en/blog/comparatifs/',
+    '/en/blog/category/astuces/': '/en/blog/astuces/',
+    '/en/blog/category/recettes/': '/en/blog/recettes/',
+    '/en/blog/category/temoignages/': '/en/blog/temoignages/',
+    '/en/blog/category/bien-etre/': '/en/blog/bien-etre/',
+    '/en/blog/category/mindset/': '/en/blog/mindset/',
+    '/en/blog/category/sante-femme/': '/en/blog/sante-femme/',
+    // French France
+    '/fr/blog/category/guides/': '/fr/blog/guides/',
+    '/fr/blog/category/comparatifs/': '/fr/blog/comparatifs/',
+    '/fr/blog/category/astuces/': '/fr/blog/astuces/',
+    '/fr/blog/category/recettes/': '/fr/blog/recettes/',
+    '/fr/blog/category/temoignages/': '/fr/blog/temoignages/',
+    '/fr/blog/category/bien-etre/': '/fr/blog/bien-etre/',
+    '/fr/blog/category/mindset/': '/fr/blog/mindset/',
+    '/fr/blog/category/sante-femme/': '/fr/blog/sante-femme/',
+  },
   integrations: [
     sitemap({
       serialize(item) {

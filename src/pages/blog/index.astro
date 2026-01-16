@@ -117,7 +117,7 @@ const keywords = 'nutrition maroc, perte de poids, compteur calories ia, régime
               if (!config) return null;
               return (
                 <a
-                  href={`/blog/category/${cat}/`}
+                  href={`/blog/${cat}/`}
                   data-category={cat}
                   data-color={config.color}
                   class="category-pill inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap notranslate"
@@ -374,4 +374,4 @@ const keywords = 'nutrition maroc, perte de poids, compteur calories ia, régime
   }
 </style>
 
-<!-- Category filtering now handled via dedicated SEO category pages at /blog/category/[category]/ -->
+<!-- Category filtering now handled via dedicated SEO category pages at /blog/[category]/ -->
