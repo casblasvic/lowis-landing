@@ -18,15 +18,15 @@ image: "cycle-menstruel/hero.png"
 imageAlt: "Ciclo menstrual y pérdida de peso - Cómo adaptar la alimentación a cada fase"
 faq:
   - question: "¿Por qué engordo antes de la regla?"
-    answer: "El aumento de peso (1-3 kg) es retención de líquidos, NO grasa. Es uno de los <a href='/blog/40-indicadores-perdida-peso/'>40+ indicadores</a> que LOWIS sigue. Desaparece en 2-3 días tras la menstruación."
+    answer: "El aumento de peso (1-3 kg) es retención de líquidos, NO grasa. Es uno de los <a href='/es/blog/40-indicadores-perdida-peso/'>40+ indicadores</a> que LOWIS sigue. Desaparece en 2-3 días tras la menstruación."
   - question: "¿Por qué tengo más hambre y estrés en fase lútea?"
-    answer: "La progesterona aumenta el apetito (+200-500 cal) y el <a href='/blog/estres-perdida-peso/'>estrés afecta el peso</a>. El <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> ayuda a gestionar esta fase."
+    answer: "La progesterona aumenta el apetito (+200-500 cal) y el <a href='/es/blog/estres-perdida-peso/'>estrés afecta el peso</a>. El <a href='/es/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> ayuda a gestionar esta fase."
   - question: "¿El mal sueño empeora los síntomas del ciclo?"
-    answer: "Sí, el <a href='/blog/sueno-perdida-peso/'>mal sueño amplifica los síntomas hormonales</a> y los antojos. El <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA LOWIS</a> adapta las recomendaciones según tu sueño y ciclo."
+    answer: "Sí, el <a href='/es/blog/sueno-perdida-peso/'>mal sueño amplifica los síntomas hormonales</a> y los antojos. El <a href='/es/blog/coach-nutricion-ia-como-funciona/'>coach IA LOWIS</a> adapta las recomendaciones según tu sueño y ciclo."
   - question: "¿Las apps normales entienden el ciclo menstrual?"
-    answer: "No, las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas ignoran el ciclo</a>. Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a> para mujeres. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app</a>."
+    answer: "No, las <a href='/es/blog/apps-calorias-gratis-fallan/'>apps gratuitas ignoran el ciclo</a>. Es <a href='/es/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a> para mujeres. Consulta <a href='/es/blog/como-elegir-app-nutricion/'>cómo elegir una app</a>."
   - question: "¿Cómo perder peso respetando mi ciclo?"
-    answer: "Sigue nuestra <a href='/blog/perder-peso-inteligente/'>guía completa para perder peso</a> y descubre cómo <a href='/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>. LOWIS adapta automáticamente las recomendaciones a cada fase."
+    answer: "Sigue nuestra <a href='/es/blog/perder-peso-inteligente/'>guía completa para perder peso</a> y descubre cómo <a href='/es/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>. LOWIS adapta automáticamente las recomendaciones a cada fase."
 ---
 
 Si eres una mujer que intenta perder peso, probablemente hayas vivido este escenario frustrante:
@@ -207,7 +207,7 @@ Semana 4 (lútea): +2 kg ✗ "ABANDONO."
 
 ### Error 3: Ignorar el sueño y el estrés
 
-**El problema:** El [mal sueño](/blog/sueno-perdida-peso/) y el estrés elevado amplifican los síntomas hormonales y los antojos.
+**El problema:** El [mal sueño](/es/blog/sueno-perdida-peso/) y el estrés elevado amplifican los síntomas hormonales y los antojos.
 
 **La solución:**
 - Prioriza 7-8h de sueño en fase lútea
@@ -294,19 +294,19 @@ Sin dieta única para todos. Solo un enfoque que respeta tu cuerpo.
 
 ### Continúa leyendo
 
-**En la categoría [Salud Femenina](/blog/sante-femme/)** — Nutrición para mujeres
+**En la categoría [Salud Femenina](/es/blog/sante-femme/)** — Nutrición para mujeres
 
 **Artículos relacionados sobre bienestar** :
-- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Crucial en fase lútea
-- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Cortisol y sus efectos
-- [Audio Program para reprogramar tu cerebro](/blog/audio-program-reprogramar-cerebro/) — Gestionar antojos
+- [El sueño y la pérdida de peso](/es/blog/sueno-perdida-peso/) — Crucial en fase lútea
+- [El estrés bloquea tu pérdida de peso](/es/blog/estres-perdida-peso/) — Cortisol y sus efectos
+- [Audio Program para reprogramar tu cerebro](/es/blog/audio-program-reprogramar-cerebro/) — Gestionar antojos
 
 **Guías esenciales** :
-- [Guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/) — El enfoque completo
-- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
-- [Cómo evitar el efecto rebote](/blog/evitar-efecto-rebote/) — Mantener los resultados
+- [Guía completa para perder peso de forma inteligente](/es/blog/perder-peso-inteligente/) — El enfoque completo
+- [Por qué las dietas fracasan](/es/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [Cómo evitar el efecto rebote](/es/blog/evitar-efecto-rebote/) — Mantener los resultados
 
 **Tecnología LOWIS** :
-- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que LOWIS sigue
-- [Cómo funciona el coach IA](/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
-- [Escanear platos en 2 segundos](/blog/escanear-plato-2-segundos/) — Tecnología de reconocimiento
+- [Los 40+ indicadores que importan](/es/blog/40-indicadores-perdida-peso/) — Lo que LOWIS sigue
+- [Cómo funciona el coach IA](/es/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
+- [Escanear platos en 2 segundos](/es/blog/escanear-plato-2-segundos/) — Tecnología de reconocimiento

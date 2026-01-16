@@ -23,15 +23,15 @@ comparisonLogos:
   competitorName: "MyFitnessPal"
 faq:
   - question: "What's the main difference between LOWIS and MyFitnessPal?"
-    answer: "MFP is a passive food diary. LOWIS is an <a href='/blog/ai-nutrition-coach-how-it-works/'>active AI coach</a> that analyzes <a href='/blog/40-indicators-weight-loss/'>40+ health indicators</a> including <a href='/blog/sleep-weight-loss/'>sleep</a> and <a href='/blog/stress-weight-loss/'>stress</a>."
+    answer: "MFP is a passive food diary. LOWIS is an <a href='/en/blog/ai-nutrition-coach-how-it-works/'>active AI coach</a> that analyzes <a href='/en/blog/40-indicators-weight-loss/'>40+ health indicators</a> including <a href='/en/blog/sleep-weight-loss/'>sleep</a> and <a href='/en/blog/stress-weight-loss/'>stress</a>."
   - question: "Is MyFitnessPal really free?"
-    answer: "MFP's free version is very limited (barcode scanner now paid). Read <a href='/blog/free-calorie-apps-fail/'>why free apps fail</a> and <a href='/blog/how-to-choose-nutrition-app/'>how to choose a nutrition app</a> for the real criteria."
+    answer: "MFP's free version is very limited (barcode scanner now paid). Read <a href='/en/blog/free-calorie-apps-fail/'>why free apps fail</a> and <a href='/en/blog/how-to-choose-nutrition-app/'>how to choose a nutrition app</a> for the real criteria."
   - question: "Why are users leaving MyFitnessPal?"
-    answer: "Features became paid, manual entry is time-consuming, advice is generic. LOWIS <a href='/blog/scan-meal-2-seconds/'>scans meals in 2 seconds</a> and provides personalized coaching. It's <a href='/blog/why-diets-fail/'>why passive diets fail</a>."
+    answer: "Features became paid, manual entry is time-consuming, advice is generic. LOWIS <a href='/en/blog/scan-meal-2-seconds/'>scans meals in 2 seconds</a> and provides personalized coaching. It's <a href='/en/blog/why-diets-fail/'>why passive diets fail</a>."
   - question: "Does MyFitnessPal track menstrual cycle?"
-    answer: "No. The <a href='/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> affects weight significantly. LOWIS tracks it with <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a>. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> for women."
+    answer: "No. The <a href='/en/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> affects weight significantly. LOWIS tracks it with <a href='/en/blog/40-indicators-weight-loss/'>40+ indicators</a>. Read our <a href='/en/blog/smart-weight-loss-guide/'>complete guide</a> for women."
   - question: "How do I avoid weight rebound after MyFitnessPal?"
-    answer: "Calorie counting alone leads to the <a href='/blog/avoid-weight-rebound/'>rebound effect</a>. LOWIS includes the <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> for lasting mental changes — the 80% of success most apps ignore."
+    answer: "Calorie counting alone leads to the <a href='/en/blog/avoid-weight-rebound/'>rebound effect</a>. LOWIS includes the <a href='/en/blog/audio-program-reprogram-brain/'>Audio Program</a> for lasting mental changes — the 80% of success most apps ignore."
 ---
 
 MyFitnessPal. The app everyone knows. With over 200 million users, it's the undisputed giant of calorie counting.
@@ -72,7 +72,7 @@ But since its acquisition by Under Armour in 2015 (then sold to Francisco Partne
 **Generic advice**
 > "After 3 years of use, the app gives me the same advice. It doesn't know me." — User Review
 
-If you recognize yourself in these frustrations, you're not alone. That's why [so many people are looking for an effective alternative](/blog/how-to-choose-nutrition-app/).
+If you recognize yourself in these frustrations, you're not alone. That's why [so many people are looking for an effective alternative](/en/blog/how-to-choose-nutrition-app/).
 
 ## The Real Difference: Diary vs Coach
 
@@ -177,7 +177,7 @@ MyFitnessPal's free version has hidden costs:
 | Menstrual cycle | ✅ | ❌ |
 | Weight & measurements | ✅ | ✅ |
 
-**Why this matters**: Your weight can plateau even in a calorie deficit if your [sleep is disrupted](/blog/sleep-weight-loss/) or your stress is high. MyFitnessPal doesn't see these factors.
+**Why this matters**: Your weight can plateau even in a calorie deficit if your [sleep is disrupted](/en/blog/sleep-weight-loss/) or your stress is high. MyFitnessPal doesn't see these factors.
 
 ### Coaching and Personalization
 
@@ -269,21 +269,21 @@ No ads. No data selling. Just an AI coach that works for you.
 
 ### Continue Reading
 
-**In the category [Comparisons](/blog/comparatifs/)** — All our app comparisons
+**In the category [Comparisons](/en/blog/comparatifs/)** — All our app comparisons
 
 **Other app comparisons**:
-- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — AI scanning comparison
-- [LOWIS vs Yazio](/blog/lowis-vs-yazio/) — Popular in Europe
-- [LOWIS vs Lose It!](/blog/lowis-vs-lose-it/) — US favorite
-- [Why free apps fail](/blog/free-calorie-apps-fail/) — The real cost
-- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
+- [LOWIS vs Cal AI](/en/blog/lowis-vs-cal-ai/) — AI scanning comparison
+- [LOWIS vs Yazio](/en/blog/lowis-vs-yazio/) — Popular in Europe
+- [LOWIS vs Lose It!](/en/blog/lowis-vs-lose-it/) — US favorite
+- [Why free apps fail](/en/blog/free-calorie-apps-fail/) — The real cost
+- [How to choose a nutrition app](/en/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
 
 **Key factors MFP ignores**:
-- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
-- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
-- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+- [Sleep and weight loss](/en/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/en/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/en/blog/menstrual-cycle-weight-loss/) — For women
 
 **Essential guides**:
-- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
-- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
-- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results
+- [Complete smart weight loss guide](/en/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/en/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/en/blog/avoid-weight-rebound/) — Keep your results

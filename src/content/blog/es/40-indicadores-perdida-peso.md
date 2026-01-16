@@ -19,13 +19,13 @@ image: "40-indicateurs-perte-poids/hero.webp"
 imageAlt: "Los 40+ indicadores de salud para una pérdida de peso personalizada"
 faq:
   - question: "¿Por qué contar calorías no es suficiente para perder peso?"
-    answer: "Las calorías son solo una parte. El <a href='/blog/sueno-perdida-peso/'>sueño</a>, el <a href='/blog/estres-perdida-peso/'>estrés</a>, las hormonas afectan tu metabolismo. Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>."
+    answer: "Las calorías son solo una parte. El <a href='/es/blog/sueno-perdida-peso/'>sueño</a>, el <a href='/es/blog/estres-perdida-peso/'>estrés</a>, las hormonas afectan tu metabolismo. Es <a href='/es/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>."
   - question: "¿Qué indicadores afectan más la pérdida de peso?"
-    answer: "Los 5 más impactantes: <a href='/blog/sueno-perdida-peso/'>sueño</a>, <a href='/blog/estres-perdida-peso/'>estrés</a>, <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal</a>, hidratación, digestión. Un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> los analiza todos."
+    answer: "Los 5 más impactantes: <a href='/es/blog/sueno-perdida-peso/'>sueño</a>, <a href='/es/blog/estres-perdida-peso/'>estrés</a>, <a href='/es/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal</a>, hidratación, digestión. Un <a href='/es/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> los analiza todos."
   - question: "¿Cómo impide el estrés perder peso?"
-    answer: "El <a href='/blog/estres-perdida-peso/'>estrés eleva el cortisol</a> y bloquea la pérdida. Lee <a href='/blog/evitar-efecto-rebote/'>cómo evitar el efecto rebote</a> y la <a href='/blog/perder-peso-inteligente/'>guía completa</a>."
+    answer: "El <a href='/es/blog/estres-perdida-peso/'>estrés eleva el cortisol</a> y bloquea la pérdida. Lee <a href='/es/blog/evitar-efecto-rebote/'>cómo evitar el efecto rebote</a> y la <a href='/es/blog/perder-peso-inteligente/'>guía completa</a>."
   - question: "¿Las apps normales siguen estos indicadores?"
-    answer: "No, las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque solo cuentan calorías. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> para los criterios esenciales."
+    answer: "No, las <a href='/es/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque solo cuentan calorías. Consulta <a href='/es/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> para los criterios esenciales."
 ---
 
 Llevas meses contando calorías. Estás en déficit. Sin embargo, la báscula no se mueve.
@@ -298,18 +298,18 @@ LOWIS monitorea estos 40+ indicadores para ofrecerte una personalización total.
 
 ### Continúa leyendo
 
-**En la categoría [Guías](/blog/guides/)** — Nuestras guías completas
+**En la categoría [Guías](/es/blog/guides/)** — Nuestras guías completas
 
 **Factores clave analizados** :
-- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Por qué 7h cambian todo
-- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Cortisol y sus efectos
-- [El ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) — Para mujeres
+- [El sueño y la pérdida de peso](/es/blog/sueno-perdida-peso/) — Por qué 7h cambian todo
+- [El estrés bloquea tu pérdida de peso](/es/blog/estres-perdida-peso/) — Cortisol y sus efectos
+- [El ciclo menstrual y la pérdida de peso](/es/blog/ciclo-menstrual-perdida-peso/) — Para mujeres
 
 **Tecnología LOWIS** :
-- [Cómo funciona el coach IA](/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
-- [Escanear platos en 2 segundos](/blog/escanear-plato-2-segundos/) — La tecnología de reconocimiento
+- [Cómo funciona el coach IA](/es/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
+- [Escanear platos en 2 segundos](/es/blog/escanear-plato-2-segundos/) — La tecnología de reconocimiento
 
 **Guías esenciales** :
-- [Guía completa para perder peso](/blog/perder-peso-inteligente/) — El enfoque que funciona
-- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
-- [Cómo evitar el efecto rebote](/blog/evitar-efecto-rebote/) — Mantener resultados
+- [Guía completa para perder peso](/es/blog/perder-peso-inteligente/) — El enfoque que funciona
+- [Por qué las dietas fracasan](/es/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [Cómo evitar el efecto rebote](/es/blog/evitar-efecto-rebote/) — Mantener resultados

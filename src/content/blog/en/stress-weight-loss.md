@@ -18,15 +18,15 @@ image: "stress-perte-poids/hero.png"
 imageAlt: "Stress and weight loss - How cortisol blocks your results"
 faq:
   - question: "Can stress really prevent weight loss?"
-    answer: "Yes. Cortisol promotes fat storage and is one of the <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> affecting weight. Combined with <a href='/blog/sleep-weight-loss/'>poor sleep</a>, it's <a href='/blog/why-diets-fail/'>why diets fail</a> for most people."
+    answer: "Yes. Cortisol promotes fat storage and is one of the <a href='/en/blog/40-indicators-weight-loss/'>40+ indicators</a> affecting weight. Combined with <a href='/en/blog/sleep-weight-loss/'>poor sleep</a>, it's <a href='/en/blog/why-diets-fail/'>why diets fail</a> for most people."
   - question: "How do I know if stress is blocking my weight loss?"
-    answer: "Tell-tale signs: sugar cravings, belly fat, poor sleep. An <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> analyzes these patterns. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> for a holistic approach."
+    answer: "Tell-tale signs: sugar cravings, belly fat, poor sleep. An <a href='/en/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> analyzes these patterns. Read our <a href='/en/blog/smart-weight-loss-guide/'>complete guide</a> for a holistic approach."
   - question: "What should I do when I eat because of stress?"
-    answer: "First, don't feel guilty — it's biological. The <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> helps reprogram these patterns. For women, the <a href='/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> also affects cravings."
+    answer: "First, don't feel guilty — it's biological. The <a href='/en/blog/audio-program-reprogram-brain/'>Audio Program</a> helps reprogram these patterns. For women, the <a href='/en/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> also affects cravings."
   - question: "Does exercise help reduce stress?"
-    answer: "Yes, but intense exercise can increase cortisol short-term. Prioritize walking, yoga, or enjoyable sports. Discover all the factors in our <a href='/blog/40-indicators-weight-loss/'>40+ indicators guide</a>."
+    answer: "Yes, but intense exercise can increase cortisol short-term. Prioritize walking, yoga, or enjoyable sports. Discover all the factors in our <a href='/en/blog/40-indicators-weight-loss/'>40+ indicators guide</a>."
   - question: "How long does it take to reduce cortisol?"
-    answer: "With lifestyle changes, cortisol improves in 2-4 weeks. Prioritize <a href='/blog/sleep-weight-loss/'>sleep</a> and learn how to <a href='/blog/avoid-weight-rebound/'>avoid weight rebound</a> once you start losing."
+    answer: "With lifestyle changes, cortisol improves in 2-4 weeks. Prioritize <a href='/en/blog/sleep-weight-loss/'>sleep</a> and learn how to <a href='/en/blog/avoid-weight-rebound/'>avoid weight rebound</a> once you start losing."
 ---
 
 You're doing everything right. You're counting your calories. You're moving. And yet... **the scale won't budge**.
@@ -47,7 +47,7 @@ When you're stressed, your body produces cortisol. It's a survival response inhe
 | **Increased appetite** | Cravings for sugar, salt, fat — "comfort foods" |
 | **Insulin resistance** | Your body stores carbs more easily |
 | **Muscle breakdown** | Less muscle = slower metabolism |
-| **Sleep disruption** | And [poor sleep](/blog/sleep-weight-loss/) makes stress worse |
+| **Sleep disruption** | And [poor sleep](/en/blog/sleep-weight-loss/) makes stress worse |
 | **Water retention** | Cortisol makes you bloated |
 
 **Result?** You can be in a 500-calorie deficit and **not lose a single gram** if your cortisol is chronically elevated.
@@ -97,7 +97,7 @@ When you underfeed your body:
 - You restrict even more
 - **And the cycle restarts**
 
-That's why [restrictive diets fail](/blog/how-to-choose-nutrition-app/) long-term for 95% of people.
+That's why [restrictive diets fail](/en/blog/how-to-choose-nutrition-app/) long-term for 95% of people.
 
 ## The Solution: Treat Stress BEFORE Calories
 
@@ -142,7 +142,7 @@ Intense exercise can **increase** cortisol. When you're very stressed, prioritiz
 
 ### Strategy 4: Protect Your Sleep
 
-[Sleep and weight loss](/blog/sleep-weight-loss/) are intimately connected. One night of poor sleep:
+[Sleep and weight loss](/en/blog/sleep-weight-loss/) are intimately connected. One night of poor sleep:
 - Increases cortisol by 37%
 - Increases ghrelin (hunger hormone)
 - Decreases leptin (satiety hormone)
@@ -251,19 +251,19 @@ Because losing weight is also about taking care of your mind.
 
 ### Continue Reading
 
-**In the category [Wellness](/blog/bien-etre/)** — All our wellness articles
+**In the category [Wellness](/en/blog/bien-etre/)** — All our wellness articles
 
 **Key factors that affect your weight**:
-- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
-- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
-- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success
+- [Sleep and weight loss](/en/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Menstrual cycle and weight loss](/en/blog/menstrual-cycle-weight-loss/) — For women
+- [Audio Program to reprogram your brain](/en/blog/audio-program-reprogram-brain/) — Mental is 80% of success
 
 **Essential guides**:
-- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
-- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
-- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results
+- [Complete smart weight loss guide](/en/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/en/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/en/blog/avoid-weight-rebound/) — Keep your results
 
 **LOWIS technology**:
-- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
-- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
-- [Scan meals in 2 seconds](/blog/scan-meal-2-seconds/) — Easy meal tracking
+- [The 40+ indicators that matter](/en/blog/40-indicators-weight-loss/) — What we analyze
+- [How the AI coach works](/en/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [Scan meals in 2 seconds](/en/blog/scan-meal-2-seconds/) — Easy meal tracking

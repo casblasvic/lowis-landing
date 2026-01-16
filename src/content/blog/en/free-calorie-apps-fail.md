@@ -19,13 +19,13 @@ image: "apps-gratuites-echec/hero.webp"
 imageAlt: "Why free calorie apps don't work"
 faq:
   - question: "Why don't free calorie apps work?"
-    answer: "Free apps ignore key factors: <a href='/blog/sleep-weight-loss/'>sleep</a>, <a href='/blog/stress-weight-loss/'>stress</a>, <a href='/blog/menstrual-cycle-weight-loss/'>hormones</a>. They leave you alone with numbers. It's <a href='/blog/why-diets-fail/'>why diets fail</a>."
+    answer: "Free apps ignore key factors: <a href='/en/blog/sleep-weight-loss/'>sleep</a>, <a href='/en/blog/stress-weight-loss/'>stress</a>, <a href='/en/blog/menstrual-cycle-weight-loss/'>hormones</a>. They leave you alone with numbers. It's <a href='/en/blog/why-diets-fail/'>why diets fail</a>."
   - question: "What's the real cost of a free app?"
-    answer: "15 min/day of manual work = 7.5h/month lost. Plus months without results. Read <a href='/blog/how-to-choose-nutrition-app/'>how to choose wisely</a> and our <a href='/blog/smart-weight-loss-guide/'>complete guide</a>."
+    answer: "15 min/day of manual work = 7.5h/month lost. Plus months without results. Read <a href='/en/blog/how-to-choose-nutrition-app/'>how to choose wisely</a> and our <a href='/en/blog/smart-weight-loss-guide/'>complete guide</a>."
   - question: "How is a paid app different?"
-    answer: "An <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> tracks <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a>, <a href='/blog/scan-meal-2-seconds/'>scans in 2 seconds</a>, and helps <a href='/blog/avoid-weight-rebound/'>avoid weight rebound</a>."
+    answer: "An <a href='/en/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> tracks <a href='/en/blog/40-indicators-weight-loss/'>40+ indicators</a>, <a href='/en/blog/scan-meal-2-seconds/'>scans in 2 seconds</a>, and helps <a href='/en/blog/avoid-weight-rebound/'>avoid weight rebound</a>."
   - question: "How do I know if my current app isn't working?"
-    answer: "Signs: you quit after weeks, count calories but don't lose weight, ignore <a href='/blog/stress-weight-loss/'>stress</a> and <a href='/blog/sleep-weight-loss/'>sleep</a>. The <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> addresses the mental 80%."
+    answer: "Signs: you quit after weeks, count calories but don't lose weight, ignore <a href='/en/blog/stress-weight-loss/'>stress</a> and <a href='/en/blog/sleep-weight-loss/'>sleep</a>. The <a href='/en/blog/audio-program-reprogram-brain/'>Audio Program</a> addresses the mental 80%."
 ---
 
 You downloaded a free calorie counting app. You started with motivation. Two weeks later, you gave up.
@@ -168,7 +168,7 @@ Take a photo. The AI recognizes the dish, even a tagine or couscous.
 Not just numbers, but personalized advice based on YOUR situation.
 
 **3. 40+ Indicators Analyzed**
-Calories, yes, but also [stress](/blog/stress-weight-loss/), [sleep](/blog/sleep-weight-loss/), hydration, [hormonal cycle](/blog/menstrual-cycle-weight-loss/)...
+Calories, yes, but also [stress](/en/blog/stress-weight-loss/), [sleep](/en/blog/sleep-weight-loss/), hydration, [hormonal cycle](/en/blog/menstrual-cycle-weight-loss/)...
 
 **4. Human Nutritionists**
 Your plan is validated by real experts, not just an algorithm.
@@ -198,21 +198,21 @@ In 2 minutes, you'll have your personalized plan based on your real habits and g
 
 ### Continue Reading
 
-**In the category [Comparisons](/blog/comparatifs/)** — All our app comparisons
+**In the category [Comparisons](/en/blog/comparatifs/)** — All our app comparisons
 
 **Compare popular apps**:
-- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — The counting giant
-- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — AI scanning comparison
-- [LOWIS vs Yazio](/blog/lowis-vs-yazio/) — Popular in Europe
-- [LOWIS vs Lose It!](/blog/lowis-vs-lose-it/) — US favorite
-- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
+- [LOWIS vs MyFitnessPal](/en/blog/lowis-vs-myfitnesspal/) — The counting giant
+- [LOWIS vs Cal AI](/en/blog/lowis-vs-cal-ai/) — AI scanning comparison
+- [LOWIS vs Yazio](/en/blog/lowis-vs-yazio/) — Popular in Europe
+- [LOWIS vs Lose It!](/en/blog/lowis-vs-lose-it/) — US favorite
+- [How to choose a nutrition app](/en/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
 
 **What free apps ignore**:
-- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
-- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
-- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+- [Sleep and weight loss](/en/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/en/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/en/blog/menstrual-cycle-weight-loss/) — For women
 
 **Essential guides**:
-- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
-- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
-- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results
+- [Complete smart weight loss guide](/en/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/en/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/en/blog/avoid-weight-rebound/) — Keep your results

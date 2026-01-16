@@ -23,15 +23,15 @@ comparisonLogos:
   competitorName: "MyFitnessPal"
 faq:
   - question: "¿Cuál es la diferencia principal entre LOWIS y MyFitnessPal?"
-    answer: "MyFitnessPal es un diario pasivo. LOWIS es un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA activo</a> que analiza <a href='/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> incluyendo <a href='/blog/sueno-perdida-peso/'>sueño</a> y <a href='/blog/estres-perdida-peso/'>estrés</a>."
+    answer: "MyFitnessPal es un diario pasivo. LOWIS es un <a href='/es/blog/coach-nutricion-ia-como-funciona/'>coach IA activo</a> que analiza <a href='/es/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> incluyendo <a href='/es/blog/sueno-perdida-peso/'>sueño</a> y <a href='/es/blog/estres-perdida-peso/'>estrés</a>."
   - question: "¿MyFitnessPal es realmente gratis?"
-    answer: "Las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas tienen costes ocultos</a>: tiempo perdido, publicidad, datos vendidos. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> para entender el verdadero coste."
+    answer: "Las <a href='/es/blog/apps-calorias-gratis-fallan/'>apps gratuitas tienen costes ocultos</a>: tiempo perdido, publicidad, datos vendidos. Consulta <a href='/es/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> para entender el verdadero coste."
   - question: "¿Por qué los usuarios abandonan MyFitnessPal?"
-    answer: "Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>: sin personalización, sin acompañamiento. Con LOWIS, <a href='/blog/escanear-plato-2-segundos/'>escaneas en 2 segundos</a> y recibes coaching personalizado."
+    answer: "Es <a href='/es/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>: sin personalización, sin acompañamiento. Con LOWIS, <a href='/es/blog/escanear-plato-2-segundos/'>escaneas en 2 segundos</a> y recibes coaching personalizado."
   - question: "¿MyFitnessPal reconoce platos españoles y marroquíes?"
-    answer: "MyFitnessPal tiene base de datos con errores. LOWIS incluye +500 recetas locales y entiende el <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo menstrual</a> — crucial para mujeres."
+    answer: "MyFitnessPal tiene base de datos con errores. LOWIS incluye +500 recetas locales y entiende el <a href='/es/blog/ciclo-menstrual-perdida-peso/'>ciclo menstrual</a> — crucial para mujeres."
   - question: "¿LOWIS usa realmente IA?"
-    answer: "Sí, analiza <a href='/blog/sueno-perdida-peso/'>sueño</a>, <a href='/blog/estres-perdida-peso/'>estrés</a>, <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal</a>. Lee nuestra <a href='/blog/perder-peso-inteligente/'>guía completa</a> para entender el enfoque."
+    answer: "Sí, analiza <a href='/es/blog/sueno-perdida-peso/'>sueño</a>, <a href='/es/blog/estres-perdida-peso/'>estrés</a>, <a href='/es/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal</a>. Lee nuestra <a href='/es/blog/perder-peso-inteligente/'>guía completa</a> para entender el enfoque."
 ---
 
 MyFitnessPal. La aplicación que todo el mundo conoce. Con más de 200 millones de usuarios, es el gigante indiscutible del conteo de calorías.
@@ -72,7 +72,7 @@ Pero desde su compra por Under Armour en 2015 (y posterior venta a Francisco Par
 **Consejos genéricos**
 > "Después de 3 años de uso, la app me da siempre los mismos consejos. No me conoce." — Opinión usuario
 
-Si te reconoces en estas frustraciones, no estás solo. Y por eso [tantas personas buscan una alternativa eficaz](/blog/como-elegir-app-nutricion/).
+Si te reconoces en estas frustraciones, no estás solo. Y por eso [tantas personas buscan una alternativa eficaz](/es/blog/como-elegir-app-nutricion/).
 
 ## La verdadera diferencia: Diario vs Coach
 
@@ -177,7 +177,7 @@ La versión gratuita de MyFitnessPal tiene costes ocultos:
 | Ciclo femenino | ✅ | ❌ |
 | Peso y medidas | ✅ | ✅ |
 
-**Por qué es crucial**: Tu peso puede estancarse incluso con déficit calórico si tu [sueño está alterado](/blog/sueno-perdida-peso/) o tu estrés es elevado. MyFitnessPal no ve estos factores.
+**Por qué es crucial**: Tu peso puede estancarse incluso con déficit calórico si tu [sueño está alterado](/es/blog/sueno-perdida-peso/) o tu estrés es elevado. MyFitnessPal no ve estos factores.
 
 ### Coaching y personalización
 
@@ -269,18 +269,18 @@ Sin publicidad. Sin venta de datos. Solo un coach IA que trabaja para ti.
 
 ### Continúa leyendo
 
-**En la categoría [Comparativas](/blog/comparatifs/)** — Nuestras comparaciones detalladas
+**En la categoría [Comparativas](/es/blog/comparatifs/)** — Nuestras comparaciones detalladas
 
 **Otras comparativas de apps** :
-- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — La app de escaneo IA
-- [LOWIS vs Yazio](/blog/lowis-vs-yazio/) — Popular en Europa
-- [LOWIS vs Lose It!](/blog/lowis-vs-lose-it/) — La app americana
+- [LOWIS vs Cal AI](/es/blog/lowis-vs-cal-ai/) — La app de escaneo IA
+- [LOWIS vs Yazio](/es/blog/lowis-vs-yazio/) — Popular en Europa
+- [LOWIS vs Lose It!](/es/blog/lowis-vs-lose-it/) — La app americana
 
 **Guías para elegir bien** :
-- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
-- [Por qué las apps gratuitas fallan](/blog/apps-calorias-gratis-fallan/) — El verdadero coste
+- [Cómo elegir una app de nutrición](/es/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
+- [Por qué las apps gratuitas fallan](/es/blog/apps-calorias-gratis-fallan/) — El verdadero coste
 
 **Entiende por qué no pierdes peso** :
-- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
-- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Factor ignorado
-- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — El cortisol
+- [Por qué las dietas fracasan](/es/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [El sueño y la pérdida de peso](/es/blog/sueno-perdida-peso/) — Factor ignorado
+- [El estrés bloquea tu pérdida de peso](/es/blog/estres-perdida-peso/) — El cortisol

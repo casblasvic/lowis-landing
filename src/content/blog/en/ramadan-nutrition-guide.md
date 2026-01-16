@@ -19,13 +19,13 @@ image: "ramadan-nutrition-guide/hero.webp"
 imageAlt: "Complete nutrition guide for Ramadan - Balanced Iftar and Suhur"
 faq:
   - question: "Can you lose weight during Ramadan?"
-    answer: "Yes! Ramadan fasting is conducive to weight loss IF meals are balanced. Read our <a href='/blog/smart-weight-loss-guide/'>complete weight loss guide</a> and learn <a href='/blog/avoid-weight-rebound/'>how to avoid rebound</a> after Ramadan."
+    answer: "Yes! Ramadan fasting is conducive to weight loss IF meals are balanced. Read our <a href='/en/blog/smart-weight-loss-guide/'>complete weight loss guide</a> and learn <a href='/en/blog/avoid-weight-rebound/'>how to avoid rebound</a> after Ramadan."
   - question: "What to eat at iftar to avoid weight gain?"
-    answer: "Start with dates and water, then soup. Wait 15-20 min before the main course. Prioritize proteins and vegetables. An <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> can help plan balanced iftars."
+    answer: "Start with dates and water, then soup. Wait 15-20 min before the main course. Prioritize proteins and vegetables. An <a href='/en/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> can help plan balanced iftars."
   - question: "Is suhur really important?"
-    answer: "Suhur is CRUCIAL. It provides energy for the entire fasting day. Without suhur, you'll be exhausted and risk overeating. <a href='/blog/sleep-weight-loss/'>Sleep quality</a> also affects fasting energy."
+    answer: "Suhur is CRUCIAL. It provides energy for the entire fasting day. Without suhur, you'll be exhausted and risk overeating. <a href='/en/blog/sleep-weight-loss/'>Sleep quality</a> also affects fasting energy."
   - question: "How much water to drink during Ramadan?"
-    answer: "Aim for 2-2.5L between iftar and suhur. Dehydration causes headaches and fatigue. <a href='/blog/stress-weight-loss/'>Stress</a> worsens when dehydrated. LOWIS tracks <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> including hydration."
+    answer: "Aim for 2-2.5L between iftar and suhur. Dehydration causes headaches and fatigue. <a href='/en/blog/stress-weight-loss/'>Stress</a> worsens when dehydrated. LOWIS tracks <a href='/en/blog/40-indicators-weight-loss/'>40+ indicators</a> including hydration."
 ---
 
 Ramadan is approaching. And like every year, you're asking yourself the same question: **how to fast without gaining weight, without being exhausted, and while maintaining your energy?**
@@ -220,19 +220,19 @@ Get your personalized Ramadan plan in 2 minutes. LOWIS calculates your needs, su
 
 ### Continue Reading
 
-**In the category [Guides](/blog/guides/)** — Our complete guides
+**In the category [Guides](/en/blog/guides/)** — Our complete guides
 
 **Essential guides**:
-- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
-- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
-- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results after Ramadan
+- [Complete smart weight loss guide](/en/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/en/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/en/blog/avoid-weight-rebound/) — Keep your results after Ramadan
 
 **Key factors during Ramadan**:
-- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
-- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
-- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women fasting
+- [Sleep and weight loss](/en/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/en/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/en/blog/menstrual-cycle-weight-loss/) — For women fasting
 
 **LOWIS technology**:
-- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
-- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
-- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success
+- [The 40+ indicators that matter](/en/blog/40-indicators-weight-loss/) — What we analyze
+- [How the AI coach works](/en/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [Audio Program to reprogram your brain](/en/blog/audio-program-reprogram-brain/) — Mental is 80% of success

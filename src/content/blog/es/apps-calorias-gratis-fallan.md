@@ -19,13 +19,13 @@ image: "apps-gratuites-echec/hero.webp"
 imageAlt: "Por qué las aplicaciones gratuitas de calorías no funcionan"
 faq:
   - question: "¿Por qué las apps gratuitas de calorías no funcionan?"
-    answer: "Las apps gratuitas ignoran factores clave: <a href='/blog/sueno-perdida-peso/'>sueño</a>, <a href='/blog/estres-perdida-peso/'>estrés</a>, <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal</a>. Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>."
+    answer: "Las apps gratuitas ignoran factores clave: <a href='/es/blog/sueno-perdida-peso/'>sueño</a>, <a href='/es/blog/estres-perdida-peso/'>estrés</a>, <a href='/es/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal</a>. Es <a href='/es/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>."
   - question: "¿Cuál es el verdadero coste de una app gratuita?"
-    answer: "15 min/día = 7.5h/mes perdidas. Con LOWIS, <a href='/blog/escanear-plato-2-segundos/'>escaneas en 2 segundos</a>. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app de nutrición</a>."
+    answer: "15 min/día = 7.5h/mes perdidas. Con LOWIS, <a href='/es/blog/escanear-plato-2-segundos/'>escaneas en 2 segundos</a>. Consulta <a href='/es/blog/como-elegir-app-nutricion/'>cómo elegir una app de nutrición</a>."
   - question: "¿En qué se diferencia una app de pago?"
-    answer: "Un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA activo</a> analiza <a href='/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> y te ayuda a <a href='/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>."
+    answer: "Un <a href='/es/blog/coach-nutricion-ia-como-funciona/'>coach IA activo</a> analiza <a href='/es/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> y te ayuda a <a href='/es/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>."
   - question: "¿Qué necesito para perder peso de forma duradera?"
-    answer: "Lee nuestra <a href='/blog/perder-peso-inteligente/'>guía completa</a>. El <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> ayuda con el aspecto mental, crucial para resultados duraderos."
+    answer: "Lee nuestra <a href='/es/blog/perder-peso-inteligente/'>guía completa</a>. El <a href='/es/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> ayuda con el aspecto mental, crucial para resultados duraderos."
 ---
 
 Has descargado una app gratuita de conteo de calorías. Empezaste con motivación. Dos semanas después, la abandonaste.
@@ -168,7 +168,7 @@ Haz una foto. La IA reconoce el plato, incluso un tajine o un cuscús.
 No solo números, sino consejos personalizados basados en TU situación.
 
 **3. +40 indicadores analizados**
-Calorías, sí, pero también [estrés](/blog/estres-perdida-peso/), [sueño](/blog/sueno-perdida-peso/), hidratación, [ciclo hormonal](/blog/ciclo-menstrual-perdida-peso/)...
+Calorías, sí, pero también [estrés](/es/blog/estres-perdida-peso/), [sueño](/es/blog/sueno-perdida-peso/), hidratación, [ciclo hormonal](/es/blog/ciclo-menstrual-perdida-peso/)...
 
 **4. Nutricionistas humanos**
 Tu plan está validado por verdaderos expertos, no solo un algoritmo.
@@ -198,19 +198,19 @@ En 2 minutos, tendrás tu plan personalizado basado en tus hábitos reales y tus
 
 ### Continúa leyendo
 
-**En la categoría [Comparativas](/blog/comparatifs/)** — Nuestras comparaciones detalladas
+**En la categoría [Comparativas](/es/blog/comparatifs/)** — Nuestras comparaciones detalladas
 
 **Comparativas de apps populares** :
-- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — El gigante del conteo
-- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — La app de escaneo IA
-- [LOWIS vs Yazio](/blog/lowis-vs-yazio/) — Popular en Europa
+- [LOWIS vs MyFitnessPal](/es/blog/lowis-vs-myfitnesspal/) — El gigante del conteo
+- [LOWIS vs Cal AI](/es/blog/lowis-vs-cal-ai/) — La app de escaneo IA
+- [LOWIS vs Yazio](/es/blog/lowis-vs-yazio/) — Popular en Europa
 
 **Guías esenciales** :
-- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
-- [Guía completa para perder peso](/blog/perder-peso-inteligente/) — El enfoque que funciona
-- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [Cómo elegir una app de nutrición](/es/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
+- [Guía completa para perder peso](/es/blog/perder-peso-inteligente/) — El enfoque que funciona
+- [Por qué las dietas fracasan](/es/blog/por-que-dietas-fallan/) — La ciencia del fracaso
 
 **Factores ignorados por las apps gratuitas** :
-- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Por qué 7h cambian todo
-- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Cortisol y sus efectos
-- [El ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) — Para mujeres
+- [El sueño y la pérdida de peso](/es/blog/sueno-perdida-peso/) — Por qué 7h cambian todo
+- [El estrés bloquea tu pérdida de peso](/es/blog/estres-perdida-peso/) — Cortisol y sus efectos
+- [El ciclo menstrual y la pérdida de peso](/es/blog/ciclo-menstrual-perdida-peso/) — Para mujeres

@@ -23,13 +23,13 @@ comparisonLogos:
   competitorName: "Lose It!"
 faq:
   - question: "¿Cuál es la diferencia entre LOWIS y Lose It!?"
-    answer: "Lose It! cuenta calorías. LOWIS es un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> que analiza <a href='/blog/40-indicadores-perdida-peso/'>+40 indicadores</a>: <a href='/blog/sueno-perdida-peso/'>sueño</a>, <a href='/blog/estres-perdida-peso/'>estrés</a>, <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo</a>."
+    answer: "Lose It! cuenta calorías. LOWIS es un <a href='/es/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> que analiza <a href='/es/blog/40-indicadores-perdida-peso/'>+40 indicadores</a>: <a href='/es/blog/sueno-perdida-peso/'>sueño</a>, <a href='/es/blog/estres-perdida-peso/'>estrés</a>, <a href='/es/blog/ciclo-menstrual-perdida-peso/'>ciclo</a>."
   - question: "¿Lose It! es gratis?"
-    answer: "Las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas tienen costes ocultos</a>: tiempo, publicidad, datos. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app de nutrición</a> para entender el verdadero coste."
+    answer: "Las <a href='/es/blog/apps-calorias-gratis-fallan/'>apps gratuitas tienen costes ocultos</a>: tiempo, publicidad, datos. Consulta <a href='/es/blog/como-elegir-app-nutricion/'>cómo elegir una app de nutrición</a> para entender el verdadero coste."
   - question: "¿El escaneo de fotos de Lose It! es tan preciso como LOWIS?"
-    answer: "LOWIS usa IA avanzada. Descubre <a href='/blog/escanear-plato-2-segundos/'>cómo escanear en 2 segundos</a> incluso platos tradicionales. Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a> con apps básicas."
+    answer: "LOWIS usa IA avanzada. Descubre <a href='/es/blog/escanear-plato-2-segundos/'>cómo escanear en 2 segundos</a> incluso platos tradicionales. Es <a href='/es/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a> con apps básicas."
   - question: "¿Qué app es mejor para perder peso de forma duradera?"
-    answer: "Para evitar el <a href='/blog/evitar-efecto-rebote/'>efecto rebote</a>, necesitas un enfoque completo. Lee nuestra <a href='/blog/perder-peso-inteligente/'>guía completa para perder peso</a>."
+    answer: "Para evitar el <a href='/es/blog/evitar-efecto-rebote/'>efecto rebote</a>, necesitas un enfoque completo. Lee nuestra <a href='/es/blog/perder-peso-inteligente/'>guía completa para perder peso</a>."
 ---
 
 Lose It! es una de las aplicaciones de pérdida de peso más descargadas en Estados Unidos. ¿Su eslogan? "Simple, fun, and effective." Pero, ¿es realmente efectiva para el mercado hispanohablante? Y sobre todo, ¿es la mejor opción para TI?
@@ -216,18 +216,18 @@ Prueba LOWIS gratis durante 7 días, sin tarjeta bancaria. En 2 minutos, descubr
 
 ### Continúa leyendo
 
-**En la categoría [Comparativas](/blog/comparatifs/)** — Nuestras comparaciones detalladas
+**En la categoría [Comparativas](/es/blog/comparatifs/)** — Nuestras comparaciones detalladas
 
 **Otras comparativas de apps** :
-- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — El gigante del conteo
-- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — La app de escaneo IA
-- [LOWIS vs Yazio](/blog/lowis-vs-yazio/) — Popular en Europa
+- [LOWIS vs MyFitnessPal](/es/blog/lowis-vs-myfitnesspal/) — El gigante del conteo
+- [LOWIS vs Cal AI](/es/blog/lowis-vs-cal-ai/) — La app de escaneo IA
+- [LOWIS vs Yazio](/es/blog/lowis-vs-yazio/) — Popular en Europa
 
 **Guías para elegir bien** :
-- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
-- [Por qué las apps gratuitas fallan](/blog/apps-calorias-gratis-fallan/) — El verdadero coste
+- [Cómo elegir una app de nutrición](/es/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
+- [Por qué las apps gratuitas fallan](/es/blog/apps-calorias-gratis-fallan/) — El verdadero coste
 
 **Entiende la pérdida de peso** :
-- [Guía completa para perder peso](/blog/perder-peso-inteligente/) — El enfoque completo
-- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
-- [Cómo evitar el efecto rebote](/blog/evitar-efecto-rebote/) — Mantener resultados
+- [Guía completa para perder peso](/es/blog/perder-peso-inteligente/) — El enfoque completo
+- [Por qué las dietas fracasan](/es/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [Cómo evitar el efecto rebote](/es/blog/evitar-efecto-rebote/) — Mantener resultados

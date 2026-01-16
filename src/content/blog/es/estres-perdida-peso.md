@@ -18,15 +18,15 @@ image: "stress-perte-poids/hero.png"
 imageAlt: "Estrés y pérdida de peso - Cómo el cortisol bloquea tus resultados"
 faq:
   - question: "¿El estrés realmente puede impedir perder peso?"
-    answer: "Sí. El cortisol favorece el almacenamiento de grasa y aumenta el apetito. Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a> cuando ignoran el estrés. Descubre los <a href='/blog/40-indicadores-perdida-peso/'>40+ indicadores</a> que afectan tu peso."
+    answer: "Sí. El cortisol favorece el almacenamiento de grasa y aumenta el apetito. Es <a href='/es/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a> cuando ignoran el estrés. Descubre los <a href='/es/blog/40-indicadores-perdida-peso/'>40+ indicadores</a> que afectan tu peso."
   - question: "¿Cómo saber si mi estrés bloquea mi pérdida de peso?"
-    answer: "Señales: antojos de azúcar, <a href='/blog/sueno-perdida-peso/'>mal sueño</a>, grasa abdominal resistente. El <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA LOWIS</a> analiza estos indicadores automáticamente."
+    answer: "Señales: antojos de azúcar, <a href='/es/blog/sueno-perdida-peso/'>mal sueño</a>, grasa abdominal resistente. El <a href='/es/blog/coach-nutricion-ia-como-funciona/'>coach IA LOWIS</a> analiza estos indicadores automáticamente."
   - question: "¿Cómo gestionar el estrés para perder peso?"
-    answer: "El <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program de LOWIS</a> te ayuda a reprogramar tu cerebro en 10 min/día. Combinado con mejor <a href='/blog/sueno-perdida-peso/'>sueño</a>, verás resultados en 2-4 semanas."
+    answer: "El <a href='/es/blog/audio-program-reprogramar-cerebro/'>Audio Program de LOWIS</a> te ayuda a reprogramar tu cerebro en 10 min/día. Combinado con mejor <a href='/es/blog/sueno-perdida-peso/'>sueño</a>, verás resultados en 2-4 semanas."
   - question: "¿El ciclo menstrual aumenta el estrés?"
-    answer: "Sí, especialmente en fase lútea. El <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo menstrual afecta el peso</a> y el estrés. LOWIS adapta las recomendaciones a cada fase."
+    answer: "Sí, especialmente en fase lútea. El <a href='/es/blog/ciclo-menstrual-perdida-peso/'>ciclo menstrual afecta el peso</a> y el estrés. LOWIS adapta las recomendaciones a cada fase."
   - question: "¿Qué app tiene en cuenta el estrés?"
-    answer: "Las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas ignoran el estrés</a>. Consulta nuestra <a href='/blog/como-elegir-app-nutricion/'>guía para elegir una app</a> y nuestra <a href='/blog/perder-peso-inteligente/'>guía completa</a>."
+    answer: "Las <a href='/es/blog/apps-calorias-gratis-fallan/'>apps gratuitas ignoran el estrés</a>. Consulta nuestra <a href='/es/blog/como-elegir-app-nutricion/'>guía para elegir una app</a> y nuestra <a href='/es/blog/perder-peso-inteligente/'>guía completa</a>."
 ---
 
 Lo haces todo bien. Cuentas tus calorías. Te mueves. Y sin embargo... **la báscula no se mueve**.
@@ -47,7 +47,7 @@ Cuando estás estresado/a, tu cuerpo produce cortisol. Es una respuesta de super
 | **Aumento del apetito** | Antojos de azúcar, sal, grasa — los "comfort foods" |
 | **Resistencia a la insulina** | Tu cuerpo almacena más fácilmente los carbohidratos |
 | **Degradación muscular** | Menos músculos = metabolismo más lento |
-| **Alteración del sueño** | Y el [mal sueño](/blog/sueno-perdida-peso/) agrava aún más el estrés |
+| **Alteración del sueño** | Y el [mal sueño](/es/blog/sueno-perdida-peso/) agrava aún más el estrés |
 | **Retención de líquidos** | El cortisol te hace hinchar |
 
 **¿Resultado?** Puedes estar en déficit calórico de 500 calorías y **no perder ni un gramo** si tu cortisol está crónicamente elevado.
@@ -97,7 +97,7 @@ Cuando subalimentas tu cuerpo:
 - Te restringes aún más
 - **Y el ciclo vuelve a empezar**
 
-Por eso [las dietas restrictivas fracasan](/blog/como-elegir-app-nutricion/) a largo plazo para el 95% de las personas.
+Por eso [las dietas restrictivas fracasan](/es/blog/como-elegir-app-nutricion/) a largo plazo para el 95% de las personas.
 
 ## La solución: Tratar el estrés ANTES que las calorías
 
@@ -142,7 +142,7 @@ El ejercicio intenso puede **aumentar** el cortisol. Cuando estás muy estresado
 
 ### Estrategia 4: Proteger tu sueño
 
-El [sueño y la pérdida de peso](/blog/sueno-perdida-peso/) están íntimamente ligados. Una noche de mal sueño:
+El [sueño y la pérdida de peso](/es/blog/sueno-perdida-peso/) están íntimamente ligados. Una noche de mal sueño:
 - Aumenta el cortisol un 37%
 - Aumenta la grelina (hormona del hambre)
 - Disminuye la leptina (hormona de saciedad)
@@ -251,18 +251,18 @@ Porque perder peso también es cuidar tu mente.
 
 ### Continúa leyendo
 
-**En la categoría [Bienestar](/blog/bien-etre/)** — Salud integral
+**En la categoría [Bienestar](/es/blog/bien-etre/)** — Salud integral
 
 **Artículos relacionados sobre bienestar** :
-- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Por qué 7h mínimo cambian todo
-- [El ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) — Adaptar la alimentación
-- [Audio Program para reprogramar tu cerebro](/blog/audio-program-reprogramar-cerebro/) — Gestionar el estrés
+- [El sueño y la pérdida de peso](/es/blog/sueno-perdida-peso/) — Por qué 7h mínimo cambian todo
+- [El ciclo menstrual y la pérdida de peso](/es/blog/ciclo-menstrual-perdida-peso/) — Adaptar la alimentación
+- [Audio Program para reprogramar tu cerebro](/es/blog/audio-program-reprogramar-cerebro/) — Gestionar el estrés
 
 **Guías esenciales** :
-- [Guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/) — El enfoque completo
-- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
-- [Cómo evitar el efecto rebote](/blog/evitar-efecto-rebote/) — Mantener los resultados
+- [Guía completa para perder peso de forma inteligente](/es/blog/perder-peso-inteligente/) — El enfoque completo
+- [Por qué las dietas fracasan](/es/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [Cómo evitar el efecto rebote](/es/blog/evitar-efecto-rebote/) — Mantener los resultados
 
 **Tecnología LOWIS** :
-- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que LOWIS sigue
-- [Cómo funciona el coach IA](/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
+- [Los 40+ indicadores que importan](/es/blog/40-indicadores-perdida-peso/) — Lo que LOWIS sigue
+- [Cómo funciona el coach IA](/es/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás

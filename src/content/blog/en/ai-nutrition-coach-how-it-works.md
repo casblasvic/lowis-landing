@@ -19,15 +19,15 @@ image: "coach-ia-comment-marche/hero.webp"
 imageAlt: "How an AI nutrition coach works for weight loss"
 faq:
   - question: "What's the difference between a calorie app and an AI coach?"
-    answer: "A classic app passively records calories. An AI coach analyzes <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> (<a href='/blog/stress-weight-loss/'>stress</a>, <a href='/blog/sleep-weight-loss/'>sleep</a>, <a href='/blog/menstrual-cycle-weight-loss/'>hormones</a>) and guides you 24/7. That's <a href='/blog/free-calorie-apps-fail/'>why passive apps fail</a>."
+    answer: "A classic app passively records calories. An AI coach analyzes <a href='/en/blog/40-indicators-weight-loss/'>40+ indicators</a> (<a href='/en/blog/stress-weight-loss/'>stress</a>, <a href='/en/blog/sleep-weight-loss/'>sleep</a>, <a href='/en/blog/menstrual-cycle-weight-loss/'>hormones</a>) and guides you 24/7. That's <a href='/en/blog/free-calorie-apps-fail/'>why passive apps fail</a>."
   - question: "Will AI replace nutritionists?"
-    answer: "No. AI amplifies experts' work. At LOWIS, nutritionists validate important recommendations. Read <a href='/blog/how-to-choose-nutrition-app/'>how to choose an app</a> that combines both."
+    answer: "No. AI amplifies experts' work. At LOWIS, nutritionists validate important recommendations. Read <a href='/en/blog/how-to-choose-nutrition-app/'>how to choose an app</a> that combines both."
   - question: "Is my data safe with an AI coach?"
-    answer: "Yes. Your data is encrypted and never sold. Unlike <a href='/blog/lowis-vs-myfitnesspal/'>MyFitnessPal</a> which sells data, LOWIS uses it only to personalize YOUR experience."
+    answer: "Yes. Your data is encrypted and never sold. Unlike <a href='/en/blog/lowis-vs-myfitnesspal/'>MyFitnessPal</a> which sells data, LOWIS uses it only to personalize YOUR experience."
   - question: "Does the AI coach work with special diets?"
-    answer: "Yes. Vegan, gluten-free, halal, diabetic... The AI adapts to your restrictions. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> on personalized approaches."
+    answer: "Yes. Vegan, gluten-free, halal, diabetic... The AI adapts to your restrictions. Read our <a href='/en/blog/smart-weight-loss-guide/'>complete guide</a> on personalized approaches."
   - question: "What happens if the AI makes a mistake?"
-    answer: "Correct in 2 taps and the AI learns. <a href='/blog/scan-meal-2-seconds/'>Photo scanning</a> improves with your corrections. Plus nutritionists supervise important recommendations."
+    answer: "Correct in 2 taps and the AI learns. <a href='/en/blog/scan-meal-2-seconds/'>Photo scanning</a> improves with your corrections. Plus nutritionists supervise important recommendations."
 ---
 
 "AI Coach", "Artificial intelligence", "Machine learning"... These terms are everywhere. But concretely, **what is an AI nutrition coach and how can it help you lose weight?**
@@ -109,13 +109,13 @@ A calorie counter only looks at one number. LOWIS analyzes **more than 40 indica
 
 ### Health indicators
 - Sleep quality
-- Perceived [stress](/blog/stress-weight-loss/) level
+- Perceived [stress](/en/blog/stress-weight-loss/) level
 - Felt energy
 - Digestion
 - Recovery
 
 ### Hormonal indicators (women)
-- [Menstrual cycle](/blog/menstrual-cycle-weight-loss/) phase
+- [Menstrual cycle](/en/blog/menstrual-cycle-weight-loss/) phase
 - Water retention
 - Appetite variations
 - Adapted nutritional needs
@@ -254,20 +254,20 @@ In 2 minutes, you'll have your first personalized plan and can experience the di
 
 ### Continue Reading
 
-**In the category [Guides](/blog/guides/)** — Our complete guides
+**In the category [Guides](/en/blog/guides/)** — Our complete guides
 
 **LOWIS technology**:
-- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
-- [Scan meals in 2 seconds](/blog/scan-meal-2-seconds/) — The technology
-- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success
+- [The 40+ indicators that matter](/en/blog/40-indicators-weight-loss/) — What we analyze
+- [Scan meals in 2 seconds](/en/blog/scan-meal-2-seconds/) — The technology
+- [Audio Program to reprogram your brain](/en/blog/audio-program-reprogram-brain/) — Mental is 80% of success
 
 **Key factors the AI tracks**:
-- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
-- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
-- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+- [Sleep and weight loss](/en/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/en/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/en/blog/menstrual-cycle-weight-loss/) — For women
 
 **Compare with other apps**:
-- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — The counting giant
-- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — AI scanning comparison
-- [Why free apps fail](/blog/free-calorie-apps-fail/) — The real cost
-- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
+- [LOWIS vs MyFitnessPal](/en/blog/lowis-vs-myfitnesspal/) — The counting giant
+- [LOWIS vs Cal AI](/en/blog/lowis-vs-cal-ai/) — AI scanning comparison
+- [Why free apps fail](/en/blog/free-calorie-apps-fail/) — The real cost
+- [How to choose a nutrition app](/en/blog/how-to-choose-nutrition-app/) — The 7 essential criteria

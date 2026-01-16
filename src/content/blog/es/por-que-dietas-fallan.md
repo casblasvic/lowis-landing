@@ -19,15 +19,15 @@ image: "pourquoi-regimes-echouent/hero.webp"
 imageAlt: "Por qué las dietas tradicionales fracasan - La ciencia explicada"
 faq:
   - question: "¿Por qué fracasan el 95% de las dietas?"
-    answer: "Las dietas fracasan porque ignoran el <a href='/blog/estres-perdida-peso/'>estrés (cortisol)</a>, el <a href='/blog/sueno-perdida-peso/'>mal sueño</a>, y para mujeres el <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal</a>. Descubre cómo <a href='/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>."
+    answer: "Las dietas fracasan porque ignoran el <a href='/es/blog/estres-perdida-peso/'>estrés (cortisol)</a>, el <a href='/es/blog/sueno-perdida-peso/'>mal sueño</a>, y para mujeres el <a href='/es/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal</a>. Descubre cómo <a href='/es/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>."
   - question: "¿Qué es el efecto rebote y cómo evitarlo?"
-    answer: "El efecto rebote es recuperar peso tras una dieta. Nuestro artículo <a href='/blog/evitar-efecto-rebote/'>cómo evitar el efecto rebote</a> explica las 5 estrategias. El <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> ayuda con el aspecto mental."
+    answer: "El efecto rebote es recuperar peso tras una dieta. Nuestro artículo <a href='/es/blog/evitar-efecto-rebote/'>cómo evitar el efecto rebote</a> explica las 5 estrategias. El <a href='/es/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> ayuda con el aspecto mental."
   - question: "¿Por qué el estrés bloquea la pérdida de peso?"
-    answer: "El <a href='/blog/estres-perdida-peso/'>estrés eleva el cortisol</a> que almacena grasa abdominal. El <a href='/blog/sueno-perdida-peso/'>mal sueño lo amplifica</a>. Un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> analiza estos <a href='/blog/40-indicadores-perdida-peso/'>40+ indicadores</a>."
+    answer: "El <a href='/es/blog/estres-perdida-peso/'>estrés eleva el cortisol</a> que almacena grasa abdominal. El <a href='/es/blog/sueno-perdida-peso/'>mal sueño lo amplifica</a>. Un <a href='/es/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> analiza estos <a href='/es/blog/40-indicadores-perdida-peso/'>40+ indicadores</a>."
   - question: "¿Las apps de calorías ayudan?"
-    answer: "Las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque solo cuentan calorías. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> y nuestros comparativos: <a href='/blog/lowis-vs-myfitnesspal/'>LOWIS vs MyFitnessPal</a>."
+    answer: "Las <a href='/es/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque solo cuentan calorías. Consulta <a href='/es/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> y nuestros comparativos: <a href='/es/blog/lowis-vs-myfitnesspal/'>LOWIS vs MyFitnessPal</a>."
   - question: "¿Cuál es la alternativa a las dietas?"
-    answer: "Nuestra <a href='/blog/perder-peso-inteligente/'>guía completa para perder peso</a> explica el enfoque inteligente. Con un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA activo</a>, no una dieta temporal."
+    answer: "Nuestra <a href='/es/blog/perder-peso-inteligente/'>guía completa para perder peso</a> explica el enfoque inteligente. Con un <a href='/es/blog/coach-nutricion-ia-como-funciona/'>coach IA activo</a>, no una dieta temporal."
 ---
 
 Has probado Weight Watchers. Luego la dieta Dukan. Quizás el ayuno intermitente. Cada vez, el mismo escenario: pérdida de peso inicial, estancamiento, frustración, abandono, recuperación de los kilos (y a menudo más).
@@ -173,7 +173,7 @@ Objetivo: Llegar a un punto donde ya no necesites "tener cuidado".
 
 ## El efecto rebote: Cómo evitarlo
 
-El [efecto rebote](/blog/evitar-efecto-rebote/) no es una fatalidad. Así puedes evitarlo:
+El [efecto rebote](/es/blog/evitar-efecto-rebote/) no es una fatalidad. Así puedes evitarlo:
 
 ### 1. Perder lentamente
 
@@ -203,7 +203,7 @@ El ejercicio no es para quemar calorías (es ineficaz), sino para:
 
 ## El papel de la IA en un enfoque duradero
 
-Un [coach IA inteligente](/blog/coach-nutricion-ia-como-funciona/) puede hacer lo que ninguna dieta estandarizada puede:
+Un [coach IA inteligente](/es/blog/coach-nutricion-ia-como-funciona/) puede hacer lo que ninguna dieta estandarizada puede:
 
 - **Personalizar** de verdad (no solo el cálculo de calorías)
 - **Adaptar** en tiempo real a tus resultados
@@ -238,19 +238,19 @@ En 2 minutos, obtén un plan personalizado basado en tus hábitos reales, no en 
 
 ### Continúa leyendo
 
-**En la categoría [Guías](/blog/guides/)** — Nuestras guías completas
+**En la categoría [Guías](/es/blog/guides/)** — Nuestras guías completas
 
 **Artículos esenciales para entender el enfoque** :
-- [Guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/) — El enfoque que funciona
-- [Cómo evitar el efecto rebote](/blog/evitar-efecto-rebote/) — Mantener los resultados
-- [Audio Program para reprogramar tu cerebro](/blog/audio-program-reprogramar-cerebro/) — El mental es clave
+- [Guía completa para perder peso de forma inteligente](/es/blog/perder-peso-inteligente/) — El enfoque que funciona
+- [Cómo evitar el efecto rebote](/es/blog/evitar-efecto-rebote/) — Mantener los resultados
+- [Audio Program para reprogramar tu cerebro](/es/blog/audio-program-reprogramar-cerebro/) — El mental es clave
 
 **Factores que las dietas ignoran** :
-- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Por qué 7h mínimo cambian todo
-- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Cortisol y sus efectos
-- [El ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) — Para mujeres
+- [El sueño y la pérdida de peso](/es/blog/sueno-perdida-peso/) — Por qué 7h mínimo cambian todo
+- [El estrés bloquea tu pérdida de peso](/es/blog/estres-perdida-peso/) — Cortisol y sus efectos
+- [El ciclo menstrual y la pérdida de peso](/es/blog/ciclo-menstrual-perdida-peso/) — Para mujeres
 
 **Elige la herramienta adecuada** :
-- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
-- [Por qué las apps gratuitas fallan](/blog/apps-calorias-gratis-fallan/) — El coste oculto
-- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que debes seguir
+- [Cómo elegir una app de nutrición](/es/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
+- [Por qué las apps gratuitas fallan](/es/blog/apps-calorias-gratis-fallan/) — El coste oculto
+- [Los 40+ indicadores que importan](/es/blog/40-indicadores-perdida-peso/) — Lo que debes seguir

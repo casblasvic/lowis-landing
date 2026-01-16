@@ -23,13 +23,13 @@ comparisonLogos:
   competitorName: "Yazio"
 faq:
   - question: "What is the main difference between LOWIS and Yazio?"
-    answer: "Yazio counts calories and macros. LOWIS analyzes <a href='/blog/40-indicators-weight-loss/'>40+ health indicators</a> with an <a href='/blog/ai-nutrition-coach-how-it-works/'>active AI coach</a>. It's <a href='/blog/why-diets-fail/'>why simple counting fails</a>."
+    answer: "Yazio counts calories and macros. LOWIS analyzes <a href='/en/blog/40-indicators-weight-loss/'>40+ health indicators</a> with an <a href='/en/blog/ai-nutrition-coach-how-it-works/'>active AI coach</a>. It's <a href='/en/blog/why-diets-fail/'>why simple counting fails</a>."
   - question: "Is Yazio cheaper than LOWIS?"
-    answer: "Yazio Pro is ~$50/year but requires more manual work. LOWIS <a href='/blog/scan-meal-2-seconds/'>scans in 2 seconds</a>. Read <a href='/blog/free-calorie-apps-fail/'>why cheap apps fail</a> and <a href='/blog/how-to-choose-nutrition-app/'>how to choose wisely</a>."
+    answer: "Yazio Pro is ~$50/year but requires more manual work. LOWIS <a href='/en/blog/scan-meal-2-seconds/'>scans in 2 seconds</a>. Read <a href='/en/blog/free-calorie-apps-fail/'>why cheap apps fail</a> and <a href='/en/blog/how-to-choose-nutrition-app/'>how to choose wisely</a>."
   - question: "Does Yazio track sleep and stress?"
-    answer: "No. But <a href='/blog/sleep-weight-loss/'>sleep</a> and <a href='/blog/stress-weight-loss/'>stress</a> are crucial for weight loss. LOWIS tracks both with the <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> for mental support."
+    answer: "No. But <a href='/en/blog/sleep-weight-loss/'>sleep</a> and <a href='/en/blog/stress-weight-loss/'>stress</a> are crucial for weight loss. LOWIS tracks both with the <a href='/en/blog/audio-program-reprogram-brain/'>Audio Program</a> for mental support."
   - question: "Which app is better for women?"
-    answer: "LOWIS tracks the <a href='/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> and adapts recommendations to each phase. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> and how to <a href='/blog/avoid-weight-rebound/'>avoid weight rebound</a>."
+    answer: "LOWIS tracks the <a href='/en/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> and adapts recommendations to each phase. Read our <a href='/en/blog/smart-weight-loss-guide/'>complete guide</a> and how to <a href='/en/blog/avoid-weight-rebound/'>avoid weight rebound</a>."
 ---
 
 Looking for the best app to track your nutrition? Yazio is one of the most popular apps in Europe, with its integrated recipes and colorful interface. But is it really the best option to reach your goals?
@@ -219,21 +219,21 @@ No tricks, no commitment. Just a chance to see if real AI coaching makes a diffe
 
 ### Continue Reading
 
-**In the category [Comparisons](/blog/comparatifs/)** — All our app comparisons
+**In the category [Comparisons](/en/blog/comparatifs/)** — All our app comparisons
 
 **Other app comparisons**:
-- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — The counting giant
-- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — AI scanning comparison
-- [LOWIS vs Lose It!](/blog/lowis-vs-lose-it/) — US favorite
-- [Why free apps fail](/blog/free-calorie-apps-fail/) — The real cost
-- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
+- [LOWIS vs MyFitnessPal](/en/blog/lowis-vs-myfitnesspal/) — The counting giant
+- [LOWIS vs Cal AI](/en/blog/lowis-vs-cal-ai/) — AI scanning comparison
+- [LOWIS vs Lose It!](/en/blog/lowis-vs-lose-it/) — US favorite
+- [Why free apps fail](/en/blog/free-calorie-apps-fail/) — The real cost
+- [How to choose a nutrition app](/en/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
 
 **Key factors Yazio ignores**:
-- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
-- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
-- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+- [Sleep and weight loss](/en/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/en/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/en/blog/menstrual-cycle-weight-loss/) — For women
 
 **Essential guides**:
-- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
-- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
-- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results
+- [Complete smart weight loss guide](/en/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/en/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/en/blog/avoid-weight-rebound/) — Keep your results

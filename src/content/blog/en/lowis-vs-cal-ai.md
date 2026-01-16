@@ -23,15 +23,15 @@ comparisonLogos:
   competitorName: "Cal AI"
 faq:
   - question: "What is the main difference between LOWIS and Cal AI?"
-    answer: "Cal AI is a passive calorie counter. LOWIS is an <a href='/blog/ai-nutrition-coach-how-it-works/'>active AI coach</a> that analyzes <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a>. That's <a href='/blog/free-calorie-apps-fail/'>why passive apps fail</a>."
+    answer: "Cal AI is a passive calorie counter. LOWIS is an <a href='/en/blog/ai-nutrition-coach-how-it-works/'>active AI coach</a> that analyzes <a href='/en/blog/40-indicators-weight-loss/'>40+ indicators</a>. That's <a href='/en/blog/free-calorie-apps-fail/'>why passive apps fail</a>."
   - question: "Is Cal AI really cheaper than LOWIS?"
-    answer: "Cal AI costs ~$50/year but requires 15+ min/day of manual work. LOWIS <a href='/blog/scan-meal-2-seconds/'>scans meals in 2 seconds</a>. Read <a href='/blog/how-to-choose-nutrition-app/'>how to choose a nutrition app</a> for the real cost calculation."
+    answer: "Cal AI costs ~$50/year but requires 15+ min/day of manual work. LOWIS <a href='/en/blog/scan-meal-2-seconds/'>scans meals in 2 seconds</a>. Read <a href='/en/blog/how-to-choose-nutrition-app/'>how to choose a nutrition app</a> for the real cost calculation."
   - question: "Does Cal AI track sleep and stress?"
-    answer: "No. Cal AI only counts calories. But <a href='/blog/sleep-weight-loss/'>sleep</a> and <a href='/blog/stress-weight-loss/'>stress</a> are crucial — it's <a href='/blog/why-diets-fail/'>why diets fail</a>. LOWIS tracks these with its <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a>."
+    answer: "No. Cal AI only counts calories. But <a href='/en/blog/sleep-weight-loss/'>sleep</a> and <a href='/en/blog/stress-weight-loss/'>stress</a> are crucial — it's <a href='/en/blog/why-diets-fail/'>why diets fail</a>. LOWIS tracks these with its <a href='/en/blog/40-indicators-weight-loss/'>40+ indicators</a>."
   - question: "Does Cal AI help with menstrual cycle?"
-    answer: "No. The <a href='/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> affects weight by 1-3kg. LOWIS adapts recommendations to your cycle phase. The <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> also helps with cravings."
+    answer: "No. The <a href='/en/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> affects weight by 1-3kg. LOWIS adapts recommendations to your cycle phase. The <a href='/en/blog/audio-program-reprogram-brain/'>Audio Program</a> also helps with cravings."
   - question: "How do I avoid weight rebound after using an app?"
-    answer: "Apps that only count calories don't prevent the <a href='/blog/avoid-weight-rebound/'>rebound effect</a>. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> and see why an <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> makes the difference."
+    answer: "Apps that only count calories don't prevent the <a href='/en/blog/avoid-weight-rebound/'>rebound effect</a>. Read our <a href='/en/blog/smart-weight-loss-guide/'>complete guide</a> and see why an <a href='/en/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> makes the difference."
 ---
 
 You've probably already heard of Cal AI, the calorie counting app that promises to scan your meals with a photo. But is it really the best option? Spoiler: not necessarily.
@@ -67,7 +67,7 @@ These problems come up constantly:
 - **Significant calculation errors**
 - **No accessible customer support**
 
-If you've experienced these frustrations, you're not alone. And that's exactly why [so many people are looking for an alternative to Cal AI](/blog/free-calorie-apps-fail/).
+If you've experienced these frustrations, you're not alone. And that's exactly why [so many people are looking for an alternative to Cal AI](/en/blog/free-calorie-apps-fail/).
 
 ## The real difference: Passive AI vs Active AI
 
@@ -149,8 +149,8 @@ It's like comparing a **personal trainer** to a **notebook**. Both have their pl
 |---------|-------|--------|
 | Personalized AI coach | ✅ | ❌ |
 | Indicators tracked | 40+ | Calories only |
-| [Cycle](/blog/menstrual-cycle-weight-loss/) adaptation | ✅ | ❌ |
-| [Stress](/blog/stress-weight-loss/) management | ✅ | ❌ |
+| [Cycle](/en/blog/menstrual-cycle-weight-loss/) adaptation | ✅ | ❌ |
+| [Stress](/en/blog/stress-weight-loss/) management | ✅ | ❌ |
 | Active recommendations | ✅ | ❌ |
 | Plan validated by nutritionists | ✅ | ❌ |
 
@@ -221,21 +221,21 @@ No catch, no commitment. Just a chance to see if LOWIS is right for you.
 
 ### Continue Reading
 
-**In the category [Comparisons](/blog/comparatifs/)** — All our app comparisons
+**In the category [Comparisons](/en/blog/comparatifs/)** — All our app comparisons
 
 **Other app comparisons**:
-- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — The counting giant
-- [LOWIS vs Yazio](/blog/lowis-vs-yazio/) — Popular in Europe
-- [LOWIS vs Lose It!](/blog/lowis-vs-lose-it/) — US favorite
-- [Why free apps fail](/blog/free-calorie-apps-fail/) — The real cost
-- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
+- [LOWIS vs MyFitnessPal](/en/blog/lowis-vs-myfitnesspal/) — The counting giant
+- [LOWIS vs Yazio](/en/blog/lowis-vs-yazio/) — Popular in Europe
+- [LOWIS vs Lose It!](/en/blog/lowis-vs-lose-it/) — US favorite
+- [Why free apps fail](/en/blog/free-calorie-apps-fail/) — The real cost
+- [How to choose a nutrition app](/en/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
 
 **LOWIS technology**:
-- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
-- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
-- [Scan meals in 2 seconds](/blog/scan-meal-2-seconds/) — The technology
+- [The 40+ indicators that matter](/en/blog/40-indicators-weight-loss/) — What we analyze
+- [How the AI coach works](/en/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [Scan meals in 2 seconds](/en/blog/scan-meal-2-seconds/) — The technology
 
 **Essential guides**:
-- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
-- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
-- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results
+- [Complete smart weight loss guide](/en/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/en/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/en/blog/avoid-weight-rebound/) — Keep your results

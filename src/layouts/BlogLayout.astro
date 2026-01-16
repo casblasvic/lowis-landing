@@ -133,19 +133,31 @@ const t = {
   language: { fr: 'Langue', 'fr-FR': 'Langue', es: 'Idioma', en: 'Language' },
 };
 
-// Helper to get path for language change (handles blog paths correctly)
+// Helper to get path for language change (handles blog paths correctly using translations)
 function getBlogPathForLang(targetLang: Language): string {
-  // Remove current language prefix if any
-  let cleanPath = currentPath
-    .replace(/^\/(fr|es|en)\//, '/')  // Remove /fr/, /es/, /en/ prefix
-    .replace(/^\/fr\//, '/');          // Handle /fr/ for fr-FR
+  // If we have translations and this is a blog article, use the translated slug
+  if (translations) {
+    // Map target language to the correct translation key
+    const translationKey = targetLang === 'fr-FR' ? 'fr-FR' : targetLang === 'fr' ? 'fr' : targetLang;
+    const translatedSlug = translations[translationKey as keyof typeof translations];
 
-  // Ensure path starts with /
-  if (!cleanPath.startsWith('/')) {
-    cleanPath = '/' + cleanPath;
+    if (translatedSlug) {
+      // For French Morocco (default), use /blog/slug/
+      if (targetLang === 'fr') {
+        return `/blog/${translatedSlug}/`;
+      }
+      // For French France, use /fr/blog/slug/
+      if (targetLang === 'fr-FR') {
+        const frFRSlug = translations['fr-FR'] || translations.fr;
+        return frFRSlug ? `/fr/blog/${frFRSlug}/` : `/fr/blog/`;
+      }
+      // For other languages, use /{lang}/blog/slug/
+      return `/${targetLang}/blog/${translatedSlug}/`;
+    }
   }
 
-  return getPathWithLang(cleanPath, targetLang);
+  // Fallback: just go to the blog index for that language
+  return getPathWithLang('/blog/', targetLang);
 }
 
 // Structured data for article

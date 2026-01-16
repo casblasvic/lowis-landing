@@ -19,13 +19,13 @@ image: "coach-ia-comment-marche/hero.webp"
 imageAlt: "Cómo funciona un coach nutricional IA para la pérdida de peso"
 faq:
   - question: "¿Cuál es la diferencia entre una app de calorías y un coach IA?"
-    answer: "Las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque solo registran calorías. Un coach IA analiza <a href='/blog/40-indicadores-perdida-peso/'>+40 indicadores</a>: <a href='/blog/estres-perdida-peso/'>estrés</a>, <a href='/blog/sueno-perdida-peso/'>sueño</a>, <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo</a>."
+    answer: "Las <a href='/es/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque solo registran calorías. Un coach IA analiza <a href='/es/blog/40-indicadores-perdida-peso/'>+40 indicadores</a>: <a href='/es/blog/estres-perdida-peso/'>estrés</a>, <a href='/es/blog/sueno-perdida-peso/'>sueño</a>, <a href='/es/blog/ciclo-menstrual-perdida-peso/'>ciclo</a>."
   - question: "¿Por qué el coaching IA funciona mejor que las dietas?"
-    answer: "Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>: ignoran factores clave. Lee la <a href='/blog/perder-peso-inteligente/'>guía completa</a> y cómo <a href='/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>."
+    answer: "Es <a href='/es/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>: ignoran factores clave. Lee la <a href='/es/blog/perder-peso-inteligente/'>guía completa</a> y cómo <a href='/es/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>."
   - question: "¿Cómo escaneo mis comidas?"
-    answer: "Descubre <a href='/blog/escanear-plato-2-segundos/'>cómo escanear en 2 segundos</a> incluso platos tradicionales. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> para los criterios."
+    answer: "Descubre <a href='/es/blog/escanear-plato-2-segundos/'>cómo escanear en 2 segundos</a> incluso platos tradicionales. Consulta <a href='/es/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> para los criterios."
   - question: "¿El coach IA considera el aspecto mental?"
-    answer: "Sí, incluye el <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> para reprogramar tu relación con la comida. El mental es el 80% del éxito."
+    answer: "Sí, incluye el <a href='/es/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> para reprogramar tu relación con la comida. El mental es el 80% del éxito."
 ---
 
 "Coach IA", "Inteligencia artificial", "Machine learning"... Estos términos están en todas partes. Pero en concreto, **¿qué es un coach nutricional IA y cómo puede ayudarte a perder peso?**
@@ -107,13 +107,13 @@ Un contador de calorías solo mira un número. LOWIS analiza **más de 40 indica
 
 ### Indicadores de salud
 - Calidad del sueño
-- Nivel de [estrés](/blog/estres-perdida-peso/) percibido
+- Nivel de [estrés](/es/blog/estres-perdida-peso/) percibido
 - Energía sentida
 - Digestión
 - Recuperación
 
 ### Indicadores hormonales (mujeres)
-- Fase del [ciclo menstrual](/blog/ciclo-menstrual-perdida-peso/)
+- Fase del [ciclo menstrual](/es/blog/ciclo-menstrual-perdida-peso/)
 - Retención de agua
 - Variaciones de apetito
 - Necesidades nutricionales adaptadas
@@ -252,19 +252,19 @@ En 2 minutos, tendrás tu primer plan personalizado y podrás experimentar la di
 
 ### Continúa leyendo
 
-**En la categoría [Guías](/blog/guides/)** — Nuestras guías completas
+**En la categoría [Guías](/es/blog/guides/)** — Nuestras guías completas
 
 **Tecnología LOWIS** :
-- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que analizamos
-- [Escanear platos en 2 segundos](/blog/escanear-plato-2-segundos/) — La tecnología de reconocimiento
-- [Audio Program para reprogramar tu cerebro](/blog/audio-program-reprogramar-cerebro/) — El mental es clave
+- [Los 40+ indicadores que importan](/es/blog/40-indicadores-perdida-peso/) — Lo que analizamos
+- [Escanear platos en 2 segundos](/es/blog/escanear-plato-2-segundos/) — La tecnología de reconocimiento
+- [Audio Program para reprogramar tu cerebro](/es/blog/audio-program-reprogramar-cerebro/) — El mental es clave
 
 **Factores que el coach IA analiza** :
-- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Por qué 7h cambian todo
-- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Cortisol y sus efectos
-- [El ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) — Para mujeres
+- [El sueño y la pérdida de peso](/es/blog/sueno-perdida-peso/) — Por qué 7h cambian todo
+- [El estrés bloquea tu pérdida de peso](/es/blog/estres-perdida-peso/) — Cortisol y sus efectos
+- [El ciclo menstrual y la pérdida de peso](/es/blog/ciclo-menstrual-perdida-peso/) — Para mujeres
 
 **Comparativas** :
-- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
-- [Por qué las apps gratuitas fallan](/blog/apps-calorias-gratis-fallan/) — El verdadero coste
-- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — Comparativa detallada
+- [Cómo elegir una app de nutrición](/es/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
+- [Por qué las apps gratuitas fallan](/es/blog/apps-calorias-gratis-fallan/) — El verdadero coste
+- [LOWIS vs MyFitnessPal](/es/blog/lowis-vs-myfitnesspal/) — Comparativa detallada

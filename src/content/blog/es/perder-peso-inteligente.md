@@ -18,15 +18,15 @@ image: "perdre-poids-intelligemment/hero.webp"
 imageAlt: "Guía completa para perder peso de forma inteligente con ayuda de la IA"
 faq:
   - question: "¿Por qué fracasan el 95% de las dietas?"
-    answer: "Las dietas fracasan porque ignoran factores clave como el <a href='/blog/estres-perdida-peso/'>estrés</a> y el <a href='/blog/sueno-perdida-peso/'>sueño</a>. Descubre <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fallan</a> y cómo <a href='/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>."
+    answer: "Las dietas fracasan porque ignoran factores clave como el <a href='/es/blog/estres-perdida-peso/'>estrés</a> y el <a href='/es/blog/sueno-perdida-peso/'>sueño</a>. Descubre <a href='/es/blog/por-que-dietas-fallan/'>por qué las dietas fallan</a> y cómo <a href='/es/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>."
   - question: "¿Qué diferencia a un coach IA de las apps gratuitas?"
-    answer: "Las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque solo cuentan calorías. Un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA activo</a> analiza <a href='/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> incluyendo estrés, sueño y hormonas."
+    answer: "Las <a href='/es/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque solo cuentan calorías. Un <a href='/es/blog/coach-nutricion-ia-como-funciona/'>coach IA activo</a> analiza <a href='/es/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> incluyendo estrés, sueño y hormonas."
   - question: "¿El sueño y el estrés afectan la pérdida de peso?"
-    answer: "Sí, crucialmente. El <a href='/blog/sueno-perdida-peso/'>mal sueño aumenta el hambre un 15%</a> y el <a href='/blog/estres-perdida-peso/'>estrés bloquea la pérdida de peso</a>. El <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> ayuda a gestionar ambos."
+    answer: "Sí, crucialmente. El <a href='/es/blog/sueno-perdida-peso/'>mal sueño aumenta el hambre un 15%</a> y el <a href='/es/blog/estres-perdida-peso/'>estrés bloquea la pérdida de peso</a>. El <a href='/es/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> ayuda a gestionar ambos."
   - question: "¿Y para mujeres con ciclo menstrual?"
-    answer: "El <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo menstrual afecta la pérdida de peso</a> significativamente. LOWIS adapta las recomendaciones a cada fase, a diferencia de las apps tradicionales."
+    answer: "El <a href='/es/blog/ciclo-menstrual-perdida-peso/'>ciclo menstrual afecta la pérdida de peso</a> significativamente. LOWIS adapta las recomendaciones a cada fase, a diferencia de las apps tradicionales."
   - question: "¿Cómo elegir la mejor app de nutrición?"
-    answer: "Consulta nuestra <a href='/blog/como-elegir-app-nutricion/'>guía completa para elegir app de nutrición</a> y nuestros comparativos: <a href='/blog/lowis-vs-myfitnesspal/'>LOWIS vs MyFitnessPal</a>, <a href='/blog/lowis-vs-cal-ai/'>LOWIS vs Cal AI</a>."
+    answer: "Consulta nuestra <a href='/es/blog/como-elegir-app-nutricion/'>guía completa para elegir app de nutrición</a> y nuestros comparativos: <a href='/es/blog/lowis-vs-myfitnesspal/'>LOWIS vs MyFitnessPal</a>, <a href='/es/blog/lowis-vs-cal-ai/'>LOWIS vs Cal AI</a>."
 ---
 
 Perder peso es uno de los objetivos más comunes, pero también uno de los más difíciles de alcanzar de forma duradera. Si estás leyendo estas líneas, probablemente ya has probado varias dietas, descargado aplicaciones, y sentido la frustración de ver los kilos volver.
@@ -53,13 +53,13 @@ Empecemos con una verdad difícil de escuchar: **el 95% de las dietas fracasan**
 
 Las aplicaciones tradicionales te hacen contar calorías, pero ignoran factores cruciales:
 
-- Tu nivel de [estrés](/blog/estres-perdida-peso/)
+- Tu nivel de [estrés](/es/blog/estres-perdida-peso/)
 - Tu calidad de sueño
-- Tu [ciclo hormonal](/blog/ciclo-menstrual-perdida-peso/) (para las mujeres)
+- Tu [ciclo hormonal](/es/blog/ciclo-menstrual-perdida-peso/) (para las mujeres)
 - Tu digestión
 - Tu hidratación
 
-Resultado: cuentas religiosamente tus calorías, pero los resultados no llegan. Descubre [por qué las apps gratuitas no funcionan](/blog/apps-calorias-gratis-fallan/) para la mayoría de usuarios.
+Resultado: cuentas religiosamente tus calorías, pero los resultados no llegan. Descubre [por qué las apps gratuitas no funcionan](/es/blog/apps-calorias-gratis-fallan/) para la mayoría de usuarios.
 
 ## El enfoque inteligente: Comer mejor, no menos
 
@@ -103,7 +103,7 @@ La inteligencia artificial ha revolucionado muchos campos, y la nutrición no es
 
 ### IA pasiva vs IA activa
 
-No todas las "IA" son iguales. Descubre la diferencia entre un simple contador de calorías y un verdadero [coach IA que trabaja para ti](/blog/coach-nutricion-ia-como-funciona/).
+No todas las "IA" son iguales. Descubre la diferencia entre un simple contador de calorías y un verdadero [coach IA que trabaja para ti](/es/blog/coach-nutricion-ia-como-funciona/).
 
 **IA pasiva (apps clásicas):**
 - Reconoce los alimentos
@@ -148,7 +148,7 @@ Olvida las promesas de "perder 10 kg en 10 días". Un objetivo sano:
 ### Paso 3: Elegir las herramientas correctas
 
 No todas las herramientas son iguales. Compara las opciones disponibles:
-- [LOWIS vs Cal AI: Comparativa completa](/blog/lowis-vs-cal-ai/)
+- [LOWIS vs Cal AI: Comparativa completa](/es/blog/lowis-vs-cal-ai/)
 - Aplicaciones gratuitas vs de pago
 - Coaching humano vs IA
 
@@ -207,19 +207,19 @@ Sin dieta milagro, sin restricciones imposibles. Solo un enfoque inteligente, ad
 
 ### Continúa leyendo
 
-**En la categoría [Guías](/blog/guides/)** — Nuestras guías completas
+**En la categoría [Guías](/es/blog/guides/)** — Nuestras guías completas
 
 **Artículos esenciales para entender el enfoque** :
-- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
-- [Cómo evitar el efecto rebote](/blog/evitar-efecto-rebote/) — Mantener los resultados
-- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que debes seguir
+- [Por qué las dietas fracasan](/es/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [Cómo evitar el efecto rebote](/es/blog/evitar-efecto-rebote/) — Mantener los resultados
+- [Los 40+ indicadores que importan](/es/blog/40-indicadores-perdida-peso/) — Lo que debes seguir
 
 **Factores clave para perder peso** :
-- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Por qué 7h mínimo cambian todo
-- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Cortisol y sus efectos
-- [El ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) — Para mujeres
+- [El sueño y la pérdida de peso](/es/blog/sueno-perdida-peso/) — Por qué 7h mínimo cambian todo
+- [El estrés bloquea tu pérdida de peso](/es/blog/estres-perdida-peso/) — Cortisol y sus efectos
+- [El ciclo menstrual y la pérdida de peso](/es/blog/ciclo-menstrual-perdida-peso/) — Para mujeres
 
 **Elige la herramienta adecuada** :
-- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
-- [Por qué las apps gratuitas fallan](/blog/apps-calorias-gratis-fallan/) — El coste oculto
-- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — Comparativa detallada
+- [Cómo elegir una app de nutrición](/es/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
+- [Por qué las apps gratuitas fallan](/es/blog/apps-calorias-gratis-fallan/) — El coste oculto
+- [LOWIS vs MyFitnessPal](/es/blog/lowis-vs-myfitnesspal/) — Comparativa detallada

@@ -19,13 +19,13 @@ image: "effet-rebond-eviter/hero.webp"
 imageAlt: "How to avoid the rebound effect after a diet"
 faq:
   - question: "What is the rebound effect exactly?"
-    answer: "Weight regain after a diet, often more than lost. It's caused by metabolic adaptations that <a href='/blog/why-diets-fail/'>make diets fail</a>. <a href='/blog/stress-weight-loss/'>Stress</a> and <a href='/blog/sleep-weight-loss/'>poor sleep</a> make it worse."
+    answer: "Weight regain after a diet, often more than lost. It's caused by metabolic adaptations that <a href='/en/blog/why-diets-fail/'>make diets fail</a>. <a href='/en/blog/stress-weight-loss/'>Stress</a> and <a href='/en/blog/sleep-weight-loss/'>poor sleep</a> make it worse."
   - question: "Why do you regain more weight than before the diet?"
-    answer: "Your metabolism slows while hunger hormones rise. An <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> tracks these <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> to prevent this. For women, the <a href='/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> adds complexity."
+    answer: "Your metabolism slows while hunger hormones rise. An <a href='/en/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> tracks these <a href='/en/blog/40-indicators-weight-loss/'>40+ indicators</a> to prevent this. For women, the <a href='/en/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> adds complexity."
   - question: "How to avoid the rebound effect?"
-    answer: "Moderate deficit, slow loss, stabilization phase, long-term support. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> and learn <a href='/blog/how-to-choose-nutrition-app/'>how to choose a nutrition app</a> that supports you post-goal."
+    answer: "Moderate deficit, slow loss, stabilization phase, long-term support. Read our <a href='/en/blog/smart-weight-loss-guide/'>complete guide</a> and learn <a href='/en/blog/how-to-choose-nutrition-app/'>how to choose a nutrition app</a> that supports you post-goal."
   - question: "How long does the stabilization phase last?"
-    answer: "At least 4-6 weeks. It's a crucial step that <a href='/blog/free-calorie-apps-fail/'>free apps ignore</a>. The <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> helps maintain new habits during this critical phase."
+    answer: "At least 4-6 weeks. It's a crucial step that <a href='/en/blog/free-calorie-apps-fail/'>free apps ignore</a>. The <a href='/en/blog/audio-program-reprogram-brain/'>Audio Program</a> helps maintain new habits during this critical phase."
 ---
 
 You lost 10 kg. Congratulations! Six months later, you've regained 12. It's the story of millions of people.
@@ -139,7 +139,7 @@ It serves to:
 
 The biggest success factor: **not being alone**.
 
-That's why an [AI coach that follows you over time](/blog/ai-nutrition-coach-how-it-works/) makes all the difference.
+That's why an [AI coach that follows you over time](/en/blog/ai-nutrition-coach-how-it-works/) makes all the difference.
 
 ## How LOWIS prevents the rebound effect
 
@@ -208,23 +208,23 @@ In 2 minutes, get a plan that takes into account your unique metabolism and prep
 
 ### Continue Reading
 
-**In the category [Guides](/blog/guides/)** — Our complete guides
+**In the category [Guides](/en/blog/guides/)** — Our complete guides
 
 **Essential guides**:
-- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
-- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
-- [Why free calorie apps fail](/blog/free-calorie-apps-fail/) — The real cost
+- [Complete smart weight loss guide](/en/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/en/blog/why-diets-fail/) — The science behind failure
+- [Why free calorie apps fail](/en/blog/free-calorie-apps-fail/) — The real cost
 
 **Key factors that affect your weight**:
-- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
-- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
-- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+- [Sleep and weight loss](/en/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/en/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/en/blog/menstrual-cycle-weight-loss/) — For women
 
 **LOWIS technology**:
-- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
-- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
-- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success
+- [The 40+ indicators that matter](/en/blog/40-indicators-weight-loss/) — What we analyze
+- [How the AI coach works](/en/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [Audio Program to reprogram your brain](/en/blog/audio-program-reprogram-brain/) — Mental is 80% of success
 
 **Compare apps**:
-- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
-- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — Detailed comparison
+- [How to choose a nutrition app](/en/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
+- [LOWIS vs MyFitnessPal](/en/blog/lowis-vs-myfitnesspal/) — Detailed comparison

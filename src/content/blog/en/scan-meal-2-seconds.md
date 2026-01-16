@@ -19,15 +19,15 @@ image: "scanner-plat-2-secondes/hero.webp"
 imageAlt: "Scan a meal with LOWIS AI in 2 seconds"
 faq:
   - question: "Does the AI recognize Moroccan dishes?"
-    answer: "Yes! LOWIS has 500+ Moroccan recipes. Tagine, couscous, harira, pastilla, msemen... Our <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> recognizes everything automatically."
+    answer: "Yes! LOWIS has 500+ Moroccan recipes. Tagine, couscous, harira, pastilla, msemen... Our <a href='/en/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> recognizes everything automatically."
   - question: "What if the AI gets the portions wrong?"
-    answer: "Adjust in a few taps. The AI learns from your corrections. That's what makes LOWIS better than <a href='/blog/lowis-vs-cal-ai/'>Cal AI</a> and <a href='/blog/lowis-vs-myfitnesspal/'>MyFitnessPal</a>."
+    answer: "Adjust in a few taps. The AI learns from your corrections. That's what makes LOWIS better than <a href='/en/blog/lowis-vs-cal-ai/'>Cal AI</a> and <a href='/en/blog/lowis-vs-myfitnesspal/'>MyFitnessPal</a>."
   - question: "Do I need to scan each ingredient separately?"
-    answer: "No! The AI recognizes complete dishes. It analyzes <a href='/blog/40-indicators-weight-loss/'>40+ nutritional indicators</a> from a single photo."
+    answer: "No! The AI recognizes complete dishes. It analyzes <a href='/en/blog/40-indicators-weight-loss/'>40+ nutritional indicators</a> from a single photo."
   - question: "Does the scanner work offline?"
-    answer: "Initial scan needs internet. But saved dishes are accessible offline. Read <a href='/blog/how-to-choose-nutrition-app/'>how to choose</a> the best app for your needs."
+    answer: "Initial scan needs internet. But saved dishes are accessible offline. Read <a href='/en/blog/how-to-choose-nutrition-app/'>how to choose</a> the best app for your needs."
   - question: "What is the scanner's accuracy?"
-    answer: "±10-20% depending on dish complexity — comparable to manual estimates. What matters is consistency. Read <a href='/blog/free-calorie-apps-fail/'>why manual apps fail</a> (15 min/meal!)."
+    answer: "±10-20% depending on dish complexity — comparable to manual estimates. What matters is consistency. Read <a href='/en/blog/free-calorie-apps-fail/'>why manual apps fail</a> (15 min/meal!)."
 ---
 
 Gone are the days when counting calories took 15 minutes per meal. With LOWIS, **one photo is enough**.
@@ -179,7 +179,7 @@ The scan doesn't stop at calories. LOWIS also analyzes:
 - **Sugars**: Added vs natural
 - **Sodium**: For those watching salt
 
-This information feeds the personalized recommendations from your [AI coach](/blog/ai-nutrition-coach-how-it-works/).
+This information feeds the personalized recommendations from your [AI coach](/en/blog/ai-nutrition-coach-how-it-works/).
 
 ## Comparison: LOWIS scan vs other methods
 
@@ -237,20 +237,20 @@ No credit card. No commitment. Just a better way to track your nutrition.
 
 ### Continue Reading
 
-**In the category [Tips](/blog/astuces/)** — Our practical tips
+**In the category [Tips](/en/blog/astuces/)** — Our practical tips
 
 **LOWIS technology**:
-- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
-- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
-- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success
+- [How the AI coach works](/en/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [The 40+ indicators that matter](/en/blog/40-indicators-weight-loss/) — What we analyze
+- [Audio Program to reprogram your brain](/en/blog/audio-program-reprogram-brain/) — Mental is 80% of success
 
 **Compare scanning apps**:
-- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — AI scanning comparison
-- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — The counting giant
-- [Why free apps fail](/blog/free-calorie-apps-fail/) — The real cost
-- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
+- [LOWIS vs Cal AI](/en/blog/lowis-vs-cal-ai/) — AI scanning comparison
+- [LOWIS vs MyFitnessPal](/en/blog/lowis-vs-myfitnesspal/) — The counting giant
+- [Why free apps fail](/en/blog/free-calorie-apps-fail/) — The real cost
+- [How to choose a nutrition app](/en/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
 
 **Essential guides**:
-- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
-- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
-- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results
+- [Complete smart weight loss guide](/en/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/en/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/en/blog/avoid-weight-rebound/) — Keep your results

@@ -19,15 +19,15 @@ image: "effet-rebond-eviter/hero.webp"
 imageAlt: "Cómo evitar el efecto rebote después de una dieta"
 faq:
   - question: "¿Qué es exactamente el efecto rebote?"
-    answer: "El efecto rebote es recuperar peso tras una dieta, a menudo más que el perdido. Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>. Nuestra <a href='/blog/perder-peso-inteligente/'>guía completa</a> explica el enfoque que funciona."
+    answer: "El efecto rebote es recuperar peso tras una dieta, a menudo más que el perdido. Es <a href='/es/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>. Nuestra <a href='/es/blog/perder-peso-inteligente/'>guía completa</a> explica el enfoque que funciona."
   - question: "¿Por qué se recupera peso tras una dieta?"
-    answer: "El <a href='/blog/estres-perdida-peso/'>estrés aumenta</a>, el <a href='/blog/sueno-perdida-peso/'>sueño se altera</a>, y las hormonas del hambre se disparan. Un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> detecta estas señales antes del rebote."
+    answer: "El <a href='/es/blog/estres-perdida-peso/'>estrés aumenta</a>, el <a href='/es/blog/sueno-perdida-peso/'>sueño se altera</a>, y las hormonas del hambre se disparan. Un <a href='/es/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> detecta estas señales antes del rebote."
   - question: "¿Cómo evitar el efecto rebote?"
-    answer: "El <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> reprograma tu relación con la comida. El <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> analiza <a href='/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> para prevenir el rebote."
+    answer: "El <a href='/es/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> reprograma tu relación con la comida. El <a href='/es/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> analiza <a href='/es/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> para prevenir el rebote."
   - question: "¿Las apps normales ayudan a evitar el rebote?"
-    answer: "No, las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque abandonan tras la pérdida. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> que te acompañe a largo plazo."
+    answer: "No, las <a href='/es/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque abandonan tras la pérdida. Consulta <a href='/es/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> que te acompañe a largo plazo."
   - question: "¿El ciclo menstrual afecta el efecto rebote?"
-    answer: "Sí, el <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal causa fluctuaciones</a> que parecen rebote pero no lo son. LOWIS distingue retención de agua de grasa real."
+    answer: "Sí, el <a href='/es/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal causa fluctuaciones</a> que parecen rebote pero no lo son. LOWIS distingue retención de agua de grasa real."
 ---
 
 Has perdido 10 kg. ¡Felicidades! Seis meses después, has recuperado 12. Es la historia de millones de personas.
@@ -141,7 +141,7 @@ Sirve para:
 
 El mayor factor de éxito: **no estar solo**.
 
-Por eso un [coach IA que te siga en el tiempo](/blog/coach-nutricion-ia-como-funciona/) marca toda la diferencia.
+Por eso un [coach IA que te siga en el tiempo](/es/blog/coach-nutricion-ia-como-funciona/) marca toda la diferencia.
 
 ## Cómo LOWIS previene el efecto rebote
 
@@ -210,19 +210,19 @@ En 2 minutos, obtén un plan que tiene en cuenta tu metabolismo único y te prep
 
 ### Continúa leyendo
 
-**En la categoría [Guías](/blog/guides/)** — Nuestras guías completas
+**En la categoría [Guías](/es/blog/guides/)** — Nuestras guías completas
 
 **Artículos esenciales para entender el enfoque** :
-- [Guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/) — El enfoque que funciona
-- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
-- [Audio Program para reprogramar tu cerebro](/blog/audio-program-reprogramar-cerebro/) — El mental es clave
+- [Guía completa para perder peso de forma inteligente](/es/blog/perder-peso-inteligente/) — El enfoque que funciona
+- [Por qué las dietas fracasan](/es/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [Audio Program para reprogramar tu cerebro](/es/blog/audio-program-reprogramar-cerebro/) — El mental es clave
 
 **Factores que causan el rebote** :
-- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Por qué 7h mínimo cambian todo
-- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Cortisol y sus efectos
-- [El ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) — Fluctuaciones vs rebote
+- [El sueño y la pérdida de peso](/es/blog/sueno-perdida-peso/) — Por qué 7h mínimo cambian todo
+- [El estrés bloquea tu pérdida de peso](/es/blog/estres-perdida-peso/) — Cortisol y sus efectos
+- [El ciclo menstrual y la pérdida de peso](/es/blog/ciclo-menstrual-perdida-peso/) — Fluctuaciones vs rebote
 
 **Tecnología para prevenir el rebote** :
-- [Cómo funciona el coach IA](/blog/coach-nutricion-ia-como-funciona/) — Detección precoz de señales
-- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que LOWIS analiza
-- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios
+- [Cómo funciona el coach IA](/es/blog/coach-nutricion-ia-como-funciona/) — Detección precoz de señales
+- [Los 40+ indicadores que importan](/es/blog/40-indicadores-perdida-peso/) — Lo que LOWIS analiza
+- [Cómo elegir una app de nutrición](/es/blog/como-elegir-app-nutricion/) — Los 7 criterios

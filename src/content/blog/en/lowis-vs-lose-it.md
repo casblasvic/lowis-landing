@@ -23,13 +23,13 @@ comparisonLogos:
   competitorName: "Lose It!"
 faq:
   - question: "What's the difference between LOWIS and Lose It!?"
-    answer: "Lose It! counts calories. LOWIS is an <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> analyzing <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> including <a href='/blog/sleep-weight-loss/'>sleep</a>, <a href='/blog/stress-weight-loss/'>stress</a>, and <a href='/blog/menstrual-cycle-weight-loss/'>cycle</a>."
+    answer: "Lose It! counts calories. LOWIS is an <a href='/en/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> analyzing <a href='/en/blog/40-indicators-weight-loss/'>40+ indicators</a> including <a href='/en/blog/sleep-weight-loss/'>sleep</a>, <a href='/en/blog/stress-weight-loss/'>stress</a>, and <a href='/en/blog/menstrual-cycle-weight-loss/'>cycle</a>."
   - question: "Is Lose It! free?"
-    answer: "Lose It! has a limited free version with ads. Read <a href='/blog/free-calorie-apps-fail/'>why free apps fail</a> and <a href='/blog/how-to-choose-nutrition-app/'>how to choose</a> an app that works."
+    answer: "Lose It! has a limited free version with ads. Read <a href='/en/blog/free-calorie-apps-fail/'>why free apps fail</a> and <a href='/en/blog/how-to-choose-nutrition-app/'>how to choose</a> an app that works."
   - question: "Why do calorie counters lead to weight rebound?"
-    answer: "Counting alone doesn't address the <a href='/blog/avoid-weight-rebound/'>rebound effect</a>. It's <a href='/blog/why-diets-fail/'>why diets fail</a>. LOWIS includes the <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> for lasting change."
+    answer: "Counting alone doesn't address the <a href='/en/blog/avoid-weight-rebound/'>rebound effect</a>. It's <a href='/en/blog/why-diets-fail/'>why diets fail</a>. LOWIS includes the <a href='/en/blog/audio-program-reprogram-brain/'>Audio Program</a> for lasting change."
   - question: "Does Lose It! help women with cycle-related weight?"
-    answer: "No. The <a href='/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> affects weight by 1-3kg. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> for women-specific strategies."
+    answer: "No. The <a href='/en/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> affects weight by 1-3kg. Read our <a href='/en/blog/smart-weight-loss-guide/'>complete guide</a> for women-specific strategies."
 ---
 
 Lose It! is one of the most downloaded weight loss apps in the United States. Its slogan? "Simple, fun, and effective." But is it really effective for international users? And most importantly, is it the best option for YOU?
@@ -216,21 +216,21 @@ Try LOWIS free for 7 days, no credit card required. In 2 minutes, discover what 
 
 ### Continue Reading
 
-**In the category [Comparisons](/blog/comparatifs/)** — All our app comparisons
+**In the category [Comparisons](/en/blog/comparatifs/)** — All our app comparisons
 
 **Other app comparisons**:
-- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — The counting giant
-- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — AI scanning comparison
-- [LOWIS vs Yazio](/blog/lowis-vs-yazio/) — Popular in Europe
-- [Why free apps fail](/blog/free-calorie-apps-fail/) — The real cost
-- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
+- [LOWIS vs MyFitnessPal](/en/blog/lowis-vs-myfitnesspal/) — The counting giant
+- [LOWIS vs Cal AI](/en/blog/lowis-vs-cal-ai/) — AI scanning comparison
+- [LOWIS vs Yazio](/en/blog/lowis-vs-yazio/) — Popular in Europe
+- [Why free apps fail](/en/blog/free-calorie-apps-fail/) — The real cost
+- [How to choose a nutrition app](/en/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
 
 **Key factors Lose It! ignores**:
-- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
-- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
-- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+- [Sleep and weight loss](/en/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/en/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/en/blog/menstrual-cycle-weight-loss/) — For women
 
 **Essential guides**:
-- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
-- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
-- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results
+- [Complete smart weight loss guide](/en/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/en/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/en/blog/avoid-weight-rebound/) — Keep your results

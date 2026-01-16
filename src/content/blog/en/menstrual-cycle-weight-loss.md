@@ -18,17 +18,17 @@ image: "cycle-menstruel/hero.png"
 imageAlt: "Menstrual cycle and weight loss - How to adapt nutrition to each phase"
 faq:
   - question: "Why do I gain weight before my period?"
-    answer: "It's water retention, NOT fat. It's one of the <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> tracked by LOWIS. Combined with <a href='/blog/stress-weight-loss/'>stress</a> and <a href='/blog/sleep-weight-loss/'>poor sleep</a>, it's <a href='/blog/why-diets-fail/'>why diets fail</a> for women."
+    answer: "It's water retention, NOT fat. It's one of the <a href='/en/blog/40-indicators-weight-loss/'>40+ indicators</a> tracked by LOWIS. Combined with <a href='/en/blog/stress-weight-loss/'>stress</a> and <a href='/en/blog/sleep-weight-loss/'>poor sleep</a>, it's <a href='/en/blog/why-diets-fail/'>why diets fail</a> for women."
   - question: "Can I lose weight during my period?"
-    answer: "Yes! After day 1-2, hormones are low, reducing cravings. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> and learn how to <a href='/blog/avoid-weight-rebound/'>avoid weight rebound</a> with cycle-adapted strategies."
+    answer: "Yes! After day 1-2, hormones are low, reducing cravings. Read our <a href='/en/blog/smart-weight-loss-guide/'>complete guide</a> and learn how to <a href='/en/blog/avoid-weight-rebound/'>avoid weight rebound</a> with cycle-adapted strategies."
   - question: "How do I adapt my diet to my cycle?"
-    answer: "An <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> automatically adapts to your phase. The <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> also helps manage cycle-related cravings without guilt."
+    answer: "An <a href='/en/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> automatically adapts to your phase. The <a href='/en/blog/audio-program-reprogram-brain/'>Audio Program</a> also helps manage cycle-related cravings without guilt."
   - question: "Why am I hungrier before my period?"
-    answer: "Progesterone naturally increases appetite (+200-500 cal/day). It's biological! <a href='/blog/free-calorie-apps-fail/'>Free apps fail</a> because they ignore this. See <a href='/blog/how-to-choose-nutrition-app/'>how to choose a nutrition app</a> that understands women."
+    answer: "Progesterone naturally increases appetite (+200-500 cal/day). It's biological! <a href='/en/blog/free-calorie-apps-fail/'>Free apps fail</a> because they ignore this. See <a href='/en/blog/how-to-choose-nutrition-app/'>how to choose a nutrition app</a> that understands women."
   - question: "Does stress affect my cycle and weight?"
-    answer: "Yes, <a href='/blog/stress-weight-loss/'>stress increases cortisol</a> which disrupts hormones. Poor <a href='/blog/sleep-weight-loss/'>sleep</a> makes it worse. LOWIS tracks these <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> together."
+    answer: "Yes, <a href='/en/blog/stress-weight-loss/'>stress increases cortisol</a> which disrupts hormones. Poor <a href='/en/blog/sleep-weight-loss/'>sleep</a> makes it worse. LOWIS tracks these <a href='/en/blog/40-indicators-weight-loss/'>40+ indicators</a> together."
   - question: "Should I avoid weighing myself during my period?"
-    answer: "Weigh yourself at the same point in your cycle (e.g., day 7-10). LOWIS shows real trends, not hormonal fluctuations. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> for smart weighing strategies."
+    answer: "Weigh yourself at the same point in your cycle (e.g., day 7-10). LOWIS shows real trends, not hormonal fluctuations. Read our <a href='/en/blog/smart-weight-loss-guide/'>complete guide</a> for smart weighing strategies."
 ---
 
 If you're a woman trying to lose weight, you've probably experienced this frustrating scenario:
@@ -209,7 +209,7 @@ Week 4 (luteal): +2 kg ✗ "I'M QUITTING."
 
 ### Mistake 3: Ignoring sleep and stress
 
-**The problem:** [Poor sleep](/blog/sleep-weight-loss/) and high stress amplify hormonal symptoms and cravings.
+**The problem:** [Poor sleep](/en/blog/sleep-weight-loss/) and high stress amplify hormonal symptoms and cravings.
 
 **The solution:**
 - Prioritize 7-8h of sleep in the luteal phase
@@ -296,19 +296,19 @@ No one-size-fits-all diet. Just an approach that respects your body.
 
 ### Continue Reading
 
-**In the category [Women's Health](/blog/sante-femme/)** — All our women's health articles
+**In the category [Women's Health](/en/blog/sante-femme/)** — All our women's health articles
 
 **Key factors that affect your weight**:
-- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
-- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
-- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success
+- [Sleep and weight loss](/en/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/en/blog/stress-weight-loss/) — Cortisol and its effects
+- [Audio Program to reprogram your brain](/en/blog/audio-program-reprogram-brain/) — Mental is 80% of success
 
 **Essential guides**:
-- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
-- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
-- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results
+- [Complete smart weight loss guide](/en/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/en/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/en/blog/avoid-weight-rebound/) — Keep your results
 
 **LOWIS technology**:
-- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
-- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
-- [Scan meals in 2 seconds](/blog/scan-meal-2-seconds/) — Easy meal tracking
+- [The 40+ indicators that matter](/en/blog/40-indicators-weight-loss/) — What we analyze
+- [How the AI coach works](/en/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [Scan meals in 2 seconds](/en/blog/scan-meal-2-seconds/) — Easy meal tracking

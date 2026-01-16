@@ -23,15 +23,15 @@ comparisonLogos:
   competitorName: "Cal AI"
 faq:
   - question: "¿Cuál es la diferencia principal entre LOWIS y Cal AI?"
-    answer: "Cal AI es un contador pasivo que te deja hacer el trabajo. LOWIS es un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA activo</a> que analiza <a href='/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> y te guía hacia tus objetivos."
+    answer: "Cal AI es un contador pasivo que te deja hacer el trabajo. LOWIS es un <a href='/es/blog/coach-nutricion-ia-como-funciona/'>coach IA activo</a> que analiza <a href='/es/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> y te guía hacia tus objetivos."
   - question: "¿Cal AI es realmente más barato que LOWIS?"
-    answer: "Cal AI requiere 15+ min/día de trabajo manual. Las <a href='/blog/apps-calorias-gratis-fallan/'>apps de conteo manual cuestan tiempo</a>. Con LOWIS, <a href='/blog/escanear-plato-2-segundos/'>escaneas en 2 segundos</a> y ahorras horas cada mes."
+    answer: "Cal AI requiere 15+ min/día de trabajo manual. Las <a href='/es/blog/apps-calorias-gratis-fallan/'>apps de conteo manual cuestan tiempo</a>. Con LOWIS, <a href='/es/blog/escanear-plato-2-segundos/'>escaneas en 2 segundos</a> y ahorras horas cada mes."
   - question: "¿Cal AI reconoce los platos marroquíes y españoles?"
-    answer: "Cal AI tiene base de datos americana. Los platos tradicionales están mal reconocidos. LOWIS incluye +500 recetas locales y entiende el <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo menstrual</a> y otros factores ignorados."
+    answer: "Cal AI tiene base de datos americana. Los platos tradicionales están mal reconocidos. LOWIS incluye +500 recetas locales y entiende el <a href='/es/blog/ciclo-menstrual-perdida-peso/'>ciclo menstrual</a> y otros factores ignorados."
   - question: "¿LOWIS usa realmente IA?"
-    answer: "Sí, LOWIS usa IA avanzada que analiza <a href='/blog/sueno-perdida-peso/'>sueño</a>, <a href='/blog/estres-perdida-peso/'>estrés</a>, <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal</a> y proporciona recomendaciones personalizadas. No solo calorías."
+    answer: "Sí, LOWIS usa IA avanzada que analiza <a href='/es/blog/sueno-perdida-peso/'>sueño</a>, <a href='/es/blog/estres-perdida-peso/'>estrés</a>, <a href='/es/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal</a> y proporciona recomendaciones personalizadas. No solo calorías."
   - question: "¿Por qué las apps baratas no funcionan?"
-    answer: "Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>: ignoran factores clave. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app de nutrición</a> para los 7 criterios esenciales."
+    answer: "Es <a href='/es/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>: ignoran factores clave. Consulta <a href='/es/blog/como-elegir-app-nutricion/'>cómo elegir una app de nutrición</a> para los 7 criterios esenciales."
 ---
 
 Probablemente ya has oído hablar de Cal AI, la aplicación de conteo de calorías que promete escanear tus comidas con una foto. Pero, ¿es realmente la mejor opción? Spoiler: no necesariamente.
@@ -67,7 +67,7 @@ Estos problemas aparecen constantemente:
 - **Errores de cálculo** importantes
 - **Ningún soporte al cliente** accesible
 
-Si has vivido estas frustraciones, no estás solo. Y es exactamente por eso que [tanta gente busca una alternativa a Cal AI](/blog/apps-calorias-gratis-fallan/).
+Si has vivido estas frustraciones, no estás solo. Y es exactamente por eso que [tanta gente busca una alternativa a Cal AI](/es/blog/apps-calorias-gratis-fallan/).
 
 ## La verdadera diferencia: IA pasiva vs IA activa
 
@@ -149,8 +149,8 @@ Es como comparar un **entrenador personal** con un **cuaderno de notas**. Los do
 |---------------|-------|--------|
 | Coach IA personalizado | ✅ | ❌ |
 | Indicadores seguidos | 40+ | Solo calorías |
-| Adaptación al [ciclo](/blog/ciclo-menstrual-perdida-peso/) | ✅ | ❌ |
-| Gestión del [estrés](/blog/estres-perdida-peso/) | ✅ | ❌ |
+| Adaptación al [ciclo](/es/blog/ciclo-menstrual-perdida-peso/) | ✅ | ❌ |
+| Gestión del [estrés](/es/blog/estres-perdida-peso/) | ✅ | ❌ |
 | Recomendaciones activas | ✅ | ❌ |
 | Plan validado por nutricionistas | ✅ | ❌ |
 
@@ -221,18 +221,18 @@ Sin trampa, sin compromiso. Solo una oportunidad de ver si LOWIS es para ti.
 
 ### Continúa leyendo
 
-**En la categoría [Comparativas](/blog/comparatifs/)** — Nuestras comparaciones detalladas
+**En la categoría [Comparativas](/es/blog/comparatifs/)** — Nuestras comparaciones detalladas
 
 **Otras comparativas de apps** :
-- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — El gigante del conteo
-- [LOWIS vs Yazio](/blog/lowis-vs-yazio/) — Popular en Europa
-- [LOWIS vs Lose It!](/blog/lowis-vs-lose-it/) — La app americana
+- [LOWIS vs MyFitnessPal](/es/blog/lowis-vs-myfitnesspal/) — El gigante del conteo
+- [LOWIS vs Yazio](/es/blog/lowis-vs-yazio/) — Popular en Europa
+- [LOWIS vs Lose It!](/es/blog/lowis-vs-lose-it/) — La app americana
 
 **Guías para elegir bien** :
-- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
-- [Por qué las apps gratuitas fallan](/blog/apps-calorias-gratis-fallan/) — El verdadero coste
+- [Cómo elegir una app de nutrición](/es/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
+- [Por qué las apps gratuitas fallan](/es/blog/apps-calorias-gratis-fallan/) — El verdadero coste
 
 **Tecnología LOWIS** :
-- [Escanear platos en 2 segundos](/blog/escanear-plato-2-segundos/) — La tecnología de reconocimiento
-- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que analizamos
-- [Cómo funciona el coach IA](/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
+- [Escanear platos en 2 segundos](/es/blog/escanear-plato-2-segundos/) — La tecnología de reconocimiento
+- [Los 40+ indicadores que importan](/es/blog/40-indicadores-perdida-peso/) — Lo que analizamos
+- [Cómo funciona el coach IA](/es/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás

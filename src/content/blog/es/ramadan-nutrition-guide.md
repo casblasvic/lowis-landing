@@ -19,13 +19,13 @@ image: "ramadan-nutrition-guide/hero.webp"
 imageAlt: "Guía nutricional completa para el Ramadán - Iftar y Suhur equilibrados"
 faq:
   - question: "¿Se puede perder peso durante el Ramadán?"
-    answer: "Sí, con el enfoque correcto. Lee la <a href='/blog/perder-peso-inteligente/'>guía completa para perder peso</a> y cómo <a href='/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a> post-Ramadán."
+    answer: "Sí, con el enfoque correcto. Lee la <a href='/es/blog/perder-peso-inteligente/'>guía completa para perder peso</a> y cómo <a href='/es/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a> post-Ramadán."
   - question: "¿El sueño afecta al ayuno?"
-    answer: "Sí, el <a href='/blog/sueno-perdida-peso/'>sueño es crucial</a> para controlar el hambre y la energía. Un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> adapta las recomendaciones a tu situación."
+    answer: "Sí, el <a href='/es/blog/sueno-perdida-peso/'>sueño es crucial</a> para controlar el hambre y la energía. Un <a href='/es/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> adapta las recomendaciones a tu situación."
   - question: "¿El estrés aumenta durante el Ramadán?"
-    answer: "Puede. Descubre cómo el <a href='/blog/estres-perdida-peso/'>estrés bloquea la pérdida de peso</a>. El <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> ayuda con la gestión mental."
+    answer: "Puede. Descubre cómo el <a href='/es/blog/estres-perdida-peso/'>estrés bloquea la pérdida de peso</a>. El <a href='/es/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> ayuda con la gestión mental."
   - question: "¿Cómo elijo una app para el Ramadán?"
-    answer: "Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app de nutrición</a>. Las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque ignoran el contexto del ayuno."
+    answer: "Consulta <a href='/es/blog/como-elegir-app-nutricion/'>cómo elegir una app de nutrición</a>. Las <a href='/es/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque ignoran el contexto del ayuno."
 ---
 
 El Ramadán se acerca. Y como cada año, te haces la misma pregunta: **¿cómo ayunar sin engordar, sin estar agotado, y manteniendo tu energía?**
@@ -220,19 +220,19 @@ Obtén tu plan personalizado para el Ramadán en 2 minutos. LOWIS calcula tus ne
 
 ### Continúa leyendo
 
-**En la categoría [Guías](/blog/guides/)** — Nuestras guías completas
+**En la categoría [Guías](/es/blog/guides/)** — Nuestras guías completas
 
 **Factores clave durante el Ramadán** :
-- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Crucial durante el ayuno
-- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Gestión del cortisol
-- [Audio Program para reprogramar tu cerebro](/blog/audio-program-reprogramar-cerebro/) — Gestión mental
+- [El sueño y la pérdida de peso](/es/blog/sueno-perdida-peso/) — Crucial durante el ayuno
+- [El estrés bloquea tu pérdida de peso](/es/blog/estres-perdida-peso/) — Gestión del cortisol
+- [Audio Program para reprogramar tu cerebro](/es/blog/audio-program-reprogramar-cerebro/) — Gestión mental
 
 **Después del Ramadán** :
-- [Guía completa para perder peso](/blog/perder-peso-inteligente/) — Mantener los resultados
-- [Cómo evitar el efecto rebote](/blog/evitar-efecto-rebote/) — No recuperar los kilos
-- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [Guía completa para perder peso](/es/blog/perder-peso-inteligente/) — Mantener los resultados
+- [Cómo evitar el efecto rebote](/es/blog/evitar-efecto-rebote/) — No recuperar los kilos
+- [Por qué las dietas fracasan](/es/blog/por-que-dietas-fallan/) — La ciencia del fracaso
 
 **Tecnología LOWIS** :
-- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que analizamos
-- [Cómo funciona el coach IA](/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
-- [Escanear platos en 2 segundos](/blog/escanear-plato-2-segundos/) — Fácil durante el iftar
+- [Los 40+ indicadores que importan](/es/blog/40-indicadores-perdida-peso/) — Lo que analizamos
+- [Cómo funciona el coach IA](/es/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
+- [Escanear platos en 2 segundos](/es/blog/escanear-plato-2-segundos/) — Fácil durante el iftar

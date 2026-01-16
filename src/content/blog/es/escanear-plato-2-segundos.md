@@ -19,13 +19,13 @@ image: "scanner-plat-2-secondes/hero.webp"
 imageAlt: "Escanear una comida con la IA LOWIS en 2 segundos"
 faq:
   - question: "¿La IA reconoce los platos marroquíes?"
-    answer: "¡Sí! LOWIS incluye +500 recetas marroquíes y platos tradicionales. El <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> analiza <a href='/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> además de las calorías."
+    answer: "¡Sí! LOWIS incluye +500 recetas marroquíes y platos tradicionales. El <a href='/es/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> analiza <a href='/es/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> además de las calorías."
   - question: "¿Por qué el escaneo es mejor que el conteo manual?"
-    answer: "Las <a href='/blog/apps-calorias-gratis-fallan/'>apps de conteo manual fallan</a> por el tiempo necesario. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> para los 7 criterios."
+    answer: "Las <a href='/es/blog/apps-calorias-gratis-fallan/'>apps de conteo manual fallan</a> por el tiempo necesario. Consulta <a href='/es/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> para los 7 criterios."
   - question: "¿Qué analiza LOWIS además de las calorías?"
-    answer: "El <a href='/blog/sueno-perdida-peso/'>sueño</a>, el <a href='/blog/estres-perdida-peso/'>estrés</a>, el <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo menstrual</a>. Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a> sin estos factores."
+    answer: "El <a href='/es/blog/sueno-perdida-peso/'>sueño</a>, el <a href='/es/blog/estres-perdida-peso/'>estrés</a>, el <a href='/es/blog/ciclo-menstrual-perdida-peso/'>ciclo menstrual</a>. Es <a href='/es/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a> sin estos factores."
   - question: "¿Cómo uso el escaneo para perder peso?"
-    answer: "Lee la <a href='/blog/perder-peso-inteligente/'>guía completa</a> y cómo <a href='/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>. El <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> complementa el enfoque."
+    answer: "Lee la <a href='/es/blog/perder-peso-inteligente/'>guía completa</a> y cómo <a href='/es/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>. El <a href='/es/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> complementa el enfoque."
 ---
 
 Se acabó el tiempo en que contar calorías llevaba 15 minutos por comida. Con LOWIS, **una foto es suficiente**.
@@ -177,7 +177,7 @@ El escaneo no se detiene en las calorías. LOWIS también analiza:
 - **Azúcares**: Añadidos vs naturales
 - **Sodio**: Para quienes vigilan la sal
 
-Esta información alimenta las recomendaciones personalizadas de tu [coach IA](/blog/coach-nutricion-ia-como-funciona/).
+Esta información alimenta las recomendaciones personalizadas de tu [coach IA](/es/blog/coach-nutricion-ia-como-funciona/).
 
 ## Comparación: Escaneo LOWIS vs otros métodos
 
@@ -235,18 +235,18 @@ Sin tarjeta bancaria. Sin compromiso. Solo una mejor manera de seguir tu aliment
 
 ### Continúa leyendo
 
-**En la categoría [Trucos](/blog/astuces/)** — Consejos prácticos
+**En la categoría [Trucos](/es/blog/astuces/)** — Consejos prácticos
 
 **Tecnología LOWIS** :
-- [Cómo funciona el coach IA](/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
-- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que analizamos
+- [Cómo funciona el coach IA](/es/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
+- [Los 40+ indicadores que importan](/es/blog/40-indicadores-perdida-peso/) — Lo que analizamos
 
 **Comparativas de apps** :
-- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
-- [Por qué las apps gratuitas fallan](/blog/apps-calorias-gratis-fallan/) — El verdadero coste
-- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — Comparativa detallada
+- [Cómo elegir una app de nutrición](/es/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
+- [Por qué las apps gratuitas fallan](/es/blog/apps-calorias-gratis-fallan/) — El verdadero coste
+- [LOWIS vs MyFitnessPal](/es/blog/lowis-vs-myfitnesspal/) — Comparativa detallada
 
 **Guías esenciales** :
-- [Guía completa para perder peso](/blog/perder-peso-inteligente/) — El enfoque que funciona
-- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
-- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Factor ignorado
+- [Guía completa para perder peso](/es/blog/perder-peso-inteligente/) — El enfoque que funciona
+- [Por qué las dietas fracasan](/es/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [El sueño y la pérdida de peso](/es/blog/sueno-perdida-peso/) — Factor ignorado

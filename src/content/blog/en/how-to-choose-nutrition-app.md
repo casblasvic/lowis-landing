@@ -18,13 +18,13 @@ image: "choisir-application-nutrition/hero.webp"
 imageAlt: "How to choose the best nutrition tracking app"
 faq:
   - question: "What is the best nutrition app in 2026?"
-    answer: "For complete tracking, LOWIS offers an <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> with <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a>. Compare: <a href='/blog/lowis-vs-myfitnesspal/'>LOWIS vs MFP</a>, <a href='/blog/lowis-vs-cal-ai/'>LOWIS vs Cal AI</a>."
+    answer: "For complete tracking, LOWIS offers an <a href='/en/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> with <a href='/en/blog/40-indicators-weight-loss/'>40+ indicators</a>. Compare: <a href='/en/blog/lowis-vs-myfitnesspal/'>LOWIS vs MFP</a>, <a href='/en/blog/lowis-vs-cal-ai/'>LOWIS vs Cal AI</a>."
   - question: "Are free nutrition apps effective?"
-    answer: "<a href='/blog/free-calorie-apps-fail/'>Free apps fail</a> because they ignore <a href='/blog/sleep-weight-loss/'>sleep</a> and <a href='/blog/stress-weight-loss/'>stress</a>. It's <a href='/blog/why-diets-fail/'>why diets fail</a> for 95% of people."
+    answer: "<a href='/en/blog/free-calorie-apps-fail/'>Free apps fail</a> because they ignore <a href='/en/blog/sleep-weight-loss/'>sleep</a> and <a href='/en/blog/stress-weight-loss/'>stress</a>. It's <a href='/en/blog/why-diets-fail/'>why diets fail</a> for 95% of people."
   - question: "How long does it take to see results?"
-    answer: "With <a href='/blog/scan-meal-2-seconds/'>2-second scanning</a>, consistency is easier. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> and how to <a href='/blog/avoid-weight-rebound/'>avoid weight rebound</a>."
+    answer: "With <a href='/en/blog/scan-meal-2-seconds/'>2-second scanning</a>, consistency is easier. Read our <a href='/en/blog/smart-weight-loss-guide/'>complete guide</a> and how to <a href='/en/blog/avoid-weight-rebound/'>avoid weight rebound</a>."
   - question: "Does the best app track menstrual cycle?"
-    answer: "A complete app tracks the <a href='/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> and includes the <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> for mental support — the 80% most apps ignore."
+    answer: "A complete app tracks the <a href='/en/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> and includes the <a href='/en/blog/audio-program-reprogram-brain/'>Audio Program</a> for mental support — the 80% most apps ignore."
 ---
 
 You've downloaded 3 different nutrition apps this year. With the first one, you lasted 5 days. The second, 2 weeks. The third is still on your phone, but you haven't opened it in a month.
@@ -219,22 +219,22 @@ LOWIS was designed to meet each of these 7 criteria. Photo scan in 2 seconds, 50
 
 ### Continue Reading
 
-**In the category [Guides](/blog/guides/)** — Our complete guides
+**In the category [Guides](/en/blog/guides/)** — Our complete guides
 
 **Compare popular apps**:
-- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — The counting giant
-- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — AI scanning comparison
-- [LOWIS vs Yazio](/blog/lowis-vs-yazio/) — Popular in Europe
-- [LOWIS vs Lose It!](/blog/lowis-vs-lose-it/) — US favorite
-- [Why free apps fail](/blog/free-calorie-apps-fail/) — The real cost
+- [LOWIS vs MyFitnessPal](/en/blog/lowis-vs-myfitnesspal/) — The counting giant
+- [LOWIS vs Cal AI](/en/blog/lowis-vs-cal-ai/) — AI scanning comparison
+- [LOWIS vs Yazio](/en/blog/lowis-vs-yazio/) — Popular in Europe
+- [LOWIS vs Lose It!](/en/blog/lowis-vs-lose-it/) — US favorite
+- [Why free apps fail](/en/blog/free-calorie-apps-fail/) — The real cost
 
 **Essential guides**:
-- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
-- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
-- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results
+- [Complete smart weight loss guide](/en/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/en/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/en/blog/avoid-weight-rebound/) — Keep your results
 
 **LOWIS technology**:
-- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
-- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
-- [Scan meals in 2 seconds](/blog/scan-meal-2-seconds/) — The technology
-- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success
+- [The 40+ indicators that matter](/en/blog/40-indicators-weight-loss/) — What we analyze
+- [How the AI coach works](/en/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [Scan meals in 2 seconds](/en/blog/scan-meal-2-seconds/) — The technology
+- [Audio Program to reprogram your brain](/en/blog/audio-program-reprogram-brain/) — Mental is 80% of success

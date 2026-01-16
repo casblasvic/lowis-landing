@@ -18,15 +18,15 @@ image: "perdre-poids-intelligemment/hero.webp"
 imageAlt: "Complete guide to losing weight smartly with AI assistance"
 faq:
   - question: "Why do 95% of diets fail?"
-    answer: "Read the full analysis in <a href='/blog/why-diets-fail/'>why diets fail</a>: restriction triggers survival mode, metabolism adapts, and the <a href='/blog/avoid-weight-rebound/'>rebound effect</a> kicks in. <a href='/blog/free-calorie-apps-fail/'>Free apps fail</a> because they ignore these factors."
+    answer: "Read the full analysis in <a href='/en/blog/why-diets-fail/'>why diets fail</a>: restriction triggers survival mode, metabolism adapts, and the <a href='/en/blog/avoid-weight-rebound/'>rebound effect</a> kicks in. <a href='/en/blog/free-calorie-apps-fail/'>Free apps fail</a> because they ignore these factors."
   - question: "How much weight can you healthily lose per week?"
-    answer: "0.5 to 1 kg (1-2 lbs) per week maximum. Rapid losses lead to <a href='/blog/avoid-weight-rebound/'>weight rebound</a>. An <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> helps maintain sustainable progress."
+    answer: "0.5 to 1 kg (1-2 lbs) per week maximum. Rapid losses lead to <a href='/en/blog/avoid-weight-rebound/'>weight rebound</a>. An <a href='/en/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> helps maintain sustainable progress."
   - question: "What differentiates an AI coach from calorie counting apps?"
-    answer: "Classic apps only count calories. <a href='/blog/ai-nutrition-coach-how-it-works/'>An AI coach</a> analyzes <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> including <a href='/blog/sleep-weight-loss/'>sleep</a>, <a href='/blog/stress-weight-loss/'>stress</a>, and <a href='/blog/menstrual-cycle-weight-loss/'>hormonal cycle</a>."
+    answer: "Classic apps only count calories. <a href='/en/blog/ai-nutrition-coach-how-it-works/'>An AI coach</a> analyzes <a href='/en/blog/40-indicators-weight-loss/'>40+ indicators</a> including <a href='/en/blog/sleep-weight-loss/'>sleep</a>, <a href='/en/blog/stress-weight-loss/'>stress</a>, and <a href='/en/blog/menstrual-cycle-weight-loss/'>hormonal cycle</a>."
   - question: "Do I have to eliminate foods I love to lose weight?"
-    answer: "No! It's <a href='/blog/why-diets-fail/'>why restrictive diets fail</a>. The key is eating better, not less. The <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> helps transform your relationship with food."
+    answer: "No! It's <a href='/en/blog/why-diets-fail/'>why restrictive diets fail</a>. The key is eating better, not less. The <a href='/en/blog/audio-program-reprogram-brain/'>Audio Program</a> helps transform your relationship with food."
   - question: "What factors besides calories affect weight loss?"
-    answer: "LOWIS analyzes <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a>: <a href='/blog/sleep-weight-loss/'>sleep</a>, <a href='/blog/stress-weight-loss/'>stress</a>, <a href='/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a>, hydration, digestion. Learn <a href='/blog/how-to-choose-nutrition-app/'>how to choose a nutrition app</a> that tracks them all."
+    answer: "LOWIS analyzes <a href='/en/blog/40-indicators-weight-loss/'>40+ indicators</a>: <a href='/en/blog/sleep-weight-loss/'>sleep</a>, <a href='/en/blog/stress-weight-loss/'>stress</a>, <a href='/en/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a>, hydration, digestion. Learn <a href='/en/blog/how-to-choose-nutrition-app/'>how to choose a nutrition app</a> that tracks them all."
 ---
 
 Losing weight is one of the most common goals, but also one of the hardest to achieve sustainably. If you're reading these lines, you've probably already tried several diets, downloaded apps, and felt the frustration of seeing the pounds come back.
@@ -53,13 +53,13 @@ Let's start with a hard truth: **95% of diets fail** in the long term. People wh
 
 Traditional apps have you count calories, but ignore crucial factors:
 
-- Your [stress](/blog/stress-weight-loss/) level
+- Your [stress](/en/blog/stress-weight-loss/) level
 - Your sleep quality
-- Your [hormonal cycle](/blog/menstrual-cycle-weight-loss/) (for women)
+- Your [hormonal cycle](/en/blog/menstrual-cycle-weight-loss/) (for women)
 - Your digestion
 - Your hydration
 
-Result: you religiously count your calories, but results don't follow. Discover [why free apps don't work](/blog/free-calorie-apps-fail/) for most users.
+Result: you religiously count your calories, but results don't follow. Discover [why free apps don't work](/en/blog/free-calorie-apps-fail/) for most users.
 
 ## The smart approach: Eat better, not less
 
@@ -103,7 +103,7 @@ Artificial intelligence has revolutionized many fields, and nutrition is no exce
 
 ### Passive AI vs Active AI
 
-Not all "AI" is equal. Discover the difference between a simple calorie counter and a real [AI coach that works for you](/blog/ai-nutrition-coach-how-it-works/).
+Not all "AI" is equal. Discover the difference between a simple calorie counter and a real [AI coach that works for you](/en/blog/ai-nutrition-coach-how-it-works/).
 
 **Passive AI (classic apps):**
 - Recognizes foods
@@ -148,7 +148,7 @@ Forget promises of "lose 10 kg in 10 days." A healthy goal:
 ### Step 3: Choose the right tools
 
 Not all tools are equal. Compare available options:
-- [LOWIS vs Cal AI: Complete comparison](/blog/lowis-vs-cal-ai/)
+- [LOWIS vs Cal AI: Complete comparison](/en/blog/lowis-vs-cal-ai/)
 - Free vs paid apps
 - Human coaching vs AI
 
@@ -207,25 +207,25 @@ No miracle diet, no impossible restrictions. Just a smart approach, adapted to Y
 
 ### Continue Reading
 
-**In the category [Guides](/blog/guides/)** — Our complete guides
+**In the category [Guides](/en/blog/guides/)** — Our complete guides
 
 **Understanding why diets fail**:
-- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
-- [How to avoid the rebound effect](/blog/avoid-weight-rebound/) — Keep your results
-- [Why free calorie apps fail](/blog/free-calorie-apps-fail/) — The real cost
+- [Why diets fail](/en/blog/why-diets-fail/) — The science behind failure
+- [How to avoid the rebound effect](/en/blog/avoid-weight-rebound/) — Keep your results
+- [Why free calorie apps fail](/en/blog/free-calorie-apps-fail/) — The real cost
 
 **Key factors that affect your weight**:
-- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
-- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
-- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+- [Sleep and weight loss](/en/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/en/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/en/blog/menstrual-cycle-weight-loss/) — For women
 
 **LOWIS technology**:
-- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
-- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
-- [Scan meals in 2 seconds](/blog/scan-meal-2-seconds/) — Easy meal tracking
-- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success
+- [The 40+ indicators that matter](/en/blog/40-indicators-weight-loss/) — What we analyze
+- [How the AI coach works](/en/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [Scan meals in 2 seconds](/en/blog/scan-meal-2-seconds/) — Easy meal tracking
+- [Audio Program to reprogram your brain](/en/blog/audio-program-reprogram-brain/) — Mental is 80% of success
 
 **Compare apps**:
-- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — Detailed comparison
-- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — AI scanning comparison
-- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
+- [LOWIS vs MyFitnessPal](/en/blog/lowis-vs-myfitnesspal/) — Detailed comparison
+- [LOWIS vs Cal AI](/en/blog/lowis-vs-cal-ai/) — AI scanning comparison
+- [How to choose a nutrition app](/en/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
