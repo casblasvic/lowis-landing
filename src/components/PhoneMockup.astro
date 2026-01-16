@@ -199,32 +199,35 @@ const genericRecipes = (t.demo.recipesItemsGeneric || [
           <span class="material-symbols-outlined recipes-arrow">arrow_forward</span>
         </div>
 
-        <!-- Generic recipes - visible by default -->
-        <div data-generic-only class="recipes-list">
-          {genericRecipes.map((recipe) => (
-            <div class="recipe-card">
-              <img src={recipe.image} alt={recipe.name} class="recipe-image" width="40" height="40" loading="lazy" decoding="async" />
-              <div class="recipe-info">
-                <span class="recipe-name">{recipe.name}</span>
-                <span class="recipe-calories">{recipe.calories} kcal</span>
+        <!-- Recipes with grid stacking to prevent CLS -->
+        <div class="grid" style="grid-template-areas: 'list';">
+          <!-- Generic recipes - visible by default -->
+          <div data-generic-only class="recipes-list transition-opacity duration-200" style="grid-area: list;">
+            {genericRecipes.map((recipe) => (
+              <div class="recipe-card">
+                <img src={recipe.image} alt={recipe.name} class="recipe-image" width="40" height="40" loading="lazy" decoding="async" />
+                <div class="recipe-info">
+                  <span class="recipe-name">{recipe.name}</span>
+                  <span class="recipe-calories">{recipe.calories} kcal</span>
+                </div>
+                <span class="material-symbols-outlined recipe-add">add_circle</span>
               </div>
-              <span class="material-symbols-outlined recipe-add">add_circle</span>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        <!-- Moroccan recipes - hidden by default -->
-        <div data-morocco-only style="display: none" class="recipes-list">
-          {moroccanRecipes.map((recipe) => (
-            <div class="recipe-card">
-              <img src={recipe.image} alt={recipe.name} class="recipe-image" width="40" height="40" loading="lazy" decoding="async" />
-              <div class="recipe-info">
-                <span class="recipe-name">{recipe.name}</span>
-                <span class="recipe-calories">{recipe.calories} kcal</span>
+          <!-- Moroccan recipes - hidden by default -->
+          <div data-morocco-only class="recipes-list opacity-0 invisible transition-opacity duration-200" style="grid-area: list;">
+            {moroccanRecipes.map((recipe) => (
+              <div class="recipe-card">
+                <img src={recipe.image} alt={recipe.name} class="recipe-image" width="40" height="40" loading="lazy" decoding="async" />
+                <div class="recipe-info">
+                  <span class="recipe-name">{recipe.name}</span>
+                  <span class="recipe-calories">{recipe.calories} kcal</span>
+                </div>
+                <span class="material-symbols-outlined recipe-add">add_circle</span>
               </div>
-              <span class="material-symbols-outlined recipe-add">add_circle</span>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
 

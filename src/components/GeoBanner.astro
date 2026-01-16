@@ -190,7 +190,7 @@
     }
   }
 
-  // Adaptar contenido según país (siempre se ejecuta, independiente del banner)
+  // Adaptar contenido según país - usa opacity/visibility para evitar CLS
   function adaptContentForCountry(country: string) {
     const moroccoGroup = ['MA', 'DZ', 'TN'];
     const isMorocco = moroccoGroup.includes(country);
@@ -198,18 +198,26 @@
     if (isMorocco) {
       // Usuario de Marruecos: mostrar contenido específico, ocultar genérico
       document.querySelectorAll('[data-morocco-only]').forEach(el => {
-        (el as HTMLElement).style.display = '';
+        const htmlEl = el as HTMLElement;
+        htmlEl.style.opacity = '1';
+        htmlEl.style.visibility = 'visible';
       });
       document.querySelectorAll('[data-generic-only]').forEach(el => {
-        (el as HTMLElement).style.display = 'none';
+        const htmlEl = el as HTMLElement;
+        htmlEl.style.opacity = '0';
+        htmlEl.style.visibility = 'hidden';
       });
     } else {
       // Usuario fuera de Marruecos: ocultar contenido específico, mostrar genérico
       document.querySelectorAll('[data-morocco-only]').forEach(el => {
-        (el as HTMLElement).style.display = 'none';
+        const htmlEl = el as HTMLElement;
+        htmlEl.style.opacity = '0';
+        htmlEl.style.visibility = 'hidden';
       });
       document.querySelectorAll('[data-generic-only]').forEach(el => {
-        (el as HTMLElement).style.display = '';
+        const htmlEl = el as HTMLElement;
+        htmlEl.style.opacity = '1';
+        htmlEl.style.visibility = 'visible';
       });
 
       // Actualizar textos dinámicos si existen

@@ -294,90 +294,38 @@ const htmlLang = htmlLangMap[lang] || lang;
       }
     </script>
 
-    <!-- Global translation protection for UI elements -->
+    <!-- Global translation protection - deferred to not block render -->
     <script is:inline>
-      (function() {
-        // Protect UI elements from browser translation (Google Translate, DeepL, etc.)
-        // This runs on page load and mutation observer catches dynamic elements
+      // Defer translation protection until after page is interactive
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(function() {
+          initTranslationProtection();
+        }, { timeout: 3000 });
+      } else {
+        setTimeout(initTranslationProtection, 100);
+      }
 
-        const uiSelectors = [
-          // Icons - never translate
-          '.material-symbols-outlined',
-          '[class*="material-symbols"]',
+      function initTranslationProtection() {
+        var uiSelectors = '.material-symbols-outlined,[class*="material-symbols"],.gradient-text,.header-brand,[data-brand],.category-pill,.phase-badge,.phase-text,[class*="-badge"],[class*="-pill"],[class*="-tag"],[class*="-chip"],.ring-value,.ring-unit,.status-bar,.status-icon,.time,.recipe-calories,.nav-item,.bottom-nav,[class*="stats"],[class*="metric"],.notranslate';
 
-          // Brand elements
-          '.gradient-text',
-          '.header-brand',
-          '[data-brand]',
-
-          // UI Pills, badges, tags
-          '.category-pill',
-          '.phase-badge',
-          '.phase-text',
-          '[class*="-badge"]',
-          '[class*="-pill"]',
-          '[class*="-tag"]',
-          '[class*="-chip"]',
-
-          // Technical/data labels (phone mockup, stats)
-          '.ring-value',
-          '.ring-unit',
-          '.status-bar',
-          '.status-icon',
-          '.time',
-          '.recipe-calories',
-
-          // Navigation
-          '.nav-item',
-          '.bottom-nav',
-
-          // Stats and metrics
-          '[class*="stats"]',
-          '[class*="metric"]',
-
-          // Explicit markers
-          '.notranslate'
-        ];
-
-        function protectElements() {
-          const selector = uiSelectors.join(', ');
-          document.querySelectorAll(selector).forEach(function(el) {
-            if (!el.hasAttribute('translate')) {
-              el.setAttribute('translate', 'no');
-            }
-            if (!el.classList.contains('notranslate')) {
-              el.classList.add('notranslate');
-            }
+        function protect() {
+          document.querySelectorAll(uiSelectors).forEach(function(el) {
+            el.setAttribute('translate', 'no');
+            el.classList.add('notranslate');
           });
         }
 
-        // Run on DOM ready
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', protectElements);
-        } else {
-          protectElements();
-        }
+        protect();
 
-        // Also run after full page load for lazy-loaded elements
-        window.addEventListener('load', protectElements);
-
-        // Mutation observer for dynamically added elements
+        // Mutation observer with debounce
         if (typeof MutationObserver !== 'undefined') {
-          var observer = new MutationObserver(function(mutations) {
-            var shouldRun = mutations.some(function(m) {
-              return m.addedNodes.length > 0;
-            });
-            if (shouldRun) {
-              protectElements();
-            }
-          });
-
-          observer.observe(document.body, {
-            childList: true,
-            subtree: true
-          });
+          var timeout;
+          new MutationObserver(function() {
+            clearTimeout(timeout);
+            timeout = setTimeout(protect, 100);
+          }).observe(document.body, { childList: true, subtree: true });
         }
-      })();
+      }
     </script>
   </body>
 </html>

@@ -141,132 +141,142 @@ const internationalRecipes = [
   <div class="section-container relative z-10">
     <!-- Section header -->
     <div class="text-center max-w-3xl mx-auto mb-16">
-      <!-- Generic badge - visible by default (safe for global audience) -->
-      <div data-generic-only class="inline-flex items-center gap-2 px-4 py-2 bg-primary-orange/10 border border-primary-orange/20 rounded-full mb-6">
-        <span class="material-symbols-outlined text-primary-orange">restaurant</span>
-        <span class="text-primary-orange font-medium">{t.moroccanFeatures.badgeGeneric || '2000+ recipes'}</span>
-      </div>
-      <!-- Morocco badge - hidden by default, shown only for Morocco users -->
-      <div data-morocco-only style="display: none" class="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full mb-6">
-        <span class="text-2xl">🇲🇦</span>
-        <span class="text-green-400 font-medium">{t.moroccanFeatures.badge || 'Made for Morocco'}</span>
+      <!-- Badge container with fixed height to prevent CLS -->
+      <div class="relative h-10 mb-6">
+        <!-- Generic badge - visible by default -->
+        <div data-generic-only class="inline-flex items-center gap-2 px-4 py-2 bg-primary-orange/10 border border-primary-orange/20 rounded-full absolute left-1/2 -translate-x-1/2 transition-opacity duration-200">
+          <span class="material-symbols-outlined text-primary-orange">restaurant</span>
+          <span class="text-primary-orange font-medium">{t.moroccanFeatures.badgeGeneric || '2000+ recipes'}</span>
+        </div>
+        <!-- Morocco badge - hidden by default -->
+        <div data-morocco-only class="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full absolute left-1/2 -translate-x-1/2 opacity-0 invisible transition-opacity duration-200">
+          <span class="text-2xl">🇲🇦</span>
+          <span class="text-green-400 font-medium">{t.moroccanFeatures.badge || 'Made for Morocco'}</span>
+        </div>
       </div>
 
-      <!-- Title: Generic version - visible by default -->
-      <h2 data-generic-only class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-        {t.moroccanFeatures.titleGeneric || 'Plus de 2000 recettes analysées'}
-      </h2>
-      <!-- Title: Morocco version - hidden by default -->
-      <h2 data-morocco-only style="display: none" class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-        {t.moroccanFeatures.title}
-      </h2>
+      <!-- Title container with grid stacking to prevent CLS -->
+      <div class="grid mb-4" style="grid-template-areas: 'title';">
+        <h2 data-generic-only class="text-3xl sm:text-4xl lg:text-5xl font-bold transition-opacity duration-200" style="grid-area: title;">
+          {t.moroccanFeatures.titleGeneric || 'Plus de 2000 recettes analysées'}
+        </h2>
+        <h2 data-morocco-only class="text-3xl sm:text-4xl lg:text-5xl font-bold opacity-0 invisible transition-opacity duration-200" style="grid-area: title;">
+          {t.moroccanFeatures.title}
+        </h2>
+      </div>
 
-      <!-- Subtitle: Generic version - visible by default -->
-      <p data-generic-only class="text-text-secondary text-lg">
-        {t.moroccanFeatures.subtitleGeneric || 'Chaque plat analysé avec précision nutritionnelle'}
-      </p>
-      <!-- Subtitle: Morocco version - hidden by default -->
-      <p data-morocco-only style="display: none" class="text-text-secondary text-lg">
-        {t.moroccanFeatures.subtitle}
-      </p>
+      <!-- Subtitle container with grid stacking to prevent CLS -->
+      <div class="grid" style="grid-template-areas: 'subtitle';">
+        <p data-generic-only class="text-text-secondary text-lg transition-opacity duration-200" style="grid-area: subtitle;">
+          {t.moroccanFeatures.subtitleGeneric || 'Chaque plat analysé avec précision nutritionnelle'}
+        </p>
+        <p data-morocco-only class="text-text-secondary text-lg opacity-0 invisible transition-opacity duration-200" style="grid-area: subtitle;">
+          {t.moroccanFeatures.subtitle}
+        </p>
+      </div>
     </div>
 
     <!-- Recipe Carousel -->
     <div class="mb-8">
-      <!-- Recipe title: Generic version - visible by default -->
-      <p data-generic-only class="text-center text-text-muted text-sm mb-6">{t.moroccanFeatures.recipesTitleGeneric || 'Découvrez nos recettes analysées'}</p>
-      <!-- Recipe title: Morocco version - hidden by default -->
-      <p data-morocco-only style="display: none" class="text-center text-text-muted text-sm mb-6">{t.moroccanFeatures.recipesTitle || 'Découvrez nos recettes marocaines'}</p>
+      <!-- Recipe title with grid stacking to prevent CLS -->
+      <div class="grid mb-6" style="grid-template-areas: 'title';">
+        <p data-generic-only class="text-center text-text-muted text-sm transition-opacity duration-200" style="grid-area: title;">{t.moroccanFeatures.recipesTitleGeneric || 'Découvrez nos recettes analysées'}</p>
+        <p data-morocco-only class="text-center text-text-muted text-sm opacity-0 invisible transition-opacity duration-200" style="grid-area: title;">{t.moroccanFeatures.recipesTitle || 'Découvrez nos recettes marocaines'}</p>
+      </div>
 
-      <!-- Generic/International carousel - visible by default -->
-      <div data-generic-only class="recipe-carousel-container">
-        <div class="recipe-carousel">
-          {internationalRecipes.map((recipe) => (
-            <div class="recipe-slide">
-              <div class="recipe-card-img">
-                <img
-                  src={recipe.image}
-                  alt={getRecipeName(recipe, lang)}
-                  width="200"
-                  height="200"
-                  loading="lazy"
-                />
-                <div class="recipe-overlay">
-                  <span class="recipe-name">{getRecipeName(recipe, lang)}</span>
-                  <span class="recipe-cal">{recipe.calories} kcal</span>
+      <!-- Carousel container with grid stacking to prevent CLS -->
+      <div class="grid" style="grid-template-areas: 'carousel';">
+        <!-- Generic/International carousel - visible by default -->
+        <div data-generic-only class="recipe-carousel-container transition-opacity duration-200" style="grid-area: carousel;">
+          <div class="recipe-carousel">
+            {internationalRecipes.map((recipe) => (
+              <div class="recipe-slide">
+                <div class="recipe-card-img">
+                  <img
+                    src={recipe.image}
+                    alt={getRecipeName(recipe, lang)}
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                  />
+                  <div class="recipe-overlay">
+                    <span class="recipe-name">{getRecipeName(recipe, lang)}</span>
+                    <span class="recipe-cal">{recipe.calories} kcal</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-          <!-- Duplicate for infinite scroll effect -->
-          {internationalRecipes.map((recipe) => (
-            <div class="recipe-slide">
-              <div class="recipe-card-img">
-                <img
-                  src={recipe.image}
-                  alt={getRecipeName(recipe, lang)}
-                  width="200"
-                  height="200"
-                  loading="lazy"
-                />
-                <div class="recipe-overlay">
-                  <span class="recipe-name">{getRecipeName(recipe, lang)}</span>
-                  <span class="recipe-cal">{recipe.calories} kcal</span>
+            ))}
+            <!-- Duplicate for infinite scroll effect -->
+            {internationalRecipes.map((recipe) => (
+              <div class="recipe-slide">
+                <div class="recipe-card-img">
+                  <img
+                    src={recipe.image}
+                    alt={getRecipeName(recipe, lang)}
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                  />
+                  <div class="recipe-overlay">
+                    <span class="recipe-name">{getRecipeName(recipe, lang)}</span>
+                    <span class="recipe-cal">{recipe.calories} kcal</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+
+        <!-- Moroccan carousel - hidden by default -->
+        <div data-morocco-only class="recipe-carousel-container opacity-0 invisible transition-opacity duration-200" style="grid-area: carousel;">
+          <div class="recipe-carousel">
+            {moroccanRecipes.map((recipe) => (
+              <div class="recipe-slide">
+                <div class="recipe-card-img">
+                  <img
+                    src={recipe.image}
+                    alt={getRecipeName(recipe, lang)}
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                  />
+                  <div class="recipe-overlay">
+                    <span class="recipe-name">{getRecipeName(recipe, lang)}</span>
+                    <span class="recipe-cal">{recipe.calories} kcal</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+            <!-- Duplicate for infinite scroll effect -->
+            {moroccanRecipes.map((recipe) => (
+              <div class="recipe-slide">
+                <div class="recipe-card-img">
+                  <img
+                    src={recipe.image}
+                    alt={getRecipeName(recipe, lang)}
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                  />
+                  <div class="recipe-overlay">
+                    <span class="recipe-name">{getRecipeName(recipe, lang)}</span>
+                    <span class="recipe-cal">{recipe.calories} kcal</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
-      <!-- Moroccan carousel - hidden by default -->
-      <div data-morocco-only style="display: none" class="recipe-carousel-container">
-        <div class="recipe-carousel">
-          {moroccanRecipes.map((recipe) => (
-            <div class="recipe-slide">
-              <div class="recipe-card-img">
-                <img
-                  src={recipe.image}
-                  alt={getRecipeName(recipe, lang)}
-                  width="200"
-                  height="200"
-                  loading="lazy"
-                />
-                <div class="recipe-overlay">
-                  <span class="recipe-name">{getRecipeName(recipe, lang)}</span>
-                  <span class="recipe-cal">{recipe.calories} kcal</span>
-                </div>
-              </div>
-            </div>
-          ))}
-          <!-- Duplicate for infinite scroll effect -->
-          {moroccanRecipes.map((recipe) => (
-            <div class="recipe-slide">
-              <div class="recipe-card-img">
-                <img
-                  src={recipe.image}
-                  alt={getRecipeName(recipe, lang)}
-                  width="200"
-                  height="200"
-                  loading="lazy"
-                />
-                <div class="recipe-overlay">
-                  <span class="recipe-name">{getRecipeName(recipe, lang)}</span>
-                  <span class="recipe-cal">{recipe.calories} kcal</span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <!-- Button to see more recipes -->
-      <div class="flex justify-center mt-6">
+      <!-- Button container with grid stacking to prevent CLS -->
+      <div class="grid justify-center mt-6" style="grid-template-areas: 'button';">
         <!-- Generic button - visible by default -->
         <a
           data-generic-only
           href={getSignupUrlWithLang(lang)}
           class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-orange to-primary-red text-white font-semibold rounded-full hover:shadow-lg hover:shadow-primary-orange/30 transition-all duration-300 hover:scale-105"
+          style="grid-area: button;"
         >
           <span class="material-symbols-outlined">restaurant</span>
           {t.moroccanFeatures.recipesButtonGeneric || 'Voir +2000 recettes analysées'}
@@ -274,9 +284,9 @@ const internationalRecipes = [
         <!-- Morocco button - hidden by default -->
         <a
           data-morocco-only
-          style="display: none"
           href={getSignupUrlWithLang(lang)}
-          class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-orange to-primary-red text-white font-semibold rounded-full hover:shadow-lg hover:shadow-primary-orange/30 transition-all duration-300 hover:scale-105"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-orange to-primary-red text-white font-semibold rounded-full hover:shadow-lg hover:shadow-primary-orange/30 transition-all duration-300 hover:scale-105 opacity-0 invisible"
+          style="grid-area: button;"
         >
           <span class="material-symbols-outlined">restaurant</span>
           {t.moroccanFeatures.recipesButton || 'Voir +500 recettes marocaines'}

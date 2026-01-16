@@ -51,14 +51,15 @@ const currentYear = new Date().getFullYear();
           <Logo class="h-10 w-10" />
           <span class="font-bold text-xl gradient-text">LOWIS</span>
         </a>
-        <!-- Generic tagline - visible by default -->
-        <p data-generic-only class="text-text-secondary text-sm">
-          {t.footer.taglineGeneric || t.footer.tagline}
-        </p>
-        <!-- Morocco tagline - hidden by default -->
-        <p data-morocco-only style="display: none" class="text-text-secondary text-sm">
-          {t.footer.tagline}
-        </p>
+        <!-- Tagline with grid stacking to prevent CLS -->
+        <div class="grid" style="grid-template-areas: 'tagline';">
+          <p data-generic-only class="text-text-secondary text-sm transition-opacity duration-200" style="grid-area: tagline;">
+            {t.footer.taglineGeneric || t.footer.tagline}
+          </p>
+          <p data-morocco-only class="text-text-secondary text-sm opacity-0 invisible transition-opacity duration-200" style="grid-area: tagline;">
+            {t.footer.tagline}
+          </p>
+        </div>
 
         <!-- Social links -->
         <div class="flex gap-4 mt-6">

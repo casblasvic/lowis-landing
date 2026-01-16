@@ -51,15 +51,15 @@ const { t, lang } = Astro.props;
   </div>
 
   <div class="section-container relative z-10">
-    <!-- Centered Badge - Generic by default, Morocco only if detected -->
-    <div class="text-center mb-8 animate-fade-in-up">
+    <!-- Centered Badge - Use opacity/visibility to prevent CLS -->
+    <div class="text-center mb-8 animate-fade-in-up relative h-10">
       <!-- Generic badge - visible by default (safe for global audience) -->
-      <div data-generic-only class="inline-flex items-center gap-2 px-4 py-2 bg-primary-orange/10 border border-primary-orange/20 rounded-full">
+      <div data-generic-only class="inline-flex items-center gap-2 px-4 py-2 bg-primary-orange/10 border border-primary-orange/20 rounded-full absolute left-1/2 -translate-x-1/2 transition-opacity duration-200">
         <span class="material-symbols-outlined text-primary-orange">public</span>
         <span class="text-primary-orange font-medium">{t.hero.badgeGeneric || 'Available worldwide'}</span>
       </div>
       <!-- Morocco badge - hidden by default, shown only for Morocco users -->
-      <div data-morocco-only style="display: none" class="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full">
+      <div data-morocco-only class="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full absolute left-1/2 -translate-x-1/2 opacity-0 invisible transition-opacity duration-200">
         <span class="text-2xl">🇲🇦</span>
         <span class="text-green-400 font-medium">{t.hero.badge}</span>
       </div>
