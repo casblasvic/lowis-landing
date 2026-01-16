@@ -68,21 +68,21 @@ const { t, lang } = Astro.props;
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <!-- Left: Text Content -->
       <div class="text-center lg:text-left">
-        <!-- Logo + Title -->
-        <div class="flex items-center gap-4 justify-center lg:justify-start mb-4 animate-fade-in-up">
+        <!-- Logo + Title - NO animation for faster LCP -->
+        <div class="flex items-center gap-4 justify-center lg:justify-start mb-4">
           <Logo class="h-16 w-16 sm:h-20 sm:w-20" size="lg" />
           <span class="text-4xl sm:text-5xl font-bold gradient-text">LOWIS</span>
         </div>
 
-        <!-- Title - No delay for faster LCP -->
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 animate-fade-in-up">
+        <!-- Title - NO animation for faster LCP (critical element) -->
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
           {t.hero.title}
           <br />
           <span class="gradient-text">{t.hero.titleHighlight}</span>
         </h1>
 
-        <!-- Subtitle - No delay for faster LCP (this is the LCP element) -->
-        <p class="text-lg sm:text-xl text-text-secondary max-w-xl mx-auto lg:mx-0 mb-8 animate-fade-in-up">
+        <!-- Subtitle - NO animation for faster LCP (this is the LCP element) -->
+        <p class="text-lg sm:text-xl text-text-secondary max-w-xl mx-auto lg:mx-0 mb-8">
           {t.hero.subtitle}
         </p>
 
