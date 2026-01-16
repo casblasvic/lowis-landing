@@ -136,6 +136,55 @@ const htmlLang = htmlLangMap[lang] || lang;
       .material-symbols-outlined{font-family:'Material Symbols Outlined';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-smoothing:antialiased}
     </style>
 
+    <!-- Early language redirect - runs BEFORE body renders to prevent CLS -->
+    <script is:inline>
+      (function() {
+        // Only redirect on root URL
+        if (window.location.pathname !== '/' && window.location.pathname !== '') return;
+
+        // Don't redirect if user explicitly chose a language
+        if (localStorage.getItem('lowis_lang_chosen')) return;
+
+        // Check cached country (instant, no fetch needed)
+        var cachedCountry = localStorage.getItem('lowis_country');
+        var moroccoGroup = ['MA', 'DZ', 'TN'];
+
+        // If we have a cached country and it's not Morocco, redirect based on it
+        if (cachedCountry && !moroccoGroup.includes(cachedCountry)) {
+          var spanishCountries = ['ES', 'MX', 'AR', 'CO', 'CL', 'PE', 'VE', 'EC', 'BO', 'PY', 'UY', 'CR', 'PA', 'DO', 'GT', 'HN', 'SV', 'NI', 'CU', 'PR'];
+          var englishCountries = ['US', 'GB', 'AU', 'NZ', 'IE', 'ZA', 'IN', 'PH', 'SG'];
+
+          if (cachedCountry === 'FR') {
+            window.location.replace('/fr/');
+          } else if (spanishCountries.includes(cachedCountry)) {
+            window.location.replace('/es/');
+          } else if (englishCountries.includes(cachedCountry)) {
+            window.location.replace('/en/');
+          } else {
+            // Other countries: use browser language as fallback
+            var browserLang = (navigator.language || '').slice(0, 2).toLowerCase();
+            if (browserLang === 'es') window.location.replace('/es/');
+            else if (browserLang === 'en') window.location.replace('/en/');
+            // else stay on root (French)
+          }
+          return;
+        }
+
+        // No cache: use browser language for instant redirect (geo-detection will refine later)
+        if (!cachedCountry) {
+          var browserLang = (navigator.language || '').slice(0, 2).toLowerCase();
+          if (browserLang === 'es') {
+            localStorage.setItem('lowis_early_redirect', 'es');
+            window.location.replace('/es/');
+          } else if (browserLang === 'en') {
+            localStorage.setItem('lowis_early_redirect', 'en');
+            window.location.replace('/en/');
+          }
+          // French speakers or unknown: stay on root for geo-detection
+        }
+      })();
+    </script>
+
     <!-- Google Analytics 4 - Loaded conditionally based on consent AND deferred for performance -->
     <script is:inline>
       // Initialize dataLayer for GA
