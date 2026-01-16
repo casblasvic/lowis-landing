@@ -186,9 +186,16 @@ const currentDisplayName = translatedLanguageNames[lang === 'fr' ? 'fr-FR' : lan
       });
     });
 
-    // Close menu on scroll
-    let lastScrollY = window.scrollY;
+    // Close menu on scroll - deferred to avoid forced reflow during page load
+    // Initialize to 0 and set actual value on first scroll to avoid reading scrollY synchronously
+    let lastScrollY = 0;
+    let scrollInitialized = false;
     window.addEventListener('scroll', () => {
+      if (!scrollInitialized) {
+        lastScrollY = window.scrollY;
+        scrollInitialized = true;
+        return;
+      }
       // Close if scrolled more than 50px in any direction
       if (Math.abs(window.scrollY - lastScrollY) > 50) {
         closeMobileMenu();
