@@ -91,23 +91,25 @@ const htmlLang = htmlLangMap[lang] || lang;
     <!-- Preload critical images for LCP -->
     <link rel="preload" as="image" href="/icons/logo-48.webp" fetchpriority="high" />
 
-    <!-- Material Symbols - Async loading -->
+    <!-- Material Symbols - Async loading with lower priority (icons are secondary to text) -->
     <link
       rel="preload"
       as="style"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
       onload="this.onload=null;this.rel='stylesheet'"
+      fetchpriority="low"
     />
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
     </noscript>
 
-    <!-- Inter Font - Async loading (only weights actually used: 400,500,600,700,800) -->
+    <!-- Inter Font - Async loading with high priority (critical for text/LCP) -->
     <link
       rel="preload"
       as="style"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       onload="this.onload=null;this.rel='stylesheet'"
+      fetchpriority="high"
     />
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />

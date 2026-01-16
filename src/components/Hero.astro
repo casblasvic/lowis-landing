@@ -74,20 +74,20 @@ const { t, lang } = Astro.props;
           <span class="text-4xl sm:text-5xl font-bold gradient-text">LOWIS</span>
         </div>
 
-        <!-- Title -->
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 animate-fade-in-up" style="animation-delay: 0.1s">
+        <!-- Title - No delay for faster LCP -->
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 animate-fade-in-up">
           {t.hero.title}
           <br />
           <span class="gradient-text">{t.hero.titleHighlight}</span>
         </h1>
 
-        <!-- Subtitle -->
-        <p class="text-lg sm:text-xl text-text-secondary max-w-xl mx-auto lg:mx-0 mb-8 animate-fade-in-up" style="animation-delay: 0.2s">
+        <!-- Subtitle - No delay for faster LCP (this is the LCP element) -->
+        <p class="text-lg sm:text-xl text-text-secondary max-w-xl mx-auto lg:mx-0 mb-8 animate-fade-in-up">
           {t.hero.subtitle}
         </p>
 
         <!-- CTA Button - Hidden on mobile (sticky CTA visible instead) -->
-        <div class="hidden md:flex justify-center lg:justify-start mb-6 animate-fade-in-up" style="animation-delay: 0.3s">
+        <div class="hidden md:flex justify-center lg:justify-start mb-6 animate-fade-in-up" style="animation-delay: 0.1s">
           <a href={getSignupUrlWithLang(lang)} class="btn-primary text-lg px-8 py-4">
             {t.hero.cta}
             <span class="material-symbols-outlined ml-2">arrow_forward</span>
@@ -95,7 +95,7 @@ const { t, lang } = Astro.props;
         </div>
 
         <!-- Trust indicators -->
-        <div class="flex flex-col items-center lg:items-start gap-3 animate-fade-in-up" style="animation-delay: 0.4s">
+        <div class="flex flex-col items-center lg:items-start gap-3 animate-fade-in-up" style="animation-delay: 0.2s">
           <!-- Guarantee -->
           {t.hero.guarantee && (
             <div class="flex items-center gap-2 bg-green-500/10 border border-green-500/30 rounded-full px-4 py-2">
@@ -131,7 +131,7 @@ const { t, lang } = Astro.props;
       </div>
 
       <!-- Right: Phone Mockup -->
-      <div class="relative flex justify-center lg:justify-end animate-fade-in-up" style="animation-delay: 0.3s">
+      <div class="relative flex justify-center lg:justify-end animate-fade-in-up" style="animation-delay: 0.1s">
         <div class="animate-float">
           <PhoneMockup t={t} />
         </div>
