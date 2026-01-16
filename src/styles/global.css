@@ -169,8 +169,16 @@
     animation: float 3s ease-in-out infinite;
   }
 
-  /* Prevent browser translation of UI elements (Google Translate, etc.) */
+  /*
+   * BROWSER TRANSLATION PROTECTION
+   * ==============================
+   * The 'notranslate' class is recognized by Google Translate, DeepL, etc.
+   * We use a script to automatically add translate="no" to UI elements.
+   * The CSS below is just a marker - the actual protection comes from:
+   * 1. translate="no" HTML attribute
+   * 2. class="notranslate" (recognized by translation services)
+   */
   .notranslate {
-    translate: none;
+    /* Marker class - actual protection via HTML attribute */
   }
 }
