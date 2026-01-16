@@ -88,6 +88,9 @@ const htmlLang = htmlLangMap[lang] || lang;
     <link rel="preconnect" href="https://yjxnyjcaxehosndbyepg.supabase.co" crossorigin />
     <!-- Note: gtag dns-prefetch removed - GA4 is deferred 2.5s after load for better LCP -->
 
+    <!-- Preload critical images for LCP -->
+    <link rel="preload" as="image" href="/icons/logo-48.webp" fetchpriority="high" />
+
     <!-- Material Symbols - Async loading -->
     <link
       rel="preload"
@@ -111,6 +114,25 @@ const htmlLang = htmlLangMap[lang] || lang;
     </noscript>
 
     <title>{title}</title>
+
+    <!-- Critical CSS - Inline for LCP optimization -->
+    <style is:inline>
+      /* Critical above-the-fold styles */
+      :root{--color-primary-orange:#F97316;--color-primary-red:#DC2626;--color-dark-bg:#0F0F0F;--color-dark-surface:#1A1A1A;--color-dark-border:#2A2A2A;--color-text-primary:#FFFFFF;--color-text-secondary:#B3B3B3}
+      html{scroll-behavior:smooth}
+      body{background-color:var(--color-dark-bg);color:var(--color-text-primary);font-family:'Inter',system-ui,-apple-system,sans-serif;margin:0}
+      .dark{color-scheme:dark}
+      /* Header critical */
+      header{position:sticky;top:0;z-index:50;background:rgba(15,15,15,.95);backdrop-filter:blur(12px)}
+      /* Hero critical */
+      .gradient-text{background:linear-gradient(135deg,var(--color-primary-orange),var(--color-primary-red));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+      .btn-primary{display:inline-flex;align-items:center;justify-content:center;padding:.75rem 1.5rem;border-radius:.75rem;font-weight:600;color:#fff;background:linear-gradient(135deg,var(--color-primary-orange),var(--color-primary-red));transition:transform .3s}
+      .section-container{max-width:80rem;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+      @media(min-width:640px){.section-container{padding-left:1.5rem;padding-right:1.5rem}}
+      @media(min-width:1024px){.section-container{padding-left:2rem;padding-right:2rem}}
+      /* Material symbols placeholder to prevent layout shift */
+      .material-symbols-outlined{font-family:'Material Symbols Outlined';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-smoothing:antialiased}
+    </style>
 
     <!-- Google Analytics 4 - Loaded conditionally based on consent AND deferred for performance -->
     <script is:inline>

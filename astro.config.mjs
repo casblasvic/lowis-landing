@@ -43,6 +43,10 @@ function generateHreflangLinks(urlString) {
 export default defineConfig({
   site: 'https://lowis.app',
   trailingSlash: 'always',
+  build: {
+    // Inline CSS under 8KB to reduce render-blocking requests
+    inlineStylesheets: 'auto',
+  },
   // 301 redirects for old category URLs (removed /category/ from path)
   redirects: {
     // French Morocco (default)

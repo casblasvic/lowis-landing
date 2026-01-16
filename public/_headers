@@ -1,0 +1,38 @@
+# Cache Control Headers
+# Note: This file works on Netlify, Cloudflare Pages, and Vercel
+# For GitHub Pages, these headers are ignored - use Cloudflare proxy for cache control
+
+# Static assets with content hashes - cache for 1 year (immutable)
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images - cache for 1 year
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Icons - cache for 1 year
+/icons/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fonts - cache for 1 year
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML pages - short cache with revalidation
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Blog pages
+/blog/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+# Security headers for all pages
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
