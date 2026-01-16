@@ -23,17 +23,15 @@ comparisonLogos:
   competitorName: "Cal AI"
 faq:
   - question: "What is the main difference between LOWIS and Cal AI?"
-    answer: "The major difference is the approach: Cal AI is a passive calorie counter that leaves you to do the work, while LOWIS is an active AI coach that analyzes 40+ indicators and personally guides you toward your goals."
+    answer: "Cal AI is a passive calorie counter. LOWIS is an <a href='/blog/ai-nutrition-coach-how-it-works/'>active AI coach</a> that analyzes <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a>. That's <a href='/blog/free-calorie-apps-fail/'>why passive apps fail</a>."
   - question: "Is Cal AI really cheaper than LOWIS?"
-    answer: "Cal AI costs about $50/year vs ~$40/month for LOWIS. However, Cal AI requires 15+ minutes of manual work per day. If your time is worth $15/hour, you 'lose' $110/month in time. LOWIS saves you that time with 2-second analysis."
-  - question: "Can I get a refund with Cal AI?"
-    answer: "According to many user reviews, Cal AI has a very strict refund policy. Many users report being unable to get their money back. LOWIS offers a 7-day free trial without credit card and a clear refund policy."
-  - question: "Does Cal AI recognize Moroccan and French dishes?"
-    answer: "Cal AI has a primarily American database. Dishes like tagine, couscous, harira or msemen are often missing or poorly recognized. LOWIS includes 500+ Moroccan recipes and a complete database of international dishes."
-  - question: "Does LOWIS really use AI?"
-    answer: "Yes, LOWIS uses advanced AI models (GPT-4, Claude) for each analysis. This AI doesn't just recognize foods, it analyzes your overall situation (sleep, stress, hormonal cycle) and provides personalized recommendations in real-time."
-  - question: "Is there customer support at Cal AI?"
-    answer: "According to numerous reviews on TrustPilot and Reddit, Cal AI doesn't have an easily accessible support button. Users report difficulties contacting the team. LOWIS has responsive customer support and weekly validation by nutritionists."
+    answer: "Cal AI costs ~$50/year but requires 15+ min/day of manual work. LOWIS <a href='/blog/scan-meal-2-seconds/'>scans meals in 2 seconds</a>. Read <a href='/blog/how-to-choose-nutrition-app/'>how to choose a nutrition app</a> for the real cost calculation."
+  - question: "Does Cal AI track sleep and stress?"
+    answer: "No. Cal AI only counts calories. But <a href='/blog/sleep-weight-loss/'>sleep</a> and <a href='/blog/stress-weight-loss/'>stress</a> are crucial — it's <a href='/blog/why-diets-fail/'>why diets fail</a>. LOWIS tracks these with its <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a>."
+  - question: "Does Cal AI help with menstrual cycle?"
+    answer: "No. The <a href='/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> affects weight by 1-3kg. LOWIS adapts recommendations to your cycle phase. The <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> also helps with cravings."
+  - question: "How do I avoid weight rebound after using an app?"
+    answer: "Apps that only count calories don't prevent the <a href='/blog/avoid-weight-rebound/'>rebound effect</a>. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> and see why an <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> makes the difference."
 ---
 
 You've probably already heard of Cal AI, the calorie counting app that promises to scan your meals with a photo. But is it really the best option? Spoiler: not necessarily.
@@ -219,4 +217,25 @@ No catch, no commitment. Just a chance to see if LOWIS is right for you.
 
 ---
 
-*To learn more, check out our [complete guide to choosing a nutrition app](/blog/how-to-choose-nutrition-app/) and discover [how to scan your meals in 2 seconds](/blog/scan-meal-2-seconds/).*
+---
+
+### Continue Reading
+
+**In the category [Comparisons](/blog/comparatifs/)** — All our app comparisons
+
+**Other app comparisons**:
+- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — The counting giant
+- [LOWIS vs Yazio](/blog/lowis-vs-yazio/) — Popular in Europe
+- [LOWIS vs Lose It!](/blog/lowis-vs-lose-it/) — US favorite
+- [Why free apps fail](/blog/free-calorie-apps-fail/) — The real cost
+- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
+
+**LOWIS technology**:
+- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
+- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [Scan meals in 2 seconds](/blog/scan-meal-2-seconds/) — The technology
+
+**Essential guides**:
+- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results

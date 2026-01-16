@@ -23,17 +23,17 @@ comparisonLogos:
   competitorName: "Cal AI"
 faq:
   - question: "Quelle est la différence principale entre LOWIS et Cal AI ?"
-    answer: "La différence majeure est l'approche : Cal AI est un compteur de calories passif qui vous laisse faire le travail, tandis que LOWIS est un coach IA actif qui analyse +40 indicateurs et vous guide personnellement vers vos objectifs."
+    answer: "La différence majeure est l'approche : Cal AI est un compteur de calories passif qui vous laisse faire le travail, tandis que LOWIS est un <a href='/blog/coach-ia-comment-marche/'>coach IA actif</a> qui analyse <a href='/blog/40-indicateurs-perte-poids/'>+40 indicateurs</a> et vous guide personnellement vers vos objectifs."
   - question: "Cal AI est-il vraiment moins cher que LOWIS ?"
-    answer: "Cal AI coûte environ 50€/an contre ~40€/mois pour LOWIS. Cependant, Cal AI nécessite 15+ minutes de travail manuel par jour. Si votre temps vaut 10€/heure, vous 'perdez' 75€/mois en temps. LOWIS vous fait économiser ce temps avec une analyse en 2 secondes."
+    answer: "Cal AI coûte environ 50€/an contre ~40€/mois pour LOWIS. Cependant, Cal AI nécessite 15+ minutes de travail manuel par jour. Si votre temps vaut 10€/heure, vous 'perdez' 75€/mois en temps. Découvrez <a href='/blog/apps-gratuites-echec/'>pourquoi les apps gratuites coûtent plus cher</a> en réalité."
   - question: "Puis-je obtenir un remboursement avec Cal AI ?"
-    answer: "Selon de nombreux avis utilisateurs, Cal AI a une politique de remboursement très stricte. De nombreux utilisateurs rapportent ne pas avoir pu se faire rembourser. LOWIS offre une période d'essai gratuite de 7 jours sans carte bancaire et une politique de remboursement claire."
+    answer: "Selon de nombreux avis utilisateurs, Cal AI a une politique de remboursement très stricte. LOWIS offre une période d'essai gratuite de 7 jours sans carte bancaire. Consultez notre <a href='/blog/choisir-application-nutrition/'>guide pour choisir une app de nutrition</a>."
   - question: "Cal AI reconnaît-il les plats marocains et français ?"
-    answer: "Cal AI a une base de données principalement américaine. Les plats comme le tajine, le couscous, la harira ou le msemen sont souvent absents ou mal reconnus. LOWIS inclut +500 recettes marocaines et une base de données complète des plats français."
-  - question: "LOWIS utilise-t-il vraiment l'IA ?"
-    answer: "Oui, LOWIS utilise des modèles d'IA avancés (GPT-4, Claude) pour chaque analyse. Cette IA ne se contente pas de reconnaître les aliments, elle analyse votre situation globale (sommeil, stress, cycle hormonal) et fournit des recommandations personnalisées en temps réel."
+    answer: "Cal AI a une base de données principalement américaine. Les plats comme le tajine, le couscous, la harira ou le msemen sont souvent absents. Découvrez comment <a href='/blog/scanner-plat-2-secondes/'>scanner vos plats en 2 secondes</a> avec LOWIS."
+  - question: "LOWIS analyse-t-il plus que les calories ?"
+    answer: "Oui, LOWIS analyse <a href='/blog/sommeil-perte-poids/'>le sommeil</a>, <a href='/blog/stress-perte-poids/'>le stress</a>, <a href='/blog/cycle-menstruel-perte-poids/'>le cycle menstruel</a> et bien plus. Ces facteurs sont essentiels car <a href='/blog/pourquoi-regimes-echouent/'>les régimes qui les ignorent échouent</a>."
   - question: "Y a-t-il un support client chez Cal AI ?"
-    answer: "Selon de nombreux avis sur TrustPilot et Reddit, Cal AI n'a pas de bouton de support facilement accessible. Les utilisateurs rapportent des difficultés à contacter l'équipe. LOWIS dispose d'un support client réactif et d'une validation hebdomadaire par des nutritionnistes."
+    answer: "Selon de nombreux avis sur TrustPilot et Reddit, Cal AI n'a pas de bouton de support facilement accessible. LOWIS dispose d'un support client réactif et d'une validation hebdomadaire par des nutritionnistes."
 ---
 
 Vous avez probablement déjà entendu parler de Cal AI, l'application de comptage de calories qui promet de scanner vos repas en photo. Mais est-ce vraiment la meilleure option ? Spoiler : pas forcément.
@@ -219,4 +219,16 @@ Pas de piège, pas d'engagement. Juste une chance de voir si LOWIS est fait pour
 
 ---
 
-*Pour approfondir votre réflexion, consultez notre [guide complet pour choisir une app de nutrition](/blog/choisir-application-nutrition/) et découvrez [comment scanner vos plats marocains en 2 secondes](/blog/scanner-plat-2-secondes/).*
+### Continuez votre lecture
+
+**Dans la catégorie [Comparatifs](/blog/comparatifs/)** — Trouvez la meilleure app pour vous
+
+**Autres comparatifs** :
+- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — Le géant historique
+- [LOWIS vs Yazio](/blog/lowis-vs-yazio/) — L'alternative européenne
+- [LOWIS vs Lose It!](/blog/lowis-vs-lose-it/) — L'app américaine
+
+**Guides essentiels** :
+- [Comment choisir une app de nutrition](/blog/choisir-application-nutrition/) — Les 7 critères essentiels
+- [Pourquoi les apps gratuites échouent](/blog/apps-gratuites-echec/) — Le vrai coût du "gratuit"
+- [Guide complet pour perdre du poids](/blog/perdre-poids-intelligemment/) — L'approche intelligente

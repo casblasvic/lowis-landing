@@ -18,15 +18,15 @@ image: "perdre-poids-intelligemment/hero.webp"
 imageAlt: "Complete guide to losing weight smartly with AI assistance"
 faq:
   - question: "Why do 95% of diets fail?"
-    answer: "Traditional diets fail for 4 main reasons: restriction creates frustration and cravings, metabolism adapts by slowing down, the rebound effect causes the body to store more fat after restriction, and most programs abandon support after a few weeks."
+    answer: "Read the full analysis in <a href='/blog/why-diets-fail/'>why diets fail</a>: restriction triggers survival mode, metabolism adapts, and the <a href='/blog/avoid-weight-rebound/'>rebound effect</a> kicks in. <a href='/blog/free-calorie-apps-fail/'>Free apps fail</a> because they ignore these factors."
   - question: "How much weight can you healthily lose per week?"
-    answer: "A healthy, sustainable weight loss is 0.5 to 1 kg (1-2 lbs) per week maximum. This corresponds to a moderate caloric deficit of 300-500 kcal per day. Rapid losses are always followed by rapid regains."
+    answer: "0.5 to 1 kg (1-2 lbs) per week maximum. Rapid losses lead to <a href='/blog/avoid-weight-rebound/'>weight rebound</a>. An <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> helps maintain sustainable progress."
   - question: "What differentiates an AI coach from calorie counting apps?"
-    answer: "Classic apps (passive AI) only recognize foods and record calories. An active AI coach analyzes your overall situation (stress, sleep, hormonal cycle), recommends personalized adjustments, adapts in real-time to your results, and actively guides you toward your goals 24/7."
+    answer: "Classic apps only count calories. <a href='/blog/ai-nutrition-coach-how-it-works/'>An AI coach</a> analyzes <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> including <a href='/blog/sleep-weight-loss/'>sleep</a>, <a href='/blog/stress-weight-loss/'>stress</a>, and <a href='/blog/menstrual-cycle-weight-loss/'>hormonal cycle</a>."
   - question: "Do I have to eliminate foods I love to lose weight?"
-    answer: "No! Losing weight smartly means learning to integrate your favorite foods in a balanced way. The key is eating better, not less. Total restrictions create frustration and abandonment."
+    answer: "No! It's <a href='/blog/why-diets-fail/'>why restrictive diets fail</a>. The key is eating better, not less. The <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> helps transform your relationship with food."
   - question: "What factors besides calories affect weight loss?"
-    answer: "A complete approach analyzes 40+ indicators: macronutrients, micronutrients, hydration, sleep quality (less than 7h = slowed metabolism), stress level (cortisol = fat storage), menstrual cycle, and even the order in which you eat your foods."
+    answer: "LOWIS analyzes <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a>: <a href='/blog/sleep-weight-loss/'>sleep</a>, <a href='/blog/stress-weight-loss/'>stress</a>, <a href='/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a>, hydration, digestion. Learn <a href='/blog/how-to-choose-nutrition-app/'>how to choose a nutrition app</a> that tracks them all."
 ---
 
 Losing weight is one of the most common goals, but also one of the hardest to achieve sustainably. If you're reading these lines, you've probably already tried several diets, downloaded apps, and felt the frustration of seeing the pounds come back.
@@ -203,4 +203,29 @@ No miracle diet, no impossible restrictions. Just a smart approach, adapted to Y
 
 ---
 
-*This article is part of our series on smart nutrition. Check out our other guides to deepen each aspect of lasting weight loss.*
+---
+
+### Continue Reading
+
+**In the category [Guides](/blog/guides/)** — Our complete guides
+
+**Understanding why diets fail**:
+- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
+- [How to avoid the rebound effect](/blog/avoid-weight-rebound/) — Keep your results
+- [Why free calorie apps fail](/blog/free-calorie-apps-fail/) — The real cost
+
+**Key factors that affect your weight**:
+- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+
+**LOWIS technology**:
+- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
+- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [Scan meals in 2 seconds](/blog/scan-meal-2-seconds/) — Easy meal tracking
+- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success
+
+**Compare apps**:
+- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — Detailed comparison
+- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — AI scanning comparison
+- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria

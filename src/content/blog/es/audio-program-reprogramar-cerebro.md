@@ -19,15 +19,15 @@ image: "audio-program/hero.png"
 imageAlt: "Audio Program LOWIS - Reprogramar tu cerebro para perder peso"
 faq:
   - question: "¿Qué es el Audio Program de LOWIS?"
-    answer: "Es un programa de audio diario de 5-10 minutos incluido en LOWIS. Basado en la ciencia de la neuroplasticidad, ayuda a transformar tu relación con la comida reprogramando los patrones mentales que sabotean tus esfuerzos de pérdida de peso."
-  - question: "¿Es hipnosis?"
-    answer: "No. El Audio Program utiliza técnicas validadas científicamente: visualización guiada, meditación de atención plena, y afirmaciones basadas en neurociencia. Permaneces completamente consciente y en control durante toda la sesión."
-  - question: "¿Cuánto tiempo se necesita para ver resultados?"
-    answer: "Los estudios sobre neuroplasticidad muestran que nuevos hábitos pueden formarse en 21-66 días de práctica regular. La mayoría de usuarios notan cambios en su comportamiento alimentario después de 2-3 semanas de escucha diaria."
-  - question: "¿El Audio Program reemplaza la terapia?"
-    answer: "No. Es una herramienta complementaria que ayuda con los aspectos comunes de la relación con la comida. Para trastornos alimentarios diagnosticados o traumas, recomendamos consultar a un profesional de salud mental."
-  - question: "¿Cuándo debo escuchar el Audio Program?"
-    answer: "Idealmente por la mañana (para programar tu día) o por la noche antes de dormir (cuando el cerebro es más receptivo). Algunos usuarios también lo escuchan antes de momentos de riesgo: antes de una comida social, cuando sube el estrés, etc."
+    answer: "Es un programa de audio diario de 5-10 minutos incluido en LOWIS. Basado en neuroplasticidad, ayuda a transformar tu relación con la comida. Complementa los <a href='/blog/40-indicadores-perdida-peso/'>40+ indicadores</a> que el <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> analiza."
+  - question: "¿Ayuda con el estrés y el sueño?"
+    answer: "Sí, el Audio Program reduce el <a href='/blog/estres-perdida-peso/'>estrés que bloquea la pérdida de peso</a> y mejora el <a href='/blog/sueno-perdida-peso/'>sueño</a>. 10 minutos al día pueden cambiar todo."
+  - question: "¿Funciona para mujeres con síntomas del ciclo?"
+    answer: "Sí, ayuda a gestionar los antojos de la fase lútea. Combina con nuestro artículo sobre <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo menstrual y pérdida de peso</a> para un enfoque completo."
+  - question: "¿Por qué incluir el mental en la pérdida de peso?"
+    answer: "Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>: ignoran el aspecto mental. Nuestra <a href='/blog/perder-peso-inteligente/'>guía completa</a> explica el enfoque integral."
+  - question: "¿Las otras apps incluyen esto?"
+    answer: "No, es único de LOWIS. Las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas no incluyen coaching mental</a>. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app de nutrición</a>."
 ---
 
 ¿Cuántas veces has empezado una dieta con una motivación de acero... para abandonarlo todo 3 semanas después?
@@ -248,4 +248,23 @@ Porque perder peso de forma duradera empieza en la cabeza.
 
 ---
 
-*Para entender cómo el estrés sabotea tus esfuerzos de pérdida de peso, consulta nuestro artículo sobre [el estrés y la pérdida de peso](/blog/estres-perdida-peso/). Y descubre [por qué el 95% de las dietas fracasan](/blog/por-que-dietas-fallan/) — y lo que puedes hacer diferente con nuestra [guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/).*
+---
+
+### Continúa leyendo
+
+**En la categoría [Mindset](/blog/mindset/)** — Psicología nutricional
+
+**Artículos relacionados sobre bienestar** :
+- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Gestión del cortisol
+- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Mejora tu descanso
+- [El ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) — Gestionar antojos hormonales
+
+**Guías esenciales** :
+- [Guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/) — El enfoque completo
+- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [Cómo evitar el efecto rebote](/blog/evitar-efecto-rebote/) — Mantener los resultados
+
+**Tecnología LOWIS** :
+- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que LOWIS sigue
+- [Cómo funciona el coach IA](/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
+- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios

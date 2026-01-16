@@ -23,17 +23,15 @@ comparisonLogos:
   competitorName: "MyFitnessPal"
 faq:
   - question: "What's the main difference between LOWIS and MyFitnessPal?"
-    answer: "The fundamental difference is the approach: MyFitnessPal is a passive food diary where you do all the work, while LOWIS is an active AI coach that analyzes 40+ health indicators and personally guides you toward your goals."
+    answer: "MFP is a passive food diary. LOWIS is an <a href='/blog/ai-nutrition-coach-how-it-works/'>active AI coach</a> that analyzes <a href='/blog/40-indicators-weight-loss/'>40+ health indicators</a> including <a href='/blog/sleep-weight-loss/'>sleep</a> and <a href='/blog/stress-weight-loss/'>stress</a>."
   - question: "Is MyFitnessPal really free?"
-    answer: "MyFitnessPal's free version has been very limited since 2022: the barcode scanner is now paid, ads are everywhere, and advanced features require Premium (~$90/year). LOWIS offers a full 7-day free trial, then a transparent subscription."
+    answer: "MFP's free version is very limited (barcode scanner now paid). Read <a href='/blog/free-calorie-apps-fail/'>why free apps fail</a> and <a href='/blog/how-to-choose-nutrition-app/'>how to choose a nutrition app</a> for the real criteria."
   - question: "Why are users leaving MyFitnessPal?"
-    answer: "According to TrustPilot and Reddit reviews, the main reasons are: features that became paid, time-consuming manual entry, generic advice, and personal data sold to third parties. LOWIS offers an alternative with instant AI photo scanning and personalized coaching."
-  - question: "Does MyFitnessPal recognize local dishes?"
-    answer: "MyFitnessPal has a user-generated database with many errors. Dishes like tagine, couscous, or regional specialties are often poorly referenced or missing. LOWIS includes 500+ Moroccan recipes and comprehensive databases of French and international dishes validated by nutritionists."
-  - question: "Can I import my MyFitnessPal data to LOWIS?"
-    answer: "LOWIS doesn't require any import. From day one, you scan your meals with photos and the AI creates your nutritional profile. Your MyFitnessPal history isn't necessary because LOWIS adapts in real-time to your current habits."
-  - question: "Does LOWIS really use AI?"
-    answer: "Yes, LOWIS uses advanced AI models for every analysis. Unlike MyFitnessPal which is a simple counter, LOWIS analyzes your overall situation (sleep, stress, hormonal cycle, digestion) and provides personalized recommendations in real-time."
+    answer: "Features became paid, manual entry is time-consuming, advice is generic. LOWIS <a href='/blog/scan-meal-2-seconds/'>scans meals in 2 seconds</a> and provides personalized coaching. It's <a href='/blog/why-diets-fail/'>why passive diets fail</a>."
+  - question: "Does MyFitnessPal track menstrual cycle?"
+    answer: "No. The <a href='/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> affects weight significantly. LOWIS tracks it with <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a>. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> for women."
+  - question: "How do I avoid weight rebound after MyFitnessPal?"
+    answer: "Calorie counting alone leads to the <a href='/blog/avoid-weight-rebound/'>rebound effect</a>. LOWIS includes the <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> for lasting mental changes — the 80% of success most apps ignore."
 ---
 
 MyFitnessPal. The app everyone knows. With over 200 million users, it's the undisputed giant of calorie counting.
@@ -267,4 +265,25 @@ No ads. No data selling. Just an AI coach that works for you.
 
 ---
 
-*To learn more about choosing the right app, check out our [complete guide to choosing a nutrition app](/blog/how-to-choose-nutrition-app/) with the 7 essential criteria, and discover why [tracking 40+ health indicators](/blog/40-indicators-weight-loss/) makes all the difference.*
+---
+
+### Continue Reading
+
+**In the category [Comparisons](/blog/comparatifs/)** — All our app comparisons
+
+**Other app comparisons**:
+- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — AI scanning comparison
+- [LOWIS vs Yazio](/blog/lowis-vs-yazio/) — Popular in Europe
+- [LOWIS vs Lose It!](/blog/lowis-vs-lose-it/) — US favorite
+- [Why free apps fail](/blog/free-calorie-apps-fail/) — The real cost
+- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
+
+**Key factors MFP ignores**:
+- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+
+**Essential guides**:
+- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results

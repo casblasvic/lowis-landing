@@ -18,17 +18,15 @@ image: "cycle-menstruel/hero.png"
 imageAlt: "Ciclo menstrual y pérdida de peso - Cómo adaptar la alimentación a cada fase"
 faq:
   - question: "¿Por qué engordo antes de la regla?"
-    answer: "El aumento de peso antes de la regla (1-3 kg) se debe principalmente a la retención de líquidos causada por la caída de progesterona y el aumento de estrógenos. NO es grasa. Este peso desaparece generalmente en los 2-3 días siguientes al inicio de la menstruación."
-  - question: "¿Puedo perder peso durante la regla?"
-    answer: "Sí, ¡y es un buen momento! Después del día 1-2, las hormonas están en su punto más bajo, lo que reduce los antojos y el apetito. Muchas mujeres constatan que es su mejor período para perder peso si adaptan su alimentación."
-  - question: "¿Cómo adaptar mi alimentación a mi ciclo?"
-    answer: "Fase folicular (D1-14): Más proteínas y fibras, reduce los carbohidratos. Fase ovulación (D14-16): Mantén el equilibrio. Fase lútea (D17-28): Aumenta ligeramente los carbohidratos complejos, más magnesio y hierro. LOWIS adapta automáticamente tus recomendaciones."
-  - question: "¿Por qué tengo más hambre antes de la regla?"
-    answer: "El pico de progesterona en fase lútea aumenta naturalmente el apetito en 200-500 calorías/día. ¡Es biológico, no falta de voluntad! LOWIS tiene en cuenta esta variación y ajusta tus objetivos calóricos automáticamente."
-  - question: "¿La píldora anticonceptiva afecta la pérdida de peso?"
-    answer: "Algunas píldoras pueden favorecer la retención de líquidos o modificar el apetito. LOWIS te permite seguir estos efectos y adaptar tu alimentación en consecuencia. Consulta con tu médico cualquier duda sobre tu anticoncepción."
-  - question: "¿Debo evitar pesarme durante la regla?"
-    answer: "Se recomienda pesarse siempre en el mismo momento del ciclo (ej: día 7-10) para tener medidas comparables. LOWIS analiza tus pesadas en función de tu ciclo y te muestra la tendencia real, no las fluctuaciones hormonales."
+    answer: "El aumento de peso (1-3 kg) es retención de líquidos, NO grasa. Es uno de los <a href='/blog/40-indicadores-perdida-peso/'>40+ indicadores</a> que LOWIS sigue. Desaparece en 2-3 días tras la menstruación."
+  - question: "¿Por qué tengo más hambre y estrés en fase lútea?"
+    answer: "La progesterona aumenta el apetito (+200-500 cal) y el <a href='/blog/estres-perdida-peso/'>estrés afecta el peso</a>. El <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> ayuda a gestionar esta fase."
+  - question: "¿El mal sueño empeora los síntomas del ciclo?"
+    answer: "Sí, el <a href='/blog/sueno-perdida-peso/'>mal sueño amplifica los síntomas hormonales</a> y los antojos. El <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA LOWIS</a> adapta las recomendaciones según tu sueño y ciclo."
+  - question: "¿Las apps normales entienden el ciclo menstrual?"
+    answer: "No, las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas ignoran el ciclo</a>. Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a> para mujeres. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app</a>."
+  - question: "¿Cómo perder peso respetando mi ciclo?"
+    answer: "Sigue nuestra <a href='/blog/perder-peso-inteligente/'>guía completa para perder peso</a> y descubre cómo <a href='/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>. LOWIS adapta automáticamente las recomendaciones a cada fase."
 ---
 
 Si eres una mujer que intenta perder peso, probablemente hayas vivido este escenario frustrante:
@@ -292,4 +290,23 @@ Sin dieta única para todos. Solo un enfoque que respeta tu cuerpo.
 
 ---
 
-*Para saber más sobre pérdida de peso sostenible, descubre nuestra [guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/), cómo [el sueño afecta la pérdida de peso](/blog/sueno-perdida-peso/), y por qué [el estrés bloquea tu progreso](/blog/estres-perdida-peso/). Entiende los [40+ indicadores que importan para perder peso](/blog/40-indicadores-perdida-peso/).*
+---
+
+### Continúa leyendo
+
+**En la categoría [Salud Femenina](/blog/sante-femme/)** — Nutrición para mujeres
+
+**Artículos relacionados sobre bienestar** :
+- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Crucial en fase lútea
+- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Cortisol y sus efectos
+- [Audio Program para reprogramar tu cerebro](/blog/audio-program-reprogramar-cerebro/) — Gestionar antojos
+
+**Guías esenciales** :
+- [Guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/) — El enfoque completo
+- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [Cómo evitar el efecto rebote](/blog/evitar-efecto-rebote/) — Mantener los resultados
+
+**Tecnología LOWIS** :
+- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que LOWIS sigue
+- [Cómo funciona el coach IA](/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
+- [Escanear platos en 2 segundos](/blog/escanear-plato-2-segundos/) — Tecnología de reconocimiento

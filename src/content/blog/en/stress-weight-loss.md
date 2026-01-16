@@ -18,15 +18,15 @@ image: "stress-perte-poids/hero.png"
 imageAlt: "Stress and weight loss - How cortisol blocks your results"
 faq:
   - question: "Can stress really prevent weight loss?"
-    answer: "Yes. Cortisol (the stress hormone) promotes fat storage, especially abdominal fat, increases appetite for fatty and sugary foods, and slows metabolism. That's why some people don't lose weight despite a calorie deficit."
+    answer: "Yes. Cortisol promotes fat storage and is one of the <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> affecting weight. Combined with <a href='/blog/sleep-weight-loss/'>poor sleep</a>, it's <a href='/blog/why-diets-fail/'>why diets fail</a> for most people."
   - question: "How do I know if stress is blocking my weight loss?"
-    answer: "Tell-tale signs: you crave sugar/fat at the end of the day, you eat without real hunger, your fat concentrates around your belly, you sleep poorly, you have low energy despite enough calories. LOWIS analyzes these indicators for you."
+    answer: "Tell-tale signs: sugar cravings, belly fat, poor sleep. An <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> analyzes these patterns. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> for a holistic approach."
   - question: "What should I do when I eat because of stress?"
-    answer: "First, stop feeling guilty — it's a normal biological response. Then: identify your triggers, prepare satisfying but healthy alternatives, and address the source of stress. LOWIS helps you identify these patterns and suggests adapted solutions."
+    answer: "First, don't feel guilty — it's biological. The <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> helps reprogram these patterns. For women, the <a href='/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> also affects cravings."
   - question: "Does exercise help reduce stress?"
-    answer: "Yes, but be careful: overly intense exercise can increase cortisol in the short term. Prioritize walking, yoga, swimming, or a sport you ENJOY. The goal is to move without creating additional stress."
+    answer: "Yes, but intense exercise can increase cortisol short-term. Prioritize walking, yoga, or enjoyable sports. Discover all the factors in our <a href='/blog/40-indicators-weight-loss/'>40+ indicators guide</a>."
   - question: "How long does it take to reduce cortisol?"
-    answer: "With lifestyle changes (sleep, nutrition, stress management), cortisol levels can improve within 2-4 weeks. Weight loss then becomes easier. LOWIS tracks these indicators and adapts your recommendations."
+    answer: "With lifestyle changes, cortisol improves in 2-4 weeks. Prioritize <a href='/blog/sleep-weight-loss/'>sleep</a> and learn how to <a href='/blog/avoid-weight-rebound/'>avoid weight rebound</a> once you start losing."
 ---
 
 You're doing everything right. You're counting your calories. You're moving. And yet... **the scale won't budge**.
@@ -246,3 +246,24 @@ Because losing weight is also about taking care of your mind.
 ---
 
 *Sources: studies on cortisol and metabolism, research on emotional eating, consultations with nutritional psychologists.*
+
+---
+
+### Continue Reading
+
+**In the category [Wellness](/blog/bien-etre/)** — All our wellness articles
+
+**Key factors that affect your weight**:
+- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success
+
+**Essential guides**:
+- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results
+
+**LOWIS technology**:
+- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
+- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [Scan meals in 2 seconds](/blog/scan-meal-2-seconds/) — Easy meal tracking

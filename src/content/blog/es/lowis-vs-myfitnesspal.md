@@ -23,17 +23,15 @@ comparisonLogos:
   competitorName: "MyFitnessPal"
 faq:
   - question: "¿Cuál es la diferencia principal entre LOWIS y MyFitnessPal?"
-    answer: "La diferencia fundamental es el enfoque: MyFitnessPal es un diario alimentario pasivo donde tú haces todo el trabajo, mientras que LOWIS es un coach IA activo que analiza +40 indicadores de salud y te guía personalmente hacia tus objetivos."
+    answer: "MyFitnessPal es un diario pasivo. LOWIS es un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA activo</a> que analiza <a href='/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> incluyendo <a href='/blog/sueno-perdida-peso/'>sueño</a> y <a href='/blog/estres-perdida-peso/'>estrés</a>."
   - question: "¿MyFitnessPal es realmente gratis?"
-    answer: "La versión gratuita de MyFitnessPal es muy limitada desde 2022: el escáner de código de barras ahora es de pago, la publicidad es omnipresente, y las funciones avanzadas requieren Premium (~80€/año). LOWIS ofrece 7 días de prueba gratis completa, luego una suscripción transparente."
+    answer: "Las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas tienen costes ocultos</a>: tiempo perdido, publicidad, datos vendidos. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> para entender el verdadero coste."
   - question: "¿Por qué los usuarios abandonan MyFitnessPal?"
-    answer: "Según las opiniones en TrustPilot y Reddit, las razones principales son: funcionalidades que se han vuelto de pago, introducción manual tediosa, consejos genéricos, y datos personales vendidos a terceros. LOWIS ofrece una alternativa con escaneo foto IA instantáneo y coaching personalizado."
+    answer: "Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>: sin personalización, sin acompañamiento. Con LOWIS, <a href='/blog/escanear-plato-2-segundos/'>escaneas en 2 segundos</a> y recibes coaching personalizado."
   - question: "¿MyFitnessPal reconoce platos españoles y marroquíes?"
-    answer: "MyFitnessPal tiene una base de datos generada por usuarios, con numerosos errores. Platos como la paella, el tajine o el cuscús suelen estar mal referenciados o ausentes. LOWIS incluye +500 recetas marroquíes y una base completa de platos españoles validada por nutricionistas."
-  - question: "¿Puedo importar mis datos de MyFitnessPal a LOWIS?"
-    answer: "LOWIS no necesita importación. Desde el primer día, escaneas tus comidas en foto y la IA crea tu perfil nutricional. Tu historial de MyFitnessPal no es necesario porque LOWIS se adapta en tiempo real a tus hábitos actuales."
+    answer: "MyFitnessPal tiene base de datos con errores. LOWIS incluye +500 recetas locales y entiende el <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo menstrual</a> — crucial para mujeres."
   - question: "¿LOWIS usa realmente IA?"
-    answer: "Sí, LOWIS utiliza modelos de IA avanzados para cada análisis. A diferencia de MyFitnessPal que es un simple contador, LOWIS analiza tu situación global (sueño, estrés, ciclo hormonal, digestión) y proporciona recomendaciones personalizadas en tiempo real."
+    answer: "Sí, analiza <a href='/blog/sueno-perdida-peso/'>sueño</a>, <a href='/blog/estres-perdida-peso/'>estrés</a>, <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal</a>. Lee nuestra <a href='/blog/perder-peso-inteligente/'>guía completa</a> para entender el enfoque."
 ---
 
 MyFitnessPal. La aplicación que todo el mundo conoce. Con más de 200 millones de usuarios, es el gigante indiscutible del conteo de calorías.
@@ -267,4 +265,22 @@ Sin publicidad. Sin venta de datos. Solo un coach IA que trabaja para ti.
 
 ---
 
-*Para profundizar tu elección, consulta nuestra [guía completa para elegir una app de nutrición](/blog/como-elegir-app-nutricion/) con los 7 criterios esenciales, y descubre por qué [seguir +40 indicadores de salud](/blog/40-indicadores-perdida-peso/) marca toda la diferencia.*
+---
+
+### Continúa leyendo
+
+**En la categoría [Comparativas](/blog/comparatifs/)** — Nuestras comparaciones detalladas
+
+**Otras comparativas de apps** :
+- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — La app de escaneo IA
+- [LOWIS vs Yazio](/blog/lowis-vs-yazio/) — Popular en Europa
+- [LOWIS vs Lose It!](/blog/lowis-vs-lose-it/) — La app americana
+
+**Guías para elegir bien** :
+- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
+- [Por qué las apps gratuitas fallan](/blog/apps-calorias-gratis-fallan/) — El verdadero coste
+
+**Entiende por qué no pierdes peso** :
+- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Factor ignorado
+- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — El cortisol

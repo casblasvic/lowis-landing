@@ -18,15 +18,17 @@ image: "stress-perte-poids/hero.png"
 imageAlt: "Stress et perte de poids - Comment le cortisol bloque vos résultats"
 faq:
   - question: "Le stress peut-il vraiment empêcher de perdre du poids ?"
-    answer: "Oui. Le cortisol (hormone du stress) favorise le stockage des graisses, surtout abdominales, augmente l'appétit pour les aliments gras et sucrés, et ralentit le métabolisme. C'est pour ça que certaines personnes ne perdent pas de poids malgré un déficit calorique."
+    answer: "Oui. Le cortisol favorise le stockage des graisses abdominales et augmente l'appétit. C'est pourquoi <a href='/blog/pourquoi-regimes-echouent/'>les régimes restrictifs échouent</a> : ils créent plus de stress et donc plus de cortisol."
   - question: "Comment savoir si mon stress bloque ma perte de poids ?"
-    answer: "Signes révélateurs : vous avez des envies de sucre/gras en fin de journée, vous mangez sans faim réelle, votre graisse se concentre au ventre, vous dormez mal, vous avez peu d'énergie malgré assez de calories. LOWIS analyse ces indicateurs pour vous."
+    answer: "Signes révélateurs : envies de sucre/gras, graisse abdominale résistante, <a href='/blog/sommeil-perte-poids/'>mauvais sommeil</a>, peu d'énergie. LOWIS analyse <a href='/blog/40-indicateurs-perte-poids/'>40+ indicateurs</a> pour identifier ces patterns."
   - question: "Que faire quand on mange à cause du stress ?"
-    answer: "D'abord, arrêtez de culpabiliser — c'est une réponse biologique normale. Ensuite : identifiez vos déclencheurs, préparez des alternatives satisfaisantes mais saines, et traitez la source du stress. LOWIS vous aide à identifier ces patterns et propose des solutions adaptées."
+    answer: "Arrêtez de culpabiliser — c'est biologique. Notre <a href='/blog/audio-program-reprogrammer-cerveau/'>Audio Program</a> vous aide à reprogrammer ces réflexes et à dissocier stress et nourriture grâce à la neuroplasticité."
   - question: "Le sport aide-t-il à réduire le stress ?"
-    answer: "Oui, mais attention : un exercice trop intense peut augmenter le cortisol à court terme. Privilégiez la marche, le yoga, la natation, ou un sport que vous AIMEZ. L'objectif est de bouger sans créer de stress supplémentaire."
+    answer: "Oui, mais un exercice trop intense peut augmenter le cortisol. Privilégiez la marche, le yoga, ou un sport que vous AIMEZ. L'objectif est de bouger sans créer de stress supplémentaire."
+  - question: "Comment le cycle menstruel affecte-t-il le stress ?"
+    answer: "Les femmes sont particulièrement vulnérables au stress en phase lutéale quand la progestérone chute. Apprenez à <a href='/blog/cycle-menstruel-perte-poids/'>adapter votre alimentation à votre cycle</a> pour mieux gérer ces périodes."
   - question: "Combien de temps faut-il pour réduire son cortisol ?"
-    answer: "Avec des changements de mode de vie (sommeil, alimentation, gestion du stress), les niveaux de cortisol peuvent s'améliorer en 2-4 semaines. La perte de poids devient alors plus facile. LOWIS suit ces indicateurs et adapte vos recommandations."
+    answer: "Avec des changements de mode de vie (<a href='/blog/sommeil-perte-poids/'>meilleur sommeil</a>, alimentation, gestion du stress), le cortisol peut s'améliorer en 2-4 semaines. La perte de poids reprend alors naturellement."
 ---
 
 Vous faites tout bien. Vous comptez vos calories. Vous bougez. Et pourtant... **la balance ne bouge pas**.
@@ -80,7 +82,7 @@ Quand vous êtes stressé(e), votre corps produit du cortisol. C'est une répons
 6. **Irritabilité** — Tout vous énerve plus facilement
 7. **Plateau de poids** — Malgré un déficit, rien ne bouge depuis des semaines
 
-**Si vous vous reconnaissez dans 3+ de ces signes, le stress est probablement votre problème principal.**
+**Si vous vous reconnaissez dans 3+ de ces signes, le stress est probablement votre problème principal.** Les femmes doivent aussi considérer leur [cycle menstruel](/blog/cycle-menstruel-perte-poids/) qui amplifie ces symptômes à certaines phases.
 
 ## Pourquoi les régimes restrictifs aggravent le stress
 
@@ -217,10 +219,10 @@ Pas juste "mange moins" — mais "ton stress est élevé, priorise le sommeil ce
 ### "Je ne peux pas réduire mon stress — travail, enfants, etc."
 
 Vous ne pouvez pas éliminer le stress, mais vous pouvez améliorer votre **réponse** au stress :
-- Respiration profonde (même 2 minutes)
+- Respiration profonde (même 2 minutes) — notre [Audio Program](/blog/audio-program-reprogrammer-cerveau/) inclut des sessions express
 - Marche de 10 min après le déjeuner
-- Priorité au sommeil
-- **Ne pas ajouter le stress de la restriction alimentaire**
+- [Priorité au sommeil](/blog/sommeil-perte-poids/) — 7-8h non négociables
+- **Ne pas ajouter le stress de la restriction alimentaire** — c'est [pourquoi les régimes échouent](/blog/pourquoi-regimes-echouent/)
 
 ### "J'ai besoin de manger quand je suis stressé(e)"
 
@@ -242,6 +244,19 @@ Le stress n'est pas une excuse — c'est une **vraie raison** pour laquelle vous
 - Un coaching qui ne vous culpabilise jamais
 
 Parce que perdre du poids, c'est aussi prendre soin de votre mental.
+
+---
+
+### Continuez votre lecture
+
+**Dans la catégorie [Bien-être](/blog/bien-etre/)** :
+- [Sommeil et perte de poids : le lien scientifique](/blog/sommeil-perte-poids/) — Comment mal dormir augmente le cortisol
+- [Audio Program : reprogrammer votre cerveau](/blog/audio-program-reprogrammer-cerveau/) — Techniques pour dissocier stress et nourriture
+
+**Guides essentiels** :
+- [Guide complet pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/) — Une approche sans stress
+- [Pourquoi les régimes échouent](/blog/pourquoi-regimes-echouent/) — La restriction crée du stress
+- [Cycle menstruel et perte de poids](/blog/cycle-menstruel-perte-poids/) — Les femmes et le stress hormonal
 
 ---
 

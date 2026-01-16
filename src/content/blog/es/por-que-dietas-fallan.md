@@ -19,15 +19,15 @@ image: "pourquoi-regimes-echouent/hero.webp"
 imageAlt: "Por qué las dietas tradicionales fracasan - La ciencia explicada"
 faq:
   - question: "¿Por qué fracasan el 95% de las dietas?"
-    answer: "Las dietas fracasan por biología, no por falta de voluntad. Tu cerebro dispara una alarma de supervivencia (más hambre, menos energía), tu metabolismo se ralentiza hasta un 22%, y el efecto rebote te hace almacenar grasa más eficientemente tras la restricción."
+    answer: "Las dietas fracasan porque ignoran el <a href='/blog/estres-perdida-peso/'>estrés (cortisol)</a>, el <a href='/blog/sueno-perdida-peso/'>mal sueño</a>, y para mujeres el <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal</a>. Descubre cómo <a href='/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>."
   - question: "¿Qué es el efecto rebote y cómo evitarlo?"
-    answer: "El efecto rebote es la recuperación de peso después de una dieta, a menudo más de lo perdido. Para evitarlo: pierde máx 1 kg/semana, nunca bajes demasiado las calorías (mín 1400 kcal mujeres, 1800 kcal hombres), y sigue una fase de estabilización tras la pérdida."
-  - question: "¿Por qué el metabolismo se ralentiza durante una dieta?"
-    answer: "Cuando las calorías bajan drásticamente, tu cuerpo inteligente ralentiza el metabolismo para ahorrar energía (hasta -22% tras 12 semanas). Por eso hay que priorizar un déficit moderado (300-500 kcal) en lugar de una restricción severa."
-  - question: "¿Funcionan las dietas populares como Dukan o el ayuno intermitente?"
-    answer: "Estas dietas pueden mostrar resultados a corto plazo, pero a menudo fracasan a largo plazo. Las dietas muy restrictivas son imposibles de mantener. El ayuno intermitente funciona para algunos, pero muchos compensan durante las ventanas alimentarias."
-  - question: "¿Cuál es la alternativa a las dietas tradicionales?"
-    answer: "El enfoque duradero se basa en 5 pilares: déficit calórico moderado (300-500 kcal), flexibilidad sin prohibiciones, escucha de señales de hambre, acompañamiento continuo personalizado, y visión a largo plazo. No es una dieta temporal, es una nueva forma de comer."
+    answer: "El efecto rebote es recuperar peso tras una dieta. Nuestro artículo <a href='/blog/evitar-efecto-rebote/'>cómo evitar el efecto rebote</a> explica las 5 estrategias. El <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> ayuda con el aspecto mental."
+  - question: "¿Por qué el estrés bloquea la pérdida de peso?"
+    answer: "El <a href='/blog/estres-perdida-peso/'>estrés eleva el cortisol</a> que almacena grasa abdominal. El <a href='/blog/sueno-perdida-peso/'>mal sueño lo amplifica</a>. Un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> analiza estos <a href='/blog/40-indicadores-perdida-peso/'>40+ indicadores</a>."
+  - question: "¿Las apps de calorías ayudan?"
+    answer: "Las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque solo cuentan calorías. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> y nuestros comparativos: <a href='/blog/lowis-vs-myfitnesspal/'>LOWIS vs MyFitnessPal</a>."
+  - question: "¿Cuál es la alternativa a las dietas?"
+    answer: "Nuestra <a href='/blog/perder-peso-inteligente/'>guía completa para perder peso</a> explica el enfoque inteligente. Con un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA activo</a>, no una dieta temporal."
 ---
 
 Has probado Weight Watchers. Luego la dieta Dukan. Quizás el ayuno intermitente. Cada vez, el mismo escenario: pérdida de peso inicial, estancamiento, frustración, abandono, recuperación de los kilos (y a menudo más).
@@ -234,4 +234,23 @@ En 2 minutos, obtén un plan personalizado basado en tus hábitos reales, no en 
 
 ---
 
-*Para un enfoque completo de la pérdida de peso duradera, consulta nuestra [guía completa](/blog/perder-peso-inteligente/).*
+---
+
+### Continúa leyendo
+
+**En la categoría [Guías](/blog/guides/)** — Nuestras guías completas
+
+**Artículos esenciales para entender el enfoque** :
+- [Guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/) — El enfoque que funciona
+- [Cómo evitar el efecto rebote](/blog/evitar-efecto-rebote/) — Mantener los resultados
+- [Audio Program para reprogramar tu cerebro](/blog/audio-program-reprogramar-cerebro/) — El mental es clave
+
+**Factores que las dietas ignoran** :
+- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Por qué 7h mínimo cambian todo
+- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Cortisol y sus efectos
+- [El ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) — Para mujeres
+
+**Elige la herramienta adecuada** :
+- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
+- [Por qué las apps gratuitas fallan](/blog/apps-calorias-gratis-fallan/) — El coste oculto
+- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que debes seguir

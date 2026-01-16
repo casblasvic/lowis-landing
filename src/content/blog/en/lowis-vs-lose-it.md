@@ -23,13 +23,13 @@ comparisonLogos:
   competitorName: "Lose It!"
 faq:
   - question: "What's the difference between LOWIS and Lose It!?"
-    answer: "Lose It! is a simple calorie counter with basic photo scanning, while LOWIS is a complete AI coach that analyzes 40+ health indicators and adapts to your personal situation (sleep, stress, hormonal cycle)."
+    answer: "Lose It! counts calories. LOWIS is an <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> analyzing <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> including <a href='/blog/sleep-weight-loss/'>sleep</a>, <a href='/blog/stress-weight-loss/'>stress</a>, and <a href='/blog/menstrual-cycle-weight-loss/'>cycle</a>."
   - question: "Is Lose It! free?"
-    answer: "Lose It! offers a limited free version (with ads) and a Premium version at about $40/year. LOWIS offers a full 7-day free trial, then a subscription that includes advanced AI and personalized coaching."
-  - question: "Is Lose It! photo scanning as accurate as LOWIS?"
-    answer: "Lose It! uses basic image recognition that often misidentifies portions and composite dishes. LOWIS uses advanced AI models (GPT-4, Claude) for accurate analysis, even of traditional or homemade meals."
-  - question: "Which app has a better international food database?"
-    answer: "Lose It! has a primarily American database. International products and traditional dishes are often missing. LOWIS includes a complete database of local products and 500+ regional recipes."
+    answer: "Lose It! has a limited free version with ads. Read <a href='/blog/free-calorie-apps-fail/'>why free apps fail</a> and <a href='/blog/how-to-choose-nutrition-app/'>how to choose</a> an app that works."
+  - question: "Why do calorie counters lead to weight rebound?"
+    answer: "Counting alone doesn't address the <a href='/blog/avoid-weight-rebound/'>rebound effect</a>. It's <a href='/blog/why-diets-fail/'>why diets fail</a>. LOWIS includes the <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> for lasting change."
+  - question: "Does Lose It! help women with cycle-related weight?"
+    answer: "No. The <a href='/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> affects weight by 1-3kg. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> for women-specific strategies."
 ---
 
 Lose It! is one of the most downloaded weight loss apps in the United States. Its slogan? "Simple, fun, and effective." But is it really effective for international users? And most importantly, is it the best option for YOU?
@@ -212,4 +212,25 @@ Try LOWIS free for 7 days, no credit card required. In 2 minutes, discover what 
 
 ---
 
-*To learn more about choosing the right app, check out our [complete guide to choosing a nutrition app](/blog/how-to-choose-nutrition-app/). Also discover [how to scan your meals in 2 seconds](/blog/scan-meal-2-seconds/) and why [tracking 40+ health indicators](/blog/40-indicators-weight-loss/) is essential for lasting results.*
+---
+
+### Continue Reading
+
+**In the category [Comparisons](/blog/comparatifs/)** — All our app comparisons
+
+**Other app comparisons**:
+- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — The counting giant
+- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — AI scanning comparison
+- [LOWIS vs Yazio](/blog/lowis-vs-yazio/) — Popular in Europe
+- [Why free apps fail](/blog/free-calorie-apps-fail/) — The real cost
+- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
+
+**Key factors Lose It! ignores**:
+- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+
+**Essential guides**:
+- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results

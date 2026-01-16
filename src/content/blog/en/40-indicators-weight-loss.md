@@ -19,13 +19,13 @@ image: "40-indicateurs-perte-poids/hero.webp"
 imageAlt: "The 40+ health indicators for personalized weight loss"
 faq:
   - question: "Why isn't counting calories enough to lose weight?"
-    answer: "Calories only represent part of the equation. Sleep, stress, hormones, digestion, and hydration directly affect your metabolism and ability to lose weight. An app that only tracks calories ignores 90% of success factors."
+    answer: "Calories only represent part of the equation. <a href='/blog/sleep-weight-loss/'>Sleep</a>, <a href='/blog/stress-weight-loss/'>stress</a>, <a href='/blog/menstrual-cycle-weight-loss/'>hormones</a>, digestion, and hydration directly affect your metabolism. That's <a href='/blog/why-diets-fail/'>why simple diets fail</a>. An <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> tracks all these factors."
   - question: "Which health indicators most affect weight loss?"
-    answer: "The 5 most impactful indicators are: sleep (affects hunger hormones), stress (increases cortisol and fat storage), hormonal cycle (for women), hydration (metabolism), and digestion quality (nutrient absorption)."
+    answer: "The 5 most impactful: <a href='/blog/sleep-weight-loss/'>sleep</a> (hunger hormones), <a href='/blog/stress-weight-loss/'>stress</a> (cortisol/fat storage), <a href='/blog/menstrual-cycle-weight-loss/'>hormonal cycle</a> (for women), hydration, and digestion. Read our <a href='/blog/smart-weight-loss-guide/'>complete weight loss guide</a>."
   - question: "How does stress prevent weight loss?"
-    answer: "Chronic stress elevates cortisol, a hormone that promotes abdominal fat storage, increases sugar cravings, and slows metabolism. Even in a calorie deficit, high stress can block weight loss."
+    answer: "Chronic <a href='/blog/stress-weight-loss/'>stress elevates cortisol</a>, promoting abdominal fat storage and sugar cravings. Even in deficit, high stress blocks weight loss. The <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> helps manage this."
   - question: "Why is tracking micronutrients important for weight loss?"
-    answer: "Micronutrient deficiencies (iron, magnesium, B vitamins, D) slow metabolism, cause fatigue, and trigger cravings. A nutrient-poor diet can be caloric but not properly nourish your body."
+    answer: "Deficiencies slow metabolism, cause fatigue, and trigger cravings. <a href='/blog/free-calorie-apps-fail/'>Free apps fail</a> because they ignore this. <a href='/blog/how-to-choose-nutrition-app/'>Choose an app</a> that tracks the full picture."
 ---
 
 You've been counting calories for months. You're in a deficit. Yet the scale won't budge.
@@ -294,4 +294,23 @@ LOWIS monitors these 40+ indicators to offer you total personalization. In 2 min
 
 ---
 
-*To learn more, discover our [complete guide to smart weight loss](/blog/smart-weight-loss-guide/), how [stress blocks your weight loss](/blog/stress-weight-loss/), and why [sleep is crucial for losing weight](/blog/sleep-weight-loss/). For women, our article on [menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) explains how to adapt your diet to each phase.*
+---
+
+### Continue Reading
+
+**In the category [Guides](/blog/guides/)** — Our complete guides
+
+**Essential guides**:
+- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results
+
+**Key factors these indicators reveal**:
+- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+
+**LOWIS technology**:
+- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [Scan meals in 2 seconds](/blog/scan-meal-2-seconds/) — The technology
+- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success

@@ -19,15 +19,15 @@ image: "scanner-plat-2-secondes/hero.webp"
 imageAlt: "Scanner un repas avec l'IA LOWIS en 2 secondes"
 faq:
   - question: "L'IA reconnaît-elle les plats marocains ?"
-    answer: "Oui ! LOWIS a été entraîné sur une base de données de +500 recettes marocaines. Tajine, couscous, harira, pastilla, msemen, baghrir... tout est reconnu automatiquement."
+    answer: "Oui ! LOWIS a été entraîné sur +500 recettes marocaines. Tajine, couscous, harira, pastilla... tout est reconnu. Découvrez les <a href='/blog/40-indicateurs-perte-poids/'>40+ indicateurs</a> analysés après chaque scan."
   - question: "Que faire si l'IA se trompe sur les portions ?"
-    answer: "Vous pouvez ajuster manuellement les portions en quelques taps. L'IA apprend de vos corrections et devient plus précise avec le temps pour VOS habitudes."
-  - question: "Faut-il scanner chaque ingrédient séparément ?"
-    answer: "Non ! L'IA reconnaît les plats complets. Prenez une photo de votre assiette entière et elle identifiera tous les composants : viande, légumes, féculents, sauces..."
-  - question: "Le scanner fonctionne-t-il hors connexion ?"
-    answer: "Le scan initial nécessite une connexion internet pour l'analyse IA. Cependant, vos plats précédemment scannés sont sauvegardés et accessibles hors ligne."
+    answer: "Ajustez manuellement en quelques taps. Le <a href='/blog/coach-ia-comment-marche/'>coach IA</a> apprend de vos corrections et devient plus précis avec le temps pour VOS habitudes."
+  - question: "Pourquoi scanner est mieux que compter manuellement ?"
+    answer: "Le comptage manuel prend 15 min/jour — c'est <a href='/blog/apps-gratuites-echec/'>pourquoi les apps gratuites échouent</a>. Le scan prend 2 secondes et libère du temps pour ce qui compte. Consultez notre <a href='/blog/choisir-application-nutrition/'>guide pour choisir une app</a>."
+  - question: "Le scan aide-t-il vraiment à perdre du poids ?"
+    answer: "Le scan est la première étape. Ensuite, le <a href='/blog/coach-ia-comment-marche/'>coach IA</a> analyse vos données avec le <a href='/blog/sommeil-perte-poids/'>sommeil</a>, le <a href='/blog/stress-perte-poids/'>stress</a>, et pour les femmes le <a href='/blog/cycle-menstruel-perte-poids/'>cycle</a>. C'est <a href='/blog/perdre-poids-intelligemment/'>l'approche intelligente</a>."
   - question: "Quelle est la précision du scanner ?"
-    answer: "La précision varie de ±10% à ±20% selon la complexité du plat, ce qui est comparable aux meilleures estimations manuelles. L'important est la cohérence sur la durée, pas la précision absolue."
+    answer: "±10-20% selon la complexité du plat. L'important est la cohérence sur la durée. Voir notre comparatif <a href='/blog/lowis-vs-myfitnesspal/'>LOWIS vs MyFitnessPal</a> pour comprendre la différence."
 ---
 
 Fini le temps où compter ses calories prenait 15 minutes par repas. Avec LOWIS, **une photo suffit**.
@@ -233,4 +233,22 @@ Pas de carte bancaire. Pas d'engagement. Juste une meilleure façon de suivre vo
 
 ---
 
-*Pour comprendre comment le coach IA utilise ces données pour personnaliser vos recommandations, consultez notre article sur [le coaching IA](/blog/coach-ia-comment-marche/). Et découvrez notre [guide complet pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/) ainsi que les [40+ indicateurs](/blog/40-indicateurs-perte-poids/) analysés par LOWIS.*
+---
+
+### Continuez votre lecture
+
+**Dans la catégorie [Astuces](/blog/astuces/)** — Conseils pratiques
+
+**Articles connexes sur la technologie LOWIS** :
+- [Comment fonctionne le coach IA](/blog/coach-ia-comment-marche/) — L'intelligence derrière vos recommandations
+- [Les 40+ indicateurs analysés](/blog/40-indicateurs-perte-poids/) — Ce que le scan alimente
+- [L'Audio Program pour reprogrammer votre cerveau](/blog/audio-program-reprogrammer-cerveau/) — Compléter la technologie
+
+**Comprendre l'approche complète** :
+- [Guide complet pour perdre du poids](/blog/perdre-poids-intelligemment/) — L'approche intelligente
+- [Pourquoi les apps gratuites échouent](/blog/apps-gratuites-echec/) — Le coût caché du comptage manuel
+- [Comment choisir une app de nutrition](/blog/choisir-application-nutrition/) — Les 7 critères essentiels
+
+**Comparatifs détaillés** :
+- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — Scan IA vs recherche manuelle
+- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — Comparaison des technologies

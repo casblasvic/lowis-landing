@@ -85,13 +85,16 @@ const updatedDate = post.data.updatedDate?.toLocaleDateString('fr-FR', {
   day: 'numeric',
 });
 
-// Category labels
-const categoryLabels: Record<string, string> = {
-  guides: '📚 Guide',
-  comparatifs: '⚖️ Comparatif',
-  astuces: '💡 Astuces',
-  recettes: '🍽️ Recettes',
-  temoignages: '💬 Témoignage',
+// Category configuration with labels, icons, and colors
+const categoryConfig: Record<string, { label: string; icon: string; color: string }> = {
+  guides: { label: 'Guide', icon: 'menu_book', color: '#059669' },
+  comparatifs: { label: 'Comparatif', icon: 'compare', color: '#7C3AED' },
+  astuces: { label: 'Astuces', icon: 'lightbulb', color: '#F59E0B' },
+  recettes: { label: 'Recettes', icon: 'restaurant', color: '#EF4444' },
+  temoignages: { label: 'Témoignage', icon: 'chat', color: '#3B82F6' },
+  'bien-etre': { label: 'Bien-être', icon: 'self_improvement', color: '#10B981' },
+  mindset: { label: 'Mindset', icon: 'psychology', color: '#8B5CF6' },
+  'sante-femme': { label: 'Santé Femme', icon: 'female', color: '#EC4899' },
 };
 
 // FAQ Schema for Google Rich Results
@@ -131,6 +134,12 @@ const faqSchema = post.data.faq && post.data.faq.length > 0 ? {
         <a href="/" class="hover:underline">Accueil</a>
         <span class="mx-2">/</span>
         <a href="/blog/" class="hover:underline">Blog</a>
+        {post.data.category && categoryConfig[post.data.category] && (
+          <>
+            <span class="mx-2">/</span>
+            <a href={`/blog/${post.data.category}/`} class="hover:underline">{categoryConfig[post.data.category].label}</a>
+          </>
+        )}
         <span class="mx-2">/</span>
         <span style="color: var(--blog-text);">{post.data.title}</span>
       </nav>
@@ -140,10 +149,16 @@ const faqSchema = post.data.faq && post.data.faq.length > 0 ? {
         <div class="lg:col-span-8">
           <!-- Header -->
           <header class="mb-8">
-            {post.data.category && (
-              <span class="blog-card-category mb-4">
-                {categoryLabels[post.data.category] || post.data.category}
-              </span>
+            {post.data.category && categoryConfig[post.data.category] && (
+              <a
+                href={`/blog/${post.data.category}/`}
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium mb-4 transition-all duration-200 hover:scale-105 notranslate"
+                translate="no"
+                style={`background: ${categoryConfig[post.data.category].color}; color: white;`}
+              >
+                <span class="material-symbols-outlined text-sm">{categoryConfig[post.data.category].icon}</span>
+                {categoryConfig[post.data.category].label}
+              </a>
             )}
 
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6" style="color: var(--blog-text);">

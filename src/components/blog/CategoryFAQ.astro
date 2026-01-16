@@ -1,0 +1,107 @@
+---
+/**
+ * CategoryFAQ Component
+ *
+ * Renders FAQs with FAQ Schema markup for SEO
+ * Used on category (silo) pages for better search ranking
+ */
+
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  faqs: FAQ[];
+  categoryColor: string;
+  title?: string;
+}
+
+const { faqs, categoryColor, title = "Preguntas Frecuentes" } = Astro.props;
+
+// Generate FAQ Schema JSON-LD
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+---
+
+<section class="py-12 md:py-16" style="background: var(--blog-surface);">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-10">
+      <div
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-4"
+        style={`background: ${categoryColor}15; color: ${categoryColor};`}
+      >
+        <span class="material-symbols-outlined text-lg">help</span>
+        FAQ
+      </div>
+      <h2 class="text-2xl md:text-3xl font-bold" style="color: var(--blog-text);">
+        {title}
+      </h2>
+    </div>
+
+    <!-- FAQ Accordion -->
+    <div class="space-y-4">
+      {faqs.map((faq, index) => (
+        <details
+          class="faq-item group rounded-xl overflow-hidden transition-all duration-200"
+          style="background: var(--blog-bg); border: 1px solid var(--blog-border);"
+        >
+          <summary
+            class="flex items-center justify-between gap-4 p-5 cursor-pointer list-none select-none"
+            style="color: var(--blog-text);"
+          >
+            <h3 class="font-semibold text-left pr-4">{faq.question}</h3>
+            <span
+              class="material-symbols-outlined flex-shrink-0 transition-transform duration-200 group-open:rotate-180"
+              style={`color: ${categoryColor};`}
+            >
+              expand_more
+            </span>
+          </summary>
+          <div class="px-5 pb-5">
+            <p class="leading-relaxed" style="color: var(--blog-text-secondary);">
+              {faq.answer}
+            </p>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Schema JSON-LD -->
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+<style>
+  /* Remove default summary marker */
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Hover effect */
+  .faq-item:hover {
+    border-color: var(--blog-accent);
+  }
+
+  /* Open state styling */
+  .faq-item[open] {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Smooth animation for content */
+  .faq-item[open] summary {
+    border-bottom: 1px solid var(--blog-border);
+    margin-bottom: 0;
+  }
+</style>

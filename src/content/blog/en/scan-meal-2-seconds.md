@@ -19,15 +19,15 @@ image: "scanner-plat-2-secondes/hero.webp"
 imageAlt: "Scan a meal with LOWIS AI in 2 seconds"
 faq:
   - question: "Does the AI recognize Moroccan dishes?"
-    answer: "Yes! LOWIS has been trained on a database of 500+ Moroccan recipes. Tagine, couscous, harira, pastilla, msemen, baghrir... everything is recognized automatically."
+    answer: "Yes! LOWIS has 500+ Moroccan recipes. Tagine, couscous, harira, pastilla, msemen... Our <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> recognizes everything automatically."
   - question: "What if the AI gets the portions wrong?"
-    answer: "You can manually adjust portions in a few taps. The AI learns from your corrections and becomes more accurate over time for YOUR habits."
+    answer: "Adjust in a few taps. The AI learns from your corrections. That's what makes LOWIS better than <a href='/blog/lowis-vs-cal-ai/'>Cal AI</a> and <a href='/blog/lowis-vs-myfitnesspal/'>MyFitnessPal</a>."
   - question: "Do I need to scan each ingredient separately?"
-    answer: "No! The AI recognizes complete dishes. Take a photo of your entire plate and it will identify all components: meat, vegetables, starches, sauces..."
+    answer: "No! The AI recognizes complete dishes. It analyzes <a href='/blog/40-indicators-weight-loss/'>40+ nutritional indicators</a> from a single photo."
   - question: "Does the scanner work offline?"
-    answer: "The initial scan requires an internet connection for AI analysis. However, your previously scanned dishes are saved and accessible offline."
+    answer: "Initial scan needs internet. But saved dishes are accessible offline. Read <a href='/blog/how-to-choose-nutrition-app/'>how to choose</a> the best app for your needs."
   - question: "What is the scanner's accuracy?"
-    answer: "Accuracy varies from ±10% to ±20% depending on dish complexity, which is comparable to the best manual estimates. What matters is consistency over time, not absolute precision."
+    answer: "±10-20% depending on dish complexity — comparable to manual estimates. What matters is consistency. Read <a href='/blog/free-calorie-apps-fail/'>why manual apps fail</a> (15 min/meal!)."
 ---
 
 Gone are the days when counting calories took 15 minutes per meal. With LOWIS, **one photo is enough**.
@@ -233,4 +233,24 @@ No credit card. No commitment. Just a better way to track your nutrition.
 
 ---
 
-*To understand how the AI coach uses this data to personalize your recommendations, check out our article on [AI coaching](/blog/ai-nutrition-coach-how-it-works/).*
+---
+
+### Continue Reading
+
+**In the category [Tips](/blog/astuces/)** — Our practical tips
+
+**LOWIS technology**:
+- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
+- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success
+
+**Compare scanning apps**:
+- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — AI scanning comparison
+- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — The counting giant
+- [Why free apps fail](/blog/free-calorie-apps-fail/) — The real cost
+- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
+
+**Essential guides**:
+- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results

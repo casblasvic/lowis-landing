@@ -19,11 +19,15 @@ image: "sommeil-perte-poids/hero.webp"
 imageAlt: "La conexión entre sueño y pérdida de peso - hormonas y metabolismo"
 faq:
   - question: "¿Cuántas horas de sueño para perder peso?"
-    answer: "Para optimizar la pérdida de peso, apunta a 7-9 horas de sueño de calidad por noche. Por debajo de 7 horas, las hormonas del hambre se alteran, el metabolismo se ralentiza, y los antojos de azúcar aumentan significativamente."
-  - question: "¿La falta de sueño realmente engorda?"
-    answer: "Sí, científicamente probado. La falta de sueño aumenta la grelina (+15%, hormona del hambre), disminuye la leptina (-20%, hormona de saciedad), eleva el cortisol (almacenamiento de grasa), y ralentiza el metabolismo basal."
-  - question: "¿Se puede perder peso durmiendo más?"
-    answer: "Mejorar el sueño puede efectivamente acelerar la pérdida de peso. Estudios muestran que personas durmiendo 7-8h pierden 55% más grasa que las que duermen menos de 6h, con la misma dieta."
+    answer: "Para optimizar la pérdida de peso, apunta a 7-9 horas de sueño de calidad por noche. Por debajo de 7 horas, las hormonas se alteran. Descubre los <a href='/blog/40-indicadores-perdida-peso/'>40+ indicadores</a> que afectan tu peso."
+  - question: "¿Por qué el sueño es uno de los indicadores clave de LOWIS?"
+    answer: "LOWIS es un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA completo</a> que analiza <a href='/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> incluyendo el sueño. Entiende <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a> cuando ignoran estos factores."
+  - question: "¿El estrés y el sueño están relacionados?"
+    answer: "Sí, el <a href='/blog/estres-perdida-peso/'>estrés bloquea la pérdida de peso</a> y altera el sueño. Un círculo vicioso. El <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program de LOWIS</a> puede ayudarte a gestionar ambos."
+  - question: "¿El ciclo menstrual afecta el sueño y el peso?"
+    answer: "Absolutamente. El <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo menstrual influye en el sueño</a>, especialmente en fase lútea. LOWIS adapta las recomendaciones a cada fase para mujeres."
+  - question: "¿Qué app ayuda realmente a perder peso?"
+    answer: "Las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque ignoran factores como el sueño. Consulta nuestra <a href='/blog/como-elegir-app-nutricion/'>guía para elegir una app</a> y nuestra <a href='/blog/perder-peso-inteligente/'>guía completa para perder peso</a>."
 ---
 
 Haces todo correctamente. Cuentas tus calorías, haces ejercicio, evitas los picoteos. Y sin embargo, la báscula se niega a moverse.
@@ -210,4 +214,22 @@ LOWIS no se limita a contar tus calorías. Entiende que tu cuerpo es un sistema 
 
 ---
 
-*Para saber más, descubre nuestra [guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/), cómo [el estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/), y por qué [más de 40 indicadores importan para perder peso](/blog/40-indicadores-perdida-peso/). Para mujeres, nuestro artículo sobre [el ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) explica cómo adaptar tu alimentación a cada fase.*
+---
+
+### Continúa leyendo
+
+**En la categoría [Bienestar](/blog/bien-etre/)** — Salud integral
+
+**Artículos relacionados sobre bienestar** :
+- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Cortisol y sus efectos
+- [El ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) — Adaptar la alimentación
+- [Audio Program para reprogramar tu cerebro](/blog/audio-program-reprogramar-cerebro/) — El mental es clave
+
+**Guías esenciales** :
+- [Guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/) — El enfoque completo
+- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que debes seguir
+
+**Tecnología LOWIS** :
+- [Cómo funciona el coach IA](/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
+- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios

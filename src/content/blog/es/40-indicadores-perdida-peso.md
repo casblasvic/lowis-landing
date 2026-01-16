@@ -19,13 +19,13 @@ image: "40-indicateurs-perte-poids/hero.webp"
 imageAlt: "Los 40+ indicadores de salud para una pérdida de peso personalizada"
 faq:
   - question: "¿Por qué contar calorías no es suficiente para perder peso?"
-    answer: "Las calorías solo representan una parte de la ecuación. El sueño, el estrés, las hormonas, la digestión y la hidratación afectan directamente tu metabolismo y capacidad de perder peso. Una app que solo sigue calorías ignora el 90% de los factores de éxito."
-  - question: "¿Qué indicadores de salud afectan más la pérdida de peso?"
-    answer: "Los 5 indicadores más impactantes son: el sueño (afecta hormonas del hambre), el estrés (aumenta cortisol y almacenamiento de grasa), el ciclo hormonal (para mujeres), la hidratación (metabolismo), y la calidad de la digestión (absorción de nutrientes)."
+    answer: "Las calorías son solo una parte. El <a href='/blog/sueno-perdida-peso/'>sueño</a>, el <a href='/blog/estres-perdida-peso/'>estrés</a>, las hormonas afectan tu metabolismo. Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>."
+  - question: "¿Qué indicadores afectan más la pérdida de peso?"
+    answer: "Los 5 más impactantes: <a href='/blog/sueno-perdida-peso/'>sueño</a>, <a href='/blog/estres-perdida-peso/'>estrés</a>, <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal</a>, hidratación, digestión. Un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> los analiza todos."
   - question: "¿Cómo impide el estrés perder peso?"
-    answer: "El estrés crónico eleva el cortisol, una hormona que favorece el almacenamiento de grasa abdominal, aumenta los antojos de azúcar y ralentiza el metabolismo. Incluso en déficit calórico, un estrés alto puede bloquear la pérdida de peso."
-  - question: "¿Por qué es importante seguir los micronutrientes para adelgazar?"
-    answer: "Las carencias de micronutrientes (hierro, magnesio, vitaminas B, D) ralentizan el metabolismo, causan fatiga y antojos. Una alimentación pobre en nutrientes puede ser calórica pero no nutrir tu cuerpo correctamente."
+    answer: "El <a href='/blog/estres-perdida-peso/'>estrés eleva el cortisol</a> y bloquea la pérdida. Lee <a href='/blog/evitar-efecto-rebote/'>cómo evitar el efecto rebote</a> y la <a href='/blog/perder-peso-inteligente/'>guía completa</a>."
+  - question: "¿Las apps normales siguen estos indicadores?"
+    answer: "No, las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque solo cuentan calorías. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> para los criterios esenciales."
 ---
 
 Llevas meses contando calorías. Estás en déficit. Sin embargo, la báscula no se mueve.
@@ -294,4 +294,22 @@ LOWIS monitorea estos 40+ indicadores para ofrecerte una personalización total.
 
 ---
 
-*Para saber más, descubre nuestra [guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/), cómo [el estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/), y por qué [el sueño es crucial para adelgazar](/blog/sueno-perdida-peso/). Para mujeres, nuestro artículo sobre [el ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) explica cómo adaptar tu alimentación a cada fase.*
+---
+
+### Continúa leyendo
+
+**En la categoría [Guías](/blog/guides/)** — Nuestras guías completas
+
+**Factores clave analizados** :
+- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Por qué 7h cambian todo
+- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Cortisol y sus efectos
+- [El ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) — Para mujeres
+
+**Tecnología LOWIS** :
+- [Cómo funciona el coach IA](/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
+- [Escanear platos en 2 segundos](/blog/escanear-plato-2-segundos/) — La tecnología de reconocimiento
+
+**Guías esenciales** :
+- [Guía completa para perder peso](/blog/perder-peso-inteligente/) — El enfoque que funciona
+- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [Cómo evitar el efecto rebote](/blog/evitar-efecto-rebote/) — Mantener resultados

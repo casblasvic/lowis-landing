@@ -19,15 +19,15 @@ image: "audio-program/hero.png"
 imageAlt: "LOWIS Audio Program - Reprogram your brain to lose weight"
 faq:
   - question: "What is the LOWIS Audio Program?"
-    answer: "It's a daily 5-10 minute audio program included in LOWIS. Based on the science of neuroplasticity, it helps transform your relationship with food by reprogramming the mental patterns that sabotage your weight loss efforts."
+    answer: "It's a daily 5-10 minute program that helps transform your relationship with food. Combined with the <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a>, it addresses the mental side — <a href='/blog/why-diets-fail/'>why 95% of diets fail</a>."
   - question: "Is it hypnosis?"
-    answer: "No. The Audio Program uses scientifically validated techniques: guided visualization, mindfulness meditation, and neuroscience-based affirmations. You remain fully conscious and in control throughout the entire session."
-  - question: "How long does it take to see results?"
-    answer: "Neuroplasticity research shows that new habits can form in 21-66 days of regular practice. Most users notice changes in their eating behavior after 2-3 weeks of daily listening."
-  - question: "Does the Audio Program replace therapy?"
-    answer: "No. It's a complementary tool that helps with common aspects of the relationship with food. For diagnosed eating disorders or trauma, we recommend consulting a mental health professional."
+    answer: "No. It uses guided visualization and mindfulness. You remain fully conscious. It's one of the <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> LOWIS tracks for holistic weight management."
+  - question: "How does stress affect eating patterns?"
+    answer: "High <a href='/blog/stress-weight-loss/'>stress increases cortisol</a> and triggers emotional eating. Poor <a href='/blog/sleep-weight-loss/'>sleep</a> makes it worse. The Audio Program helps break these cycles."
+  - question: "Does the Audio Program help with cycle-related cravings?"
+    answer: "Yes. The <a href='/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> affects cravings. The Audio Program helps manage luteal phase challenges without guilt. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a>."
   - question: "When should I listen to the Audio Program?"
-    answer: "Ideally in the morning (to program your day) or in the evening before sleep (when the brain is more receptive). Some users also listen before high-risk moments: before a social meal, when stress rises, etc."
+    answer: "Morning (to program your day) or evening before <a href='/blog/sleep-weight-loss/'>sleep</a>. Also before high-risk moments when <a href='/blog/stress-weight-loss/'>stress</a> rises. Learn how to <a href='/blog/avoid-weight-rebound/'>avoid weight rebound</a> with consistent practice."
 ---
 
 How many times have you started a diet with iron-clad motivation... only to abandon everything 3 weeks later?
@@ -248,4 +248,23 @@ Because lasting weight loss starts in your head.
 
 ---
 
-*To understand how stress sabotages your weight loss efforts, check out our article on [stress and weight loss](/blog/stress-weight-loss/). And discover [why 95% of diets fail](/blog/why-diets-fail/) — and what you can do differently with our [complete guide to smart weight loss](/blog/smart-weight-loss-guide/).*
+---
+
+### Continue Reading
+
+**In the category [Mindset](/blog/mindset/)** — All our mindset articles
+
+**Key factors that affect your weight**:
+- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+
+**Essential guides**:
+- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results
+
+**LOWIS technology**:
+- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
+- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [Scan meals in 2 seconds](/blog/scan-meal-2-seconds/) — Easy meal tracking

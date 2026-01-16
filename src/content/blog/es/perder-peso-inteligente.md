@@ -18,15 +18,15 @@ image: "perdre-poids-intelligemment/hero.webp"
 imageAlt: "Guía completa para perder peso de forma inteligente con ayuda de la IA"
 faq:
   - question: "¿Por qué fracasan el 95% de las dietas?"
-    answer: "Las dietas tradicionales fracasan por 4 razones principales: la restricción crea frustración y antojos, el metabolismo se adapta ralentizándose, el efecto rebote hace que el cuerpo almacene más grasa después de la restricción, y la mayoría de programas abandonan el acompañamiento tras pocas semanas."
-  - question: "¿Cuántos kilos se pueden perder de forma saludable por semana?"
-    answer: "Una pérdida de peso saludable y duradera es de 0,5 a 1 kg por semana máximo. Esto corresponde a un déficit calórico moderado de 300-500 kcal diarias. Las pérdidas rápidas siempre van seguidas de recuperaciones rápidas."
-  - question: "¿Qué diferencia a un coach IA de las apps de conteo de calorías?"
-    answer: "Las apps clásicas (IA pasiva) solo reconocen alimentos y registran calorías. Un coach IA activo analiza tu situación global (estrés, sueño, ciclo hormonal), recomienda ajustes personalizados, se adapta en tiempo real a tus resultados, y te guía activamente hacia tus objetivos 24/7."
-  - question: "¿Hay que eliminar los alimentos que me gustan para adelgazar?"
-    answer: "¡No! Perder peso de forma inteligente significa aprender a integrar tus alimentos favoritos de forma equilibrada. La clave es comer mejor, no menos. Las restricciones totales crean frustración y abandono."
-  - question: "¿Qué factores además de las calorías afectan la pérdida de peso?"
-    answer: "Un enfoque completo analiza +40 indicadores: macronutrientes, micronutrientes, hidratación, calidad del sueño (menos de 7h = metabolismo lento), nivel de estrés (cortisol = almacenamiento de grasa), ciclo menstrual, e incluso el orden en que comes tus alimentos."
+    answer: "Las dietas fracasan porque ignoran factores clave como el <a href='/blog/estres-perdida-peso/'>estrés</a> y el <a href='/blog/sueno-perdida-peso/'>sueño</a>. Descubre <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fallan</a> y cómo <a href='/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>."
+  - question: "¿Qué diferencia a un coach IA de las apps gratuitas?"
+    answer: "Las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque solo cuentan calorías. Un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA activo</a> analiza <a href='/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> incluyendo estrés, sueño y hormonas."
+  - question: "¿El sueño y el estrés afectan la pérdida de peso?"
+    answer: "Sí, crucialmente. El <a href='/blog/sueno-perdida-peso/'>mal sueño aumenta el hambre un 15%</a> y el <a href='/blog/estres-perdida-peso/'>estrés bloquea la pérdida de peso</a>. El <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> ayuda a gestionar ambos."
+  - question: "¿Y para mujeres con ciclo menstrual?"
+    answer: "El <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo menstrual afecta la pérdida de peso</a> significativamente. LOWIS adapta las recomendaciones a cada fase, a diferencia de las apps tradicionales."
+  - question: "¿Cómo elegir la mejor app de nutrición?"
+    answer: "Consulta nuestra <a href='/blog/como-elegir-app-nutricion/'>guía completa para elegir app de nutrición</a> y nuestros comparativos: <a href='/blog/lowis-vs-myfitnesspal/'>LOWIS vs MyFitnessPal</a>, <a href='/blog/lowis-vs-cal-ai/'>LOWIS vs Cal AI</a>."
 ---
 
 Perder peso es uno de los objetivos más comunes, pero también uno de los más difíciles de alcanzar de forma duradera. Si estás leyendo estas líneas, probablemente ya has probado varias dietas, descargado aplicaciones, y sentido la frustración de ver los kilos volver.
@@ -203,4 +203,23 @@ Sin dieta milagro, sin restricciones imposibles. Solo un enfoque inteligente, ad
 
 ---
 
-*Este artículo forma parte de nuestra serie sobre nutrición inteligente. Consulta nuestras otras guías para profundizar en cada aspecto de la pérdida de peso duradera.*
+---
+
+### Continúa leyendo
+
+**En la categoría [Guías](/blog/guides/)** — Nuestras guías completas
+
+**Artículos esenciales para entender el enfoque** :
+- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [Cómo evitar el efecto rebote](/blog/evitar-efecto-rebote/) — Mantener los resultados
+- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que debes seguir
+
+**Factores clave para perder peso** :
+- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Por qué 7h mínimo cambian todo
+- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Cortisol y sus efectos
+- [El ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) — Para mujeres
+
+**Elige la herramienta adecuada** :
+- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
+- [Por qué las apps gratuitas fallan](/blog/apps-calorias-gratis-fallan/) — El coste oculto
+- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — Comparativa detallada

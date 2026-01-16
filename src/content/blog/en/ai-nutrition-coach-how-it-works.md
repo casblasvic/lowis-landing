@@ -19,15 +19,15 @@ image: "coach-ia-comment-marche/hero.webp"
 imageAlt: "How an AI nutrition coach works for weight loss"
 faq:
   - question: "What's the difference between a calorie app and an AI coach?"
-    answer: "A classic app passively records your calories and leaves you on your own. An AI coach actively analyzes your overall situation (stress, sleep, hormones), continuously personalizes recommendations, anticipates your needs, and guides you toward your goals 24/7."
+    answer: "A classic app passively records calories. An AI coach analyzes <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> (<a href='/blog/stress-weight-loss/'>stress</a>, <a href='/blog/sleep-weight-loss/'>sleep</a>, <a href='/blog/menstrual-cycle-weight-loss/'>hormones</a>) and guides you 24/7. That's <a href='/blog/free-calorie-apps-fail/'>why passive apps fail</a>."
   - question: "Will AI replace nutritionists?"
-    answer: "No. AI is a tool that amplifies experts' work. At LOWIS, our nutritionists use AI to be more efficient. AI analyzes data continuously, but important recommendations are validated by humans."
+    answer: "No. AI amplifies experts' work. At LOWIS, nutritionists validate important recommendations. Read <a href='/blog/how-to-choose-nutrition-app/'>how to choose an app</a> that combines both."
   - question: "Is my data safe with an AI coach?"
-    answer: "Yes. Your data is encrypted and never sold to third parties. It's only used to improve YOUR experience and personalize your nutritional recommendations."
+    answer: "Yes. Your data is encrypted and never sold. Unlike <a href='/blog/lowis-vs-myfitnesspal/'>MyFitnessPal</a> which sells data, LOWIS uses it only to personalize YOUR experience."
   - question: "Does the AI coach work with special diets?"
-    answer: "Yes. Vegan, gluten-free, halal, diabetic... The AI adapts to your dietary restrictions and offers recommendations tailored to your specific situation."
+    answer: "Yes. Vegan, gluten-free, halal, diabetic... The AI adapts to your restrictions. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> on personalized approaches."
   - question: "What happens if the AI makes a mistake?"
-    answer: "You can always correct the AI, and it learns from its mistakes to become more accurate over time. Plus, our nutritionists supervise important recommendations."
+    answer: "Correct in 2 taps and the AI learns. <a href='/blog/scan-meal-2-seconds/'>Photo scanning</a> improves with your corrections. Plus nutritionists supervise important recommendations."
 ---
 
 "AI Coach", "Artificial intelligence", "Machine learning"... These terms are everywhere. But concretely, **what is an AI nutrition coach and how can it help you lose weight?**
@@ -250,4 +250,24 @@ In 2 minutes, you'll have your first personalized plan and can experience the di
 
 ---
 
-*To understand the overall approach to intelligent weight loss, check out our [complete guide on how to choose a nutrition app](/blog/how-to-choose-nutrition-app/).*
+---
+
+### Continue Reading
+
+**In the category [Guides](/blog/guides/)** — Our complete guides
+
+**LOWIS technology**:
+- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
+- [Scan meals in 2 seconds](/blog/scan-meal-2-seconds/) — The technology
+- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success
+
+**Key factors the AI tracks**:
+- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+
+**Compare with other apps**:
+- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — The counting giant
+- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — AI scanning comparison
+- [Why free apps fail](/blog/free-calorie-apps-fail/) — The real cost
+- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria

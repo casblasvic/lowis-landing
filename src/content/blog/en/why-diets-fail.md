@@ -19,15 +19,15 @@ image: "pourquoi-regimes-echouent/hero.webp"
 imageAlt: "Why traditional diets fail - The science explained"
 faq:
   - question: "Why do 95% of diets fail?"
-    answer: "Diets fail because of biology, not lack of willpower. Your brain triggers a survival alarm (increased hunger, reduced energy), your metabolism slows by up to 22%, and the rebound effect makes you store fat more efficiently after restriction."
+    answer: "Biology, not willpower. <a href='/blog/stress-weight-loss/'>Cortisol rises</a>, <a href='/blog/sleep-weight-loss/'>poor sleep</a> increases hunger, and the <a href='/blog/avoid-weight-rebound/'>rebound effect</a> kicks in. An <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> tracks these <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a>."
   - question: "What is the rebound effect and how to avoid it?"
-    answer: "The rebound effect is weight regain after a diet, often more than what was lost. To avoid it: lose max 1 kg/week, never go too low on calories (min 1400 kcal women, 1800 kcal men), and follow a stabilization phase after loss."
+    answer: "Weight regain after a diet, often more than lost. Read <a href='/blog/avoid-weight-rebound/'>how to avoid the rebound effect</a> and our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> for sustainable strategies."
   - question: "Why does metabolism slow during a diet?"
-    answer: "When calories drop drastically, your smart body slows metabolism to save energy (up to -22% after 12 weeks). That's why you should prioritize a moderate deficit (300-500 kcal) rather than severe restriction."
-  - question: "Do popular diets like Dukan or intermittent fasting work?"
-    answer: "These diets may show short-term results, but often fail long-term. Very restrictive diets are impossible to maintain. Intermittent fasting works for some, but many compensate during eating windows."
+    answer: "Your body enters survival mode. <a href='/blog/sleep-weight-loss/'>Sleep</a> and <a href='/blog/stress-weight-loss/'>stress</a> affect metabolism too. That's why <a href='/blog/free-calorie-apps-fail/'>free apps fail</a> — they only count calories."
+  - question: "Do popular diets work long-term?"
+    answer: "Rarely. Very restrictive diets are impossible to maintain. See <a href='/blog/how-to-choose-nutrition-app/'>how to choose a nutrition app</a> that supports you long-term. For women, the <a href='/blog/menstrual-cycle-weight-loss/'>menstrual cycle</a> adds complexity."
   - question: "What's the alternative to traditional diets?"
-    answer: "The sustainable approach is based on 5 pillars: moderate caloric deficit (300-500 kcal), flexibility without prohibition, listening to hunger signals, continuous personalized support, and long-term vision. It's not a temporary diet, it's a new way of eating."
+    answer: "The sustainable approach: moderate deficit, flexibility, long-term support from an <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a>. The <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> helps with the mental side — 80% of success."
 ---
 
 You've tried Weight Watchers. Then the Dukan diet. Maybe intermittent fasting. Each time, the same scenario: initial weight loss, plateau, frustration, giving up, regaining the pounds (and often more).
@@ -234,4 +234,27 @@ In 2 minutes, get a personalized plan based on your real habits, not a generic d
 
 ---
 
-*For a complete approach to lasting weight loss, check out our [complete guide](/blog/smart-weight-loss-guide/).*
+---
+
+### Continue Reading
+
+**In the category [Guides](/blog/guides/)** — Our complete guides
+
+**Essential guides**:
+- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
+- [How to avoid the rebound effect](/blog/avoid-weight-rebound/) — Keep your results
+- [Why free calorie apps fail](/blog/free-calorie-apps-fail/) — The real cost
+
+**Key factors that affect your weight**:
+- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+
+**LOWIS technology**:
+- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
+- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success
+
+**Compare apps**:
+- [How to choose a nutrition app](/blog/how-to-choose-nutrition-app/) — The 7 essential criteria
+- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — Detailed comparison

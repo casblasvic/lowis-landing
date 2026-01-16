@@ -19,15 +19,15 @@ image: "40-indicateurs-perte-poids/hero.webp"
 imageAlt: "Les 40+ indicateurs de santé pour une perte de poids personnalisée"
 faq:
   - question: "Pourquoi compter les calories ne suffit pas pour perdre du poids ?"
-    answer: "Les calories ne représentent qu'une partie de l'équation. Le sommeil, le stress, les hormones, la digestion et l'hydratation affectent directement votre métabolisme et votre capacité à perdre du poids. Une app qui ne suit que les calories ignore 90% des facteurs de réussite."
+    answer: "Les calories ne représentent qu'une partie de l'équation. Le <a href='/blog/sommeil-perte-poids/'>sommeil</a>, le <a href='/blog/stress-perte-poids/'>stress</a>, les hormones, la digestion et l'hydratation affectent directement votre métabolisme. C'est <a href='/blog/pourquoi-regimes-echouent/'>pourquoi les régimes classiques échouent</a> : ils ignorent 90% des facteurs de réussite."
   - question: "Quels indicateurs de santé affectent le plus la perte de poids ?"
-    answer: "Les 5 indicateurs les plus impactants sont : le sommeil (affecte les hormones de faim), le stress (augmente le cortisol et le stockage de graisses), le cycle hormonal (pour les femmes), l'hydratation (métabolisme), et la qualité de la digestion (absorption des nutriments)."
+    answer: "Les 5 indicateurs les plus impactants sont : le <a href='/blog/sommeil-perte-poids/'>sommeil</a> (affecte les hormones de faim), le <a href='/blog/stress-perte-poids/'>stress</a> (augmente le cortisol), le <a href='/blog/cycle-menstruel-perte-poids/'>cycle hormonal</a> (pour les femmes), l'hydratation (métabolisme), et la digestion (absorption des nutriments)."
   - question: "Comment le stress empêche-t-il de perdre du poids ?"
-    answer: "Le stress chronique élève le cortisol, une hormone qui favorise le stockage des graisses abdominales, augmente les envies de sucre, et ralentit le métabolisme. Même en déficit calorique, un stress élevé peut bloquer la perte de poids."
+    answer: "Le <a href='/blog/stress-perte-poids/'>stress chronique élève le cortisol</a>, une hormone qui favorise le stockage des graisses abdominales, augmente les envies de sucre, et ralentit le métabolisme. Même en déficit calorique, un stress élevé peut bloquer la perte de poids et provoquer un <a href='/blog/effet-rebond-eviter/'>effet rebond</a>."
   - question: "Pourquoi suivre les micronutriments est important pour maigrir ?"
-    answer: "Les carences en micronutriments (fer, magnésium, vitamines B, D) ralentissent le métabolisme, causent de la fatigue et des fringales. Une alimentation pauvre en nutriments peut être calorique mais ne pas nourrir votre corps correctement."
+    answer: "Les carences en micronutriments (fer, magnésium, vitamines B, D) ralentissent le métabolisme, causent de la fatigue et des fringales. Consultez notre <a href='/blog/perdre-poids-intelligemment/'>guide complet pour perdre du poids</a> pour comprendre l'approche globale."
   - question: "Une app peut-elle vraiment remplacer un nutritionniste ?"
-    answer: "Une app complète comme LOWIS peut assurer le suivi quotidien et détecter des patterns qu'un nutritionniste ne voit pas (car vous ne le voyez pas tous les jours). L'idéal est de combiner les deux : l'app pour le suivi, le professionnel pour les cas complexes."
+    answer: "Un <a href='/blog/coach-ia-comment-marche/'>coach IA complet</a> comme LOWIS peut assurer le suivi quotidien et détecter des patterns qu'un nutritionniste ne voit pas. Découvrez <a href='/blog/choisir-application-nutrition/'>comment choisir une app de nutrition</a> et pourquoi les <a href='/blog/apps-gratuites-echec/'>apps gratuites échouent</a>."
 ---
 
 Vous comptez vos calories depuis des mois. Vous êtes en déficit. Pourtant, la balance ne bouge plus.
@@ -339,4 +339,20 @@ LOWIS surveille ces 40+ indicateurs pour vous offrir une personnalisation totale
 
 ---
 
-*Pour aller plus loin, découvrez notre [guide complet pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/), comment [le stress bloque votre perte de poids](/blog/stress-perte-poids/), et pourquoi [le sommeil est crucial pour maigrir](/blog/sommeil-perte-poids/). Pour les femmes, notre article sur [le cycle menstruel et la perte de poids](/blog/cycle-menstruel-perte-poids/) explique comment adapter votre alimentation à chaque phase.*
+### Continuez votre lecture
+
+**Dans la catégorie [Guides](/blog/guides/)** — Nos guides complets
+
+**Articles connexes sur le suivi complet** :
+- [Comment fonctionne le coach IA LOWIS](/blog/coach-ia-comment-marche/) — La technologie derrière l'accompagnement
+- [Scanner vos plats en 2 secondes](/blog/scanner-plat-2-secondes/) — Tutoriel de reconnaissance photo
+- [Guide complet pour perdre du poids](/blog/perdre-poids-intelligemment/) — L'approche intelligente
+
+**Les facteurs clés analysés** :
+- [Le sommeil et la perte de poids](/blog/sommeil-perte-poids/) — Pourquoi 7h minimum changent tout
+- [Le stress bloque la perte de poids](/blog/stress-perte-poids/) — Cortisol et stockage des graisses
+- [Le cycle menstruel et la perte de poids](/blog/cycle-menstruel-perte-poids/) — Adapter son alimentation à chaque phase
+
+**Comparatifs pour choisir la bonne app** :
+- [Comment choisir une app de nutrition](/blog/choisir-application-nutrition/) — Les 7 critères essentiels
+- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — Pourquoi les indicateurs comptent

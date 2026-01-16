@@ -19,15 +19,17 @@ image: "audio-program/hero.png"
 imageAlt: "Audio Program LOWIS - Reprogrammer votre cerveau pour perdre du poids"
 faq:
   - question: "Qu'est-ce que le Audio Program de LOWIS ?"
-    answer: "C'est un programme audio quotidien de 5-10 minutes inclus dans LOWIS. Basé sur la science de la neuroplasticité, il aide à transformer votre relation avec la nourriture en reprogrammant les schémas mentaux qui sabotent vos efforts de perte de poids."
+    answer: "C'est un programme audio quotidien de 5-10 minutes basé sur la neuroplasticité. Il aide à transformer votre relation avec la nourriture — c'est <a href='/blog/pourquoi-regimes-echouent/'>pourquoi les régimes seuls échouent</a> : ils ne travaillent pas la dimension mentale."
   - question: "Est-ce de l'hypnose ?"
-    answer: "Non. Le Audio Program utilise des techniques validées scientifiquement : visualisation guidée, méditation de pleine conscience, et affirmations basées sur les neurosciences. Vous restez pleinement conscient et en contrôle pendant toute la séance."
+    answer: "Non. Le Audio Program utilise des techniques validées : visualisation guidée, méditation de pleine conscience, et affirmations basées sur les neurosciences. Vous restez pleinement conscient et en contrôle."
+  - question: "Le Audio Program aide-t-il avec le stress ?"
+    answer: "Absolument. La semaine 3 est dédiée à dissocier <a href='/blog/stress-perte-poids/'>stress et nourriture</a>. Les sessions de relaxation aident aussi à <a href='/blog/sommeil-perte-poids/'>améliorer votre sommeil</a>."
   - question: "Combien de temps faut-il pour voir des résultats ?"
-    answer: "Les études sur la neuroplasticité montrent que de nouvelles habitudes peuvent se former en 21-66 jours de pratique régulière. La plupart des utilisateurs remarquent des changements dans leur comportement alimentaire après 2-3 semaines d'écoute quotidienne."
+    answer: "La plupart des utilisateurs remarquent des changements après 2-3 semaines. Les études montrent que de nouvelles habitudes se forment en 21-66 jours de pratique régulière."
   - question: "Le Audio Program remplace-t-il une thérapie ?"
-    answer: "Non. C'est un outil complémentaire qui aide avec les aspects courants de la relation à la nourriture. Pour des troubles alimentaires diagnostiqués ou des traumatismes, nous recommandons de consulter un professionnel de santé mentale."
+    answer: "Non. C'est un outil complémentaire pour les défis courants. Pour des troubles alimentaires diagnostiqués, consultez un professionnel de santé mentale."
   - question: "Quand dois-je écouter le Audio Program ?"
-    answer: "Idéalement le matin (pour programmer votre journée) ou le soir avant de dormir (quand le cerveau est plus réceptif). Certains utilisateurs l'écoutent aussi avant les moments à risque : avant un repas social, quand le stress monte, etc."
+    answer: "Le matin pour programmer votre journée, ou le soir avant de dormir pour <a href='/blog/sommeil-perte-poids/'>améliorer la qualité de votre sommeil</a>. Aussi utile avant les moments à risque quand le <a href='/blog/stress-perte-poids/'>stress monte</a>."
 ---
 
 Combien de fois avez-vous commencé un régime avec une motivation d'acier... pour tout abandonner 3 semaines plus tard ?
@@ -106,10 +108,10 @@ Pour créer ces nouveaux chemins neuronaux, il faut :
 |---------|-------|----------|
 | 1 | Conscience alimentaire | Reconnaître la vraie faim vs faim émotionnelle |
 | 2 | Libération de la culpabilité | Arrêter le cycle craquage/culpabilité |
-| 3 | Gestion du stress | Dissocier stress et nourriture |
+| 3 | Gestion du stress | Dissocier [stress et nourriture](/blog/stress-perte-poids/) |
 | 4 | Satisfaction naturelle | Se sentir rassasié(e) plus facilement |
 | 5 | Image corporelle | Améliorer votre relation avec votre corps |
-| 6 | Motivation intrinsèque | Trouver une motivation durable |
+| 6 | Motivation intrinsèque | Comprendre [pourquoi les régimes échouent](/blog/pourquoi-regimes-echouent/) et trouver une motivation durable |
 
 ## Ce que le Audio Program n'est PAS
 
@@ -163,7 +165,7 @@ Pour des troubles alimentaires sévères (anorexie, boulimie, hyperphagie boulim
 
 **Moment** : Au lit, avant de dormir
 **Durée** : 7-10 minutes
-**Effet** : Le cerveau en mode repos intègre mieux les nouveaux schémas
+**Effet** : Le cerveau en mode repos intègre mieux les nouveaux schémas. Bonus : [améliore la qualité de votre sommeil](/blog/sommeil-perte-poids/)
 
 ### Option 3 : Avant les moments à risque
 
@@ -248,4 +250,15 @@ Parce que perdre du poids durablement, ça commence dans la tête.
 
 ---
 
-*Pour comprendre comment le stress sabote vos efforts de perte de poids, consultez notre article sur [le stress et la perte de poids](/blog/stress-perte-poids/). Et découvrez [pourquoi 95% des régimes échouent](/blog/pourquoi-regimes-echouent/) — et ce que vous pouvez faire différemment avec notre [guide complet pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/).*
+### Continuez votre lecture
+
+**Dans la catégorie [Mindset](/blog/mindset/)** — Transformez votre relation avec la nourriture
+
+**Articles connexes sur le bien-être** :
+- [Stress et perte de poids : le cercle vicieux](/blog/stress-perte-poids/) — Comment le cortisol sabote vos efforts
+- [Sommeil et perte de poids](/blog/sommeil-perte-poids/) — Sessions de relaxation pour mieux dormir
+
+**Guides essentiels** :
+- [Guide complet pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/) — L'approche globale corps + esprit
+- [Pourquoi les régimes échouent](/blog/pourquoi-regimes-echouent/) — La dimension mentale ignorée
+- [Les 40+ indicateurs LOWIS](/blog/40-indicateurs-perte-poids/) — Le suivi mental fait partie du système

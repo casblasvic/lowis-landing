@@ -19,13 +19,15 @@ image: "sommeil-perte-poids/hero.webp"
 imageAlt: "Le lien entre sommeil et perte de poids - hormones et métabolisme"
 faq:
   - question: "Combien d'heures de sommeil pour perdre du poids ?"
-    answer: "Pour optimiser la perte de poids, visez 7-9 heures de sommeil de qualité par nuit. En dessous de 7 heures, les hormones de la faim sont perturbées, le métabolisme ralentit, et les envies de sucre augmentent significativement."
+    answer: "Pour optimiser la perte de poids, visez 7-9 heures de sommeil de qualité par nuit. En dessous de 7 heures, les hormones de la faim sont perturbées, le métabolisme ralentit, et les envies de sucre augmentent. Découvrez <a href='/blog/40-indicateurs-perte-poids/'>les 40+ indicateurs</a> que LOWIS suit pour optimiser vos résultats."
   - question: "Le manque de sommeil fait-il vraiment grossir ?"
-    answer: "Oui, scientifiquement prouvé. Le manque de sommeil augmente la ghréline (+15%, hormone de la faim), diminue la leptine (-20%, hormone de satiété), élève le cortisol (stockage de graisses), et ralentit le métabolisme de base."
+    answer: "Oui, scientifiquement prouvé. Le manque de sommeil augmente la ghréline (+15%), diminue la leptine (-20%), et élève le cortisol. Ce <a href='/blog/stress-perte-poids/'>stress hormonal bloque votre perte de poids</a> même en déficit calorique."
   - question: "Peut-on perdre du poids en dormant plus ?"
-    answer: "Améliorer son sommeil peut effectivement accélérer la perte de poids. Des études montrent que les personnes dormant 7-8h perdent 55% plus de graisse que celles dormant moins de 6h, à régime égal."
+    answer: "Améliorer son sommeil peut effectivement accélérer la perte de poids. Des études montrent que les personnes dormant 7-8h perdent 55% plus de graisse. C'est pourquoi <a href='/blog/pourquoi-regimes-echouent/'>les régimes qui ignorent le sommeil échouent</a>."
   - question: "Pourquoi ai-je envie de sucre quand je suis fatigué ?"
-    answer: "C'est biologique : le manque de sommeil augmente l'activité du système de récompense du cerveau face aux aliments caloriques. Votre cerveau cherche de l'énergie rapide pour compenser la fatigue. Ce n'est pas un manque de volonté."
+    answer: "C'est biologique : le manque de sommeil augmente l'activité du système de récompense du cerveau. Notre <a href='/blog/audio-program-reprogrammer-cerveau/'>Audio Program</a> vous aide à reprogrammer ces réflexes et mieux gérer les envies."
+  - question: "Comment le cycle menstruel affecte-t-il le sommeil ?"
+    answer: "Les fluctuations hormonales perturbent le sommeil, surtout en phase lutéale. Apprenez à <a href='/blog/cycle-menstruel-perte-poids/'>adapter votre nutrition à votre cycle</a> pour mieux dormir et perdre du poids."
 ---
 
 Vous faites tout correctement. Vous comptez vos calories, vous faites du sport, vous évitez les grignotages. Et pourtant, la balance refuse de bouger.
@@ -51,7 +53,7 @@ Quand vous dormez moins de 7 heures, votre corps déclenche une cascade d'effets
 - Vous mangez au-delà de vos besoins
 
 **3. Le cortisol grimpe**
-- C'est l'hormone du stress
+- C'est l'hormone du stress (découvrez [comment le stress bloque votre perte de poids](/blog/stress-perte-poids/))
 - Elle favorise le stockage de graisses abdominales
 - Elle augmente les envies de sucre
 
@@ -97,7 +99,7 @@ Après une mauvaise nuit, vous êtes naturellement attiré par :
 - 🍟 +45% d'aliments gras
 - 🥗 -25% de légumes et fruits
 
-Ce n'est pas vous qui choisissez mal — c'est votre cerveau fatigué qui prend le contrôle.
+Ce n'est pas vous qui choisissez mal — c'est votre cerveau fatigué qui prend le contrôle. Les femmes sont particulièrement vulnérables car les [fluctuations hormonales du cycle menstruel](/blog/cycle-menstruel-perte-poids/) amplifient ces effets.
 
 ## Le cercle vicieux sommeil-poids
 
@@ -158,7 +160,7 @@ La bonne nouvelle : améliorer votre sommeil peut enclencher un cercle vertueux 
 
 ### 6. La gestion du stress
 
-Le stress est l'ennemi #1 du sommeil :
+Le [stress chronique](/blog/stress-perte-poids/) est l'ennemi #1 du sommeil. Notre [Audio Program](/blog/audio-program-reprogrammer-cerveau/) inclut des sessions de relaxation spécifiquement conçues pour le soir :
 - Méditation guidée (5-10 min)
 - Respiration 4-7-8
 - Journal de gratitude
@@ -279,4 +281,13 @@ LOWIS ne se contente pas de compter vos calories. Il comprend que votre corps es
 
 ---
 
-*Pour une approche complète de la perte de poids, consultez notre [guide pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/). Découvrez aussi comment [le stress bloque vos résultats](/blog/stress-perte-poids/) et pourquoi [suivre 40+ indicateurs](/blog/40-indicateurs-perte-poids/) est essentiel pour comprendre votre corps.*
+### Continuez votre lecture
+
+**Dans la catégorie [Bien-être](/blog/bien-etre/)** :
+- [Stress et perte de poids : le cercle vicieux](/blog/stress-perte-poids/) — Comment le cortisol bloque vos résultats
+- [Audio Program : reprogrammer votre cerveau](/blog/audio-program-reprogrammer-cerveau/) — Des sessions de relaxation pour mieux dormir
+
+**Guides essentiels** :
+- [Guide complet pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/) — Notre pilier central
+- [Les 40+ indicateurs que votre app devrait suivre](/blog/40-indicateurs-perte-poids/) — Pourquoi le sommeil fait partie des métriques clés
+- [Cycle menstruel et perte de poids](/blog/cycle-menstruel-perte-poids/) — Comment les hormones affectent votre sommeil et votre poids

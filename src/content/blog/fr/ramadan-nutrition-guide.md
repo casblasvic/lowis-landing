@@ -19,15 +19,15 @@ image: "ramadan-nutrition-guide/hero.webp"
 imageAlt: "Guide nutritionnel complet pour le Ramadan - Ftour et Shour équilibrés"
 faq:
   - question: "Peut-on perdre du poids pendant le Ramadan ?"
-    answer: "Oui, absolument. Le jeûne du Ramadan est naturellement propice à la perte de poids SI le ftour et le shour sont équilibrés. Le problème vient souvent des excès pendant la rupture du jeûne. Avec une approche intelligente, vous pouvez perdre 2-4 kg pendant le mois."
-  - question: "Que manger au ftour pour ne pas prendre de poids ?"
-    answer: "Commencez par des dattes et de l'eau, puis une soupe (harira, chorba). Attendez 15-20 minutes avant le plat principal. Privilégiez les protéines et légumes. Évitez les fritures et pâtisseries en excès. La quantité compte autant que la qualité."
-  - question: "Le shour est-il vraiment important ?"
-    answer: "Le shour est CRUCIAL. Il fournit l'énergie pour toute la journée de jeûne. Sans shour, vous aurez faim plus tôt, serez fatigué, et risquez de trop manger au ftour. Même léger, ne le sautez jamais."
-  - question: "Combien d'eau boire pendant le Ramadan ?"
-    answer: "Visez 2-2.5L entre le ftour et le shour. Répartissez : 2-3 verres au ftour, 2-3 verres après tarawih, 2-3 verres au shour. Évitez de boire beaucoup d'un coup — ça dilue les sucs digestifs et cause des ballonnements."
-  - question: "LOWIS fonctionne-t-il pendant le Ramadan ?"
-    answer: "Oui, LOWIS s'adapte automatiquement au jeûne. Vous pouvez configurer vos horaires de ftour et shour, et l'IA ajuste vos besoins caloriques et nutritionnels pour cette période spéciale. Les recommandations sont adaptées au contexte du Ramadan."
+    answer: "Oui, le jeûne est naturellement propice à la perte de poids SI le ftour et shour sont équilibrés. Suivez notre <a href='/blog/perdre-poids-intelligemment/'>guide complet pour perdre du poids</a> et évitez <a href='/blog/effet-rebond-eviter/'>l'effet rebond</a> après le Ramadan."
+  - question: "Le sommeil affecte-t-il la perte de poids pendant le Ramadan ?"
+    answer: "Oui, le <a href='/blog/sommeil-perte-poids/'>sommeil impacte fortement la perte de poids</a>. Pendant le Ramadan avec les tarawih, le sommeil est perturbé. Essayez de faire une sieste et dormez au moins 6-7h au total. Un mauvais sommeil augmente la faim de 15%."
+  - question: "Comment gérer le stress du jeûne ?"
+    answer: "Le <a href='/blog/stress-perte-poids/'>stress bloque la perte de poids</a> en augmentant le cortisol. L'<a href='/blog/audio-program-reprogrammer-cerveau/'>Audio Program LOWIS</a> peut vous aider à gérer le stress pendant le jeûne avec des séances de 10 minutes."
+  - question: "Combien d'indicateurs LOWIS suit-il pendant le Ramadan ?"
+    answer: "Le <a href='/blog/coach-ia-comment-marche/'>coach IA LOWIS</a> analyse <a href='/blog/40-indicateurs-perte-poids/'>+40 indicateurs</a> même pendant le Ramadan : énergie, hydratation, qualité du sommeil, stress, et s'adapte au contexte du jeûne."
+  - question: "LOWIS reconnaît-il les plats du ftour ?"
+    answer: "Oui ! <a href='/blog/scanner-plat-2-secondes/'>Scannez harira, briouates, tajine en 2 secondes</a>. LOWIS a été entraîné sur +500 recettes marocaines. C'est <a href='/blog/apps-gratuites-echec/'>pourquoi les apps américaines ne marchent pas</a> pour nous."
 ---
 
 Le Ramadan approche. Et comme chaque année, vous vous posez la même question : **comment jeûner sans prendre de poids, sans être épuisé, et en gardant votre énergie ?**
@@ -344,4 +344,23 @@ Obtenez votre plan personnalisé pour le Ramadan en 2 minutes. LOWIS calcule vos
 
 ---
 
-*Pour continuer votre transformation après le Ramadan, consultez notre [guide complet pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/). Découvrez aussi [comment éviter l'effet rebond](/blog/effet-rebond-eviter/) et comment [scanner vos plats marocains en 2 secondes](/blog/scanner-plat-2-secondes/) avec LOWIS.*
+---
+
+### Continuez votre lecture
+
+**Dans la catégorie [Guides](/blog/guides/)** — Nos guides complets
+
+**Articles essentiels pour le Ramadan** :
+- [Le sommeil et la perte de poids](/blog/sommeil-perte-poids/) — Crucial avec les nuits courtes
+- [Le stress bloque la perte de poids](/blog/stress-perte-poids/) — Gérer le stress du jeûne
+- [L'Audio Program pour reprogrammer votre cerveau](/blog/audio-program-reprogrammer-cerveau/) — 10 min/jour pour le mental
+
+**Technologie LOWIS** :
+- [Scanner vos plats marocains en 2 secondes](/blog/scanner-plat-2-secondes/) — Harira, briouates, tajine...
+- [Comment fonctionne le coach IA](/blog/coach-ia-comment-marche/) — L'accompagnement intelligent
+- [Les 40+ indicateurs analysés](/blog/40-indicateurs-perte-poids/) — Suivi complet même en jeûne
+
+**Après le Ramadan** :
+- [Guide complet pour perdre du poids](/blog/perdre-poids-intelligemment/) — Continuez la transformation
+- [Comment éviter l'effet rebond](/blog/effet-rebond-eviter/) — Maintenir les résultats
+- [Pourquoi les régimes classiques échouent](/blog/pourquoi-regimes-echouent/) — L'approche durable

@@ -19,15 +19,13 @@ image: "scanner-plat-2-secondes/hero.webp"
 imageAlt: "Escanear una comida con la IA LOWIS en 2 segundos"
 faq:
   - question: "¿La IA reconoce los platos marroquíes?"
-    answer: "¡Sí! LOWIS ha sido entrenado en una base de datos de +500 recetas marroquíes. Tajine, cuscús, harira, pastilla, msemen, baghrir... todo se reconoce automáticamente."
-  - question: "¿Qué hago si la IA se equivoca con las porciones?"
-    answer: "Puedes ajustar manualmente las porciones en unos pocos toques. La IA aprende de tus correcciones y se vuelve más precisa con el tiempo para TUS hábitos."
-  - question: "¿Hay que escanear cada ingrediente por separado?"
-    answer: "¡No! La IA reconoce los platos completos. Toma una foto de tu plato entero y ella identificará todos los componentes: carne, verduras, carbohidratos, salsas..."
-  - question: "¿El escáner funciona sin conexión?"
-    answer: "El escaneo inicial necesita conexión a internet para el análisis IA. Sin embargo, tus platos escaneados anteriormente se guardan y son accesibles sin conexión."
-  - question: "¿Cuál es la precisión del escáner?"
-    answer: "La precisión varía de ±10% a ±20% según la complejidad del plato, lo cual es comparable a las mejores estimaciones manuales. Lo importante es la coherencia a lo largo del tiempo, no la precisión absoluta."
+    answer: "¡Sí! LOWIS incluye +500 recetas marroquíes y platos tradicionales. El <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> analiza <a href='/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> además de las calorías."
+  - question: "¿Por qué el escaneo es mejor que el conteo manual?"
+    answer: "Las <a href='/blog/apps-calorias-gratis-fallan/'>apps de conteo manual fallan</a> por el tiempo necesario. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> para los 7 criterios."
+  - question: "¿Qué analiza LOWIS además de las calorías?"
+    answer: "El <a href='/blog/sueno-perdida-peso/'>sueño</a>, el <a href='/blog/estres-perdida-peso/'>estrés</a>, el <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo menstrual</a>. Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a> sin estos factores."
+  - question: "¿Cómo uso el escaneo para perder peso?"
+    answer: "Lee la <a href='/blog/perder-peso-inteligente/'>guía completa</a> y cómo <a href='/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>. El <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> complementa el enfoque."
 ---
 
 Se acabó el tiempo en que contar calorías llevaba 15 minutos por comida. Con LOWIS, **una foto es suficiente**.
@@ -233,4 +231,22 @@ Sin tarjeta bancaria. Sin compromiso. Solo una mejor manera de seguir tu aliment
 
 ---
 
-*Para entender cómo el coach IA usa estos datos para personalizar tus recomendaciones, consulta nuestro artículo sobre [el coaching IA](/blog/coach-nutricion-ia-como-funciona/).*
+---
+
+### Continúa leyendo
+
+**En la categoría [Trucos](/blog/astuces/)** — Consejos prácticos
+
+**Tecnología LOWIS** :
+- [Cómo funciona el coach IA](/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
+- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que analizamos
+
+**Comparativas de apps** :
+- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
+- [Por qué las apps gratuitas fallan](/blog/apps-calorias-gratis-fallan/) — El verdadero coste
+- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — Comparativa detallada
+
+**Guías esenciales** :
+- [Guía completa para perder peso](/blog/perder-peso-inteligente/) — El enfoque que funciona
+- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Factor ignorado

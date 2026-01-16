@@ -19,13 +19,13 @@ image: "apps-gratuites-echec/hero.webp"
 imageAlt: "Por qué las aplicaciones gratuitas de calorías no funcionan"
 faq:
   - question: "¿Por qué las apps gratuitas de calorías no funcionan?"
-    answer: "Las apps gratuitas ganan dinero con publicidad y tus datos, no con tus resultados. Ofrecen bases de datos genéricas, ningún coaching personalizado, y te dejan solo con números sin contexto."
+    answer: "Las apps gratuitas ignoran factores clave: <a href='/blog/sueno-perdida-peso/'>sueño</a>, <a href='/blog/estres-perdida-peso/'>estrés</a>, <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo hormonal</a>. Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>."
   - question: "¿Cuál es el verdadero coste de una app gratuita?"
-    answer: "Una app 'gratuita' te cuesta unos 15 min/día en búsqueda manual (7.5h/mes). Si tu tiempo vale 10€/h, son 75€/mes en tiempo perdido, sin contar los meses sin resultados que retrasan tus objetivos."
+    answer: "15 min/día = 7.5h/mes perdidas. Con LOWIS, <a href='/blog/escanear-plato-2-segundos/'>escaneas en 2 segundos</a>. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app de nutrición</a>."
   - question: "¿En qué se diferencia una app de pago?"
-    answer: "Con una app de pago, la empresa tiene interés en que tengas éxito. Beneficias de un escaneo rápido (2 seg vs 15 min), un coach IA activo, +40 indicadores analizados, nutricionistas humanos, y una base de datos de platos locales."
-  - question: "¿Cómo sé si mi app actual no funciona?"
-    answer: "Señales reveladoras: has instalado 5+ apps diferentes, siempre abandonas después de pocas semanas, cuentas calorías pero no pierdes peso, pasas más tiempo en la app que comiendo."
+    answer: "Un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA activo</a> analiza <a href='/blog/40-indicadores-perdida-peso/'>+40 indicadores</a> y te ayuda a <a href='/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>."
+  - question: "¿Qué necesito para perder peso de forma duradera?"
+    answer: "Lee nuestra <a href='/blog/perder-peso-inteligente/'>guía completa</a>. El <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> ayuda con el aspecto mental, crucial para resultados duraderos."
 ---
 
 Has descargado una app gratuita de conteo de calorías. Empezaste con motivación. Dos semanas después, la abandonaste.
@@ -194,4 +194,23 @@ En 2 minutos, tendrás tu plan personalizado basado en tus hábitos reales y tus
 
 ---
 
-*Consulta nuestra [guía completa sobre cómo elegir app de nutrición](/blog/como-elegir-app-nutricion/) para entender el enfoque que funciona de verdad.*
+---
+
+### Continúa leyendo
+
+**En la categoría [Comparativas](/blog/comparatifs/)** — Nuestras comparaciones detalladas
+
+**Comparativas de apps populares** :
+- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — El gigante del conteo
+- [LOWIS vs Cal AI](/blog/lowis-vs-cal-ai/) — La app de escaneo IA
+- [LOWIS vs Yazio](/blog/lowis-vs-yazio/) — Popular en Europa
+
+**Guías esenciales** :
+- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
+- [Guía completa para perder peso](/blog/perder-peso-inteligente/) — El enfoque que funciona
+- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+
+**Factores ignorados por las apps gratuitas** :
+- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Por qué 7h cambian todo
+- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Cortisol y sus efectos
+- [El ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) — Para mujeres

@@ -18,17 +18,17 @@ image: "cycle-menstruel/hero.png"
 imageAlt: "Menstrual cycle and weight loss - How to adapt nutrition to each phase"
 faq:
   - question: "Why do I gain weight before my period?"
-    answer: "Weight gain before your period (1-3 kg / 2-6 lbs) is mainly due to water retention caused by dropping progesterone and rising estrogen. It's NOT fat. This weight typically disappears within 2-3 days after your period starts."
+    answer: "It's water retention, NOT fat. It's one of the <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> tracked by LOWIS. Combined with <a href='/blog/stress-weight-loss/'>stress</a> and <a href='/blog/sleep-weight-loss/'>poor sleep</a>, it's <a href='/blog/why-diets-fail/'>why diets fail</a> for women."
   - question: "Can I lose weight during my period?"
-    answer: "Yes, and it's actually a good time! After day 1-2, hormones are at their lowest, which reduces cravings and appetite. Many women find this is their best period for weight loss if they adapt their nutrition."
+    answer: "Yes! After day 1-2, hormones are low, reducing cravings. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> and learn how to <a href='/blog/avoid-weight-rebound/'>avoid weight rebound</a> with cycle-adapted strategies."
   - question: "How do I adapt my diet to my cycle?"
-    answer: "Follicular phase (D1-14): More protein and fiber, reduce carbs. Ovulation phase (D14-16): Maintain balance. Luteal phase (D17-28): Slightly increase complex carbs, more magnesium and iron. LOWIS automatically adapts your recommendations."
+    answer: "An <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> automatically adapts to your phase. The <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> also helps manage cycle-related cravings without guilt."
   - question: "Why am I hungrier before my period?"
-    answer: "The progesterone peak in the luteal phase naturally increases appetite by 200-500 calories/day. It's biological, not a lack of willpower! LOWIS accounts for this variation and automatically adjusts your calorie goals."
-  - question: "Does birth control affect weight loss?"
-    answer: "Some birth control can promote water retention or modify appetite. LOWIS lets you track these effects and adapt your nutrition accordingly. Consult your doctor for any questions about your contraception."
+    answer: "Progesterone naturally increases appetite (+200-500 cal/day). It's biological! <a href='/blog/free-calorie-apps-fail/'>Free apps fail</a> because they ignore this. See <a href='/blog/how-to-choose-nutrition-app/'>how to choose a nutrition app</a> that understands women."
+  - question: "Does stress affect my cycle and weight?"
+    answer: "Yes, <a href='/blog/stress-weight-loss/'>stress increases cortisol</a> which disrupts hormones. Poor <a href='/blog/sleep-weight-loss/'>sleep</a> makes it worse. LOWIS tracks these <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> together."
   - question: "Should I avoid weighing myself during my period?"
-    answer: "We recommend weighing yourself at the same point in your cycle (e.g., day 7-10) for comparable measurements. LOWIS analyzes your weigh-ins based on your cycle and shows you the real trend, not hormonal fluctuations."
+    answer: "Weigh yourself at the same point in your cycle (e.g., day 7-10). LOWIS shows real trends, not hormonal fluctuations. Read our <a href='/blog/smart-weight-loss-guide/'>complete guide</a> for smart weighing strategies."
 ---
 
 If you're a woman trying to lose weight, you've probably experienced this frustrating scenario:
@@ -292,4 +292,23 @@ No one-size-fits-all diet. Just an approach that respects your body.
 
 ---
 
-*To learn more about sustainable weight loss, discover our [complete guide to smart weight loss](/blog/smart-weight-loss-guide/), how [sleep affects weight loss](/blog/sleep-weight-loss/), and why [stress blocks your progress](/blog/stress-weight-loss/). Understand the [40+ indicators that matter for weight loss](/blog/40-indicators-weight-loss/).*
+---
+
+### Continue Reading
+
+**In the category [Women's Health](/blog/sante-femme/)** — All our women's health articles
+
+**Key factors that affect your weight**:
+- [Sleep and weight loss](/blog/sleep-weight-loss/) — Why 7h changes everything
+- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
+- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success
+
+**Essential guides**:
+- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results
+
+**LOWIS technology**:
+- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
+- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [Scan meals in 2 seconds](/blog/scan-meal-2-seconds/) — Easy meal tracking

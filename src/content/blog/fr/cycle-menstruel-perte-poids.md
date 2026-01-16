@@ -18,17 +18,17 @@ image: "cycle-menstruel/hero.png"
 imageAlt: "Cycle menstruel et perte de poids - Comment adapter son alimentation à chaque phase"
 faq:
   - question: "Pourquoi je prends du poids avant mes règles ?"
-    answer: "La prise de poids avant les règles (1-3 kg) est principalement due à la rétention d'eau causée par la chute de progestérone et l'augmentation des œstrogènes. Ce n'est PAS de la graisse. Ce poids disparaît généralement dans les 2-3 jours suivant le début des règles."
+    answer: "La prise de poids (1-3 kg) est due à la rétention d'eau, pas à la graisse. Ce poids disparaît en 2-3 jours. C'est pour ça que <a href='/blog/pourquoi-regimes-echouent/'>les régimes qui ignorent le cycle échouent</a> — les femmes abandonnent en pensant avoir échoué."
   - question: "Est-ce que je peux perdre du poids pendant mes règles ?"
-    answer: "Oui, et c'est même un bon moment ! Après le jour 1-2, les hormones sont au plus bas, ce qui réduit les fringales et l'appétit. Beaucoup de femmes constatent que c'est leur meilleure période pour perdre du poids si elles adaptent leur alimentation."
-  - question: "Comment adapter mon alimentation à mon cycle ?"
-    answer: "Phase folliculaire (J1-14) : Plus de protéines et fibres, réduisez les glucides. Phase ovulation (J14-16) : Maintenez l'équilibre. Phase lutéale (J17-28) : Augmentez légèrement les glucides complexes, plus de magnésium et fer. LOWIS adapte automatiquement vos recommandations."
+    answer: "Oui, c'est même un bon moment ! Les hormones sont au plus bas, réduisant les fringales. Découvrez <a href='/blog/40-indicateurs-perte-poids/'>les 40+ indicateurs</a> que LOWIS suit pour optimiser chaque phase."
   - question: "Pourquoi j'ai plus faim avant mes règles ?"
-    answer: "Le pic de progestérone en phase lutéale augmente naturellement l'appétit de 200-500 calories/jour. C'est biologique, pas un manque de volonté ! LOWIS prend en compte cette variation et ajuste vos objectifs caloriques automatiquement."
-  - question: "La pilule contraceptive affecte-t-elle la perte de poids ?"
-    answer: "Certaines pilules peuvent favoriser la rétention d'eau ou modifier l'appétit. LOWIS vous permet de suivre ces effets et d'adapter votre alimentation en conséquence. Consultez votre médecin pour toute question sur votre contraception."
+    answer: "Le pic de progestérone augmente l'appétit de 200-500 cal/jour. C'est biologique, pas un manque de volonté ! Combinez ça avec du <a href='/blog/stress-perte-poids/'>stress</a> et les envies explosent."
+  - question: "Comment gérer le stress prémenstruel ?"
+    answer: "Le <a href='/blog/stress-perte-poids/'>stress en phase lutéale</a> est amplifié par les hormones. Notre <a href='/blog/audio-program-reprogrammer-cerveau/'>Audio Program</a> inclut des sessions spécifiques pour cette période."
+  - question: "Le sommeil change-t-il selon le cycle ?"
+    answer: "Oui, la phase lutéale perturbe souvent le <a href='/blog/sommeil-perte-poids/'>sommeil</a>. Comme le sommeil affecte directement la perte de poids, LOWIS adapte vos recommandations."
   - question: "Faut-il éviter de se peser pendant les règles ?"
-    answer: "On conseille de se peser toujours au même moment du cycle (ex: jour 7-10) pour avoir des mesures comparables. LOWIS analyse vos pesées en fonction de votre cycle et vous montre la vraie tendance, pas les fluctuations hormonales."
+    answer: "On conseille de se peser au même moment du cycle (ex: jour 7-10). LOWIS analyse vos pesées en fonction de votre cycle et vous montre la vraie tendance, pas les fluctuations hormonales."
 ---
 
 Si vous êtes une femme qui essaie de perdre du poids, vous avez probablement vécu ce scénario frustrant :
@@ -209,11 +209,11 @@ Semaine 4 (lutéale) : +2 kg ✗ "J'ABANDONNE."
 
 ### Erreur 3 : Ignorer le sommeil et le stress
 
-**Le problème :** Le [mauvais sommeil](/blog/sommeil-perte-poids/) et le stress élevé amplifient les symptômes hormonaux et les envies.
+**Le problème :** Le [mauvais sommeil](/blog/sommeil-perte-poids/) et le [stress élevé](/blog/stress-perte-poids/) amplifient les symptômes hormonaux et les envies.
 
 **La solution :**
 - Priorisez 7-8h de sommeil en phase lutéale
-- Techniques de relaxation
+- Notre [Audio Program](/blog/audio-program-reprogrammer-cerveau/) inclut des sessions de relaxation
 - LOWIS adapte vos recommandations selon votre niveau de stress et sommeil
 
 ### Erreur 4 : S'entraîner pareil tout le mois
@@ -292,4 +292,16 @@ Pas de régime unique pour tous. Juste une approche qui respecte votre corps.
 
 ---
 
-*Pour en savoir plus sur la perte de poids durable, découvrez notre [guide complet pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/), comment [le sommeil affecte la perte de poids](/blog/sommeil-perte-poids/), et pourquoi [le stress bloque vos progrès](/blog/stress-perte-poids/). Comprenez les [40+ indicateurs qui comptent pour perdre du poids](/blog/40-indicateurs-perte-poids/).*
+### Continuez votre lecture
+
+**Dans la catégorie [Santé Femme](/blog/sante-femme/)** — Nutrition adaptée aux femmes
+
+**Articles connexes sur le bien-être** :
+- [Sommeil et perte de poids](/blog/sommeil-perte-poids/) — Les hormones perturbent le sommeil en phase lutéale
+- [Stress et perte de poids](/blog/stress-perte-poids/) — Le cortisol amplifie les symptômes hormonaux
+- [Audio Program](/blog/audio-program-reprogrammer-cerveau/) — Sessions de relaxation pour la phase lutéale
+
+**Guides essentiels** :
+- [Guide complet pour perdre du poids intelligemment](/blog/perdre-poids-intelligemment/) — L'approche adaptée aux femmes
+- [Les 40+ indicateurs LOWIS](/blog/40-indicateurs-perte-poids/) — Le cycle menstruel est un indicateur clé
+- [Pourquoi les régimes échouent](/blog/pourquoi-regimes-echouent/) — Les régimes ignorent le cycle féminin

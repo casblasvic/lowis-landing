@@ -19,15 +19,13 @@ image: "coach-ia-comment-marche/hero.webp"
 imageAlt: "Cómo funciona un coach nutricional IA para la pérdida de peso"
 faq:
   - question: "¿Cuál es la diferencia entre una app de calorías y un coach IA?"
-    answer: "Una app clásica registra pasivamente tus calorías y te deja solo. Un coach IA analiza activamente tu situación global (estrés, sueño, hormonas), personaliza las recomendaciones continuamente, anticipa tus necesidades y te guía hacia tus objetivos 24/7."
-  - question: "¿La IA va a reemplazar a los nutricionistas?"
-    answer: "No. La IA es una herramienta que amplifica el trabajo de los expertos. En LOWIS, nuestros nutricionistas utilizan la IA para ser más eficientes. La IA analiza los datos continuamente, pero las recomendaciones importantes son validadas por humanos."
-  - question: "¿Están seguros mis datos con un coach IA?"
-    answer: "Sí. Tus datos están encriptados y nunca se venden a terceros. Solo sirven para mejorar TU experiencia y personalizar tus recomendaciones nutricionales."
-  - question: "¿El coach IA funciona con dietas especiales?"
-    answer: "Sí. Vegano, sin gluten, halal, diabético... La IA se adapta a tus restricciones alimentarias y propone recomendaciones adaptadas a tu situación específica."
-  - question: "¿Qué pasa si la IA se equivoca?"
-    answer: "Siempre puedes corregir a la IA, y aprende de sus errores para ser más precisa con el tiempo. Además, nuestros nutricionistas supervisan las recomendaciones importantes."
+    answer: "Las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque solo registran calorías. Un coach IA analiza <a href='/blog/40-indicadores-perdida-peso/'>+40 indicadores</a>: <a href='/blog/estres-perdida-peso/'>estrés</a>, <a href='/blog/sueno-perdida-peso/'>sueño</a>, <a href='/blog/ciclo-menstrual-perdida-peso/'>ciclo</a>."
+  - question: "¿Por qué el coaching IA funciona mejor que las dietas?"
+    answer: "Es <a href='/blog/por-que-dietas-fallan/'>por qué las dietas fracasan</a>: ignoran factores clave. Lee la <a href='/blog/perder-peso-inteligente/'>guía completa</a> y cómo <a href='/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a>."
+  - question: "¿Cómo escaneo mis comidas?"
+    answer: "Descubre <a href='/blog/escanear-plato-2-segundos/'>cómo escanear en 2 segundos</a> incluso platos tradicionales. Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app</a> para los criterios."
+  - question: "¿El coach IA considera el aspecto mental?"
+    answer: "Sí, incluye el <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> para reprogramar tu relación con la comida. El mental es el 80% del éxito."
 ---
 
 "Coach IA", "Inteligencia artificial", "Machine learning"... Estos términos están en todas partes. Pero en concreto, **¿qué es un coach nutricional IA y cómo puede ayudarte a perder peso?**
@@ -250,4 +248,23 @@ En 2 minutos, tendrás tu primer plan personalizado y podrás experimentar la di
 
 ---
 
-*Para entender el enfoque global de la pérdida de peso inteligente, consulta nuestra [guía completa sobre cómo elegir app de nutrición](/blog/como-elegir-app-nutricion/).*
+---
+
+### Continúa leyendo
+
+**En la categoría [Guías](/blog/guides/)** — Nuestras guías completas
+
+**Tecnología LOWIS** :
+- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que analizamos
+- [Escanear platos en 2 segundos](/blog/escanear-plato-2-segundos/) — La tecnología de reconocimiento
+- [Audio Program para reprogramar tu cerebro](/blog/audio-program-reprogramar-cerebro/) — El mental es clave
+
+**Factores que el coach IA analiza** :
+- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Por qué 7h cambian todo
+- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Cortisol y sus efectos
+- [El ciclo menstrual y la pérdida de peso](/blog/ciclo-menstrual-perdida-peso/) — Para mujeres
+
+**Comparativas** :
+- [Cómo elegir una app de nutrición](/blog/como-elegir-app-nutricion/) — Los 7 criterios esenciales
+- [Por qué las apps gratuitas fallan](/blog/apps-calorias-gratis-fallan/) — El verdadero coste
+- [LOWIS vs MyFitnessPal](/blog/lowis-vs-myfitnesspal/) — Comparativa detallada

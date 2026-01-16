@@ -19,11 +19,13 @@ image: "sommeil-perte-poids/hero.webp"
 imageAlt: "The connection between sleep and weight loss - hormones and metabolism"
 faq:
   - question: "How many hours of sleep to lose weight?"
-    answer: "To optimize weight loss, aim for 7-9 hours of quality sleep per night. Below 7 hours, hunger hormones are disrupted, metabolism slows, and sugar cravings increase significantly."
+    answer: "To optimize weight loss, aim for 7-9 hours of quality sleep per night. Below 7 hours, hunger hormones are disrupted and <a href='/blog/stress-weight-loss/'>stress hormones rise</a>, slowing metabolism. Learn more in our <a href='/blog/smart-weight-loss-guide/'>complete weight loss guide</a>."
   - question: "Does lack of sleep really cause weight gain?"
-    answer: "Yes, scientifically proven. Sleep deprivation increases ghrelin (+15%, hunger hormone), decreases leptin (-20%, satiety hormone), raises cortisol (fat storage), and slows basal metabolism."
+    answer: "Yes, scientifically proven. Sleep deprivation is one of the <a href='/blog/40-indicators-weight-loss/'>40+ indicators</a> affecting weight. It increases ghrelin, decreases leptin, raises <a href='/blog/stress-weight-loss/'>cortisol</a>, and is <a href='/blog/why-diets-fail/'>why diets fail</a>."
   - question: "Can you lose weight by sleeping more?"
-    answer: "Improving sleep can effectively accelerate weight loss. Studies show people sleeping 7-8h lose 55% more fat than those sleeping less than 6h, on the same diet."
+    answer: "Yes, improving sleep accelerates weight loss. Studies show people sleeping 7-8h lose 55% more fat. An <a href='/blog/ai-nutrition-coach-how-it-works/'>AI coach</a> helps track sleep and adapt recommendations to <a href='/blog/avoid-weight-rebound/'>avoid weight rebound</a>."
+  - question: "How does sleep affect women's weight loss?"
+    answer: "For women, sleep affects <a href='/blog/menstrual-cycle-weight-loss/'>hormonal balance throughout the cycle</a>. Poor sleep worsens PMS symptoms and cravings. The <a href='/blog/audio-program-reprogram-brain/'>Audio Program</a> helps improve sleep quality."
 ---
 
 You're doing everything right. You're counting your calories, exercising, avoiding snacks. And yet, the scale refuses to budge.
@@ -210,4 +212,23 @@ LOWIS doesn't just count your calories. It understands that your body is a compl
 
 ---
 
-*To learn more, discover our [complete guide to smart weight loss](/blog/smart-weight-loss-guide/), how [stress blocks your weight loss](/blog/stress-weight-loss/), and why [40+ indicators matter for weight loss](/blog/40-indicators-weight-loss/). For women, our article on [menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) explains how to adapt your diet to each phase.*
+---
+
+### Continue Reading
+
+**In the category [Wellness](/blog/bien-etre/)** — All our wellness articles
+
+**Key factors that affect your weight**:
+- [Stress blocks your weight loss](/blog/stress-weight-loss/) — Cortisol and its effects
+- [Menstrual cycle and weight loss](/blog/menstrual-cycle-weight-loss/) — For women
+- [Audio Program to reprogram your brain](/blog/audio-program-reprogram-brain/) — Mental is 80% of success
+
+**Essential guides**:
+- [Complete smart weight loss guide](/blog/smart-weight-loss-guide/) — The approach that works
+- [Why diets fail](/blog/why-diets-fail/) — The science behind failure
+- [How to avoid weight rebound](/blog/avoid-weight-rebound/) — Keep your results
+
+**LOWIS technology**:
+- [The 40+ indicators that matter](/blog/40-indicators-weight-loss/) — What we analyze
+- [How the AI coach works](/blog/ai-nutrition-coach-how-it-works/) — The intelligence behind it
+- [Scan meals in 2 seconds](/blog/scan-meal-2-seconds/) — Easy meal tracking

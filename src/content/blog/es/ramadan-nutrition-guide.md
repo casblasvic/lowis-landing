@@ -19,13 +19,13 @@ image: "ramadan-nutrition-guide/hero.webp"
 imageAlt: "Guía nutricional completa para el Ramadán - Iftar y Suhur equilibrados"
 faq:
   - question: "¿Se puede perder peso durante el Ramadán?"
-    answer: "Sí, absolutamente. El ayuno del Ramadán es naturalmente propicio para la pérdida de peso SI el iftar y el suhur están equilibrados. El problema viene a menudo de los excesos durante la ruptura del ayuno. Con un enfoque inteligente, puedes perder 2-4 kg durante el mes."
-  - question: "¿Qué comer en el iftar para no engordar?"
-    answer: "Comienza con dátiles y agua, luego una sopa. Espera 15-20 minutos antes del plato principal. Prioriza proteínas y verduras. Evita frituras y dulces en exceso. La cantidad importa tanto como la calidad."
-  - question: "¿Es realmente importante el suhur?"
-    answer: "El suhur es CRUCIAL. Proporciona la energía para todo el día de ayuno. Sin suhur, tendrás hambre antes, estarás cansado, y arriesgas comer demasiado en el iftar. Aunque sea ligero, nunca lo saltes."
-  - question: "¿Cuánta agua beber durante el Ramadán?"
-    answer: "Apunta a 2-2.5L entre el iftar y el suhur. Distribuye: 2-3 vasos en el iftar, 2-3 vasos después de tarawih, 2-3 vasos en el suhur. Evita beber mucho de golpe — diluye los jugos digestivos y causa hinchazón."
+    answer: "Sí, con el enfoque correcto. Lee la <a href='/blog/perder-peso-inteligente/'>guía completa para perder peso</a> y cómo <a href='/blog/evitar-efecto-rebote/'>evitar el efecto rebote</a> post-Ramadán."
+  - question: "¿El sueño afecta al ayuno?"
+    answer: "Sí, el <a href='/blog/sueno-perdida-peso/'>sueño es crucial</a> para controlar el hambre y la energía. Un <a href='/blog/coach-nutricion-ia-como-funciona/'>coach IA</a> adapta las recomendaciones a tu situación."
+  - question: "¿El estrés aumenta durante el Ramadán?"
+    answer: "Puede. Descubre cómo el <a href='/blog/estres-perdida-peso/'>estrés bloquea la pérdida de peso</a>. El <a href='/blog/audio-program-reprogramar-cerebro/'>Audio Program</a> ayuda con la gestión mental."
+  - question: "¿Cómo elijo una app para el Ramadán?"
+    answer: "Consulta <a href='/blog/como-elegir-app-nutricion/'>cómo elegir una app de nutrición</a>. Las <a href='/blog/apps-calorias-gratis-fallan/'>apps gratuitas fallan</a> porque ignoran el contexto del ayuno."
 ---
 
 El Ramadán se acerca. Y como cada año, te haces la misma pregunta: **¿cómo ayunar sin engordar, sin estar agotado, y manteniendo tu energía?**
@@ -216,4 +216,23 @@ Obtén tu plan personalizado para el Ramadán en 2 minutos. LOWIS calcula tus ne
 
 ---
 
-*Para saber más sobre pérdida de peso sostenible, descubre nuestra [guía completa para perder peso de forma inteligente](/blog/perder-peso-inteligente/), por qué [el sueño es crucial para adelgazar](/blog/sueno-perdida-peso/), y cómo [el estrés afecta la pérdida de peso](/blog/estres-perdida-peso/). Aprende sobre los [40+ indicadores que importan para perder peso](/blog/40-indicadores-perdida-peso/).*
+---
+
+### Continúa leyendo
+
+**En la categoría [Guías](/blog/guides/)** — Nuestras guías completas
+
+**Factores clave durante el Ramadán** :
+- [El sueño y la pérdida de peso](/blog/sueno-perdida-peso/) — Crucial durante el ayuno
+- [El estrés bloquea tu pérdida de peso](/blog/estres-perdida-peso/) — Gestión del cortisol
+- [Audio Program para reprogramar tu cerebro](/blog/audio-program-reprogramar-cerebro/) — Gestión mental
+
+**Después del Ramadán** :
+- [Guía completa para perder peso](/blog/perder-peso-inteligente/) — Mantener los resultados
+- [Cómo evitar el efecto rebote](/blog/evitar-efecto-rebote/) — No recuperar los kilos
+- [Por qué las dietas fracasan](/blog/por-que-dietas-fallan/) — La ciencia del fracaso
+
+**Tecnología LOWIS** :
+- [Los 40+ indicadores que importan](/blog/40-indicadores-perdida-peso/) — Lo que analizamos
+- [Cómo funciona el coach IA](/blog/coach-nutricion-ia-como-funciona/) — La inteligencia detrás
+- [Escanear platos en 2 segundos](/blog/escanear-plato-2-segundos/) — Fácil durante el iftar
