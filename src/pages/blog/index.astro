@@ -96,38 +96,37 @@ const keywords = 'nutrition maroc, perte de poids, compteur calories ia, régime
     </div>
   </section>
 
-  <!-- Category Filter Pills -->
+  <!-- Category Filter Pills - Horizontal scroll on mobile -->
   {usedCategories.length > 1 && (
     <section class="pb-8" style="background: var(--blog-bg);">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-wrap items-center justify-center gap-2 md:gap-3" id="category-filters">
-          <!-- All articles pill -->
-          <a
-            href="/blog/"
-            class="category-pill active inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200"
-          >
-            <span class="material-symbols-outlined text-base">apps</span>
-            Tous
-            <span class="pill-count ml-1 px-1.5 py-0.5 rounded-full text-xs font-semibold">{posts.length}</span>
-          </a>
+      <div class="max-w-6xl mx-auto">
+        <div class="category-scroll-container overflow-x-auto scrollbar-hide px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center gap-2 md:gap-3 md:justify-center min-w-max md:min-w-0" id="category-filters">
+            <!-- All articles pill -->
+            <a
+              href="/blog/"
+              class="category-pill active inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap"
+            >
+              <span class="material-symbols-outlined text-base">apps</span>
+              Tous
+            </a>
 
-          {usedCategories.map((cat) => {
-            const config = categoryConfig[cat];
-            const count = posts.filter(p => p.data.category === cat).length;
-            if (!config) return null;
-            return (
-              <a
-                href={`/blog/category/${cat}/`}
-                data-category={cat}
-                data-color={config.color}
-                class="category-pill inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200"
-              >
-                <span class="material-symbols-outlined text-base">{config.icon}</span>
-                {config.label}
-                <span class="pill-count ml-1 px-1.5 py-0.5 rounded-full text-xs font-semibold">{count}</span>
-              </a>
-            );
-          })}
+            {usedCategories.map((cat) => {
+              const config = categoryConfig[cat];
+              if (!config) return null;
+              return (
+                <a
+                  href={`/blog/category/${cat}/`}
+                  data-category={cat}
+                  data-color={config.color}
+                  class="category-pill inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap"
+                >
+                  <span class="material-symbols-outlined text-base">{config.icon}</span>
+                  {config.label}
+                </a>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
@@ -325,12 +324,22 @@ const keywords = 'nutrition maroc, perte de poids, compteur calories ia, régime
     overflow: hidden;
   }
 
+  /* Horizontal scroll container - hide scrollbar */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
   /* Category pill styles */
   .category-pill {
     background: var(--blog-surface);
     border: 1px solid var(--blog-border);
     color: var(--blog-text-secondary);
     cursor: pointer;
+    flex-shrink: 0;
   }
 
   .category-pill:hover {
@@ -342,14 +351,6 @@ const keywords = 'nutrition maroc, perte de poids, compteur calories ia, régime
     background: var(--blog-accent);
     border-color: var(--blog-accent);
     color: white;
-  }
-
-  .category-pill .pill-count {
-    background: rgba(0, 0, 0, 0.1);
-  }
-
-  .category-pill.active .pill-count {
-    background: rgba(255, 255, 255, 0.2);
   }
 
   /* Dark mode adjustments */

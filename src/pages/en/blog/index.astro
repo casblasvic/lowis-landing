@@ -54,6 +54,9 @@ const categoryConfig: Record<string, { label: string; icon: string; color: strin
   'sante-femme': { label: "Women's Health", icon: 'female', color: '#EC4899' },
 };
 
+// Get unique categories from posts
+const usedCategories = [...new Set(posts.map(p => p.data.category).filter(Boolean))] as string[];
+
 const title = 'LOWIS Blog - Nutrition, Weight Loss & AI Coaching Tips';
 const description = 'Discover comprehensive guides on nutrition, weight loss, and how our AI can help you reach your goals. Practical advice backed by science.';
 const keywords = 'nutrition tips, weight loss, ai calorie counter, diet guide, nutrition coach';
@@ -70,6 +73,32 @@ const keywords = 'nutrition tips, weight loss, ai calorie counter, diet guide, n
       </p>
     </div>
   </section>
+
+  <!-- Category Filter Pills - Horizontal scroll on mobile -->
+  {usedCategories.length > 1 && (
+    <section class="pb-8" style="background: var(--blog-bg);">
+      <div class="max-w-6xl mx-auto">
+        <div class="category-scroll-container overflow-x-auto scrollbar-hide px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center gap-2 md:gap-3 md:justify-center min-w-max md:min-w-0">
+            <a href="/en/blog/" class="category-pill active inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap">
+              <span class="material-symbols-outlined text-base">apps</span>
+              All
+            </a>
+            {usedCategories.map((cat) => {
+              const config = categoryConfig[cat];
+              if (!config) return null;
+              return (
+                <a href={`/en/blog/category/${cat}/`} data-category={cat} class="category-pill inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap">
+                  <span class="material-symbols-outlined text-base">{config.icon}</span>
+                  {config.label}
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
 
   <section class="pb-16 md:pb-24">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -180,5 +209,32 @@ const keywords = 'nutrition tips, weight loss, ai calorie counter, diet guide, n
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+
+  /* Horizontal scroll container - hide scrollbar */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Category pill styles */
+  .category-pill {
+    background: var(--blog-surface);
+    border: 1px solid var(--blog-border);
+    color: var(--blog-text-secondary);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .category-pill:hover {
+    border-color: var(--blog-accent);
+    color: var(--blog-accent);
+  }
+  .category-pill.active {
+    background: var(--blog-accent);
+    border-color: var(--blog-accent);
+    color: white;
   }
 </style>
