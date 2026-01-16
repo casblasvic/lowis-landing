@@ -23,17 +23,17 @@ interface Props {
 
 const { t } = Astro.props;
 
-// Recipe images - verified Unsplash images that match recipe names
+// Recipe images - local WebP thumbnails optimized (100x100)
 const moroccanImages = [
-  'https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=100', // Tajine
-  'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=100', // Kefta
-  'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=100', // Grilled fish
+  '/images/recipes/tajine-chicken-thumb.webp', // Tajine
+  '/images/recipes/kefta-meatballs-thumb.webp', // Kefta
+  '/images/recipes/grilled-fish-thumb.webp', // Grilled fish
 ];
 
 const genericImages = [
-  'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=100', // Caesar salad
-  'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=100', // Salmon
-  'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=100', // Quinoa bowl
+  '/images/recipes/caesar-salad-thumb.webp', // Caesar salad
+  '/images/recipes/salmon-lemon-thumb.webp', // Salmon
+  '/images/recipes/quinoa-bowl-thumb.webp', // Quinoa bowl
 ];
 
 // Moroccan recipes (default hidden)
