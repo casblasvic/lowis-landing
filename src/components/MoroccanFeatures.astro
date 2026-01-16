@@ -410,7 +410,9 @@ const internationalRecipes = [
     let startX = 0;
     let currentTranslate = 0;
     let prevTranslate = 0;
-    let cachedWidth = 0; // Cache scrollWidth to avoid repeated layout queries
+    let cachedWidth = 0;
+    let animationStartTime = 0;
+    const ANIMATION_DURATION = 30000; // 30 seconds in ms
 
     // Cache carousel width once on first interaction (avoids repeated reflows)
     function getCarouselWidth(): number {
@@ -420,18 +422,28 @@ const internationalRecipes = [
       return cachedWidth;
     }
 
-    // Get initial transform - only called once at drag start
-    function captureCurrentTransform(): number {
-      const style = window.getComputedStyle(carousel!);
-      const matrix = new DOMMatrix(style.transform);
-      return matrix.m41;
+    // Calculate current position mathematically (NO getComputedStyle = NO forced reflow)
+    function calculateCurrentPosition(): number {
+      if (animationStartTime === 0) {
+        // First interaction - start tracking from now
+        animationStartTime = performance.now();
+        return 0;
+      }
+      const elapsed = performance.now() - animationStartTime;
+      const width = getCarouselWidth();
+      // Animation goes from 0 to -width over ANIMATION_DURATION, then loops
+      const progress = (elapsed % ANIMATION_DURATION) / ANIMATION_DURATION;
+      return -width * progress;
     }
 
-    // Resume animation helper
+    // Resume animation from current position
     function resumeAnimation() {
       const width = getCarouselWidth();
       const progress = Math.abs(currentTranslate) / width;
       const remainingDuration = 30 * (1 - progress);
+
+      // Update animation start time to match current position
+      animationStartTime = performance.now() - (progress * ANIMATION_DURATION);
 
       carousel!.style.animation = 'none';
       carousel!.style.transform = `translateX(${currentTranslate}px)`;
@@ -466,7 +478,7 @@ const internationalRecipes = [
     container.addEventListener('touchstart', (e: TouchEvent) => {
       isDragging = true;
       startX = e.touches[0].clientX;
-      prevTranslate = captureCurrentTransform();
+      prevTranslate = calculateCurrentPosition();
       carousel!.classList.add('dragging');
       carousel!.style.transform = `translateX(${prevTranslate}px)`;
     }, { passive: true });
@@ -485,7 +497,7 @@ const internationalRecipes = [
     container.addEventListener('mousedown', (e: MouseEvent) => {
       isDragging = true;
       startX = e.clientX;
-      prevTranslate = captureCurrentTransform();
+      prevTranslate = calculateCurrentPosition();
       carousel!.classList.add('dragging');
       carousel!.style.transform = `translateX(${prevTranslate}px)`;
       e.preventDefault();

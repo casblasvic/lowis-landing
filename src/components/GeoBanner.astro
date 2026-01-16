@@ -308,16 +308,148 @@
     });
   }
 
+  // =========================================================================
+  // INIT - Optimizado para no bloquear LCP pero mantener funcionalidad completa
+  // =========================================================================
+
   // Ejecutar cuando el DOM esté listo
   async function init() {
-    // Primero intentar redirección de idioma (solo afecta a página raíz)
-    await autoRedirectLanguage();
-
-    // Luego configurar banner y geo-detección
+    // Setup events inmediatamente (no bloquea, es sync)
     setupBannerEvents();
-    await initGeoBanner();
+
+    // PASO 1: Verificar cache primero (instantáneo, no bloquea)
+    const cachedCountry = localStorage.getItem('lowis_country');
+    const cachedTime = localStorage.getItem('lowis_country_time');
+    const ONE_DAY = 24 * 60 * 60 * 1000;
+    const cacheValid = cachedCountry && cachedTime && (Date.now() - parseInt(cachedTime)) < ONE_DAY;
+
+    if (cacheValid) {
+      // Cache válido: usar inmediatamente sin fetch
+      handleCountryDetected(cachedCountry!);
+      return;
+    }
+
+    if (cachedCountry && !cacheValid) {
+      // Cache expirado: usar el valor viejo inmediatamente, refrescar en background
+      handleCountryDetected(cachedCountry);
+      refreshCountryInBackground();
+      return;
+    }
+
+    // Sin cache: necesitamos hacer fetch, pero lo hacemos de forma inteligente
+    // Si estamos en la raíz Y el usuario no ha elegido idioma, necesitamos esperar
+    const path = window.location.pathname;
+    const needsRedirect = (path === '/' || path === '') && !localStorage.getItem('lowis_lang_chosen');
+
+    if (needsRedirect) {
+      // CASO CRÍTICO: Primera visita a raíz - necesitamos geo para redirigir
+      // Hacer fetch pero con timeout corto para no bloquear mucho
+      const country = await detectCountryFast();
+      const bestLang = getBestLanguage(country);
+
+      if (bestLang === 'fr-FR') {
+        localStorage.setItem('lowis_auto_redirected', 'true');
+        window.location.href = '/fr/';
+        return;
+      } else if (bestLang !== 'fr') {
+        localStorage.setItem('lowis_auto_redirected', 'true');
+        window.location.href = `/${bestLang}/`;
+        return;
+      }
+
+      // Si es francés marroquí, continuar normal
+      handleCountryDetected(country);
+    } else {
+      // No necesita redirigir: defer la detección para no bloquear LCP
+      if ('requestIdleCallback' in window) {
+        (window as any).requestIdleCallback(() => detectAndHandle(), { timeout: 2000 });
+      } else {
+        setTimeout(() => detectAndHandle(), 50);
+      }
+    }
   }
 
+  // Detectar país con timeout más corto para casos críticos de redirección
+  async function detectCountryFast(): Promise<string> {
+    try {
+      const res = await fetch('https://ipwho.is/', { signal: AbortSignal.timeout(2000) });
+      const data = await res.json();
+      if (data.success && data.country_code) {
+        localStorage.setItem('lowis_country', data.country_code);
+        localStorage.setItem('lowis_country_time', Date.now().toString());
+        return data.country_code;
+      }
+    } catch {
+      // Timeout o error: usar default basado en URL
+    }
+    return getDefaultCountry();
+  }
+
+  // Detectar y manejar (para casos no críticos)
+  async function detectAndHandle() {
+    const country = await detectCountry();
+    handleCountryDetected(country);
+  }
+
+  // Manejar país detectado: adaptar contenido y mostrar banner
+  function handleCountryDetected(country: string) {
+    window.dispatchEvent(new CustomEvent('lowis-country-detected', { detail: country }));
+    adaptContentForCountry(country);
+
+    // Banner solo para no-Marruecos que no lo han cerrado
+    const moroccoGroup = ['MA', 'DZ', 'TN'];
+    const dismissed = localStorage.getItem('lowis_banner_dismissed');
+    if (!moroccoGroup.includes(country) && !dismissed) {
+      showBannerForCountry(country);
+    }
+  }
+
+  // Obtener país default basado en URL
+  function getDefaultCountry(): string {
+    const path = window.location.pathname;
+    if (path.startsWith('/en')) return 'US';
+    if (path.startsWith('/es')) return 'ES';
+    if (path.startsWith('/fr')) return 'FR';
+    return 'MA';
+  }
+
+  // Refrescar país en background (no bloquea nada)
+  async function refreshCountryInBackground() {
+    try {
+      const res = await fetch('https://ipwho.is/', { signal: AbortSignal.timeout(5000) });
+      const data = await res.json();
+      if (data.success && data.country_code) {
+        localStorage.setItem('lowis_country', data.country_code);
+        localStorage.setItem('lowis_country_time', Date.now().toString());
+      }
+    } catch {
+      // Silently fail
+    }
+  }
+
+  // Mostrar banner para un país específico
+  function showBannerForCountry(country: string) {
+    const currentLang = getCurrentLang();
+    let config = countryConfig[country];
+    if (!config || !config.message) {
+      config = defaultConfig[currentLang];
+    }
+
+    const flagEl = document.getElementById('country-flag');
+    const messageEl = document.getElementById('banner-message');
+    const ctaEl = document.getElementById('banner-cta');
+    const bannerEl = document.getElementById('geo-banner');
+
+    if (flagEl) flagEl.textContent = countryToFlag(country);
+    if (messageEl) messageEl.textContent = config.message;
+    if (ctaEl) ctaEl.textContent = config.cta;
+
+    setTimeout(() => {
+      if (bannerEl) bannerEl.classList.remove('-translate-y-full');
+    }, 1500);
+  }
+
+  // Iniciar
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
