@@ -28,35 +28,44 @@ const t = useTranslations(lang);
   <Header t={t} lang={lang} />
 
   <main>
-    <!-- 1. Hero: Guaranteed + motivation -->
+    <!-- 1. Hero: Guaranteed + motivation (ABOVE FOLD) -->
     <Hero t={t} lang={lang} />
 
     <!-- 2. Moroccan Features: Your favorite recipes (carousel) -->
     <MoroccanFeatures t={t} lang={lang} />
 
-    <!-- 3. Pricing: Get your personalized plan -->
-    <Pricing t={t} lang={lang} />
+    <!-- BELOW FOLD - defer rendering for faster FCP/LCP -->
+    <div class="defer-render">
+      <Pricing t={t} lang={lang} />
+    </div>
 
-    <!-- 4. How It Works: Simple as 1-2-3 -->
-    <HowItWorks t={t} lang={lang} />
+    <div class="defer-render">
+      <HowItWorks t={t} lang={lang} />
+    </div>
 
-    <!-- 5. Health Tracking: 17+ indicators -->
-    <HealthTracking t={t} />
+    <div class="defer-render">
+      <HealthTracking t={t} />
+    </div>
 
-    <!-- 6. Audio Program: Strengthen your willpower -->
-    <AudioProgram t={t} />
+    <div class="defer-render">
+      <AudioProgram t={t} />
+    </div>
 
-    <!-- 7. AI + Experts: Unified section - We adapt to YOUR life -->
-    <AIExpertsSection t={t} />
+    <div class="defer-render">
+      <AIExpertsSection t={t} />
+    </div>
 
-    <!-- 8. Stats: Social proof -->
-    <StatsSection t={t} />
+    <div class="defer-render">
+      <StatsSection t={t} />
+    </div>
 
-    <!-- 9. FAQ -->
-    <FAQ t={t} />
+    <div class="defer-render">
+      <FAQ t={t} />
+    </div>
 
-    <!-- 12. Final CTA -->
-    <FinalCTA t={t} lang={lang} />
+    <div class="defer-render">
+      <FinalCTA t={t} lang={lang} />
+    </div>
   </main>
 
   <Footer t={t} lang={lang} />

@@ -29,41 +29,64 @@ const t = useTranslations(lang);
   <Header t={t} lang={lang} />
 
   <main>
-    <!-- 1. Hero: Guarantee message + motivation CTA -->
+    <!-- 1. Hero: Guarantee message + motivation CTA (ABOVE FOLD - render immediately) -->
     <Hero t={t} lang={lang} />
 
     <!-- 2. Moroccan Features: Your favorite recipes (carousel) -->
     <MoroccanFeatures t={t} lang={lang} />
 
-    <!-- 3. What's Included: DC Fitness-inspired process section -->
-    <WhatsIncluded t={t} />
+    <!-- BELOW FOLD SECTIONS - defer rendering for faster FCP/LCP -->
+    <!-- content-visibility: auto skips rendering until scrolled into view -->
 
-    <!-- 4. Pricing: Get your personalized plan -->
-    <Pricing t={t} lang={lang} />
+    <div class="defer-render">
+      <!-- 3. What's Included: DC Fitness-inspired process section -->
+      <WhatsIncluded t={t} />
+    </div>
 
-    <!-- 4. How It Works: Simple as 1-2-3 -->
-    <HowItWorks t={t} lang={lang} />
+    <div class="defer-render">
+      <!-- 4. Pricing: Get your personalized plan -->
+      <Pricing t={t} lang={lang} />
+    </div>
 
-    <!-- 5. Health Tracking: 17+ indicators -->
-    <HealthTracking t={t} />
+    <div class="defer-render">
+      <!-- 4. How It Works: Simple as 1-2-3 -->
+      <HowItWorks t={t} lang={lang} />
+    </div>
 
-    <!-- 6. Audio Program: Strengthen your willpower -->
-    <AudioProgram t={t} />
+    <div class="defer-render">
+      <!-- 5. Health Tracking: 17+ indicators -->
+      <HealthTracking t={t} />
+    </div>
 
-    <!-- 7. AI + Experts: Unified section - We adapt to YOUR life -->
-    <AIExpertsSection t={t} />
+    <div class="defer-render">
+      <!-- 6. Audio Program: Strengthen your willpower -->
+      <AudioProgram t={t} />
+    </div>
 
-    <!-- 8. Stats: Social proof -->
-    <StatsSection t={t} />
+    <div class="defer-render">
+      <!-- 7. AI + Experts: Unified section - We adapt to YOUR life -->
+      <AIExpertsSection t={t} />
+    </div>
 
-    <!-- 9. FAQ -->
-    <FAQ t={t} />
+    <div class="defer-render">
+      <!-- 8. Stats: Social proof -->
+      <StatsSection t={t} />
+    </div>
 
-    <!-- 10. Blog Highlights: Featured articles -->
-    <BlogHighlights t={t} lang={lang} />
+    <div class="defer-render">
+      <!-- 9. FAQ -->
+      <FAQ t={t} />
+    </div>
 
-    <!-- 11. Final CTA -->
-    <FinalCTA t={t} lang={lang} />
+    <div class="defer-render">
+      <!-- 10. Blog Highlights: Featured articles -->
+      <BlogHighlights t={t} lang={lang} />
+    </div>
+
+    <div class="defer-render">
+      <!-- 11. Final CTA -->
+      <FinalCTA t={t} lang={lang} />
+    </div>
   </main>
 
   <Footer t={t} lang={lang} />

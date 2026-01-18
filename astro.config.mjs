@@ -44,9 +44,10 @@ export default defineConfig({
   site: 'https://lowis.app',
   trailingSlash: 'always',
   build: {
-    // Use 'auto' - Astro inlines small CSS but uses external file for large CSS (88KB+)
-    // External CSS with preload allows parallel download = faster FCP/LCP
-    inlineStylesheets: 'auto',
+    // Inline all CSS - eliminates extra HTTP request latency
+    // For mobile with high latency, one larger request is faster than multiple smaller ones
+    // 88KB CSS gzips to ~15KB which is acceptable for inline
+    inlineStylesheets: 'always',
   },
   // 301 redirects for old category URLs (removed /category/ from path)
   redirects: {

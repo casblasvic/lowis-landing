@@ -50,6 +50,12 @@
 
 /* Component styles */
 @layer components {
+  /* Defer rendering of below-fold sections for faster FCP/LCP */
+  .defer-render {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
+  }
+
   /* Gradient text */
   .gradient-text {
     background: linear-gradient(135deg, var(--color-primary-orange), var(--color-primary-red));
