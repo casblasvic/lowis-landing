@@ -36,7 +36,6 @@
   }
 
   // Detectar país del usuario (con refresh cada 24h)
-  // Uses early fetch from Layout.astro if available (eliminates critical chain)
   async function detectCountry(): Promise<string> {
     const cached = localStorage.getItem('lowis_country');
     const cachedTime = localStorage.getItem('lowis_country_time');
@@ -51,15 +50,6 @@
     }
 
     try {
-      // Use early fetch promise if available (started in <head> right after preconnect)
-      if ((window as any).__geoPromise) {
-        const country = await (window as any).__geoPromise;
-        if (country) {
-          window.dispatchEvent(new CustomEvent('lowis-country-detected', { detail: country }));
-          return country;
-        }
-      }
-      // Fallback: make our own fetch if early fetch wasn't started
       const res = await fetch('https://ipwho.is/', {
         signal: AbortSignal.timeout(5000) // Timeout 5 segundos
       });
@@ -387,15 +377,8 @@
   }
 
   // Detectar país con timeout más corto para casos críticos de redirección
-  // Uses early fetch from Layout.astro if available (eliminates critical chain)
   async function detectCountryFast(): Promise<string> {
     try {
-      // Use early fetch promise if available (started in <head> right after preconnect)
-      if ((window as any).__geoPromise) {
-        const country = await (window as any).__geoPromise;
-        if (country) return country;
-      }
-      // Fallback: make our own fetch if early fetch wasn't started
       const res = await fetch('https://ipwho.is/', { signal: AbortSignal.timeout(2000) });
       const data = await res.json();
       if (data.success && data.country_code) {

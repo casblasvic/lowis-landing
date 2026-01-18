@@ -44,10 +44,9 @@ export default defineConfig({
   site: 'https://lowis.app',
   trailingSlash: 'always',
   build: {
-    // Inline all CSS - eliminates extra HTTP request latency
-    // For mobile with high latency, one larger request is faster than multiple smaller ones
-    // 88KB CSS gzips to ~15KB which is acceptable for inline
-    inlineStylesheets: 'always',
+    // Use 'never' - external CSS can be preloaded and downloaded in parallel
+    // This allows HTML parsing to start while CSS downloads
+    inlineStylesheets: 'never',
   },
   // 301 redirects for old category URLs (removed /category/ from path)
   redirects: {
