@@ -44,9 +44,9 @@ export default defineConfig({
   site: 'https://lowis.app',
   trailingSlash: 'always',
   build: {
-    // Inline ALL CSS to eliminate render-blocking requests
-    // Trade-off: larger HTML but no additional CSS request = faster LCP
-    inlineStylesheets: 'always',
+    // Use 'auto' - Astro inlines small CSS but uses external file for large CSS (88KB+)
+    // External CSS with preload allows parallel download = faster FCP/LCP
+    inlineStylesheets: 'auto',
   },
   // 301 redirects for old category URLs (removed /category/ from path)
   redirects: {
