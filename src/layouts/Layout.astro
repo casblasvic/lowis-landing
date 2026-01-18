@@ -88,6 +88,31 @@ const htmlLang = htmlLangMap[lang] || lang;
     <link rel="preconnect" href="https://yjxnyjcaxehosndbyepg.supabase.co" crossorigin />
     <link rel="preconnect" href="https://ipwho.is" crossorigin />
     <link rel="dns-prefetch" href="https://ipwho.is" />
+
+    <!-- Early geo-detection: Start fetch IMMEDIATELY after preconnect to use the connection -->
+    <!-- This eliminates the critical chain: HTML → GeoBanner.js → ipwho.is -->
+    <script is:inline>
+      // Start geo fetch early, store promise for GeoBanner to consume
+      (function() {
+        var cached = localStorage.getItem('lowis_country');
+        var cachedTime = localStorage.getItem('lowis_country_time');
+        var ONE_DAY = 86400000;
+        // Only fetch if no valid cache
+        if (!cached || !cachedTime || (Date.now() - parseInt(cachedTime)) > ONE_DAY) {
+          window.__geoPromise = fetch('https://ipwho.is/', { signal: AbortSignal.timeout(2000) })
+            .then(function(r) { return r.json(); })
+            .then(function(d) {
+              if (d.success && d.country_code) {
+                localStorage.setItem('lowis_country', d.country_code);
+                localStorage.setItem('lowis_country_time', Date.now().toString());
+                return d.country_code;
+              }
+              return null;
+            })
+            .catch(function() { return null; });
+        }
+      })();
+    </script>
     <!-- Note: gtag dns-prefetch removed - GA4 is deferred 2.5s after load for better LCP -->
 
     <!-- Preload critical images for LCP -->
