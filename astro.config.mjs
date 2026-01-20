@@ -18,9 +18,31 @@ function getBasePath(urlString) {
   }
 }
 
+// Check if URL is an individual blog article (not blog index or category)
+function isIndividualBlogPost(urlString) {
+  try {
+    const urlObj = new URL(urlString);
+    const path = urlObj.pathname;
+    // Match /blog/[slug]/ or /[lang]/blog/[slug]/ but NOT /blog/ or /blog/category/
+    // Individual posts have a slug after /blog/ that's not a category name
+    const blogPostPattern = /^\/(fr|en|es\/)?blog\/[^/]+\/$/;
+    const categoryPattern = /\/blog\/(guides|comparatifs|astuces|recettes|temoignages|bien-etre|mindset|sante-femme)\//;
+    return blogPostPattern.test(path) && !categoryPattern.test(path) && path !== '/blog/';
+  } catch {
+    return false;
+  }
+}
+
 // Helper to generate hreflang links for a URL
 // Format required by @astrojs/sitemap: { lang: string, url: string }
+// IMPORTANT: Returns null for individual blog posts (they have correct hreflang in their HTML)
 function generateHreflangLinks(urlString) {
+  // Skip hreflang for individual blog posts - they have different slugs per language
+  // and already have correct hreflang links in their HTML via BlogLayout
+  if (isIndividualBlogPost(urlString)) {
+    return null;
+  }
+
   const basePath = getBasePath(urlString);
   const site = 'https://lowis.app';
 
@@ -90,8 +112,11 @@ export default defineConfig({
   integrations: [
     sitemap({
       serialize(item) {
-        // Add hreflang links to all pages
-        item.links = generateHreflangLinks(item.url);
+        // Add hreflang links (skips individual blog posts - they have correct hreflang in HTML)
+        const links = generateHreflangLinks(item.url);
+        if (links) {
+          item.links = links;
+        }
         return item;
       },
       changefreq: 'weekly',
