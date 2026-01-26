@@ -193,6 +193,15 @@
   function adaptContentForCountry(country: string) {
     const moroccoGroup = ['MA', 'DZ', 'TN'];
     const isMorocco = moroccoGroup.includes(country);
+    const path = window.location.pathname;
+
+    // Si está en Marruecos pero en versión de otro país → redirigir a raíz
+    if (isMorocco && (path.startsWith('/es') || path.startsWith('/en') || path.startsWith('/fr'))) {
+      // Obtener la ruta sin el prefijo de idioma
+      const cleanPath = path.replace(/^\/(es|en|fr)/, '') || '/';
+      window.location.href = cleanPath;
+      return;
+    }
 
     if (isMorocco) {
       // Usuario de Marruecos: mostrar contenido específico, ocultar genérico
