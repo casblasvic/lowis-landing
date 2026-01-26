@@ -38,49 +38,52 @@ function getRecipeName(recipe: { nameEn: string; nameFr: string; nameEs: string 
 // RECETAS - imágenes locales optimizadas WebP (200x200)
 // ============================================================================
 
-// Moroccan recipes - imágenes específicas de comida marroquí
+// Supabase storage URL base
+const SUPABASE_STORAGE = 'https://yjxnyjcaxehosndbyepg.supabase.co/storage/v1/object/public/public_nutri_app_bucket';
+
+// Moroccan recipes - REAL data from LOWIS database
 const moroccanRecipes = [
   {
-    nameEn: 'Chicken Tajine',
-    nameFr: 'Tajine de poulet',
-    nameEs: 'Tajine de pollo',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Tajine_of_chicken.jpg/440px-Tajine_of_chicken.jpg',
-    calories: 420
-  },
-  {
-    nameEn: 'Royal Couscous',
-    nameFr: 'Couscous royal',
-    nameEs: 'Cuscús real',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Couscous-1.jpg/440px-Couscous-1.jpg',
-    calories: 480
-  },
-  {
-    nameEn: 'Moroccan Pastilla',
-    nameFr: 'Pastilla marocaine',
-    nameEs: 'Pastela marroquí',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Bastilla.jpg/440px-Bastilla.jpg',
-    calories: 450
+    nameEn: 'Meatball Tajine',
+    nameFr: 'Tajine aux boulettes de viande',
+    nameEs: 'Tajine de albóndigas',
+    image: `${SUPABASE_STORAGE}/global/recipe-images/wordpress/2025/11/19778.webp`,
+    calories: 380
   },
   {
     nameEn: 'Harira Soup',
-    nameFr: 'Soupe Harira',
-    nameEs: 'Sopa Harira',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Harira_soup.jpg/440px-Harira_soup.jpg',
+    nameFr: 'Soupe marocaine Harira',
+    nameEs: 'Sopa Harira marroquí',
+    image: `${SUPABASE_STORAGE}/global/recipe-images/wordpress/2025/11/28644.webp`,
     calories: 280
   },
   {
-    nameEn: 'Moroccan Salad',
-    nameFr: 'Salade marocaine',
-    nameEs: 'Ensalada marroquí',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Moroccan_salad.jpg/440px-Moroccan_salad.jpg',
-    calories: 180
+    nameEn: 'Zaalouk',
+    nameFr: 'Zaalouk',
+    nameEs: 'Zaalouk',
+    image: `${SUPABASE_STORAGE}/global/recipe-images/wordpress/2025/11/15011.webp`,
+    calories: 150
   },
   {
-    nameEn: 'Lamb Tajine',
-    nameFr: 'Tajine d\'agneau',
-    nameEs: 'Tajine de cordero',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Tajine_in_Fes.jpg/440px-Tajine_in_Fes.jpg',
-    calories: 520
+    nameEn: 'Taktouka',
+    nameFr: 'Taktouka',
+    nameEs: 'Taktouka',
+    image: `${SUPABASE_STORAGE}/global/recipe-images/wordpress/2025/11/14388.webp`,
+    calories: 120
+  },
+  {
+    nameEn: 'Moroccan Lentils',
+    nameFr: 'Lentilles à la marocaine',
+    nameEs: 'Lentejas a la marroquí',
+    image: `${SUPABASE_STORAGE}/global/recipe-images/wordpress/2025/11/28537.webp`,
+    calories: 320
+  },
+  {
+    nameEn: 'Moroccan Breakfast',
+    nameFr: 'Petit déjeuner marocain',
+    nameEs: 'Desayuno marroquí',
+    image: `${SUPABASE_STORAGE}/global/recipe-images/wordpress/2025/11/16440.webp`,
+    calories: 450
   }
 ];
 
