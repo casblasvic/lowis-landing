@@ -195,10 +195,10 @@
     const isMorocco = moroccoGroup.includes(country);
     const path = window.location.pathname;
 
-    // Si está en Marruecos pero en versión de otro país → redirigir a raíz
-    if (isMorocco && (path.startsWith('/es') || path.startsWith('/en') || path.startsWith('/fr'))) {
-      // Obtener la ruta sin el prefijo de idioma
-      const cleanPath = path.replace(/^\/(es|en|fr)/, '') || '/';
+    // Si está en Marruecos y en /fr/ → redirigir a / (evitar duplicado SEO)
+    // /es/ y /en/ SÍ están permitidos (misma landing traducida)
+    if (isMorocco && path.startsWith('/fr')) {
+      const cleanPath = path.replace(/^\/fr/, '') || '/';
       window.location.href = cleanPath;
       return;
     }
