@@ -48,7 +48,7 @@ const htmlLang = htmlLangMap[lang] || lang;
 
     <!-- Security: Content Security Policy (GitHub Pages doesn't support HTTP headers) -->
     <!-- Note: frame-ancestors removed - only works via HTTP header, not meta tag -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://unpkg.com https://*.elevenlabs.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https: https://yjxnyjcaxehosndbyepg.supabase.co https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://yjxnyjcaxehosndbyepg.supabase.co https://ipwho.is https://www.google-analytics.com https://www.googletagmanager.com https://region1.google-analytics.com https://analytics.google.com https://*.elevenlabs.io wss://*.elevenlabs.io; frame-src 'self' https://*.elevenlabs.io; base-uri 'self'; form-action 'self' https://app.lowis.app; object-src 'none'; upgrade-insecure-requests" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://www.googletagmanager.com https://www.google-analytics.com https://elevenlabs.io https://*.elevenlabs.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https: https://yjxnyjcaxehosndbyepg.supabase.co https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://yjxnyjcaxehosndbyepg.supabase.co https://ipwho.is https://www.google-analytics.com https://www.googletagmanager.com https://region1.google-analytics.com https://analytics.google.com https://elevenlabs.io https://*.elevenlabs.io wss://*.elevenlabs.io; frame-src 'self' https://elevenlabs.io https://*.elevenlabs.io; worker-src 'self' blob:; media-src 'self' blob: https://elevenlabs.io https://*.elevenlabs.io; base-uri 'self'; form-action 'self' https://app.lowis.app; object-src 'none'; upgrade-insecure-requests" />
 
     <meta name="description" content={description} />
     {keywords && <meta name="keywords" content={keywords} />}
@@ -347,7 +347,7 @@ const htmlLang = htmlLangMap[lang] || lang;
 
     <!-- ElevenLabs Conversational AI Widget -->
     <elevenlabs-convai agent-id="agent_3101kf3b3cf0er7b94ztd1gwrmz7"></elevenlabs-convai>
-    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+    <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
   </body>
 </html>
 
