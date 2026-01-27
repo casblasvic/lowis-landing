@@ -38,6 +38,39 @@ const htmlLangMap: Record<Language, string> = {
 };
 
 const htmlLang = htmlLangMap[lang] || lang;
+
+// Textos del widget ElevenLabs según idioma
+const widgetTexts: Record<Language, { action: string; startCall: string; endCall: string; listening: string; speaking: string }> = {
+  fr: {
+    action: "Une question ?",
+    startCall: "Parlons !",
+    endCall: "Terminer",
+    listening: "J'écoute...",
+    speaking: "Fabian parle..."
+  },
+  'fr-FR': {
+    action: "Une question ?",
+    startCall: "Parlons !",
+    endCall: "Terminer",
+    listening: "J'écoute...",
+    speaking: "Fabian parle..."
+  },
+  es: {
+    action: "¿Dudas?",
+    startCall: "¡Hablamos!",
+    endCall: "Terminar",
+    listening: "Escuchando...",
+    speaking: "Fabian habla..."
+  },
+  en: {
+    action: "Questions?",
+    startCall: "Let's talk!",
+    endCall: "End call",
+    listening: "Listening...",
+    speaking: "Fabian speaking..."
+  }
+};
+const currentWidgetTexts = widgetTexts[lang] || widgetTexts.fr;
 ---
 
 <!doctype html>
@@ -346,7 +379,14 @@ const htmlLang = htmlLangMap[lang] || lang;
     </script>
 
     <!-- ElevenLabs Conversational AI Widget -->
-    <elevenlabs-convai agent-id="agent_3101kf3b3cf0er7b94ztd1gwrmz7"></elevenlabs-convai>
+    <elevenlabs-convai
+      agent-id="agent_3101kf3b3cf0er7b94ztd1gwrmz7"
+      action-text={currentWidgetTexts.action}
+      start-call-text={currentWidgetTexts.startCall}
+      end-call-text={currentWidgetTexts.endCall}
+      listening-text={currentWidgetTexts.listening}
+      speaking-text={currentWidgetTexts.speaking}
+    ></elevenlabs-convai>
     <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
   </body>
 </html>
