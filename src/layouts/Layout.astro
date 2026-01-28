@@ -388,6 +388,22 @@ const currentWidgetTexts = widgetTexts[lang] || widgetTexts.fr;
       speaking-text={currentWidgetTexts.speaking}
     ></elevenlabs-convai>
     <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+
+    <!-- Adjust ElevenLabs widget position on mobile (avoid overlap with sticky CTA) -->
+    <script is:inline>
+      if (window.innerWidth < 768) {
+        var observer = new MutationObserver(function() {
+          var widget = document.querySelector('elevenlabs-convai');
+          if (widget) {
+            // El widget usa position: fixed con bottom: 32px por defecto
+            // Lo subimos a 100px para evitar superposición con el CTA móvil
+            widget.style.bottom = '100px';
+            observer.disconnect();
+          }
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+      }
+    </script>
   </body>
 </html>
 
@@ -415,5 +431,12 @@ const currentWidgetTexts = widgetTexts[lang] || widgetTexts.fr;
   ::selection {
     background: rgba(249, 115, 22, 0.3);
     color: white;
+  }
+
+  /* ElevenLabs widget position adjustment for mobile (avoid overlap with sticky CTA) */
+  @media (max-width: 767px) {
+    elevenlabs-convai {
+      bottom: 100px !important;
+    }
   }
 </style>
