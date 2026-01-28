@@ -406,28 +406,16 @@
       "cancel": "Annulation en 1 clic",
       "secure": "7 jours 100% gratuits"
     },
-    "weeklyPlan": {
-      "name": "Paiement Hebdo",
-      "badge": "Flexibilité totale",
-      "trialPrice": "0 DH",
-      "price": "250",
-      "period": "DH/semaine",
-      "trialText": "7 jours GRATUITS",
-      "afterTrialText": "Puis 250 DH/semaine",
-      "weightLossClaim": "Perdez jusqu'à 2,5 kg en une semaine",
-      "description": "Pour le prix d'une consultation : suivi 24h avec IA pour aller là où l'humain ne peut pas, combiné avec des experts qui examinent votre cas chaque semaine. Sans engagement, vous décidez de continuer.",
-      "cta": "Commencer GRATUIT maintenant"
-    },
     "packPlan": {
-      "name": "Pack 6 Semaines",
-      "badge": "⭐ MEILLEUR PRIX",
+      "name": "Programme Complet 6 Semaines",
+      "badge": "⭐ TRANSFORMATION COMPLÈTE",
       "trialPrice": "0 DH",
-      "price": "999",
+      "price": "1 500",
       "period": "DH",
       "trialText": "7 jours GRATUITS",
-      "savingsText": "Puis 999 DH (Économisez 501 DH !)",
+      "priceNote": "Puis 1 500 DH pour le programme complet",
       "weightLossClaim": "Perdez jusqu'à 12 kg en 6 semaines",
-      "description": "Nous récompensons votre confiance avec 33% de réduction. Traitement complet de transformation au meilleur prix.",
+      "description": "6 semaines de transformation totale : IA + experts humains, programme audio quotidien, suivi de 40+ indicateurs. Tout inclus.",
       "cta": "Commencer GRATUIT maintenant"
     },
     "featuresTitle": "Inclus dès le PREMIER JOUR :",
@@ -480,7 +468,7 @@
       },
       {
         "question": "Comment fonctionne la première semaine offerte?",
-        "answer": "Remplissez simplement votre profil pour personnaliser votre plan selon vos +40 indicateurs. Accès complet une semaine, sans carte bancaire requise. Vous voyez les résultats avant de décider. Après, continuez à 199 DH/semaine ou ne faites rien — votre choix."
+        "answer": "Remplissez simplement votre profil pour personnaliser votre plan selon vos +40 indicateurs. Accès complet une semaine, sans carte bancaire requise. Vous voyez les résultats avant de décider. Après, continuez avec le programme complet de 6 semaines à 1 500 DH ou ne faites rien — votre choix."
       },
       {
         "question": "Perdre entre 1 et 2,5 kg par semaine, c'est vraiment possible?",

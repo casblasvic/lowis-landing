@@ -40,7 +40,7 @@ Looking for the best app to track your nutrition? Yazio is one of the most popul
 
 | Criterion | LOWIS | Yazio |
 |-----------|-------|-------|
-| **Price** | 7-day free trial, then ~$12/week | ~$50/year (Pro version) |
+| **Price** | 7-day free trial, then $149 (6-week program) | ~$50/year (Pro version) |
 | **AI Photo Scan** | ✅ Recognizes complete meals | ⚠️ Barcode scan only |
 | **Indicators Tracked** | 40+ (sleep, stress, cycle...) | Calories + macros |
 | **Personalized Coaching** | ✅ Active AI | ❌ Generic advice |

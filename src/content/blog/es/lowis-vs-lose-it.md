@@ -40,7 +40,7 @@ Lose It! es una de las aplicaciones de pérdida de peso más descargadas en Esta
 
 | Criterio | LOWIS | Lose It! |
 |----------|-------|----------|
-| **Precio** | Prueba gratis 7d, luego ~10€/semana | Gratis limitado o ~40$/año Premium |
+| **Precio** | Prueba gratis 7d, luego 149€ (programa 6 semanas) | Gratis limitado o ~40$/año Premium |
 | **Escaneo foto** | ✅ IA avanzada, platos completos | ⚠️ Básico, errores frecuentes |
 | **Indicadores seguidos** | 40+ | Calorías + macros básicos |
 | **Coaching IA** | ✅ Personalizado y activo | ❌ No |

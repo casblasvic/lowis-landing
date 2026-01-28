@@ -40,7 +40,7 @@ faq:
 
 | Criterio | LOWIS | Yazio |
 |----------|-------|-------|
-| **Precio** | Prueba gratis 7d, luego ~10€/semana | ~45€/año (versión Pro) |
+| **Precio** | Prueba gratis 7d, luego 149€ (programa 6 semanas) | ~45€/año (versión Pro) |
 | **Escaneo foto IA** | ✅ Reconoce plato completo | ⚠️ Solo código de barras |
 | **Indicadores seguidos** | 40+ (sueño, estrés, ciclo...) | Calorías + macros |
 | **Coaching personalizado** | ✅ IA activa | ❌ Consejos genéricos |

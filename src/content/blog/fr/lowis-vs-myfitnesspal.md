@@ -46,7 +46,7 @@ Dans cet article, nous comparons honnêtement LOWIS et MyFitnessPal pour vous ai
 
 | Critère | LOWIS | MyFitnessPal |
 |---------|-------|--------------|
-| **Prix** | 7 jours gratuits, puis ~10€/semaine | Gratuit limité, Premium ~80€/an |
+| **Prix** | 7 jours gratuits, puis 149€ (programme 6 semaines) | Gratuit limité, Premium ~80€/an |
 | **Scan photo IA** | ✅ Reconnaît le plat complet | ❌ Non disponible |
 | **Scan code-barres** | ✅ Gratuit | ⚠️ Payant depuis 2022 |
 | **Indicateurs suivis** | 40+ (sommeil, stress, cycle...) | Calories + macros uniquement |
@@ -113,7 +113,7 @@ LOWIS adopte une approche radicalement différente :
 
 ### Le calcul que personne ne fait
 
-MyFitnessPal Premium coûte ~80€/an. LOWIS coûte ~10€/semaine. En apparence, MyFitnessPal gagne.
+MyFitnessPal Premium coûte ~80€/an. LOWIS coûte 149€ pour le programme complet de 6 semaines. En apparence, MyFitnessPal gagne.
 
 Mais calculons le **vrai coût** :
 

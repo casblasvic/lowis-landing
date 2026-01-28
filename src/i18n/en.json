@@ -405,28 +405,16 @@
       "cancel": "Cancel in 1 click",
       "secure": "7 days 100% free"
     },
-    "weeklyPlan": {
-      "name": "Weekly Payment",
-      "badge": "Total flexibility",
-      "trialPrice": "€0",
-      "price": "€25",
-      "period": "/week",
-      "trialText": "7 days FREE",
-      "afterTrialText": "Then €25/week",
-      "weightLossClaim": "Lose up to 2.5 kg in one week",
-      "description": "For the cost of one consultation: 24h personalized tracking with AI to reach where humans can't, combined with real experts reviewing your case weekly. No commitment, you decide whether to continue.",
-      "cta": "Start FREE now"
-    },
     "packPlan": {
-      "name": "6-Week Pack",
-      "badge": "⭐ BEST VALUE",
+      "name": "Complete 6-Week Program",
+      "badge": "⭐ COMPLETE TRANSFORMATION",
       "trialPrice": "€0",
-      "price": "€99",
+      "price": "€149",
       "period": "total",
       "trialText": "7 days FREE",
-      "savingsText": "Then €99 (Save €51!)",
+      "priceNote": "Then €149 for the complete program",
       "weightLossClaim": "Lose up to 12 kg in 6 weeks",
-      "description": "We reward your trust with a 33% discount. Complete transformation treatment at the best price.",
+      "description": "6 weeks of total transformation: AI + human experts, daily audio program, 40+ indicator tracking. Everything included.",
       "cta": "Start FREE now"
     },
     "featuresTitle": "Included from DAY ONE:",
@@ -479,7 +467,7 @@
       },
       {
         "question": "How does the free first week work?",
-        "answer": "Simply fill out your profile to personalize your plan based on your 40+ indicators. Full access for one week, no credit card required. See the results before you decide. After, continue at 199 DH/week or do nothing — your choice."
+        "answer": "Simply fill out your profile to personalize your plan based on your 40+ indicators. Full access for one week, no credit card required. See the results before you decide. After, continue with the complete 6-week program for €149 or do nothing — your choice."
       },
       {
         "question": "Is losing 1 to 2.5 kg per week really possible?",

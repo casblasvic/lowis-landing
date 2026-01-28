@@ -42,7 +42,7 @@ Probablemente ya has oído hablar de Cal AI, la aplicación de conteo de calorí
 
 | Criterio | LOWIS | Cal AI |
 |----------|-------|--------|
-| **Precio** | Prueba gratis, luego ~10€/semana | ~50€/año (sin prueba real) |
+| **Precio** | Prueba gratis, luego 149€ (programa 6 semanas) | ~50€/año (sin prueba real) |
 | **Reembolso** | Sí, fácil | Difícil o imposible |
 | **Precisión IA** | Aprende de tus correcciones | Errores frecuentes reportados |
 | **Coach IA activo** | ✅ Sí | ❌ No |

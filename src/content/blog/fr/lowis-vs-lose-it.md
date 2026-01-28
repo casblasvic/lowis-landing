@@ -42,7 +42,7 @@ Lose It! est l'une des applications de perte de poids les plus téléchargées a
 
 | Critère | LOWIS | Lose It! |
 |---------|-------|----------|
-| **Prix** | Essai gratuit 7j, puis ~10€/semaine | Gratuit limité ou ~40$/an Premium |
+| **Prix** | Essai gratuit 7j, puis 149€ (programme 6 semaines) | Gratuit limité ou ~40$/an Premium |
 | **Scan photo** | ✅ IA avancée, plats complets | ⚠️ Basique, erreurs fréquentes |
 | **Indicateurs suivis** | 40+ | Calories + macros basiques |
 | **Coaching IA** | ✅ Personnalisé et actif | ❌ Non |

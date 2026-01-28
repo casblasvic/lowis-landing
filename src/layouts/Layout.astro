@@ -283,9 +283,9 @@ const currentWidgetTexts = widgetTexts[lang] || widgetTexts.fr;
           },
           "offers": {
             "@type": "Offer",
-            "price": "199",
+            "price": "1500",
             "priceCurrency": "MAD",
-            "description": "7-day free trial, then 199 DH/week"
+            "description": "7-day free trial, then 1500 DH for complete 6-week program"
           },
           "aggregateRating": {
             "@type": "AggregateRating",
@@ -389,20 +389,24 @@ const currentWidgetTexts = widgetTexts[lang] || widgetTexts.fr;
     ></elevenlabs-convai>
     <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
 
-    <!-- Adjust ElevenLabs widget position on mobile (avoid overlap with sticky CTA) -->
+    <!-- Adjust ElevenLabs widget position on mobile + hide Powered by -->
     <script is:inline>
-      if (window.innerWidth < 768) {
-        var observer = new MutationObserver(function() {
-          var widget = document.querySelector('elevenlabs-convai');
-          if (widget) {
-            // El widget usa position: fixed con bottom: 32px por defecto
-            // Lo subimos a 100px para evitar superposición con el CTA móvil
+      var widgetObserver = new MutationObserver(function() {
+        var widget = document.querySelector('elevenlabs-convai');
+        if (widget) {
+          // Adjust position on mobile to avoid overlap with sticky CTA
+          if (window.innerWidth < 768) {
             widget.style.bottom = '100px';
-            observer.disconnect();
           }
-        });
-        observer.observe(document.body, { childList: true, subtree: true });
-      }
+          // Hide "Powered by ElevenLabs" (fallback for Shadow DOM)
+          if (widget.shadowRoot) {
+            var poweredBy = widget.shadowRoot.querySelector('[class*="poweredBy"], [class*="powered-by"], a[href*="elevenlabs"]');
+            if (poweredBy) poweredBy.style.display = 'none';
+          }
+          widgetObserver.disconnect();
+        }
+      });
+      widgetObserver.observe(document.body, { childList: true, subtree: true });
     </script>
   </body>
 </html>
@@ -438,5 +442,10 @@ const currentWidgetTexts = widgetTexts[lang] || widgetTexts.fr;
     elevenlabs-convai {
       bottom: 100px !important;
     }
+  }
+
+  /* Hide "Powered by ElevenLabs" from widget */
+  elevenlabs-convai::part(powered-by) {
+    display: none !important;
   }
 </style>

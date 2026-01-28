@@ -16,18 +16,6 @@ interface Props {
         cancel: string;
         secure: string;
       };
-      weeklyPlan: {
-        name: string;
-        badge: string;
-        trialPrice: string;
-        price: string;
-        period: string;
-        trialText: string;
-        afterTrialText: string;
-        weightLossClaim: string;
-        description: string;
-        cta: string;
-      };
       packPlan: {
         name: string;
         badge: string;
@@ -35,7 +23,7 @@ interface Props {
         price: string;
         period: string;
         trialText: string;
-        savingsText: string;
+        priceNote: string;
         weightLossClaim: string;
         description: string;
         cta: string;
@@ -79,58 +67,9 @@ const { t, lang } = Astro.props;
       </div>
     </div>
 
-    <!-- Two Pricing Cards -->
-    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
-
-      <!-- Weekly Plan Card -->
-      <div class="relative p-6 lg:p-8 bg-dark-surface border border-dark-border rounded-3xl hover:border-primary-orange/50 transition-colors">
-        <!-- Badge -->
-        <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-20">
-          <div class="px-4 py-1.5 bg-dark-surface border border-dark-border text-text-secondary text-sm font-medium rounded-full whitespace-nowrap">
-            {t.pricing.weeklyPlan.badge}
-          </div>
-        </div>
-
-        <div class="relative z-10 pt-4">
-          <!-- Plan name -->
-          <div class="text-center mb-6">
-            <h3 class="text-xl font-bold text-white mb-4">{t.pricing.weeklyPlan.name}</h3>
-
-            <!-- Trial Price - BIG -->
-            <div class="mb-1">
-              <span class="text-5xl sm:text-6xl font-bold text-green-400">{t.pricing.weeklyPlan.trialPrice}</span>
-            </div>
-            <p class="text-green-400 font-semibold text-lg mb-3">
-              {t.pricing.weeklyPlan.trialText}
-            </p>
-
-            <!-- After trial -->
-            <p class="text-text-muted text-sm mb-2">
-              {t.pricing.weeklyPlan.afterTrialText}
-            </p>
-
-            <!-- Weight Loss Claim -->
-            <div class="bg-primary-orange/10 border border-primary-orange/30 rounded-lg px-3 py-2 mb-3">
-              <p class="text-primary-orange font-semibold text-sm">
-                {t.pricing.weeklyPlan.weightLossClaim}
-              </p>
-            </div>
-
-            <!-- Description -->
-            <p class="text-text-secondary text-xs leading-relaxed">
-              {t.pricing.weeklyPlan.description}
-            </p>
-          </div>
-
-          <!-- CTA Button -->
-          <a href={getSignupUrlWithLang(lang)} class="block w-full text-center py-3 px-6 border border-primary-orange text-primary-orange rounded-xl font-medium hover:bg-primary-orange/10 transition-colors">
-            {t.pricing.weeklyPlan.cta}
-            <span class="material-symbols-outlined ml-2 text-sm align-middle">arrow_forward</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Pack Plan Card (Recommended) -->
+    <!-- Single Pricing Card - 6 Week Program -->
+    <div class="max-w-lg mx-auto">
+      <!-- Pack Plan Card -->
       <div class="relative p-6 lg:p-8 bg-dark-surface border-2 border-primary-orange rounded-3xl">
         <!-- Recommended badge -->
         <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
@@ -156,9 +95,9 @@ const { t, lang } = Astro.props;
               {t.pricing.packPlan.trialText}
             </p>
 
-            <!-- After trial + savings -->
+            <!-- Price after trial -->
             <p class="text-text-muted text-sm mb-2">
-              {t.pricing.packPlan.savingsText}
+              {t.pricing.packPlan.priceNote}
             </p>
 
             <!-- Weight Loss Claim -->

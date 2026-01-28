@@ -40,7 +40,7 @@ Lose It! is one of the most downloaded weight loss apps in the United States. It
 
 | Criterion | LOWIS | Lose It! |
 |-----------|-------|----------|
-| **Price** | 7-day free trial, then ~$12/week | Limited free or ~$40/year Premium |
+| **Price** | 7-day free trial, then $149 (6-week program) | Limited free or ~$40/year Premium |
 | **Photo Scan** | ✅ Advanced AI, complete meals | ⚠️ Basic, frequent errors |
 | **Indicators Tracked** | 40+ | Calories + basic macros |
 | **AI Coaching** | ✅ Personalized and active | ❌ No |

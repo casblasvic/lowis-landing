@@ -44,7 +44,7 @@ Vous avez probablement déjà entendu parler de Cal AI, l'application de comptag
 
 | Critère | LOWIS | Cal AI |
 |---------|-------|--------|
-| **Prix** | Essai gratuit, puis ~10€/semaine | ~50€/an (sans essai réel) |
+| **Prix** | Essai gratuit, puis 149€ (programme 6 semaines) | ~50€/an (sans essai réel) |
 | **Remboursement** | Oui, facile | Difficile voire impossible |
 | **Précision IA** | Apprend de vos corrections | Erreurs fréquentes signalées |
 | **Coach IA actif** | ✅ Oui | ❌ Non |

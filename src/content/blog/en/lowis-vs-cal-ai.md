@@ -42,7 +42,7 @@ You've probably already heard of Cal AI, the calorie counting app that promises 
 
 | Criteria | LOWIS | Cal AI |
 |----------|-------|--------|
-| **Price** | Free trial, then ~$10/week | ~$50/year (no real trial) |
+| **Price** | Free trial, then $149 (6-week program) | ~$50/year (no real trial) |
 | **Refund** | Yes, easy | Difficult to impossible |
 | **AI Accuracy** | Learns from your corrections | Frequent errors reported |
 | **Active AI coach** | ✅ Yes | ❌ No |

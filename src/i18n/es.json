@@ -406,28 +406,16 @@
       "cancel": "Cancela en 1 clic",
       "secure": "7 días 100% gratis"
     },
-    "weeklyPlan": {
-      "name": "Pago Semanal",
-      "badge": "Flexibilidad total",
-      "trialPrice": "0 DH",
-      "price": "250",
-      "period": "DH/semana",
-      "trialText": "7 días GRATIS",
-      "afterTrialText": "Después 250 DH/semana",
-      "weightLossClaim": "Pierde hasta 2,5 kg en una semana",
-      "description": "Por el coste de una consulta: seguimiento 24h con IA para llegar donde humanamente no podemos, combinado con expertos reales que revisan tu caso cada semana. Sin compromiso, tú decides si continuar.",
-      "cta": "Empezar GRATIS ahora"
-    },
     "packPlan": {
-      "name": "Pack 6 Semanas",
-      "badge": "⭐ MEJOR PRECIO",
+      "name": "Programa Completo 6 Semanas",
+      "badge": "⭐ TRANSFORMACIÓN COMPLETA",
       "trialPrice": "0 DH",
-      "price": "999",
+      "price": "1.500",
       "period": "DH",
       "trialText": "7 días GRATIS",
-      "savingsText": "Después 999 DH (¡Ahorra 501 DH!)",
+      "priceNote": "Después 1.500 DH por el programa completo",
       "weightLossClaim": "Pierde hasta 12 kg en 6 semanas",
-      "description": "Premiamos tu confianza con un 33% de descuento. Tratamiento completo de transformación al mejor precio.",
+      "description": "6 semanas de transformación total: IA + expertos humanos, programa de audio diario, seguimiento de 40+ indicadores. Todo incluido.",
       "cta": "Empezar GRATIS ahora"
     },
     "featuresTitle": "Incluido desde el PRIMER DÍA:",
@@ -480,7 +468,7 @@
       },
       {
         "question": "¿Cómo funciona la primera semana gratis?",
-        "answer": "Solo rellena tu perfil para personalizar tu plan según tus +40 indicadores. Acceso completo una semana, sin tarjeta bancaria. Ves los resultados antes de decidir. Después, continúa a 199 DH/semana o no hagas nada — tu elección."
+        "answer": "Solo rellena tu perfil para personalizar tu plan según tus +40 indicadores. Acceso completo una semana, sin tarjeta bancaria. Ves los resultados antes de decidir. Después, continúa con el programa completo de 6 semanas a 1.500 DH o no hagas nada — tu elección."
       },
       {
         "question": "¿Perder entre 1 y 2,5 kg por semana es realmente posible?",

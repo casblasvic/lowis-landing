@@ -42,7 +42,7 @@ Vous cherchez la meilleure application pour suivre votre alimentation ? Yazio es
 
 | Critère | LOWIS | Yazio |
 |---------|-------|-------|
-| **Prix** | Essai gratuit 7j, puis ~10€/semaine | ~45€/an (version Pro) |
+| **Prix** | Essai gratuit 7j, puis 149€ (programme 6 semaines) | ~45€/an (version Pro) |
 | **Scan photo IA** | ✅ Reconnaît le plat complet | ⚠️ Scan code-barres uniquement |
 | **Indicateurs suivis** | 40+ (sommeil, stress, cycle...) | Calories + macros |
 | **Coaching personnalisé** | ✅ IA active | ❌ Conseils génériques |

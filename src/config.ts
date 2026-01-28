@@ -18,9 +18,9 @@ export const SITE_CONFIG = {
   // Precio actual
   pricing: {
     trial: 0,
-    amount: 199,
+    amount: 1500,
     currency: 'DH',
-    period: 'semaine', // semaine | mois
+    period: '6 semaines',
     trialDays: 7
   }
 } as const;
