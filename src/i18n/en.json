@@ -14,8 +14,7 @@
     "login": "Log in"
   },
   "hero": {
-    "badge": "Made for Morocco",
-    "badgeGeneric": "Available worldwide",
+    "badge": "Available worldwide",
     "title": "6-Week LOWIS Program:",
     "titleHighlight": "Lose up to 12 kg",
     "subtitle": "1-2.5 kg per week × 6 weeks = Your complete transformation. Start TODAY with 7 days FREE.",
@@ -23,7 +22,7 @@
     "ctaSecondary": "See demo",
     "noCard": "No credit card required",
     "pricingInfo": "7 days FREE • €0 to start • Cancel anytime",
-    "guarantee": "Guaranteed: 1-2.5 kg per week",
+    "guarantee": "Guaranteed",
     "disclaimer": "By following the LOWIS protocol.",
     "users": "active users"
   },

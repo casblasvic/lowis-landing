@@ -14,8 +14,7 @@
     "login": "Iniciar sesión"
   },
   "hero": {
-    "badge": "Creado para Marruecos",
-    "badgeGeneric": "Disponible en todo el mundo",
+    "badge": "Disponible en todo el mundo",
     "title": "Programa LOWIS de 6 Semanas:",
     "titleHighlight": "Pierde hasta 12 kg",
     "subtitle": "1-2,5 kg por semana × 6 semanas = Tu transformación completa. Empieza HOY con 7 días GRATIS.",
@@ -23,7 +22,7 @@
     "ctaSecondary": "Ver demo",
     "noCard": "Sin tarjeta bancaria",
     "pricingInfo": "7 días GRATIS • 0 DH para empezar • Cancela cuando quieras",
-    "guarantee": "Garantizado: 1-2,5 kg por semana",
+    "guarantee": "Garantizado",
     "disclaimer": "Siguiendo el protocolo LOWIS.",
     "users": "usuarios activos"
   },
