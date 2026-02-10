@@ -893,5 +893,16 @@
     "description": "But don't worry, we have plenty of other delicious ones waiting for you.",
     "homeButton": "Back to home",
     "blogButton": "View blog"
+  },
+  "fabianBanner": {
+    "title": "Fabian is online",
+    "subtitle": "Ask him about the LOWIS program",
+    "questions": [
+      "Is it possible to lose 12kg in 6 weeks healthily?",
+      "Will I suffer rebound effect afterwards?",
+      "Why can I eat without quantity restrictions with LOWIS?"
+    ],
+    "cta": "Ask him now",
+    "collapsed": "Questions?"
   }
 }

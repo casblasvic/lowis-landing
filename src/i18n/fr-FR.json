@@ -893,5 +893,16 @@
     "description": "Mais ne vous inquiétez pas, nous en avons plein d'autres délicieuses qui vous attendent.",
     "homeButton": "Retour à l'accueil",
     "blogButton": "Voir le blog"
+  },
+  "fabianBanner": {
+    "title": "Fabian est en ligne",
+    "subtitle": "Posez-lui vos questions sur LOWIS",
+    "questions": [
+      "Est-il possible de perdre 12kg en 6 semaines sainement ?",
+      "Vais-je subir l'effet rebond après ?",
+      "Pourquoi avec LOWIS je peux manger sans restriction de quantité ?"
+    ],
+    "cta": "Demandez-lui maintenant",
+    "collapsed": "Des questions ?"
   }
 }

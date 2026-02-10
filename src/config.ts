@@ -2,6 +2,15 @@
  * Configuración centralizada del sitio
  * Cambiar estos valores actualizará todas las referencias en la landing
  */
+
+/**
+ * Feature flags para activar/desactivar funcionalidades
+ */
+export const FEATURES = {
+  // Banner promocional para el agente de voz Fabian
+  fabianBanner: true,
+} as const;
+
 export const SITE_CONFIG = {
   // Dominio de la landing page
   domain: 'https://lowis.app',

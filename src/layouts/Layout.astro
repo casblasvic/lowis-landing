@@ -1,9 +1,10 @@
 ---
 import '../styles/global.css';
-import { type Language, defaultLang, getAlternateUrls } from '../i18n';
-import { SITE_CONFIG, getSignupUrlWithLang } from '../config';
+import { type Language, defaultLang, getAlternateUrls, useTranslations } from '../i18n';
+import { SITE_CONFIG, FEATURES, getSignupUrlWithLang } from '../config';
 import GeoBanner from '../components/GeoBanner.astro';
 import CookieConsent from '../components/CookieConsent.astro';
+import FabianBanner from '../components/FabianBanner.astro';
 
 interface Props {
   title: string;
@@ -16,6 +17,10 @@ interface Props {
 const { title, description, keywords, lang = defaultLang, canonicalUrl } = Astro.props;
 const baseUrl = SITE_CONFIG.domain;
 const alternateUrls = getAlternateUrls(Astro.url.pathname, baseUrl);
+
+// Get translations for components that need them in the layout
+const t = useTranslations(lang);
+const fabianBannerTranslations = t.fabianBanner;
 
 // Calcular canonical URL automáticamente (con trailing slash para consistencia con sitemap)
 const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
@@ -377,6 +382,11 @@ const currentWidgetTexts = widgetTexts[lang] || widgetTexts.fr;
         }
       }
     </script>
+
+    <!-- Fabian Banner - Voice Agent Promotion -->
+    {FEATURES.fabianBanner && fabianBannerTranslations && (
+      <FabianBanner translations={fabianBannerTranslations} />
+    )}
 
     <!-- ElevenLabs Conversational AI Widget -->
     <elevenlabs-convai

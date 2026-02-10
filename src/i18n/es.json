@@ -894,5 +894,16 @@
     "description": "Pero no te preocupes, tenemos muchas otras deliciosas esperándote.",
     "homeButton": "Volver al inicio",
     "blogButton": "Ver el blog"
+  },
+  "fabianBanner": {
+    "title": "Fabian está en línea",
+    "subtitle": "Pregúntale sobre el programa LOWIS",
+    "questions": [
+      "¿Es posible perder 12kg en 6 semanas de forma saludable?",
+      "¿Sufriré efecto rebote después?",
+      "¿Por qué con LOWIS puedo comer sin restricciones de cantidad?"
+    ],
+    "cta": "Pregúntale ahora",
+    "collapsed": "¿Dudas?"
   }
 }
