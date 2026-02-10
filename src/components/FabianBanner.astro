@@ -113,44 +113,50 @@ const { translations } = Astro.props;
     }
 
     function activateWidget() {
-      // The widget loads async - retry until Shadow DOM is ready
+      // ElevenLabs widget has 2 states inside its Shadow DOM:
+      // 1. Collapsed: a button with class *_minimize_* → click to expand
+      // 2. Expanded: a "Start a call" button (primary, not minimize/secondary)
+      // We need to expand first, then click "Start a call".
+      const widget = document.querySelector('elevenlabs-convai') as HTMLElement;
+      if (!widget) return;
+
       let attempts = 0;
-      const maxAttempts = 15;
+      const maxAttempts = 25;
+      let expanded = false;
 
-      function tryClick(): boolean {
-        const widget = document.querySelector('elevenlabs-convai') as HTMLElement;
-        if (!widget || !widget.shadowRoot) return false;
-
-        const root = widget.shadowRoot;
-
-        // Find the clickable trigger inside Shadow DOM (Preact renders here)
-        const target =
-          root.querySelector('button') ||
-          root.querySelector('[role="button"]') ||
-          root.querySelector('[class*="pill"]') ||
-          root.querySelector('[class*="orb"]') ||
-          root.querySelector('[class*="trigger"]') ||
-          root.querySelector('[class*="action"]');
-
-        if (!target) return false;
-
-        // Dispatch full pointer event sequence (Preact listens to these)
-        const opts: PointerEventInit = { bubbles: true, cancelable: true, composed: true };
-        target.dispatchEvent(new PointerEvent('pointerdown', opts));
-        target.dispatchEvent(new PointerEvent('pointerup', opts));
-        target.dispatchEvent(new MouseEvent('click', opts));
-        return true;
-      }
-
-      if (tryClick()) return;
-
-      // Widget not ready yet - retry with interval
       const interval = setInterval(() => {
         attempts++;
-        if (tryClick() || attempts >= maxAttempts) {
-          clearInterval(interval);
+        const root = widget.shadowRoot;
+        if (!root) {
+          if (attempts >= maxAttempts) clearInterval(interval);
+          return;
         }
-      }, 200);
+
+        // Check if widget is already expanded
+        const wrapper = root.querySelector('div[class*="_wrapper_"]');
+        const isOpen = wrapper?.className.includes('_open_');
+
+        if (!isOpen && !expanded) {
+          // Step 1: Click the minimize/expand button
+          const expandBtn = root.querySelector('button[class*="_minimize_"]') as HTMLElement;
+          if (expandBtn) {
+            expandBtn.click();
+            expanded = true;
+          }
+        } else if (isOpen) {
+          // Step 2: Click the "Start a call" primary button
+          const buttons = root.querySelectorAll('button[class*="_btn_"]');
+          for (const btn of buttons) {
+            const cls = btn.className;
+            if (cls.includes('_minimize_') || cls.includes('_secondary_') || cls.includes('_iconBtn_')) continue;
+            (btn as HTMLElement).click();
+            clearInterval(interval);
+            return;
+          }
+        }
+
+        if (attempts >= maxAttempts) clearInterval(interval);
+      }, 250);
     }
 
     function closeAndTalk() {
@@ -173,11 +179,11 @@ const { translations } = Astro.props;
     // Click en pregunta → hablar
     questions.forEach(q => q.addEventListener('click', closeAndTalk));
 
-    // Scroll trigger - only if not already dismissed this session
+    // Scroll trigger - show on first visit (not dismissed this session)
     let scrollTriggered = false;
     let ticking = false;
     function onScroll() {
-      if (scrollTriggered || alreadyDismissed) return;
+      if (scrollTriggered || isVisible || alreadyDismissed) return;
       const total = document.documentElement.scrollHeight - window.innerHeight;
       if (total > 0 && (window.scrollY / total) >= SCROLL_THRESHOLD) {
         scrollTriggered = true;
@@ -192,11 +198,14 @@ const { translations } = Astro.props;
       }
     }, { passive: true });
 
-    // Exit intent - show again if user hasn't talked and dismissed ≤1 time
-    document.documentElement.addEventListener('mouseleave', (e) => {
-      if (e.clientY > 0) return; // only trigger when mouse exits from top
-      if (talked || isVisible || dismissCount > 1) return;
-      show();
+    // Exit intent - mouse leaves viewport from top (towards close/back)
+    // Works even if scroll-trigger was blocked by sessionStorage
+    document.addEventListener('mouseout', (e: MouseEvent) => {
+      // Only trigger when mouse actually leaves the viewport from the top edge
+      if (!e.relatedTarget && e.clientY <= 0) {
+        if (talked || isVisible || dismissCount > 1) return;
+        show();
+      }
     });
 
     onScroll();
