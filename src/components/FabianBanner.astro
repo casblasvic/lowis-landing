@@ -5,8 +5,8 @@
  * Modal ligero con preguntas provocativas + botón "Habla con Fabian".
  * Cierre fácil: X, overlay, ESC. No invasivo.
  *
- * - Aparece tras scroll 35%
- * - Una vez cerrado no vuelve en la sesión
+ * - Aparece tras scroll 35% (solo si no fue cerrado antes en la sesión)
+ * - Exit intent: reaparece si el ratón sale por arriba y el usuario no habló (máx 1 re-show)
  * - Click en botón o pregunta → cierra modal + activa widget ElevenLabs
  */
 
@@ -78,13 +78,15 @@ const { translations } = Astro.props;
     const questions = document.querySelectorAll('.fabian-q');
 
     if (!overlay || !modal || !content) return;
-    if (sessionStorage.getItem(STORAGE_KEY)) return;
 
-    let shown = false;
+    let isVisible = false;
+    let talked = false;       // true if user clicked to talk
+    let dismissCount = 0;     // how many times dismissed
+    const alreadyDismissed = sessionStorage.getItem(STORAGE_KEY);
 
     function show() {
-      if (shown) return;
-      shown = true;
+      if (isVisible) return;
+      isVisible = true;
       overlay.classList.remove('hidden');
       modal.classList.remove('hidden');
       modal.classList.add('flex');
@@ -96,9 +98,12 @@ const { translations } = Astro.props;
     }
 
     function close() {
+      if (!isVisible) return;
       overlay.style.opacity = '0';
       content.style.opacity = '0';
       content.style.transform = 'scale(0.95)';
+      isVisible = false;
+      dismissCount++;
       sessionStorage.setItem(STORAGE_KEY, '1');
       setTimeout(() => {
         overlay.classList.add('hidden');
@@ -109,24 +114,48 @@ const { translations } = Astro.props;
 
     function activateWidget() {
       const widget = document.querySelector('elevenlabs-convai') as HTMLElement;
-      if (!widget) return;
-      widget.click();
-      if (widget.shadowRoot) {
-        const btn = widget.shadowRoot.querySelector('button');
-        if (btn) btn.click();
+      if (!widget || !widget.shadowRoot) return;
+
+      // The widget renders a Preact app inside Shadow DOM.
+      // We need to find the clickable orb/pill and dispatch a real pointer event.
+      const root = widget.shadowRoot;
+
+      // Try multiple selectors - the widget structure may vary
+      const target =
+        root.querySelector('[class*="pill"]') ||
+        root.querySelector('[class*="orb"]') ||
+        root.querySelector('[class*="action"]') ||
+        root.querySelector('[class*="button"]') ||
+        root.querySelector('[class*="trigger"]') ||
+        root.querySelector('button') ||
+        root.querySelector('div[role="button"]') ||
+        // Fallback: first interactive-looking element
+        root.querySelector('div > div');
+
+      if (target) {
+        // Dispatch full pointer event sequence (Preact listens to these)
+        const opts = { bubbles: true, cancelable: true, composed: true };
+        target.dispatchEvent(new PointerEvent('pointerdown', opts));
+        target.dispatchEvent(new PointerEvent('pointerup', opts));
+        target.dispatchEvent(new MouseEvent('click', opts));
+      } else {
+        // Last resort: click the host element itself
+        widget.dispatchEvent(new MouseEvent('click', { bubbles: true, composed: true }));
       }
     }
 
     function closeAndTalk() {
+      talked = true;
       close();
-      setTimeout(activateWidget, 300);
+      // Give modal time to close, then activate widget
+      setTimeout(activateWidget, 400);
     }
 
     // Cerrar: X, overlay, ESC
     closeBtn?.addEventListener('click', close);
     overlay.addEventListener('click', close);
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && shown) close();
+      if (e.key === 'Escape' && isVisible) close();
     });
 
     // Botón principal → hablar
@@ -135,12 +164,16 @@ const { translations } = Astro.props;
     // Click en pregunta → hablar
     questions.forEach(q => q.addEventListener('click', closeAndTalk));
 
-    // Scroll trigger
+    // Scroll trigger - only if not already dismissed this session
+    let scrollTriggered = false;
     let ticking = false;
     function onScroll() {
-      if (shown) return;
+      if (scrollTriggered || alreadyDismissed) return;
       const total = document.documentElement.scrollHeight - window.innerHeight;
-      if (total > 0 && (window.scrollY / total) >= SCROLL_THRESHOLD) show();
+      if (total > 0 && (window.scrollY / total) >= SCROLL_THRESHOLD) {
+        scrollTriggered = true;
+        show();
+      }
     }
 
     window.addEventListener('scroll', () => {
@@ -149,6 +182,13 @@ const { translations } = Astro.props;
         ticking = true;
       }
     }, { passive: true });
+
+    // Exit intent - show again if user hasn't talked and dismissed ≤1 time
+    document.documentElement.addEventListener('mouseleave', (e) => {
+      if (e.clientY > 0) return; // only trigger when mouse exits from top
+      if (talked || isVisible || dismissCount > 1) return;
+      show();
+    });
 
     onScroll();
   }
