@@ -1,14 +1,13 @@
 ---
 /**
- * FabianBanner.astro - Banner promocional para el agente de voz Fabian
+ * FabianBanner.astro - Modal centrado tipo "oferta" para el agente de voz Fabian
  *
- * Muestra preguntas provocativas que invitan al usuario a interactuar
- * con el widget de ElevenLabs (Fabian).
+ * Modal clásico centrado con overlay, preguntas provocativas y una flecha
+ * hand-drawn que apunta hacia el widget de ElevenLabs (esquina inferior derecha).
  *
- * Estados:
- * - OCULTO: Antes de scroll 50% de la página
- * - VISIBLE: Banner completo con preguntas
- * - PLEGADO: Solo icono + texto corto "¿Dudas?"
+ * - Aparece tras scroll 35%
+ * - Se cierra con X o click en overlay
+ * - No vuelve a aparecer en la sesión
  */
 
 interface Props {
@@ -24,248 +23,141 @@ interface Props {
 const { translations } = Astro.props;
 ---
 
-<!-- Fabian Banner - Promoción del agente de voz -->
-<div
-  id="fabian-banner"
-  class="fixed z-40 transition-all duration-500 ease-out"
-  style="opacity: 0; pointer-events: none;"
-  data-state="hidden"
->
-  <!-- Banner completo (estado visible) -->
-  <div
-    id="fabian-banner-full"
-    class="bg-dark-surface/95 backdrop-blur-lg border border-dark-border rounded-2xl shadow-2xl p-4 max-w-xs"
-  >
-    <!-- Header -->
-    <div class="flex items-center justify-between mb-3">
-      <div class="flex items-center gap-2">
-        <!-- Indicador de "en línea" -->
+<!-- Overlay oscuro -->
+<div id="fabian-overlay" class="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300"></div>
+
+<!-- Modal centrado -->
+<div id="fabian-modal" class="fixed inset-0 z-[61] hidden items-center justify-center p-4 pointer-events-none">
+  <div id="fabian-modal-content" class="relative bg-dark-surface border border-dark-border rounded-2xl shadow-2xl w-full max-w-sm pointer-events-auto opacity-0 scale-95 transition-all duration-300">
+
+    <!-- Botón cerrar -->
+    <button id="fabian-close" class="absolute top-3 right-3 p-1.5 text-text-secondary hover:text-white transition-colors rounded-full hover:bg-white/10 z-10">
+      <span class="material-symbols-outlined text-xl">close</span>
+    </button>
+
+    <!-- Contenido -->
+    <div class="p-6">
+      <!-- Header con indicador online -->
+      <div class="flex items-center gap-2.5 mb-1">
         <span class="relative flex h-3 w-3">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
         </span>
-        <span class="text-sm font-semibold text-white">{translations.title}</span>
+        <h3 class="text-lg font-bold text-white">{translations.title}</h3>
       </div>
-      <!-- Botón para plegar -->
-      <button
-        id="fabian-collapse-btn"
-        class="p-1 text-text-secondary hover:text-white transition-colors rounded-full hover:bg-white/10"
-        aria-label="Minimizar"
-      >
-        <span class="material-symbols-outlined text-lg">remove</span>
-      </button>
+
+      <p class="text-sm text-text-secondary mb-5 ml-[22px]">{translations.subtitle}</p>
+
+      <!-- Preguntas -->
+      <ul class="space-y-3 mb-5">
+        {translations.questions.map((question) => (
+          <li class="fabian-q flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/10 cursor-pointer hover:border-primary-orange/40 hover:bg-primary-orange/5 transition-all group">
+            <span class="material-symbols-outlined text-primary-orange text-xl mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform">chat_bubble</span>
+            <span class="text-sm text-white/90 leading-relaxed group-hover:text-white transition-colors">{question}</span>
+          </li>
+        ))}
+      </ul>
     </div>
 
-    <!-- Subtítulo -->
-    <p class="text-xs text-text-secondary mb-3">{translations.subtitle}</p>
-
-    <!-- Preguntas provocativas -->
-    <ul class="space-y-2 mb-4">
-      {translations.questions.map((question, index) => (
-        <li
-          class="fabian-question flex items-start gap-2 text-sm text-white/90 cursor-pointer hover:text-primary-orange transition-colors group"
-          data-question={question}
-          style={`animation-delay: ${index * 150}ms`}
-        >
-          <span class="material-symbols-outlined text-primary-orange text-base mt-0.5 group-hover:scale-110 transition-transform">chat_bubble</span>
-          <span class="leading-tight">{question}</span>
-        </li>
-      ))}
-    </ul>
-
-    <!-- CTA -->
-    <button
-      id="fabian-cta-btn"
-      class="w-full py-2.5 px-4 bg-gradient-to-r from-primary-orange to-primary-red text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-primary-orange/25 transition-all text-sm flex items-center justify-center gap-2"
-    >
-      <span class="material-symbols-outlined text-lg">mic</span>
-      {translations.cta}
-    </button>
-
-    <!-- Flecha decorativa SVG -->
-    <div class="fabian-arrow-container absolute -bottom-12 right-4 w-16 h-12 pointer-events-none">
-      <svg
-        class="fabian-arrow w-full h-full text-primary-orange"
-        viewBox="0 0 60 45"
-        fill="none"
-      >
-        <!-- Línea curva estilo "hand-drawn" -->
+    <!-- Flecha que sale del modal apuntando a esquina inferior derecha -->
+    <div class="fabian-arrow-wrap absolute -bottom-16 -right-4 sm:right-2 w-20 h-16 pointer-events-none">
+      <svg class="w-full h-full text-primary-orange" viewBox="0 0 80 60" fill="none">
         <path
-          d="M5,5 Q15,2 25,10 T45,35"
+          d="M10,5 C20,3 30,8 40,18 S60,45 72,52"
           stroke="currentColor"
-          stroke-width="2"
+          stroke-width="2.5"
           stroke-linecap="round"
-          stroke-dasharray="4 3"
-          class="arrow-line"
+          stroke-dasharray="5 4"
+          class="arrow-path"
         />
-        <!-- Punta de flecha -->
-        <polygon
-          points="40,28 50,38 38,36"
-          fill="currentColor"
-          class="arrow-head"
-        />
+        <polygon points="66,46 76,56 64,54" fill="currentColor" class="arrow-tip" />
       </svg>
-    </div>
-  </div>
-
-  <!-- Banner plegado (estado collapsed) -->
-  <div
-    id="fabian-banner-collapsed"
-    class="hidden bg-gradient-to-r from-primary-orange to-primary-red rounded-full shadow-lg px-4 py-2.5 cursor-pointer hover:shadow-xl hover:shadow-primary-orange/30 transition-all"
-  >
-    <div class="flex items-center gap-2">
-      <!-- Indicador de "en línea" -->
-      <span class="relative flex h-2.5 w-2.5">
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
-      </span>
-      <span class="text-sm font-semibold text-white">{translations.collapsed}</span>
-      <span class="material-symbols-outlined text-white text-lg">expand_less</span>
     </div>
   </div>
 </div>
 
 <script>
-  // Estado del banner
-  type BannerState = 'hidden' | 'visible' | 'collapsed';
+  const STORAGE_KEY = 'lowis_fabian_dismissed';
+  const SCROLL_THRESHOLD = 0.35;
 
-  const STORAGE_KEY = 'lowis_fabian_banner_state';
-  const SCROLL_THRESHOLD = 0.35; // 35% de la página
+  function initFabianModal() {
+    const overlay = document.getElementById('fabian-overlay');
+    const modal = document.getElementById('fabian-modal');
+    const content = document.getElementById('fabian-modal-content');
+    const closeBtn = document.getElementById('fabian-close');
+    const questions = document.querySelectorAll('.fabian-q');
 
-  function initFabianBanner() {
-    const banner = document.getElementById('fabian-banner');
-    const fullBanner = document.getElementById('fabian-banner-full');
-    const collapsedBanner = document.getElementById('fabian-banner-collapsed');
-    const collapseBtn = document.getElementById('fabian-collapse-btn');
-    const ctaBtn = document.getElementById('fabian-cta-btn');
-    const questions = document.querySelectorAll('.fabian-question');
+    if (!overlay || !modal || !content) return;
 
-    if (!banner || !fullBanner || !collapsedBanner) return;
+    // Si ya lo cerró, no mostrar
+    if (sessionStorage.getItem(STORAGE_KEY)) return;
 
-    // Obtener estado guardado o default
-    const savedState = localStorage.getItem(STORAGE_KEY) as BannerState | null;
-    let hasScrolledPastThreshold = false;
+    let shown = false;
 
-    // Posicionar el banner
-    function positionBanner() {
-      const isMobile = window.innerWidth < 768;
+    function showModal() {
+      if (shown) return;
+      shown = true;
 
-      if (isMobile) {
-        // Mobile: parte inferior, encima del sticky CTA
-        banner.style.bottom = '140px';
-        banner.style.right = '16px';
-        banner.style.left = 'auto';
-      } else {
-        // Desktop: esquina inferior derecha, encima del widget de ElevenLabs
-        banner.style.bottom = '100px';
-        banner.style.right = '24px';
-        banner.style.left = 'auto';
-      }
-    }
+      overlay.classList.remove('hidden');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
 
-    // Mostrar banner
-    function showBanner(state: BannerState = 'visible') {
-      if (state === 'hidden') {
-        banner.style.opacity = '0';
-        banner.style.pointerEvents = 'none';
-        banner.dataset.state = 'hidden';
-        return;
-      }
-
-      banner.style.opacity = '1';
-      banner.style.pointerEvents = 'auto';
-      banner.dataset.state = state;
-
-      if (state === 'visible') {
-        fullBanner.classList.remove('hidden');
-        collapsedBanner.classList.add('hidden');
-        // Animar entrada de las preguntas
-        animateQuestions();
-      } else if (state === 'collapsed') {
-        fullBanner.classList.add('hidden');
-        collapsedBanner.classList.remove('hidden');
-      }
-
-      localStorage.setItem(STORAGE_KEY, state);
-    }
-
-    // Animar las preguntas con efecto escalonado
-    function animateQuestions() {
-      questions.forEach((q, i) => {
-        const el = q as HTMLElement;
-        el.style.opacity = '0';
-        el.style.transform = 'translateX(-10px)';
-
-        setTimeout(() => {
-          el.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-          el.style.opacity = '1';
-          el.style.transform = 'translateX(0)';
-        }, 200 + (i * 150));
+      // Trigger animation
+      requestAnimationFrame(() => {
+        overlay.style.opacity = '1';
+        content.style.opacity = '1';
+        content.style.transform = 'scale(1)';
       });
     }
 
-    // Detectar scroll y mostrar banner
-    function handleScroll() {
-      if (hasScrolledPastThreshold) return;
+    function closeModal() {
+      overlay.style.opacity = '0';
+      content.style.opacity = '0';
+      content.style.transform = 'scale(0.95)';
 
-      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercent = window.scrollY / scrollHeight;
+      sessionStorage.setItem(STORAGE_KEY, '1');
 
-      if (scrollPercent >= SCROLL_THRESHOLD) {
-        hasScrolledPastThreshold = true;
-
-        // Si el usuario previamente lo cerró, mostrar colapsado
-        // Si nunca lo vio, mostrar completo
-        if (savedState === 'collapsed') {
-          showBanner('collapsed');
-        } else if (savedState !== 'hidden') {
-          showBanner('visible');
-        }
-      }
+      setTimeout(() => {
+        overlay.classList.add('hidden');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }, 300);
     }
 
-    // Activar el widget de ElevenLabs
     function activateWidget() {
       const widget = document.querySelector('elevenlabs-convai') as HTMLElement;
       if (widget) {
-        // Intentar hacer clic en el widget para activarlo
         widget.click();
-
-        // También intentar encontrar el botón dentro del shadow DOM
         if (widget.shadowRoot) {
-          const startButton = widget.shadowRoot.querySelector('button');
-          if (startButton) {
-            startButton.click();
-          }
+          const btn = widget.shadowRoot.querySelector('button');
+          if (btn) btn.click();
         }
       }
     }
 
-    // Event listeners
-    collapseBtn?.addEventListener('click', (e) => {
-      e.stopPropagation();
-      showBanner('collapsed');
-    });
+    // Cerrar
+    closeBtn?.addEventListener('click', closeModal);
+    overlay.addEventListener('click', closeModal);
 
-    collapsedBanner?.addEventListener('click', () => {
-      showBanner('visible');
-    });
-
-    ctaBtn?.addEventListener('click', () => {
-      activateWidget();
-      showBanner('collapsed');
-    });
-
-    // Click en preguntas individuales
+    // Click en pregunta → activa widget y cierra
     questions.forEach(q => {
       q.addEventListener('click', () => {
-        activateWidget();
-        showBanner('collapsed');
+        closeModal();
+        // Pequeño delay para que el modal cierre antes
+        setTimeout(activateWidget, 350);
       });
     });
 
-    // Scroll listener con throttle
+    // Scroll trigger
     let ticking = false;
+    function handleScroll() {
+      if (shown) return;
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollHeight > 0 && (window.scrollY / scrollHeight) >= SCROLL_THRESHOLD) {
+        showModal();
+      }
+    }
+
     window.addEventListener('scroll', () => {
       if (!ticking) {
         requestAnimationFrame(() => {
@@ -276,103 +168,45 @@ const { translations } = Astro.props;
       }
     }, { passive: true });
 
-    // Resize listener
-    window.addEventListener('resize', positionBanner);
-
-    // Inicializar posición
-    positionBanner();
-
-    // Si ya ha scrolleado suficiente al cargar
+    // Si ya scrolleó al cargar
     handleScroll();
   }
 
-  // Iniciar cuando DOM esté listo
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initFabianBanner);
+    document.addEventListener('DOMContentLoaded', initFabianModal);
   } else {
-    initFabianBanner();
+    initFabianModal();
   }
 </script>
 
 <style>
-  /* Animación de la flecha */
-  .fabian-arrow .arrow-line {
-    stroke-dashoffset: 50;
-    animation: drawArrow 1.5s ease-out forwards;
-    animation-delay: 0.5s;
+  /* Flecha: animación de dibujo */
+  .arrow-path {
+    stroke-dashoffset: 80;
+    animation: drawPath 1.2s ease-out 0.4s forwards;
   }
 
-  .fabian-arrow .arrow-head {
+  .arrow-tip {
     opacity: 0;
-    animation: showArrowHead 0.3s ease-out forwards;
-    animation-delay: 1.8s;
+    animation: showTip 0.2s ease-out 1.5s forwards;
   }
 
-  @keyframes drawArrow {
-    to {
-      stroke-dashoffset: 0;
-    }
+  @keyframes drawPath {
+    to { stroke-dashoffset: 0; }
   }
 
-  @keyframes showArrowHead {
-    to {
-      opacity: 1;
-    }
+  @keyframes showTip {
+    to { opacity: 1; }
   }
 
-  /* Animación sutil de bounce para la flecha */
-  .fabian-arrow-container {
-    animation: gentleBounce 2s ease-in-out infinite;
-    animation-delay: 2.5s;
+  /* Bounce suave de la flecha */
+  .fabian-arrow-wrap {
+    animation: arrowBounce 1.8s ease-in-out infinite;
+    animation-delay: 2s;
   }
 
-  @keyframes gentleBounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(4px);
-    }
-  }
-
-  /* Hover en el banner colapsado */
-  #fabian-banner-collapsed:hover {
-    transform: scale(1.05);
-  }
-
-  /* Efecto de brillo en el CTA */
-  #fabian-cta-btn {
-    position: relative;
-    overflow: hidden;
-  }
-
-  #fabian-cta-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.2),
-      transparent
-    );
-    animation: shimmer 3s infinite;
-  }
-
-  @keyframes shimmer {
-    0% {
-      left: -100%;
-    }
-    100% {
-      left: 100%;
-    }
-  }
-
-  /* Asegurar que el banner esté por debajo del widget pero visible */
-  #fabian-banner {
-    z-index: 40;
+  @keyframes arrowBounce {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(4px, 4px); }
   }
 </style>
