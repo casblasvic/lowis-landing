@@ -113,35 +113,44 @@ const { translations } = Astro.props;
     }
 
     function activateWidget() {
-      const widget = document.querySelector('elevenlabs-convai') as HTMLElement;
-      if (!widget || !widget.shadowRoot) return;
+      // The widget loads async - retry until Shadow DOM is ready
+      let attempts = 0;
+      const maxAttempts = 15;
 
-      // The widget renders a Preact app inside Shadow DOM.
-      // We need to find the clickable orb/pill and dispatch a real pointer event.
-      const root = widget.shadowRoot;
+      function tryClick(): boolean {
+        const widget = document.querySelector('elevenlabs-convai') as HTMLElement;
+        if (!widget || !widget.shadowRoot) return false;
 
-      // Try multiple selectors - the widget structure may vary
-      const target =
-        root.querySelector('[class*="pill"]') ||
-        root.querySelector('[class*="orb"]') ||
-        root.querySelector('[class*="action"]') ||
-        root.querySelector('[class*="button"]') ||
-        root.querySelector('[class*="trigger"]') ||
-        root.querySelector('button') ||
-        root.querySelector('div[role="button"]') ||
-        // Fallback: first interactive-looking element
-        root.querySelector('div > div');
+        const root = widget.shadowRoot;
 
-      if (target) {
+        // Find the clickable trigger inside Shadow DOM (Preact renders here)
+        const target =
+          root.querySelector('button') ||
+          root.querySelector('[role="button"]') ||
+          root.querySelector('[class*="pill"]') ||
+          root.querySelector('[class*="orb"]') ||
+          root.querySelector('[class*="trigger"]') ||
+          root.querySelector('[class*="action"]');
+
+        if (!target) return false;
+
         // Dispatch full pointer event sequence (Preact listens to these)
-        const opts = { bubbles: true, cancelable: true, composed: true };
+        const opts: PointerEventInit = { bubbles: true, cancelable: true, composed: true };
         target.dispatchEvent(new PointerEvent('pointerdown', opts));
         target.dispatchEvent(new PointerEvent('pointerup', opts));
         target.dispatchEvent(new MouseEvent('click', opts));
-      } else {
-        // Last resort: click the host element itself
-        widget.dispatchEvent(new MouseEvent('click', { bubbles: true, composed: true }));
+        return true;
       }
+
+      if (tryClick()) return;
+
+      // Widget not ready yet - retry with interval
+      const interval = setInterval(() => {
+        attempts++;
+        if (tryClick() || attempts >= maxAttempts) {
+          clearInterval(interval);
+        }
+      }, 200);
     }
 
     function closeAndTalk() {

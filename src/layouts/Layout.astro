@@ -76,6 +76,15 @@ const widgetTexts: Record<Language, { action: string; startCall: string; endCall
   }
 };
 const currentWidgetTexts = widgetTexts[lang] || widgetTexts.fr;
+
+// Idioma base para el widget ElevenLabs (sin variante regional)
+const widgetLangMap: Record<Language, string> = {
+  fr: 'fr',
+  'fr-FR': 'fr',
+  es: 'es',
+  en: 'en',
+};
+const widgetLang = widgetLangMap[lang] || 'fr';
 ---
 
 <!doctype html>
@@ -391,6 +400,8 @@ const currentWidgetTexts = widgetTexts[lang] || widgetTexts.fr;
     <!-- ElevenLabs Conversational AI Widget -->
     <elevenlabs-convai
       agent-id="agent_3101kf3b3cf0er7b94ztd1gwrmz7"
+      language={widgetLang}
+      override-language={widgetLang}
       action-text={currentWidgetTexts.action}
       start-call-text={currentWidgetTexts.startCall}
       end-call-text={currentWidgetTexts.endCall}
@@ -398,6 +409,21 @@ const currentWidgetTexts = widgetTexts[lang] || widgetTexts.fr;
       speaking-text={currentWidgetTexts.speaking}
     ></elevenlabs-convai>
     <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+
+    <!-- Sync widget language with page locale on each call -->
+    <script is:inline>
+      document.addEventListener('elevenlabs-convai:call', function(e) {
+        var el = document.querySelector('elevenlabs-convai');
+        var lang = el ? el.getAttribute('override-language') : null;
+        if (lang && e.detail && e.detail.config) {
+          e.detail.config.overrides = Object.assign({}, e.detail.config.overrides, {
+            agent: Object.assign({}, (e.detail.config.overrides || {}).agent, {
+              language: lang
+            })
+          });
+        }
+      });
+    </script>
 
     <!-- Adjust ElevenLabs widget position on mobile + hide Powered by -->
     <script is:inline>
