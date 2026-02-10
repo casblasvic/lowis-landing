@@ -1,13 +1,13 @@
 ---
 /**
- * FabianBanner.astro - Modal centrado tipo "oferta" para el agente de voz Fabian
+ * FabianBanner.astro - Modal centrado para el agente de voz Fabian
  *
- * Modal clásico centrado con overlay, preguntas provocativas y una flecha
- * hand-drawn que apunta hacia el widget de ElevenLabs (esquina inferior derecha).
+ * Modal ligero con preguntas provocativas + botón "Habla con Fabian".
+ * Cierre fácil: X, overlay, ESC. No invasivo.
  *
  * - Aparece tras scroll 35%
- * - Se cierra con X o click en overlay
- * - No vuelve a aparecer en la sesión
+ * - Una vez cerrado no vuelve en la sesión
+ * - Click en botón o pregunta → cierra modal + activa widget ElevenLabs
  */
 
 interface Props {
@@ -23,55 +23,44 @@ interface Props {
 const { translations } = Astro.props;
 ---
 
-<!-- Overlay oscuro -->
-<div id="fabian-overlay" class="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300"></div>
+<!-- Overlay - click para cerrar -->
+<div id="fabian-overlay" class="fixed inset-0 z-[60] bg-black/50 hidden opacity-0 transition-opacity duration-300 cursor-pointer"></div>
 
 <!-- Modal centrado -->
 <div id="fabian-modal" class="fixed inset-0 z-[61] hidden items-center justify-center p-4 pointer-events-none">
   <div id="fabian-modal-content" class="relative bg-dark-surface border border-dark-border rounded-2xl shadow-2xl w-full max-w-sm pointer-events-auto opacity-0 scale-95 transition-all duration-300">
 
-    <!-- Botón cerrar -->
-    <button id="fabian-close" class="absolute top-3 right-3 p-1.5 text-text-secondary hover:text-white transition-colors rounded-full hover:bg-white/10 z-10">
-      <span class="material-symbols-outlined text-xl">close</span>
+    <!-- X cerrar - grande y claro -->
+    <button id="fabian-close" class="absolute -top-3 -right-3 w-8 h-8 flex items-center justify-center bg-dark-surface border border-dark-border rounded-full text-text-secondary hover:text-white hover:bg-white/10 transition-colors z-10 shadow-lg">
+      <span class="material-symbols-outlined text-lg">close</span>
     </button>
 
-    <!-- Contenido -->
-    <div class="p-6">
-      <!-- Header con indicador online -->
+    <div class="p-5 pb-4">
+      <!-- Header -->
       <div class="flex items-center gap-2.5 mb-1">
-        <span class="relative flex h-3 w-3">
+        <span class="relative flex h-2.5 w-2.5">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-          <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
         </span>
-        <h3 class="text-lg font-bold text-white">{translations.title}</h3>
+        <h3 class="text-base font-bold text-white">{translations.title}</h3>
       </div>
-
-      <p class="text-sm text-text-secondary mb-5 ml-[22px]">{translations.subtitle}</p>
+      <p class="text-xs text-text-secondary mb-4 ml-5">{translations.subtitle}</p>
 
       <!-- Preguntas -->
-      <ul class="space-y-3 mb-5">
+      <ul class="space-y-2 mb-5">
         {translations.questions.map((question) => (
-          <li class="fabian-q flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/10 cursor-pointer hover:border-primary-orange/40 hover:bg-primary-orange/5 transition-all group">
-            <span class="material-symbols-outlined text-primary-orange text-xl mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform">chat_bubble</span>
-            <span class="text-sm text-white/90 leading-relaxed group-hover:text-white transition-colors">{question}</span>
+          <li class="fabian-q flex items-start gap-2.5 py-2 px-3 rounded-lg cursor-pointer hover:bg-white/5 transition-colors group">
+            <span class="material-symbols-outlined text-primary-orange text-base mt-0.5 flex-shrink-0">chat_bubble</span>
+            <span class="text-sm text-white/80 leading-snug group-hover:text-white transition-colors">{question}</span>
           </li>
         ))}
       </ul>
-    </div>
 
-    <!-- Flecha que sale del modal apuntando a esquina inferior derecha -->
-    <div class="fabian-arrow-wrap absolute -bottom-16 -right-4 sm:right-2 w-20 h-16 pointer-events-none">
-      <svg class="w-full h-full text-primary-orange" viewBox="0 0 80 60" fill="none">
-        <path
-          d="M10,5 C20,3 30,8 40,18 S60,45 72,52"
-          stroke="currentColor"
-          stroke-width="2.5"
-          stroke-linecap="round"
-          stroke-dasharray="5 4"
-          class="arrow-path"
-        />
-        <polygon points="66,46 76,56 64,54" fill="currentColor" class="arrow-tip" />
-      </svg>
+      <!-- Botón principal -->
+      <button id="fabian-talk-btn" class="fabian-cta w-full py-3 px-4 bg-gradient-to-r from-primary-orange to-primary-red text-white font-semibold rounded-xl text-sm flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-primary-orange/25 active:scale-[0.98] transition-all">
+        <span class="material-symbols-outlined text-xl">mic</span>
+        {translations.cta}
+      </button>
     </div>
   </div>
 </div>
@@ -85,24 +74,20 @@ const { translations } = Astro.props;
     const modal = document.getElementById('fabian-modal');
     const content = document.getElementById('fabian-modal-content');
     const closeBtn = document.getElementById('fabian-close');
+    const talkBtn = document.getElementById('fabian-talk-btn');
     const questions = document.querySelectorAll('.fabian-q');
 
     if (!overlay || !modal || !content) return;
-
-    // Si ya lo cerró, no mostrar
     if (sessionStorage.getItem(STORAGE_KEY)) return;
 
     let shown = false;
 
-    function showModal() {
+    function show() {
       if (shown) return;
       shown = true;
-
       overlay.classList.remove('hidden');
       modal.classList.remove('hidden');
       modal.classList.add('flex');
-
-      // Trigger animation
       requestAnimationFrame(() => {
         overlay.style.opacity = '1';
         content.style.opacity = '1';
@@ -110,66 +95,62 @@ const { translations } = Astro.props;
       });
     }
 
-    function closeModal() {
+    function close() {
       overlay.style.opacity = '0';
       content.style.opacity = '0';
       content.style.transform = 'scale(0.95)';
-
       sessionStorage.setItem(STORAGE_KEY, '1');
-
       setTimeout(() => {
         overlay.classList.add('hidden');
         modal.classList.add('hidden');
         modal.classList.remove('flex');
-      }, 300);
+      }, 250);
     }
 
     function activateWidget() {
       const widget = document.querySelector('elevenlabs-convai') as HTMLElement;
-      if (widget) {
-        widget.click();
-        if (widget.shadowRoot) {
-          const btn = widget.shadowRoot.querySelector('button');
-          if (btn) btn.click();
-        }
+      if (!widget) return;
+      widget.click();
+      if (widget.shadowRoot) {
+        const btn = widget.shadowRoot.querySelector('button');
+        if (btn) btn.click();
       }
     }
 
-    // Cerrar
-    closeBtn?.addEventListener('click', closeModal);
-    overlay.addEventListener('click', closeModal);
+    function closeAndTalk() {
+      close();
+      setTimeout(activateWidget, 300);
+    }
 
-    // Click en pregunta → activa widget y cierra
-    questions.forEach(q => {
-      q.addEventListener('click', () => {
-        closeModal();
-        // Pequeño delay para que el modal cierre antes
-        setTimeout(activateWidget, 350);
-      });
+    // Cerrar: X, overlay, ESC
+    closeBtn?.addEventListener('click', close);
+    overlay.addEventListener('click', close);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && shown) close();
     });
+
+    // Botón principal → hablar
+    talkBtn?.addEventListener('click', closeAndTalk);
+
+    // Click en pregunta → hablar
+    questions.forEach(q => q.addEventListener('click', closeAndTalk));
 
     // Scroll trigger
     let ticking = false;
-    function handleScroll() {
+    function onScroll() {
       if (shown) return;
-      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-      if (scrollHeight > 0 && (window.scrollY / scrollHeight) >= SCROLL_THRESHOLD) {
-        showModal();
-      }
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      if (total > 0 && (window.scrollY / total) >= SCROLL_THRESHOLD) show();
     }
 
     window.addEventListener('scroll', () => {
       if (!ticking) {
-        requestAnimationFrame(() => {
-          handleScroll();
-          ticking = false;
-        });
+        requestAnimationFrame(() => { onScroll(); ticking = false; });
         ticking = true;
       }
     }, { passive: true });
 
-    // Si ya scrolleó al cargar
-    handleScroll();
+    onScroll();
   }
 
   if (document.readyState === 'loading') {
@@ -180,33 +161,22 @@ const { translations } = Astro.props;
 </script>
 
 <style>
-  /* Flecha: animación de dibujo */
-  .arrow-path {
-    stroke-dashoffset: 80;
-    animation: drawPath 1.2s ease-out 0.4s forwards;
+  .fabian-cta {
+    position: relative;
+    overflow: hidden;
   }
-
-  .arrow-tip {
-    opacity: 0;
-    animation: showTip 0.2s ease-out 1.5s forwards;
+  .fabian-cta::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+    animation: ctaShine 3s ease-in-out infinite;
   }
-
-  @keyframes drawPath {
-    to { stroke-dashoffset: 0; }
-  }
-
-  @keyframes showTip {
-    to { opacity: 1; }
-  }
-
-  /* Bounce suave de la flecha */
-  .fabian-arrow-wrap {
-    animation: arrowBounce 1.8s ease-in-out infinite;
-    animation-delay: 2s;
-  }
-
-  @keyframes arrowBounce {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(4px, 4px); }
+  @keyframes ctaShine {
+    0% { left: -100%; }
+    50%, 100% { left: 100%; }
   }
 </style>
