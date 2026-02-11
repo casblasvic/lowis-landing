@@ -17,7 +17,7 @@
     "badge": "Disponible en France 🇫🇷",
     "title": "Programme LOWIS de 6 Semaines :",
     "titleHighlight": "Perdez jusqu'à 12 kg",
-    "subtitle": "1-2,5 kg par semaine × 6 semaines = Votre transformation complète. Commencez AUJOURD'HUI avec 7 jours GRATUITS.",
+    "subtitle": "1-2 kg par semaine × 6 semaines = Votre transformation complète. Commencez AUJOURD'HUI avec 7 jours GRATUITS.",
     "cta": "Commencer GRATUIT maintenant",
     "ctaSecondary": "Voir la démo",
     "noCard": "Sans carte bancaire",
@@ -345,7 +345,7 @@
         "bullets": [
           "7 jours complètement GRATUITS",
           "Sans carte bancaire",
-          "Résultat attendu : 1-2,5 kg"
+          "Résultat attendu : 1-2 kg"
         ]
       },
       {
@@ -469,7 +469,7 @@
         "answer": "Remplissez simplement votre profil pour personnaliser votre plan selon vos +40 indicateurs. Accès complet une semaine, sans carte bancaire requise. Vous voyez les résultats avant de décider. Après, continuez avec le programme complet de 6 semaines à 149 € ou ne faites rien — votre choix."
       },
       {
-        "question": "Perdre entre 1 et 2,5 kg par semaine, c'est vraiment possible?",
+        "question": "Perdre entre 1 et 2 kg par semaine, c'est vraiment possible?",
         "answer": "Oui, c'est notre objectif garanti. En mangeant intelligemment (pas moins, juste mieux combiné), la majorité de nos utilisateurs atteignent ces résultats. Le protocole LOWIS optimise chaque repas selon votre métabolisme."
       },
       {
@@ -478,7 +478,7 @@
       },
       {
         "question": "Quand vais-je sentir des changements (au-delà du poids)?",
-        "answer": "Résultats tangibles par semaine: Poids: 1-2,5 kg/semaine (garanti). Énergie: beaucoup rapportent +25% en 3-5 jours. Digestion: amélioration notable en 1-2 semaines. Clarté mentale: stress réduit en 5-7 jours. Bien-être général: différence émotionnelle en 2 semaines. L'important: LOWIS adapte votre plan chaque jour selon comment vous vous sentez, pas seulement selon les chiffres."
+        "answer": "Résultats tangibles par semaine: Poids: 1-2 kg/semaine (garanti). Énergie: beaucoup rapportent +25% en 3-5 jours. Digestion: amélioration notable en 1-2 semaines. Clarté mentale: stress réduit en 5-7 jours. Bien-être général: différence émotionnelle en 2 semaines. L'important: LOWIS adapte votre plan chaque jour selon comment vous vous sentez, pas seulement selon les chiffres."
       },
       {
         "question": "Dois-je suivre un régime strict pour maigrir?",
@@ -903,6 +903,7 @@
       "Pourquoi avec LOWIS je peux manger sans restriction de quantité ?"
     ],
     "cta": "Demandez-lui maintenant",
-    "collapsed": "Des questions ?"
+    "collapsed": "Des questions ?",
+    "tooltip": "Cliquez ici pour parler à Fabian"
   }
 }

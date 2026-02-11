@@ -17,7 +17,7 @@
     "badge": "Disponible en todo el mundo",
     "title": "Programa LOWIS de 6 Semanas:",
     "titleHighlight": "Pierde hasta 12 kg",
-    "subtitle": "1-2,5 kg por semana × 6 semanas = Tu transformación completa. Empieza HOY con 7 días GRATIS.",
+    "subtitle": "1-2 kg por semana × 6 semanas = Tu transformación completa. Empieza HOY con 7 días GRATIS.",
     "cta": "Empezar GRATIS ahora",
     "ctaSecondary": "Ver demo",
     "noCard": "Sin tarjeta bancaria",
@@ -345,7 +345,7 @@
         "bullets": [
           "Plan adaptado a tus gustos y alergias",
           "Primera semana completamente gratis",
-          "Objetivo: 1-2,5 kg por semana"
+          "Objetivo: 1-2 kg por semana"
         ]
       },
       {
@@ -470,7 +470,7 @@
         "answer": "Solo rellena tu perfil para personalizar tu plan según tus +40 indicadores. Acceso completo una semana, sin tarjeta bancaria. Ves los resultados antes de decidir. Después, continúa con el programa completo de 6 semanas a 1.500 DH o no hagas nada — tu elección."
       },
       {
-        "question": "¿Perder entre 1 y 2,5 kg por semana es realmente posible?",
+        "question": "¿Perder entre 1 y 2 kg por semana es realmente posible?",
         "answer": "Sí, es nuestro objetivo garantizado. Comiendo inteligentemente (no menos, solo mejor combinado), la mayoría de nuestros usuarios alcanzan estos resultados. El protocolo LOWIS optimiza cada comida según tu metabolismo."
       },
       {
@@ -479,7 +479,7 @@
       },
       {
         "question": "¿Cuándo voy a sentir cambios (además del peso)?",
-        "answer": "Resultados tangibles por semana: Peso: 1-2,5 kg/semana (garantizado). Energía: muchos reportan +25% en 3-5 días. Digestión: mejora notable en 1-2 semanas. Claridad mental: estrés reducido en 5-7 días. Bienestar general: diferencia emocional en 2 semanas. Lo importante: LOWIS adapta tu plan cada día según cómo te sientes, no solo según los números."
+        "answer": "Resultados tangibles por semana: Peso: 1-2 kg/semana (garantizado). Energía: muchos reportan +25% en 3-5 días. Digestión: mejora notable en 1-2 semanas. Claridad mental: estrés reducido en 5-7 días. Bienestar general: diferencia emocional en 2 semanas. Lo importante: LOWIS adapta tu plan cada día según cómo te sientes, no solo según los números."
       },
       {
         "question": "¿Tengo que seguir una dieta estricta para adelgazar?",
@@ -904,6 +904,7 @@
       "¿Por qué con LOWIS puedo comer sin restricciones de cantidad?"
     ],
     "cta": "Pregúntale ahora",
-    "collapsed": "¿Dudas?"
+    "collapsed": "¿Dudas?",
+    "tooltip": "Haz clic aquí para hablar con Fabian"
   }
 }

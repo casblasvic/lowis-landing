@@ -268,7 +268,7 @@ Una carencia en un solo micronutriente puede:
 4. Técnicas de gestión del estrés
 5. Aumentar hidratación a 2L
 
-**Resultado después de 4 semanas:** -2.5 kg (cuando comía MÁS)
+**Resultado después de 4 semanas:** -2 kg (cuando comía MÁS)
 
 ## Conclusión: Deja de contar a ciegas
 

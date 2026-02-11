@@ -17,7 +17,7 @@
     "badge": "Available worldwide",
     "title": "6-Week LOWIS Program:",
     "titleHighlight": "Lose up to 12 kg",
-    "subtitle": "1-2.5 kg per week × 6 weeks = Your complete transformation. Start TODAY with 7 days FREE.",
+    "subtitle": "1-2 kg per week × 6 weeks = Your complete transformation. Start TODAY with 7 days FREE.",
     "cta": "Start FREE now",
     "ctaSecondary": "See demo",
     "noCard": "No credit card required",
@@ -345,7 +345,7 @@
         "bullets": [
           "7 days completely FREE",
           "No credit card required",
-          "Expected result: 1-2.5 kg"
+          "Expected result: 1-2 kg"
         ]
       },
       {
@@ -469,7 +469,7 @@
         "answer": "Simply fill out your profile to personalize your plan based on your 40+ indicators. Full access for one week, no credit card required. See the results before you decide. After, continue with the complete 6-week program for €149 or do nothing — your choice."
       },
       {
-        "question": "Is losing 1 to 2.5 kg per week really possible?",
+        "question": "Is losing 1 to 2 kg per week really possible?",
         "answer": "Yes, that's our guaranteed goal. By eating smart (not less, just better combined), most of our users achieve these results. The LOWIS protocol optimizes each meal according to your metabolism."
       },
       {
@@ -478,7 +478,7 @@
       },
       {
         "question": "When will I feel changes (beyond weight)?",
-        "answer": "Tangible results per week: Weight: 1-2.5 kg/week (guaranteed). Energy: many report +25% in 3-5 days. Digestion: noticeable improvement in 1-2 weeks. Mental clarity: reduced stress in 5-7 days. Overall well-being: emotional difference in 2 weeks. The key: LOWIS adapts your plan every day based on how you feel, not just numbers."
+        "answer": "Tangible results per week: Weight: 1-2 kg/week (guaranteed). Energy: many report +25% in 3-5 days. Digestion: noticeable improvement in 1-2 weeks. Mental clarity: reduced stress in 5-7 days. Overall well-being: emotional difference in 2 weeks. The key: LOWIS adapts your plan every day based on how you feel, not just numbers."
       },
       {
         "question": "Do I have to follow a strict diet to lose weight?",
@@ -903,6 +903,7 @@
       "Why can I eat without quantity restrictions with LOWIS?"
     ],
     "cta": "Ask him now",
-    "collapsed": "Questions?"
+    "collapsed": "Questions?",
+    "tooltip": "Click here to talk to Fabian"
   }
 }

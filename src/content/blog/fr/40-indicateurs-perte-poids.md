@@ -295,7 +295,7 @@ Une carence en un seul micronutriment peut :
 4. Techniques de gestion du stress
 5. Augmenter l'hydratation à 2L
 
-**Résultat après 4 semaines :** -2.5 kg (alors qu'elle mangeait PLUS)
+**Résultat après 4 semaines :** -2 kg (alors qu'elle mangeait PLUS)
 
 ## Ce que votre app devrait faire
 

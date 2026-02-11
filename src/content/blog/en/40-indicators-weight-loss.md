@@ -268,7 +268,7 @@ A deficiency in just one micronutrient can:
 4. Stress management techniques
 5. Increase hydration to 2L
 
-**Result after 4 weeks:** -2.5 kg (while eating MORE)
+**Result after 4 weeks:** -2 kg (while eating MORE)
 
 ## Conclusion: Stop Counting Blindly
 
