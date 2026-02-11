@@ -17,6 +17,7 @@ interface Props {
     questions: string[];
     cta: string;
     collapsed: string;
+    tooltip: string;
   };
 }
 
@@ -27,7 +28,7 @@ const { translations } = Astro.props;
 <div id="fabian-overlay" class="fixed inset-0 z-[60] bg-black/50 hidden opacity-0 transition-opacity duration-300 cursor-pointer"></div>
 
 <!-- Modal centrado -->
-<div id="fabian-modal" class="fixed inset-0 z-[61] hidden items-center justify-center p-4 pointer-events-none">
+<div id="fabian-modal" data-tooltip={translations.tooltip} class="fixed inset-0 z-[61] hidden items-center justify-center p-4 pointer-events-none">
   <div id="fabian-modal-content" class="relative bg-dark-surface border border-dark-border rounded-2xl shadow-2xl w-full max-w-sm pointer-events-auto opacity-0 scale-95 transition-all duration-300">
 
     <!-- X cerrar - grande y claro -->
@@ -112,58 +113,39 @@ const { translations } = Astro.props;
       }, 250);
     }
 
-    function activateWidget() {
-      // ElevenLabs widget has 2 states inside its Shadow DOM:
-      // 1. Collapsed: a button with class *_minimize_* → click to expand
-      // 2. Expanded: a "Start a call" button (primary, not minimize/secondary)
-      // We need to expand first, then click "Start a call".
+    function highlightWidget() {
       const widget = document.querySelector('elevenlabs-convai') as HTMLElement;
       if (!widget) return;
 
-      let attempts = 0;
-      const maxAttempts = 25;
-      let expanded = false;
+      const tooltipText = modal.dataset.tooltip || '';
 
-      const interval = setInterval(() => {
-        attempts++;
-        const root = widget.shadowRoot;
-        if (!root) {
-          if (attempts >= maxAttempts) clearInterval(interval);
-          return;
-        }
+      // Intentar expandir el widget programáticamente
+      widget.setAttribute('default-expanded', 'true');
 
-        // Check if widget is already expanded
-        const wrapper = root.querySelector('div[class*="_wrapper_"]');
-        const isOpen = wrapper?.className.includes('_open_');
+      // Highlight visual como fallback/complemento
+      widget.classList.add('fabian-highlight');
 
-        if (!isOpen && !expanded) {
-          // Step 1: Click the minimize/expand button
-          const expandBtn = root.querySelector('button[class*="_minimize_"]') as HTMLElement;
-          if (expandBtn) {
-            expandBtn.click();
-            expanded = true;
-          }
-        } else if (isOpen) {
-          // Step 2: Click the "Start a call" primary button
-          const buttons = root.querySelectorAll('button[class*="_btn_"]');
-          for (const btn of buttons) {
-            const cls = btn.className;
-            if (cls.includes('_minimize_') || cls.includes('_secondary_') || cls.includes('_iconBtn_')) continue;
-            (btn as HTMLElement).click();
-            clearInterval(interval);
-            return;
-          }
-        }
+      // Create floating tooltip
+      const tooltip = document.createElement('div');
+      tooltip.id = 'fabian-tooltip';
+      tooltip.className = 'fabian-tooltip';
+      tooltip.textContent = tooltipText;
+      document.body.appendChild(tooltip);
 
-        if (attempts >= maxAttempts) clearInterval(interval);
-      }, 250);
+      // Auto-cleanup after 8s
+      const cleanup = () => {
+        widget.classList.remove('fabian-highlight');
+        document.getElementById('fabian-tooltip')?.remove();
+      };
+      setTimeout(cleanup, 8000);
+      widget.addEventListener('click', cleanup, { once: true });
     }
 
     function closeAndTalk() {
       talked = true;
       close();
-      // Give modal time to close, then activate widget
-      setTimeout(activateWidget, 400);
+      // Give modal time to close, then highlight widget
+      setTimeout(highlightWidget, 400);
     }
 
     // Cerrar: X, overlay, ESC
@@ -236,5 +218,61 @@ const { translations } = Astro.props;
   @keyframes ctaShine {
     0% { left: -100%; }
     50%, 100% { left: 100%; }
+  }
+</style>
+
+<!-- Global styles for highlight + tooltip (must escape Astro scoping) -->
+<style is:global>
+  /* Pulsating orange glow on the ElevenLabs widget */
+  elevenlabs-convai.fabian-highlight {
+    filter: drop-shadow(0 0 8px rgba(255, 107, 0, 0.8)) drop-shadow(0 0 20px rgba(255, 59, 48, 0.5));
+    animation: fabianGlow 1.5s ease-in-out infinite alternate;
+    z-index: 100;
+    position: relative;
+  }
+
+  @keyframes fabianGlow {
+    0% {
+      filter: drop-shadow(0 0 6px rgba(255, 107, 0, 0.6)) drop-shadow(0 0 14px rgba(255, 59, 48, 0.3));
+    }
+    100% {
+      filter: drop-shadow(0 0 12px rgba(255, 107, 0, 1)) drop-shadow(0 0 28px rgba(255, 59, 48, 0.6));
+    }
+  }
+
+  /* Floating tooltip above the widget */
+  .fabian-tooltip {
+    position: fixed;
+    bottom: 90px;
+    right: 16px;
+    background: linear-gradient(135deg, #ff6b00, #ff3b30);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 12px;
+    z-index: 101;
+    box-shadow: 0 4px 16px rgba(255, 107, 0, 0.4);
+    animation: fabianBounce 2s ease-in-out infinite;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  /* Arrow pointing down to the widget */
+  .fabian-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ff3b30;
+  }
+
+  @keyframes fabianBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
   }
 </style>
